@@ -23,3 +23,9 @@ vassal = {
 	start_date = 1444.11.11
 	end_date = 1821.1.1
 }
+march = { #Rekolia
+	first = B14
+	second = B15
+	start_date = 1444.11.11
+	end_date = 1821.1.1
+}
