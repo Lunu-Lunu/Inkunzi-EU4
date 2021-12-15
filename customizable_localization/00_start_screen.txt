@@ -1,0 +1,371 @@
+#AVIALABLE CUSTOM LOCALISATION KEYS
+#When adding new custom loc keys, add them to the appropriate category (or add a new one) and describe them. Name the strings "String_X" where x is its content.
+# To not display anything, you can use 'localisation_key = ""'
+# Please add one example sentence for each key.
+
+#As this list grow organize with categories.
+#Current loc keys in this file:
+#StartScreenUpLeft
+#StartScreenUpRight
+#StartScreenDownLeft
+#StartScreenDownRight
+
+### Main title of start screen
+#Ex: "The Empire of Man, 2017"
+defined_text = {
+    name = StartScreenTitle
+	random = no
+	
+	text = {
+		
+        localisation_key = string_screen_title_plural
+        trigger = {
+			tag_with_plural_name_trigger = yes
+        }
+    }
+    text = {
+        localisation_key = string_screen_title_papacy
+        trigger = {
+			tag = PAP
+        }
+    }
+    text = {
+        localisation_key = string_screen_title
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+### Upper left title textbox
+#Ex: "Sweden's Situation"
+defined_text = {
+    name = StartScreenUpLeftTitle
+	random = no #Pick first that fits
+
+	#Country Specific:
+	
+	#Africa
+	
+	#India
+	
+	#East Asia:
+	text = {
+        localisation_key = string_start_title_great_ming
+        trigger = {
+			tag = MNG
+		}
+    }
+	text = {
+        localisation_key = string_start_title_mongolia
+        trigger = {
+			tag = KHA
+		}
+    }
+	text = {
+        localisation_key = string_start_title_shogunate
+        trigger = {
+			has_reform = shogunate
+		}
+    }
+	text = {
+        localisation_key = string_start_title_daimyo
+        trigger = {
+			has_reform = daimyo
+		}
+    }
+	text = {
+        localisation_key = string_start_title_korea
+        trigger = {
+			tag = KOR
+		}
+    }
+	
+	#Americas:
+	
+	#Europe:
+	text = {
+        localisation_key = string_start_title_aragon
+        trigger = {
+			tag = ARA
+			has_ruler = "Alfons V"
+		}
+    }
+	text = {
+        localisation_key = string_start_title_denmark
+        trigger = {
+			tag = DAN
+			has_ruler = "Christopher III"
+		}
+    }
+	text = {
+        localisation_key = string_start_title_ottomans
+        trigger = {
+			tag = TUR
+		}
+    }
+	text = {
+        localisation_key = string_start_title_sweden_norway
+        trigger = {
+			OR = {
+				tag = SWE
+				tag = NOR
+			}
+			is_subject_of = DAN
+		}
+    }
+	text = {
+        localisation_key = string_start_title_austria
+        trigger = {
+			tag = HAB
+			NOT = { is_year = 1452 }
+		}
+    }
+	text = {
+        localisation_key = string_start_title_bavarians
+        trigger = {
+			OR = {
+				tag = ING
+				tag = UBV
+				tag = LBV
+			}
+			NOT = { is_year = 1445 }
+		}
+    }
+	text = { #Saxony
+		localisation_key = string_start_title_saxony
+		trigger = {
+			tag = SAX
+			NOT = { is_year = 1454 }
+		}
+	}
+	text = { #Thuringia
+		localisation_key = string_start_title_thuringia
+		trigger = {
+			tag = THU
+			NOT = { is_year = 1454 }
+		}
+	}
+	text = {
+        localisation_key = string_start_title_hungary
+        trigger = {
+			OR = {
+				tag = HUN
+				tag = CRO
+			}
+			NOT = { is_year = 1445 }
+		}
+    }
+	text = {
+        localisation_key = string_start_title_burgundy
+        trigger = {
+			tag = BUR
+			NOT = { is_year = 1467 }
+		}
+    }
+	text = {
+        localisation_key = string_start_title_bohemia
+        trigger = {
+			tag = BOH
+			NOT = { is_year = 1457 }
+		}
+    }
+	text = {
+        localisation_key = string_start_title_castile
+        trigger = {
+			tag = CAS
+		}
+    }
+	text = {
+        localisation_key = string_start_title_poland
+        trigger = {
+			tag = POL
+		}
+    }
+	text = {
+        localisation_key = string_start_title_france
+        trigger = {
+			tag = FRA
+			NOT = { is_year = 1461 }
+		}
+    }
+	text = {
+        localisation_key = string_start_title_france_fallback
+        trigger = {
+			tag = FRA
+		}
+    }
+	text = {
+        localisation_key = string_start_title_trebizond
+        trigger = {
+			tag = TRE
+		}
+    }
+	text = {
+        localisation_key = string_start_title_provence
+        trigger = {
+			tag = PRO
+		}
+    }
+	text = {
+        localisation_key = string_start_title_brittany
+        trigger = {
+			tag = BRI
+		}
+    }
+	text = {
+        localisation_key = string_start_title_hanseatic
+        trigger = {
+			OR = {
+				tag = HAM
+				tag = BRE
+				tag = HSA
+			}
+		}
+    }
+	
+	text = {
+		localisation_key = string_start_title_byzantium
+		trigger = {
+			tag = BYZ
+		}
+	}
+	
+	text = {
+		localisation_key = string_start_title_naples
+		trigger = {
+			tag = NAP
+		}
+	}
+	
+	text = {
+		localisation_key = string_start_title_genoa
+		trigger = {
+			tag = GEN
+		}
+	}
+	
+	#Middle & Near East
+	text = {
+        localisation_key = string_start_title_hisn_kayfa
+        trigger = {
+			tag = HSN
+			dynasty = Ayyubid
+		}
+    }
+	text = {
+		localisation_key = string_start_title_georgia_imereti
+		trigger = {
+			OR = {
+				tag = GEO
+				tag = IME
+			}
+			NOT = { is_year = 1490 }
+		}
+	}
+	text = {
+		localisation_key = string_start_title_samtskhe
+		trigger = {
+			tag = SME
+			NOT = { is_year = 1490 }
+		}
+	}
+	
+	#Generic:
+	text = {
+        localisation_key = string_start_title_horde
+        trigger = {
+			has_reform = steppe_horde
+        }
+    }
+	text = {
+        localisation_key = string_start_title_monarchy_regency #Actually same as fallback
+        trigger = {
+			has_regency = yes
+			OR = {
+				government = monarchy
+				government = tribal
+			}
+        }
+    }
+    text = {
+        localisation_key = string_start_title_monarchy_plural
+        trigger = {
+			#has_regency = no
+			government = monarchy
+			tag_with_plural_name_trigger = yes
+        }
+    }
+    text = {
+        localisation_key = string_start_title_monarchy
+        trigger = {
+			#has_regency = no
+			government = monarchy
+        }
+    }
+	text = {
+        localisation_key = string_start_title_republic
+        trigger = {
+			government = republic
+        }
+    }
+    text = {
+        localisation_key = string_start_title_theocracy
+        trigger = {
+			government = theocracy
+        }
+    }
+	text = {
+        localisation_key = string_start_title_native_council
+        trigger = {
+			government = native
+        }
+    }
+	#Final Fallback
+	text = {
+        localisation_key = string_start_title_fallback
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+### Upper right title textbox
+#Ex: "Muscovy is Orthodox"
+defined_text = {
+    name = StartScreenUpRightTitle
+	random = no
+
+	text = {
+        localisation_key = string_start_religion_mechanic_title_plural
+        trigger = {
+			tag_with_plural_name_trigger = yes
+        }
+    }
+    text = {
+        localisation_key = string_start_religion_mechanic_title
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+### Lower left title textbox
+#Ex: "Sweden is a Swedish Kingdom"
+defined_text = {
+    name = StartScreenDownLeftTitle
+	random = no
+
+    text = {
+        localisation_key = string_start_culture_government_title_plural
+		trigger = {
+			tag_with_plural_name_trigger = yes
+		}
+	}
+    text = {
+        localisation_key = string_start_culture_government_title
+		trigger = {
+			always = yes
+		}
+    }
+}

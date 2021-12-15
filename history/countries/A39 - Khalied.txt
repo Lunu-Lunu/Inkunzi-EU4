@@ -1,0 +1,19 @@
+government = theocracy
+add_government_reform = leading_clergy_reform
+government_rank = 2
+mercantilism = 10
+technology_group = western
+religion = turriyahism
+primary_culture = tahviran
+capital = 481
+
+1444.11.11 = {
+	monarch = {
+		name = "Shyah"
+		dynasty = "Zaturk"
+		adm = 5
+		dip = 2
+		mil = 4
+		birth_date = 1399.11.11
+	}
+}

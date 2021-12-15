@@ -1,0 +1,19 @@
+government = republic
+add_government_reform = oligarchy_reform
+government_rank = 2
+mercantilism = 10
+technology_group = western
+religion = turriyahism
+primary_culture = autemer
+capital = 939
+
+1444.11.11 = {
+	monarch = {
+		name = "Grugg'a"
+		dynasty = "Pugziz"
+		adm = 4
+		dip = 3
+		mil = 4
+		birth_date = 1400.11.11
+	}
+}

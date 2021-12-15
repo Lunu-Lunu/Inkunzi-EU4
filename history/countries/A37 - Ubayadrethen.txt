@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 2
+mercantilism = 10
+technology_group = western
+religion = turriyahism
+primary_culture = bosem
+capital = 511
+
+1444.11.11 = {
+	monarch = {
+		name = "Fahim"
+		dynasty = "Ubayd"
+		adm = 6
+		dip = 2
+		mil = 3
+		birth_date = 1419.11.11
+	}
+}

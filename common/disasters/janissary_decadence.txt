@@ -1,0 +1,6 @@
+janissary_decadence = {
+	potential = {
+		always = no
+	}
+}
+

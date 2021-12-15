@@ -1,0 +1,19 @@
+government = republic
+add_government_reform = merchants_reform
+government_rank = 1
+mercantilism = 10
+technology_group = western
+religion = celestialism
+primary_culture = paak_ourk
+capital = 1773
+
+1444.11.11 = {
+	monarch = {
+		name = "Metrin"
+		dynasty = "Chrima"
+		adm = 5
+		dip = 3
+		mil = 5
+		birth_date = 1407.11.11
+	}
+}

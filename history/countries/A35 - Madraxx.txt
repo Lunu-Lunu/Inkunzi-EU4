@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+mercantilism = 10
+technology_group = western
+religion = turriyahism
+primary_culture = tahviran
+capital = 496
+
+1444.11.11 = {
+	monarch = {
+		name = "Abu"
+		dynasty = "Zirid"
+		adm = 3
+		dip = 3
+		mil = 4
+		birth_date = 1398.11.11
+	}
+}

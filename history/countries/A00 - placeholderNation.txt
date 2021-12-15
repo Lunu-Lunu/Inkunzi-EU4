@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 3
+mercantilism = 3
+technology_group = western
+religion = catholic
+primary_culture = manchu
+capital = 1
+
+1380.1.1 = {
+	monarch = {
+		name = "placeholderMonarch"
+		dynasty = "placeholderDynasty"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 1360.1.1
+	}
+}

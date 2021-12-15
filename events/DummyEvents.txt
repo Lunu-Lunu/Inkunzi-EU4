@@ -1,0 +1,765 @@
+namespace = fetishist_flavor
+
+country_event = {
+	id = fetishist_flavor.1
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = fetishist_flavor.2
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = fetishist_flavor.3
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = fetishist_flavor.101
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = fetishist_flavor.102
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = fetishist_flavor.103
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = fetishist_flavor.201
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = fetishist_flavor.202
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = fetishist_flavor.203
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = fetishist_flavor.400
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = fetishist_flavor.401
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = fetishist_flavor.402
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = fetishist_flavor.403
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = fetishist_flavor.404
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = fetishist_flavor.405
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = fetishist_flavor.406
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = fetishist_flavor.407
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+namespace = dutch_republic
+country_event = {
+	id = dutch_republic.33
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+namespace = shinto_events
+country_event = {
+	id = shinto_events.19
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = shinto_events.25
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = shinto_events.32
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = shinto_events.38
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = shinto_events.50
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = shinto_events.13
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = shinto_events.1
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = shinto_events.7
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+namespace = mamluk_events
+country_event = {
+	id = mamluk_events.0
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+namespace = great_peasant_war
+country_event = {
+	id = great_peasant_war.2
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+namespace = new_flavour_nap
+country_event = {
+	id = new_flavour_nap.8
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+namespace = castilian_civil_war
+country_event = {
+	id = castilian_civil_war.100
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+namespace = english_civil_war
+country_event = {
+	id = english_civil_war.100
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+namespace = flavor_rus
+country_event = {
+	id = flavor_rus.2000
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+namespace = french_revolution
+country_event = {
+	id = french_revolution.2
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = french_revolution.10
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = french_revolution.11
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = french_revolution.12
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = french_revolution.13
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = french_revolution.14
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = french_revolution.15
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = french_revolution.16
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+namespace = buddhism_events
+country_event = {
+	id = buddhism_events.34
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+namespace = women_history_events
+country_event = {
+	id = women_history_events.22
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+namespace = flavor_dan
+country_event = {
+	id = flavor_dan.4
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+namespace = flavor_cri
+country_event = {
+	id = flavor_cri.1
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+namespace = flavor_hab
+country_event = {
+	id = flavor_hab.21
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+namespace = colonial
+country_event = {
+	id = colonial.1
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = colonial.2
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = colonial.3
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = colonial.4
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = colonial.5
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = colonial.8
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = colonial.9
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = colonial.10
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = colonial.11
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = colonial.12
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = colonial.13
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = colonial.14
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = colonial.15
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = colonial.16
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = colonial.17
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = colonial.18
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+namespace = tyw_events
+country_event = {
+	id = tyw_events.22
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = tyw_events.14
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+namespace = celestial_empire_events
+country_event = {
+	id = celestial_empire_events.1
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+namespace = dodo
+country_event = {
+	id = dodo.1
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+namespace = muslim_school_events
+country_event = {
+	id = muslim_school_events.2
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = muslim_school_events.20
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+namespace = new_court_flavour_events
+country_event = {
+	id = new_court_flavour_events.21
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = new_court_flavour_events.25
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+namespace = flavor_fra
+country_event = {
+	id = flavor_fra.9500
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+namespace = flavor_lxa
+country_event = {
+	id = flavor_lxa.1
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = flavor_lxa.2
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+country_event = {
+	id = flavor_lxa.3
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}
+namespace = incidents_bur_inheritance
+country_event = {
+	id = incidents_bur_inheritance.1
+	title = "dummy.t"
+	desc = "dummy.desc"
+	picture = EXPLORERS_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = "dummy.a"
+	}
+}

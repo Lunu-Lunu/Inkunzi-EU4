@@ -1,0 +1,19 @@
+government = republic
+add_government_reform = merchants_reform
+government_rank = 2
+mercantilism = 10
+technology_group = western
+religion = orthodox_bytosism
+primary_culture = pozitianian
+capital = 343
+
+1444.11.11 = {
+	monarch = {
+		name = "Otto"
+		dynasty = "Konig"
+		adm = 2
+		dip = 5
+		mil = 2
+		birth_date = 1419.11.11
+	}
+}

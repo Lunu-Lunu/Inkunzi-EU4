@@ -1,0 +1,1750 @@
+#
+
+palmer_group = {
+	graphical_culture = westerngfx
+
+	palmer = {
+		primary = A03
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+
+	}
+	fortly = {
+		primary = A01
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	kido = {
+		primary = A28
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+
+vestorian_group = {
+	graphical_culture = westerngfx
+
+	upper_vestorian = {
+		primary = A02
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	lower_vestorian = {
+		primary = A07
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	#orc_vestorian = {
+	# todo - likely not to happen
+	#}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+ourkani_group = {
+	ourkani = {
+		primary = B08
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	paak_ourk = {
+		primary = A97
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	grokish = {
+		primary = A97 # **DEFINITELY** CHANGE
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+alvonian_group = {
+	#alvonian = {
+	# todo - dead culture (maybe revivable?)
+	#}
+	survalsian = {
+		primary = A04
+
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+celtaidd_group = {
+	celtaidd = {
+		primary = A05
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+draconic_group = {
+	urakkan = {
+		primary = A06
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+karlton_group = {
+	karolon = {
+		primary = A03 # REPLACE WITH REAL ONCE TAG IS ADDED
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	south_karlton = {
+		primary = A30
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	north_karlton = {
+		primary = B41
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+credentinunum_group = {
+	credentinunum = {
+		primary = A11
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+brahguan_group = {
+	brahguan = {
+		primary = A09
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+west_kaulic_group = {
+	enclaver = {
+		primary = A08
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	oskitan = {
+		primary = A13
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	kaulradic = {
+		primary = A14
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+prilohan_group = {
+	prilohan = {
+		primary = A12
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	iznadi = {
+		primary = A12 # iznad'll be a releasable at some point doe
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+mungi_group = {
+	mungi = {
+		primary = A40
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	spolic = {
+		primary = A40
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	rannikean = {
+		primary = A54
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	#spolic = {
+	#	todo
+	#}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+	
+}
+bogg_group = {
+	bogg = {
+		primary = A16
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+pyaltsev_group = {
+	pyaltsev = {
+		primary = A19
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+penoxi_group = {
+	penoxian = {
+		primary = A20
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+pozitianian_group = {
+	pozitianian = {
+		primary = A22
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	zakaulic = {
+		primary = A22
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+ferdunic_group = {
+	ferdunic = {
+		primary = A21 # gonna swap to the FERDUNIC LEAGUE RELEASABLE eventually
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+kihsan_group = {
+	nimbus = {
+		primary = A27
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	kihsan = {
+		primary = A27
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+karen_group = {
+	karen = {
+		primary = A24
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+melcani_group = {
+	ulian = {
+		primary = A29
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	melian = {
+		primary = B23
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+east_kaulic_group = {
+	bosem = {
+		primary = A37
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	tahviran = {
+		primary = A38
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	iran = {
+		primary = A32
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	kythian = {
+		primary = A82
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+dahe_group = {
+	long = {
+		primary = A46
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	dai = {
+		primary = A48
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	chuanwei = {
+		primary = A51
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	rezubian = {
+		primary = A52
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+xuaze_group = {
+	xuaze = {
+		primary = A43
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	xuahogg = {
+		primary = A43 # except if a xuahogg tag gets made
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+kurean_group = {
+	kurean = {
+		primary = A56
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+yaroli_group = {
+	yaroli = {
+		primary = A63
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+rekolian_group = {
+	inner_rekolian = {
+		primary = B15
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	outer_rekolian = {
+		primary = B14
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	azvendian = {
+		primary = A62
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+helghian_group = {
+	helghian = {
+		primary = A65
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+ozarkhian_group = {
+	ozarkhian = {
+		primary = B39
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+aeruthian_group = {
+	aeruthian = {
+		primary = B34 # make a releasable... LATER (lightning strike)
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+porian_group = {
+	porian = {
+		primary = A66
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	karhogg = {
+		primary = A66 # unless a karhogg tag gets made
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	#sarjentan = {
+	#
+	#}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+autemer_group = {
+	autemer = {
+		primary = A66 #holy SHIT switch this when applicable
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+sia_si_group = {
+	siamlud = {
+		primary = A67
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+gnetan_group = {
+	gneta = {
+		primary = A81
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+	
+}
+unglan_group = {
+	unglan = {
+		primary = A70 # im sure therell be releasable but not now
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+	
+}
+sieraldhah_group = {
+	sieraldh = {
+		primary = A70
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+	
+}
+iaznahoganto_group = {
+	kaihaku = {
+		primary = A89
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	okuyokama = {
+		primary = A85
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	satomoto = {
+		primary = A90
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	sudokai = {
+		primary = B00
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	ryoko = {
+		primary = A98
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	keikenna = {
+		primary = A99
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}	
+}
+alzhaic_group = {
+	alzhaic = {
+		primary = B03
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	dengiz = {
+		primary = B05
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+paleremore_group = {
+	paleremore = {
+		primary = B01
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+wagren_group = {
+	wagren = {
+		primary = B13
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+lizard_group = {
+	lizardman = {
+		primary = B16
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	thixi = {
+		primary = B16 # add thixi releasable later
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+tensali_group = {
+	tensali = {
+		primary = B17
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+ukabururn_group = {
+	ukabururn = {
+		primary = B21
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+leden_group = {
+	ledengradian = {
+		primary = B19
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+lurran_group = {
+	ibaien = {
+		primary = B25
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+goblin_group = {
+	goblin = {
+		primary = B33
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	lower_goblin = {
+		primary = B35
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+obenic_group = {
+	obenic = {
+		primary = B21 # this is the worst
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+ocelid_group = {
+	ocelidian = {
+		primary = B26
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+heplin_group = {
+	heplin = {
+		primary = B31
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+serob_group = {
+	serob = {
+		primary = B29
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+kalnish_group = {
+	kalnish = {
+		primary = B38
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+tehaori_group = {
+	tehaori = {
+		primary = B36 # tampasea for now, waiting on motu koura releasable
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+adnuin_group = {
+	adnuin = {
+		primary = B34
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+maafi_group = {
+	miarii = {
+		primary = B32
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+dwarven_group = {
+	tunnu = {
+		primary = B45
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}

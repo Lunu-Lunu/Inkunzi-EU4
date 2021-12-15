@@ -1,0 +1,45 @@
+#Example: Large parts of Africa and south east Asia
+tropical = {
+	
+}
+
+arid = {
+	
+}
+
+arctic = {
+	
+}
+
+#Example: Most of Europe north of med.
+mild_winter = {
+	
+}
+
+#Example: Inland Europe & Scandinavia
+normal_winter = {
+	26
+}
+
+#Example: Russia & Lappland
+severe_winter = {
+	
+}
+
+impassable = {
+	550 883 884 885 993 994 995 2789
+}
+
+mild_monsoon = {
+	
+}
+
+normal_monsoon = {
+	
+}
+
+severe_monsoon = {
+	
+}
+
+equator_y_on_province_image = 656

@@ -1,0 +1,595 @@
+# If you add religions, and use those tags, do not change them without changing everywhere they are used.
+
+# Uses all 'modifiers' possible thats exported as a Modifier.
+celestialism_group = {
+	defender_of_faith = yes
+	can_form_personal_unions = no
+
+	celestialism = {
+		color = { 156 25 174 }
+		icon = 1
+
+		country = {
+			tolerance_own = 1
+			legitimacy = 1
+		}
+		country_as_secondary = {
+			heir_chance = 0.5
+			legitimacy = 1
+		}
+
+		hre_religion = no
+
+		on_convert = {
+			change_religion = celestialism
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+		
+		}
+		
+		heretic = { MOON_GOD SUN_GOD }
+	}
+	sunfucian = {
+		color = { 255 204 49 }
+		icon = 13
+
+		country = {
+			idea_cost = -0.05
+			tolerance_heathen = 1
+		}
+		country_as_secondary = {
+			idea_cost = -0.05
+			tolerance_own = 1
+		}
+
+		hre_religion = no
+
+		on_convert = {
+			change_religion = sunfucian
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+		
+		}
+		
+		heretic = { HERETIC_GENERIC }
+	}
+	rationalist_celestialism = {
+		color = { 82 0 94 }
+		icon = 16
+
+		country = {
+			tolerance_heretic = 1
+			tolerance_heathen = 1
+		}
+		country_as_secondary = {
+			tolerance_heretic = 1
+			tolerance_heathen = 1
+		}
+
+		hre_religion = no
+
+		on_convert = {
+			change_religion = rationalist_celestialism
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+		
+		}
+		
+		heretic = { MOON_GOD SUN_GOD }
+
+	}
+}
+old_ones_group = {
+	defender_of_faith = yes
+	can_form_personal_unions = no
+
+	old_ones = {
+		color = { 55 158 53 }
+		icon = 2
+
+		country = {
+			reduced_liberty_desire = 10
+			diplomatic_reputation = 1
+		}
+		country_as_secondary = {
+			reduced_liberty_desire = 10
+			diplomatic_upkeep = 1
+		}
+
+		hre_religion = no
+
+		on_convert = {
+			change_religion = old_ones
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+		
+		}
+		
+		heretic = { HERETIC_GENERIC }
+	}
+}
+medvedeni_group = {
+	defender_of_faith = yes
+	can_form_personal_unions = no
+
+	medvedeni = {
+		color = { 199 36 74 }
+		icon = 3
+
+		country = {
+			land_morale = 0.1
+			defensiveness = 0.1
+		}
+		country_as_secondary = {
+			land_morale = 0.1
+			defensiveness = 0.1
+		}
+
+		hre_religion = no
+
+		on_convert = {
+			change_religion = medvedeni
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+		
+		}
+		
+		heretic = { HERETIC_GENERIC }
+	}
+	ohenomedvedeni = {
+		color = { 63 21 32 }
+		icon = 4
+
+		country = {
+			land_morale = 0.1
+			siege_ability = 0.1
+		}
+		country_as_secondary = {
+			land_morale = 0.1
+			siege_ability = 0.1
+		}
+
+		hre_religion = no
+
+		on_convert = {
+			change_religion = ohenomedvedeni
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+		
+		}
+		
+		heretic = { HERETIC_GENERIC }
+	}
+}
+triaxism_group = {
+	defender_of_faith = yes
+	can_form_personal_unions = no
+
+	triaxism = {
+		color = { 86 130 148 }
+		icon = 5
+
+		country = {
+			defensiveness = 0.15
+			hostile_attrition = 1
+		}
+		country_as_secondary = {
+			defensiveness = 0.15
+			hostile_attrition = 1
+		}
+
+		hre_religion = no
+
+		on_convert = {
+			change_religion = triaxism
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+		
+		}
+		
+		heretic = { HERETIC_GENERIC }
+	}	
+}
+bytosism = {
+	defender_of_faith = yes
+	can_form_personal_unions = no
+
+	mashia = {
+		color = { 100 0 0 }
+		icon = 6
+
+		country = {
+			global_unrest = -1
+			stability_cost_modifier = -0.1
+		}
+		country_as_secondary = {
+			global_unrest = -1
+			stability_cost_modifier = -0.1
+		}
+
+		hre_religion = no
+
+		on_convert = {
+			change_religion = mashia
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+		
+		}
+		
+		heretic = { HERETIC_GENERIC }
+	}
+	orthodox_bytosism = {
+		color = { 163 23 23 }
+		icon = 8
+
+		country = {
+			culture_conversion_cost = -0.1
+			stability_cost_modifier = -0.1
+		}
+		country_as_secondary = {
+			culture_conversion_cost = -0.1
+			stability_cost_modifier = -0.1
+		}
+
+		hre_religion = no
+
+		on_convert = {
+			change_religion = orthodox_bytosism
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+		
+		}
+		
+		heretic = { HERETIC_GENERIC }
+	}
+	turriyahism = {
+		color = { 219 49 21 }
+		icon = 12
+
+		country = {
+			diplomatic_upkeep = 1
+			stability_cost_modifier = -0.1
+		}
+		country_as_secondary = {
+			diplomatic_upkeep = 1
+			stability_cost_modifier = -0.1
+		}
+
+		hre_religion = no
+
+		on_convert = {
+			change_religion = turriyahism
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+		
+		}
+		
+		heretic = { HERETIC_GENERIC }
+	}
+	medilyte = {
+		color = { 40 7 0 }
+		icon = 18
+
+		country = {
+			infantry_power = 0.1
+			stability_cost_modifier = -0.1
+		}
+		country_as_secondary = {
+			infantry_power = 0.1
+			stability_cost_modifier = -0.1
+		}
+
+		hre_religion = no
+
+		on_convert = {
+			change_religion = medilyte
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+		
+		}
+		
+		heretic = { HERETIC_GENERIC }
+	}
+}
+agaric_group = {
+	defender_of_faith = yes
+	can_form_personal_unions = no
+
+	agaric = {
+		color = { 201 215 77 }
+		icon = 7
+
+		country = {
+			harsh_treatment_cost = -0.25
+			tolerance_own = 2
+		}
+		country_as_secondary = {
+			harsh_treatment_cost = -0.25
+			global_unrest = -2
+		}
+
+		hre_religion = no
+
+		on_convert = {
+			change_religion = agaric
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+		
+		}
+		
+		heretic = { HERETIC_GENERIC }
+	}
+}
+whihcan = {
+	defender_of_faith = yes
+	can_form_personal_unions = no
+
+	whihcan = {
+		color = { 157 194 201 }
+		icon = 10
+
+		country = {
+			global_tax_modifier = 0.1
+			build_cost = -0.1
+		}
+		country_as_secondary = {
+			global_tax_modifier = 0.1
+			build_cost = -0.1
+		}
+
+		hre_religion = no
+
+		on_convert = {
+			change_religion = whihcan
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+		
+		}
+		
+		heretic = { HERETIC_GENERIC }
+	}
+
+	onwinnen_whihcan = {
+		color = { 55 158 118 }
+		icon = 11
+
+		country = {
+			global_tax_modifier = 0.1
+			infantry_cost = -0.1
+		}
+		country_as_secondary = {
+			global_tax_modifier = 0.1
+			infantry_cost = -0.1
+		}
+
+		hre_religion = no
+
+		on_convert = {
+			change_religion = onwinnen_whihcan
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+		
+		}
+		
+		heretic = { HERETIC_GENERIC }
+	}
+}
+valor_group = {
+	defender_of_faith = yes
+	can_form_personal_unions = no
+
+	valor = {
+		color = { 242 196 36 }
+		icon = 14
+
+		country = {
+			global_unrest = -2
+			improve_relation_modifier = 0.15
+		}
+		country_as_secondary = {
+			global_unrest = -2
+			improve_relation_modifier = 0.15
+		}
+
+		hre_religion = no
+
+		on_convert = {
+			change_religion = valor
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+		
+		}
+		
+		heretic = { HERETIC_GENERIC }
+	}
+
+	dark_valor = {
+		color = { 101 78 0 }
+		icon = 15
+
+		country = {
+			stability_cost_modifier = 0.25
+			global_manpower_modifier = 0.1
+			land_forcelimit_modifier = 0.1
+		}
+		country_as_secondary = {
+			stability_cost_modifier = 0.1
+			global_manpower_modifier = 0.05
+			land_forcelimit_modifier = 0.05
+		}
+
+		hre_religion = no
+
+		on_convert = {
+			change_religion = dark_valor
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+		
+		}
+		
+		heretic = { HERETIC_GENERIC }
+	}
+}
+haymonutho_group = {
+	defender_of_faith = yes
+	can_form_personal_unions = no
+
+	haymonutho = {
+		color = { 200 45 19 }
+		icon = 17
+
+		country = {
+			global_autonomy = -0.05
+			min_autonomy_in_territories = -0.1
+		}
+		country_as_secondary = {
+			global_autonomy = -0.05
+			min_autonomy_in_territories = -0.1
+		}
+
+		hre_religion = no
+
+		on_convert = {
+			change_religion = haymonutho
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+		
+		}
+		
+		heretic = { HERETIC_GENERIC }
+	}
+}
+dwarven_r_group = {
+	defender_of_faith = yes
+	can_form_personal_unions = no
+
+	mountain_folk = {
+		color = { 93 197 235 }
+		icon = 20
+
+		country = {
+			land_morale = 0.05
+			mil_tech_cost = -0.05
+		}
+		country_as_secondary = {
+			land_morale = 0.05
+			mil_tech_cost = -0.05
+		}
+
+		hre_religion = no
+
+		on_convert = {
+			change_religion = mountain_folk
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+		
+		}
+		
+		heretic = { HERETIC_GENERIC }
+	}
+}
+irreligious_group = {
+	defender_of_faith = no
+	can_form_personal_unions = no
+
+	irreligious = {
+		color = { 230 230 230 }
+		icon = 19
+
+		country = {
+			idea_cost = -0.05
+			monthly_reform_progress_modifier = 0.15
+		}
+		country_as_secondary = {
+			idea_cost = -0.05
+			monthly_reform_progress_modifier = 0.15
+		}
+
+		hre_religion = no
+
+		on_convert = {
+			change_religion = irreligious
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+		
+		}
+		
+		heretic = { HERETIC_GENERIC }
+	}
+}

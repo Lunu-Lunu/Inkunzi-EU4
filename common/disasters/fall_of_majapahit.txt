@@ -1,0 +1,6 @@
+fall_of_majapahit = {
+	potential = {
+		always = no
+	}
+}
+

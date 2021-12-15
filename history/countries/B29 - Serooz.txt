@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 2
+mercantilism = 10
+technology_group = western
+religion = valor
+primary_culture = serob
+capital = 2622
+
+1444.11.11 = {
+	monarch = {
+		name = "Seribnek"
+		dynasty = "Swooz"
+		adm = 3
+		dip = 6
+		mil = 0
+		birth_date = 1401.11.11
+	}
+}

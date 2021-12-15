@@ -1,0 +1,15 @@
+# Placeholder
+
+owner = A38
+controller = A38
+add_core = A38
+culture = bosem
+religion = turriyahism
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+trade_goods = unknown
+capital = "Placeholder"
+is_city = yes
+discovered_by = western

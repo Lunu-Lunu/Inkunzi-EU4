@@ -1,0 +1,15 @@
+# Placeholder
+
+owner = A71
+controller = A71
+add_core = A71
+culture = sieraldh
+religion = turriyahism
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+trade_goods = unknown
+capital = "Placeholder"
+is_city = yes
+discovered_by = western

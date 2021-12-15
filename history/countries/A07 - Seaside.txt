@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 3
+mercantilism = 10
+technology_group = western
+religion = celestialism
+primary_culture = lower_vestorian
+capital = 142
+
+1444.11.11 = {
+	monarch = {
+		name = "Vic"
+		dynasty = "Seaside"
+		adm = 3
+		dip = 6
+		mil = 1
+		birth_date = 1403.11.11
+	}
+}

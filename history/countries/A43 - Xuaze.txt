@@ -1,0 +1,19 @@
+government = republic
+add_government_reform = oligarchy_reform
+government_rank = 2
+mercantilism = 10
+technology_group = western
+religion = celestialism
+primary_culture = xuaze
+capital = 686
+
+1444.11.11 = {
+	monarch = {
+		name = "Zung"
+		dynasty = "Xao"
+		adm = 5
+		dip = 3
+		mil = 4
+		birth_date = 1409.11.11
+	}
+}

@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 3
+mercantilism = 10
+technology_group = western
+religion = mashia
+primary_culture = kaulradic
+capital = 214
+
+1444.11.11 = {
+	monarch = {
+		name = "Kohnstal"
+		dynasty = "von Stern"
+		adm = 3
+		dip = 6
+		mil = 3
+		birth_date = 1376.11.11
+	}
+}

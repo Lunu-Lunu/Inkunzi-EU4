@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 2
+mercantilism = 10
+technology_group = western
+religion = mashia
+primary_culture = paleremore
+capital = 1789
+
+1444.11.11 = {
+	monarch = {
+		name = "Portugi"
+		dynasty = "Forttung"
+		adm = 6
+		dip = 6
+		mil = 0
+		birth_date = 1395.11.11
+	}
+}

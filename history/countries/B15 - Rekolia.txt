@@ -1,0 +1,19 @@
+government = republic
+add_government_reform = oligarchy_reform
+government_rank = 2
+mercantilism = 10
+technology_group = western
+religion = valor
+primary_culture = inner_rekolian
+capital = 2381
+
+1444.11.11 = {
+	monarch = {
+		name = "Zydrunas"
+		dynasty = "Lachunas"
+		adm = 4
+		dip = 3
+		mil = 4
+		birth_date = 1421.11.11
+	}
+}

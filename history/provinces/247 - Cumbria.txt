@@ -1,0 +1,15 @@
+# Placeholder
+
+owner = A16
+controller = A16
+add_core = A16
+culture = credentinunum
+religion = mashia
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+trade_goods = unknown
+capital = "Placeholder"
+is_city = yes
+discovered_by = western

@@ -1,0 +1,43 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 88 110 78 }
+
+historical_idea_groups = {
+	quality_ideas
+	economic_ideas
+	defensive_ideas
+	offensive_ideas
+	diplomatic_ideas
+	quantity_ideas
+	spy_ideas
+	religious_ideas
+}
+
+historical_units = {
+	western_medieval_infantry
+	western_medieval_knights
+	western_men_at_arms
+	dutch_maurician
+	swedish_gallop
+	swedish_gustavian
+	swedish_caroline
+	swedish_arme_blanche
+	prussian_frederickian
+	prussian_uhlan
+	mixed_order_infantry
+	open_order_cavalry
+	napoleonic_square
+	napoleonic_lancers
+}
+
+leader_names = {
+	Gigenshtain
+}
+
+monarch_names = {
+	"Gigenshtain #0" = 0
+
+	"FEMALE Gigenshtain #0" = -1
+}

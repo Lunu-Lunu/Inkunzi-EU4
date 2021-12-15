@@ -1,0 +1,7 @@
+government = theocracy
+add_government_reform = leading_clergy_reform
+primary_culture = hessian
+religion = catholic
+technology_group = western
+capital = 1	# Paderborn
+fixed_capital = 1 # Cannot move capital away from this province & no power cost to move to it

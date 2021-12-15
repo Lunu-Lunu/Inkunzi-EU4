@@ -1,0 +1,15 @@
+# Placeholder
+
+owner = A29
+controller = A29
+add_core = A29
+culture = ulian
+religion = turriyahism
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+trade_goods = unknown
+capital = "Placeholder"
+is_city = yes
+discovered_by = western

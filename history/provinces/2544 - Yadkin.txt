@@ -1,0 +1,15 @@
+# Placeholder
+
+owner = B22
+controller = B22
+add_core = B22
+culture = tensali
+religion = valor
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+trade_goods = unknown
+capital = "Placeholder"
+is_city = yes
+discovered_by = western

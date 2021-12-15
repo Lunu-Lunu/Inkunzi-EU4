@@ -1,0 +1,19 @@
+government = republic
+add_government_reform = merchants_reform
+government_rank = 2
+mercantilism = 10
+technology_group = western
+religion = dark_valor
+primary_culture = ozarkhian
+capital = 2637
+
+1444.11.11 = {
+	monarch = {
+		name = "Alexander"
+		dynasty = "MacGrethe"
+		adm = 5
+		dip = 5
+		mil = 0
+		birth_date = 1422.11.11
+	}
+}

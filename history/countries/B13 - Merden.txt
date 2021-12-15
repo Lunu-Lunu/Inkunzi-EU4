@@ -1,0 +1,19 @@
+government = theocracy
+add_government_reform = monastic_order_reform
+government_rank = 1
+mercantilism = 10
+technology_group = western
+religion = valor
+primary_culture = wagren
+capital = 2322
+
+1444.11.11 = {
+	monarch = {
+		name = "Tansador"
+		dynasty = "Horax"
+		adm = 1
+		dip = 6
+		mil = 5
+		birth_date = 1389.11.11
+	}
+}

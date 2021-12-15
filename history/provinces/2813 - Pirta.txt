@@ -1,0 +1,15 @@
+# Placeholder
+
+owner = B42
+controller = B42
+add_core = B42
+culture = tunnu
+religion = mountain_folk
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+trade_goods = unknown
+capital = "Placeholder"
+is_city = yes
+discovered_by = western

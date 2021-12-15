@@ -1,0 +1,15 @@
+# Placeholder
+
+owner = A73
+controller = A73
+add_core = A73
+culture = gneta
+religion = haymonutho
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+trade_goods = unknown
+capital = "Placeholder"
+is_city = yes
+discovered_by = western

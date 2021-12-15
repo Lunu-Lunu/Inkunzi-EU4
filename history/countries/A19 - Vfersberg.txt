@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 2
+mercantilism = 10
+technology_group = western
+religion = triaxism
+primary_culture = pyaltsev
+capital = 267
+
+1444.11.11 = {
+	monarch = {
+		name = "Volodmir"
+		dynasty = "Vfersberg"
+		adm = 0
+		dip = 6
+		mil = 4
+		birth_date = 1424.11.11
+	}
+}

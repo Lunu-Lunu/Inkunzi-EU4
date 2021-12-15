@@ -1,0 +1,19 @@
+government = republic
+add_government_reform = merchants_reform
+government_rank = 2
+mercantilism = 10
+technology_group = western
+religion = turriyahism
+primary_culture = sieraldh
+capital = 953
+
+1444.11.11 = {
+	monarch = {
+		name = "pla"
+		dynasty = "ceholder"
+		adm = 3
+		dip = 6
+		mil = 2
+		birth_date = 1414.11.11
+	}
+}

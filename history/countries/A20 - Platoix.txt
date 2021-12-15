@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 2
+mercantilism = 10
+technology_group = western
+religion = triaxism
+primary_culture = penoxian
+capital = 306
+
+1444.11.11 = {
+	monarch = {
+		name = "Charles"
+		dynasty = "Ywenre"
+		adm = 3
+		dip = 5
+		mil = 3
+		birth_date = 1410.11.11
+	}
+}

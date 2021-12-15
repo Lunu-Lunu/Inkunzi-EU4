@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 2
+mercantilism = 10
+technology_group = western
+religion = turriyahism
+primary_culture = bosem
+capital = 423
+
+1444.11.11 = {
+	monarch = {
+		name = "Maq'il"
+		dynasty = "al-Raqqanayyid"
+		adm = 4
+		dip = 2
+		mil = 5
+		birth_date = 1408.11.11
+	}
+}

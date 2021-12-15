@@ -1,0 +1,19 @@
+government = republic
+add_government_reform = oligarchy_reform
+government_rank = 2
+mercantilism = 10
+technology_group = western
+religion = mashia
+primary_culture = miarii
+capital = 2637
+
+1444.11.11 = {
+	monarch = {
+		name = "Gabriel"
+		dynasty = "Enroka"
+		adm = 5
+		dip = 3
+		mil = 2
+		birth_date = 1412.11.11
+	}
+}

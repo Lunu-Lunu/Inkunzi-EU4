@@ -1,0 +1,6 @@
+english_civil_war = {
+	potential = {
+		always = no
+	}
+}
+

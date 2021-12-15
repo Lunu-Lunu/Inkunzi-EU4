@@ -1,0 +1,15 @@
+# Placeholder
+
+owner = A76
+controller = A76
+add_core = A76
+culture = siamlud
+religion = haymonutho
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+trade_goods = unknown
+capital = "Placeholder"
+is_city = yes
+discovered_by = western

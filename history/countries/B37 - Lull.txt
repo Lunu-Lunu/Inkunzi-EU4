@@ -1,0 +1,19 @@
+government = republic
+add_government_reform = peasants_republic
+government_rank = 2
+mercantilism = 10
+technology_group = western
+religion = dark_valor
+primary_culture = lower_goblin
+capital = 2637
+
+1444.11.11 = {
+	monarch = {
+		name = "Gry'h"
+		dynasty = "Lull"
+		adm = 1
+		dip = 6
+		mil = 4
+		birth_date = 1393.11.11
+	}
+}

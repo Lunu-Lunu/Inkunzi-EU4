@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 3
+mercantilism = 10
+technology_group = western
+religion = celestialism
+primary_culture = upper_vestorian
+capital = 39
+
+1444.11.11 = {
+	monarch = {
+		name = "Unknown"
+		dynasty = "SeaSide"
+		adm = 0
+		dip = 0
+		mil = 0
+		birth_date = 1414.11.11
+	}
+}

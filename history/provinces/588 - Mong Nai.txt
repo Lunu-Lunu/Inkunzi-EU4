@@ -1,0 +1,15 @@
+# Placeholder
+
+owner = A07
+controller = A07
+add_core = A07
+culture = long
+religion = celestialism
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+trade_goods = unknown
+capital = "Placeholder"
+is_city = yes
+discovered_by = western

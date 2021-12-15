@@ -1,0 +1,5 @@
+french_revolution = {
+	potential = {
+		always = no
+	}
+}

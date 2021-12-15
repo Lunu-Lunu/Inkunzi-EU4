@@ -1,0 +1,15 @@
+# Placeholder
+
+owner = B37
+controller = B37
+add_core = B37
+culture = lower_goblin
+religion = dark_valor
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+trade_goods = unknown
+capital = "Placeholder"
+is_city = yes
+discovered_by = western

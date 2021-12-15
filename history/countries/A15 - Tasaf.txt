@@ -1,0 +1,19 @@
+government = theocracy
+add_government_reform = leading_clergy_reform
+government_rank = 2
+mercantilism = 10
+technology_group = western
+religion = orthodox_bytosism
+primary_culture = kaulradic
+capital = 236
+
+1444.11.11 = {
+	monarch = {
+		name = "Placeholder"
+		dynasty = "the Placeholder"
+		adm = 1
+		dip = 1
+		mil = 1
+		birth_date = 1424.11.11
+	}
+}

@@ -1,0 +1,19 @@
+government = republic
+add_government_reform = noble_elite_reform
+government_rank = 3
+mercantilism = 10
+technology_group = western
+religion = rationalist_celestialism
+primary_culture = porian
+capital = 802
+
+1444.11.11 = {
+	monarch = {
+		name = "Ambrose"
+		dynasty = "Oster"
+		adm = 2
+		dip = 3
+		mil = 5
+		birth_date = 1415.11.11
+	}
+}

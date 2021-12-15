@@ -1,0 +1,16 @@
+# Placeholder
+
+owner = A42
+controller = A42
+add_core = A42
+add_core = A56
+culture = kurean
+religion = celestialism
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+trade_goods = unknown
+capital = "Placeholder"
+is_city = yes
+discovered_by = western

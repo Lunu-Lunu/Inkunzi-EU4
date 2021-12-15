@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 2
+mercantilism = 10
+technology_group = western
+religion = valor
+primary_culture = melian
+capital = 2471
+
+1444.11.11 = {
+	monarch = {
+		name = "Palidas"
+		dynasty = "Loritos"
+		adm = 6
+		dip = 2
+		mil = 4
+		birth_date = 1414.11.11
+	}
+}

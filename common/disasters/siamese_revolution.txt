@@ -1,0 +1,6 @@
+siamese_revolution = {
+	potential = {
+		always = no
+	}
+}
+

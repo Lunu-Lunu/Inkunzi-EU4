@@ -1,0 +1,5 @@
+bonfire_of_the_vanities_disaster = {
+	potential = {
+		always = no
+	}
+}

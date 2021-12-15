@@ -1,0 +1,15 @@
+# Placeholder
+
+owner = B14
+controller = B14
+add_core = B14
+culture = outer_rekolian
+religion = mashia
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+trade_goods = unknown
+capital = "Placeholder"
+is_city = yes
+discovered_by = western

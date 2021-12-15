@@ -1,0 +1,6 @@
+northern_and_southern_dynasties = {
+	potential = {
+		always = no
+	}
+}
+

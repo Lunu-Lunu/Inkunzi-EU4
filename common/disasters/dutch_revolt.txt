@@ -1,0 +1,7 @@
+dutch_revolt_disaster = {
+
+	potential = {
+		always = no
+	}
+
+}

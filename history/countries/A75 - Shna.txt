@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+mercantilism = 10
+technology_group = western
+religion = haymonutho
+primary_culture = gneta
+capital = 1012
+
+1444.11.11 = {
+	monarch = {
+		name = "Goriel"
+		dynasty = "Alakko"
+		adm = 3
+		dip = 3
+		mil = 5
+		birth_date = 1421.11.11
+	}
+}

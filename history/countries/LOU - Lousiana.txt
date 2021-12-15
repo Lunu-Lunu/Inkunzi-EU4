@@ -1,0 +1,9 @@
+government = republic
+technology_group = western
+primary_culture = cosmopolitan_french
+religion = reformed
+capital = 1	# Mobile
+
+1720.1.1 = { capital = 1 } # Biloxi
+
+

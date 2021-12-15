@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 2
+mercantilism = 10
+technology_group = western
+religion = agaric
+primary_culture = mungi
+capital = 568
+
+1444.11.11 = {
+	monarch = {
+		name = "Fleacius"
+		dynasty = "Mungus"
+		adm = 3
+		dip = 2
+		mil = 5
+		birth_date = 1419.11.11
+	}
+}

@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+mercantilism = 10
+technology_group = western
+religion = triaxism
+primary_culture = pyaltsev
+capital = 260
+
+1444.11.11 = {
+	monarch = {
+		name = "Artyom"
+		dynasty = "Kolchev"
+		adm = 4
+		dip = 2
+		mil = 5
+		birth_date = 1422.11.11
+	}
+}

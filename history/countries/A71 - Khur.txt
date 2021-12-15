@@ -1,0 +1,19 @@
+government = republic
+add_government_reform = merchants_reform
+government_rank = 1
+mercantilism = 10
+technology_group = western
+religion = turriyahism
+primary_culture = sieraldh
+capital = 980
+
+1444.11.11 = {
+	monarch = {
+		name = "Zareb"
+		dynasty = "Rehman"
+		adm = 6
+		dip = 5
+		mil = 0
+		birth_date = 1417.11.11
+	}
+}

@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 2
+mercantilism = 10
+technology_group = western
+religion = haymonutho
+primary_culture = siamlud
+capital = 882
+
+1444.11.11 = {
+	monarch = {
+		name = "Eluti"
+		dynasty = "Sunshum"
+		adm = 3
+		dip = 6
+		mil = 0
+		birth_date = 1418.11.11
+	}
+}

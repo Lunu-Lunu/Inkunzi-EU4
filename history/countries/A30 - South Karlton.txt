@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 2
+mercantilism = 10
+technology_group = western
+religion = turriyahism
+primary_culture = south_karlton
+capital = 405
+
+1444.11.11 = {
+	monarch = {
+		name = "Krabitus"
+		dynasty = "Crustalion"
+		adm = 2
+		dip = 4
+		mil = 3
+		birth_date = 1413.11.11
+	}
+}

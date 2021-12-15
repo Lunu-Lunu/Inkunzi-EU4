@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 2
+mercantilism = 10
+technology_group = western
+religion = valor
+primary_culture = ozarkhian
+add_accepted_culture = serob
+capital = 2629
+
+1444.11.11 = {
+	monarch = {
+		name = "Le Place"
+		dynasty = "of le Holdeur"
+		adm = 3
+		dip = 3
+		mil = 3
+		birth_date = 1424.11.11
+		regent = yes
+	}
+}

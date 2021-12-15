@@ -1,0 +1,6 @@
+granada_succession_war = {
+	potential = {
+		always = no
+	}
+}
+

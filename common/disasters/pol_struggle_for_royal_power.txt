@@ -1,0 +1,5 @@
+pol_struggle_for_royal_power_disaster = {
+	potential = {
+		always = no
+	}
+}

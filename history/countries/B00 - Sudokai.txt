@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+mercantilism = 10
+technology_group = western
+religion = mashia
+primary_culture = sudokai
+capital = 1776
+
+1444.11.11 = {
+	monarch = {
+		name = "Briti"
+		dynasty = "Sudokai"
+		adm = 6
+		dip = 5
+		mil = 0
+		birth_date = 1423.11.11
+	}
+}

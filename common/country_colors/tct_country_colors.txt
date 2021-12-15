@@ -1,0 +1,14 @@
+# Country unit colors.
+
+# example_tag_template = {
+    # color1= { 205 32 26  } #60% of character
+    # color2= { 255 255 255  } #30% of character
+    # color3= { 70 50 40  } #Up to 10% -> try map color here
+# }
+
+
+A00 = {
+    color1 = { 80 80 80 }
+    color2 = { 100 100 100 }
+    color3 = { 120 120 120 }
+}

@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+mercantilism = 10
+technology_group = western
+religion = haymonutho
+primary_culture = siamlud
+capital = 1000
+
+1444.11.11 = {
+	monarch = {
+		name = "Salakazary"
+		dynasty = "Zuvian"
+		adm = 3
+		dip = 2
+		mil = 6
+		birth_date = 1411.11.11
+	}
+}

@@ -1,0 +1,15 @@
+# Placeholder
+
+owner = A03
+controller = A03
+add_core = A03
+culture = karolon
+religion = celestialism
+hre = no
+base_tax = 5 
+base_production = 5
+base_manpower = 5
+trade_goods = unknown
+capital = "Neulull"
+is_city = yes
+discovered_by = western

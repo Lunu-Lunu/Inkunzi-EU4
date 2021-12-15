@@ -1,0 +1,19 @@
+government = tribal
+add_government_reform = steppe_horde
+government_rank = 2
+mercantilism = 10
+technology_group = western
+religion = celestialism
+primary_culture = alzhaic
+capital = 2038
+
+1444.11.11 = {
+	monarch = {
+		name = "Muhama"
+		dynasty = "Yansmoughil"
+		adm = 3
+		dip = 3
+		mil = 6
+		birth_date = 1394.11.11
+	}
+}

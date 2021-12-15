@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+mercantilism = 10
+technology_group = western
+religion = haymonutho
+primary_culture = siamlud
+capital = 894
+
+1444.11.11 = {
+	monarch = {
+		name = "place"
+		dynasty = "holder"
+		adm = 1
+		dip = 1
+		mil = 1
+		birth_date = 1424.11.11
+	}
+}

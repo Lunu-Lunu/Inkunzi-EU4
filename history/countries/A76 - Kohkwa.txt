@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+mercantilism = 10
+technology_group = western
+religion = haymonutho
+primary_culture = siamlud
+capital = 1030
+
+1444.11.11 = {
+	monarch = {
+		name = "Yawa"
+		dynasty = "Bail"
+		adm = 6
+		dip = 4
+		mil = 0
+		birth_date = 1424.11.11
+	}
+}

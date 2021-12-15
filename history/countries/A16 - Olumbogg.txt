@@ -1,0 +1,19 @@
+government = republic
+add_government_reform = merchants_reform
+government_rank = 2
+mercantilism = 10
+technology_group = western
+religion = mashia
+primary_culture = bogg
+capital = 241
+
+1444.11.11 = {
+	monarch = {
+		name = "Osmanster"
+		dynasty = "Onman"
+		adm = 4
+		dip = 1
+		mil = 6
+		birth_date = 1423.11.11
+	}
+}

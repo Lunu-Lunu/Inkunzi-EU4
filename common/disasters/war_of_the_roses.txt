@@ -1,0 +1,6 @@
+war_of_the_roses = {
+	potential = {
+		always = no
+	}
+}
+

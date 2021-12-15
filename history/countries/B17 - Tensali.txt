@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 2
+mercantilism = 10
+technology_group = western
+religion = valor
+primary_culture = tensali
+capital = 2450
+
+1444.11.11 = {
+	monarch = {
+		name = "Maria"
+		dynasty = "Anttila"
+		adm = 3
+		dip = 4
+		mil = 4
+		birth_date = 1398.11.11
+		female = yes
+	}
+}

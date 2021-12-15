@@ -1,0 +1,15 @@
+# Placeholder
+
+owner = B29
+controller = B29
+add_core = B29
+culture = serob
+religion = valor
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+trade_goods = unknown
+capital = "Placeholder"
+is_city = yes
+discovered_by = western

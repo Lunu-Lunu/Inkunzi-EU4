@@ -1,0 +1,6 @@
+empire_of_china_in_name = {
+	potential = {
+		always = no
+	}
+}
+

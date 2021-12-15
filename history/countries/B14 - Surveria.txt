@@ -1,0 +1,19 @@
+government = republic
+add_government_reform = oligarchy_reform
+government_rank = 2
+mercantilism = 10
+technology_group = western
+religion = old_ones
+primary_culture = outer_rekolian
+capital = 2343
+
+1444.11.11 = {
+	monarch = {
+		name = "Sorurius"
+		dynasty = "Suver"
+		adm = 6
+		dip = 4
+		mil = 1
+		birth_date = 1412.11.11
+	}
+}

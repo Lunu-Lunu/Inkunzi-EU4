@@ -1,0 +1,72 @@
+###########################################################
+# Events for Arslan
+#
+# written by Lunu (probably)
+###########################################################
+
+namespace = arslan
+
+country_event = {
+	id = arslan.1
+	title = arslan.1.t
+	desc = arslan.1.desc
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = B05
+	}
+	
+	mean_time_to_happen = {
+		days = 60
+	}
+	
+	option = {
+		name = arslan.1.a # Khotun Arslan's coup succeeds
+		add_stability = -2
+		change_religion = celestialism
+		random_owned_province = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 3
+				leader_dynasty = ROOT
+			}
+		}
+		define_general = {
+			name = "Khotun Arslan"
+			fire = 3
+			shock = 6
+			manuever = 4
+			siege = 4
+		}
+		define_ruler = {
+			name = "Khotun"
+			dynasty = "Arslan"
+			adm = 5
+			dip = 3
+			mil = 6
+			age = 29
+			claim = 50
+			male = yes
+			attach_leader = "Khotun Arslan"
+		}
+		hidden_effect = {
+			clear_scripted_personalities = yes
+			add_ruler_personality = zealot_personality
+			add_ruler_personality = conqueror_personality
+		}
+	}
+	option = {
+		name = arslan.1.b # Khotun Arslan's coup fails
+		add_stability = -1
+		random_owned_province = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 3
+				leader = "Khotun"
+				leader_dynasty = "Arslan"
+			}
+		}
+	}
+}

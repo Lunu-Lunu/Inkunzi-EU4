@@ -1,0 +1,5 @@
+french_wars_of_religion = {
+	potential = {
+		always = no
+	}
+}

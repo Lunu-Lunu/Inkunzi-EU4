@@ -1,0 +1,9 @@
+#Castilian Civil War
+#A mix of the civil wars with outside intervention and noble families siding against the crown between 1419 and 1479.
+
+castilian_civil_war = {
+	potential = {
+		always = no
+	}
+}
+

@@ -1,0 +1,83 @@
+#
+
+A28_ideas = { # Kido Ideas
+	start = {
+		defensiveness = 0.15
+		army_tradition_decay = -0.01
+	}
+	bonus = {
+		tolerance_heathen = 2
+	}
+
+	trigger = {
+		tag = A28
+	}
+	free = yes
+
+	A28_kido_reputation = {
+		diplomatic_reputation = 1
+	}
+	A28_to_break_a_wall = {
+		leader_siege = 1
+	}
+	A28_expansive_garrisons = {
+		garrison_size = 0.25
+	}
+	A28_kido_code = {
+		global_unrest = -2
+	}
+	A28_fortified_markets = {
+		global_own_trade_power = 0.15
+	}
+	A28_sihani_architecture = {
+		fort_maintenance_modifier = -0.1
+		build_cost = -0.05
+	}
+	A28_a_well_trained_militia = {
+		discipline = 0.05
+	}
+}
+
+B21_ideas = { # Melkhian Ideas
+	start = {
+		leader_naval_fire = 1
+		global_sailors_modifier = 0.2
+	}
+	bonus = {
+		navy_tradition = 1
+	}
+
+	trigger = {
+		tag = B21
+	}
+	free = yes
+
+	B21_rulers_rihtwestende = {
+		naval_forcelimit_modifier = 0.2
+	}
+	B21_new_world = {
+		colonists = 1
+		colonist_placement_chance = 0.05
+	}
+	B21_the_melian_wars = {
+		land_morale = 0.1
+		recover_army_morale_speed = 0.1
+	}
+	B21_wesrodian_iron_mines = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	B21_melkhian_absolutism = {
+		legitimacy = 0.5
+		devotion = 0.5
+		horde_unity = 0.5
+		republican_tradition = 0.15
+		yearly_absolutism = 0.5
+	}
+	B21_holm_company = {
+		merchants = 1
+	}
+	B21_rihtsol_academy = {
+		leader_naval_shock = 1
+		sailors_recovery_speed = 0.1
+	}
+}

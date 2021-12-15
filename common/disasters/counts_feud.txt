@@ -1,0 +1,6 @@
+counts_feud = {
+	potential = {
+		always = no
+	}
+}
+

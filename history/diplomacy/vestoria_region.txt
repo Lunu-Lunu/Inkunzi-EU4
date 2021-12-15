@@ -1,0 +1,25 @@
+#
+march = {
+	first = A05
+	second = A06
+	start_date = 1444.11.11
+	end_date = 1821.1.1
+}
+march = {
+	first = A07
+	second = A08
+	start_date = 1444.11.11
+	end_date = 1821.1.1
+}
+march = {
+	first = A19
+	second = A18
+	start_date = 1444.11.11
+	end_date = 1821.1.1
+}
+vassal = {
+	first = A19
+	second = A17
+	start_date = 1444.11.11
+	end_date = 1821.1.1
+}

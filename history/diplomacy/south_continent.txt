@@ -1,0 +1,13 @@
+#
+vassal = {
+	first = A70
+	second = A71
+	start_date = 1444.11.11
+	end_date = 1821.1.1
+}
+vassal = {
+	first = A67
+	second = A68
+	start_date = 1444.11.11
+	end_date = 1821.1.1
+}

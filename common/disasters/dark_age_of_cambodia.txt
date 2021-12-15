@@ -1,0 +1,6 @@
+dark_age_of_cambodia = {
+	potential = {
+		always = no
+	}
+}
+

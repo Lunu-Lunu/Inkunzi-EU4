@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 2
+mercantilism = 10
+technology_group = western
+religion = valor
+primary_culture = goblin
+capital = 2615
+
+1444.11.11 = {
+	monarch = {
+		name = "Virs"
+		dynasty = "Klubtieq"
+		adm = 3
+		dip = 4
+		mil = 4
+		birth_date = 1399.11.11
+	}
+}

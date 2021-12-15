@@ -1,0 +1,20 @@
+government = theocracy
+add_government_reform = leading_clergy_reform
+government_rank = 2
+mercantilism = 10
+technology_group = western
+religion = valor
+primary_culture = melian
+add_accepted_culture = obenic
+capital = 2580
+
+1444.11.11 = {
+	monarch = {
+		name = "Shaf'Mo"
+		dynasty = "Mon"
+		adm = 6
+		dip = 4
+		mil = 1
+		birth_date = 1401.11.11
+	}
+}

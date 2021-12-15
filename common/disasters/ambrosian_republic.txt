@@ -1,0 +1,5 @@
+ambrosian_republic_disaster = {
+	potential = {
+		always = no
+	}
+}

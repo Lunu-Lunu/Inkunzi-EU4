@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+mercantilism = 10
+technology_group = western
+religion = turriyahism
+primary_culture = bosem
+capital = 408
+
+1444.11.11 = {
+	monarch = {
+		name = "Placeheld"
+		dynasty = "yet Placeheld"
+		adm = 1
+		dip = 1
+		mil = 1
+		birth_date = 1424.11.11
+	}
+}

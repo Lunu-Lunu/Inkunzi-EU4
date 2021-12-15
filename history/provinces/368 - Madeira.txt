@@ -1,0 +1,15 @@
+# Placeholder
+
+owner = A25
+controller = A25
+add_core = A25
+culture = karen
+religion = onwinnen_whihcan
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+trade_goods = unknown
+capital = "Placeholder"
+is_city = yes
+discovered_by = western

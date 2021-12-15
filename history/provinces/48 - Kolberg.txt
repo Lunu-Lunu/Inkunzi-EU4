@@ -1,0 +1,17 @@
+# Placeholder
+
+owner = A03
+controller = A03
+add_core = A01
+add_core = A03
+culture = fortly
+religion = celestialism
+hre = no
+base_tax = 10
+base_production = 10
+base_manpower = 10
+trade_goods = unknown
+capital = "Fort Ass"
+fort_15th = yes
+is_city = yes
+discovered_by = western

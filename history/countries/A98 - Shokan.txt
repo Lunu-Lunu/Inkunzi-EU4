@@ -1,0 +1,19 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+mercantilism = 10
+technology_group = western
+religion = mashia
+primary_culture = ryoko
+capital = 1935
+
+1444.11.11 = {
+	monarch = {
+		name = "Shokana"
+		dynasty = "Saigo"
+		adm = 6
+		dip = 2
+		mil = 1
+		birth_date = 1424.11.11
+	}
+}

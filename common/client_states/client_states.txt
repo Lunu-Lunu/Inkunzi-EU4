@@ -1,0 +1,84 @@
+westphalia = 
+{
+	region = france_region
+	
+	name = {
+		name = "KINGDOM_OF_WESTPHALIA"
+		trigger = {
+			area = brittany_area
+			from = {
+				government = monarchy
+			}
+		}
+	}
+	
+	name = {
+		name = "REPUBLIC_OF_WESTPHALIA"
+		trigger = {
+			area = brittany_area
+			from = {
+				government = republic
+			}
+		}
+	}
+}
+
+two_sicilies = 
+{
+	region = france_region
+	
+	name = {
+		name = "KINGDOM_OF_NAPLES"
+		trigger = {
+			OR = {
+				area = brittany_area
+				area = brittany_area
+				area = brittany_area
+				area = brittany_area
+			}
+		
+		
+			from = {
+				government = monarchy
+			}
+		}
+	}
+	
+	name = {
+		name = "REPUBLICS_OF_NAPLES"
+		trigger = {
+			OR = {
+				area = brittany_area
+				area = brittany_area
+				area = brittany_area
+				area = brittany_area
+			}
+			from = {
+				government = republic
+			}
+		}
+	}
+}
+
+italy = 
+{
+	region = france_region
+	
+	name = {
+		name = "KINGDOM_OF_ITALY"
+		trigger = {
+			from = {
+				government = monarchy
+			}
+		}
+	}
+	
+	name = {
+		name = "SUBALPINE_REPUBLIC"
+		trigger = {
+			from = {
+				government = republic
+			}
+		}
+	}
+}

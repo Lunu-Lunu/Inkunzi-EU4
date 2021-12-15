@@ -1,0 +1,19 @@
+government = theocracy
+add_government_reform = monastic_order_reform
+government_rank = 1
+mercantilism = 10
+technology_group = western
+religion = mashia
+primary_culture = enclaver
+capital = 148
+
+1444.11.11 = {
+	monarch = {
+		name = "Placeholder"
+		dynasty = "the Placeheld"
+		adm = 1
+		dip = 1
+		mil = 1
+		birth_date = 1424.11.11
+	}
+}

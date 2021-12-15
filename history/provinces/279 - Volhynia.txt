@@ -1,0 +1,15 @@
+# Placeholder
+
+owner = A19
+controller = A19
+add_core = A19
+culture = upper_vestorian
+religion = medvedeni
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+trade_goods = unknown
+capital = "Placeholder"
+is_city = yes
+discovered_by = western

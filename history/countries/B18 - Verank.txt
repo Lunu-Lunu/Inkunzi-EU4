@@ -1,0 +1,20 @@
+government = tribal
+add_government_reform = steppe_horde
+government_rank = 1
+mercantilism = 10
+technology_group = western
+religion = valor
+primary_culture = wagren
+capital = 2454
+
+1444.11.11 = {
+	monarch = {
+		name = "Verank"
+		dynasty = "Verank"
+		adm = 4
+		dip = 2
+		mil = 5
+		birth_date = 1398.11.11
+		culture = outer_rekolian
+	}
+}

@@ -1,0 +1,19 @@
+government = theocracy
+add_government_reform = leading_clergy_reform
+government_rank = 2
+mercantilism = 10
+technology_group = western
+religion = medvedeni
+primary_culture = celtaidd
+capital = 122
+
+1444.11.11 = {
+	monarch = {
+		name = "Crispin"
+		dynasty = "Caratacos"
+		adm = 6
+		dip = 4
+		mil = 1
+		birth_date = 1419.11.11
+	}
+}

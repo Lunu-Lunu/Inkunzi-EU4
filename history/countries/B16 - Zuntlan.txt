@@ -1,0 +1,20 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 2
+mercantilism = 10
+technology_group = western
+religion = old_ones
+primary_culture = lizardman
+capital = 2419
+
+1444.11.11 = {
+	monarch = {
+		name = "Plascus"
+		dynasty = "Zuntlan"
+		adm = 4
+		dip = 2
+		mil = 5
+		birth_date = 1408.11.11
+		female = yes
+	}
+}
