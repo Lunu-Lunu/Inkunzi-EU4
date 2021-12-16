@@ -1,0 +1,67 @@
+#
+vassal = {
+	first = A89
+	second = A90
+	start_date = 1444.11.11
+	end_date = 1821.1.1
+}
+vassal = {
+	first = A89
+	second = A91
+	start_date = 1444.11.11
+	end_date = 1821.1.1
+}
+vassal = {
+	first = A89
+	second = A93
+	start_date = 1444.11.11
+	end_date = 1821.1.1
+}
+vassal = {
+	first = A89
+	second = A87
+	start_date = 1444.11.11
+	end_date = 1821.1.1
+}
+vassal = {
+	first = A89
+	second = A92
+	start_date = 1444.11.11
+	end_date = 1821.1.1
+}
+vassal = {
+	first = A89
+	second = A86
+	start_date = 1444.11.11
+	end_date = 1821.1.1
+}
+vassal = {
+	first = A89
+	second = A85
+	start_date = 1444.11.11
+	end_date = 1821.1.1
+}
+vassal = {
+	first = A89
+	second = A94
+	start_date = 1444.11.11
+	end_date = 1821.1.1
+}
+vassal = {
+	first = A89
+	second = A96
+	start_date = 1444.11.11
+	end_date = 1821.1.1
+}
+vassal = {
+	first = A89
+	second = A95
+	start_date = 1444.11.11
+	end_date = 1821.1.1
+}
+vassal = {
+	first = A89
+	second = A88
+	start_date = 1444.11.11
+	end_date = 1821.1.1
+}
