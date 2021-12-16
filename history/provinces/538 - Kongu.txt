@@ -1,10 +1,10 @@
 # Placeholder
 
-owner = A38
-controller = A38
-add_core = A38
-culture = tahviran
-religion = turriyahism
+#owner = B17
+#controller = B17
+#add_core = B17
+culture = no_culture
+religion = no_religion
 hre = no
 base_tax = 1 
 base_production = 1

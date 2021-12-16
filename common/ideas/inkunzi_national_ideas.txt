@@ -81,3 +81,45 @@ B21_ideas = { # Melkhian Ideas
 		sailors_recovery_speed = 0.1
 	}
 }
+
+A01_ideas = { # Fort Federation Ideas
+	start = {
+		defensiveness = 0.2
+		garrison_size = 0.33
+	}
+	bonus = {
+		stability_cost_modifier = -0.15
+	}
+
+	trigger = {
+		tag = A01
+	}
+	free = yes
+
+	A01_fort_designs = {
+		fort_maintenance_modifier = -0.33
+	}
+	A01_plentiful_garrisons = {
+		manpower_recovery_speed = 0.1
+		global_garrison_growth = 0.25
+	}
+	A01_fortly_innovation = {
+		innovativeness_gain = 0.5
+		technology_cost = -0.05
+	}
+	A01_the_ancient_forts = {
+		prestige_decay = -0.01
+		diplomatic_reputation = 1
+	}
+	A01_hostile_lands = {
+		hostile_attrition = 1
+		enemy_core_creation = 0.5
+	}
+	A01_fortly_tolerance = {
+		num_accepted_cultures = 1
+		no_religion_penalty = yes
+	}
+	A01_fortly_unity = {
+		all_estate_loyalty_equilibrium = 0.05
+	}
+}

@@ -1,10 +1,10 @@
 # Placeholder
 
-owner = A88
-controller = A88
-add_core = A88
-culture = kaihaku
-religion = mashia
+#owner = A88
+#controller = A88
+#add_core = A88
+culture = no_culture
+religion = no_religion
 hre = no
 base_tax = 1 
 base_production = 1

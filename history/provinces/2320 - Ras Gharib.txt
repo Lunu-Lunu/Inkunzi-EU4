@@ -1,10 +1,10 @@
 # Placeholder
 
-owner = B13
-controller = B13
-add_core = B13
-culture = wagren
-religion = valor
+#owner = B13
+#controller = B13
+#add_core = B13
+culture = no_culture
+religion = no_religion
 hre = no
 base_tax = 1 
 base_production = 1
