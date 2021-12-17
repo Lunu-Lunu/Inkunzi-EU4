@@ -123,3 +123,42 @@ A01_ideas = { # Fort Federation Ideas
 		all_estate_loyalty_equilibrium = 0.05
 	}
 }
+B45_ideas = { #Noguttvu Ideas
+	start = {
+		naval_forcelimit_modifier = 0.33
+		defensiveness = 0.20
+	}
+	bonus = {
+		build_time = -0.20
+	}
+
+	trigger = {
+		tag = B45
+	}
+	free = yes
+
+	B45_bastion_of_kings = {
+		legitimacy = 1
+	}
+	B45_noguttvu_buerocracy = {
+		core_creation = -0.15
+		governing_capacity_modifier = 0.1
+	}
+	B45_dwarven_exploration_spirit = {
+		may_explore = yes
+		range = 0.2
+	}
+	B45_mining_infrastructure = {
+		production_efficiency = 0.1
+	}
+	B45_high_taxes = {
+		global_tax_modifier = 0.40
+	}
+	B45_defender_of_tunnu = {
+		land_morale = 0.10
+	}
+	B45_dwarven_nationalism = {
+		culture_conversion_cost = -0.25
+		same_culture_advisor_cost = -0.25
+	}
+}
