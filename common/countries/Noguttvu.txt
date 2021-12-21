@@ -1,43 +1,71 @@
-#Country Name: Please see filename.
-
+#Country Name: Noguttvu
 graphical_culture = westerngfx
 
-color = { 48 72 73 }
+color = { 87  99  88 }
+
+revolutionary_colors = { 8 1 8 }
 
 historical_idea_groups = {
-	quality_ideas
-	economic_ideas
-	defensive_ideas
 	offensive_ideas
-	diplomatic_ideas
-	quantity_ideas
-	spy_ideas
+	exploration_ideas
 	religious_ideas
+	economic_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+	spy_ideas
+	trade_ideas	
 }
 
 historical_units = {
 	western_medieval_infantry
 	western_medieval_knights
 	western_men_at_arms
+	swiss_landsknechten
 	dutch_maurician
-	swedish_gallop
-	swedish_gustavian
-	swedish_caroline
-	swedish_arme_blanche
-	prussian_frederickian
+	austrian_tercio
+	austrian_grenzer
+	austrian_hussar
+	austrian_white_coat
 	prussian_uhlan
+	austrian_jaeger
 	mixed_order_infantry
 	open_order_cavalry
 	napoleonic_square
 	napoleonic_lancers
 }
 
-leader_names = {
-	Gigenshtain
+monarch_names = {
+	"Kresten #0" = 100
+	"Ludvig #2" = 80
+	"Eryk #2" = 20
+	"Johann  #0" = 20
+	"Karl #0" = 20
+	"Knud #0" = 20
+	"Thorsten #0" = 100
+	"Kasper #2" = 80
+	"Rolf #2" = 20
+	"Boye  #0" = 20
+	"Lennart #0" = 20
+	"Woden #0" = 20
 }
 
-monarch_names = {
-	"Gigenshtain #0" = 0
+leader_names = {
+	Nygaard
+	Daschatt
+	Vinther
+	Ipsen
+	Kofoed
+	Hviid
+	Kirkegaard
+}
 
-	"FEMALE Gigenshtain #0" = -1
+
+army_names = {
+	"$PROVINCE$'s Armee" 
+	"Armee von $PROVINCE$"
+}
+
+fleet_names = {
+	"Hauptflotte"
+	"Inselflotte"
 }
