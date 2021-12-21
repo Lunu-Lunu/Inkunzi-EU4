@@ -197,29 +197,18 @@ indian_sultanate_reform = {
 shogunate = {
 	icon = "shogunate"
 	allow_normal_conversion = yes
-	potential = {
-		NOT = { has_country_flag = formed_japan_flag }
-		OR = {
-			AND = {
-				capital_scope = {
-					province_id = 1
-				}
-				culture_group = japanese_g
-				NOT = { exists = JAP }
-			}
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = shogunate
-			}
+	potential = { 
+	    culture_group = iaznahoganto_group 
+        capital_scope = {
+					province_id = 1220
 		}
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 50
 	nation_designer_trigger = {
-		culture_group = japanese_g
-		technology_group = chinese
+		culture_group = iaznahoganto_group
+		technology_group = western
 		capital_scope = { region = france_region }
-		owns = 1020
 	}
 	legacy_equivalent = shogunate_legacy
 	fixed_rank = 2
@@ -243,7 +232,6 @@ daimyo = {
 	icon = "daimyo"
 	allow_normal_conversion = no
 	potential = {
-		NOT = { has_country_flag = formed_japan_flag }
 		overlord = { has_reform = shogunate }
 	}
 	replacement_on_independence_war = indep_daimyo
@@ -254,8 +242,8 @@ daimyo = {
 	nation_designer_cost = 0
 	lock_level_when_selected = yes
 	nation_designer_trigger = {
-		culture_group = japanese_g
-		technology_group = chinese
+		culture_group = iaznahoganto_group
+		technology_group = western
 		capital_scope = { region = france_region }
 	}
 	modifiers = {
@@ -271,27 +259,19 @@ indep_daimyo = {
 	icon = "samurai"
 	allow_normal_conversion = no
 	potential = {
-		NOT = { has_country_flag = formed_japan_flag }
-		OR = {
 			AND = {
 				OR = {
 					is_subject = no
 					overlord = { NOT = { has_reform = shogunate } }
 				}
-				capital_scope = { region = france_region }
-				culture_group = japanese_g
+				culture_group = iaznahoganto_group
 			}
-			AND = {
-				is_playing_custom_nation = yes
-				have_had_reform = indep_daimyo
-			}
-		}
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	nation_designer_trigger = {
-		culture_group = japanese_g
-		technology_group = chinese
+		culture_group = iaznahoganto_group
+		technology_group = western
 		capital_scope = { region = france_region }
 	}
 	legacy_equivalent = indep_daimyo_legacy
