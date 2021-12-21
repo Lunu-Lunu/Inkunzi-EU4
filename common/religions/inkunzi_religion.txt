@@ -537,11 +537,11 @@ dwarven_r_group = {
 
 		country = {
 			land_morale = 0.05
-			mil_tech_cost = -0.05
+			mil_tech_cost_modifier = -0.05
 		}
 		country_as_secondary = {
 			land_morale = 0.05
-			mil_tech_cost = -0.05
+			mil_tech_cost_modifier = -0.05
 		}
 
 		hre_religion = no
