@@ -1,0 +1,15 @@
+# Placeholder
+
+owner = B59
+controller = B59
+add_core = B59
+culture = kurio
+religion = tribal_faith
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+trade_goods = unknown
+capital = "Placeholder"
+is_city = yes
+discovered_by = mesoamerican

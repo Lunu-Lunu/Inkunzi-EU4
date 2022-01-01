@@ -1,0 +1,15 @@
+# Placeholder
+
+owner = B69
+controller = B69
+add_core = B69
+culture = cowpal
+religion = tribal_faith
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+trade_goods = unknown
+capital = "Placeholder"
+is_city = yes
+discovered_by = mesoamerican

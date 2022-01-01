@@ -1,0 +1,15 @@
+# Placeholder
+
+culture = shyman
+religion = sahyvarian
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+trade_goods = unknown
+capital = "Placeholder"
+is_city = no
+native_size = 1
+native_ferocity = 5
+native_hostileness = 0
+
+discovered_by = mesoamerican

@@ -560,6 +560,114 @@ dwarven_r_group = {
 		heretic = { HERETIC_GENERIC }
 	}
 }
+sahyvarian_r_group = {
+	defender_of_faith = no
+	can_form_personal_unions = no
+
+	sahyvarian = {
+		color = { 110 156 122 }
+		icon = 21
+
+		country = {
+			idea_cost = -0.05
+			tolerance_heathen = 2
+		}
+		country_as_secondary = {
+			idea_cost = -0.05
+			tolerance_heathen = 2
+		}
+
+		hre_religion = no
+
+		on_convert = {
+			change_religion = sahyvarian
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+		
+		}
+		
+		heretic = { HERETIC_GENERIC }
+	}
+}
+ratkin_r_group = {
+	defender_of_faith = yes
+	can_form_personal_unions = no
+
+	blightbringer = {
+		color = { 110 95 40 }
+		icon = 22
+
+		country = {
+			land_attrition = -0.2
+			land_forcelimit_modifier = 0.1
+			stability_cost_modifier = 0.25
+		}
+		country_as_secondary = {
+			land_attrition = -0.2
+			stability_cost_modifier = 0.1
+		}
+		province = {
+			max_attrition = 5
+			local_hostile_attrition = 2
+			local_hostile_movement_speed = -0.15
+		}
+
+		hre_religion = no
+
+		on_convert = {
+			change_religion = blightbringer
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+		
+		}
+		
+		heretic = { HERETIC_GENERIC }
+	}
+}
+new_world_tribal_r_group = {
+	defender_of_faith = no
+	can_form_personal_unions = no
+
+	tribal_faith = {
+		color = { 162 99 52 }
+		icon = 23
+
+		country = {
+			tolerance_heretic = 1
+			tolerance_heathen = 1
+		}
+		country_as_secondary = {
+			tolerance_heretic = 1
+			tolerance_heathen = 1
+		}
+		province = {
+			local_missionary_strength = 0.03
+		}
+
+		hre_religion = no
+
+		on_convert = {
+			change_religion = tribal_faith
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+		
+		}
+		
+		heretic = { HERETIC_GENERIC }
+	}
+}
 irreligious_group = {
 	defender_of_faith = no
 	can_form_personal_unions = no

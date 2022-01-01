@@ -1,0 +1,15 @@
+# Placeholder
+
+owner = B87
+controller = B87
+add_core = B87
+culture = river_konk
+religion = tribal_faith
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+trade_goods = unknown
+capital = "Placeholder"
+is_city = yes
+discovered_by = mesoamerican

@@ -1,0 +1,15 @@
+# Placeholder
+
+owner = B53
+controller = B53
+add_core = B53
+culture = skungic
+religion = sahyvarian
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+trade_goods = unknown
+capital = "Placeholder"
+is_city = yes
+discovered_by = mesoamerican

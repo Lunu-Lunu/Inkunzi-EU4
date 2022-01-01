@@ -1,0 +1,15 @@
+# Placeholder
+
+owner = B81
+controller = B81
+add_core = B81
+culture = karaxian
+religion = tribal_faith
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+trade_goods = unknown
+capital = "Placeholder"
+is_city = yes
+discovered_by = mesoamerican

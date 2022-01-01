@@ -1,7 +1,7 @@
 ###########################################################
 # Events for Arslan
 #
-# written by Lunu (probably)
+# written by Lunu (probably not)
 ###########################################################
 
 namespace = arslan
@@ -15,7 +15,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = B05
+		tag = B04
 	}
 	
 	mean_time_to_happen = {
@@ -30,7 +30,7 @@ country_event = {
 			spawn_rebels = {
 				type = pretender_rebels
 				size = 3
-				leader_dynasty = ROOT
+				leader_dynasty = "Goshtabbi"
 			}
 		}
 		define_general = {

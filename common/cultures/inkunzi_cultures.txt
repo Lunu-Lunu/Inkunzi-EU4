@@ -1748,3 +1748,375 @@ dwarven_group = {
 		"Placeholder"
 	}
 }
+ervaric_group = {
+	lyharan = {
+		primary = B47
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	yeulan = {
+		primary = B48
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	sabhari = {
+		primary = B49
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	shyman = {
+		primary = B50
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	harlan = {
+		primary = B51
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+ratkin_group = {
+	roden = {
+		primary = B52
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	skungic = {
+		primary = B53
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+goatman_group = {
+	kurio = {
+		primary = B57
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+seesonzero_group = {
+	cowpal = {
+		primary = B63
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	scotar = {
+		primary = B62
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+hesh_group = {
+	vorasian = {
+		primary = B77
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	antaxian = {
+		primary = B78
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	tavasian = {
+		primary = B79
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	yaxatian = {
+		primary = B80
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	karaxian = {
+		primary = B81
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	hiveless = {
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+snakeman_group = {
+	sarza = {
+		primary = B82
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+ape_group = { # these cultures will receive new names when i know what the fuck to name them
+	river_konk = {
+		primary = B87
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	peninsula_konk = {
+		primary = B87
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	jungle_konk = {
+		primary = B87
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	isle_konk = {
+		primary = B87
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}
+ent_group = {
+	ent = {
+		primary = B92
+
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	male_names = {
+		Placeholder
+	}
+	female_names = {
+		Placeholder
+	}
+	dynasty_names = {
+		"Placeholder"
+	}
+}

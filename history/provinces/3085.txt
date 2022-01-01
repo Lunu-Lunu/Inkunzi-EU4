@@ -1,0 +1,15 @@
+# Placeholder
+
+owner = B66
+controller = B66
+add_core = B66
+culture = scotar
+religion = tribal_faith
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+trade_goods = unknown
+capital = "Placeholder"
+is_city = yes
+discovered_by = mesoamerican

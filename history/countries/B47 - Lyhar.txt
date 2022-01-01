@@ -1,0 +1,19 @@
+government = tribal
+add_government_reform = tribal_despotism
+government_rank = 1
+mercantilism = 10
+technology_group = mesoamerican
+religion = sahyvarian
+primary_culture = lyharan
+capital = 2637
+
+1444.11.11 = {
+	monarch = {
+		name = "Bhartod"
+		dynasty = "Lyharis"
+		adm = 6
+		dip = 5
+		mil = 1
+		birth_date = 1406.11.11
+	}
+}
