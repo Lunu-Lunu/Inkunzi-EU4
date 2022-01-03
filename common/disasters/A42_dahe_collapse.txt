@@ -55,7 +55,7 @@ A42_dahe_collapse = {
 			100 = dahe_collapse.9
 			25 = dahe_collapse.10
 			100 = dahe_collapse.11
-			100 = dahe_collapse.12
+			50 = dahe_collapse.12
 			1000 = dahe_collapse.13
 		}
 	}
