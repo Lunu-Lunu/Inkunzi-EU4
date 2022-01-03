@@ -1,0 +1,447 @@
+###########################################################
+# Events for Arslan
+#
+# written by Lunu (probably not)
+###########################################################
+
+namespace = dahe_collapse
+
+country_event = {
+	id = dahe_collapse.1
+	title = dahe_collapse.1.t
+	desc = dahe_collapse.1.desc
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { # We can fix this... right?
+		name = dahe_collapse.1.a
+		add_stability = -3
+		add_republican_tradition = -50
+		add_treasury = -1000
+		hidden_effect = {
+			country_event = { id = dahe_collapse.3 days = 14 }
+			every_subject = {
+				add_liberty_desire = 50
+			}
+		}
+	}
+}
+
+country_event = {
+	id = dahe_collapse.3
+	title = dahe_collapse.3.t
+	desc = dahe_collapse.3.desc
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = { # This... isn't good.
+		name = dahe_collapse.3.a
+		every_owned_province = {
+			add_nationalism = 10
+			add_local_autonomy = 50
+		}
+		hidden_effect = {
+			every_subject = {
+				add_liberty_desire = 50
+			}
+		}
+	}
+}
+
+country_event = { # Yaroli Secession
+	id = dahe_collapse.4
+	title = dahe_collapse.4.t
+	desc = dahe_collapse.4.desc
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = great_xuaze_revolt
+	}
+
+	immediate = {
+		release = A56
+		A56 = { grant_independence = yes }
+		release = A57
+		A57 = { grant_independence = yes }
+		release = A58
+		A58 = { grant_independence = yes }
+		release = A59
+		A59 = { grant_independence = yes }
+		release = A60
+		A60 = { grant_independence = yes }
+		release = A61
+		A61 = { grant_independence = yes }
+		release = A62
+		A62 = { grant_independence = yes }
+		release = A63
+		A63 = { grant_independence = yes }
+		release = A64
+		A64 = { grant_independence = yes }
+	}
+	
+	option = { # We can't do anything about this.
+		name = dahe_collapse.4.a
+		add_war_exhaustion = 2
+		hidden_effect = {
+			set_global_flag = dahe_sternhell_secession
+			every_subject = {
+				add_liberty_desire = 50
+			}
+		}
+	}
+}
+
+country_event = { # Great Xuaze Revolt
+	id = dahe_collapse.5
+	title = dahe_collapse.5.t
+	desc = dahe_collapse.5.desc
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		#
+	}
+
+	immediate = {
+		release = A43
+		A43 = { grant_independence = yes }
+		every_owned_province = {
+			if = {
+				limit = {
+					is_core = A43
+				}
+				cede_province = A43
+			}
+		}
+		set_global_flag = great_xuaze_revolt
+	}
+	
+	option = { # We have to stop this!
+		name = dahe_collapse.5.a
+		A43 = {
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_independence_war
+			}
+			hidden_effect = {
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.75
+						cavalry = 0.25
+					}
+				}
+				random_owned_province = {
+					limit = {
+						has_port = yes
+					}
+					build_to_forcelimit = {
+						heavy_ship = 0.25
+						light_ship = 0.4
+						transport = 0.35
+					}
+				}
+				create_general = { tradition = 100 }
+				create_admiral = { tradition = 100 }
+			}
+			add_treasury = 300
+			add_manpower = 25
+			add_stability = 1
+		}
+		hidden_effect = {
+			A66 = { country_event = { id = dahe_collapse.6 days = 60 random = 90} }
+			country_event = { id = dahe_collapse.7 days = 180 random = 180 }
+			every_subject = {
+				add_liberty_desire = 50
+			}
+		}
+	}
+}
+
+country_event = { # Great Xuaze Revolt (Karpunia)
+	id = dahe_collapse.6
+	title = dahe_collapse.6.t
+	desc = dahe_collapse.6.desc
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		A43 = { grant_independence = yes }
+		every_owned_province = {
+			if = {
+				limit = {
+					is_core = A43
+				}
+				cede_province = A43
+			}
+		}
+	}
+	
+	option = { # We have to stop this!
+		name = dahe_collapse.6.a
+		A43 = {
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_independence_war
+			}
+			add_manpower = 25
+			add_treasury = 300
+			hidden_effect = {
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.75
+						cavalry = 0.25
+					}
+				}
+				random_owned_province = {
+					limit = {
+						has_port = yes
+					}
+					build_to_forcelimit = {
+						heavy_ship = 0.25
+						light_ship = 0.4
+						transport = 0.35
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = { # Southern Secession
+	id = dahe_collapse.7
+	title = dahe_collapse.7.t
+	desc = dahe_collapse.7.desc
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		release = A52
+		A52 = { grant_independence = yes }
+		release = A53
+		A53 = { grant_independence = yes }
+		release = A54
+		A54 = { grant_independence = yes }
+		release = A55
+		A55 = { grant_independence = yes }
+	}
+	
+	option = { # We have to let the Xuaze go...
+		name = dahe_collapse.7.a
+		white_peace = A43
+		add_war_exhaustion = 5
+		hidden_effect = {
+			set_global_flag = dahe_southern_secession
+			every_subject = {
+				add_liberty_desire = 50
+			}
+		}
+	}
+}
+
+country_event = { # Central Secession
+	id = dahe_collapse.8
+	title = dahe_collapse.8.t
+	desc = dahe_collapse.8.desc
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = dahe_southern_secession
+	}
+
+	immediate = {
+		release = A48
+		A48 = { grant_independence = yes }
+		release = A50
+		A50 = { grant_independence = yes }
+		release = A51
+		A51 = { grant_independence = yes }
+	}
+	
+	option = { # This situation is untenable!
+		name = dahe_collapse.8.a
+		add_war_exhaustion = 5
+		hidden_effect = {
+			set_global_flag = dahe_central_secession
+			every_subject = {
+				add_liberty_desire = 50
+			}
+		}
+	}
+}
+
+country_event = { # Helghian Secession
+	id = dahe_collapse.9
+	title = dahe_collapse.9.t
+	desc = dahe_collapse.9.desc
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = great_xuaze_revolt
+	}
+
+	immediate = {
+		release = A65
+		A65 = { grant_independence = yes }
+	}
+	
+	option = { # This situation is untenable!
+		name = dahe_collapse.9.a
+		add_war_exhaustion = 2
+		hidden_effect = {
+			set_global_flag = dahe_helghast_secession
+			every_subject = {
+				add_liberty_desire = 50
+			}
+		}
+	}
+}
+
+country_event = { # Leader Assassinated
+	id = dahe_collapse.10
+	title = dahe_collapse.10.t
+	desc = dahe_collapse.10.desc
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		#
+	}
+
+	immediate = {
+		#
+	}
+	
+	option = { # Well, that's no good.
+		name = dahe_collapse.10.a
+		kill_ruler = yes
+		add_stability = -1
+		hidden_effect = {
+			every_subject = {
+				add_liberty_desire = 50
+			}
+		}
+	}
+}
+
+province_event = { # Riots in $PROVINCE$
+	id = dahe_collapse.11
+	title = dahe_collapse.11.t
+	desc = dahe_collapse.11.desc
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		#
+	}
+
+	immediate = {
+		#
+	}
+	
+	option = { # Well, that's no good.
+		name = dahe_collapse.11.a
+		add_devastation = 25
+		add_unrest = 5
+		hidden_effect = {
+			owner = {
+				every_subject = {
+					add_liberty_desire = 50
+				}
+			}
+		}
+	}
+}
+
+country_event = { # DERANGED EMBEZZLEMENT??
+	id = dahe_collapse.12
+	title = dahe_collapse.12.t
+	desc = dahe_collapse.12.desc
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	is_triggered_only = yes
+
+	trigger = {
+		#
+	}
+
+	immediate = {
+		#
+	}
+	
+	option = { # Damn! These officials CORRUPT!
+		name = dahe_collapse.12.a
+		add_treasury = -300
+		add_corruption = 2.5
+		hidden_effect = {
+			every_subject = {
+				add_liberty_desire = 50
+			}
+		}
+	}
+}
+
+country_event = { # The End of the Dahe
+	id = dahe_collapse.13
+	title = dahe_collapse.13.t
+	desc = dahe_collapse.13.desc
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = great_xuaze_revolt
+		has_global_flag = dahe_southern_secession
+		has_global_flag = dahe_central_secession
+		has_global_flag = dahe_sternhell_secession
+		has_global_flag = dahe_helghast_secession
+	}
+
+	immediate = {
+		release = A44
+		A44 = { grant_independence = yes }
+		release = A45
+		A45 = { grant_independence = yes }
+		release = A47
+		A47 = { grant_independence = yes }
+		release = A49
+		A49 = { grant_independence = yes }
+	}
+	
+	option = { # It is now only a memory...
+		name = dahe_collapse.13.a
+		release = A46
+		A46 = { grant_independence = yes }
+		switch_tag = A46
+		hidden_effect = {
+			set_global_flag = dahe_collapsed
+		}
+	}
+}

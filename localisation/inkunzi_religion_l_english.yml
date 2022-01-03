@@ -165,6 +165,13 @@
  sahyvarian_rebels_name:0 "$RELIGION$ Zealots"
  sahyvarian_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  sahyvarian_rebels_army:0 "$RELIGION$ Army"
+ lyharis:0 "Lyharis"
+ eulorna:0 "Eulorna"
+ bharsan:0 "Bharsan"
+ gegishym:0 "Gegishym"
+ harlorn:0 "Harlorn"
+ the_winged_one:0 "The Winged One"
+ the_blightbringer:0 "The Blightbringer"
 
  ratkin_r_group:0 "Ratkin Faith"
  blightbringer:0 "Blightbringer"

@@ -577,6 +577,8 @@ sahyvarian_r_group = {
 			tolerance_heathen = 2
 		}
 
+		personal_deity = yes
+
 		hre_religion = no
 
 		on_convert = {

@@ -1,0 +1,62 @@
+A42_dahe_collapse = {
+	potential = {
+		tag = A42
+		NOT = {
+			has_global_flag = dahe_collapsed
+		}
+	}
+	
+	
+	can_start = {
+		always = yes
+	}
+	
+	can_stop = {
+		always = no
+	}
+	
+	progress = {
+		modifier = {
+			factor = 100
+			always = yes
+		}
+	}
+	
+	can_end = {
+		always = no
+	}
+	
+
+	modifier = {
+		inflation_reduction = -0.5
+		interest = 5
+		global_tax_modifier = -0.75
+		global_trade_goods_size_modifier = -0.5
+		yearly_corruption = 0.5
+		global_missionary_strength = -0.03
+		global_manpower_modifier = -0.5
+		stability_cost_modifier = 1
+		global_prov_trade_power_modifier = -0.75
+	}	
+	
+	
+	on_start = dahe_collapse.1
+	on_end = dahe_collapse.2
+	
+	on_monthly = {
+		events = {
+	
+		}
+		random_events = { 
+			500 = 0
+			100 = dahe_collapse.4
+			100 = dahe_collapse.5
+			100 = dahe_collapse.8
+			100 = dahe_collapse.9
+			25 = dahe_collapse.10
+			100 = dahe_collapse.11
+			100 = dahe_collapse.12
+			1000 = dahe_collapse.13
+		}
+	}
+}

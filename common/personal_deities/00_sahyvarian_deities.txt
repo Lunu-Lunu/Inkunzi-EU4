@@ -1,0 +1,109 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new dieties, make sure they are uniquely named.
+
+lyharis = {
+	sprite = 1
+	allow = {
+		religion = sahyvarian
+	}
+	global_unrest = -2
+	stability_cost_modifier = -0.1
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 100
+			tag = B47
+		}
+	}
+}
+eulorna = {
+	sprite = 2
+	allow = {
+		religion = sahyvarian
+	}
+	naval_morale = 0.15
+	navy_tradition = 1
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 100
+			tag = B48
+		}
+	}
+}
+bharsan = {
+	sprite = 3
+	allow = {
+		religion = sahyvarian
+	}
+	build_cost = -0.1
+	technology_cost = -0.05
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 100
+			tag = B49
+		}
+	}
+}
+gegishym = {
+	sprite = 4
+	allow = {
+		religion = sahyvarian
+	}
+	production_efficiency = 0.1
+	development_cost = -0.05
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 100
+			tag = B50
+		}
+	}
+}
+harlorn = {
+	sprite = 5
+	allow = {
+		religion = sahyvarian
+	}
+	spy_offence = 0.25
+	monthly_reform_progress_modifier = 0.1
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 100
+			tag = B51
+		}
+	}
+}
+the_winged_one = {
+	sprite = 6
+	allow = {
+		religion = sahyvarian
+		has_global_flag = sahyvarian_unlock_winged_one
+	}
+	ae_impact = -0.1
+	idea_cost = -0.05
+	ai_will_do = {
+		factor = 1
+	}
+}
+the_blightbringer = {
+	sprite = 7
+	allow = {
+		religion = sahyvarian
+		OR = {
+			culture_group = ratkin_group
+			has_global_flag = sahyvarian_unlock_blightbringer
+		}
+	}
+	defensiveness = 0.15
+	hostile_attrition = 1
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 100
+			tag = B51
+		}
+	}
+}
