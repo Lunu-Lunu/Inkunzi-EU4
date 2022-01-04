@@ -1,4 +1,4 @@
-# Placeholder
+# Sotradia
 
 owner = A84
 controller = A84
@@ -10,6 +10,6 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 trade_goods = unknown
-capital = "Placeholder"
+capital = "Sotradia"
 is_city = yes
 discovered_by = western
