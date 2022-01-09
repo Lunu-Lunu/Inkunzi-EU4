@@ -2,6 +2,7 @@
 
 # country
 on_startup = {
+	initialize_race_estates = yes
 	if = {
 		limit = {
 			is_emperor_of_china = yes
@@ -602,8 +603,6 @@ on_monarch_death = {
 	}
 	burgundian_inheritance_start_effect = yes
 	ladislaus_postumus_king_died_effect = yes
-	events = {
-	}
 }
 
 # country

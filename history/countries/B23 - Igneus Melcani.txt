@@ -7,6 +7,8 @@ religion = valor
 primary_culture = melian
 add_accepted_culture = obenic
 capital = 2580
+set_country_flag = primary_golem_nation
+set_country_flag = humans_accepted
 
 1444.11.11 = {
 	monarch = {

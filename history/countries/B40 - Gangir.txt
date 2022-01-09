@@ -7,6 +7,8 @@ religion = haymonutho
 primary_culture = gneta
 add_accepted_culture = north_karlton
 capital = 2637
+set_country_flag = primary_gneta_nation
+set_country_flag = crabs_accepted
 
 1444.11.11 = {
 	monarch = {

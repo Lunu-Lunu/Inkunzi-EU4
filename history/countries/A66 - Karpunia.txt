@@ -6,6 +6,7 @@ technology_group = western
 religion = rationalist_celestialism
 primary_culture = porian
 capital = 802
+set_country_flag = primary_human_nation
 
 1444.11.11 = {
 	monarch = {

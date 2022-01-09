@@ -7,6 +7,7 @@ religion = valor
 primary_culture = ozarkhian
 add_accepted_culture = serob
 capital = 2629
+set_country_flag = primary_human_nation
 
 1444.11.11 = {
 	monarch = {

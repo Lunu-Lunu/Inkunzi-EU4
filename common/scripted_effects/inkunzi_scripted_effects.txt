@@ -1,0 +1,200 @@
+initialize_race_estates = {
+	country_event = { id = workaround.1 }
+}
+race_estates_promote_recalc = {
+	clr_country_flag = humans_accepted
+	clr_country_flag = ourks_accepted
+	clr_country_flag = nimbus_accepted
+	clr_country_flag = crabs_accepted
+	clr_country_flag = frogs_accepted
+	clr_country_flag = rats_accepted
+	clr_country_flag = goats_accepted
+	clr_country_flag = hesh_accepted
+	clr_country_flag = snakes_accepted
+	clr_country_flag = ents_accepted
+	clr_country_flag = dwarves_accepted
+	clr_country_flag = centaurs_accepted
+	clr_country_flag = draconic_accepted
+	clr_country_flag = mushrooms_accepted
+	clr_country_flag = golems_accepted
+	clr_country_flag = elves_accepted
+	clr_country_flag = sia_si_accepted
+	clr_country_flag = gneta_accepted
+	clr_country_flag = furries_accepted
+	clr_country_flag = lizards_accepted
+	clr_country_flag = goblins_accepted
+	clr_country_flag = moths_accepted
+	if = {
+		limit = {
+			has_human_accepted = yes
+		}
+		set_country_flag = humans_accepted
+	}
+	if = {
+		limit = {
+			OR = {
+				accepted_culture = ourkani
+				accepted_culture = paak_ourk
+				accepted_culture = grokish
+			}
+		}
+		set_country_flag = ourks_accepted
+	}
+	if = {
+		limit = {
+			accepted_culture = nimbus
+		}
+		set_country_flag = nimbus_accepted
+	}
+	if = {
+		limit = {
+			OR = {
+				accepted_culture = north_karlton
+				accepted_culture = south_karlton
+				accepted_culture = karolon
+			}
+		}
+		set_country_flag = crabs_accepted
+	}
+	if = {
+		limit = {
+			OR = {
+				accepted_culture = harlan
+				accepted_culture = lyharan
+				accepted_culture = yeulan
+				accepted_culture = sabhari
+				accepted_culture = shyman
+			}
+		}
+		set_country_flag = frogs_accepted
+	}
+	if = {
+		limit = {
+			OR = {
+				accepted_culture = skungic
+				accepted_culture = roden
+			}
+		}
+		set_country_flag = rats_accepted
+	}
+	if = {
+		limit = {
+			accepted_culture = kurio
+		}
+		set_country_flag = goats_accepted
+	}
+	if = {
+		limit = {
+			OR = {
+				accepted_culture = antaxian
+				accepted_culture = vorasian
+				accepted_culture = karaxian
+				accepted_culture = yaxatian
+				accepted_culture = tavasian
+				accepted_culture = hiveless
+			}
+		}
+		set_country_flag = hesh_accepted
+	}
+	if = {
+		limit = {
+			accepted_culture = sarza
+		}
+		set_country_flag = snakes_accepted
+	}
+	if = {
+		limit = {	
+			accepted_culture = ent
+		}
+		set_country_flag = ents_accepted
+	}
+	if = {
+		limit = {
+			accepted_culture = tunnu
+		}
+		set_country_flag = dwarves_accepted
+	}
+	if = {
+		limit = {
+			OR = {
+				accepted_culture = outer_rekolian
+				accepted_culture = inner_rekolian
+				accepted_culture = azvendian
+			}
+		}
+		set_country_flag = centaurs_accepted
+	}
+	if = {
+		limit = {
+			accepted_culture = urakkan
+		}
+		set_country_flag = draconic_accepted
+	}
+	if = {
+		limit = {
+			OR = {
+				accepted_culture = mungi
+				accepted_culture = spolic
+				accepted_culture = rannikean
+			}
+		}
+		set_country_flag = mushrooms_accepted
+	}
+	if = {
+		limit = {
+			OR = {
+				accepted_culture = melian
+				accepted_culture = ulian
+			}
+		}
+		set_country_flag = golems_accepted
+	}
+	if = {
+		limit = {
+			accepted_culture = aeruthian
+		}
+		set_country_flag = elves_accepted
+	}
+	if = {
+		limit = {
+			accepted_culture = siamlud
+		}
+		set_country_flag = sia_si_accepted
+	}
+	if = {
+		limit = {
+			accepted_culture = gneta
+		}
+		set_country_flag = gneta_accepted
+	}
+	if = {
+		limit = {
+			accepted_culture = paleremore
+		}
+		set_country_flag = furries_accepted
+	}
+	if = {
+		limit = {
+			OR = {
+				accepted_culture = lizardman
+				accepted_culture = thixi
+			}
+		}
+		set_country_flag = lizards_accepted
+	}
+	if = {
+		limit = {
+			OR = {
+				accepted_culture = goblin
+				accepted_culture = lower_goblin
+			}
+		}
+		set_country_flag = goblins_accepted
+	}
+	if = {
+		limit = {
+			accepted_culture = miarii
+		}
+		set_country_flag = moths_accepted
+	}
+}

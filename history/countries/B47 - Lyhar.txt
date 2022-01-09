@@ -5,7 +5,8 @@ mercantilism = 10
 technology_group = mesoamerican
 religion = sahyvarian
 primary_culture = lyharan
-capital = 2637
+capital = 2815
+set_country_flag = primary_frog_nation
 
 1444.11.11 = {
 	monarch = {

@@ -6,6 +6,7 @@ technology_group = western
 religion = valor
 primary_culture = melian
 capital = 2593
+set_country_flag = primary_golem_nation
 
 1444.11.11 = {
 	monarch = {

@@ -3,7 +3,6 @@
 # Uses all 'modifiers' possible thats exported as a Modifier.
 celestialism_group = {
 	defender_of_faith = yes
-	can_form_personal_unions = no
 
 	celestialism = {
 		color = { 156 25 174 }
@@ -17,8 +16,6 @@ celestialism_group = {
 			heir_chance = 0.5
 			legitimacy = 1
 		}
-
-		hre_religion = no
 
 		on_convert = {
 			change_religion = celestialism
@@ -46,8 +43,6 @@ celestialism_group = {
 			tolerance_own = 1
 		}
 
-		hre_religion = no
-
 		on_convert = {
 			change_religion = sunfucian
 			add_prestige = -100
@@ -74,8 +69,6 @@ celestialism_group = {
 			tolerance_heathen = 1
 		}
 
-		hre_religion = no
-
 		on_convert = {
 			change_religion = rationalist_celestialism
 			add_prestige = -100
@@ -93,7 +86,6 @@ celestialism_group = {
 }
 old_ones_group = {
 	defender_of_faith = yes
-	can_form_personal_unions = no
 
 	old_ones = {
 		color = { 55 158 53 }
@@ -107,8 +99,6 @@ old_ones_group = {
 			reduced_liberty_desire = 10
 			diplomatic_upkeep = 1
 		}
-
-		hre_religion = no
 
 		on_convert = {
 			change_religion = old_ones
@@ -126,7 +116,6 @@ old_ones_group = {
 }
 medvedeni_group = {
 	defender_of_faith = yes
-	can_form_personal_unions = no
 
 	medvedeni = {
 		color = { 199 36 74 }
@@ -140,8 +129,6 @@ medvedeni_group = {
 			land_morale = 0.1
 			defensiveness = 0.1
 		}
-
-		hre_religion = no
 
 		on_convert = {
 			change_religion = medvedeni
@@ -169,8 +156,6 @@ medvedeni_group = {
 			siege_ability = 0.1
 		}
 
-		hre_religion = no
-
 		on_convert = {
 			change_religion = ohenomedvedeni
 			add_prestige = -100
@@ -187,7 +172,6 @@ medvedeni_group = {
 }
 triaxism_group = {
 	defender_of_faith = yes
-	can_form_personal_unions = no
 
 	triaxism = {
 		color = { 86 130 148 }
@@ -201,8 +185,6 @@ triaxism_group = {
 			defensiveness = 0.15
 			hostile_attrition = 1
 		}
-
-		hre_religion = no
 
 		on_convert = {
 			change_religion = triaxism
@@ -220,7 +202,6 @@ triaxism_group = {
 }
 bytosism = {
 	defender_of_faith = yes
-	can_form_personal_unions = no
 
 	mashia = {
 		color = { 100 0 0 }
@@ -234,8 +215,6 @@ bytosism = {
 			global_unrest = -1
 			stability_cost_modifier = -0.1
 		}
-
-		hre_religion = no
 
 		on_convert = {
 			change_religion = mashia
@@ -263,8 +242,6 @@ bytosism = {
 			stability_cost_modifier = -0.1
 		}
 
-		hre_religion = no
-
 		on_convert = {
 			change_religion = orthodox_bytosism
 			add_prestige = -100
@@ -290,8 +267,6 @@ bytosism = {
 			diplomatic_upkeep = 1
 			stability_cost_modifier = -0.1
 		}
-
-		hre_religion = no
 
 		on_convert = {
 			change_religion = turriyahism
@@ -319,8 +294,6 @@ bytosism = {
 			stability_cost_modifier = -0.1
 		}
 
-		hre_religion = no
-
 		on_convert = {
 			change_religion = medilyte
 			add_prestige = -100
@@ -337,7 +310,6 @@ bytosism = {
 }
 agaric_group = {
 	defender_of_faith = yes
-	can_form_personal_unions = no
 
 	agaric = {
 		color = { 201 215 77 }
@@ -351,8 +323,6 @@ agaric_group = {
 			harsh_treatment_cost = -0.25
 			global_unrest = -2
 		}
-
-		hre_religion = no
 
 		on_convert = {
 			change_religion = agaric
@@ -370,7 +340,6 @@ agaric_group = {
 }
 whihcan = {
 	defender_of_faith = yes
-	can_form_personal_unions = no
 
 	whihcan = {
 		color = { 157 194 201 }
@@ -384,8 +353,6 @@ whihcan = {
 			global_tax_modifier = 0.1
 			build_cost = -0.1
 		}
-
-		hre_religion = no
 
 		on_convert = {
 			change_religion = whihcan
@@ -414,8 +381,6 @@ whihcan = {
 			infantry_cost = -0.1
 		}
 
-		hre_religion = no
-
 		on_convert = {
 			change_religion = onwinnen_whihcan
 			add_prestige = -100
@@ -432,7 +397,6 @@ whihcan = {
 }
 valor_group = {
 	defender_of_faith = yes
-	can_form_personal_unions = no
 
 	valor = {
 		color = { 242 196 36 }
@@ -446,8 +410,6 @@ valor_group = {
 			global_unrest = -2
 			improve_relation_modifier = 0.15
 		}
-
-		hre_religion = no
 
 		on_convert = {
 			change_religion = valor
@@ -478,8 +440,6 @@ valor_group = {
 			land_forcelimit_modifier = 0.05
 		}
 
-		hre_religion = no
-
 		on_convert = {
 			change_religion = dark_valor
 			add_prestige = -100
@@ -496,7 +456,6 @@ valor_group = {
 }
 haymonutho_group = {
 	defender_of_faith = yes
-	can_form_personal_unions = no
 
 	haymonutho = {
 		color = { 200 45 19 }
@@ -510,8 +469,6 @@ haymonutho_group = {
 			global_autonomy = -0.05
 			min_autonomy_in_territories = -0.1
 		}
-
-		hre_religion = no
 
 		on_convert = {
 			change_religion = haymonutho
@@ -529,7 +486,6 @@ haymonutho_group = {
 }
 dwarven_r_group = {
 	defender_of_faith = yes
-	can_form_personal_unions = no
 
 	mountain_folk = {
 		color = { 93 197 235 }
@@ -543,8 +499,6 @@ dwarven_r_group = {
 			land_morale = 0.05
 			mil_tech_cost_modifier = -0.05
 		}
-
-		hre_religion = no
 
 		on_convert = {
 			change_religion = mountain_folk
@@ -562,7 +516,6 @@ dwarven_r_group = {
 }
 sahyvarian_r_group = {
 	defender_of_faith = no
-	can_form_personal_unions = no
 
 	sahyvarian = {
 		color = { 110 156 122 }
@@ -578,8 +531,6 @@ sahyvarian_r_group = {
 		}
 
 		personal_deity = yes
-
-		hre_religion = no
 
 		on_convert = {
 			change_religion = sahyvarian
@@ -597,7 +548,6 @@ sahyvarian_r_group = {
 }
 ratkin_r_group = {
 	defender_of_faith = yes
-	can_form_personal_unions = no
 
 	blightbringer = {
 		color = { 110 95 40 }
@@ -618,8 +568,6 @@ ratkin_r_group = {
 			local_hostile_movement_speed = -0.15
 		}
 
-		hre_religion = no
-
 		on_convert = {
 			change_religion = blightbringer
 			add_prestige = -100
@@ -636,7 +584,6 @@ ratkin_r_group = {
 }
 new_world_tribal_r_group = {
 	defender_of_faith = no
-	can_form_personal_unions = no
 
 	tribal_faith = {
 		color = { 162 99 52 }
@@ -654,8 +601,6 @@ new_world_tribal_r_group = {
 			local_missionary_strength = 0.03
 		}
 
-		hre_religion = no
-
 		on_convert = {
 			change_religion = tribal_faith
 			add_prestige = -100
@@ -672,7 +617,6 @@ new_world_tribal_r_group = {
 }
 irreligious_group = {
 	defender_of_faith = no
-	can_form_personal_unions = no
 
 	irreligious = {
 		color = { 230 230 230 }
@@ -686,8 +630,6 @@ irreligious_group = {
 			idea_cost = -0.05
 			monthly_reform_progress_modifier = 0.15
 		}
-
-		hre_religion = no
 
 		on_convert = {
 			change_religion = irreligious

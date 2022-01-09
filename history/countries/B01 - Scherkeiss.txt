@@ -6,6 +6,7 @@ technology_group = western
 religion = mashia
 primary_culture = paleremore
 capital = 1789
+set_country_flag = primary_furry_nation
 
 1444.11.11 = {
 	monarch = {

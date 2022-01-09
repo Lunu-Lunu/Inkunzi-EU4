@@ -6,3 +6,4 @@ technology_group = western
 religion = medvedeni
 primary_culture = helghian
 capital = 591
+set_country_flag = primary_human_nation

@@ -6,6 +6,7 @@ technology_group = western
 religion = onwinnen_whihcan
 primary_culture = kido
 capital = 395
+set_country_flag = primary_human_nation
 
 1444.11.11 = {
 	monarch = {

@@ -6,6 +6,7 @@ technology_group = western
 religion = valor
 primary_culture = ocelidian
 capital = 2610
+set_country_flag = primary_human_nation
 
 1444.11.11 = {
 	monarch = {

@@ -6,6 +6,7 @@ technology_group = western
 religion = old_ones
 primary_culture = lizardman
 capital = 2419
+set_country_flag = primary_lizard_nation
 
 1444.11.11 = {
 	monarch = {

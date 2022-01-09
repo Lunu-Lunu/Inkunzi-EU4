@@ -6,3 +6,4 @@ technology_group = western
 religion = dark_valor
 primary_culture = helghian
 capital = 728
+set_country_flag = primary_human_nation

@@ -6,3 +6,4 @@ technology_group = western
 religion = agaric
 primary_culture = rannikean
 capital = 660
+set_country_flag = primary_mushroom_nation

@@ -6,3 +6,4 @@ technology_group = western
 religion = agaric
 primary_culture = rezubian
 capital = 695
+set_country_flag = primary_human_nation
