@@ -33,6 +33,7 @@ estate_centaurs = {
 	country_modifier_angry = {
 		advisor_cost = 0.15
 		cavalry_cost = 0.2
+		global_unrest = 2
 	}
 	land_ownership_modifier = {
 		centaurs_loyalty_modifier = 0.2
@@ -42,7 +43,7 @@ estate_centaurs = {
 		factor = 1
 		modifier = {
 			factor = 0
-			has_human_primary = no
+			NOT = { culture_group = rekolian_group }
 		}
 		modifier = {
 			factor = 2

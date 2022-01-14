@@ -1,14 +1,13 @@
 # For Government Reforms to identify properly influence and loyalty modifiers, remember to put disqualifying triggers before the has_reform
 
-estate_ourk = {
-	icon = 10
+estate_nimbus = {
+	icon = 3
 
 	# If true, country will get estate
 	trigger = {
 		OR = {
-			culture_group = iaznahoganto_group
-			has_country_flag = primary_ourk_nation
-			has_country_flag = ourks_accepted
+			has_country_flag = primary_nimbus_nation
+			has_country_flag = nimbus_accepted
 		}
 		NOT = { has_government_attribute = is_merchant_republic }
 		NOT = { has_reform = trading_city }
@@ -25,37 +24,33 @@ estate_ourk = {
 
 	# These scale with loyalty & power
 	country_modifier_happy = {
-		infantry_power = 0.2
-		tolerance_heathen = 2
-		tolerance_heretic = 1
+		diplomatic_reputation = 2
+		diplomatic_annexation_cost = -0.2
+		vassal_income = 0.25
 	}
 	country_modifier_neutral = {
-		infantry_power = 0.1
-		tolerance_heathen = 1	
+		diplomatic_reputation = 2
+		vassal_income = 0.25
 	}	
 	country_modifier_angry = {
-		infantry_power = -0.1
-		tolerance_heathen = -1
-		tolerance_heretic = -1
+		diplomatic_reputation = -2
+		diplomatic_annexation_cost = 0.2
+		vassal_income = -0.5
 		global_unrest = 2
 	}
 	land_ownership_modifier = {
-		ourk_loyalty_modifier = 0.2
+		nimbus_loyalty_modifier = 0.2
 	}
 	
 	province_independence_weight = {
 		factor = 1
 		modifier = {
 			factor = 0
-			AND = {
-				NOT = { culture = ourkani }
-				NOT = { culture = paak_ourk }
-				NOT = { culture = grokish}
-			}
+			NOT = { culture = nimbus }
 		}
 		modifier = {
 			factor = 2
-			NOT = { has_owner_religion = yes }
+			province_is_or_accepts_culture = no
 		}
 		modifier = {
 			factor = 0.67
@@ -66,49 +61,29 @@ estate_ourk = {
 	# Influence modifiers
 	base_influence = 10
 	influence_modifier = {
-		desc = ESTATE_OURK_MULTIPLE_PROMOTED_OURKS
+		desc = ESTATE_NIMBUS_HAS_SUBJECT
 		trigger = {
-			OR = {
-				AND = {
-					accepted_culture = ourkani
-					accepted_culture = paak_ourk
-				}
-				AND = {
-					accepted_culture = ourkani
-					accepted_culture = grokish
-				}
-				AND = {
-					accepted_culture = paak_ourk
-					accepted_culture = grokish
-				}
-			}
+			num_of_subjects = 1
 		}
-		influence = 10		
+		influence = 15	
 	}
 	influence_modifier = {
-		desc = ESTATE_OURK_HIGH_RELIGIOUS_UNITY
+		desc = ESTATE_NIMBUS_PROMOTED
 		trigger = {
-			religious_unity = 0.9
-		}
-		influence = -5
-	}
-	influence_modifier = {
-		desc = ESTATE_OURK_LOW_RELIGIOUS_UNITY
-		trigger = {
-			religious_unity = 0.25
-			NOT = { religious_unity = 0.5 }
+			has_country_flag = nimbus_accepted
+			NOT = { has_country_flag = primary_nimbus_nation }
 		}
 		influence = 5
 	}
 	influence_modifier = {
-		desc = ESTATE_OURK_MINIMAL_RELIGIOUS_UNITY
+		desc = ESTATE_HUMANS_PROMOTED
 		trigger = {
-			NOT = { religious_unity = 0.25 }
+			has_country_flag = humans_accepted
 		}
-		influence = 15
+		influence = 10
 	}
 	influence_modifier = {
-		desc = ESTATE_OURK_OTHER_ESTATE_IN_POWER
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER
 		trigger = {
 			OR = {
 				has_disaster = estate_nobility_disaster
@@ -124,7 +99,7 @@ estate_ourk = {
 	
 	#Loyalty Modifiers
 	loyalty_modifier = {
-		desc = ESTATE_OURK_OTHER_ESTATE_IN_POWER_LOY
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
 		trigger = {
 			OR = {
 				has_disaster = estate_nobility_disaster
@@ -139,26 +114,29 @@ estate_ourk = {
 	}
 	#Rajasthani Culture Promoted
 	loyalty_modifier = {
-		desc = ESTATE_OURK_IS_PRIMARY
+		desc = ESTATE_NIMBUS_IS_PRIMARY
 		trigger = {
-			culture_group = ourkani_group
+			has_country_flag = primary_nimbus_nation
+		}
+		loyalty = 5
+	}
+	loyalty_modifier = {
+		desc = ESTATE_NIMBUS_HAS_SUBJECT_LOY
+		trigger = {
+			num_of_subjects = 1
 		}
 		loyalty = 5
 	}
 
 	privileges = {
-		estate_ourk_land_rights
-		estate_ourk_ourk_nobility
-		estate_ourk_ourk_infantry_primacy
-		estate_ourk_tolerance
+		estate_nimbus_land_rights
 	}
 
 	agendas = {
-		estate_ourk_build_army_building_in_y
-		estate_ourk_build_fort_building_in_y
+		estate_nimbus_vassalise_vulnerable_country
 	}
 
-	color = { 50 150 50 }
+	color = { 200 200 255 }
 	
 	influence_from_dev_modifier = 1.0
 }

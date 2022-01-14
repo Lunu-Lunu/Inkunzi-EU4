@@ -1,7 +1,7 @@
 initialize_race_estates = {
 	country_event = { id = workaround.1 }
 }
-race_estates_promote_recalc = {
+promoted_races_recalc = {
 	clr_country_flag = humans_accepted
 	clr_country_flag = ourks_accepted
 	clr_country_flag = nimbus_accepted
@@ -196,5 +196,167 @@ race_estates_promote_recalc = {
 			accepted_culture = miarii
 		}
 		set_country_flag = moths_accepted
+	}
+}
+primary_race_recalc = {
+	clr_country_flag = primary_human_nation
+	clr_country_flag = primary_ourk_nation
+	clr_country_flag = primary_nimbus_nation
+	clr_country_flag = primary_crab_nation
+	clr_country_flag = primary_frog_nation
+	clr_country_flag = primary_rat_nation
+	clr_country_flag = primary_goat_nation
+	clr_country_flag = primary_hesh_nation
+	clr_country_flag = primary_snake_nation
+	clr_country_flag = primary_ent_nation
+	clr_country_flag = primary_dwarf_nation
+	clr_country_flag = primary_centaur_nation
+	clr_country_flag = primary_draconic_nation
+	clr_country_flag = primary_mushroom_nation
+	clr_country_flag = primary_golem_nation
+	clr_country_flag = primary_elf_nation
+	clr_country_flag = primary_sia_si_nation
+	clr_country_flag = primary_gneta_nation
+	clr_country_flag = primary_furry_nation
+	clr_country_flag = primary_lizard_nation
+	clr_country_flag = primary_goblin_nation
+	clr_country_flag = primary_moth_nation
+	if = {
+		limit = {
+			has_human_primary = yes
+		}
+		set_country_flag = primary_human_nation
+	}
+	if = {
+		limit = {
+			culture_group = ourkani_group
+		}
+		set_country_flag = primary_ourk_nation
+	}
+	if = {
+		limit = {
+			primary_culture = nimbus
+		}
+		set_country_flag = primary_nimbus_nation
+	}
+	if = {
+		limit = {
+			culture_group = ervaric_group
+		}
+		set_country_flag = primary_frog_nation
+	}
+	if = {
+		limit = {
+			culture_group = ratkin_group
+		}
+		set_country_flag = primary_rat_nation
+	}
+	if = {
+		limit = {
+			culture_group = goatman_group
+		}
+		set_country_flag = primary_goat_nation
+	}
+	if = {
+		limit = {
+			culture_group = hesh_group
+		}
+		set_country_flag = primary_hesh_nation
+	}
+	if = {
+		limit = {
+			culture_group = ape_group
+		}
+		set_country_flag = primary_ape_nation
+	}
+	if = {
+		limit = {
+			culture_group = ent_group
+		}
+		set_country_flag = primary_ent_nation
+	}
+	if = {
+		limit = {
+			culture_group = dwarven_group
+		}
+		set_country_flag = primary_dwarf_nation
+	}
+	if = {
+		limit = {
+			culture_group = rekolian_group
+		}
+		set_country_flag = primary_centaur_nation
+	}
+	if = {
+		limit = {
+			culture_group = karlton_group
+		}
+		set_country_flag = primary_crab_nation
+	}
+	if = {
+		limit = {
+			culture_group = draconic_group
+		}
+		set_country_flag = primary_draconic_nation
+	}
+	if = {
+		limit = {
+			culture_group = mungi_group
+		}
+		set_country_flag = primary_mushroom_nation
+	}
+	if = {
+		limit = {
+			culture_group = melcani_group
+		}
+		set_country_flag = primary_golem_nation
+	}
+	if = {
+		limit = {
+			culture_group = aeruthian_group
+		}
+		set_country_flag = primary_elf_nation
+	}
+	if = {
+		limit = {
+			culture_group = sia_si_group
+		}
+		set_country_flag = primary_sia_si_nation
+	}
+	if = {
+		limit = {
+			culture_group = gnetan_group
+		}
+		set_country_flag = primary_gneta_nation
+	}
+	if = {
+		limit = {
+			culture_group = paleremore_group
+		}
+		set_country_flag = primary_furry_nation
+	}
+	if = {
+		limit = {
+			culture_group = lizard_group
+		}
+		set_country_flag = primary_lizard_nation
+	}
+	if = {
+		limit = {
+			culture_group = goblin_group
+		}
+		set_country_flag = primary_goblin_nation
+	}
+	if = {
+		limit = {
+			culture_group = maafi_group
+		}
+		set_country_flag = primary_moth_nation
+	}
+	if = {
+		limit = {
+			culture_group = snakeman_group
+		}
+		set_country_flag = primary_snake_nation
 	}
 }

@@ -34,6 +34,7 @@ estate_humans = {
 	country_modifier_angry = {
 		culture_conversion_cost = 0.1
 		land_forcelimit_modifier = -0.2
+		global_unrest = 2
 	}
 	land_ownership_modifier = {
 		humans_loyalty_modifier = 0.2

@@ -1,0 +1,163 @@
+
+#Bigger Fleet
+estate_crabs_build_a_fleet = {
+	can_select = {
+		primitives = no
+		any_owned_province = {
+			has_port = yes
+			is_core = root
+		}
+		navy_size = 1
+		NOT = { navy_size_percentage = 0.5 }
+		NOT = { navy_size = 250 }
+		NOT = { has_country_modifier = thriving_ship_building_sector }
+	}
+	selection_weight = {
+		factor = 2.5
+		modifier = {
+			factor = 1.5
+			any_rival_country = {
+				NOT = { truce_with = root }
+				navy_size = root
+			}
+		}
+		modifier = {
+			factor = 2.0
+			NOT = { navy_size_percentage = 0.3 }
+			NOT = { navy_size = 150 }
+		}
+		modifier = {
+			factor = 0.5
+			navy_size = 100
+		}
+		modifier = {
+			factor = 0.25
+			navy_size = 200
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { num_of_ports = 3 }
+		}
+		modifier = {
+			factor = 2
+			has_idea_group = naval_ideas
+		}
+	}
+	task_requirements = {
+		navy_size_percentage = 0.75
+	}
+	fail_if = {
+		NOT = {
+			any_owned_province = {
+				has_port = yes
+			}
+		}
+	}
+	task_completed_effect = {
+		add_estate_loyalty = {
+			estate = estate_crabs
+			loyalty = 10
+		}
+		create_admiral = {
+			tradition = 40
+		}
+	}
+    failing_effect = {
+        add_estate_loyalty_modifier = {
+            estate = estate_crabs
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+        }
+    }
+}
+
+
+#Bigger Fleet than Rival
+estate_crabs_bigger_fleet_than_rival = {
+	can_select = {
+		primitives = no
+		any_owned_province = {
+			has_port = yes
+			is_core = root
+		}
+		NOT = { government = native }
+		NOT = { has_country_modifier = naval_enthusiasm_mission }
+
+		NOT = { navy_size_percentage = 1 }
+
+		any_rival_country = {
+			NOT = { war_with = root }
+			NOT = { root = { navy_size = prev } }
+			navy_balance = {
+				who = root
+				value = 1.05
+			}
+			NOT = {
+				navy_balance = {
+					who = root
+					value = 1.25
+				}
+			}
+		}
+	}
+	selection_weight = {
+		factor = 5
+	}
+	pre_effect = {
+		random_rival_country = {
+			limit = {
+				NOT = { war_with = root }
+				NOT = { root = { navy_size = prev } }
+				navy_balance = {
+					who = root
+					value = 1.05
+				}
+				NOT = {
+					navy_balance = {
+						who = root
+						value = 1.25
+					}
+				}
+			}
+			save_event_target_as = agenda_country
+		}
+	}
+	provinces_to_highlight = {
+		is_capital_of = event_target:agenda_country
+	}
+	task_requirements = {
+		if = {
+			limit = { event_target:agenda_country = { num_of_cities = 1 } }
+			navy_size = event_target:agenda_country
+		}
+		else = {
+			always = yes
+		}
+	}
+	task_completed_effect = {
+		add_estate_loyalty = {
+			estate = estate_crabs
+			loyalty = 10
+		}
+		add_country_modifier = {
+			name = naval_enthusiasm_mission
+			duration = 3650
+		}
+	}
+	fail_if = {
+		NOT = {
+			any_owned_province = {
+				has_port = yes
+			}
+		}
+	}
+    failing_effect = {
+        add_estate_loyalty_modifier = {
+            estate = estate_crabs
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+        }
+    }
+}

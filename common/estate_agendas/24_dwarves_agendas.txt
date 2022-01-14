@@ -1,0 +1,34 @@
+
+#This one or the next one will always be valid
+estate_dwarves_hire_advisor = {
+	can_select = {
+		NOT = {
+			employed_advisor = {
+				category = MIL
+			}
+		}
+	}
+	selection_weight = {
+		factor = 1
+	}
+	task_requirements = {
+		employed_advisor = {
+			category = MIL
+		}
+		is_in_deficit = no
+	}
+    task_completed_effect = {
+		add_estate_loyalty = {
+			estate = estate_dwarves
+			loyalty = 10
+		}
+    }
+    failing_effect = {
+        add_estate_loyalty_modifier = {
+            estate = estate_dwarves
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+        }
+    }
+}

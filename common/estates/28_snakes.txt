@@ -1,14 +1,13 @@
 # For Government Reforms to identify properly influence and loyalty modifiers, remember to put disqualifying triggers before the has_reform
 
-estate_ourk = {
-	icon = 10
+estate_snakes = {
+	icon = 2
 
 	# If true, country will get estate
 	trigger = {
 		OR = {
-			culture_group = iaznahoganto_group
-			has_country_flag = primary_ourk_nation
-			has_country_flag = ourks_accepted
+			has_country_flag = primary_snake_nation
+			has_country_flag = snakes_accepted
 		}
 		NOT = { has_government_attribute = is_merchant_republic }
 		NOT = { has_reform = trading_city }
@@ -25,37 +24,30 @@ estate_ourk = {
 
 	# These scale with loyalty & power
 	country_modifier_happy = {
-		infantry_power = 0.2
-		tolerance_heathen = 2
-		tolerance_heretic = 1
+		improve_relation_modifier = 0.2
+		unjustified_demands = -0.2
 	}
 	country_modifier_neutral = {
-		infantry_power = 0.1
-		tolerance_heathen = 1	
+		unjustified_demands = -0.2
 	}	
 	country_modifier_angry = {
-		infantry_power = -0.1
-		tolerance_heathen = -1
-		tolerance_heretic = -1
+		improve_relation_modifier = -0.2
+		unjustified_demands = 0.2
 		global_unrest = 2
 	}
 	land_ownership_modifier = {
-		ourk_loyalty_modifier = 0.2
+		snakes_loyalty_modifier = 0.2
 	}
 	
 	province_independence_weight = {
 		factor = 1
 		modifier = {
 			factor = 0
-			AND = {
-				NOT = { culture = ourkani }
-				NOT = { culture = paak_ourk }
-				NOT = { culture = grokish}
-			}
+			NOT = { culture_group = snakeman_group }
 		}
 		modifier = {
 			factor = 2
-			NOT = { has_owner_religion = yes }
+			province_is_or_accepts_culture = no
 		}
 		modifier = {
 			factor = 0.67
@@ -66,49 +58,31 @@ estate_ourk = {
 	# Influence modifiers
 	base_influence = 10
 	influence_modifier = {
-		desc = ESTATE_OURK_MULTIPLE_PROMOTED_OURKS
+		desc = ESTATE_SNAKES_ADMIN_RULER
 		trigger = {
-			OR = {
-				AND = {
-					accepted_culture = ourkani
-					accepted_culture = paak_ourk
-				}
-				AND = {
-					accepted_culture = ourkani
-					accepted_culture = grokish
-				}
-				AND = {
-					accepted_culture = paak_ourk
-					accepted_culture = grokish
-				}
-			}
+			adm = 5
 		}
-		influence = 10		
+		influence = 10
 	}
 	influence_modifier = {
-		desc = ESTATE_OURK_HIGH_RELIGIOUS_UNITY
+		desc = ESTATE_SNAKES_PROMOTED
 		trigger = {
-			religious_unity = 0.9
-		}
-		influence = -5
-	}
-	influence_modifier = {
-		desc = ESTATE_OURK_LOW_RELIGIOUS_UNITY
-		trigger = {
-			religious_unity = 0.25
-			NOT = { religious_unity = 0.5 }
+			has_country_flag = snakes_accepted
+			NOT = { has_country_flag = primary_snake_nation }
 		}
 		influence = 5
 	}
 	influence_modifier = {
-		desc = ESTATE_OURK_MINIMAL_RELIGIOUS_UNITY
+		desc = ESTATE_SNAKES_DEVELOPED_CAPITAL
 		trigger = {
-			NOT = { religious_unity = 0.25 }
+			capital_scope = {
+				development = 30
+			}
 		}
-		influence = 15
+		influence = 10
 	}
 	influence_modifier = {
-		desc = ESTATE_OURK_OTHER_ESTATE_IN_POWER
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER
 		trigger = {
 			OR = {
 				has_disaster = estate_nobility_disaster
@@ -124,7 +98,7 @@ estate_ourk = {
 	
 	#Loyalty Modifiers
 	loyalty_modifier = {
-		desc = ESTATE_OURK_OTHER_ESTATE_IN_POWER_LOY
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
 		trigger = {
 			OR = {
 				has_disaster = estate_nobility_disaster
@@ -139,26 +113,29 @@ estate_ourk = {
 	}
 	#Rajasthani Culture Promoted
 	loyalty_modifier = {
-		desc = ESTATE_OURK_IS_PRIMARY
+		desc = ESTATE_SNAKES_IS_PRIMARY
 		trigger = {
-			culture_group = ourkani_group
+			has_country_flag = primary_snake_nation
+		}
+		loyalty = 5
+	}
+	loyalty_modifier = {
+		desc = ESTATE_SNAKES_RENAISSANCE
+		trigger = {
+			has_institution = renaissance
 		}
 		loyalty = 5
 	}
 
 	privileges = {
-		estate_ourk_land_rights
-		estate_ourk_ourk_nobility
-		estate_ourk_ourk_infantry_primacy
-		estate_ourk_tolerance
+		estate_snakes_land_rights
 	}
 
 	agendas = {
-		estate_ourk_build_army_building_in_y
-		estate_ourk_build_fort_building_in_y
+		estate_snakes_build_fort_building_in_y
 	}
 
-	color = { 50 150 50 }
+	color = { 0 200 0 }
 	
 	influence_from_dev_modifier = 1.0
 }

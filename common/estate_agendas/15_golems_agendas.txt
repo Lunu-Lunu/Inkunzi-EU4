@@ -1,5 +1,4 @@
-
-estate_humans_convert_province_culture = {
+estate_golems_convert_province_culture = {
 	can_select = {
 		any_owned_province = {
 			NOT = { culture = root }
@@ -87,7 +86,7 @@ estate_humans_convert_province_culture = {
 	}
 	task_completed_effect = {
 		add_estate_loyalty = {
-			estate = estate_humans
+			estate = estate_golems
 			loyalty = 10
 		}
 		event_target:agenda_province = {
@@ -106,7 +105,7 @@ estate_humans_convert_province_culture = {
 	}
     failing_effect = {
         add_estate_loyalty_modifier = {
-            estate = estate_humans
+            estate = estate_golems
 			desc = EST_VAL_AGENDA_DENIED
 			loyalty = -5
 			duration = 7300

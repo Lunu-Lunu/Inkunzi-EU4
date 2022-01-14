@@ -1,14 +1,13 @@
 # For Government Reforms to identify properly influence and loyalty modifiers, remember to put disqualifying triggers before the has_reform
 
-estate_ourk = {
-	icon = 10
+estate_moths = {
+	icon = 1
 
 	# If true, country will get estate
 	trigger = {
 		OR = {
-			culture_group = iaznahoganto_group
-			has_country_flag = primary_ourk_nation
-			has_country_flag = ourks_accepted
+			has_country_flag = primary_moth_nation
+			has_country_flag = moths_accepted
 		}
 		NOT = { has_government_attribute = is_merchant_republic }
 		NOT = { has_reform = trading_city }
@@ -25,37 +24,30 @@ estate_ourk = {
 
 	# These scale with loyalty & power
 	country_modifier_happy = {
-		infantry_power = 0.2
-		tolerance_heathen = 2
-		tolerance_heretic = 1
+		build_cost = -0.2
+		global_monthly_devastation = -0.1
 	}
 	country_modifier_neutral = {
-		infantry_power = 0.1
-		tolerance_heathen = 1	
+		build_cost = -0.1
 	}	
 	country_modifier_angry = {
-		infantry_power = -0.1
-		tolerance_heathen = -1
-		tolerance_heretic = -1
+		build_cost = 0.2
+		development_cost = 0.2
 		global_unrest = 2
 	}
 	land_ownership_modifier = {
-		ourk_loyalty_modifier = 0.2
+		moths_loyalty_modifier = 0.2
 	}
 	
 	province_independence_weight = {
 		factor = 1
 		modifier = {
 			factor = 0
-			AND = {
-				NOT = { culture = ourkani }
-				NOT = { culture = paak_ourk }
-				NOT = { culture = grokish}
-			}
+			NOT = { culture_group = moth_group }
 		}
 		modifier = {
 			factor = 2
-			NOT = { has_owner_religion = yes }
+			province_is_or_accepts_culture = no
 		}
 		modifier = {
 			factor = 0.67
@@ -66,49 +58,36 @@ estate_ourk = {
 	# Influence modifiers
 	base_influence = 10
 	influence_modifier = {
-		desc = ESTATE_OURK_MULTIPLE_PROMOTED_OURKS
+		desc = ESTATE_MOTHS_CAPITAL_UNIVERSITY
 		trigger = {
-			OR = {
-				AND = {
-					accepted_culture = ourkani
-					accepted_culture = paak_ourk
-				}
-				AND = {
-					accepted_culture = ourkani
-					accepted_culture = grokish
-				}
-				AND = {
-					accepted_culture = paak_ourk
-					accepted_culture = grokish
-				}
-			}
+			capital_scope = { has_building = university }
 		}
-		influence = 10		
+		influence = 10
 	}
 	influence_modifier = {
-		desc = ESTATE_OURK_HIGH_RELIGIOUS_UNITY
+		desc = ESTATE_MOTHS_PROMOTED
 		trigger = {
-			religious_unity = 0.9
-		}
-		influence = -5
-	}
-	influence_modifier = {
-		desc = ESTATE_OURK_LOW_RELIGIOUS_UNITY
-		trigger = {
-			religious_unity = 0.25
-			NOT = { religious_unity = 0.5 }
+			has_country_flag = moths_accepted
+			NOT = { has_country_flag = primary_moth_nation }
 		}
 		influence = 5
 	}
 	influence_modifier = {
-		desc = ESTATE_OURK_MINIMAL_RELIGIOUS_UNITY
+		desc = ESTATE_MOTHS_COMPLETED_INNOVATIVE_IDEAS
 		trigger = {
-			NOT = { religious_unity = 0.25 }
+			full_idea_group = innovative_ideas
 		}
-		influence = 15
+		influence = 10
 	}
 	influence_modifier = {
-		desc = ESTATE_OURK_OTHER_ESTATE_IN_POWER
+		desc = ESTATE_MOTHS_INNOVATIVE
+		trigger = {
+			innovativeness = 50
+		}
+		influence = 10
+	}
+	influence_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER
 		trigger = {
 			OR = {
 				has_disaster = estate_nobility_disaster
@@ -124,7 +103,7 @@ estate_ourk = {
 	
 	#Loyalty Modifiers
 	loyalty_modifier = {
-		desc = ESTATE_OURK_OTHER_ESTATE_IN_POWER_LOY
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
 		trigger = {
 			OR = {
 				has_disaster = estate_nobility_disaster
@@ -139,26 +118,29 @@ estate_ourk = {
 	}
 	#Rajasthani Culture Promoted
 	loyalty_modifier = {
-		desc = ESTATE_OURK_IS_PRIMARY
+		desc = ESTATE_MOTHS_IS_PRIMARY
 		trigger = {
-			culture_group = ourkani_group
+			has_country_flag = primary_moth_nation
+		}
+		loyalty = 5
+	}
+	loyalty_modifier = {
+		desc = ESTATE_MOTHS_COMPLETED_INNOVATIVE_IDEAS_LOY
+		trigger = {
+			full_idea_group = innovative_ideas
 		}
 		loyalty = 5
 	}
 
 	privileges = {
-		estate_ourk_land_rights
-		estate_ourk_ourk_nobility
-		estate_ourk_ourk_infantry_primacy
-		estate_ourk_tolerance
+		estate_moths_land_rights
 	}
 
 	agendas = {
-		estate_ourk_build_army_building_in_y
-		estate_ourk_build_fort_building_in_y
+		estate_moths_build_university_in_y
 	}
 
-	color = { 50 150 50 }
+	color = { 150 200 100 }
 	
 	influence_from_dev_modifier = 1.0
 }
