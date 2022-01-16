@@ -1,0 +1,191 @@
+###########################################################
+# Events for Arslan
+#
+# written by Lunu (probably not)
+###########################################################
+
+namespace = workaround
+
+country_event = { # for race
+	id = workaround.1
+	title = workaround.1.t
+	desc = workaround.1.desc
+	is_triggered_only = yes
+	hidden = yes
+	option = {
+		name = workaround.1.a
+		ai_chance = {
+			factor = 100
+		}
+		if = {
+			limit = {
+				has_human_primary = yes
+			}
+			set_country_flag = primary_human_nation
+		}
+		if = {
+			limit = {
+				culture_group = ourkani_group
+			}
+			set_country_flag = primary_ourk_nation
+		}
+		if = {
+			limit = {
+				primary_culture = nimbus
+			}
+			set_country_flag = primary_nimbus_nation
+		}
+		if = {
+			limit = {
+				culture_group = ervaric_group
+			}
+			set_country_flag = primary_frog_nation
+		}
+		if = {
+			limit = {
+				culture_group = ratkin_group
+			}
+			set_country_flag = primary_rat_nation
+		}
+		if = {
+			limit = {
+				culture_group = goatman_group
+			}
+			set_country_flag = primary_goat_nation
+		}
+		if = {
+			limit = {
+				culture_group = hesh_group
+			}
+			set_country_flag = primary_hesh_nation
+		}
+		if = {
+			limit = {
+				culture_group = ape_group
+			}
+			set_country_flag = primary_ape_nation
+		}
+		if = {
+			limit = {
+				culture_group = ent_group
+			}
+			set_country_flag = primary_ent_nation
+		}
+		if = {
+			limit = {
+				culture_group = dwarven_group
+			}
+			set_country_flag = primary_dwarf_nation
+		}
+		if = {
+			limit = {
+				culture_group = rekolian_group
+			}
+			set_country_flag = primary_centaur_nation
+		}
+		if = {
+			limit = {
+				culture_group = karlton_group
+			}
+			set_country_flag = primary_crab_nation
+		}
+		if = {
+			limit = {
+				culture_group = draconic_group
+			}
+			set_country_flag = primary_draconic_nation
+		}
+		if = {
+			limit = {
+				culture_group = mungi_group
+			}
+			set_country_flag = primary_mushroom_nation
+		}
+		if = {
+			limit = {
+				culture_group = melcani_group
+			}
+			set_country_flag = primary_golem_nation
+		}
+		if = {
+			limit = {
+				culture_group = aeruthian_group
+			}
+			set_country_flag = primary_elf_nation
+		}
+		if = {
+			limit = {
+				culture_group = sia_si_group
+			}
+			set_country_flag = primary_sia_si_nation
+		}
+		if = {
+			limit = {
+				culture_group = gnetan_group
+			}
+			set_country_flag = primary_gneta_nation
+		}
+		if = {
+			limit = {
+				culture_group = paleremore_group
+			}
+			set_country_flag = primary_furry_nation
+		}
+		if = {
+			limit = {
+				culture_group = lizard_group
+			}
+			set_country_flag = primary_lizard_nation
+		}
+		if = {
+			limit = {
+				culture_group = goblin_group
+			}
+			set_country_flag = primary_goblin_nation
+		}
+		if = {
+			limit = {
+				culture_group = maafi_group
+			}
+			set_country_flag = primary_moth_nation
+		}
+		if = {
+			limit = {
+				culture_group = snakeman_group
+			}
+			set_country_flag = primary_snake_nation
+		}
+		if = {
+			limit = {
+				has_human_accepted = yes
+			}
+			set_country_flag = humans_accepted
+		}
+		if = {
+			limit = {
+				OR = {
+					accepted_culture = ourkani
+					accepted_culture = paak_ourk
+					accepted_culture = grokish
+				}
+			}
+			set_country_flag = ourks_accepted
+		}
+		if = {
+			limit = {
+				accepted_culture = nimbus
+			}
+			set_country_flag = nimbus_accepted
+		}
+		if = {
+			limit = {
+				OR = {
+					accepted_culture = north_karlton
+					accepted_culture = south_karlton
+					accepted_culture = karolon
+				}
+			}
+			set_country_flag = crab_accepted
+		}
+	}
+}

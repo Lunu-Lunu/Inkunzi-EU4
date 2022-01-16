@@ -6,3 +6,4 @@ technology_group = western
 religion = celestialism
 primary_culture = kurean
 capital = 701
+set_country_flag = primary_human_nation

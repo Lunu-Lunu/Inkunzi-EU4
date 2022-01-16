@@ -1953,12 +1953,7 @@ cloves = {
 		factor = 150
 		modifier = {
 			factor = 0
-			NOT = {
-				OR = {
-					area = molluca_area
-					area = spice_islands_area
-				}
-			}
+			always = yes
 		}
 		modifier = {
 			factor = 2.0

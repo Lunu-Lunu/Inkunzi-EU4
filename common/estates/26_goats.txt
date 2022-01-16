@@ -1,0 +1,141 @@
+# For Government Reforms to identify properly influence and loyalty modifiers, remember to put disqualifying triggers before the has_reform
+
+estate_goats = {
+	icon = 2
+
+	# If true, country will get estate
+	trigger = {
+		OR = {
+			has_country_flag = primary_goat_nation
+			has_country_flag = goats_accepted
+		}
+		NOT = { has_government_attribute = is_merchant_republic }
+		NOT = { has_reform = trading_city }
+		NOT = { is_revolutionary_republic_trigger = yes }
+		NOT = { government = native }
+		NOT = { has_reform = cossacks_reform }
+		NOT = { has_reform = siberian_tribe }
+		NOT = { has_reform = veche_republic }
+		NOT = { has_reform = celestial_empire }
+		NOT = { has_reform = pirate_republic_reform }
+		is_nomad = no
+		NOT = { has_reform = revolutionary_empire_reform }
+	}
+
+	# These scale with loyalty & power
+	country_modifier_happy = {
+		land_attrition = -0.2
+		shock_damage_received = -0.1
+	}
+	country_modifier_neutral = {
+		land_attrition = -0.2
+	}	
+	country_modifier_angry = {
+		land_attrition = 0.2
+		shock_damage_received = 0.1
+		global_unrest = 2
+	}
+	land_ownership_modifier = {
+		goats_loyalty_modifier = 0.2
+	}
+	
+	province_independence_weight = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { culture_group = goatman_group }
+		}
+		modifier = {
+			factor = 2
+			province_is_or_accepts_culture = no
+		}
+		modifier = {
+			factor = 0.67
+			NOT = { is_state_core = owner }
+		}
+	}
+
+	# Influence modifiers
+	base_influence = 10
+	influence_modifier = {
+		desc = ESTATE_GOAT_FORIFIED_CAPITAL
+		trigger = {
+			capital_scope = {
+				fort_level = 2
+			}
+		}
+		influence = 10
+	}
+	influence_modifier = {
+		desc = ESTATE_GOATS_PROMOTED
+		trigger = {
+			has_country_flag = goats_accepted
+			NOT = { has_country_flag = primary_goat_nation }
+		}
+		influence = 5
+	}
+	influence_modifier = {
+		desc = ESTATE_GOATS_UNWEARY
+		trigger = {
+			NOT = { war_exhaustion = 1 }
+		}
+		influence = 10
+	}
+	influence_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+			}
+		}
+		influence = -40
+	}
+	
+	#Loyalty Modifiers
+	loyalty_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+			}
+		}
+		loyalty = -20
+	}
+	#Rajasthani Culture Promoted
+	loyalty_modifier = {
+		desc = ESTATE_GOATS_IS_PRIMARY
+		trigger = {
+			has_country_flag = primary_goat_nation
+		}
+		loyalty = 5
+	}
+	loyalty_modifier = {
+		desc = ESTATE_GOATS_WAR
+		trigger = {
+			has_war = yes
+		}
+		loyalty = 5
+	}
+
+	privileges = {
+		estate_goats_land_rights
+	}
+
+	agendas = {
+		estate_goats_build_fort_building_in_y
+	}
+
+	color = { 175 175 175 }
+	
+	influence_from_dev_modifier = 1.0
+}

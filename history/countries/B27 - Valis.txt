@@ -6,6 +6,7 @@ technology_group = western
 religion = valor
 primary_culture = goblin
 capital = 2615
+set_country_flag = primary_goblin_nation
 
 1444.11.11 = {
 	monarch = {

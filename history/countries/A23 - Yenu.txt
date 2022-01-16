@@ -6,6 +6,7 @@ technology_group = western
 religion = agaric
 primary_culture = mungi
 capital = 350
+set_country_flag = primary_mushroom_nation
 
 1444.11.11 = {
 	monarch = {

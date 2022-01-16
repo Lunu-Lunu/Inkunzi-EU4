@@ -1,0 +1,141 @@
+# For Government Reforms to identify properly influence and loyalty modifiers, remember to put disqualifying triggers before the has_reform
+
+estate_snakes = {
+	icon = 2
+
+	# If true, country will get estate
+	trigger = {
+		OR = {
+			has_country_flag = primary_snake_nation
+			has_country_flag = snakes_accepted
+		}
+		NOT = { has_government_attribute = is_merchant_republic }
+		NOT = { has_reform = trading_city }
+		NOT = { is_revolutionary_republic_trigger = yes }
+		NOT = { government = native }
+		NOT = { has_reform = cossacks_reform }
+		NOT = { has_reform = siberian_tribe }
+		NOT = { has_reform = veche_republic }
+		NOT = { has_reform = celestial_empire }
+		NOT = { has_reform = pirate_republic_reform }
+		is_nomad = no
+		NOT = { has_reform = revolutionary_empire_reform }
+	}
+
+	# These scale with loyalty & power
+	country_modifier_happy = {
+		improve_relation_modifier = 0.2
+		unjustified_demands = -0.2
+	}
+	country_modifier_neutral = {
+		unjustified_demands = -0.2
+	}	
+	country_modifier_angry = {
+		improve_relation_modifier = -0.2
+		unjustified_demands = 0.2
+		global_unrest = 2
+	}
+	land_ownership_modifier = {
+		snakes_loyalty_modifier = 0.2
+	}
+	
+	province_independence_weight = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { culture_group = snakeman_group }
+		}
+		modifier = {
+			factor = 2
+			province_is_or_accepts_culture = no
+		}
+		modifier = {
+			factor = 0.67
+			NOT = { is_state_core = owner }
+		}
+	}
+
+	# Influence modifiers
+	base_influence = 10
+	influence_modifier = {
+		desc = ESTATE_SNAKES_ADMIN_RULER
+		trigger = {
+			adm = 5
+		}
+		influence = 10
+	}
+	influence_modifier = {
+		desc = ESTATE_SNAKES_PROMOTED
+		trigger = {
+			has_country_flag = snakes_accepted
+			NOT = { has_country_flag = primary_snake_nation }
+		}
+		influence = 5
+	}
+	influence_modifier = {
+		desc = ESTATE_SNAKES_DEVELOPED_CAPITAL
+		trigger = {
+			capital_scope = {
+				development = 30
+			}
+		}
+		influence = 10
+	}
+	influence_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+			}
+		}
+		influence = -40
+	}
+	
+	#Loyalty Modifiers
+	loyalty_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+			}
+		}
+		loyalty = -20
+	}
+	#Rajasthani Culture Promoted
+	loyalty_modifier = {
+		desc = ESTATE_SNAKES_IS_PRIMARY
+		trigger = {
+			has_country_flag = primary_snake_nation
+		}
+		loyalty = 5
+	}
+	loyalty_modifier = {
+		desc = ESTATE_SNAKES_RENAISSANCE
+		trigger = {
+			has_institution = renaissance
+		}
+		loyalty = 5
+	}
+
+	privileges = {
+		estate_snakes_land_rights
+	}
+
+	agendas = {
+		estate_snakes_build_fort_building_in_y
+	}
+
+	color = { 0 200 0 }
+	
+	influence_from_dev_modifier = 1.0
+}

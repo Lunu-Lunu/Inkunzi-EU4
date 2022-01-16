@@ -1,0 +1,9 @@
+on_startup = {
+	initialize_race_estates = yes
+}
+on_culture_promoted = {
+	promoted_races_recalc = yes
+}
+on_primary_culture_changed = {
+	primary_race_recalc = yes
+}

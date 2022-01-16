@@ -1,0 +1,213 @@
+estate_elves_build_courthouse_in_y = {
+	can_select = {
+		adm_tech = 4
+		any_owned_province = {
+			is_state_core = root
+			NOT = { has_building = town_hall }
+			OR = {
+				AND = {
+					NOT = { has_building = courthouse }
+					num_free_building_slots = 1
+				}
+				AND = {
+					ROOT = { adm_tech = 19 }
+					has_building = courthouse
+				}
+			}
+		}
+	}
+	selection_weight = {
+		factor = 1
+		modifier = {
+			factor = 0.65
+			NOT = {
+				any_owned_province = {
+					is_state_core = root
+					base_tax = 4
+					NOT = { has_building = town_hall }
+					OR = {
+						AND = {
+							NOT = { has_building = courthouse }
+							num_free_building_slots = 1
+						}
+						AND = {
+							ROOT = { adm_tech = 19 }
+							has_building = courthouse
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1.2
+			any_owned_province = {
+				is_state_core = root
+				base_tax = 7
+				NOT = { has_building = town_hall }
+				OR = {
+					AND = {
+						NOT = { has_building = courthouse }
+						num_free_building_slots = 1
+					}
+					AND = {
+						ROOT = { adm_tech = 19 }
+						has_building = courthouse
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				crown_land_share = 15
+			}
+		}
+	}
+	pre_effect = {
+		set_variable = {
+			which = estate_elves_build_courthouse_in_y_var
+			value = 0
+		}
+		random_owned_province = {
+			limit = {
+				is_state_core = root
+				NOT = { has_building = town_hall }
+				OR = {
+					AND = {
+						NOT = { has_building = courthouse }
+						num_free_building_slots = 1
+					}
+					AND = {
+						ROOT = { adm_tech = 19 }
+						has_building = courthouse
+					}
+				}
+			}
+			save_event_target_as = agenda_province
+		}
+		random_owned_province = {
+			limit = {
+				is_state_core = root
+				base_tax = 4
+				NOT = { has_building = town_hall }
+				OR = {
+					AND = {
+						NOT = { has_building = courthouse }
+						num_free_building_slots = 1
+					}
+					AND = {
+						ROOT = { adm_tech = 19 }
+						has_building = courthouse
+					}
+				}
+			}
+			save_event_target_as = agenda_province
+		}
+		random_owned_province = {
+			limit = {
+				is_state_core = root
+				base_tax = 7
+				NOT = { has_building = town_hall }
+				OR = {
+					AND = {
+						NOT = { has_building = courthouse }
+						num_free_building_slots = 1
+					}
+					AND = {
+						ROOT = { adm_tech = 19 }
+						has_building = courthouse
+					}
+				}
+			}
+			save_event_target_as = agenda_province
+		}
+		event_target:agenda_province = {
+			if = {
+				limit = {
+					NOT = { has_building = courthouse }
+				}
+				ROOT = {
+					set_variable = {
+						which = estate_elves_build_courthouse_in_y_var
+						value = 1
+					}
+				}
+			}
+			else = {
+				ROOT = {
+					set_variable = {
+						which = estate_elves_build_courthouse_in_y_var
+						value = 2
+					}
+				}
+			}
+		}
+	}
+	provinces_to_highlight = {
+		province_id = event_target:agenda_province
+	}
+	fail_if = {
+		event_target:agenda_province = {
+			NOT = { owned_by = root }
+		}
+	}
+    task_requirements = {
+		if = {
+			limit = {
+				check_variable = {
+					which = estate_elves_build_courthouse_in_y_var
+					value = 2
+				}
+			}
+			event_target:agenda_province = {
+				has_building = town_hall
+			}
+		}
+		else = {
+			event_target:agenda_province = {
+				OR = {
+					has_building = courthouse
+					has_building = town_hall
+				}
+			}
+		}
+    }
+    task_completed_effect = {
+		add_estate_loyalty = {
+			estate = estate_elves
+			loyalty = 10
+		}
+		if = {
+			limit = {
+				NOT = { crown_land_share = 15 }
+				estate_territory = {
+					estate = estate_elves
+					territory = 10
+				}
+			}
+			take_estate_land_share_small = { estate = estate_elves }
+		}
+		else = {
+			event_target:agenda_province = {
+				add_base_tax = 1
+			}
+		}
+    }
+    failing_effect = {
+		event_target:agenda_province = {
+			if = {
+				limit = { owned_by = root }
+				add_named_unrest = {
+					name = local_elves_displeased
+					value = 5
+				}
+			}
+		}
+		add_estate_loyalty_modifier = {
+			estate = estate_elves
+			desc = EST_VAL_AGENDA_DENIED
+			loyalty = -5
+			duration = 7300
+		}
+    }
+}

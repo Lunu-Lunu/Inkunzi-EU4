@@ -1,0 +1,143 @@
+# For Government Reforms to identify properly influence and loyalty modifiers, remember to put disqualifying triggers before the has_reform
+
+estate_crabs = {
+	icon = 3
+
+	# If true, country will get estate
+	trigger = {
+		OR = {
+			has_country_flag = primary_crab_nation
+			has_country_flag = crabs_accepted
+		}
+		NOT = { has_government_attribute = is_merchant_republic }
+		NOT = { has_reform = trading_city }
+		NOT = { is_revolutionary_republic_trigger = yes }
+		NOT = { government = native }
+		NOT = { has_reform = cossacks_reform }
+		NOT = { has_reform = siberian_tribe }
+		NOT = { has_reform = veche_republic }
+		NOT = { has_reform = celestial_empire }
+		NOT = { has_reform = pirate_republic_reform }
+		is_nomad = no
+		NOT = { has_reform = revolutionary_empire_reform }
+	}
+
+	# These scale with loyalty & power
+	country_modifier_happy = {
+		global_sailors_modifier = 0.2
+		global_manpower_modifier = 0.1
+	}
+	country_modifier_neutral = {
+		global_sailors_modifier = 0.2
+	}	
+	country_modifier_angry = {
+		global_sailors_modifier = -0.2
+		naval_maintenance_modifier = 0.2
+		global_unrest = 2
+	}
+	land_ownership_modifier = {
+		crabs_loyalty_modifier = 0.2
+	}
+	
+	province_independence_weight = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { culture_group = karlton_group }
+		}
+		modifier = {
+			factor = 2
+			province_is_or_accepts_culture = no
+		}
+		modifier = {
+			factor = 0.67
+			NOT = { is_state_core = owner }
+		}
+	}
+
+	# Influence modifiers
+	base_influence = 10
+	influence_modifier = {
+		desc = ESTATE_CRABS_LARGE_NAVY
+		trigger = {
+			navy_size = 50
+		}
+		influence = 15	
+	}
+	influence_modifier = {
+		desc = ESTATE_CRABS_PROMOTED
+		trigger = {
+			has_country_flag = crabs_accepted
+			NOT = { has_country_flag = primary_crab_nation }
+		}
+		influence = 5
+	}
+	influence_modifier = {
+		desc = ESTATE_CRABS_MULTIPLE_CONTINENTS
+		trigger = {
+			OR = {
+				num_of_continents = 2
+				colony = 1
+			}
+		}
+		influence = 10
+	}
+	influence_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+			}
+		}
+		influence = -40
+	}
+	
+	#Loyalty Modifiers
+	loyalty_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+			}
+		}
+		loyalty = -20
+	}
+	#Rajasthani Culture Promoted
+	loyalty_modifier = {
+		desc = ESTATE_CRABS_IS_PRIMARY
+		trigger = {
+			has_country_flag = primary_crab_nation
+		}
+		loyalty = 5
+	}
+	loyalty_modifier = {
+		desc = ESTATE_CRABS_IS_INDEPENDENT
+		trigger = {
+			is_subject = no
+		}
+		loyalty = 5
+	}
+
+	privileges = {
+		estate_crabs_land_rights
+	}
+
+	agendas = {
+		estate_crabs_build_a_fleet
+		estate_crabs_bigger_fleet_than_rival
+	}
+
+	color = { 255 200 200 }
+	
+	influence_from_dev_modifier = 1.0
+}

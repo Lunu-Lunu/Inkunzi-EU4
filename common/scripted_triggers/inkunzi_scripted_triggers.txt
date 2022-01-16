@@ -1,0 +1,136 @@
+# SOME META SCRIPT EXAMPLES
+# This also works for Scripted effects the same. Provided arguments will be pasted in
+# wherever the key occurs. If it fails to compile you should get a proper error message
+# and the source generated in the error log. There is no added overhead during runtime but
+# if used extensivley it might make loading time longer.
+#
+# my_test_trigger = {
+#	OR = {
+#		has_country_modifier = $ARG1$_modifier
+#		AND = {
+#			has_country_modifier = $ARG2$_modifier
+#			$CONTEXT$ = {
+#				NOT = { has_country_modifier = $ARG1$_modifier }
+#			}
+#		}
+#	}
+# }
+# Usage:
+# my_test_trigger = { ARG1=foo ARG2=bar CONTEXT=FROM }
+
+#GENERAL TRIGGERS
+has_human_primary = {
+	OR = {
+		culture_group = palmer_group
+		culture_group = vestorian_group
+		culture_group = alvonian_group
+		culture_group = credentinunum_group
+		culture_group = brahguan_group
+		culture_group = west_kaulic_group
+		culture_group = prilohan_group
+		culture_group = bogg_group
+		culture_group = pyaltsev_group
+		culture_group = penoxi_group
+		culture_group = pozitianian_group
+		culture_group = ferdunic_group
+		culture_group = celtaidd_group
+		AND = {
+			culture_group = kihsan_group
+			NOT = { culture = nimbus primary_culture = nimbus }
+		}
+		culture_group = karen_group
+		culture_group = east_kaulic_group
+		culture_group = dahe_group
+		culture_group = xuaze_group
+		culture_group = kurean_group
+		culture_group = yaroli_group
+		culture_group = helghian_group
+		culture_group = ozarkhian_group
+		culture_group = porian_group
+		culture_group = autemer_group
+		culture_group = unglan_group
+		culture_group = sieraldhah_group
+		culture_group = iaznahoganto_group
+		culture_group = alzhaic_group
+		culture_group = wagren_group
+		culture_group = tensali_group
+		culture_group = ukabururn_group
+		culture_group = leden_group
+		culture_group = lurran_group
+		culture_group = obenic_group
+		culture_group = ocelid_group
+		culture_group = heplin_group
+		culture_group = serob_group
+		culture_group = kalnish_group
+		culture_group = tehaori_group
+		culture_group = adnuin_group
+		culture_group = seesonzero_group
+	}
+}
+has_human_accepted = {
+	OR = {
+		accepted_culture = palmer
+		accepted_culture = fortly
+		accepted_culture = kido
+		accepted_culture = upper_vestorian
+		accepted_culture = lower_vestorian
+		accepted_culture = survalsian
+		accepted_culture = credentinunum
+		accepted_culture = brahguan
+		accepted_culture = enclaver
+		accepted_culture = kaulradic
+		accepted_culture = oskitan
+		accepted_culture = prilohan
+		accepted_culture = iznadi
+		accepted_culture = bogg
+		accepted_culture = pyaltsev
+		accepted_culture = penoxian
+		accepted_culture = pozitianian
+		accepted_culture = zakaulic
+		accepted_culture = ferdunic
+		accepted_culture = kihsan
+		accepted_culture = karen
+		accepted_culture = bosem
+		accepted_culture = tahviran
+		accepted_culture = iran
+		accepted_culture = kythian
+		accepted_culture = long
+		accepted_culture = dai
+		accepted_culture = chuanwei
+		accepted_culture = rezubian
+		accepted_culture = xuaze
+		accepted_culture = xuahogg
+		accepted_culture = kurean
+		accepted_culture = yaroli
+		accepted_culture = helghian
+		accepted_culture = ozarkhian
+		accepted_culture = porian
+		accepted_culture = karhogg
+		accepted_culture = autemer
+		accepted_culture = unglan
+		accepted_culture = sieraldh
+		accepted_culture = kaihaku
+		accepted_culture = okuyokama
+		accepted_culture = satomoto
+		accepted_culture = sudokai
+		accepted_culture = ryoko
+		accepted_culture = keikenna
+		accepted_culture = alzhaic
+		accepted_culture = dengiz
+		accepted_culture = wagren
+		accepted_culture = tensali
+		accepted_culture = ukabururn
+		accepted_culture = ledengradian
+		accepted_culture = ibaien
+		accepted_culture = obenic
+		accepted_culture = ocelidian
+		accepted_culture = heplin
+		accepted_culture = serob
+		accepted_culture = kalnish
+		accepted_culture = tehaori
+		accepted_culture = adnuin
+		accepted_culture = cowpal
+		accepted_culture = scotar
+		accepted_culture = celtaidd
+	}
+}

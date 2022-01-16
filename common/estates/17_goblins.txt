@@ -1,0 +1,139 @@
+# For Government Reforms to identify properly influence and loyalty modifiers, remember to put disqualifying triggers before the has_reform
+
+estate_goblins = {
+	icon = 6
+
+	# If true, country will get estate
+	trigger = {
+		OR = {
+			has_country_flag = primary_goblin_nation
+			has_country_flag = goblins_accepted
+		}
+		NOT = { has_government_attribute = is_merchant_republic }
+		NOT = { has_reform = trading_city }
+		NOT = { is_revolutionary_republic_trigger = yes }
+		NOT = { government = native }
+		NOT = { has_reform = cossacks_reform }
+		NOT = { has_reform = siberian_tribe }
+		NOT = { has_reform = veche_republic }
+		NOT = { has_reform = celestial_empire }
+		NOT = { has_reform = pirate_republic_reform }
+		is_nomad = no
+		NOT = { has_reform = revolutionary_empire_reform }
+	}
+
+	# These scale with loyalty & power
+	country_modifier_happy = {
+		trade_steering = 0.2
+		interest = -1
+	}
+	country_modifier_neutral = {
+		trade_steering = 0.2
+	}	
+	country_modifier_angry = {
+		trade_steering = -0.2
+		interest = 1
+		global_unrest = 2
+	}
+	land_ownership_modifier = {
+		goblins_loyalty_modifier = 0.2
+	}
+	
+	province_independence_weight = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { culture_group = goblin_group }
+		}
+		modifier = {
+			factor = 2
+			province_is_or_accepts_culture = no
+		}
+		modifier = {
+			factor = 0.67
+			NOT = { is_state_core = owner }
+		}
+	}
+
+	# Influence modifiers
+	base_influence = 10
+	influence_modifier = {
+		desc = ESTATE_GOBLINS_IN_DEBT
+		trigger = {
+			num_of_loans = 1
+		}
+		influence = 10
+	}
+	influence_modifier = {
+		desc = ESTATE_GOBLINS_PROMOTED
+		trigger = {
+			has_country_flag = goblins_accepted
+			NOT = { has_country_flag = primary_goblin_nation }
+		}
+		influence = 5
+	}
+	influence_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+			}
+		}
+		influence = -40
+	}
+	
+	#Loyalty Modifiers
+	loyalty_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+			}
+		}
+		loyalty = -20
+	}
+	#Rajasthani Culture Promoted
+	loyalty_modifier = {
+		desc = ESTATE_GOBLINS_IS_PRIMARY
+		trigger = {
+			has_country_flag = primary_goblin_nation
+		}
+		loyalty = 5
+	}
+	loyalty_modifier = {
+		desc = ESTATE_GOBLINS_NO_INFLATION
+		trigger = {
+			NOT = { inflation = 0.01 }
+		}
+		loyalty = 5
+	}
+	loyalty_modifier = {
+		desc = ESTATE_GOBLINS_BANKRUPT
+		trigger = {
+			is_bankrupt = yes
+		}
+		loyalty = -15
+	}
+
+	privileges = {
+		estate_goblins_land_rights
+	}
+
+	agendas = {
+		estate_goblins_build_trade_building_in_y
+	}
+
+	color = { 0 100 0 }
+	
+	influence_from_dev_modifier = 1.0
+}

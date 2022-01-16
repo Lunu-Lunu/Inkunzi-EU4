@@ -6,6 +6,7 @@ technology_group = western
 religion = celestialism
 primary_culture = upper_vestorian
 capital = 39
+set_country_flag = primary_human_nation
 
 1444.11.11 = {
 	monarch = {

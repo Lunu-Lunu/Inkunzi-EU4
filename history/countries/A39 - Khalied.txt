@@ -6,6 +6,7 @@ technology_group = western
 religion = turriyahism
 primary_culture = tahviran
 capital = 481
+set_country_flag = primary_human_nation
 
 1444.11.11 = {
 	monarch = {

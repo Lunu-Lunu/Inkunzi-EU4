@@ -4,19 +4,19 @@
 # written by Lunu (probably not)
 ###########################################################
 
-namespace = karpunian_military_stagnation
+namespace = karpunia_military_stagnation
 
 country_event = {
-	id = karpunian_military_stagnation.1
-	title = karpunian_military_stagnation.1.t
-	desc = karpunian_military_stagnation.1.desc
+	id = karpunia_military_stagnation.1
+	title = karpunia_military_stagnation.1.t
+	desc = karpunia_military_stagnation.1.desc
 	picture = COUNTRY_COLLAPSE_eventPicture
 	
 	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = { # Who needs a 'modern' army, anyway?
-		name = karpunian_military_stagnation.1.a
+		name = karpunia_military_stagnation.1.a
 		add_army_tradition = -100
 	}
 }

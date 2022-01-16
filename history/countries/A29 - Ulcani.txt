@@ -6,6 +6,7 @@ technology_group = western
 religion = turriyahism
 primary_culture = ulian
 capital = 401
+set_country_flag = primary_golem_nation
 
 1444.11.11 = {
 	monarch = {

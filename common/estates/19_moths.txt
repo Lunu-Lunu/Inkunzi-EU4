@@ -1,0 +1,146 @@
+# For Government Reforms to identify properly influence and loyalty modifiers, remember to put disqualifying triggers before the has_reform
+
+estate_moths = {
+	icon = 1
+
+	# If true, country will get estate
+	trigger = {
+		OR = {
+			has_country_flag = primary_moth_nation
+			has_country_flag = moths_accepted
+		}
+		NOT = { has_government_attribute = is_merchant_republic }
+		NOT = { has_reform = trading_city }
+		NOT = { is_revolutionary_republic_trigger = yes }
+		NOT = { government = native }
+		NOT = { has_reform = cossacks_reform }
+		NOT = { has_reform = siberian_tribe }
+		NOT = { has_reform = veche_republic }
+		NOT = { has_reform = celestial_empire }
+		NOT = { has_reform = pirate_republic_reform }
+		is_nomad = no
+		NOT = { has_reform = revolutionary_empire_reform }
+	}
+
+	# These scale with loyalty & power
+	country_modifier_happy = {
+		build_cost = -0.2
+		global_monthly_devastation = -0.1
+	}
+	country_modifier_neutral = {
+		build_cost = -0.1
+	}	
+	country_modifier_angry = {
+		build_cost = 0.2
+		development_cost = 0.2
+		global_unrest = 2
+	}
+	land_ownership_modifier = {
+		moths_loyalty_modifier = 0.2
+	}
+	
+	province_independence_weight = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { culture_group = moth_group }
+		}
+		modifier = {
+			factor = 2
+			province_is_or_accepts_culture = no
+		}
+		modifier = {
+			factor = 0.67
+			NOT = { is_state_core = owner }
+		}
+	}
+
+	# Influence modifiers
+	base_influence = 10
+	influence_modifier = {
+		desc = ESTATE_MOTHS_CAPITAL_UNIVERSITY
+		trigger = {
+			capital_scope = { has_building = university }
+		}
+		influence = 10
+	}
+	influence_modifier = {
+		desc = ESTATE_MOTHS_PROMOTED
+		trigger = {
+			has_country_flag = moths_accepted
+			NOT = { has_country_flag = primary_moth_nation }
+		}
+		influence = 5
+	}
+	influence_modifier = {
+		desc = ESTATE_MOTHS_COMPLETED_INNOVATIVE_IDEAS
+		trigger = {
+			full_idea_group = innovative_ideas
+		}
+		influence = 10
+	}
+	influence_modifier = {
+		desc = ESTATE_MOTHS_INNOVATIVE
+		trigger = {
+			innovativeness = 50
+		}
+		influence = 10
+	}
+	influence_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+			}
+		}
+		influence = -40
+	}
+	
+	#Loyalty Modifiers
+	loyalty_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+			}
+		}
+		loyalty = -20
+	}
+	#Rajasthani Culture Promoted
+	loyalty_modifier = {
+		desc = ESTATE_MOTHS_IS_PRIMARY
+		trigger = {
+			has_country_flag = primary_moth_nation
+		}
+		loyalty = 5
+	}
+	loyalty_modifier = {
+		desc = ESTATE_MOTHS_COMPLETED_INNOVATIVE_IDEAS_LOY
+		trigger = {
+			full_idea_group = innovative_ideas
+		}
+		loyalty = 5
+	}
+
+	privileges = {
+		estate_moths_land_rights
+	}
+
+	agendas = {
+		estate_moths_build_university_in_y
+	}
+
+	color = { 150 200 100 }
+	
+	influence_from_dev_modifier = 1.0
+}

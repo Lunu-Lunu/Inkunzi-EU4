@@ -6,6 +6,7 @@ technology_group = western
 religion = medvedeni
 primary_culture = urakkan
 capital = 115
+set_country_flag = primary_draconic_nation
 
 1444.11.11 = {
 	monarch = {

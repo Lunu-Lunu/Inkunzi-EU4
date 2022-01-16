@@ -11,5 +11,5 @@ base_production = 1
 base_manpower = 1
 trade_goods = unknown
 capital = "Placeholder"
-is_city = yes
+is_city = no
 discovered_by = western

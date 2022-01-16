@@ -6,3 +6,4 @@ technology_group = western
 religion = mashia
 primary_culture = yaroli
 capital = 723
+set_country_flag = primary_human_nation

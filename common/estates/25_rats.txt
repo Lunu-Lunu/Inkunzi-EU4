@@ -1,0 +1,141 @@
+# For Government Reforms to identify properly influence and loyalty modifiers, remember to put disqualifying triggers before the has_reform
+
+estate_rats = {
+	icon = 2
+
+	# If true, country will get estate
+	trigger = {
+		OR = {
+			has_country_flag = primary_rat_nation
+			has_country_flag = rats_accepted
+		}
+		NOT = { has_government_attribute = is_merchant_republic }
+		NOT = { has_reform = trading_city }
+		NOT = { is_revolutionary_republic_trigger = yes }
+		NOT = { government = native }
+		NOT = { has_reform = cossacks_reform }
+		NOT = { has_reform = siberian_tribe }
+		NOT = { has_reform = veche_republic }
+		NOT = { has_reform = celestial_empire }
+		NOT = { has_reform = pirate_republic_reform }
+		is_nomad = no
+		NOT = { has_reform = revolutionary_empire_reform }
+	}
+
+	# These scale with loyalty & power
+	country_modifier_happy = {
+		hostile_attrition = 2
+		regiment_costs = -0.1
+	}
+	country_modifier_neutral = {
+		hostile_attrition = 2
+	}	
+	country_modifier_angry = {
+		hostile_attrition = -2
+		regiment_costs = 0.2
+		global_unrest = 2
+	}
+	land_ownership_modifier = {
+		rats_loyalty_modifier = 0.2
+	}
+	
+	province_independence_weight = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { culture_group = ratkin_group }
+		}
+		modifier = {
+			factor = 2
+			province_is_or_accepts_culture = no
+		}
+		modifier = {
+			factor = 0.67
+			NOT = { is_state_core = owner }
+		}
+	}
+
+	# Influence modifiers
+	base_influence = 10
+	influence_modifier = {
+		desc = ESTATE_RATS_LEADING_DEFENSIVE_WAR
+		trigger = {
+			is_in_war = {
+				defender_leader = ROOT
+			}
+		}
+		influence = 15
+	}
+	influence_modifier = {
+		desc = ESTATE_RATS_PROMOTED
+		trigger = {
+			has_country_flag = rats_accepted
+			NOT = { has_country_flag = primary_rat_nation }
+		}
+		influence = 5
+	}
+	influence_modifier = {
+		desc = ESTATE_RATS_AT_FORCE_LIMIT
+		trigger = {
+			army_size_percentage = 1
+		}
+		influence = 10
+	}
+	influence_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+			}
+		}
+		influence = -40
+	}
+	
+	#Loyalty Modifiers
+	loyalty_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+			}
+		}
+		loyalty = -20
+	}
+	#Rajasthani Culture Promoted
+	loyalty_modifier = {
+		desc = ESTATE_RATS_IS_PRIMARY
+		trigger = {
+			has_country_flag = primary_rat_nation
+		}
+		loyalty = 5
+	}
+	loyalty_modifier = {
+		desc = ESTATE_RATS_RELIGIOUS_UNITY
+		trigger = {
+			religious_unity = 1
+		}
+		loyalty = 5
+	}
+
+	privileges = {
+		estate_rats_land_rights
+	}
+
+	agendas = {
+		estate_rats_build_up_manpower_reserves
+	}
+
+	color = { 150 150 0 }
+	
+	influence_from_dev_modifier = 1.0
+}

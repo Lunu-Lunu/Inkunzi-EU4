@@ -1,0 +1,215 @@
+# For Government Reforms to identify properly influence and loyalty modifiers, remember to put disqualifying triggers before the has_reform
+
+estate_furries = {
+	icon = 6
+
+	# If true, country will get estate
+	trigger = {
+		OR = {
+			has_country_flag = primary_furry_nation
+			has_country_flag = furries_accepted
+		}
+		NOT = { has_government_attribute = is_merchant_republic }
+		NOT = { has_reform = trading_city }
+		NOT = { is_revolutionary_republic_trigger = yes }
+		NOT = { government = native }
+		NOT = { has_reform = cossacks_reform }
+		NOT = { has_reform = siberian_tribe }
+		NOT = { has_reform = veche_republic }
+		NOT = { has_reform = celestial_empire }
+		NOT = { has_reform = pirate_republic_reform }
+		is_nomad = no
+		NOT = { has_reform = revolutionary_empire_reform }
+	}
+
+	# These scale with loyalty & power
+	country_modifier_happy = {
+		global_unrest = -3
+		all_estate_loyalty_equilibrium = 0.05
+	}
+	country_modifier_neutral = {
+		global_unrest = -2
+	}	
+	country_modifier_angry = {
+		all_estate_loyalty_equilibrium = -0.05
+		global_unrest = 5
+	}
+	land_ownership_modifier = {
+		furries_loyalty_modifier = 0.2
+	}
+	
+	province_independence_weight = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { culture_group = paleremore_group }
+		}
+		modifier = {
+			factor = 2
+			province_is_or_accepts_culture = no
+		}
+		modifier = {
+			factor = 0.67
+			NOT = { is_state_core = owner }
+		}
+	}
+
+	# Influence modifiers
+	base_influence = 10
+	influence_modifier = {
+		desc = ESTATE_FURRIES_MULTIPLE_OTHER_RACES
+		trigger = {
+			OR = {
+				AND = {
+					NOT = { has_country_flag = primary_human_nation }
+					has_country_flag = humans_accepted
+				}
+				AND = {
+					NOT = { has_country_flag = primary_ourk_nation }
+					has_country_flag = ourks_accepted
+				}
+				AND = {
+					NOT = { has_country_flag = primary_crab_nation }
+					has_country_flag = crabs_accepted
+				}
+				AND = {
+					NOT = { has_country_flag = primary_draconic_nation }
+					has_country_flag = draconic_accepted
+				}
+				AND = {
+					NOT = { has_country_flag = primary_sia_si_nation }
+					has_country_flag = sia_si_accepted
+				}
+				AND = {
+					NOT = { has_country_flag = primary_gneta_nation }
+					has_country_flag = gnetans_accepted
+				}
+				AND = {
+					NOT = { has_country_flag = primary_lizard_nation }
+					has_country_flag = lizards_accepted
+				}
+				AND = {
+					NOT = { has_country_flag = primary_centaur_nation }
+					has_country_flag = centaurs_accepted
+				}
+				AND = {
+					NOT = { has_country_flag = primary_golem_nation }
+					has_country_flag = golems_accepted
+				}
+				AND = {
+					NOT = { has_country_flag = primary_dwarf_nation }
+					has_country_flag = dwarves_accepted
+				}
+				AND = {
+					NOT = { has_country_flag = primary_elf_nation }
+					has_country_flag = elves_accepted
+				}
+				AND = {
+					NOT = { has_country_flag = primary_goblin_nation }
+					has_country_flag = goblins_accepted
+				}
+				AND = {
+					NOT = { has_country_flag = primary_frog_nation }
+					has_country_flag = frogs_accepted
+				}
+				AND = {
+					NOT = { has_country_flag = primary_rat_nation }
+					has_country_flag = rats_accepted
+				}
+				AND = {
+					NOT = { has_country_flag = primary_goat_nation }
+					has_country_flag = goats_accepted
+				}
+				AND = {
+					NOT = { has_country_flag = primary_hesh_nation }
+					has_country_flag = hesh_accepted
+				}
+				AND = {
+					NOT = { has_country_flag = primary_snake_nation }
+					has_country_flag = snakes_accepted
+				}
+				AND = {
+					NOT = { has_country_flag = primary_ape_nation }
+					has_country_flag = apes_accepted
+				}
+				AND = {
+					NOT = { has_country_flag = primary_ent_nation }
+					has_country_flag = ents_accepted
+				}
+			}
+		}
+		influence = 10
+	}
+	influence_modifier = {
+		desc = ESTATE_FURRIES_PROMOTED
+		trigger = {
+			has_country_flag = furries_accepted
+			NOT = { has_country_flag = primary_furry_nation }
+		}
+		influence = 5
+	}
+	influence_modifier = {
+		desc = ESTATE_FURRIES_FULL_HUMANIST_IDEAS
+		trigger = {
+			full_idea_group = humanist_ideas
+		}
+		influence = 10
+	}
+	influence_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+			}
+		}
+		influence = -40
+	}
+	
+	#Loyalty Modifiers
+	loyalty_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_burghers_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_vaisyas_disaster
+				has_disaster = estate_jains_disaster
+			}
+		}
+		loyalty = -20
+	}
+	#Rajasthani Culture Promoted
+	loyalty_modifier = {
+		desc = ESTATE_FURRIES_IS_PRIMARY
+		trigger = {
+			has_country_flag = primary_furry_nation
+		}
+		loyalty = 5
+	}
+	loyalty_modifier = {
+		desc = ESTATE_FURRIES_FULL_HUMANIST_IDEAS_LOY
+		trigger = {
+			full_idea_group = humanist_ideas
+		}
+		loyalty = 10
+	}
+
+	privileges = {
+		estate_furries_land_rights
+	}
+
+	agendas = {
+		estate_furries_hire_advisor
+	}
+
+	color = { 150 255 255 }
+	
+	influence_from_dev_modifier = 1.0
+}

@@ -6,6 +6,7 @@ technology_group = western
 religion = valor
 primary_culture = north_karlton
 capital = 2637
+set_country_flag = primary_crab_nation
 
 1444.11.11 = {
 	monarch = {

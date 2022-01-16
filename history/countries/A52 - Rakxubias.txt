@@ -6,3 +6,4 @@ technology_group = western
 religion = sunfucian
 primary_culture = rezubian
 capital = 636
+set_country_flag = primary_human_nation

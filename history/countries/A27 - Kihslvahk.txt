@@ -7,6 +7,8 @@ religion = onwinnen_whihcan
 primary_culture = nimbus
 capital = 385
 add_accepted_culture = kihsan
+set_country_flag = primary_nimbus_nation
+set_country_flag = humans_accepted
 
 1444.11.11 = {
 	monarch = {

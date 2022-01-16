@@ -7,6 +7,8 @@ religion = valor
 primary_culture = ukabururn
 add_accepted_culture = goblin
 capital = 2485
+set_country_flag = primary_human_nation
+set_country_flag = goblins_accepted
 
 1444.11.11 = {
 	monarch = {

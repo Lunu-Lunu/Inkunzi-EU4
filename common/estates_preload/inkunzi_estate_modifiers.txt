@@ -1,0 +1,392 @@
+#Define estate loyalty and influence modifiers here
+
+estate_ourk = {
+	modifier_definition = {
+		type = loyalty
+		key = ourk_loyalty_modifier
+		trigger = {
+			has_estate = estate_ourk
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = ourk_influence_modifier
+		trigger = {
+			has_estate = estate_ourk
+		}
+	}
+}
+
+estate_humans = {
+	modifier_definition = {
+		type = loyalty
+		key = humans_loyalty_modifier
+		trigger = {
+			has_estate = estate_humans
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = humans_influence_modifier
+		trigger = {
+			has_estate = estate_humans
+		}
+	}
+}
+
+estate_centaurs = {
+	modifier_definition = {
+		type = loyalty
+		key = centaurs_loyalty_modifier
+		trigger = {
+			has_estate = estate_centaurs
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = centaurs_influence_modifier
+		trigger = {
+			has_estate = estate_centaurs
+		}
+	}
+}
+
+estate_draconic = {
+	modifier_definition = {
+		type = loyalty
+		key = draconic_loyalty_modifier
+		trigger = {
+			has_estate = estate_draconic
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = draconic_influence_modifier
+		trigger = {
+			has_estate = estate_draconic
+		}
+	}
+}
+
+estate_nimbus = {
+	modifier_definition = {
+		type = loyalty
+		key = nimbus_loyalty_modifier
+		trigger = {
+			has_estate = estate_nimbus
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = nimbus_influence_modifier
+		trigger = {
+			has_estate = estate_nimbus
+		}
+	}
+}
+
+estate_crabs = {
+	modifier_definition = {
+		type = loyalty
+		key = crabs_loyalty_modifier
+		trigger = {
+			has_estate = estate_crabs
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = crabs_influence_modifier
+		trigger = {
+			has_estate = estate_crabs
+		}
+	}
+}
+
+estate_mushrooms = {
+	modifier_definition = {
+		type = loyalty
+		key = mushrooms_loyalty_modifier
+		trigger = {
+			has_estate = estate_mushrooms
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = mushrooms_influence_modifier
+		trigger = {
+			has_estate = estate_mushrooms
+		}
+	}
+}
+
+estate_golems = {
+	modifier_definition = {
+		type = loyalty
+		key = golems_loyalty_modifier
+		trigger = {
+			has_estate = estate_golems
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = golems_influence_modifier
+		trigger = {
+			has_estate = estate_golems
+		}
+	}
+}
+
+estate_elves = {
+	modifier_definition = {
+		type = loyalty
+		key = elves_loyalty_modifier
+		trigger = {
+			has_estate = estate_elves
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = elves_influence_modifier
+		trigger = {
+			has_estate = estate_elves
+		}
+	}
+}
+
+estate_goblins = {
+	modifier_definition = {
+		type = loyalty
+		key = goblins_loyalty_modifier
+		trigger = {
+			has_estate = estate_goblins
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = goblins_influence_modifier
+		trigger = {
+			has_estate = estate_goblins
+		}
+	}
+}
+
+estate_lizards = {
+	modifier_definition = {
+		type = loyalty
+		key = lizards_loyalty_modifier
+		trigger = {
+			has_estate = estate_lizards
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = lizards_influence_modifier
+		trigger = {
+			has_estate = estate_lizards
+		}
+	}
+}
+
+estate_moths = {
+	modifier_definition = {
+		type = loyalty
+		key = moths_loyalty_modifier
+		trigger = {
+			has_estate = estate_moths
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = moths_influence_modifier
+		trigger = {
+			has_estate = estate_moths
+		}
+	}
+}
+
+estate_sia_si = {
+	modifier_definition = {
+		type = loyalty
+		key = sia_si_loyalty_modifier
+		trigger = {
+			has_estate = estate_sia_si
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = sia_si_influence_modifier
+		trigger = {
+			has_estate = estate_sia_si
+		}
+	}
+}
+
+estate_gnetans = {
+	modifier_definition = {
+		type = loyalty
+		key = gnetans_loyalty_modifier
+		trigger = {
+			has_estate = estate_gnetans
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = gnetans_influence_modifier
+		trigger = {
+			has_estate = estate_gnetans
+		}
+	}
+}
+
+estate_furries = {
+	modifier_definition = {
+		type = loyalty
+		key = furries_loyalty_modifier
+		trigger = {
+			has_estate = estate_furries
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = furries_influence_modifier
+		trigger = {
+			has_estate = estate_furries
+		}
+	}
+}
+
+estate_frogs = {
+	modifier_definition = {
+		type = loyalty
+		key = frogs_loyalty_modifier
+		trigger = {
+			has_estate = estate_frogs
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = frogs_influence_modifier
+		trigger = {
+			has_estate = estate_frogs
+		}
+	}
+}
+
+estate_dwarves = {
+	modifier_definition = {
+		type = loyalty
+		key = dwarves_loyalty_modifier
+		trigger = {
+			has_estate = estate_dwarves
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = dwarves_influence_modifier
+		trigger = {
+			has_estate = estate_dwarves
+		}
+	}
+}
+
+estate_rats = {
+	modifier_definition = {
+		type = loyalty
+		key = rats_loyalty_modifier
+		trigger = {
+			has_estate = estate_rats
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = rats_influence_modifier
+		trigger = {
+			has_estate = estate_rats
+		}
+	}
+}
+
+estate_goats = {
+	modifier_definition = {
+		type = loyalty
+		key = goats_loyalty_modifier
+		trigger = {
+			has_estate = estate_goats
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = goats_influence_modifier
+		trigger = {
+			has_estate = estate_goats
+		}
+	}
+}
+
+estate_hesh = {
+	modifier_definition = {
+		type = loyalty
+		key = hesh_loyalty_modifier
+		trigger = {
+			has_estate = estate_hesh
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = hesh_influence_modifier
+		trigger = {
+			has_estate = estate_hesh
+		}
+	}
+}
+
+estate_snakes = {
+	modifier_definition = {
+		type = loyalty
+		key = snakes_loyalty_modifier
+		trigger = {
+			has_estate = estate_snakes
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = snakes_influence_modifier
+		trigger = {
+			has_estate = estate_snakes
+		}
+	}
+}
+
+estate_apes = {
+	modifier_definition = {
+		type = loyalty
+		key = apes_loyalty_modifier
+		trigger = {
+			has_estate = estate_apes
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = apes_influence_modifier
+		trigger = {
+			has_estate = estate_apes
+		}
+	}
+}
+
+estate_ents = {
+	modifier_definition = {
+		type = loyalty
+		key = ents_loyalty_modifier
+		trigger = {
+			has_estate = estate_ents
+		}
+	}
+	modifier_definition = {
+		type = influence
+		key = ents_influence_modifier
+		trigger = {
+			has_estate = estate_ents
+		}
+	}
+}

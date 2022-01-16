@@ -6,6 +6,7 @@ technology_group = western
 religion = haymonutho
 primary_culture = gneta
 capital = 1045
+set_country_flag = primary_gneta_nation
 
 1444.11.11 = {
 	monarch = {

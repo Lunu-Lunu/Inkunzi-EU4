@@ -6,6 +6,7 @@ technology_group = western
 religion = medvedeni
 primary_culture = celtaidd
 capital = 122
+set_country_flag = primary_human_nation
 
 1444.11.11 = {
 	monarch = {

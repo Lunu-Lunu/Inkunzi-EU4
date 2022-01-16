@@ -6,6 +6,7 @@ technology_group = mesoamerican
 religion = tribal_faith
 primary_culture = karaxian
 capital = 2637
+set_country_flag = primary_hesh_nation
 
 1444.11.11 = {
 	monarch = {

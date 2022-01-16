@@ -6,6 +6,7 @@ technology_group = western
 religion = mashia
 primary_culture = kaihaku
 capital = 1754
+set_country_flag = primary_human_nation
 
 1444.11.11 = {
 	monarch = {

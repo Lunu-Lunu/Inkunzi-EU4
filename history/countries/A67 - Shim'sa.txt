@@ -6,6 +6,7 @@ technology_group = western
 religion = haymonutho
 primary_culture = siamlud
 capital = 882
+set_country_flag = primary_sia_si_nation
 
 1444.11.11 = {
 	monarch = {
