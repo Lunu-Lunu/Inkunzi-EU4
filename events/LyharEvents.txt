@@ -1,0 +1,103 @@
+###########################################################
+# Events for Lyhar
+#
+# written by Lunu (probably not)
+###########################################################
+
+namespace = lyhar
+
+country_event = { # Event for other Ervars from Lyhar to submit
+	id = lyhar.1
+	title = lyhar.1.t
+	desc = lyhar.1.desc
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		log = "Root.GetName: Event lyhar.1"
+	}
+	
+	option = { # yeah sure ill die :)
+		name = lyhar.1.a
+		log = "Root.GetName: Event Option lyhar.1.a"
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 2
+				has_opinion = {
+					who = A47
+					value = 175
+				}
+			}
+			modifier = {
+				factor = 2
+				has_opinion = {
+					who = A47
+					value = 200
+				}
+			}
+			modifier = {
+				factor = 1.5
+				NOT = {
+					army_strength = {
+						who = A47
+						value = 1
+					}
+				}
+			}
+		}
+		A47 = {
+			inherit = ROOT
+		}
+	}
+	option = { # yeah sure ill become a subject :)
+		name = lyhar.1.b
+		log = "Root.GetName: Event Option lyhar.1.b"
+		ai_chance = {
+			factor = 40
+		}
+		A47 = {
+			create_vassal = ROOT
+		}
+	}
+	option = { # what? no
+		name = lyhar.1.c
+		log = "Root.GetName: Event Option lyhar.1.c"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_opinion = {
+					who = A47
+					value = 150
+				}
+			}
+			modifier = {
+				factor = 0.75
+				NOT = {
+					army_strength = {
+						who = A47
+						value = 1
+					}
+				}
+			}
+			modifier = {
+				factor = 0.25
+				NOT = {
+					army_strength = {
+						who = A47
+						value = 0.5
+					}
+				}
+			}
+		}
+		A47 = {
+			add_trust = {
+				who = ROOT
+				value = -30
+			}
+		}
+	}
+}

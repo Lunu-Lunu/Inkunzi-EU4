@@ -1,0 +1,51 @@
+###########################################################
+# Events for the Vaisyas Estate
+#
+# written by Daniel Tolman
+###########################################################
+
+namespace = frogs_estate_events
+
+# Low loyalty event
+
+# High loyalty event
+
+# Advancement of the Frogs
+
+# Decline of the Frogs
+
+# National Deity selection event - for estate privilege (not sure if I'll put it on clergy or frogs)
+country_event = {
+	id = frogs_estate_events.1
+	title = frogs_estate_events.1.t
+	desc = frogs_estate_events.1.desc
+	is_triggered_only = yes
+	option = { # Pick Lyharis
+		name = frogs_estate_events.1.a
+		change_personal_deity = lyharis
+	}
+	option = { # Pick Yeula
+		name = frogs_estate_events.1.b
+		change_personal_deity = eulorna
+	}
+	option = { # Pick Gegishym
+		name = frogs_estate_events.1.c
+		change_personal_deity = gegishym
+	}
+	option = { # Pick Bharsan
+		name = frogs_estate_events.1.d
+		change_personal_deity = bharsan
+	}
+	option = { # Pick Harlorn
+		name = frogs_estate_events.1.e
+		change_personal_deity = harlorn
+	}
+	option = { # Pick the Blightbringer
+		name = frogs_estate_events.1.f
+		change_personal_deity = the_blightbringer
+	}
+	option = { # Pick the Winged One
+		name = frogs_estate_events.1.g
+		change_personal_deity = the_winged_one
+	}
+}

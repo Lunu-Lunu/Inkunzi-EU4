@@ -15,7 +15,7 @@
 #######################################
 
 feudalism = {
-	penalty = 0.5
+	
 	bonus = {
 		free_leader_pool = 1
 	}
@@ -264,7 +264,6 @@ feudalism = {
 #######################################
 
 renaissance = {
-	penalty = 0.5
 
 	bonus = {
 		development_cost = -0.05
@@ -526,7 +525,6 @@ renaissance = {
 # Colonising is good.. mkay.-.
 #######################################
 new_world_i = {
-	penalty = 0.5
 
 	bonus = {
 		global_prov_trade_power_modifier = 0.10
@@ -794,7 +792,6 @@ new_world_i = {
 # Printing Press
 #######################################
 printing_press = {
-	penalty = 0.5
 
 	bonus = {
 		stability_cost_modifier = -0.05
@@ -1142,7 +1139,6 @@ printing_press = {
 # Global Trade
 #######################################
 global_trade = {
-	penalty = 0.5
 
 	bonus = {
 		merchants = 1
@@ -1447,7 +1443,6 @@ global_trade = {
 # Manufactories
 #######################################
 manufactories = {
-	penalty = 0.5
 
 	bonus = {
 		global_trade_goods_size_modifier = 0.1
@@ -1953,7 +1948,6 @@ manufactories = {
 # Enlightenment
 #######################################
 enlightenment = {
-	penalty = 0.5
 
 	bonus = {
 		culture_conversion_cost = -0.25
@@ -2335,7 +2329,6 @@ enlightenment = {
 # Industrialisation
 #######################################
 industrialization = {
-	penalty = 0.5
 	
 	trade_company_efficiency = 2.0
 

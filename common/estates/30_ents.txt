@@ -47,7 +47,7 @@ estate_ents = {
 		}
 		modifier = {
 			factor = 2
-			province_is_or_accepts_culture = no
+			has_owner_culture = no
 		}
 		modifier = {
 			factor = 0.67
@@ -139,7 +139,7 @@ estate_ents = {
 		estate_ents_develop_x
 	}
 
-	color = { 100 50 0 }
+	color = { 255 200 200 }
 	
 	influence_from_dev_modifier = 1.0
 }

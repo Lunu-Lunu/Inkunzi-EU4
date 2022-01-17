@@ -1,0 +1,4 @@
+B47_ervaryv_concept = {
+	diplomatic_reputation = 1
+	improve_relation_modifier = 0.25
+}

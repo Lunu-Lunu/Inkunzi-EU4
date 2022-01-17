@@ -215,7 +215,8 @@ estate_ourk_ourk_infantry_primacy = {
 	icon = privilege_grant_autonomy
 	max_absolutism = -10
 	loyalty = 0
-	influence = 0.25
+	influence = 0.3
+	land_share = 5
 	is_valid = {
 		
 	}
@@ -593,6 +594,71 @@ estate_centaurs_land_rights = {
 			factor = 0.75
 			has_estate_privilege = estate_humans_land_rights
 		}
+	}
+}
+
+estate_centaurs_cavalry = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -10
+	land_share = 5
+	loyalty = 0
+	influence = 0.3
+	is_valid = {
+		
+	}
+	can_select = {
+		army_tradition = 30
+	}
+	on_granted = {
+		add_army_tradition = -15
+	}
+	penalties = {
+		army_tradition_decay = 0.01
+		cavalry_cost = 0.1
+		infantry_power = -0.2
+	}
+	benefits = {
+		cavalry_flanking = 0.5
+		cavalry_power = 0.33
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			army_size = 20
+		}
+		modifier = {
+			factor = 2
+			NOT = { army_size = 10 }
+		}
+	}
+}
+
+estate_centaurs_open_court = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -10
+	land_share = 0
+	loyalty = 0.05
+	influence = 0.1
+	is_valid = {
+		
+	}
+	can_select = {
+		num_accepted_cultures = 1
+	}
+	on_granted = {
+
+	}
+	penalties = {
+		same_culture_advisor_cost = 0.1
+		culture_conversion_cost = 0.33
+	}
+	benefits = {
+		advisor_pool = 1
+		advisor_cost = -0.1
+	}
+	ai_will_do = {
+		factor = 5
 	}
 }
 
@@ -2659,6 +2725,45 @@ estate_frogs_land_rights = {
 		modifier = {
 			factor = 0.75
 			has_estate_privilege = estate_humans_land_rights
+		}
+	}
+}
+
+estate_frogs_naval_primacy = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -10
+	land_share = 5
+	loyalty = 0
+	influence = 0.3
+	is_valid = {
+		
+	}
+	can_select = {
+		navy_tradition = 30
+	}
+	on_granted = {
+		add_navy_tradition = -15
+	}
+	penalties = {
+		navy_tradition_decay = 0.01
+		global_ship_cost = 0.1
+		global_manpower_modifier = -0.1
+	}
+	benefits = {
+		ship_durability = 0.05
+		global_sailors_modifier = 0.33
+		naval_morale = 0.15
+		own_coast_naval_combat_bonus = 1
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			navy_size = 20
+		}
+		modifier = {
+			factor = 2
+			NOT = { navy_size = 10 }
 		}
 	}
 }

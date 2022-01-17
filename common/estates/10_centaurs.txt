@@ -47,7 +47,7 @@ estate_centaurs = {
 		}
 		modifier = {
 			factor = 2
-			province_is_or_accepts_culture = no
+			has_owner_culture = no
 		}
 		modifier = {
 			factor = 0.67
@@ -132,6 +132,8 @@ estate_centaurs = {
 
 	privileges = {
 		estate_centaurs_land_rights
+		estate_centaurs_cavalry
+		estate_centaurs_open_court
 	}
 
 	agendas = {

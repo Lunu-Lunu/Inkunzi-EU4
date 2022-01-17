@@ -47,7 +47,7 @@ estate_crabs = {
 		}
 		modifier = {
 			factor = 2
-			province_is_or_accepts_culture = no
+			has_owner_culture = no
 		}
 		modifier = {
 			factor = 0.67

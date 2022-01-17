@@ -574,55 +574,8 @@ on_new_consort = {
 # country
 on_monarch_death = {
 	if = {
-		limit = {
-			tag = ANS
-			BRA = {
-				has_country_flag = albrecht_achilles_flag
-			}
-		}
-		BRA = {
-			clr_country_flag = albrecht_achilles_flag #Just to be sure
-			kill_heir = yes #If Albrecht Achilles dies in Ansbach he will also be dead in Brandenburg, will appear as normal death of heir to BRA.
-		}
-	}
-	if = {
 		limit = { has_country_modifier = sought_after_bachelor }
 		remove_country_modifier = sought_after_bachelor
-	}
-	if = {
-		limit = {
-			tag = SAX
-			has_country_flag = sax_thuringen_split_to_happen
-			OR = {
-				NOT = { dynasty = "von Wettin" }
-				NOT = { senior_union_with = THU }
-				has_regency = yes
-			}
-		}
-		clr_country_flag = sax_thuringen_split_to_happen
-	}
-	burgundian_inheritance_start_effect = yes
-	ladislaus_postumus_king_died_effect = yes
-}
-
-# country
-on_regent = {
-	if = {
-		limit = {
-			NOT = { has_global_flag = death_of_haji_giray } #Also set in history.
-			tag = CRI
-			OR = {
-				NOT = { exists = TUR }
-				is_subject = yes
-				TUR = { NOT = { num_of_cities = ROOT } }
-				TUR = { is_subject = yes }
-				TUR = { NOT = { num_of_ports = 1 } }
-			}
-		}
-		set_global_flag = death_of_haji_giray
-	}
-	events = {
-		tribal_succession.1	# harsh anti-tribals.
 	}
 }
 
@@ -3577,5 +3530,26 @@ on_extended_regency = {
 		100 = extended_regency_events.6
 		
 		300 = 0
+	}
+}
+
+# country
+on_regent = {
+	if = {
+		limit = {
+			NOT = { has_global_flag = death_of_haji_giray } #Also set in history.
+			tag = CRI
+			OR = {
+				NOT = { exists = TUR }
+				is_subject = yes
+				TUR = { NOT = { num_of_cities = ROOT } }
+				TUR = { is_subject = yes }
+				TUR = { NOT = { num_of_ports = 1 } }
+			}
+		}
+		set_global_flag = death_of_haji_giray
+	}
+	events = {
+		tribal_succession.1	# harsh anti-tribals.
 	}
 }

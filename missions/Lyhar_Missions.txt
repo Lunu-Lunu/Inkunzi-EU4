@@ -1,0 +1,527 @@
+lyhar_column_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = B47
+	}
+	has_country_shield = yes
+	lyhar_mission_meeting_with_yeula = {
+		icon = mission_indian_stateman
+		position = 3
+		required_missions = {
+			lyhar_mission_connect_to_yeula
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			any_neighbor_country = { tag = B48 }
+			OR = {
+				B48 = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+				}
+				AND = {
+					army_strength = {
+						who = B48
+						value = 1
+					}
+					manpower_percentage = 0.75
+				}
+			}
+		}
+		effect = {
+			B48 = { country_event = { id = lyhar.1 } }
+		}
+	}
+	lyhar_mission_missive_to_sabhar = {
+		icon = mission_indian_stateman
+		position = 4
+		required_missions = {
+			lyhar_mission_connect_to_sabhar
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			any_neighbor_country = { tag = B49 }
+			OR = {
+				B49 = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+				}
+				AND = {
+					army_strength = {
+						who = B49
+						value = 1
+					}
+					manpower_percentage = 0.75
+				}
+			}
+		}
+		effect = {
+			B49 = { country_event = { id = lyhar.1 } }
+		}
+	}
+	lyhar_mission_speech_to_shyma = {
+		icon = mission_indian_stateman
+		position = 5
+		required_missions = {
+			lyhar_mission_connect_to_shyma
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			any_neighbor_country = { tag = B50 }
+			OR = {
+				B50 = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+				}
+				AND = {
+					army_strength = {
+						who = B50
+						value = 1
+					}
+					manpower_percentage = 0.75
+				}
+			}
+		}
+		effect = {
+			B50 = { country_event = { id = lyhar.1 } }
+		}
+	}
+	lyhar_mission_talk_with_harla = {
+		icon = mission_indian_stateman
+		position = 7
+		required_missions = {
+			lyhar_mission_fill_in_the_blanks
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			any_neighbor_country = { tag = B51 }
+			OR = {
+				B51 = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+				}
+				AND = {
+					army_strength = {
+						who = B51
+						value = 1
+					}
+					manpower_percentage = 0.75
+				}
+			}
+		}
+		effect = {
+			B51 = { country_event = { id = lyhar.1 } }
+		}
+	}
+}
+lyhar_column_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = B47
+	}
+	has_country_shield = yes
+	lyhar_mission_connect_to_yeula = {
+		icon = mission_indian_stateman
+		position = 2
+		required_missions = {
+			lyhar_mission_bhartods_ambition
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			treasury = 50
+			2870 = { any_neighbor_province = { owned_by = ROOT is_city = yes } }
+			2872 = { any_neighbor_province = { owned_by = ROOT is_city = yes } }
+		}
+		effect = {
+			if = {
+				limit = {
+					2870 = {
+						is_city = no
+						is_colony = no
+					}
+				}
+				add_treasury = -25
+				2870 = { add_siberian_construction = 100 }
+			}
+			if = {
+				limit = {
+					2872 = {
+						is_city = no
+						is_colony = no
+					}
+				}
+				add_treasury = -25
+				2872 = { add_siberian_construction = 100 }
+			}
+		}
+	}
+	lyhar_mission_connect_to_sabhar = {
+		icon = mission_indian_stateman
+		required_missions = {
+			lyhar_mission_connect_to_yeula
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			treasury = 125
+			2869 = { any_neighbor_province = { owned_by = ROOT is_city = yes } }
+			2871 = { any_neighbor_province = { owned_by = ROOT is_city = yes } }
+			2873 = { any_neighbor_province = { owned_by = ROOT is_city = yes } }
+			2877 = { any_neighbor_province = { owned_by = ROOT is_city = yes } }
+			2883 = { any_neighbor_province = { owned_by = ROOT is_city = yes } }
+		}
+		effect = {
+			if = {
+				limit = {
+					2871 = {
+						is_city = no
+						is_colony = no
+					}
+				}
+				add_treasury = -25
+				2871 = { add_siberian_construction = 100 }
+			}
+			if = {
+				limit = {
+					2869 = {
+						is_city = no
+						is_colony = no
+					}
+				}
+				add_treasury = -25
+				2869 = { add_siberian_construction = 100 }
+			}
+			if = {
+				limit = {
+					2873 = {
+						is_city = no
+						is_colony = no
+					}
+				}
+				add_treasury = -25
+				2873 = { add_siberian_construction = 100 }
+			}
+			if = {
+				limit = {
+					2877 = {
+						is_city = no
+						is_colony = no
+					}
+				}
+				add_treasury = -25
+				2877 = { add_siberian_construction = 100 }
+			}
+			if = {
+				limit = {
+					2883 = {
+						is_city = no
+						is_colony = no
+					}
+				}
+				add_treasury = -25
+				2883 = { add_siberian_construction = 100 }
+			}
+		}
+	}
+	lyhar_mission_connect_to_shyma = {
+		icon = mission_indian_stateman
+		required_missions = {
+			lyhar_mission_connect_to_sabhar
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			treasury = 200
+			2874 = { any_neighbor_province = { owned_by = ROOT is_city = yes } }
+			2875 = { any_neighbor_province = { owned_by = ROOT is_city = yes } }
+			2876 = { any_neighbor_province = { owned_by = ROOT is_city = yes } }
+			2878 = { any_neighbor_province = { owned_by = ROOT is_city = yes } }
+			2879 = { any_neighbor_province = { owned_by = ROOT is_city = yes } }
+			2882 = { any_neighbor_province = { owned_by = ROOT is_city = yes } }
+			2885 = { any_neighbor_province = { owned_by = ROOT is_city = yes } }
+			2886 = { any_neighbor_province = { owned_by = ROOT is_city = yes } }
+		}
+		effect = {
+			if = {
+				limit = {
+					2874 = {
+						is_city = no
+						is_colony = no
+					}
+				}
+				add_treasury = -25
+				2874 = { add_siberian_construction = 100 }
+			}
+			if = {
+				limit = {
+					2875 = {
+						is_city = no
+						is_colony = no
+					}
+				}
+				add_treasury = -25
+				2875 = { add_siberian_construction = 100 }
+			}
+			if = {
+				limit = {
+					2876 = {
+						is_city = no
+						is_colony = no
+					}
+				}
+				add_treasury = -25
+				2876 = { add_siberian_construction = 100 }
+			}
+			if = {
+				limit = {
+					2878 = {
+						is_city = no
+						is_colony = no
+					}
+				}
+				add_treasury = -25
+				2878 = { add_siberian_construction = 100 }
+			}
+			if = {
+				limit = {
+					2879 = {
+						is_city = no
+						is_colony = no
+					}
+				}
+				add_treasury = -25
+				2879 = { add_siberian_construction = 100 }
+			}
+			if = {
+				limit = {
+					2882 = {
+						is_city = no
+						is_colony = no
+					}
+				}
+				add_treasury = -25
+				2882 = { add_siberian_construction = 100 }
+			}
+			if = {
+				limit = {
+					2885 = {
+						is_city = no
+						is_colony = no
+					}
+				}
+				add_treasury = -25
+				2885 = { add_siberian_construction = 100 }
+			}
+			if = {
+				limit = {
+					2886 = {
+						is_city = no
+						is_colony = no
+					}
+				}
+				add_treasury = -25
+				2886 = { add_siberian_construction = 100 }
+			}
+		}
+	}
+	lyhar_mission_close_the_gap = {
+		icon = mission_indian_stateman
+		required_missions = {
+			lyhar_mission_connect_to_shyma
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			treasury = 100
+			2880 = { any_neighbor_province = { owned_by = ROOT is_city = yes } }
+			2881 = { any_neighbor_province = { owned_by = ROOT is_city = yes } }
+			2888 = { any_neighbor_province = { owned_by = ROOT is_city = yes } }
+			2889 = { any_neighbor_province = { owned_by = ROOT is_city = yes } }
+		}
+		effect = {
+			if = {
+				limit = {
+					2880 = {
+						is_city = no
+						is_colony = no
+					}
+				}
+				add_treasury = -25
+				2880 = { add_siberian_construction = 100 }
+			}
+			if = {
+				limit = {
+					2881 = {
+						is_city = no
+						is_colony = no
+					}
+				}
+				add_treasury = -25
+				2881 = { add_siberian_construction = 100 }
+			}
+			if = {
+				limit = {
+					2888 = {
+						is_city = no
+						is_colony = no
+					}
+				}
+				add_treasury = -25
+				2888 = { add_siberian_construction = 100 }
+			}
+			if = {
+				limit = {
+					2889 = {
+						is_city = no
+						is_colony = no
+					}
+				}
+				add_treasury = -25
+				2889 = { add_siberian_construction = 100 }
+			}
+		}
+	}
+	lyhar_mission_fill_in_the_blanks = {
+		icon = mission_indian_stateman
+		required_missions = {
+			lyhar_mission_close_the_gap
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			treasury = 75
+			2868 = { any_neighbor_province = { owned_by = ROOT is_city = yes } }
+			2887 = { any_neighbor_province = { owned_by = ROOT is_city = yes } }
+			2890 = { any_neighbor_province = { owned_by = ROOT is_city = yes } }
+		}
+		effect = {
+			if = {
+				limit = {
+					2868 = {
+						is_city = no
+						is_colony = no
+					}
+				}
+				add_treasury = -25
+				2868 = { add_siberian_construction = 100 }
+			}
+			if = {
+				limit = {
+					2887 = {
+						is_city = no
+						is_colony = no
+					}
+				}
+				add_treasury = -25
+				2887 = { add_siberian_construction = 100 }
+			}
+			if = {
+				limit = {
+					2890 = {
+						is_city = no
+						is_colony = no
+					}
+				}
+				add_treasury = -25
+				2890 = { add_siberian_construction = 100 }
+			}
+		}
+	}
+}
+lyhar_column_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = B47
+	}
+	has_country_shield = yes
+	lyhar_mission_bhartods_ambition = {
+		icon = mission_indian_stateman
+		required_missions = {
+
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			estate_loyalty = {
+				estate = estate_church
+				loyalty = 60
+			}
+			stability = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = B47_ervaryv_concept
+				duration = 9125
+			}
+			every_province = {
+				limit = {
+					OR = {
+						owned_by = B48
+						owned_by = B49
+						owned_by = B50
+						owned_by = B51
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+lyhar_column_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = B47
+	}
+	has_country_shield = yes
+	
+}
+lyhar_column_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = B47
+	}
+	has_country_shield = yes
+	
+}

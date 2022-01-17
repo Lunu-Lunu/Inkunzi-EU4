@@ -25,14 +25,14 @@ estate_rats = {
 	# These scale with loyalty & power
 	country_modifier_happy = {
 		hostile_attrition = 2
-		regiment_costs = -0.1
+		global_regiment_cost = -0.1
 	}
 	country_modifier_neutral = {
 		hostile_attrition = 2
 	}	
 	country_modifier_angry = {
 		hostile_attrition = -2
-		regiment_costs = 0.2
+		global_regiment_cost = 0.2
 		global_unrest = 2
 	}
 	land_ownership_modifier = {
@@ -47,7 +47,7 @@ estate_rats = {
 		}
 		modifier = {
 			factor = 2
-			province_is_or_accepts_culture = no
+			has_owner_culture = no
 		}
 		modifier = {
 			factor = 0.67

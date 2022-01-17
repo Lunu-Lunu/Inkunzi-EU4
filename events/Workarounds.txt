@@ -1,7 +1,7 @@
 ###########################################################
-# Events for Arslan
+# Events being used as workarounds for jank
 #
-# written by Lunu (probably not)
+# not even written because they're hidden
 ###########################################################
 
 namespace = workaround
@@ -12,6 +12,9 @@ country_event = { # for race
 	desc = workaround.1.desc
 	is_triggered_only = yes
 	hidden = yes
+	trigger = {
+		always = yes
+	}
 	option = {
 		name = workaround.1.a
 		ai_chance = {

@@ -16,20 +16,13 @@ historical_idea_groups = {
 }
 
 historical_units = {
-	western_medieval_infantry
-	western_medieval_knights
-	western_men_at_arms
-	dutch_maurician
-	swedish_gallop
-	swedish_gustavian
-	swedish_caroline
-	swedish_arme_blanche
-	prussian_frederickian
-	prussian_uhlan
-	mixed_order_infantry
-	open_order_cavalry
-	napoleonic_square
-	napoleonic_lancers
+	mesoamerican_spearmen
+	central_american_horsemen
+	aztec_tribal_warfare
+	aztec_hill_warfare
+	aztec_gunpowder_warfare
+	westernized_aztec
+	mexican_guerilla_warfare
 }
 
 leader_names = {
