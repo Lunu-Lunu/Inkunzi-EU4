@@ -17,5 +17,6 @@ set_country_flag = primary_lizard_nation
 		mil = 5
 		birth_date = 1408.11.11
 		female = yes
+		age = 75
 	}
 }
