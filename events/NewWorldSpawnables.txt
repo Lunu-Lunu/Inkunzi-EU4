@@ -1,0 +1,233 @@
+###########################################################
+# Events for Arslan
+#
+# written by Lunu (probably not)
+###########################################################
+
+namespace = new_world_spawnable
+
+country_event = {
+	id = new_world_spawnable.1
+	title = new_world_spawnable.1.t
+	desc = new_world_spawnable.1.desc
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_year = 1510
+		OR = {
+			AND = {
+				NOT = {
+					any_country = {
+						has_country_flag = primary_golem_nation
+						ai = no
+					}
+				}
+				has_country_flag = primary_golem_nation
+			}
+			AND = {
+				has_country_flag = primary_golem_nation
+				ai = no
+			}
+		}
+	}
+
+	immediate = {
+		2829 = {
+			add_core = R00
+			cede_province = R00
+			rename_capital = "Leminska"
+			hidden_effect = {
+				change_culture = melian
+				change_religion = valor
+			}
+		}
+		R00 = {
+			add_treasury = 300
+			add_manpower = 10
+			add_stability = 1
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 60
+	}
+	
+	option = { # cool :thumbs_up:
+		name = new_world_spawnable.1.a
+	}
+	option = { # I MUST PLAY THEM.
+		name = new_world_spawnable.1.b
+		switch_tag = R00
+	}
+}
+
+country_event = {
+	id = new_world_spawnable.2
+	title = new_world_spawnable.2.t
+	desc = new_world_spawnable.2.desc
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_year = 1510
+		OR = {
+			AND = {
+				NOT = {
+					any_country = {
+						has_country_flag = primary_human_nation
+						ai = no
+					}
+				}
+				has_country_flag = primary_human_nation
+			}
+			AND = {
+				has_country_flag = primary_human_nation
+				ai = no
+			}
+		}
+	}
+
+	immediate = {
+		3745 = {
+			add_core = R01
+			cede_province = R01
+			rename_capital = "New Alvonburg"
+			hidden_effect = {
+				change_culture = survalsian
+				change_religion = old_ones
+			}
+		}
+		R01 = {
+			add_treasury = 300
+			add_manpower = 10
+			add_stability = 1
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 60
+	}
+	
+	option = { # cool :thumbs_up:
+		name = new_world_spawnable.2.a
+	}
+	option = { # I MUST PLAY THEM.
+		name = new_world_spawnable.2.b
+		switch_tag = R01
+	}
+}
+
+country_event = {
+	id = new_world_spawnable.3
+	title = new_world_spawnable.3.t
+	desc = new_world_spawnable.3.desc
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_year = 1515
+		OR = {
+			AND = {
+				NOT = {
+					any_country = {
+						has_country_flag = primary_golem_nation
+						ai = no
+					}
+				}
+				has_country_flag = primary_golem_nation
+			}
+			AND = {
+				has_country_flag = primary_golem_nation
+				ai = no
+			}
+		}
+	}
+
+	immediate = {
+		2856 = {
+			add_core = R02
+			cede_province = R02
+			hidden_effect = {
+				change_culture = melian
+				change_religion = valor
+			}
+		}
+		R02 = {
+			add_treasury = 300
+			add_manpower = 10
+			add_stability = 1
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 60
+	}
+	
+	option = { # cool :thumbs_up:
+		name = new_world_spawnable.3.a
+	}
+	option = { # I MUST PLAY THEM.
+		name = new_world_spawnable.3.b
+		switch_tag = R02
+	}
+}
+
+country_event = { # Smaragdis
+	id = new_world_spawnable.4
+	title = new_world_spawnable.4.t
+	desc = new_world_spawnable.4.desc
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_year = 1520
+		OR = {
+			AND = {
+				NOT = {
+					any_country = {
+						has_country_flag = primary_golem_nation
+						ai = no
+					}
+				}
+				has_country_flag = primary_golem_nation
+			}
+			AND = {
+				has_country_flag = primary_golem_nation
+				ai = no
+			}
+		}
+	}
+
+	immediate = {
+		3038 = {
+			add_core = R03
+			cede_province = R03
+			hidden_effect = {
+				change_culture = melian
+				change_religion = valor
+			}
+		}
+		R03 = {
+			add_treasury = 300
+			add_manpower = 10
+			add_stability = 1
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 60
+	}
+	
+	option = { # cool :thumbs_up:
+		name = new_world_spawnable.4.a
+	}
+	option = { # I MUST PLAY THEM.
+		name = new_world_spawnable.4.b
+		switch_tag = R03
+	}
+}

@@ -1,0 +1,20 @@
+government = republic
+add_government_reform = oligarchy_reform
+government_rank = 1
+mercantilism = 10
+technology_group = western
+religion = valor
+primary_culture = melian
+capital = 2856
+set_country_flag = primary_golem_nation
+
+1510.1.1 = {
+	monarch = {
+		name = "Sinhar"
+		dynasty = "Zsolt"
+		adm = 1
+		dip = 1
+		mil = 0
+		birth_date = 1490.1.1
+	}
+}

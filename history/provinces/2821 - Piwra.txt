@@ -1,15 +1,15 @@
 # Placeholder
 
-owner = B49
-controller = B49
-add_core = B49
-culture = sabhari
-religion = sahyvarian
-hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
-trade_goods = unknown
-capital = "Placeholder"
-is_city = yes
-discovered_by = western
+#owner = B49
+#controller = B49
+#add_core = B49
+#culture = sabhari
+#religion = sahyvarian
+#hre = no
+#base_tax = 1 
+#base_production = 1
+#base_manpower = 1
+#trade_goods = unknown
+#capital = "Placeholder"
+#is_city = yes
+#discovered_by = western

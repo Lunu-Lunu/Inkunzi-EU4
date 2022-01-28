@@ -35,6 +35,7 @@ lyhar_column_1 = {
 			}
 		}
 		effect = {
+			log = "[Root.GetName]: Mission lyhar_mission_meeting_with_yeula"
 			B48 = { country_event = { id = lyhar.1 } }
 		}
 	}
@@ -67,6 +68,7 @@ lyhar_column_1 = {
 			}
 		}
 		effect = {
+			log = "[Root.GetName]: Mission lyhar_mission_missive_to_sabhar"
 			B49 = { country_event = { id = lyhar.1 } }
 		}
 	}
@@ -99,6 +101,7 @@ lyhar_column_1 = {
 			}
 		}
 		effect = {
+			log = "[Root.GetName]: Mission lyhar_mission_speech_to_shyma"
 			B50 = { country_event = { id = lyhar.1 } }
 		}
 	}
@@ -131,6 +134,7 @@ lyhar_column_1 = {
 			}
 		}
 		effect = {
+			log = "[Root.GetName]: Mission lyhar_mission_talk_with_harla"
 			B51 = { country_event = { id = lyhar.1 } }
 		}
 	}
@@ -159,6 +163,7 @@ lyhar_column_2 = {
 			2872 = { any_neighbor_province = { owned_by = ROOT is_city = yes } }
 		}
 		effect = {
+			log = "[Root.GetName]: Mission lyhar_mission_connect_to_yeula"
 			if = {
 				limit = {
 					2870 = {
@@ -199,6 +204,7 @@ lyhar_column_2 = {
 			2883 = { any_neighbor_province = { owned_by = ROOT is_city = yes } }
 		}
 		effect = {
+			log = "[Root.GetName]: Mission lyhar_mission_connect_to_sabhar"
 			if = {
 				limit = {
 					2871 = {
@@ -272,6 +278,7 @@ lyhar_column_2 = {
 			2886 = { any_neighbor_province = { owned_by = ROOT is_city = yes } }
 		}
 		effect = {
+			log = "[Root.GetName]: Mission lyhar_mission_connect_to_shyma"
 			if = {
 				limit = {
 					2874 = {
@@ -371,6 +378,7 @@ lyhar_column_2 = {
 			2889 = { any_neighbor_province = { owned_by = ROOT is_city = yes } }
 		}
 		effect = {
+			log = "[Root.GetName]: Mission lyhar_mission_close_the_gap"
 			if = {
 				limit = {
 					2880 = {
@@ -429,6 +437,7 @@ lyhar_column_2 = {
 			2890 = { any_neighbor_province = { owned_by = ROOT is_city = yes } }
 		}
 		effect = {
+			log = "[Root.GetName]: Mission lyhar_mission_fill_in_the_blanks"
 			if = {
 				limit = {
 					2868 = {
@@ -487,6 +496,7 @@ lyhar_column_3 = {
 			stability = 1
 		}
 		effect = {
+			log = "[Root.GetName]: Mission lyhar_mission_bhartods_ambition"
 			add_country_modifier = {
 				name = B47_ervaryv_concept
 				duration = 9125
@@ -504,6 +514,175 @@ lyhar_column_3 = {
 			}
 		}
 	}
+	lyhar_mission_port_of_yeula = {
+		icon = mission_indian_stateman
+		position = 2
+		required_missions = {
+
+		}
+		provinces_to_highlight = {
+			province_id = 2817
+		}
+		trigger = {
+			is_subject = no
+			owns_core_province = 2817
+			num_of_light_ship = 5
+		}
+		effect = {
+			log = "[Root.GetName]: Mission lyhar_mission_port_of_yeula"
+			2817 = {
+				add_base_production = 2
+				add_building = shipyard
+			}
+		}
+	}
+	lyhar_mission_tall_tower_of_sabhar = {
+		icon = mission_indian_stateman
+		position = 3
+		required_missions = {
+
+		}
+		provinces_to_highlight = {
+			province_id = 2820
+		}
+		trigger = {
+			is_subject = no
+			owns_core_province = 2820
+			2820 = { has_building = fort_15th }
+		}
+		effect = {
+			log = "[Root.GetName]: Mission lyhar_mission_tall_tower_of_sabhar"
+			2820 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				add_building = university
+			}
+		}
+	}
+	lyhar_mission_mines_of_shyma = {
+		icon = mission_indian_stateman
+		position = 4
+		required_missions = {
+
+		}
+		provinces_to_highlight = {
+			province_id = 2824
+		}
+		trigger = {
+			is_subject = no
+			owns_core_province = 2824
+			treasury = 150
+			2824 = {
+				NOT = { unrest = 1 }
+				NOT = { has_province_modifier = recent_uprising }
+			}
+		}
+		effect = {
+			log = "[Root.GetName]: Mission lyhar_mission_mines_of_shyma"
+			add_treasury = -150
+			2824 = {
+				add_province_modifier = {
+					name = B47_gold_district
+					duration = -1
+				}
+			}
+		}
+	}
+	lyhar_mission_administration_of_harla = {
+		icon = mission_indian_stateman
+		position = 5
+		required_missions = {
+
+		}
+		provinces_to_highlight = {
+			province_id = 2826
+		}
+		trigger = {
+			is_subject = no
+			owns_core_province = 2826
+			2826 = {
+				NOT = { 
+					local_autonomy = 10
+					unrest = 1
+					has_province_modifier = recent_uprising
+				}
+			}
+		}
+		effect = {
+			log = "[Root.GetName]: Mission lyhar_mission_administration_of_harla"
+			2826 = {
+				add_base_tax = 2
+				add_building = courthouse
+			}
+		}
+	}
+	lyhar_mission_preparing_the_nation = {
+		icon = mission_indian_stateman
+		position = 6
+		required_missions = {
+			lyhar_mission_advance_lyharan_prestige
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2815
+				province_id = 2817
+				province_id = 2820
+				province_id = 2824
+				province_id = 2826
+			}
+		}
+		trigger = {
+			is_subject = no
+			owns_or_non_sovereign_subject_of = 2815
+			owns_or_non_sovereign_subject_of = 2817
+			owns_or_non_sovereign_subject_of = 2820
+			owns_or_non_sovereign_subject_of = 2824
+			owns_or_non_sovereign_subject_of = 2826
+		}
+		effect = {
+			log = "[Root.GetName]: Mission lyhar_mission_preparing_the_nation"
+			ervaric_cities_prov_group = {
+				add_province_modifier = {
+					name = ervaric_city_modifier
+					duration = -1
+				}
+			}
+		}
+	}
+	lyhar_mission_ambition_realized = {
+		icon = mission_indian_stateman
+		position = 7
+		required_missions = {
+			lyhar_mission_fill_in_the_blanks
+			lyhar_mission_preparing_the_nation
+			lyhar_mission_readying_the_estates
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2815
+				province_id = 2817
+				province_id = 2820
+				province_id = 2824
+				province_id = 2826
+			}
+		}
+		trigger = {
+			is_subject = no
+			stability = 3
+			2815 = { development = 25 }
+			2817 = { development = 20 }
+			2820 = { development = 20 }
+			2824 = { development = 20 }
+			2826 = { development = 20 }
+		}
+		effect = {
+			log = "[Root.GetName]: Mission lyhar_mission_ambition_realized"
+			# Form Ervaryv, switch mission tree and shit #
+			add_prestige = 25
+			custom_tooltip = more_content_planned_tt
+		}
+	}
 }
 lyhar_column_4 = {
 	slot = 4
@@ -513,7 +692,130 @@ lyhar_column_4 = {
 		tag = B47
 	}
 	has_country_shield = yes
-	
+	lyhar_mission_sign_of_strength = {
+		icon = mission_indian_stateman
+		position = 2
+		required_missions = {
+			lyhar_mission_bhartods_ambition
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			army_size_percentage = 1
+		}
+		effect = {
+			log = "[Root.GetName]: Mission lyhar_mission_sign_of_strength"
+			capital_scope = {
+				add_building = fort_15th
+			}
+			add_country_modifier = {
+				name = B47_children_of_lyharis_1
+				duration = 9125
+			}
+		}
+	}
+	lyhar_mission_fields_of_lyhar = {
+		icon = mission_indian_stateman
+		required_missions = {
+			lyhar_mission_sign_of_strength
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2814
+				province_id = 2815
+				province_id = 2816
+			}
+		}
+		trigger = {
+			is_subject = no
+			2815 = { num_of_times_improved = 3 }
+			2816 = { num_of_times_improved = 3 }
+			2814 = { num_of_times_improved = 3 }
+		}
+		effect = {
+			log = "[Root.GetName]: Mission lyhar_mission_fields_of_lyhar"
+			add_army_tradition = 10
+			add_legitimacy = 25
+			add_prestige = 25
+			hidden_effect = {
+				if = {
+					limit = {
+						has_country_modifier = B47_children_of_lyharis_1
+					}
+					remove_country_modifier = B47_children_of_lyharis_1
+				}
+			}
+			add_country_modifier = {
+				name = B47_children_of_lyharis_2
+				duration = 9125
+			}
+		}
+	}
+	lyhar_mission_advance_lyharan_prestige = {
+		icon = mission_indian_stateman
+		position = 5
+		required_missions = {
+			lyhar_mission_fields_of_lyhar
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			prestige = 50
+		}
+		effect = {
+			log = "[Root.GetName]: Mission lyhar_mission_advance_lyharan_prestige"
+			add_splendor = 200
+			hidden_effect = {
+				if = {
+					limit = {
+						has_country_modifier = B47_children_of_lyharis_2
+					}
+					remove_country_modifier = B47_children_of_lyharis_2
+				}
+			}
+			add_country_modifier = {
+				name = B47_children_of_lyharis_3
+				duration = 9125
+			}
+		}
+	}
+	lyhar_mission_readying_the_estates = {
+		icon = mission_indian_stateman
+		position = 6
+		required_missions = {
+			lyhar_mission_uproot_traditionalists
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 60
+			}
+			estate_loyalty = {
+				estate = estate_church
+				loyalty = 60
+			}
+			estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 60
+			}
+			crown_land_share = 30
+		}
+		effect = {
+			log = "[Root.GetName]: Mission lyhar_mission_readying_the_estates"
+			add_country_modifier = {
+				name = B47_ervaric_estates
+				duration = 9125
+			}
+		}
+	}
 }
 lyhar_column_5 = {
 	slot = 5
@@ -523,5 +825,50 @@ lyhar_column_5 = {
 		tag = B47
 	}
 	has_country_shield = yes
-	
+	lyhar_mission_reform_society = {
+		icon = mission_indian_stateman
+		position = 2
+		required_missions = {
+			lyhar_mission_bhartods_ambition
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			employed_advisor = {
+				type = statesman
+			}
+			government_reform_progress = 25
+		}
+		effect = {
+			log = "[Root.GetName]: Mission lyhar_mission_reform_society"
+			change_government_reform_progress = -25
+			add_adm_power = 100
+		}
+	}
+	lyhar_mission_uproot_traditionalists = {
+		icon = mission_indian_stateman
+		position = 5
+		required_missions = {
+			lyhar_mission_reform_society
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			stability = 1
+			crown_land_share = 40
+		}
+		effect = {
+			log = "[Root.GetName]: Mission lyhar_mission_uproot_traditionalists"
+			add_stability = -1
+			change_innovativeness = 4
+			change_estate_land_share = {
+				estate = estate_nobles
+				share = -5
+			}
+		}
+	}
 }

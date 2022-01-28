@@ -1,0 +1,20 @@
+government = republic
+add_government_reform = oligarchy_reform
+government_rank = 1
+mercantilism = 10
+technology_group = western
+religion = old_ones
+primary_culture = survalsian
+capital = 3745
+set_country_flag = primary_human_nation
+
+1510.1.1 = {
+	monarch = {
+		name = "Lysillos"
+		dynasty = "Essonis"
+		adm = 3
+		dip = 5
+		mil = 1
+		birth_date = 1482.1.1
+	}
+}

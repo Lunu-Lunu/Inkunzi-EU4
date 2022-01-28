@@ -1,0 +1,20 @@
+government = republic
+add_government_reform = peasants_republic
+government_rank = 1
+mercantilism = 10
+technology_group = western
+religion = valor
+primary_culture = melian
+capital = 2829
+set_country_flag = primary_golem_nation
+
+1510.1.1 = {
+	monarch = {
+		name = "Augen"
+		dynasty = "Zsolt-Rhodon"
+		adm = 4
+		dip = 4
+		mil = 3
+		birth_date = 1495.1.1
+	}
+}
