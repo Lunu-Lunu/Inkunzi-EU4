@@ -24,12 +24,12 @@ Zuntlan_Collom_4= {
           
         }
         trigger = {
-		naval_forcelimit = B16
-		is_female = yes
-		navy_size = 50
-		hidden_trigger = {
-		is_year = 1470
-		}
+			naval_forcelimit = B16
+			has_heir = no 
+			navy_size = 30
+			hidden_trigger = {
+				is_year = 1455
+			}
 		}
 		effect = {
 		define_heir = {
@@ -44,7 +44,7 @@ Zuntlan_Collom_4= {
 		no_consort_with_heir = yes
 		}
 		define_admiral = {
-		name = Saq'to 2nd
+		name = "Saq'to II"
 		shock = 4
 		fire = 3
 		manuever = 4
@@ -67,20 +67,18 @@ Zuntlan_Collom_4= {
           
         }
         trigger = {
-		home_trade_node = {
+			2419 = {
 				trade_share = {
 					country = ROOT
-					share = 60
+					share = 55
 				}
 			}
 		}
 		effect = {
-		B16 = {
-		development_cost = -0.1
-		trade_range_modifier = 0.25
+			#custome or generic trade modifier
+			add_mercantilism = 1
 		}
-		add_mercantilism = 1
-		}
+	
 	}
 	Purple_2 = {
 		icon = mission_ottoman_harem 
@@ -95,7 +93,7 @@ Zuntlan_Collom_4= {
           
         }
         trigger = {
-		home_trade_node = {
+			2419 = {
 				trade_share = {
 					country = ROOT
 					share = 90
@@ -123,7 +121,7 @@ Zuntlan_Collom_3= {
     potential = {
         tag = B16
     }
-### replace 101 and b64 with crabia province and tag
+### :flushed: owo the begining 
 	Crabia_Thing = {
 		icon = mission_ottoman_harem 
         generic = no
@@ -139,13 +137,12 @@ Zuntlan_Collom_3= {
 		owns_core_province = 722 
        }
         effect = {
-	 #	722 = { 
-	 #	cede_province = b64
-	 #	add_core = b64
-	 #				}
-		country_event = { 
-		id = zuntlan.3
-		days = 10
+			722 = {
+				add_core = B97
+			}
+			country_event = {
+				id = zuntlan.3
+				days = 10
 			}
         }
 	}
@@ -154,23 +151,24 @@ Zuntlan_Collom_3= {
 		icon = mission_ottoman_harem 
         generic = no
         position = 2
-        
         required_missions = {
 		
           Crabia_Thing 
 		  
         }
-        
-       
         provinces_to_highlight = {
           
         }
         trigger = {
-			#not sure how i want to do this yet, might replace crabian missions with their own tree
+			has_privateers = yes
+			has_port = yes
+			#uhhhhh
         }
         effect = {
-		#added pirating bonuses, plus event trigger in a year or soon ask owner of marizian to form them
-			
+			country_event = { 
+				id = zuntlan.5
+				days = 15
+			}				
         }
 	}
 	Gurdian_of_Crabs = {
@@ -180,6 +178,7 @@ Zuntlan_Collom_3= {
         
         required_missions = {
 			Zuntlan_leave_swamps
+			Crabia_Pirates
         }
         
 
@@ -273,7 +272,7 @@ Zuntlan_Collom_2 = {
         trigger = {
             owns_core_province = 720
 			owns_core_province = 721
-			owns_core_province = 722
+			owns_or_subject_of = 722
         }
         
         
@@ -383,15 +382,10 @@ Zuntlan_Collom_2 = {
     
         trigger = {
 			is_claim = 2379
-			
-			or = {
-			AND = {
-			is_neighbor_of = a04
-			}
-			AND = {
-			is_neighbor_of = b15
-			}
-			}
+			stability = 2
+			is_neighbor_of = B15
+			is_neighbor_of = A04
+			army_size_percentage = 0.8
         }
              
         effect = {
@@ -486,12 +480,38 @@ Zuntlan_Collom_1= {
         }
     
         trigger = {
-		#owns a number of provinces in area stated in mision before
+			#owns a number of provinces in area stated in mision before
         }
              
         effect = {
 			#more flavor i guess, and something to do with surveria
 		}
-	}	
+	}
+	survairan_union = {
+    icon = mission_ottoman_harem
+    generic = no
+    position = 7
+        
+        required_missions = {
+			survarian_stakes
+        }
+        
+
+        provinces_to_highlight = {
+
+        }
+        trigger = {
+			#core provinces in surveria
+			army_size = A04
+			legitimacy = A04
+        }
+        effect = {
+			add_casus_belli = {
+					type = cb_restore_personal_union
+					months = 240
+					target = A04
+			}		
+		}
+	}		
 	
 }

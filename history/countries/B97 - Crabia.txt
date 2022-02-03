@@ -1,0 +1,10 @@
+government = monarchy
+add_government_reform = republic
+add_government_reform =  merchants_reform
+government_rank = 1
+mercantilism = 10
+technology_group = western
+religion = old_ones
+primary_culture = north_karlton
+capital = 722
+set_country_flag = primary_crab_nation

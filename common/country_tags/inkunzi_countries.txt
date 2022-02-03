@@ -194,3 +194,6 @@ B93 = "countries/Cleveracorn.txt"
 B94 = "countries/Kokern.txt"
 B95 = "countries/Bureth.txt"
 B96 = "countries/Enibus.txt"
+B97 = "countries/Crabia.txt"
+
+R04 = "countries/marizian.txt"

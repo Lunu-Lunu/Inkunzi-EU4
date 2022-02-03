@@ -1,0 +1,26 @@
+country_decisions = {
+	Survian_union = { # might be changed to an end game tag insted of diffrent name
+		major = yes
+		potential = {
+			tag = B16
+			mission_completed = survairan_union
+			NOT = { has_country_flag = zun_survian_union }
+		}
+		allow = {
+			A04 = {
+				all_core_province = { 
+					owned_by = B16
+				}				
+			}
+		}
+		effect = {
+			set_country_flag = zun_survian_union
+			override_country_name = Survian_union
+			add_prestige = 45
+			set_country_flag = Survian_union
+			add_accepted_culture = survalsian
+		}
+
+	}
+
+}
