@@ -1,0 +1,14 @@
+lizard_sinicization = {
+	local_missionary_strength = 0.45
+	local_culture_conversion_cost = -0.75
+	local_unrest = 4
+	picture = "province_trade_power_value"
+	
+}
+lizard_leftalone = {
+	local_missionary_strength = -0.5
+	local_culture_conversion_cost = 0.75
+	local_unrest = -10
+	local_core_creation = -0.25
+	picture = "province_trade_power_value"
+}

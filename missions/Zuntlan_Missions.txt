@@ -1,0 +1,517 @@
+#
+#This is still pretty wip, and I plan on finishing up the zuntlanswamp path, as well as flesh out flavor for all the misions, I also plan in sometime in the furture to add a tree for both something about oldones and the other thing i forgot about anyways :trollface_nonfree:
+#
+Zuntlan_Collom_4= {
+    slot = 4                  
+    generic = no           
+    ai = yes                 
+    has_country_shield = yes.    
+
+    potential = {
+        tag = B16
+    }
+
+	Saq_to_nuts = {
+		icon = mission_ottoman_harem 
+        generic = no
+        position = 1
+
+		required_missions = {
+            
+        }
+        
+        provinces_to_highlight = {
+          
+        }
+        trigger = {
+			naval_forcelimit = B16
+			has_heir = no 
+			navy_size = 30
+			hidden_trigger = {
+				is_year = 1455
+			}
+		}
+		effect = {
+		define_heir = {
+		dynasty = "Saq'to"
+		age = 20
+		adm = 5
+		dip = 4
+		mil = 6
+		claim = 80
+		name = "Saq'to III"
+		male = yes 
+		no_consort_with_heir = yes
+		}
+		define_admiral = {
+		name = "Saq'to II"
+		shock = 4
+		fire = 3
+		manuever = 4
+		siege = 2
+			}
+
+		}
+	}
+	
+	Purple_1 = {
+		icon = mission_ottoman_harem 
+        generic = no
+        position = 2 
+
+		required_missions = {
+            
+        }
+        
+        provinces_to_highlight = {
+          
+        }
+        trigger = {
+			2419 = {
+				trade_share = {
+					country = ROOT
+					share = 55
+				}
+			}
+		}
+		effect = {
+			#custome or generic trade modifier
+			add_mercantilism = 1
+		}
+	
+	}
+	Purple_2 = {
+		icon = mission_ottoman_harem 
+        generic = no
+        position = 3
+
+		required_missions = {
+            Purple_1
+        }
+        
+        provinces_to_highlight = {
+          
+        }
+        trigger = {
+			2419 = {
+				trade_share = {
+					country = ROOT
+					share = 90
+				}
+			}
+		light_ship_fraction = 0.25
+		
+		}
+		effect = {
+		trade_efficiency = 0.25
+		prestige = 15
+		
+		}
+	}	
+	
+}
+
+
+Zuntlan_Collom_3= {
+    slot = 3                  
+    generic = no           
+    ai = yes                 
+    has_country_shield = yes.    
+
+    potential = {
+        tag = B16
+    }
+### :flushed: owo the begining 
+	Crabia_Thing = {
+		icon = mission_ottoman_harem 
+        generic = no
+        position = 1
+        
+        required_missions = {
+            
+        }
+        provinces_to_highlight = {
+          
+        }
+        trigger = {
+		owns_core_province = 722 
+       }
+        effect = {
+			722 = {
+				add_core = B97
+			}
+			country_event = {
+				id = zuntlan.3
+				days = 10
+			}
+        }
+	}
+	
+	Crabia_Pirates = {
+		icon = mission_ottoman_harem 
+        generic = no
+        position = 2
+        required_missions = {
+		
+          Crabia_Thing 
+		  
+        }
+        provinces_to_highlight = {
+          
+        }
+        trigger = {
+			has_privateers = yes
+			has_port = yes
+			#uhhhhh
+        }
+        effect = {
+			country_event = { 
+				id = zuntlan.5
+				days = 15
+			}				
+        }
+	}
+	Gurdian_of_Crabs = {
+        icon = mission_ottoman_harem
+        generic = no
+        position = 6
+        
+        required_missions = {
+			Zuntlan_leave_swamps
+			Crabia_Pirates
+        }
+        
+
+        provinces_to_highlight = {
+
+        }
+    
+      
+        trigger = {
+        owns_or_non_sovereign_subject_of = 722
+		#uhhhhh, idk something else should probbably be here
+		
+        }
+        
+        
+        effect = {
+		country_event = { 
+			id = zuntlan.4
+			days = 15
+			}
+		}
+	
+	}	
+}
+	
+
+
+Zuntlan_Collom_2 = {
+    slot = 2                    
+    generic = no           
+    ai = yes                 
+    has_country_shield = yes.    
+    
+    potential = {
+        tag = B16
+    }
+    
+	
+    Zuntlan_Jewel_Ulpek = {
+        icon = mission_ottoman_harem 
+        generic = no
+        position = 1 
+        
+        required_missions = {
+            
+        }
+        
+       
+        provinces_to_highlight = {
+           OR = {
+				owned_by = a64
+				province_id = 724
+				province_id = 725
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+        }
+    
+
+        trigger = {
+		
+            owns_core_province = 724
+			owns_core_province = 725
+        }
+        
+        
+        effect = {
+			
+            add_permanent_claim = 720
+			add_permanent_claim = 721
+			add_permanent_claim = 722
+			add_permanent_claim = 2379
+			
+        }
+    }
+	
+    Zuntlan_Striving_Greater = {
+        icon = mission_ottoman_harem
+        generic = no
+        position = 2
+        
+        required_missions = {
+            Zuntlan_Jewel_Ulpek
+        }
+        
+
+        provinces_to_highlight = {
+
+        }
+    
+      
+        trigger = {
+            owns_core_province = 720
+			owns_core_province = 721
+			owns_or_subject_of = 722
+        }
+        
+        
+        effect = {
+		
+		sternhel_south_area = {
+		
+			limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+		
+		}
+		
+		sternhel_north_area = {
+		
+			limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+		
+		}
+		
+		}
+	}
+	
+	Zuntlan_sternhell_north = {
+        icon = mission_ottoman_harem
+        generic = no
+        position = 3
+        
+        required_missions = {
+            Zuntlan_Striving_Greater
+        }
+        
+
+        provinces_to_highlight = {
+
+        }
+    
+      
+        trigger = {
+         num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 7 
+				OR = {
+					area = sternhel_north_area
+				}
+			}   
+        }
+        
+        
+        effect = {
+			country_event = { 
+			id = zuntlan.2
+			days = 10	
+			}
+		}
+	
+	}
+	
+	Zuntlan_empire_pog = {
+        icon = mission_ottoman_harem
+        generic = no
+        position = 4
+        
+        required_missions = {
+			
+			Zuntlan_sternhell_south
+            Zuntlan_sternhell_north
+        }
+        
+
+        provinces_to_highlight = {
+
+        }
+    
+      
+        trigger = {
+
+				
+			    
+        }
+        
+        
+        effect = {
+	
+		override_country_name = ZUNTLANI_EMPIRE
+		add_prestige = 40
+	
+		}
+	}
+		Zuntlan_leave_swamps = {
+        icon = mission_ottoman_harem
+        generic = no
+        position = 5
+        
+        required_missions = {
+			
+        }
+        
+
+        provinces_to_highlight = {
+
+        }
+    
+        trigger = {
+			is_claim = 2379
+			stability = 2
+			is_neighbor_of = B15
+			is_neighbor_of = A04
+			army_size_percentage = 0.8
+        }
+             
+        effect = {
+	    # add claims to ares in rekolia and survaria 
+		}
+	}
+	
+		revenge_of_the_thixis = {
+        icon = mission_ottoman_harem
+        generic = no
+        position = 6
+        
+        required_missions = {
+			Zuntlan_leave_swamps
+        }
+        
+
+        provinces_to_highlight = {
+
+        }
+    
+        trigger = {
+		owns_core_province = 2379
+		#owns_core_pronvince = some of those of claim from the one above
+        }
+             
+        effect = {
+			#thixi flavor and maybe expansion effect, :trollface_none free:
+		}
+	}
+	
+}
+
+Zuntlan_Collom_1= {
+    slot = 1                  
+    generic = no           
+    ai = yes                 
+    has_country_shield = yes.    
+
+    potential = {
+        tag = B16
+    }
+
+	Zuntlan_sternhell_south = {
+        icon = mission_ottoman_harem
+        generic = no
+        position = 3
+        
+        required_missions = {
+		
+            Zuntlan_Striving_Greater
+        }
+        
+
+        provinces_to_highlight = {
+
+        }
+    
+      
+        trigger = {
+            num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5 
+				OR = {
+					area = sternhel_south_area
+				}
+			}
+        }
+        
+        
+        effect = {
+		
+		country_event = { 
+		id = zuntlan.1
+		days = 10
+		}
+		
+		}	
+	
+	}
+	survarian_stakes = {
+    icon = mission_ottoman_harem
+    generic = no
+    position = 6
+        
+        required_missions = {
+			Zuntlan_leave_swamps
+        }
+        
+
+        provinces_to_highlight = {
+
+        }
+    
+        trigger = {
+			#owns a number of provinces in area stated in mision before
+        }
+             
+        effect = {
+			#more flavor i guess, and something to do with surveria
+		}
+	}
+	survairan_union = {
+    icon = mission_ottoman_harem
+    generic = no
+    position = 7
+        
+        required_missions = {
+			survarian_stakes
+        }
+        
+
+        provinces_to_highlight = {
+
+        }
+        trigger = {
+			#core provinces in surveria
+			army_size = A04
+			legitimacy = A04
+        }
+        effect = {
+			add_casus_belli = {
+					type = cb_restore_personal_union
+					months = 240
+					target = A04
+			}		
+		}
+	}		
+	
+}

@@ -1,13 +1,14 @@
 #Country Name: Please see filename.
 
 graphical_culture = westerngfx
-color = { 45 5 5 }
+
+color = { 49 120 235 }
 
 historical_idea_groups = {
-	naval_ideas
-	trade_ideas
-	maritime_ideas
+	quality_ideas
 	economic_ideas
+	defensive_ideas
+	offensive_ideas
 	diplomatic_ideas
 	quantity_ideas
 	spy_ideas
@@ -32,18 +33,11 @@ historical_units = {
 }
 
 leader_names = {
-    "White Beard"
-    "Jackson Birb"
-    "Black Beard"
-	Marizqur
-	Xltizcatak
-	Xltux Lijar
+	Gigenshtain
 }
 
 monarch_names = {
-	"Marizqur #0" = 100
-	"Xltizcatak #0" = 100
-	"Xltux Lijar #0" = 100
+	"Gigenshtain #0" = 0
 
-	"FEMALE PIRATE WTF BASED #0" = -1
+	"FEMALE Gigenshtain #0" = -1
 }
