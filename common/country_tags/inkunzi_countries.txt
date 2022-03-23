@@ -194,6 +194,11 @@ B93 = "countries/Cleveracorn.txt"
 B94 = "countries/Kokern.txt"
 B95 = "countries/Bureth.txt"
 B96 = "countries/Enibus.txt"
-B97 = "countries/Crabia.txt"
+B97 = "countries/Marizian.txt"
 
-R04 = "countries/marizian.txt"
+
+### Spawnables ###
+R00 = "countries/Leminska.txt"
+R01 = "countries/Essonia.txt"
+R02 = "countries/Kabara.txt"
+R03 = "countries/Emerald.txt"
