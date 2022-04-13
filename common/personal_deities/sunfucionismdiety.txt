@@ -1,0 +1,276 @@
+Taisung =
+{
+	legitimacy = 0.1
+	republican_tradition = 0.1
+	horde_unity = 0.1
+	diplomatic_reputation = 2
+
+	allow = { religion = norse_pagan_reformed }
+	sprite = 7
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}
+	}
+}
+
+Yuélua =
+{
+	global_unrest = -2
+	global_tax_modifier = 0.1
+
+	allow = { religion = norse_pagan_reformed }
+	sprite = 8
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_colonialist
+		}
+	}
+}
+
+Lei Nei  =
+{
+	land_morale = 0.10
+	army_tradition_from_battle = 0.01
+
+	allow = { religion = norse_pagan_reformed }
+	sprite = 9
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			NOT = { num_of_cities = 5 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { num_of_cities = 10 }
+		}
+		modifier = {
+			factor = 0.5
+			num_of_cities = 30
+		}
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_capitalist
+		}
+	}
+}
+
+Bíti Thcong =
+{
+	discipline = 0.05
+	hostile_attrition = 1
+
+	allow = { religion = norse_pagan_reformed }
+	sprite = 10
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_colonialist
+		}
+	}
+}
+
+Czibir =
+{
+	ae_impact = -0.2
+	advisor_cost = -0.25
+
+	allow = { religion = norse_pagan_reformed }
+	sprite = 11
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_capitalist
+		}
+		modifier = {
+			factor = 2
+			personality = ai_colonialist
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_militarist
+		}
+	}
+}
+
+
+Àmuksmus =
+{
+	war_exhaustion = -0.10
+	build_cost = -0.1
+
+	allow = { religion = norse_pagan_reformed }
+	sprite = 12
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_militarist
+		}
+	}
+}
+
+
+Zé Lá Sî  =
+{
+	movement_speed = 0.15
+	institution_growth = 1
+
+	allow = { religion = norse_pagan_reformed }
+	sprite = 12
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_militarist
+		}
+	}
+}
+
+
+Ragzmus  =
+{
+	local_defensiveness = 0.15
+	local_hostile_attrition = 5
+
+	allow = { religion = norse_pagan_reformed }
+	sprite = 12
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_militarist
+		}
+	}
+}
+
+
+Vescarbios  =
+{
+	production_efficiency = 0.10
+	state_maintenance_modifier = -0.25
+
+	allow = { religion = norse_pagan_reformed }
+	sprite = 12
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_militarist
+		}
+	}
+}
+
+
+Admaxtadort  =
+{
+	naval_morale = 0.1
+	naval_forcelimit_modifier = 0.1
+
+	allow = { religion = norse_pagan_reformed }
+	sprite = 12
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_militarist
+		}
+	}
+}
+
+
+Admaxtadort  =
+{
+	naval_morale = 0.1
+	naval_forcelimit_modifier = 0.1
+
+	allow = { religion = norse_pagan_reformed }
+	sprite = 12
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_militarist
+		}
+	}
+}
+
+
+Talixias  =
+{
+	development_cost = -0.1
+	global_prosperity_growth = 0.1
+
+	allow = { religion = norse_pagan_reformed }
+	sprite = 12
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_militarist
+		}
+	}
+}
