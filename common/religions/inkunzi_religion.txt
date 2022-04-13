@@ -30,31 +30,24 @@ celestialism_group = {
 		
 		heretic = { MOON_GOD SUN_GOD }
 	}
-	sunfucian = {
-		color = { 255 204 49 }
-		icon = 13
-
+	Sunfucionism = {
+		icon = 21
+		color = { 191 191 191 }
 		country = {
-			idea_cost = -0.05
-			tolerance_heathen = 1
+			technology_cost = -0.1
+			tolerance_heretic = 2
 		}
 		country_as_secondary = {
-			idea_cost = -0.05
-			tolerance_own = 1
+			siege_ability = 0.1
+			defensiveness = 0.1
+		}
+		province = {
+			local_governing_cost = -0.25
 		}
 
-		on_convert = {
-			change_religion = sunfucian
-			add_prestige = -100
-			
-			add_country_modifier = {
-				name = "conversion_zeal"
-				duration = 3650
-			}			
-		
-		}
-		
-		heretic = { HERETIC_GENERIC }
+		personal_deity = yes
+
+		heretic = { RAMSEYISM }
 	}
 	rationalist_celestialism = {
 		color = { 82 0 94 }
