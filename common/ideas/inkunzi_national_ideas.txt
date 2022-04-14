@@ -1,5 +1,45 @@
 #
 
+A07_ideas = { # Seaside Ideas
+    start = {
+        legitimacy = 0.5
+        heir_chance = 0.50
+    }
+    bonus = {
+        discipline = 0.05
+    }
+
+    trigger = {
+        tag = A07
+    }
+    free = yes
+
+    A07_shattered_empire = {
+        ae_impact = -0.10
+        fabricate_claims_cost= -0.2
+    }
+    A07_eldari_corruption = {
+        global_tax_modifier = 0.15
+    }
+    A07_free_city_of_eldai = {
+        trade_efficiency = 0.10
+        global_prov_trade_power_modifier = 0.10
+    }
+    A07_celestialism = {
+        global_missionary_strength = 0.03
+    }
+    A07_loyalty_above_all = {
+        all_estate_loyalty_equilibrium = 0.05
+    }
+    A07_vestorian_military_tradition = {
+        army_tradition = 0.5
+        land_morale = 0.20
+    }
+    A07_university_of_seaside = {
+        development_cost = -0.1
+    }
+}
+
 A28_ideas = { # Kido Ideas
 	start = {
 		defensiveness = 0.15
