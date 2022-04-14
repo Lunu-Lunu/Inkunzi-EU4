@@ -1,11 +1,11 @@
-Taisung =
+taisung_diety =
 {
 	legitimacy = 0.1
 	republican_tradition = 0.1
 	horde_unity = 0.1
 	diplomatic_reputation = 2
 
-	allow = { religion = norse_pagan_reformed }
+	allow = { religion = sunfucian }
 	sprite = 7
 
 	ai_will_do = {
@@ -21,12 +21,12 @@ Taisung =
 	}
 }
 
-Yuélua =
+yuelua_diety =
 {
 	global_unrest = -2
 	global_tax_modifier = 0.1
 
-	allow = { religion = norse_pagan_reformed }
+	allow = { religion = sunfucian }
 	sprite = 8
 
 	ai_will_do = {
@@ -42,12 +42,12 @@ Yuélua =
 	}
 }
 
-Lei Nei  =
+lei_nei_diety  =
 {
 	land_morale = 0.10
 	army_tradition_from_battle = 0.01
 
-	allow = { religion = norse_pagan_reformed }
+	allow = { religion = sunfucian }
 	sprite = 9
 
 	ai_will_do = {
@@ -75,12 +75,12 @@ Lei Nei  =
 	}
 }
 
-Bíti Thcong =
+biti_thcong_diety =
 {
 	discipline = 0.05
 	hostile_attrition = 1
 
-	allow = { religion = norse_pagan_reformed }
+	allow = { religion = sunfucian }
 	sprite = 10
 
 	ai_will_do = {
@@ -96,12 +96,12 @@ Bíti Thcong =
 	}
 }
 
-Czibir =
+czibir_diety =
 {
 	ae_impact = -0.2
 	advisor_cost = -0.25
 
-	allow = { religion = norse_pagan_reformed }
+	allow = { religion = sunfucian }
 	sprite = 11
 
 	ai_will_do = {
@@ -122,12 +122,12 @@ Czibir =
 }
 
 
-Àmuksmus =
+amuksmus_diety =
 {
 	war_exhaustion = -0.10
 	build_cost = -0.1
 
-	allow = { religion = norse_pagan_reformed }
+	allow = { religion = sunfucian }
 	sprite = 12
 
 	ai_will_do = {
@@ -144,12 +144,12 @@ Czibir =
 }
 
 
-Zé Lá Sî  =
+ze_la_si_diety  =
 {
 	movement_speed = 0.15
 	institution_growth = 1
 
-	allow = { religion = norse_pagan_reformed }
+	allow = { religion = sunfucian }
 	sprite = 12
 
 	ai_will_do = {
@@ -166,12 +166,12 @@ Zé Lá Sî  =
 }
 
 
-Ragzmus  =
+ragzmus_diety  =
 {
 	local_defensiveness = 0.15
 	local_hostile_attrition = 5
 
-	allow = { religion = norse_pagan_reformed }
+	allow = { religion = sunfucian }
 	sprite = 12
 
 	ai_will_do = {
@@ -188,12 +188,12 @@ Ragzmus  =
 }
 
 
-Vescarbios  =
+vescarbios_diety  =
 {
 	production_efficiency = 0.10
 	state_maintenance_modifier = -0.25
 
-	allow = { religion = norse_pagan_reformed }
+	allow = { religion = sunfucian }
 	sprite = 12
 
 	ai_will_do = {
@@ -210,12 +210,12 @@ Vescarbios  =
 }
 
 
-Admaxtadort  =
+admaxtadort_diety  =
 {
 	naval_morale = 0.1
 	naval_forcelimit_modifier = 0.1
 
-	allow = { religion = norse_pagan_reformed }
+	allow = { religion = sunfucian }
 	sprite = 12
 
 	ai_will_do = {
@@ -232,34 +232,13 @@ Admaxtadort  =
 }
 
 
-Admaxtadort  =
-{
-	naval_morale = 0.1
-	naval_forcelimit_modifier = 0.1
 
-	allow = { religion = norse_pagan_reformed }
-	sprite = 12
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 2
-			personality = ai_diplomat
-		}
-		modifier = {
-			factor = 0.5
-			personality = ai_militarist
-		}
-	}
-}
-
-
-Talixias  =
+talixias_diety  =
 {
 	development_cost = -0.1
 	global_prosperity_growth = 0.1
 
-	allow = { religion = norse_pagan_reformed }
+	allow = { religion = sunfucian }
 	sprite = 12
 
 	ai_will_do = {
