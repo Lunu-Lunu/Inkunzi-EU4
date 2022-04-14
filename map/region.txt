@@ -1461,75 +1461,83 @@ arabian_sea_region = {
 ##		south_indian_ocean_area
 ##	}
 ##}
-##
-##south_china_sea_region = {
-##	areas = {
-##		java_sea_area
-##		south_china_sea_area
-##		celebes_sea_area
-##		banda_arafura_seas_area
-##	}
-##}
-##
-##east_china_sea_region = {
-##	areas = {
-##		east_china_sea_area
-##		philipine_sea_area
-##		sea_of_japan_area
-##		sea_of_okhotsk_area
-##	}
-##}
-##
-##north_west_pacific_region = {
-##	areas = {
-##		east_pacific_ocean_area
-##	}
-##}
-##
-##south_west_pacific_region = {
-##	areas = {
-##		coral_sea_area
-##		tasman_sea_area
-##		great_australian_bight_area
-##	}
-##}
-##
-south_east_pacific_region = {
+
+########################################
+# ANQA                                 #
+########################################
+
+dikhlta = {
 	areas = {
-		south_pacific_area
-##		polynesian_triangle_area
+		dikhlta_area
 	}
 }
-##
-##north_east_pacific_region = {
-##	areas = {
-##		north_pacific_area
-##		north_pacific_coast_area
-##		berring_sea_area
-##		gulf_of_alaska_area
-##	}
-##}
-##
-##pacific_south_america_region = {
-##	areas = {
-##		chilean_sea_area
-##		sea_of_grau_area
-##		gulf_of_panama_area
-##	}
-##}
-##
-##atlantic_south_america_region = {
-##	areas = {
-##		coast_of_brazil_sea_area
-##		argentine_sea_area
-##	}
-##}
-##
-##south_atlantic_region = {
-##	areas = {
-##		south_atlantic_area
-##		skeleton_coast_area
-##		cape_of_storms_area
-##	}
-##}
-###
+
+eshna = {
+	areas = {
+		eshna_area
+		eshna2_area
+	}
+}
+
+foro = {
+	areas = {
+  		foro_area
+  		foro_area2
+	}
+}
+  
+  shna = {
+  	areas = {
+  		shna_area
+  		shna2_area
+  		shna3_area
+	}
+}
+  
+  kohkwa = {
+  	areas = {
+  		kohkwa_area
+  		kohkwa2_area
+  		kohkwa3_area
+  		kohkwa4_area
+	}
+}
+  
+  leli = {
+  	areas = {
+  		leli_area
+  		leli2_area
+  		leli3_area
+	}
+}
+  
+rgam = {
+  	areas = {
+  		rgam_area
+  		rgam2_area
+  		rgam3_area
+  		rgam4_area
+  		rgam5_area
+	}
+}
+  
+nura = {
+  	areas = {
+  		nura_area
+  		nura2_area
+  		nura3_area
+  		nura4_area
+  		nura5_area
+  		nura6_area
+	}
+}
+  
+fadra_qirish = {
+  	areas = {
+  		fadra_qirish_area
+  		fadra_qirish2_area
+  		fadra_qirish3_area
+  		fadra_qirish4_area
+	}
+ }
+  
