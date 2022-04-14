@@ -1,4 +1,4 @@
-# Placeholder
+# Greater Insikia
 
 owner = B40
 controller = B40
@@ -6,10 +6,10 @@ add_core = B40
 culture = gneta
 religion = haymonutho
 hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
+base_tax = 5
+base_production = 11
+base_manpower = 8
 trade_goods = unknown
-capital = "Placeholder"
+capital = "Insikia City"
 is_city = yes
 discovered_by = western

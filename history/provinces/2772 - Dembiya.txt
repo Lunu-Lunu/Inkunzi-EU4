@@ -1,4 +1,4 @@
-# Placeholder
+# West Insikia
 
 owner = B40
 controller = B40
@@ -6,10 +6,10 @@ add_core = B40
 culture = ozarkhian
 religion = haymonutho
 hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
+base_tax = 2
+base_production = 9
+base_manpower = 4
 trade_goods = unknown
-capital = "Placeholder"
+capital = "Ozark Insikia"
 is_city = yes
 discovered_by = western

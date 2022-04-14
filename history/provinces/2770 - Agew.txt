@@ -1,4 +1,4 @@
-# Placeholder
+# Agag
 
 owner = B40
 controller = B40
@@ -7,9 +7,9 @@ culture = gneta
 religion = haymonutho
 hre = no
 base_tax = 1 
-base_production = 1
-base_manpower = 1
-trade_goods = unknown
-capital = "Placeholder"
+base_production = 4
+base_manpower = 2
+trade_goods = Wine
+capital = "Agag City"
 is_city = yes
 discovered_by = western
