@@ -11,7 +11,7 @@ Zuntlan_Collom_4= {
         tag = B16
     }
 
-	Saq_to_nuts = {
+	Zuntlan_Saq_to_nuts = {
 		icon = mission_ottoman_harem 
         generic = no
         position = 1
@@ -54,7 +54,7 @@ Zuntlan_Collom_4= {
 		}
 	}
 	
-	Purple_1 = {
+	Zuntlan_Purple_1 = {
 		icon = mission_ottoman_harem 
         generic = no
         position = 2 
@@ -80,7 +80,7 @@ Zuntlan_Collom_4= {
 		}
 	
 	}
-	Purple_2 = {
+	Zuntlan_Purple_2 = {
 		icon = mission_ottoman_harem 
         generic = no
         position = 3
@@ -122,7 +122,7 @@ Zuntlan_Collom_3= {
         tag = B16
     }
 ### :flushed: owo the begining 
-	Crabia_Thing = {
+	Zuntlan_Crabia_Thing = {
 		icon = mission_ottoman_harem 
         generic = no
         position = 1
@@ -147,13 +147,13 @@ Zuntlan_Collom_3= {
         }
 	}
 	
-	Crabia_Pirates = {
+	Zuntlan_Crabia_Pirates = {
 		icon = mission_ottoman_harem 
         generic = no
         position = 2
         required_missions = {
 		
-          Crabia_Thing 
+          Zuntlan_Crabia_Thing
 		  
         }
         provinces_to_highlight = {
@@ -171,7 +171,7 @@ Zuntlan_Collom_3= {
 			}				
         }
 	}
-	Gurdian_of_Crabs = {
+	Zuntlan_Gurdian_of_Crabs = {
         icon = mission_ottoman_harem
         generic = no
         position = 6
@@ -465,7 +465,7 @@ Zuntlan_Collom_1= {
 		}	
 	
 	}
-	survarian_stakes = {
+	Zuntlan_survarian_stakes = {
     icon = mission_ottoman_harem
     generic = no
     position = 6
@@ -487,13 +487,13 @@ Zuntlan_Collom_1= {
 			#more flavor i guess, and something to do with surveria
 		}
 	}
-	survairan_union = {
+	Zuntlan_survairan_union = {
     icon = mission_ottoman_harem
     generic = no
     position = 7
         
         required_missions = {
-			survarian_stakes
+			Zuntlan_survarian_stakes
         }
         
 
