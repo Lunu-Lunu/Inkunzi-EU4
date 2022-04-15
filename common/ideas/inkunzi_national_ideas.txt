@@ -10,7 +10,7 @@ A02_ideas = { # Stendari Ideas
     }
 
     trigger = {
-        tag = A07
+        tag = A02
     }
     free = yes
 
