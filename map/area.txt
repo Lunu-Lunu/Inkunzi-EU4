@@ -2536,11 +2536,11 @@ gangir6_area = {
 	2783 2784 2785 2786
 }
 
-Mihkhia = {
+ozarkhia_area = {
 	2760 2762 2763 2764
 }
 
-"Greater Priolenia" = {
+ozarkhia2_area = {
 	2757 2758 2759
 }
 
@@ -2548,7 +2548,7 @@ ozarkhia3_area = {
 	2755 2756 2780 2788
 }
 
-"Greater Macgrethe" = {
+ozarkhia4_area = {
 	2751 2752 2753
 }
 
@@ -2564,7 +2564,7 @@ kalenoo3_area = {
 	2739 2740 2743 2744
 }
 
-"Greater Westvalia" = {
+kalenoo4_area = {
 	2746 2747 2761
 }
 
