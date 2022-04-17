@@ -1,4 +1,4 @@
-# Placeholder
+# Baloniac
 
 owner = B39
 controller = B39
@@ -9,7 +9,7 @@ hre = no
 base_tax = 1 
 base_production = 1
 base_manpower = 1
-trade_goods = unknown
-capital = "Placeholder"
+trade_goods = Gems
+capital = "Baloniac City"
 is_city = yes
 discovered_by = western

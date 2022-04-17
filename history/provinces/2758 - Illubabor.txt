@@ -1,4 +1,4 @@
-# Placeholder
+# Minería de Priolenia
 
 owner = B39
 controller = B39
@@ -7,9 +7,9 @@ culture = ozarkhian
 religion = dark_valor
 hre = no
 base_tax = 1 
-base_production = 1
+base_production = 2
 base_manpower = 1
-trade_goods = unknown
-capital = "Placeholder"
+trade_goods = Iron
+capital = "Minería de Priolenia"
 is_city = yes
 discovered_by = western
