@@ -13,3 +13,4 @@ trade_goods = naval_supplies
 capital = "New Li'Li City"
 is_city = yes
 discovered_by = western
+fort_15th = yes

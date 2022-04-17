@@ -13,3 +13,4 @@ trade_goods = salt
 capital = "Neuzoe Port"
 is_city = yes
 discovered_by = western
+fort_15th = yes
