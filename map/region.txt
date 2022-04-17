@@ -32,6 +32,20 @@ france_region = {
 	}
 }
 
+Sternhell_region = {
+
+	areas = {
+		sternhell2_area
+		azvondenia_area
+		plakia_area
+		sternhell_area
+		ostkurtia_area
+		kurrland_area
+		neualhof_area
+		hyallicand_area
+		ostkurtaia_area
+	}
+}
 #scandinavia_region = {
 #	areas = {
 #		svealand_area

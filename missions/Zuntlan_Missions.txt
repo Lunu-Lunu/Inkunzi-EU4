@@ -161,7 +161,7 @@ Zuntlan_Collom_3= {
         }
         trigger = {
 			has_privateers = yes
-			has_port = yes
+			
 			#uhhhhh
         }
         effect = {
@@ -178,7 +178,7 @@ Zuntlan_Collom_3= {
         
         required_missions = {
 			Zuntlan_leave_swamps
-			Crabia_Pirates
+			Zuntlan_Crabia_Pirates
         }
         
 
@@ -277,26 +277,32 @@ Zuntlan_Collom_2 = {
         
         
         effect = {
-		
-		sternhel_south_area = {
-		
-			limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-		
-		}
-		
-		sternhel_north_area = {
-		
-			limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-		
-		}
+			sternhell_area = {
+				add_permanent_claim = B16
+			}
+			sternhell2_area = {
+				add_permanent_claim = B16
+			}
+
+			azvondenia_area = {
+				add_permanent_claim = B16
+			}
+
+			plakia_area = {
+				add_permanent_claim = B16
+			}
+
+			ostkurtaia_area = {
+				add_permanent_claim = B16
+			}
+
+			neualhof_area = {
+				add_permanent_claim = B16
+			}
+
+			hyallicand_area = {
+				add_permanent_claim = B16
+			}
 		
 		}
 	}
@@ -312,17 +318,32 @@ Zuntlan_Collom_2 = {
         
 
         provinces_to_highlight = {
-
+			OR = {
+				area = sternhell_area
+				area = plakia_area
+				area = azvondenia_area
+				area = sternhell2_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }			
         }
     
       
         trigger = {
          num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 7 
+				value = 2 
 				OR = {
-					area = sternhel_north_area
+					area = sternhell_area
 				}
-			}   
+			}
+         num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 1
+				OR = {
+					area = plakia_area
+				}
+			}			
+		 azvondenia_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+		 sternhell2_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+	
         }
         
         
@@ -366,7 +387,8 @@ Zuntlan_Collom_2 = {
 	
 		}
 	}
-		Zuntlan_leave_swamps = {
+	
+	Zuntlan_leave_swamps = {
         icon = mission_ottoman_harem
         generic = no
         position = 5
@@ -389,7 +411,7 @@ Zuntlan_Collom_2 = {
         }
              
         effect = {
-	    # add claims to ares in rekolia and survaria 
+			# add claims to ares in rekolia and survaria 
 		}
 	}
 	
@@ -435,40 +457,47 @@ Zuntlan_Collom_1= {
         position = 3
         
         required_missions = {
-		
             Zuntlan_Striving_Greater
         }
-        
-
+       
         provinces_to_highlight = {
-
+		
         }
     
       
         trigger = {
+		
             num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 5 
+				value = 2
 				OR = {
-					area = sternhel_south_area
+					area = plakia_area
 				}
 			}
-        }
+			
+			ostkurtaia_area = { type = all country_or_non_sovereign_subject_holds = ROOT }			
+			hyallicand_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			neualhof_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+			kurrland_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
+
+			
+       }
+       
         
-        
-        effect = {
-		
-		country_event = { 
-		id = zuntlan.1
-		days = 10
-		}
+		effect = {
+	
+			country_event = { 
+				id = zuntlan.1
+				days = 10
+			}
 		
 		}	
 	
 	}
+	
 	Zuntlan_survarian_stakes = {
-    icon = mission_ottoman_harem
-    generic = no
-    position = 6
+		icon = mission_ottoman_harem
+		generic = no
+		position = 6
         
         required_missions = {
 			Zuntlan_leave_swamps
@@ -487,10 +516,11 @@ Zuntlan_Collom_1= {
 			#more flavor i guess, and something to do with surveria
 		}
 	}
-	Zuntlan_survairan_union = {
-    icon = mission_ottoman_harem
-    generic = no
-    position = 7
+	
+	Zuntlan_Survairan_Union = {
+		icon = mission_ottoman_harem
+		generic = no
+		position = 7
         
         required_missions = {
 			Zuntlan_survarian_stakes
@@ -500,11 +530,13 @@ Zuntlan_Collom_1= {
         provinces_to_highlight = {
 
         }
+		
         trigger = {
-			#core provinces in surveria
+			core provinces in surveria
 			army_size = A04
 			legitimacy = A04
         }
+		
         effect = {
 			add_casus_belli = {
 					type = cb_restore_personal_union
@@ -512,6 +544,6 @@ Zuntlan_Collom_1= {
 					target = A04
 			}		
 		}
-	}		
-	
+
+	}
 }
