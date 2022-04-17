@@ -5,56 +5,7 @@
 
 namespace = zuntlan
 
-#Gurdian of the crabs
-country_event = {
-	id = zuntlan.4
-	title = zuntlan.4.t
-	desc = zuntlan.4.d
-	picture = TRADEGOODS_eventPicture
-	is_triggered_only = yes
-	immediate = {
-		log = "Root.GetName: Event zuntlan.4"
-	}
-	option = {
-	name = zuntlan.4.a 
-	ai_chance = { factor = 50 }
-	add_claim = 405
-	add_claim = 404
-	add_claim = 403
-	add_claim = 401	
-	#same thing with number c 
-	}
-			
-	option = {
-		name = zuntlan.4.b
-		ai_chance = { factor = 35 }
-		add_absolutism = 15
-		add_stability = 1
-		define_advisor = {
-		name = Machual'ze
-		type = Statesman
-		skill = 5
-		discount = yes
-		culture = thixi
-		}
-	}		
-	option = {
-	name = zuntlan.4.c
-	ai_chance = { factor = 20 }
-	add_claim = 405
-	add_claim = 404
-	add_claim = 403
-	add_claim = 401
-	add_claim = 2786
-	add_claim = 2785
-	add_claim = 2784
-	add_claim = 2783
-	add_claim = 2788
-	add_stability = -2
-	#add some sort of ae or its exuivlant, maybe add something that worsen realtionship with neighbours
-	}	
-		
-}
+
 
 #southern sternhell
 country_event = {
@@ -171,13 +122,13 @@ country_event = {
 		name = zuntlan.3.a 
 		ai_chance = { factor = 75 }
 		722 = { 
-			cede_province = B97
+			cede_province = B98
 		}
 		B16 = {
-			create_union = B97 #if the comment below becomes true this will change to vassel or some toher custome subject
+			create_union = B98 #if the comment below becomes true this will change to vassel or some toher custome subject
 		}
 		add_legitimacy = -20
-		B97 = {
+		B98 = {
 			add_claim = 723
 			hidden_effect = {
 				change_government = republic
@@ -190,13 +141,13 @@ country_event = {
 		name = zuntlan.3.b
 		ai_chance = { factor = 20 }
 		722 = { 
-			cede_province = B97
+			cede_province = B98
 		}
 		B16 = {
-			vassalize = B97 #rather this be like a tributary, but dlcs and stuff, might make a custume subject if I get extra time
+			vassalize = B98 #rather this be like a tributary, but dlcs and stuff, might make a custume subject if I get extra time
 		}
 		hidden_effect = {
-			B97 = {
+			B98 = {
 				change_government = republic
 				add_government_reform = merchants_reform
 			}
@@ -213,7 +164,59 @@ country_event = {
 		create_pirate = 5
 		}
 	}
-}	
+}
+
+#Gurdian of the crabs
+country_event = {
+	id = zuntlan.4
+	title = zuntlan.4.t
+	desc = zuntlan.4.d
+	picture = TRADEGOODS_eventPicture
+	is_triggered_only = yes
+	immediate = {
+		log = "Root.GetName: Event zuntlan.4"
+	}
+	option = {
+	name = zuntlan.4.a 
+	ai_chance = { factor = 50 }
+	add_claim = 405
+	add_claim = 404
+	add_claim = 403
+	add_claim = 401	
+	#same thing with number c 
+	}
+			
+	option = {
+		name = zuntlan.4.b
+		ai_chance = { factor = 35 }
+		add_absolutism = 15
+		add_stability = 1
+		define_advisor = {
+		name = Machual'ze
+		type = Statesman
+		skill = 5
+		discount = yes
+		culture = thixi
+		}
+	}		
+	option = {
+	name = zuntlan.4.c
+	ai_chance = { factor = 20 }
+	add_claim = 405
+	add_claim = 404
+	add_claim = 403
+	add_claim = 401
+	add_claim = 2786
+	add_claim = 2785
+	add_claim = 2784
+	add_claim = 2783
+	add_claim = 2788
+	add_stability = -2
+	#add some sort of ae or its exuivlant, maybe add something that worsen realtionship with neighbours
+	}	
+		
+}
+	
 country_event = {
 	id = zuntlan.5
 	title = zuntlan.5.t
@@ -229,6 +232,7 @@ country_event = {
 	option = {
 		name = zuntlan.5.a 
 		ai_chance = { factor = 100 }
+		set_global_flag = zuntlan_pirates
 		add_years_of_income = -0.4
 		every_neighbor_country = {
 			add_trust = {
@@ -236,17 +240,17 @@ country_event = {
 				mutual = no
 			}
 		}
-		hidden_effect = {
+		
 			523 = {
 				owner = { 
 					country_event = { 
-						id = zuntlan.6
-						days = 365
-						random = 45
+						id = marizian.1
+						days = 10
+						random = 10
 					}
 				}	
 			}
-		}
+		
 	}
 	option = {
 		name = zuntlan.5.b
@@ -266,74 +270,5 @@ country_event = {
 		}
 	}	
 }
-country_event = {
-	id = zuntlan.6
-	title = zuntlan.6.t
-	desc = zuntlan.6.d
-	picture = TRADEGOODS_eventPicture
-	is_triggered_only = yes
-	fire_only_once = yes
-	
-	immediate = {
-		log = "Root.GetName: Event zuntlan.6"
-	}
-	
-	option = { # pirates are epic
-		name = zuntlan.6.a 
-		ai_chance = { factor = 100 }
-		hidden_effect = {
-			523 = {
-				add_core = R04
-				cede_province = R04
-				rename_capital = "Yassu"
-				light_ship = R04
-			}
-		
-			R04 = {
-				add_treasury = 52
-				add_sailors = 2000
-				add_stability = 1
-				add_treasury = 100
-				change_government = republic
-				add_government_reform = pirate_republic_reform
-			}
-		}
-	}
-		option = { # pirates are epic... :trollface_nonfree:
-		name = zuntlan.6.a 
-		ai_chance = { factor = 100 }
-		hidden_effect = {
-			523 = {
-				add_core = R04
-				cede_province = R04
-				rename_capital = "Yassu"
-				light_ship = R04
-			}
-		
-			R04 = {
-				add_treasury = 52
-				add_sailors = 2000
-				add_stability = 1
-				add_treasury = 100
-				change_government = republic
-				add_government_reform = pirate_republic_reform
-				define_ruler = {
-					name = "Marizqur"
-					dynasty = " "
-					adm = 1
-					dip = 4
-					mil = 4
-					age = 32
-					claim = 80
-				}
-			}
-			switch_tag = R04 
-		}
-	}
-	option = { #no :mushroomer: 
-		name = zuntlan.6.b
-		ai_chance = { factor = 0 }
-		
-	}
-}
+
 
