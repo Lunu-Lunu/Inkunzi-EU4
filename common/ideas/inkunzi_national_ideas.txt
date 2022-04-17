@@ -119,6 +119,44 @@ A28_ideas = { # Kido Ideas
 	}
 }
 
+A43_ideas = { # Xuaze Ideas
+    	start = {
+        	gold_income = 0.1
+        	national_manpower = 0.05
+	}
+    	bonus = {
+        	morale = 0.05
+	}
+
+    	trigger = {
+        	tag = A43
+	}
+    	free = yes
+
+   	A43_remnants_of_the_horde = {
+        	cavalry_cost= -0.05
+        	cavalry_combat_effectiveness= 0.05
+	}
+   	A43_centralized_economy = {
+       		 global_tax_modifier = 0.1
+	}
+   	A43_warlike_peoples = {
+      		 land_morale = 0.10
+	}
+    	A43_expansionist_past = {
+      		 core_creation_cost = -0.2
+	}
+   	A43_xuaze_straits = {
+       		 merchant = 1
+	}
+    	A43_spirit_of_the_ruby = {
+       		 national_manpower = 0.1
+	}
+	A43_competent_merchants = {
+       		 trade_efficiency = 0.15
+	}
+}
+
 B21_ideas = { # Melkhian Ideas
 	start = {
 		leader_naval_fire = 1
