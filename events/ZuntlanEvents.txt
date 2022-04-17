@@ -22,7 +22,7 @@ country_event = {
 		ai_chance = { factor = 50 }
 		add_prestige = 25
 		add_legitimacy 35	
-		sternhel_south_area = {
+		ostkurtaia_area = {
 				limit = {
 				province = B16
 				}
@@ -31,6 +31,42 @@ country_event = {
 				duration = 18250 #50 years
 				}
 		}
+		hyallicand_area = {
+				limit = {
+				province = B16
+				}
+				add_province_modifier = { ###replace with new area(s)  
+				name = lizard_sinicization
+				duration = 18250 #50 years
+				}
+		}
+		neualhof_area = {
+				limit = {
+				province = B16
+				}
+				add_province_modifier = { ###replace with new area(s)  
+				name = lizard_sinicization
+				duration = 18250 #50 years
+				}
+		}
+		kurrland_area = {
+				limit = {
+				province = B16
+				}
+				add_province_modifier = { ###replace with new area(s)  
+				name = lizard_sinicization
+				duration = 18250 #50 years
+				}
+		}
+		plakia_area = {
+				limit = {
+				province = B16
+				}
+				add_province_modifier = { ###replace with new area(s)  
+				name = lizard_sinicization
+				duration = 18250 #50 years
+				}
+		}		
 	}
 			
 	option = {
@@ -70,7 +106,7 @@ country_event = {
         ai_chance = { factor = 50 }
         add_prestige = 25
         add_legitimacy 35    
-        sternhel_north_area = {
+        sternhell_area = {
                 limit = {
 
                 province = B16
@@ -81,6 +117,29 @@ country_event = {
                 duration = 18250 #50 years
                 }
         }
+        azvondenia_area = {
+                limit = {
+
+                province = B16
+
+                }
+                add_province_modifier = {
+                name = lizard_sinicization
+                duration = 18250 #50 years
+                }
+        }
+        sternhell2_area = {
+                limit = {
+
+                province = B16
+
+                }
+                add_province_modifier = {
+                name = lizard_sinicization
+                duration = 18250 #50 years
+                }
+        }
+
 	}
 			
 	option = {

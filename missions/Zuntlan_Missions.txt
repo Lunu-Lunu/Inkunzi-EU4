@@ -532,7 +532,7 @@ Zuntlan_Collom_1= {
         }
 		
         trigger = {
-			core provinces in surveria
+			#core provinces in surveria
 			army_size = A04
 			legitimacy = A04
         }
