@@ -1,4 +1,4 @@
-# Placeholder
+# Colinas de Grano
 
 owner = B39
 controller = B39
@@ -7,9 +7,9 @@ culture = ozarkhian
 religion = dark_valor
 hre = no
 base_tax = 1 
-base_production = 1
+base_production = 2
 base_manpower = 1
-trade_goods = unknown
-capital = "Placeholder"
+trade_goods = Grain
+capital = "Colinas de Grano"
 is_city = yes
 discovered_by = western
