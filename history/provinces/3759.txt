@@ -9,6 +9,6 @@ base_tax = 2
 base_production = 4
 base_manpower = 1
 trade_goods = unknown
-capital = "Placeholder"
+capital = "Naslangujia"
 is_city = no
 discovered_by = mesoamerican
