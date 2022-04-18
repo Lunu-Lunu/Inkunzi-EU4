@@ -236,7 +236,8 @@ A01_ideas = { # Fort Federation Ideas
 	}
 	A01_fortly_tolerance = {
 		num_accepted_cultures = 1
-		no_religion_penalty = yes
+		tolerance_heretic = 1
+		tolerance_heathen = 1
 	}
 	A01_fortly_unity = {
 		all_estate_loyalty_equilibrium = 0.05
