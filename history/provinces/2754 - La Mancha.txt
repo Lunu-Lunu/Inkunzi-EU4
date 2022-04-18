@@ -1,4 +1,4 @@
-# Baloniac
+# Zekhia
 
 owner = B39
 controller = B39
@@ -10,6 +10,6 @@ base_tax = 2
 base_production = 4
 base_manpower = 2
 trade_goods = gems
-capital = "Baloniac City"
+capital = "Zekhia City"
 is_city = yes
 discovered_by = western

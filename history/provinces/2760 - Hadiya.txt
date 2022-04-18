@@ -1,4 +1,4 @@
-# Hierrohkia
+# North Insikhia
 
 owner = B39
 controller = B39
@@ -10,6 +10,6 @@ base_tax = 3
 base_production = 5
 base_manpower = 2
 trade_goods = iron
-capital = "Hierrohkia"
+capital = "North Insikhia"
 is_city = yes
 discovered_by = western

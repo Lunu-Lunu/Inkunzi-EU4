@@ -1,4 +1,4 @@
-# La Priolenia Dorada
+# Corazón
 
 owner = B39
 controller = B39
@@ -10,6 +10,6 @@ base_tax = 3
 base_production = 5
 base_manpower = 3
 trade_goods = gold
-capital = "La Priolenia Dorada"
+capital = "Corazón"
 is_city = yes
 discovered_by = western
