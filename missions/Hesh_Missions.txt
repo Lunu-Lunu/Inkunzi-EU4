@@ -1,0 +1,306 @@
+hesh_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = B77
+			tag = B78
+			tag = B79
+			tag = B80
+			tag = B81
+		}
+	}
+	has_country_shield = yes
+
+	the_bickering_hive = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { prepare_the_armies }
+		position = 2
+		trigger = {
+			OR = { 
+				tag = B80 
+				overlord_of = B80
+				3138 = { 
+					country_or_non_sovereign_subject_holds = ROOT 
+				} 
+			}
+		}
+		effect = {
+			create_admiral = { tradition = 50 culture = yaxatian }
+			3138 = {
+				add_core = ROOT
+			}
+		}
+	}
+	
+	fish_of_the_maw = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { the_bickering_hive }
+		position = 3
+		trigger = {
+			3138 = { 
+				country_or_non_sovereign_subject_holds = ROOT
+				num_of_times_improved_by_owner = 5
+			}
+		}
+		effect = {
+			3138 = {
+				add_building = workshop
+				add_base_production = 2
+			}
+		}
+	}
+}
+
+hesh_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = B77
+			tag = B78
+			tag = B79
+			tag = B80
+			tag = B81
+		}
+	}
+	has_country_shield = yes
+
+	the_learning_hive = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { prepare_the_armies}
+		position = 2
+		trigger = {
+			OR = { 
+				tag = B78 
+				overlord_of = B78
+				3137 = { 
+					country_or_non_sovereign_subject_holds = ROOT 
+				} 
+			}
+		}
+		effect = {
+			define_advisor = {
+				type = naval_reformer
+				skill = 2
+				discount = yes
+				culture = antaxian
+				religion = disparate_tribal
+			}
+			3137 = {
+				add_core = ROOT
+			}
+		}
+	}
+
+	university_of_antax = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { the_learning_hive }
+		position = 3
+		trigger = {
+			3137 = { 
+				country_or_non_sovereign_subject_holds = ROOT
+				num_of_times_improved_by_owner = 5
+			}
+		}
+		effect = {
+			3137 = {
+				add_building = university
+				add_base_tax = 2
+			}
+		}
+	}
+
+	development_of_the_hesh = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { university_of_antax hive_voras fish_of_the_maw }
+		position = 4
+		trigger = {
+			ROOT = { 
+				grown_by_development = 50
+			}
+		}
+		effect = {
+			add_treasury = 20
+		}
+	}
+}
+
+hesh_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = B77
+			tag = B78
+			tag = B79
+			tag = B80
+			tag = B81
+		}
+	}
+	has_country_shield = yes
+
+	prepare_the_armies = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { }
+		position = 1
+		trigger = {
+			army_size_percentage = 1
+		}
+		effect = {
+			add_casus_belli = {
+				target = B77
+				type = cb_vassalize_mission
+				months = 1200
+			}
+			add_casus_belli = {
+				target = B78
+				type = cb_vassalize_mission
+				months = 1200
+			}
+			add_casus_belli = {
+				target = B79
+				type = cb_vassalize_mission
+				months = 1200
+			}
+			add_casus_belli = {
+				target = B80
+				type = cb_vassalize_mission
+				months = 1200
+			}
+			add_casus_belli = {
+				target = B81
+				type = cb_vassalize_mission
+				months = 1200
+			}
+		}
+	}
+	
+	the_first_hive = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { prepare_the_armies }
+		position = 2
+		trigger = {
+			OR = { 
+				tag = B77 
+				overlord_of = B77 
+				3133 = { 
+					country_or_non_sovereign_subject_holds = ROOT 
+				} 
+			}
+		}
+		effect = {
+			define_advisor = {
+				type = philosopher
+				skill = 2
+				discount = yes
+				culture = vorasian
+				religion = disparate_tribal
+			}
+			3133 = {
+				add_core = ROOT
+			}
+		}
+	} 
+
+	hive_voras = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { the_first_hive }
+		position = 3
+		trigger = {
+			3133 = { 
+				country_or_non_sovereign_subject_holds = ROOT
+				num_of_times_improved_by_owner = 5
+			}
+		}
+		effect = {
+			3133 = {
+				add_building = training_fields
+				add_base_manpower = 2
+			}
+		}
+	}	
+}
+
+hesh_missions_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = B77
+			tag = B78
+			tag = B79
+			tag = B80
+			tag = B81
+		}
+	}
+	has_country_shield = yes
+	
+	the_common_hive = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { prepare_the_armies }
+		position = 2
+		trigger = {
+			OR = { 
+				tag = B79 
+				overlord_of = B79
+				3130 = { 
+					country_or_non_sovereign_subject_holds = ROOT 
+				} 
+			}
+		}
+		effect = {
+			define_advisor = {
+				type = army_organiser
+				skill = 2
+				discount = yes
+				culture = tavasian
+				religion = disparate_tribal
+			}
+			3130 = {
+				add_core = ROOT
+			}
+		}
+	}		
+}
+
+hesh_missions_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = B77
+			tag = B78
+			tag = B79
+			tag = B80
+			tag = B81
+		}
+	}
+	has_country_shield = yes
+	
+	the_wandering_hive = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { prepare_the_armies }
+		position = 2
+		trigger = {
+			OR = { 
+				tag = B81
+				overlord_of = B81
+				3070 = { 
+					country_or_non_sovereign_subject_holds = ROOT 
+				} 
+			}
+		}
+		effect = {
+			create_general = { tradition = 50 culture = karaxian }
+			3070 = {
+				add_core = ROOT
+			}
+		}
+	}		
+} 
