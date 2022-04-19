@@ -1,4 +1,4 @@
-# Placeholder
+# Westvalia
 
 owner = B39
 controller = B39
@@ -6,10 +6,10 @@ add_core = B39
 culture = ozarkhian
 religion = dark_valor
 hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
-trade_goods = unknown
-capital = "Placeholder"
+base_tax = 5
+base_production = 7
+base_manpower = 4
+trade_goods = dyes
+capital = "Westvalia"
 is_city = yes
 discovered_by = western
