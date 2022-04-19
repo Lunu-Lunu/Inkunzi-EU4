@@ -1,0 +1,88 @@
+A01_new_blood_fort_architecture = {
+	defensiveness = 0.15
+	fort_maintenance_modifier = -0.05
+}
+A01_garrison_expansion = {
+	garrison_size = 0.25
+	global_manpower_modifier = 0.05
+}
+A01_agave_disposition = {
+	diplomatic_reputation = 2
+}
+A01_new_fort_architecture_province_mod = {
+	fort_level = 1
+}
+A01_overlapping_forts = {
+	fort_maintenance_modifier = -0.1
+}
+decline_of_the_great_forts = {
+	local_development_cost = 0.5
+	local_build_cost = 0.25
+	fort_level = -1
+}
+A01_stagnation_of_fort_ass = {
+	local_development_cost = 0.3
+	local_build_cost = 0.15
+}
+A01_interracial_unity = {
+	ourk_influence_modifier = 0.15
+	humans_influence_modifier = 0.15
+	centaurs_influence_modifier = 0.15
+	draconic_influence_modifier = 0.15
+	nimbus_influence_modifier = 0.15
+	crabs_influence_modifier = 0.15
+	shrooms_influence_modifier = 0.15
+	golems_influence_modifier = 0.15
+	elves_influence_modifier = 0.15
+	goblins_influence_modifier = 0.15
+	lizards_influence_modifier = 0.15
+	moths_influence_modifier = 0.15
+	sia_si_influence_modifier = 0.15
+	gnetans_influence_modifier = 0.15
+	furries_influence_modifier = 0.15
+	frogs_influence_modifier = 0.15
+	dwarves_influence_modifier = 0.15
+	rats_influence_modifier = 0.15
+	goats_influence_modifier = 0.15
+	hesh_influence_modifier = 0.15
+	snakes_influence_modifier = 0.15
+	apes_influence_modifier = 0.15
+	ents_influence_modifier = 0.15
+}
+A01_lizard_theology = {
+	tolerance_own = 1
+	missionary_maintenance_cost = -0.25
+}
+A01_nimbus_diplomacy = {
+	reduced_liberty_desire = 5
+	improve_relation_modifier = 0.1
+}
+A01_ourkani_military_principles = {
+	infantry_power = 0.05
+	army_tradition_decay = -0.005
+}
+A01_shroom_zeal = {
+	land_morale = 0.05
+	naval_morale = 0.05
+}
+A01_goblin_economics = {
+	inflation_reduction = 0.05
+	trade_efficiency = 0.05
+}
+A01_centaur_societal_structure = {
+	promote_culture_cost = -0.5
+	advisor_pool = 1
+	advisor_cost = -0.05
+}
+A01_golem_adaptability = {
+	religious_unity = 0.1
+	num_accepted_cultures = 1
+}
+A01_urakkan_mercantile_techniques = {
+	mercantilism_cost = -0.5
+	global_prov_trade_power_modifier = 0.1
+}
+A01_elven_peacefulness = {
+	war_exhaustion_cost = -0.25
+	stability_cost_modifier = -0.05
+}

@@ -6,7 +6,7 @@ technology_group = western
 religion = haymonutho
 primary_culture = gneta
 add_accepted_culture = north_karlton
-capital = 2637
+capital = 2782
 set_country_flag = primary_gneta_nation
 set_country_flag = crabs_accepted
 

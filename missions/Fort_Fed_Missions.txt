@@ -1,0 +1,846 @@
+fort_fed_column_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = A01
+	}
+	has_country_shield = yes
+	fort_fed_mission_fortly_tolerance = {
+		icon = mission_indian_stateman
+		position = 2
+		required_missions = {
+			fort_fed_mission_religious_stability
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			humanist_ideas = 7
+		}
+		effect = {
+			log = "[Root.GetName]: Mission fort_fed_mission_fortly_tolerance"
+			add_stability = 1
+			add_legitimacy = 10
+			add_scaled_republican_tradition = 10
+			add_devotion = 10
+		}
+	}
+	fort_fed_mission_new_blood = {
+		icon = mission_indian_stateman
+		position = 3
+		required_missions = {
+			fort_fed_mission_fortly_tolerance
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			defensive_ideas = 1
+		}
+		effect = {
+			log = "[Root.GetName]: Mission fort_fed_mission_new_blood"
+			# all this adds +2 Defensive Ideas lmao
+			if = {
+				limit = {
+					NOT = { defensive_ideas = 2 }
+				}
+				add_idea = military_drill
+				add_idea = improved_manuever
+			}
+			else = {
+				if = {
+					limit = {
+						NOT = { defensive_ideas = 3 }
+					}
+					add_idea = improved_manuever
+					add_idea = regimental_system
+				}
+				else = {
+					if = {
+						limit = {
+							NOT = { defensive_ideas = 4 }
+						}
+						add_idea = regimental_system
+						add_idea = defensive_mentality
+					}
+					else = {
+						if = {
+							limit = {
+								NOT = { defensive_ideas = 5 }
+							}
+							add_idea = defensive_mentality
+							add_idea = supply_trains
+						}
+						else = {
+							if = {
+								limit = {
+									NOT = { defensive_ideas = 6 }
+								}
+								add_idea = supply_trains
+								add_idea = improved_foraging
+							}
+							else = {
+								if = {
+									limit = {
+										NOT = { defensive_ideas = 7 }
+									}
+									add_idea = improved_foraging
+								}
+								else = {
+									add_mil_power = 100
+								}
+							}
+						}
+					}
+				}
+			}
+			add_country_modifier = {
+				name = A01_new_blood_fort_architecture
+				duration = 9125
+			}
+		}
+	}
+	fort_fed_mission_great_garrison_expansion = {
+		icon = mission_indian_stateman
+		position = 3
+		required_missions = {
+			fort_fed_mission_new_blood
+		}
+		provinces_to_highlight = {
+			fort_level = 2
+		}
+		trigger = {
+			defensive_ideas = 7
+			num_of_owned_provinces_with = {
+				value = 10
+				fort_level = 2
+			}
+		}
+		effect = {
+			log = "[Root.GetName]: Mission fort_fed_mission_great_garrison_expansion"
+			every_owned_province = {
+				limit = {
+					fort_level = 2
+				}
+				add_base_manpower = 3
+			}
+			add_country_modifier = {
+				name = A01_garrison_expansion
+				duration = 9125
+			}
+		}
+	}
+	fort_fed_mission_lizard_theology = {
+		icon = mission_indian_stateman
+		position = 5
+		required_missions = {
+			fort_fed_mission_interracial_unity
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			has_estate = estate_lizards
+			estate_loyalty = {
+				estate = estate_lizards
+				loyalty = 60
+			}
+			estate_influence = {
+				estate = estate_lizards
+				influence = 60
+			}
+		}
+		effect = {
+			log = "[Root.GetName]: Mission fort_fed_mission_lizard_theology"
+			add_country_modifier = {
+				name = A01_lizard_theology
+				duration = -1
+			}
+		}
+	}
+	fort_fed_mission_nimbus_diplomacy = {
+		icon = mission_indian_stateman
+		position = 6
+		required_missions = {
+			fort_fed_mission_interracial_unity
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			has_estate = estate_nimbus
+			estate_loyalty = {
+				estate = estate_nimbus
+				loyalty = 60
+			}
+			estate_influence = {
+				estate = estate_nimbus
+				influence = 60
+			}
+		}
+		effect = {
+			log = "[Root.GetName]: Mission fort_fed_mission_nimbus_diplomacy"
+			add_country_modifier = {
+				name = A01_nimbus_diplomacy
+				duration = -1
+			}
+		}
+	}
+}
+fort_fed_column_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = A01
+	}
+	has_country_shield = yes
+	fort_fed_mission_religious_stability = {
+		icon = mission_indian_stateman
+		position = 1
+		required_missions = {
+			
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			OR = {
+				religious_unity = 0.9
+				humanist_ideas = 1
+			}
+		}
+		effect = {
+			log = "[Root.GetName]: Mission fort_fed_mission_religious_stability"
+			add_dip_power = 100
+			# wall of if statements below gives you the next humanist idea if you have not completed humanist ideas and have at least idea 1 of it
+			if = {
+				limit = {
+					humanist_ideas = 1
+				}
+				if = {
+					limit = {
+						NOT = {
+							humanist_ideas = 2
+						}
+					}
+					add_idea = local_traditions
+				}
+				else = {
+					if = {
+						limit = {
+							NOT = {
+								humanist_ideas = 3
+							}
+						}
+						add_idea = ecumenism
+					}
+					else = {
+						if = {
+							limit = {
+								NOT = {
+									humanist_ideas = 4
+								}
+							}
+							add_idea = indirect_rule
+						}
+						else = {
+							if = {
+								limit = {
+									NOT = {
+										humanist_ideas = 5
+									}
+								}
+								add_idea = cultural_ties
+							}
+							else = {
+								if = {
+									limit = {
+										NOT = {
+											humanist_ideas = 6
+										}
+									}
+									add_idea = benevolence
+								}
+								else = {
+									if = {
+										limit = {
+											NOT = {
+												humanist_ideas = 7
+											}
+										}
+										add_idea = humanist_tolerance
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	fort_fed_mission_agave_disposition = {
+		icon = mission_indian_stateman
+		position = 3
+		required_missions = {
+			fort_fed_mission_religious_stability
+			fort_fed_mission_a_new_age
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			all_owned_province = {
+				OR = {
+					has_owner_culture = yes
+					has_owner_accepted_culture = yes
+				}
+			}
+			any_owned_province = {
+				NOT = {
+					culture_group = palmer_group
+				}
+			}
+		}
+		effect = {
+			log = "[Root.GetName]: Mission fort_fed_mission_agave_disposition"
+			add_prestige = 10
+			add_country_modifier = {
+				name = A01_agave_disposition
+				duration = 9125
+			}
+		}
+	}
+	fort_fed_mission_new_fort_architecture = {
+		icon = mission_indian_stateman
+		position = 4
+		required_missions = {
+			fort_fed_mission_new_blood
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 10
+				fort_level = 2
+			}
+			has_3_influential_racial_estates = yes
+		}
+		effect = { # oh sweet christ what was i thinking
+			log = "[Root.GetName]: Mission fort_fed_mission_new_fort_architecture"
+			A01_upgrade_forts_mission_effect = yes
+		}
+	}
+	fort_fed_mission_ourkani_military_principles = {
+		icon = mission_indian_stateman
+		position = 5
+		required_missions = {
+			fort_fed_mission_interracial_unity
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			has_estate = estate_ourk
+			estate_loyalty = {
+				estate = estate_ourk
+				loyalty = 60
+			}
+			estate_influence = {
+				estate = estate_ourk
+				influence = 60
+			}
+		}
+		effect = {
+			log = "[Root.GetName]: Mission fort_fed_mission_ourkani_military_principles"
+			add_country_modifier = {
+				name = A01_ourkani_military_principles
+				duration = -1
+			}
+		}
+	}
+	fort_fed_mission_shroom_zeal = {
+		icon = mission_indian_stateman
+		position = 6
+		required_missions = {
+			fort_fed_mission_interracial_unity
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			has_estate = estate_shrooms
+			estate_loyalty = {
+				estate = estate_shrooms
+				loyalty = 60
+			}
+			estate_influence = {
+				estate = estate_shrooms
+				influence = 60
+			}
+		}
+		effect = {
+			log = "[Root.GetName]: Mission fort_fed_mission_shroom_zeal"
+			add_country_modifier = {
+				name = A01_shroom_zeal
+				duration = -1
+			}
+		}
+	}
+}
+fort_fed_column_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = A01
+	}
+	has_country_shield = yes
+	fort_fed_mission_fortification_networks = {
+		icon = mission_indian_stateman
+		position = 1
+		required_missions = {
+
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			calc_true_if = {
+				all_owned_province = {
+					fort_level = 2
+					calc_true_if = {
+						all_neighbor_province = {
+							owned_by = ROOT
+							fort_level = 2
+						}
+						amount = 2
+					}
+				}
+				amount = 3
+			}
+		}
+		effect = {
+			log = "[Root.GetName]: Mission fort_fed_mission_fortification_networks"
+			add_country_modifier = {
+				name = A01_overlapping_forts
+				duration = 9125
+			}
+			epipoly_area = {
+				add_permanent_claim = ROOT
+			}
+			stendari9_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	fort_fed_mission_a_new_age = {
+		icon = mission_indian_stateman
+		position = 2
+		required_missions = {
+			fort_fed_mission_fortification_networks
+			fort_fed_mission_reclamation_of_fort_ass
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			num_of_owned_provinces_with = {
+				value = 8
+				is_core = ROOT
+			}
+		}
+		effect = {
+			log = "[Root.GetName]: Mission fort_fed_mission_a_new_age"
+			capital_scope = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 3
+			}
+		}
+	}
+	fort_fed_mission_ourkani_relations = {
+		icon = mission_indian_stateman
+		position = 3
+		required_missions = {
+			fort_fed_mission_a_new_age
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			num_of_owned_provinces_with = {
+				value = 3
+				is_core = ROOT
+				culture_group = ourkani_group
+			}
+		}
+		effect = {
+			log = "[Root.GetName]: Mission fort_fed_mission_ourkani_relations"
+			add_accepted_culture = ourkani
+			epipoly2_area = {
+				add_permanent_claim = ROOT
+			}
+			epipoly3_area = {
+				add_permanent_claim = ROOT
+			}
+			iraykopoulis_area = {
+				add_permanent_claim = ROOT
+			}
+			stendari8_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	fort_fed_mission_interracial_unity = {
+		icon = mission_indian_stateman
+		position = 4
+		required_missions = {
+			fort_fed_mission_agave_disposition
+			fort_fed_mission_ourkani_relations
+			fort_fed_mission_survalsian_relations
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			has_3_loyal_racial_estates = yes
+		}
+		effect = {
+			log = "[Root.GetName]: Mission fort_fed_mission_interracial_unity"
+			add_country_modifier = {
+				name = A01_interracial_unity
+				duration = 9125
+			}
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+		}
+	}
+	fort_fed_mission_goblin_economics = {
+		icon = mission_indian_stateman
+		position = 6
+		required_missions = {
+			fort_fed_mission_interracial_unity
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			has_estate = estate_goblins
+			estate_loyalty = {
+				estate = estate_goblins
+				loyalty = 60
+			}
+			estate_influence = {
+				estate = estate_goblins
+				influence = 60
+			}
+		}
+		effect = {
+			log = "[Root.GetName]: Mission fort_fed_mission_goblin_economics"
+			add_country_modifier = {
+				name = A01_goblin_economics
+				duration = -1
+			}
+		}
+	}
+}
+fort_fed_column_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = A01
+	}
+	has_country_shield = yes
+	fort_fed_mission_reclamation_of_fort_ass = {
+		icon = mission_indian_stateman
+		position = 1
+		required_missions = {
+			
+		}
+		provinces_to_highlight = {
+			province_id = 48
+		}
+		trigger = {
+			is_subject = no
+			owns = 48
+		}
+		effect = {
+			log = "[Root.GetName]: Mission fort_fed_mission_reclamation_of_fort_ass"
+			set_capital = 48
+			add_stability = 1
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 25
+			}
+			add_prestige = 25
+			fort_fed2_area = {
+				add_permanent_claim = ROOT
+			}
+			fort_fed3_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	fort_fed_mission_our_former_glory = {
+		icon = mission_indian_stateman
+		position = 2
+		required_missions = {
+			fort_fed_mission_reclamation_of_fort_ass
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			48 = {
+				owned_by = ROOT
+				fort_level = 2
+			}
+			treasury = 100
+			adm_power = 100
+
+		}
+		effect = {
+			log = "[Root.GetName]: Mission fort_fed_mission_our_former_glory"
+			add_treasury = -100
+			add_adm_power = -100
+			48 = {
+				remove_province_modifier = decline_of_the_great_forts
+				add_province_modifier = {
+					name = A01_stagnation_of_fort_ass
+					duration = -1
+				}
+			}
+		}
+	}
+	fort_fed_mission_survalsian_relations = {
+		icon = mission_indian_stateman
+		position = 3
+		required_missions = {
+			fort_fed_mission_a_new_age
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			num_of_owned_provinces_with = {
+				value = 3
+				is_core = ROOT
+				culture = survalsian
+			}
+		}
+		effect = {
+			log = "[Root.GetName]: Mission fort_fed_mission_our_former_glory"
+			add_accepted_culture = survalsian
+			survalsia_area = {
+				add_permanent_claim = ROOT
+			}
+			survalsia2_area = {
+				add_permanent_claim = ROOT
+			}
+			survalsia3_area = {
+				add_permanent_claim = ROOT
+			}
+			survalsia4_area = {
+				add_permanent_claim = ROOT
+			}
+			survalsia5_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	fort_fed_mission_centaur_societal_structure = {
+		icon = mission_indian_stateman
+		position = 5
+		required_missions = {
+			fort_fed_mission_interracial_unity
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			has_estate = estate_centaurs
+			estate_loyalty = {
+				estate = estate_centaurs
+				loyalty = 60
+			}
+			estate_influence = {
+				estate = estate_centaurs
+				influence = 60
+			}
+		}
+		effect = {
+			log = "[Root.GetName]: Mission fort_fed_mission_centaur_societal_structure"
+			add_country_modifier = {
+				name = A01_centaur_societal_structure
+				duration = -1
+			}
+		}
+	}
+	fort_fed_mission_golem_adaptability = {
+		icon = mission_indian_stateman
+		position = 6
+		required_missions = {
+			fort_fed_mission_interracial_unity
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			has_estate = estate_golems
+			estate_loyalty = {
+				estate = estate_golems
+				loyalty = 60
+			}
+			estate_influence = {
+				estate = estate_golems
+				influence = 60
+			}
+		}
+		effect = {
+			log = "[Root.GetName]: Mission fort_fed_mission_golem_adaptability"
+			add_country_modifier = {
+				name = A01_golem_adaptability
+				duration = -1
+			}
+		}
+	}
+}
+fort_fed_column_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = A01
+	}
+	has_country_shield = yes
+	fort_fed_mission_our_grand_future = {
+		icon = mission_indian_stateman
+		position = 3
+		required_missions = {
+			fort_fed_mission_our_former_glory
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			prestige = 50
+			48 = {
+				owned_by = ROOT
+				num_of_times_improved_by_owner = 5
+				fort_level = 2
+			}
+		}
+		effect = {
+			log = "[Root.GetName]: Mission fort_fed_mission_our_grand_future"
+			add_mil_tech = 1
+			48 = {
+				remove_province_modifier = A01_stagnation_of_fort_ass
+			}
+			395 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	fort_fed_mission_restoration_of_kido = {
+		icon = mission_indian_stateman
+		position = 4
+		required_missions = {
+			fort_fed_mission_our_grand_future
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			395 = {
+				owned_by = ROOT
+				is_core = ROOT
+			}
+		}
+		effect = {
+			log = "[Root.GetName]: Mission fort_fed_mission_restoration_of_kido"
+			395 = {
+				remove_province_modifier = decline_of_the_great_forts
+				add_nationalism = -25
+				add_local_autonomy = -50
+				add_base_tax = 3
+				add_base_production = 3
+				add_base_manpower = 3
+			}
+			every_province = {
+				limit = {
+					culture = kido
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	fort_fed_mission_urakkan_mercantile_techniques = {
+		icon = mission_indian_stateman
+		position = 5
+		required_missions = {
+			fort_fed_mission_interracial_unity
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			has_estate = estate_draconic
+			estate_loyalty = {
+				estate = estate_draconic
+				loyalty = 60
+			}
+			estate_influence = {
+				estate = estate_draconic
+				influence = 60
+			}
+		}
+		effect = {
+			log = "[Root.GetName]: Mission fort_fed_mission_urakkan_mercantile_techniques"
+			add_country_modifier = {
+				name = A01_urakkan_mercantile_techniques
+				duration = -1
+			}
+		}
+	}
+	fort_fed_mission_elven_peacefulness = {
+		icon = mission_indian_stateman
+		position = 6
+		required_missions = {
+			fort_fed_mission_interracial_unity
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			has_estate = estate_elves
+			estate_loyalty = {
+				estate = estate_elves
+				loyalty = 60
+			}
+			estate_influence = {
+				estate = estate_elves
+				influence = 60
+			}
+		}
+		effect = {
+			log = "[Root.GetName]: Mission fort_fed_mission_elven_peacefulness"
+			add_country_modifier = {
+				name = A01_elven_peacefulness
+				duration = -1
+			}
+		}
+	}
+}

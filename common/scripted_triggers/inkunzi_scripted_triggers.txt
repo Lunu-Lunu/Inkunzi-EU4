@@ -134,3 +134,198 @@ has_human_accepted = {
 		accepted_culture = celtaidd
 	}
 }
+
+has_3_influential_racial_estates = {
+	calc_true_if = {
+		amount = 3
+		estate_influence = {
+			estate = estate_humans
+			influence = 60
+		}
+		estate_influence = {
+			estate = estate_ourks
+			influence = 60
+		}
+		estate_influence = {
+			estate = estate_centaurs
+			influence = 60
+		}
+		estate_influence = {
+			estate = estate_draconic
+			influence = 60
+		}
+		estate_influence = {
+			estate = estate_nimbus
+			influence = 60
+		}
+		estate_influence = {
+			estate = estate_crabs
+			influence = 60
+		}
+		estate_influence = {
+			estate = estate_shrooms
+			influence = 60
+		}
+		estate_influence = {
+			estate = estate_golems
+			influence = 60
+		}
+		estate_influence = {
+			estate = estate_elves
+			influence = 60
+		}
+		estate_influence = {
+			estate = estate_goblins
+			influence = 60
+		}
+		estate_influence = {
+			estate = estate_lizards
+			influence = 60
+		}
+		estate_influence = {
+			estate = estate_moths
+			influence = 60
+		}
+		estate_influence = {
+			estate = estate_sia_si
+			influence = 60
+		}
+		estate_influence = {
+			estate = estate_gnetans
+			influence = 60
+		}
+		estate_influence = {
+			estate = estate_furries
+			influence = 60
+		}
+		estate_influence = {
+			estate = estate_frogs
+			influence = 60
+		}
+		estate_influence = {
+			estate = estate_dwarves
+			influence = 60
+		}
+		estate_influence = {
+			estate = estate_rats
+			influence = 60
+		}
+		estate_influence = {
+			estate = estate_hesh
+			influence = 60
+		}
+		estate_influence = {
+			estate = estate_snakes
+			influence = 60
+		}
+		estate_influence = {
+			estate = estate_apes
+			influence = 60
+		}
+		estate_influence = {
+			estate = estate_ents
+			influence = 60
+		}
+		estate_influence = {
+			estate = estate_goats
+			influence = 60
+		}
+	}
+}
+has_3_loyal_racial_estates = {
+	calc_true_if = {
+		amount = 3
+		estate_loyalty = {
+			estate = estate_humans
+			loyalty = 60
+		}
+		estate_loyalty = {
+			estate = estate_ourk
+			loyalty = 60
+		}
+		estate_loyalty = {
+			estate = estate_centaurs
+			loyalty = 60
+		}
+		estate_loyalty = {
+			estate = estate_draconic
+			loyalty = 60
+		}
+		estate_loyalty = {
+			estate = estate_nimbus
+			loyalty = 60
+		}
+		estate_loyalty = {
+			estate = estate_crabs
+			loyalty = 60
+		}
+		estate_loyalty = {
+			estate = estate_shrooms
+			loyalty = 60
+		}
+		estate_loyalty = {
+			estate = estate_golems
+			loyalty = 60
+		}
+		estate_loyalty = {
+			estate = estate_elves
+			loyalty = 60
+		}
+		estate_loyalty = {
+			estate = estate_goblins
+			loyalty = 60
+		}
+		estate_loyalty = {
+			estate = estate_lizards
+			loyalty = 60
+		}
+		estate_loyalty = {
+			estate = estate_moths
+			loyalty = 60
+		}
+		estate_loyalty = {
+			estate = estate_sia_si
+			loyalty = 60
+		}
+		estate_loyalty = {
+			estate = estate_gnetans
+			loyalty = 60
+		}
+		estate_loyalty = {
+			estate = estate_furries
+			loyalty = 60
+		}
+		estate_loyalty = {
+			estate = estate_frogs
+			loyalty = 60
+		}
+		estate_loyalty = {
+			estate = estate_dwarves
+			loyalty = 60
+		}
+		estate_loyalty = {
+			estate = estate_rats
+			loyalty = 60
+		}
+		estate_loyalty = {
+			estate = estate_hesh
+			loyalty = 60
+		}
+		estate_loyalty = {
+			estate = estate_snakes
+			loyalty = 60
+		}
+		estate_loyalty = {
+			estate = estate_apes
+			loyalty = 60
+		}
+		estate_loyalty = {
+			estate = estate_ents
+			loyalty = 60
+		}
+		estate_loyalty = {
+			estate = estate_goats
+			loyalty = 60
+		}
+	}
+}
