@@ -15,12 +15,18 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-	    AND = {
-		 owns = 523
-		 is_year = 1500
-		 num_of_cities = 2
-	    }
-    }
+		OR = {
+			AND = {
+			owns = 523
+			is_year = 1500
+			num_of_cities = 2
+		
+			}
+		
+			has_global_flag = zuntlan_pirates
+
+		}
+   }
 	
 	mean_time_to_happen = {
 		months = 12

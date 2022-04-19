@@ -3,12 +3,12 @@
 culture = ent
 religion = tribal_faith
 native_size = 2
-native_ferocity = 10
+native_ferocity = 1
 native_hostileness = 2
 base_tax = 1 
 base_production = 1
 base_manpower = 1
 trade_goods = unknown
-capital = "Placeholder"
+capital = "Norslanguj"
 is_city = no
 discovered_by = mesoamerican

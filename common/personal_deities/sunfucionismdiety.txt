@@ -1,8 +1,9 @@
 taisung_diety =
 {
-	legitimacy = 0.1
+	legitimacy = 0.3
 	republican_tradition = 0.1
-	horde_unity = 0.1
+	horde_unity = 0.3
+	devotion = 0.3
 	diplomatic_reputation = 2
 
 	allow = { religion = sunfucian }
@@ -45,7 +46,7 @@ yuelua_diety =
 lei_nei_diety  =
 {
 	land_morale = 0.10
-	army_tradition_from_battle = 0.01
+	army_tradition_from_battle = 1
 
 	allow = { religion = sunfucian }
 	sprite = 9
@@ -78,7 +79,7 @@ lei_nei_diety  =
 biti_thcong_diety =
 {
 	discipline = 0.05
-	hostile_attrition = 1
+	land_attrition = -0.1
 
 	allow = { religion = sunfucian }
 	sprite = 10
@@ -87,19 +88,19 @@ biti_thcong_diety =
 		factor = 1
 		modifier = {
 			factor = 2
-			personality = ai_balanced
+			personality = ai_militarist
 		}
 		modifier = {
 			factor = 0.5
-			personality = ai_colonialist
+			personality = ai_diplomat
 		}
 	}
 }
 
 czibir_diety =
 {
-	ae_impact = -0.2
-	advisor_cost = -0.25
+	ae_impact = -0.1
+	advisor_cost = -0.1
 
 	allow = { religion = sunfucian }
 	sprite = 11
@@ -111,12 +112,8 @@ czibir_diety =
 			personality = ai_capitalist
 		}
 		modifier = {
-			factor = 2
-			personality = ai_colonialist
-		}
-		modifier = {
 			factor = 0.5
-			personality = ai_militarist
+			personality = ai_diplomat
 		}
 	}
 }
@@ -124,7 +121,7 @@ czibir_diety =
 
 amuksmus_diety =
 {
-	war_exhaustion = -0.10
+	war_exhaustion = -0.05
 	build_cost = -0.1
 
 	allow = { religion = sunfucian }
@@ -147,7 +144,7 @@ amuksmus_diety =
 ze_la_si_diety  =
 {
 	movement_speed = 0.15
-	institution_growth = 1
+	institution_spread_from_true_faith = 1
 
 	allow = { religion = sunfucian }
 	sprite = 12
@@ -157,6 +154,10 @@ ze_la_si_diety  =
 		modifier = {
 			factor = 2
 			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 2
+			personality = ai_capitalist
 		}
 		modifier = {
 			factor = 0.5
@@ -168,8 +169,8 @@ ze_la_si_diety  =
 
 ragzmus_diety  =
 {
-	local_defensiveness = 0.15
-	local_hostile_attrition = 5
+	defensiveness = 0.15
+	hostile_attrition = 1
 
 	allow = { religion = sunfucian }
 	sprite = 12
@@ -177,11 +178,11 @@ ragzmus_diety  =
 	ai_will_do = {
 		factor = 1
 		modifier = {
-			factor = 2
+			factor = 0.5
 			personality = ai_diplomat
 		}
 		modifier = {
-			factor = 0.5
+			factor = 2
 			personality = ai_militarist
 		}
 	}
@@ -200,7 +201,7 @@ vescarbios_diety  =
 		factor = 1
 		modifier = {
 			factor = 2
-			personality = ai_diplomat
+			personality = ai_capitalist
 		}
 		modifier = {
 			factor = 0.5
@@ -246,6 +247,10 @@ talixias_diety  =
 		modifier = {
 			factor = 2
 			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 2
+			personality = ai_capitalist
 		}
 		modifier = {
 			factor = 0.5

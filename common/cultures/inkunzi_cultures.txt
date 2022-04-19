@@ -61,39 +61,55 @@ vestorian_group = {
 		primary = A02
 
 		male_names = {
-			Placeholder
+			Vekkel
+			Vykar
+			Vyktus
+			Lumnis
+			Lumnar
+			Lumin
+			Lunon
 		}
 		female_names = {
-			Placeholder
+			Vy
+			Vivi
+			Vesper
+			Vyktoria
+			Kizi
 		}
 		dynasty_names = {
-			"Placeholder"
+			"Grimm"
 		}
 	}
 	lower_vestorian = {
 		primary = A07
 
 		male_names = {
-			Placeholder
+			Vic
+			John
 		}
 		female_names = {
-			Placeholder
+			Vesper
+			Vivian
+			Vy
+			Violet
+			Vivi
 		}
 		dynasty_names = {
-			"Placeholder"
+			"Seaside"
 		}
 	}
 	#orc_vestorian = {
 	# todo - likely not to happen
 	#}
 	male_names = {
-		Placeholder
+		Ion
+		Seth
 	}
 	female_names = {
-		Placeholder
+		Kizi
 	}
 	dynasty_names = {
-		"Placeholder"
+		"Kaaleas"
 	}
 }
 ourkani_group = {

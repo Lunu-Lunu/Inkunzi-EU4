@@ -1,4 +1,4 @@
-# Placeholder
+# Kanis
 
 owner = B40
 controller = B40
@@ -6,10 +6,11 @@ add_core = B40
 culture = gneta
 religion = dark_valor
 hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
-trade_goods = unknown
-capital = "Placeholder"
+base_tax = 4
+base_production = 5
+base_manpower = 4
+trade_goods = naval_supplies
+capital = "Kanis City"
 is_city = yes
 discovered_by = western
+fort_15th = yes
