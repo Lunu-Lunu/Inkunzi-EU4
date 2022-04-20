@@ -2,13 +2,13 @@
 
 culture = hiveless
 religion = tribal_faith
-native_size = 1
-native_ferocity = 10
+native_size = 5
+native_ferocity = 4
 native_hostileness = 4
 base_tax = 1 
 base_production = 1
 base_manpower = 1
 trade_goods = unknown
-capital = "Placeholder"
+capital = "Viba"
 is_city = no
 discovered_by = mesoamerican
