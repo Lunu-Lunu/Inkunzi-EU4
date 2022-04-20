@@ -119,6 +119,44 @@ A28_ideas = { # Kido Ideas
 	}
 }
 
+A43_ideas = { # Xuaze Ideas
+    	start = {
+        	global_trade_goods_size_modifier = 0.1
+        	manpower_recovery_speed = 0.15
+	}
+    	bonus = {
+        	recover_army_morale_speed = 0.05
+	}
+
+    	trigger = {
+        	tag = A43
+	}
+    	free = yes
+
+   	A43_remnants_of_the_horde = {
+        	cavalry_cost = -0.1
+        	cavalry_power = 0.15
+	}
+   	A43_centralized_economy = {
+       		 global_tax_modifier = 0.1
+	}
+   	A43_warlike_peoples = {
+      		 land_morale = 0.1
+	}
+    	A43_expansionist_past = {
+      		 core_creation = -0.2
+	}
+   	A43_xuaze_straits = {
+       		 merchants = 1
+	}
+    	A43_spirit_of_the_ruby = {
+       		 global_manpower_modifier = 0.1
+	}
+	A43_competent_merchants = {
+       		 trade_efficiency = 0.15
+	}
+}
+
 B21_ideas = { # Melkhian Ideas
 	start = {
 		leader_naval_fire = 1
@@ -198,7 +236,8 @@ A01_ideas = { # Fort Federation Ideas
 	}
 	A01_fortly_tolerance = {
 		num_accepted_cultures = 1
-		no_religion_penalty = yes
+		tolerance_heretic = 1
+		tolerance_heathen = 1
 	}
 	A01_fortly_unity = {
 		all_estate_loyalty_equilibrium = 0.05

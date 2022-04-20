@@ -5,7 +5,7 @@ mercantilism = 10
 technology_group = western
 religion = dark_valor
 primary_culture = ozarkhian
-capital = 2637
+capital = 2757
 set_country_flag = primary_human_nation
 
 1444.11.11 = {

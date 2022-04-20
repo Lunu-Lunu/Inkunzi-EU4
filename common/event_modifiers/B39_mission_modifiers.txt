@@ -1,0 +1,1 @@
+genocide_of_the_kalnish = { local_culture_conversion_cost = -0.5 local_unrest = 5 }

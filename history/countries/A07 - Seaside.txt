@@ -5,7 +5,7 @@ mercantilism = 10
 technology_group = western
 religion = celestialism
 primary_culture = lower_vestorian
-capital = 142
+capital = 141
 set_country_flag = primary_human_nation
 
 1444.11.11 = {
