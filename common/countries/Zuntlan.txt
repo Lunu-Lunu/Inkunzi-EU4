@@ -33,43 +33,11 @@ historical_units = {
 }
 
 leader_names = {
-	#historic
-	Ma'izqu
-	Ulpek
-	Aldmar
-	Thendroden 
-	Zumaquios
-	Harmar
-	Echnar  
-	Arkhan 
-	Xholanka
-	Ca'w
-	Ba'ti
-	Haladkar
-	Urdelv
-	Ma'Tazdac
-	Ch'ah
-	Soqbols
-	Bols'aq
-	Crox'gar
-	#random
-	O'altox
-	Yara
-	Qrocl
-	Krutluk
-	Moa
-	Xa'ux
-	Tolxar
-	Chidar
+	Gigenshtain
 }
- 
+
 monarch_names = {
+	"Gigenshtain #0" = 0
 
-	"Plascus #3" = -1
-
-	"Zarogan #0" = 34
-	
-	"Tlah #0" = 33
-
-	"Brakar #0" = 33
+	"FEMALE Gigenshtain #0" = -1
 }

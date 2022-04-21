@@ -1,5 +1,5 @@
 #
-#Econmey focuses need to be done and Crabian path might be expanded on once future crabian content is done. Swamp missions need their events to be done 
+#This is still pretty wip, and I plan on finishing up the zuntlanswamp path, as well as flesh out flavor for all the misions, I also plan in sometime in the furture to add a tree for both something about oldones and the other thing i forgot about anyways :trollface_nonfree:
 #
 Zuntlan_Collom_4= {
     slot = 4                  
@@ -26,10 +26,10 @@ Zuntlan_Collom_4= {
         trigger = {
 			naval_forcelimit = B16
 			has_heir = no 
-			navy_size = 15
-			#hidden_trigger = {
-			#	is_year = 1455
-			#}
+			navy_size = 30
+			hidden_trigger = {
+				is_year = 1455
+			}
 		}
 		effect = {
 		define_heir = {
@@ -405,65 +405,23 @@ Zuntlan_Collom_2 = {
         trigger = {
 			is_claim = 2379
 			stability = 2
-			AND = {
-				army_size = B15
-				army_size = B14
-				army_size = A04
-				
-			}
-			
+			is_neighbor_of = B15
+			is_neighbor_of = A04
+			army_size_percentage = 0.8
         }
              
         effect = {
-			survalsia2_area = {
-				add_permanent_claim = B16
-			}
-			rekolia_area = {
-				add_permanent_claim = B16
-			}
-			rekolia9_area = {
-				add_permanent_claim = B16
-			}
+			# add claims to ares in rekolia and survaria 
 		}
 	}
 	
 		revenge_of_the_thixis = {
-			icon = mission_ottoman_harem
-			generic = no
-			position = 6
-        
-			required_missions = {
-				Zuntlan_leave_swamps
-			}
-        
-
-			provinces_to_highlight = {
-
-			}
-    
-			trigger = {
-			owns_core_province = 2379
-				rekolia9_area = {
-				type = all 
-				country_or_non_sovereign_subject_holds = ROOT
-				}
-			}
-             
-			effect = {
-				#future event for rekolia next pull probablly
-				surveria10_area = {
-					add_permanent_claim = ROOT
-				}
-			}
-	}
-	
-	Zuntlan_Stabbing_At_A_Friend = {
         icon = mission_ottoman_harem
         generic = no
         position = 6
         
         required_missions = {
-			revenge_of_the_thixis
+			Zuntlan_leave_swamps
         }
         
 
@@ -472,19 +430,12 @@ Zuntlan_Collom_2 = {
         }
     
         trigger = {
-			surveria10_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }		
-			
-			
+		owns_core_province = 2379
+		#owns_core_pronvince = some of those of claim from the one above
         }
              
         effect = {
-			surveria9_area = {
-				add_permanent_claim = ROOT
-			}
-			surveria11_area = {
-				add_permanent_claim = ROOT
-			}
-			#abother event latter
+			#thixi flavor and maybe expansion effect, :trollface_none free:
 		}
 	}
 	
@@ -543,7 +494,7 @@ Zuntlan_Collom_1= {
 	
 	}
 	
-	Zuntlan_Survalsia_Stakes = {
+	Zuntlan_survarian_stakes = {
 		icon = mission_ottoman_harem
 		generic = no
 		position = 6
@@ -558,27 +509,21 @@ Zuntlan_Collom_1= {
         }
     
         trigger = {
-			survalsia2_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
-			
+			#owns a number of provinces in area stated in mision before
         }
              
         effect = {
-			surveria3_area = {
-				add_permanent_claim = ROOT
-			}
-			surveria_area = {
-				add_permanent_claim = ROOT
-			}			
+			#more flavor i guess, and something to do with surveria
 		}
 	}
 	
-	Zuntlan_Survalsia_Take_Down = {
+	Zuntlan_Survairan_Union = {
 		icon = mission_ottoman_harem
 		generic = no
 		position = 7
         
         required_missions = {
-			Zuntlan_Survalsia_Stakes
+			Zuntlan_survarian_stakes
         }
         
 
@@ -587,43 +532,17 @@ Zuntlan_Collom_1= {
         }
 		
         trigger = {
-			survalsia3_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
-			survalsia_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+			#core provinces in surveria
+			army_size = A04
+			legitimacy = A04
         }
 		
-        effect = {
-			#event like metion in the last 2 things
-		}
-
-	}
-	Zuntlan_Surverian_Union = {
-		icon = mission_ottoman_harem
-		generic = no
-		position = 8
-        
-        required_missions = {
-			Zuntlan_Survalsia_Take_Down
-			Zuntlan_Stabbing_At_A_Friend
-        }
-        
-
-        provinces_to_highlight = {
-
-        }
-		
-        trigger = {
-			army_size = 45
-			legitimacy = 80
-			surveria9_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
-			surveria11_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
-        }
         effect = {
 			add_casus_belli = {
-				type = cb_restore_personal_union
-				months = 360
-				target = A04
-			}
-			# this unlocks a deccison to make a formable, guess wich one, it involves surveria 
+					type = cb_restore_personal_union
+					months = 240
+					target = A04
+			}		
 		}
 
 	}
