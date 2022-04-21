@@ -51,6 +51,22 @@ hesh_missions_1 = {
 			}
 		}
 	}
+
+	yaxat_headquarters = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { development_of_the_hesh }
+		position = 5
+		trigger = {
+			3138 = { 
+				country_or_non_sovereign_subject_holds = ROOT
+				num_of_times_improved_by_owner = 15
+			}
+		}
+		effect = {
+			create_explorer = { tradition = 50 culture = yaxatian }
+			3138 = { add_building = fort_15th }
+		}
+	}
 }
 
 hesh_missions_2 = {
@@ -124,6 +140,21 @@ hesh_missions_2 = {
 		}
 		effect = {
 			add_treasury = 20
+		}
+	}
+	
+	kostran_foothold = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { development_of_the_hesh }
+		position = 5
+		trigger = {
+			3070 = { 
+				country_or_non_sovereign_subject_holds = ROOT
+				num_of_times_improved_by_owner = 15
+			}
+		}
+		effect = {
+			create_conquistador = { tradition = 50 culture = karaxian }
 		}
 	}
 }
@@ -222,6 +253,37 @@ hesh_missions_3 = {
 				add_base_manpower = 2
 			}
 		}
+	}
+
+	imperial_roads = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { development_of_the_hesh }
+		position = 5
+		trigger = {
+			3133 = { 
+				country_or_non_sovereign_subject_holds = ROOT
+				num_of_times_improved_by_owner = 15
+			}
+			3137 = { 
+				country_or_non_sovereign_subject_holds = ROOT
+				num_of_times_improved_by_owner = 5
+			}
+			3130 = { 
+				country_or_non_sovereign_subject_holds = ROOT
+				num_of_times_improved_by_owner = 5
+			}
+		}
+		effect = {
+			3139 = {
+				add_siberian_construction = 500
+			}
+			3140 = {
+				add_siberian_construction = 500
+			}
+			3141 = {
+				add_siberian_construction = 500
+			}
+		}
 	}	
 }
 
@@ -265,7 +327,80 @@ hesh_missions_4 = {
 				add_core = ROOT
 			}
 		}
-	}		
+	}
+	
+	under_one_tyrant = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { the_bickering_hive the_learning_hive the_first_hive the_common_hive the_wandering_hive }
+		position = 3
+		trigger = {
+			OR = {
+				tag = B77
+				NOT = { exists = B77 }
+				B77 = { is_subject_of = ROOT }
+			}
+			OR = {
+				tag = B78
+				NOT = { exists = B78 }
+				B78 = { is_subject_of = ROOT }
+			}
+			OR = {
+				tag = B79
+				NOT = { exists = B79 }
+				B79 = { is_subject_of = ROOT }
+			}
+			OR = {
+				tag = B80
+				NOT = { exists = B80 }
+				B80 = { is_subject_of = ROOT }
+			}
+			OR = {
+				tag = B81
+				NOT = { exists = B81 }
+				B81 = { is_subject_of = ROOT }
+			}	
+		}
+		effect = {
+			every_subject_country = {
+  				every_owned_province = {
+  					cede_province = ROOT
+					add_core = ROOT
+				}
+			}
+			ROOT = { change_tag = R05 }
+			B76 = {
+				every_owned_province = {
+					add_claim = ROOT
+				}
+			3070 = {
+				cede_province = ROOT
+			}
+			}
+		}
+	}
+
+	subjugate_eiyeborvoland	{
+		icon = mission_build_up_to_force_limit
+		required_missions = { under_one_tyrant }
+		position = 5
+		trigger = {
+			OR = {
+				B76 = {
+					is_subject_of = ROOT
+				}
+				3125 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		effect = {
+			B75 = {
+				every_owned_province = {
+					add_claim = ROOT
+				}
+			}
+		}
+	}	
 }
 
 hesh_missions_5 = {
