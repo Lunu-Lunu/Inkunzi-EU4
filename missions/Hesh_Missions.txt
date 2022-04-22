@@ -139,7 +139,12 @@ hesh_missions_2 = {
 			}
 		}
 		effect = {
-			add_treasury = 20
+			add_country_modifier = { 
+				name = hesh_mod_development_of_the_hesh
+				duration = 9125
+				desc = HESH_MOD_DEVELOPMENT_OF_THE_HESH_DESC_TOOLTIP
+				hidden = yes
+			}
 		}
 	}
 	
@@ -164,13 +169,18 @@ hesh_missions_2 = {
 		position = 6
 		trigger = {
 			ROOT = { 
-				has_discovered = 
-				has_discovered = 
-				has_discovered = 
+				has_discovered = 3068
+				has_discovered = 3212
+				has_discovered = 3221
 			}
 		}
 		effect = {
+			add_country_modifier = { 
+				name = hesh_mod_hesh_expeditions
+				desc = HESH_MOD_DEVELOPMENT_OF_THE_HESH_DESC_TOOLTIP
+			}
 		}
+	}
 }
 
 hesh_missions_3 = {
@@ -276,14 +286,11 @@ hesh_missions_3 = {
 		trigger = {
 			ROOT = {
 				core_percentage = 0.85
-				NOT = {
-	`				average_autonomy = 20
-				}
+				NOT = { average_autonomy = 20 }
 			}
 		}
 		effect = {
-			add_adm_power = 100
-			add_prestige = 20
+			add_treasury = 200
 		}
 	}
 
@@ -370,7 +377,7 @@ hesh_missions_3 = {
 				add_siberian_construction = 500
 			}
 		}
-	}		
+	}	
 }
 
 hesh_missions_4 = {
@@ -450,7 +457,7 @@ hesh_missions_4 = {
 			every_subject_country = {
   				every_owned_province = {
   					cede_province = ROOT
-					add_core = ROOT
+					add_core = F01
 				}
 			}
 			ROOT = {
@@ -461,13 +468,15 @@ hesh_missions_4 = {
 				every_owned_province = {
 					add_claim = ROOT
 				}
+			}
 			B64 = {
 				every_owned_province = {
-					add_claim = ROOT
+					add_claim = F01
 				}
+			}
 			
 			3070 = {
-				cede_province = F00
+				cede_province = F01
 			}	
 		}
 	}
@@ -503,6 +512,11 @@ hesh_missions_4 = {
 			navy_size = 25
 		}
 		effect = {
+			B63 = {
+				every_owned_province = {
+					add_claim = ROOT
+				}
+			}
 			B64 = {
 				every_owned_province = {
 					add_claim = ROOT
@@ -515,7 +529,98 @@ hesh_missions_4 = {
 				}
 			}
 		}
-	}		
+	}
+
+	hesh_mission_control_the_maw = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { hesh_mission_boats_of_pitch }
+		position = 7
+		trigger = {
+			OR = {
+				B64 = {
+					is_subject_of = ROOT
+				}
+				3095 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+			OR = {
+				B65 = {
+					is_subject_of = ROOT
+				}
+				3094 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		effect = {
+			B62 = {
+				every_owned_province = {
+					add_claim = ROOT
+				}
+			}
+			B63 = {
+				every_owned_province = {
+					add_claim = ROOT
+				}
+			}
+		}
+	}
+	
+	hesh_mission_invade_scotar = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { hesh_mission_boats_of_pitch }
+		position = 7
+		trigger = {
+			B62 = {
+				any_core_province = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+				
+		}
+		effect = {
+			B52 = {
+				every_owned_province = {
+					add_claim = ROOT
+				}
+			}
+			B53 = {
+				every_owned_province = {
+					add_claim = ROOT
+				}
+			}
+			B54 = {
+				every_owned_province = {
+					add_claim = ROOT
+				}
+			}
+		}
+	}
+	
+	hesh_mission_the_east_advances = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { hesh_mission_control_the_maw }
+		position = 8
+		trigger = {
+			OR = {
+				B63 = {
+					is_subject_of = ROOT
+				}
+				3090 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		effect = {
+			B65 = {
+				every_owned_province = {
+					add_claim = ROOT
+					add_unrest = -10
+				}
+			}
+		}
+	}
 }
 
 hesh_missions_5 = {
@@ -535,7 +640,7 @@ hesh_missions_5 = {
 	
 	hesh_mission_the_wandering_hive = {
 		icon = mission_build_up_to_force_limit
-		required_missions = { prepare_the_armies }
+		required_missions = { hesh_mission_prepare_the_armies }
 		position = 2
 		trigger = {
 			OR = { 
@@ -546,17 +651,19 @@ hesh_missions_5 = {
 
 			}
 		}
+	}
 		effect = {
 			3070 = {
 				every_owned_province = {
 					add_core = ROOT
+				}
 			}
 		}
 	}	
 
 	hesh_mission_coast_of_the_yawn	{
 		icon = mission_build_up_to_force_limit
-		required_missions = { subjugate_eiyeborvoland }
+		required_missions = { hesh_mission_subjugate_eiyeborvoland }
 		position = 6
 		trigger = {
 			OR = {
