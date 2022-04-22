@@ -157,6 +157,20 @@ hesh_missions_2 = {
 			create_conquistador = { tradition = 50 culture = karaxian }
 		}
 	}
+
+	hesh_mission_hesh_expeditions = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { hesh_mission_kostran_foothold }
+		position = 6
+		trigger = {
+			ROOT = { 
+				has_discovered = 
+				has_discovered = 
+				has_discovered = 
+			}
+		}
+		effect = {
+		}
 }
 
 hesh_missions_3 = {
@@ -255,9 +269,27 @@ hesh_missions_3 = {
 		}
 	}
 
+	hesh_mission_consolidate_our_holdings = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { hesh_mission_under_one_tyrant }
+		position = 4
+		trigger = {
+			ROOT = {
+				core_percentage = 0.85
+				NOT = {
+	`				average_autonomy = 20
+				}
+			}
+		}
+		effect = {
+			add_adm_power = 100
+			add_prestige = 20
+		}
+	}
+
 	hesh_mission_imperial_roads = {
 		icon = mission_build_up_to_force_limit
-		required_missions = { hesh_mission_development_of_the_hesh }
+		required_missions = { hesh_mission_development_of_the_hesh hesh_mission_consolidate_our_holdings }
 		position = 5
 		trigger = {
 			3133 = { 
@@ -283,8 +315,62 @@ hesh_missions_3 = {
 			3141 = {
 				add_siberian_construction = 500
 			}
+			3184 = {
+				add_siberian_construction = 500
+			}
 		}
-	}	
+	}
+
+	hesh_mission_expanding_the_frontier = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { hesh_mission_imperial_roads }
+		position = 5
+		trigger = {
+			3139 = { 
+				country_or_non_sovereign_subject_holds = ROOT
+				num_of_times_improved_by_owner = 5
+				is_core = ROOT
+			}
+			3140 = { 
+				country_or_non_sovereign_subject_holds = ROOT
+				num_of_times_improved_by_owner = 5
+				is_core = ROOT
+			}
+			3141 = { 
+				country_or_non_sovereign_subject_holds = ROOT
+				num_of_times_improved_by_owner = 5
+				is_core = ROOT
+			}
+			3184 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				num_of_times_improved_by_owner = 5
+				is_core = ROOT
+			}
+		}
+		effect = {
+			3191 = {
+				add_siberian_construction = 500
+			}
+			3190 = {
+				add_siberian_construction = 500
+			}
+			3187 = {
+				add_siberian_construction = 500
+			}
+			3186 = {
+				add_siberian_construction = 500
+			}
+			3183 = {
+				add_siberian_construction = 500
+			}
+			3182 = {
+				add_siberian_construction = 500
+			}
+			3181 = {
+				add_siberian_construction = 500
+			}
+		}
+	}		
 }
 
 hesh_missions_4 = {
@@ -367,15 +453,22 @@ hesh_missions_4 = {
 					add_core = ROOT
 				}
 			}
-			ROOT = { change_tag = F00 }
+			ROOT = {
+				change_tag = F01
+				add_prestige = 20
+			}
 			B76 = {
 				every_owned_province = {
 					add_claim = ROOT
 				}
+			B64 = {
+				every_owned_province = {
+					add_claim = ROOT
+				}
+			
 			3070 = {
 				cede_province = F00
-			}
-			}
+			}	
 		}
 	}
 
@@ -400,7 +493,29 @@ hesh_missions_4 = {
 				}
 			}
 		}
-	}	
+	}
+
+	hesh_mission_boats_of_pitch = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { hesh_mission_subjugate_eiyeborvoland }
+		position = 6
+		trigger = {
+			navy_size = 25
+		}
+		effect = {
+			B64 = {
+				every_owned_province = {
+					add_claim = ROOT
+				}
+			}
+			
+			B65 = {
+				every_owned_province = {
+					add_claim = ROOT
+				}
+			}
+		}
+	}		
 }
 
 hesh_missions_5 = {
@@ -428,14 +543,51 @@ hesh_missions_5 = {
 				overlord_of = B81
 				3070 = { 
 					country_or_non_sovereign_subject_holds = ROOT 
-				} 
+
 			}
 		}
 		effect = {
-			create_general = { tradition = 50 culture = karaxian }
 			3070 = {
-				add_core = ROOT
+				every_owned_province = {
+					add_core = ROOT
 			}
 		}
-	}		
+	}	
+
+	hesh_mission_coast_of_the_yawn	{
+		icon = mission_build_up_to_force_limit
+		required_missions = { subjugate_eiyeborvoland }
+		position = 6
+		trigger = {
+			OR = {
+				3120 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				3116 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				3115 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				3113 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				3112 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		effect = {
+			B74 = {
+				every_owned_province = {
+					add_claim = ROOT
+				}
+			}
+			B73 = {
+				every_owned_province = {
+					add_claim = ROOT
+				}
+			}
+		}
+	}	
 } 
