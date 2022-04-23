@@ -202,3 +202,6 @@ R00 = "countries/Leminska.txt"
 R01 = "countries/Essonia.txt"
 R02 = "countries/Kabara.txt"
 R03 = "countries/Emerald.txt"
+
+### Formables ###
+F01 = "countries/Hesh.txt"

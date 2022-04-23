@@ -1,0 +1,9 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 2
+mercantilism = 10
+technology_group = mesoamerican
+religion = disparate_tribal
+primary_culture = vorasian
+capital = 3130 #voras
+set_country_flag = primary_hesh_nation
