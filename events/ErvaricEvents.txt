@@ -1,0 +1,52 @@
+###########################################################
+# Events for the Vaisyas Estate
+#
+# written by Daniel Tolman
+###########################################################
+
+namespace = ervaric_events
+
+country_event = { # Lyharan Godsrealm - pick parent
+	id = ervaric_events.1
+	title = ervaric_events.1.t
+	desc = ervaric_events.1.desc
+	is_triggered_only = yes
+	trigger = {
+		has_reform = lyharan_godsrealm
+	}
+	option = { # Pick Lyharis
+		name = ervaric_events.1.a
+		add_ruler_modifier = {
+			name = godsrealm_son_of_lyharis
+			duration = -1
+		}
+	}
+	option = { # Pick Eulorna
+		name = ervaric_events.1.b
+		add_ruler_modifier = {
+			name = godsrealm_son_of_eulorna
+			duration = -1
+		}
+	}
+	option = { # Pick Bharsan
+		name = ervaric_events.1.c
+		add_ruler_modifier = {
+			name = godsrealm_son_of_bharsan
+			duration = -1
+		}
+	}
+	option = { # Pick Gegishym
+		name = ervaric_events.1.d
+		add_ruler_modifier = {
+			name = godsrealm_son_of_gegishym
+			duration = -1
+		}
+	}
+	option = { # Pick Harlorn
+		name = ervaric_events.1.e
+		add_ruler_modifier = {
+			name = godsrealm_son_of_harlorn
+			duration = -1
+		}
+	}
+}

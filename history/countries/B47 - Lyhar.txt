@@ -1,5 +1,5 @@
 government = tribal
-add_government_reform = tribal_despotism
+add_government_reform = lyharan_godsrealm
 government_rank = 1
 mercantilism = 10
 technology_group = mesoamerican
@@ -7,6 +7,10 @@ religion = sahyvarian
 primary_culture = lyharan
 capital = 2815
 set_country_flag = primary_frog_nation
+add_ruler_modifier = {
+	name = godsrealm_son_of_lyharis
+	duration = -1
+}
 
 1444.11.11 = {
 	monarch = {

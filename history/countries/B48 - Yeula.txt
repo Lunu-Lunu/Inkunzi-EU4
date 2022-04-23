@@ -1,5 +1,5 @@
 government = tribal
-add_government_reform = tribal_despotism
+add_government_reform = yeulan_sortition
 government_rank = 1
 mercantilism = 10
 technology_group = mesoamerican

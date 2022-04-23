@@ -7,3 +7,8 @@ on_culture_promoted = {
 on_primary_culture_changed = {
 	primary_race_recalc = yes
 }
+on_monarch_death = {
+	events = {
+		ervaric_events.1
+	}
+}

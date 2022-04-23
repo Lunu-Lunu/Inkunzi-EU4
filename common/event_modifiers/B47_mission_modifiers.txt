@@ -30,3 +30,18 @@ ervaric_city_modifier = {
 	local_autonomy = -0.1
 	local_missionary_strength = -0.02
 }
+godsrealm_son_of_lyharis = {
+	global_tax_modifier = 0.1
+}
+godsrealm_son_of_eulorna = {
+	naval_morale = 0.05
+}
+godsrealm_son_of_bharsan = {
+	advisor_cost = -0.05
+}
+godsrealm_son_of_gegishym = {
+	global_trade_goods_size_modifier = 0.05
+}
+godsrealm_son_of_harlorn = {
+	ae_impact = -0.05
+}
