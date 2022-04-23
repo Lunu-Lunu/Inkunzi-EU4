@@ -13,3 +13,4 @@ trade_goods = naval_supplies
 capital = "Nonoo City"
 is_city = yes
 discovered_by = western
+center_of_trade = 1
