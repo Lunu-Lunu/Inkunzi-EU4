@@ -8,10 +8,15 @@ culture = fortly
 religion = celestialism
 hre = no
 base_tax = 10
-base_production = 10
-base_manpower = 10
-trade_goods = unknown
+base_production = 9
+base_manpower = 11
+trade_goods = grain
 capital = "Fort Ass"
 fort_15th = yes
 is_city = yes
 discovered_by = western
+
+add_province_modifier = {
+	name = decline_of_the_great_forts
+	duration = -1
+}

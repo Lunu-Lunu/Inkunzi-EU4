@@ -1,0 +1,333 @@
+###############################################
+# wrote by woochie(ye ol guy next 2 u[canada])#
+#are these poorply wriitng events :flusterd   #
+###############################################
+
+namespace = zuntlan
+
+
+
+#southern sternhell
+country_event = {
+	id = zuntlan.1
+	title = zuntlan.1.t
+	desc = zuntlan.1.d
+	picture = TRADEGOODS_eventPicture
+	is_triggered_only = yes
+	immediate = {
+		log = "Root.GetName: Event zuntlan.1"
+	}
+	option = {
+		name = zuntlan.1.b
+		ai_chance = { factor = 50 }
+		add_prestige = 25
+		add_legitimacy 35	
+		ostkurtaia_area = {
+				limit = {
+				province = B16
+				}
+				add_province_modifier = { ###replace with new area(s)  
+				name = lizard_sinicization
+				duration = 18250 #50 years
+				}
+		}
+		hyallicand_area = {
+				limit = {
+				province = B16
+				}
+				add_province_modifier = { ###replace with new area(s)  
+				name = lizard_sinicization
+				duration = 18250 #50 years
+				}
+		}
+		neualhof_area = {
+				limit = {
+				province = B16
+				}
+				add_province_modifier = { ###replace with new area(s)  
+				name = lizard_sinicization
+				duration = 18250 #50 years
+				}
+		}
+		kurrland_area = {
+				limit = {
+				province = B16
+				}
+				add_province_modifier = { ###replace with new area(s)  
+				name = lizard_sinicization
+				duration = 18250 #50 years
+				}
+		}
+		plakia_area = {
+				limit = {
+				province = B16
+				}
+				add_province_modifier = { ###replace with new area(s)  
+				name = lizard_sinicization
+				duration = 18250 #50 years
+				}
+		}		
+	}
+			
+	option = {
+		name = zuntlan.1.a
+		ai_chance = { factor = 50 }
+		add_prestige = 10
+		add_stability 1
+		add_legitimacy -10
+		add_accepted_culture = kurean
+		num_accepted_cultures = 1
+		sternhel_south_area = {
+				limit = {
+				province = B16
+				}
+				add_province_modifier = {
+				name = lizard_leftalone 
+				duration = 18250 #50 years
+				}
+		}
+	}
+}
+
+#northern sternhell
+country_event = {
+	id = zuntlan.2
+	title = zuntlan.2.t
+	desc = zuntlan.2.d
+	picture = TRADEGOODS_eventPicture
+		is_triggered_only = yes
+	
+	immediate = {
+		log = "Root.GetName: Event zuntlan.2"
+	}
+	
+    option = {
+        name = zuntlan.2.b
+        ai_chance = { factor = 50 }
+        add_prestige = 25
+        add_legitimacy 35    
+        sternhell_area = {
+                limit = {
+
+                province = B16
+
+                }
+                add_province_modifier = {
+                name = lizard_sinicization
+                duration = 18250 #50 years
+                }
+        }
+        azvondenia_area = {
+                limit = {
+
+                province = B16
+
+                }
+                add_province_modifier = {
+                name = lizard_sinicization
+                duration = 18250 #50 years
+                }
+        }
+        sternhell2_area = {
+                limit = {
+
+                province = B16
+
+                }
+                add_province_modifier = {
+                name = lizard_sinicization
+                duration = 18250 #50 years
+                }
+        }
+
+	}
+			
+	option = {
+		name = zuntlan.2.a
+		ai_chance = { factor = 50 }
+		add_prestige = 10
+		add_stability 1
+		add_legitimacy -10
+		add_accepted_culture = kurean
+		num_accepted_cultures = 1
+		sternhel_north_area = { ###replace with new area(s)  
+				limit = {
+		
+				province = B16
+	
+				}
+				add_province_modifier = {
+				name = lizard_leftalone 
+				duration = 18250 #50 years
+				}
+		}
+	}
+}
+
+#crabia events
+
+country_event = {
+	id = zuntlan.3
+	title = zuntlan.3.t
+	desc = zuntlan.3.d
+	picture = TRADEGOODS_eventPicture
+		is_triggered_only = yes
+	
+	immediate = {
+		log = "Root.GetName: Event zuntlan.3"
+	}
+	
+	option = {
+		name = zuntlan.3.a 
+		ai_chance = { factor = 75 }
+		722 = { 
+			cede_province = B98
+		}
+		B16 = {
+			create_union = B98 #if the comment below becomes true this will change to vassel or some toher custome subject
+		}
+		add_legitimacy = -20
+		B98 = {
+			add_claim = 723
+			hidden_effect = {
+				change_government = republic
+				add_government_reform = merchants_reform
+			}
+		}
+		
+	}	
+	option = {
+		name = zuntlan.3.b
+		ai_chance = { factor = 20 }
+		722 = { 
+			cede_province = B98
+		}
+		B16 = {
+			vassalize = B98 #rather this be like a tributary, but dlcs and stuff, might make a custume subject if I get extra time
+		}
+		hidden_effect = {
+			B98 = {
+				change_government = republic
+				add_government_reform = merchants_reform
+			}
+		}
+	}
+	option = {
+		name = zuntlan.3.c
+		ai_chance = { factor = 5 }
+		722 = {
+		spawn_rebels = {
+			type = nationalist_rebels
+			size = 3
+		}
+		create_pirate = 5
+		}
+	}
+}
+
+#Gurdian of the crabs
+country_event = {
+	id = zuntlan.4
+	title = zuntlan.4.t
+	desc = zuntlan.4.d
+	picture = TRADEGOODS_eventPicture
+	is_triggered_only = yes
+	immediate = {
+		log = "Root.GetName: Event zuntlan.4"
+	}
+	option = {
+	name = zuntlan.4.a 
+	ai_chance = { factor = 50 }
+	add_claim = 405
+	add_claim = 404
+	add_claim = 403
+	add_claim = 401	
+	#same thing with number c 
+	}
+			
+	option = {
+		name = zuntlan.4.b
+		ai_chance = { factor = 35 }
+		add_absolutism = 15
+		add_stability = 1
+		define_advisor = {
+		name = Machual'ze
+		type = Statesman
+		skill = 5
+		discount = yes
+		culture = thixi
+		}
+	}		
+	option = {
+	name = zuntlan.4.c
+	ai_chance = { factor = 20 }
+	add_claim = 405
+	add_claim = 404
+	add_claim = 403
+	add_claim = 401
+	add_claim = 2786
+	add_claim = 2785
+	add_claim = 2784
+	add_claim = 2783
+	add_claim = 2788
+	add_stability = -2
+	#add some sort of ae or its exuivlant, maybe add something that worsen realtionship with neighbours
+	}	
+		
+}
+	
+country_event = {
+	id = zuntlan.5
+	title = zuntlan.5.t
+	desc = zuntlan.5.d
+	fire_only_once = yes
+	picture = TRADEGOODS_eventPicture
+	is_triggered_only = yes
+	
+	immediate = {
+		log = "Root.GetName: Event zuntlan.5"
+	}
+	
+	option = {
+		name = zuntlan.5.a 
+		ai_chance = { factor = 100 }
+		set_global_flag = zuntlan_pirates
+		add_years_of_income = -0.4
+		every_neighbor_country = {
+			add_trust = {
+				value = -5
+				mutual = no
+			}
+		}
+		
+			523 = {
+				owner = { 
+					country_event = { 
+						id = marizian.1
+						days = 10
+						random = 10
+					}
+				}	
+			}
+		
+	}
+	option = {
+		name = zuntlan.5.b
+		ai_chance = { factor = 0 }
+		define_admiral = {
+			name = Marizqur
+			shock = 4
+			fire = 4
+			manuever = 5
+			siege = 2
+		}
+		every_neighbor_country = {
+			add_trust = {
+				value = 5
+				mutual = no
+			}
+		}
+	}	
+}
+
+

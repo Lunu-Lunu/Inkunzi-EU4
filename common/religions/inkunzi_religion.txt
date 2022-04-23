@@ -33,16 +33,17 @@ celestialism_group = {
 	sunfucian = {
 		color = { 255 204 49 }
 		icon = 13
-
 		country = {
-			idea_cost = -0.05
-			tolerance_heathen = 1
+			technology_cost = -0.05
+			tolerance_heretic = 2
 		}
 		country_as_secondary = {
-			idea_cost = -0.05
-			tolerance_own = 1
+			siege_ability = 0.1
+			defensiveness = 0.1
 		}
-
+		province = {
+			local_governing_cost = -0.1
+		}
 		on_convert = {
 			change_religion = sunfucian
 			add_prestige = -100
@@ -53,8 +54,10 @@ celestialism_group = {
 			}			
 		
 		}
-		
-		heretic = { HERETIC_GENERIC }
+
+		personal_deity = yes
+
+		heretic = { RAMSEYISM }
 	}
 	rationalist_celestialism = {
 		color = { 82 0 94 }

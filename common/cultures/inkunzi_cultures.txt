@@ -61,39 +61,55 @@ vestorian_group = {
 		primary = A02
 
 		male_names = {
-			Placeholder
+			Vekkel
+			Vykar
+			Vyktus
+			Lumnis
+			Lumnar
+			Lumin
+			Lunon
 		}
 		female_names = {
-			Placeholder
+			Vy
+			Vivi
+			Vesper
+			Vyktoria
+			Kizi
 		}
 		dynasty_names = {
-			"Placeholder"
+			"Grimm"
 		}
 	}
 	lower_vestorian = {
 		primary = A07
 
 		male_names = {
-			Placeholder
+			Vic
+			John
 		}
 		female_names = {
-			Placeholder
+			Vesper
+			Vivian
+			Vy
+			Violet
+			Vivi
 		}
 		dynasty_names = {
-			"Placeholder"
+			"Seaside"
 		}
 	}
 	#orc_vestorian = {
 	# todo - likely not to happen
 	#}
 	male_names = {
-		Placeholder
+		Ion
+		Seth
 	}
 	female_names = {
-		Placeholder
+		Kizi
 	}
 	dynasty_names = {
-		"Placeholder"
+		"Kaaleas"
 	}
 }
 ourkani_group = {
@@ -412,44 +428,41 @@ mungi_group = {
 		primary = A40
 
 		male_names = {
-			Placeholder
+			Ori Aomo Herici Celim Zomu Armou Mormor Umon Xomu Bali Lol Somu Yoyo Lum Mu
 		}
 		female_names = {
 			Placeholder
 		}
 		dynasty_names = {
-			"Placeholder"
+			"Igo" "Indigo" "Optio" "Zrgou" "Sensyrn"
 		}
 	}
 	spolic = {
 		primary = A40
 
 		male_names = {
-			Placeholder
+			Ori Aomo Herici Celim Zomu Armou Mormor Umon Xomu Bali Lol Somu Yoyo Lum Mu Pataca Pitriaun Spol
 		}
 		female_names = {
 			Placeholder
 		}
 		dynasty_names = {
-			"Placeholder"
+			"Igo" "Igoite" "Alac" "Indigo" "Optio" "Zrgou" "Sensyrn"
 		}
 	}
 	rannikean = {
 		primary = A54
 
 		male_names = {
-			Placeholder
+			Cropkyn Altin Abra
 		}
 		female_names = {
 			Placeholder
 		}
 		dynasty_names = {
-			"Placeholder"
+			"Van" "Agriansi" "Cannabhus" "Erjon"
 		}
 	}
-	#spolic = {
-	#	todo
-	#}
 	male_names = {
 		Placeholder
 	}
@@ -457,7 +470,7 @@ mungi_group = {
 		Placeholder
 	}
 	dynasty_names = {
-		"Placeholder"
+		 "Omou" "Ilium" "Mycen" "Mungus"
 	}
 	
 }

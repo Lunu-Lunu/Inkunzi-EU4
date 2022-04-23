@@ -1,0 +1,260 @@
+taisung_diety =
+{
+	legitimacy = 0.3
+	republican_tradition = 0.1
+	horde_unity = 0.3
+	devotion = 0.3
+	diplomatic_reputation = 2
+
+	allow = { religion = sunfucian }
+	sprite = 7
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}
+	}
+}
+
+yuelua_diety =
+{
+	global_unrest = -2
+	global_tax_modifier = 0.1
+
+	allow = { religion = sunfucian }
+	sprite = 8
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_balanced
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_colonialist
+		}
+	}
+}
+
+lei_nei_diety  =
+{
+	land_morale = 0.10
+	army_tradition_from_battle = 1
+
+	allow = { religion = sunfucian }
+	sprite = 9
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			NOT = { num_of_cities = 5 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { num_of_cities = 10 }
+		}
+		modifier = {
+			factor = 0.5
+			num_of_cities = 30
+		}
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_capitalist
+		}
+	}
+}
+
+biti_thcong_diety =
+{
+	discipline = 0.05
+	land_attrition = -0.1
+
+	allow = { religion = sunfucian }
+	sprite = 10
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}
+	}
+}
+
+czibir_diety =
+{
+	ae_impact = -0.1
+	advisor_cost = -0.1
+
+	allow = { religion = sunfucian }
+	sprite = 11
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_capitalist
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}
+	}
+}
+
+
+amuksmus_diety =
+{
+	war_exhaustion = -0.05
+	build_cost = -0.1
+
+	allow = { religion = sunfucian }
+	sprite = 12
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_militarist
+		}
+	}
+}
+
+
+ze_la_si_diety  =
+{
+	movement_speed = 0.15
+	institution_spread_from_true_faith = 1
+
+	allow = { religion = sunfucian }
+	sprite = 12
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 2
+			personality = ai_capitalist
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_militarist
+		}
+	}
+}
+
+
+ragzmus_diety  =
+{
+	defensiveness = 0.15
+	hostile_attrition = 1
+
+	allow = { religion = sunfucian }
+	sprite = 12
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0.5
+			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 2
+			personality = ai_militarist
+		}
+	}
+}
+
+
+vescarbios_diety  =
+{
+	production_efficiency = 0.10
+	state_maintenance_modifier = -0.25
+
+	allow = { religion = sunfucian }
+	sprite = 12
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_capitalist
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_militarist
+		}
+	}
+}
+
+
+admaxtadort_diety  =
+{
+	naval_morale = 0.1
+	naval_forcelimit_modifier = 0.1
+
+	allow = { religion = sunfucian }
+	sprite = 12
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_militarist
+		}
+	}
+}
+
+
+
+talixias_diety  =
+{
+	development_cost = -0.1
+	global_prosperity_growth = 0.1
+
+	allow = { religion = sunfucian }
+	sprite = 12
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 2
+			personality = ai_diplomat
+		}
+		modifier = {
+			factor = 2
+			personality = ai_capitalist
+		}
+		modifier = {
+			factor = 0.5
+			personality = ai_militarist
+		}
+	}
+}

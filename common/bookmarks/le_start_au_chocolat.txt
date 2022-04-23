@@ -1,11 +1,12 @@
 bookmark =
 {
-	name = "RISE_OF_THE_OTTOMANS"
-	desc = "RISE_OF_THE_OTTOMANS_DESC"
+	name = "FOD"
+	desc = "FOD_DESC"
 	date = 1444.11.11
 	
 	center = 1
 	default = yes
 	
-	country = SWE
+	country = B16
+	country = A42
 }
