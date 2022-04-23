@@ -1,4 +1,4 @@
-# Placeholder
+# Grokkia
 
 owner = A01
 controller = A01
@@ -6,10 +6,11 @@ add_core = A01
 culture = upper_vestorian
 religion = celestialism
 hre = no
-base_tax = 8 
-base_production = 8
-base_manpower = 8
-trade_goods = unknown
-capital = "Placeholder"
+base_tax = 6
+base_production = 5
+base_manpower = 7
+trade_goods = salt
+capital = "Grokkia"
 is_city = yes
 discovered_by = western
+fort_15th = yes

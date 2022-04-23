@@ -1,0 +1,700 @@
+hesh_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = B77
+			tag = B78
+			tag = B79
+			tag = B80
+			tag = B81
+		}
+	}
+	has_country_shield = yes
+
+	hesh_mission_the_bickering_hive = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { hesh_mission_prepare_the_armies }
+		position = 2
+		trigger = {
+			OR = { 
+				tag = B80 
+				overlord_of = B80
+				3138 = { 
+					country_or_non_sovereign_subject_holds = ROOT 
+				} 
+			}
+		}
+		effect = {
+			create_admiral = { tradition = 50 culture = yaxatian }
+			3138 = {
+				add_core = ROOT
+			}
+		}
+	}
+	
+	hesh_mission_fish_of_the_maw = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { hesh_mission_the_bickering_hive }
+		position = 3
+		trigger = {
+			3138 = { 
+				country_or_non_sovereign_subject_holds = ROOT
+				num_of_times_improved_by_owner = 5
+			}
+		}
+		effect = {
+			3138 = {
+				add_building = workshop
+				add_base_production = 2
+			}
+		}
+	}
+
+	hesh_mission_yaxat_headquarters = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { hesh_mission_development_of_the_hesh }
+		position = 5
+		trigger = {
+			3138 = { 
+				country_or_non_sovereign_subject_holds = ROOT
+				num_of_times_improved_by_owner = 15
+			}
+		}
+		effect = {
+			create_explorer = { tradition = 50 culture = yaxatian }
+			3138 = { add_building = fort_15th }
+		}
+	}
+}
+
+hesh_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = B77
+			tag = B78
+			tag = B79
+			tag = B80
+			tag = B81
+		}
+	}
+	has_country_shield = yes
+
+	hesh_mission_the_learning_hive = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { hesh_mission_prepare_the_armies}
+		position = 2
+		trigger = {
+			OR = { 
+				tag = B78 
+				overlord_of = B78
+				3137 = { 
+					country_or_non_sovereign_subject_holds = ROOT 
+				} 
+			}
+		}
+		effect = {
+			define_advisor = {
+				type = naval_reformer
+				skill = 2
+				discount = yes
+				culture = antaxian
+				religion = disparate_tribal
+			}
+			3137 = {
+				add_core = ROOT
+			}
+		}
+	}
+
+	hesh_mission_university_of_antax = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { hesh_mission_the_learning_hive }
+		position = 3
+		trigger = {
+			3137 = { 
+				country_or_non_sovereign_subject_holds = ROOT
+				num_of_times_improved_by_owner = 5
+			}
+		}
+		effect = {
+			3137 = {
+				add_building = university
+				add_base_tax = 2
+			}
+		}
+	}
+
+	hesh_mission_development_of_the_hesh = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { hesh_mission_university_of_antax hesh_mission_hive_voras hesh_mission_fish_of_the_maw }
+		position = 4
+		trigger = {
+			ROOT = { 
+				grown_by_development = 50
+			}
+		}
+		effect = {
+			add_country_modifier = { 
+				name = hesh_mod_development_of_the_hesh
+				duration = 9125
+				desc = HESH_MOD_DEVELOPMENT_OF_THE_HESH_DESC_TOOLTIP
+				hidden = yes
+			}
+		}
+	}
+	
+	hesh_mission_kostran_foothold = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { hesh_mission_development_of_the_hesh }
+		position = 5
+		trigger = {
+			3070 = { 
+				country_or_non_sovereign_subject_holds = ROOT
+				num_of_times_improved_by_owner = 15
+			}
+		}
+		effect = {
+			create_conquistador = { tradition = 50 culture = karaxian }
+		}
+	}
+
+	hesh_mission_hesh_expeditions = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { hesh_mission_kostran_foothold }
+		position = 6
+		trigger = {
+			ROOT = { 
+				has_discovered = 3068
+				has_discovered = 3212
+				has_discovered = 3221
+			}
+		}
+		effect = {
+			add_country_modifier = { 
+				name = hesh_mod_hesh_expeditions
+				desc = HESH_MOD_DEVELOPMENT_OF_THE_HESH_DESC_TOOLTIP
+			}
+		}
+	}
+}
+
+hesh_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = B77
+			tag = B78
+			tag = B79
+			tag = B80
+			tag = B81
+		}
+	}
+	has_country_shield = yes
+
+	hesh_mission_prepare_the_armies = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { }
+		position = 1
+		trigger = {
+			army_size_percentage = 1
+		}
+		effect = {
+			add_casus_belli = {
+				target = B77
+				type = cb_vassalize_mission
+				months = 1200
+			}
+			add_casus_belli = {
+				target = B78
+				type = cb_vassalize_mission
+				months = 1200
+			}
+			add_casus_belli = {
+				target = B79
+				type = cb_vassalize_mission
+				months = 1200
+			}
+			add_casus_belli = {
+				target = B80
+				type = cb_vassalize_mission
+				months = 1200
+			}
+			add_casus_belli = {
+				target = B81
+				type = cb_vassalize_mission
+				months = 1200
+			}
+		}
+	}
+	
+	hesh_mission_the_first_hive = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { hesh_mission_prepare_the_armies }
+		position = 2
+		trigger = {
+			OR = { 
+				tag = B77 
+				overlord_of = B77 
+				3133 = { 
+					country_or_non_sovereign_subject_holds = ROOT 
+				} 
+			}
+		}
+		effect = {
+			define_advisor = {
+				type = philosopher
+				skill = 2
+				discount = yes
+				culture = vorasian
+				religion = disparate_tribal
+			}
+			3133 = {
+				add_core = ROOT
+			}
+		}
+	} 
+
+	hesh_mission_hive_voras = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { hesh_mission_the_first_hive }
+		position = 3
+		trigger = {
+			3133 = { 
+				country_or_non_sovereign_subject_holds = ROOT
+				num_of_times_improved_by_owner = 5
+			}
+		}
+		effect = {
+			3133 = {
+				add_building = training_fields
+				add_base_manpower = 2
+			}
+		}
+	}
+
+	hesh_mission_consolidate_our_holdings = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { hesh_mission_under_one_tyrant }
+		position = 4
+		trigger = {
+			ROOT = {
+				core_percentage = 0.85
+				NOT = { average_autonomy = 20 }
+			}
+		}
+		effect = {
+			add_treasury = 200
+		}
+	}
+
+	hesh_mission_imperial_roads = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { hesh_mission_development_of_the_hesh hesh_mission_consolidate_our_holdings }
+		position = 5
+		trigger = {
+			3133 = { 
+				country_or_non_sovereign_subject_holds = ROOT
+				num_of_times_improved_by_owner = 15
+			}
+			3137 = { 
+				country_or_non_sovereign_subject_holds = ROOT
+				num_of_times_improved_by_owner = 5
+			}
+			3130 = { 
+				country_or_non_sovereign_subject_holds = ROOT
+				num_of_times_improved_by_owner = 5
+			}
+		}
+		effect = {
+			3139 = {
+				add_siberian_construction = 500
+			}
+			3140 = {
+				add_siberian_construction = 500
+			}
+			3141 = {
+				add_siberian_construction = 500
+			}
+			3184 = {
+				add_siberian_construction = 500
+			}
+		}
+	}
+
+	hesh_mission_expanding_the_frontier = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { hesh_mission_imperial_roads }
+		position = 5
+		trigger = {
+			3139 = { 
+				country_or_non_sovereign_subject_holds = ROOT
+				num_of_times_improved_by_owner = 5
+				is_core = ROOT
+			}
+			3140 = { 
+				country_or_non_sovereign_subject_holds = ROOT
+				num_of_times_improved_by_owner = 5
+				is_core = ROOT
+			}
+			3141 = { 
+				country_or_non_sovereign_subject_holds = ROOT
+				num_of_times_improved_by_owner = 5
+				is_core = ROOT
+			}
+			3184 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				num_of_times_improved_by_owner = 5
+				is_core = ROOT
+			}
+		}
+		effect = {
+			3191 = {
+				add_siberian_construction = 500
+			}
+			3190 = {
+				add_siberian_construction = 500
+			}
+			3187 = {
+				add_siberian_construction = 500
+			}
+			3186 = {
+				add_siberian_construction = 500
+			}
+			3183 = {
+				add_siberian_construction = 500
+			}
+			3182 = {
+				add_siberian_construction = 500
+			}
+			3181 = {
+				add_siberian_construction = 500
+			}
+		}
+	}	
+}
+
+hesh_missions_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = B77
+			tag = B78
+			tag = B79
+			tag = B80
+			tag = B81
+		}
+	}
+	has_country_shield = yes
+	
+	hesh_mission_the_common_hive = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { hesh_mission_prepare_the_armies }
+		position = 2
+		trigger = {
+			OR = { 
+				tag = B79 
+				overlord_of = B79
+				3130 = { 
+					country_or_non_sovereign_subject_holds = ROOT 
+				} 
+			}
+		}
+		effect = {
+			define_advisor = {
+				type = army_organiser
+				skill = 2
+				discount = yes
+				culture = tavasian
+				religion = disparate_tribal
+			}
+			3130 = {
+				add_core = ROOT
+			}
+		}
+	}
+	
+	hesh_mission_under_one_tyrant = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { hesh_mission_the_bickering_hive hesh_mission_the_learning_hive hesh_mission_the_first_hive hesh_mission_the_common_hive hesh_mission_the_wandering_hive }
+		position = 3
+		trigger = {
+			OR = {
+				tag = B77
+				NOT = { exists = B77 }
+				B77 = { is_subject_of = ROOT }
+			}
+			OR = {
+				tag = B78
+				NOT = { exists = B78 }
+				B78 = { is_subject_of = ROOT }
+			}
+			OR = {
+				tag = B79
+				NOT = { exists = B79 }
+				B79 = { is_subject_of = ROOT }
+			}
+			OR = {
+				tag = B80
+				NOT = { exists = B80 }
+				B80 = { is_subject_of = ROOT }
+			}
+			OR = {
+				tag = B81
+				NOT = { exists = B81 }
+				B81 = { is_subject_of = ROOT }
+			}	
+		}
+		effect = {
+			every_subject_country = {
+  				every_owned_province = {
+  					cede_province = ROOT
+					add_core = F01
+				}
+			}
+			ROOT = {
+				change_tag = F01
+				add_prestige = 20
+			}
+			B76 = {
+				every_owned_province = {
+					add_claim = ROOT
+				}
+			}
+			B64 = {
+				every_owned_province = {
+					add_claim = F01
+				}
+			}
+			
+			3070 = {
+				cede_province = F01
+			}	
+		}
+	}
+
+	hesh_mission_subjugate_eiyeborvoland	{
+		icon = mission_build_up_to_force_limit
+		required_missions = { hesh_mission_under_one_tyrant }
+		position = 5
+		trigger = {
+			OR = {
+				B76 = {
+					is_subject_of = ROOT
+				}
+				3125 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		effect = {
+			B75 = {
+				every_owned_province = {
+					add_claim = ROOT
+				}
+			}
+		}
+	}
+
+	hesh_mission_boats_of_pitch = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { hesh_mission_subjugate_eiyeborvoland }
+		position = 6
+		trigger = {
+			navy_size = 25
+		}
+		effect = {
+			B63 = {
+				every_owned_province = {
+					add_claim = ROOT
+				}
+			}
+			B64 = {
+				every_owned_province = {
+					add_claim = ROOT
+				}
+			}
+			
+			B65 = {
+				every_owned_province = {
+					add_claim = ROOT
+				}
+			}
+		}
+	}
+
+	hesh_mission_control_the_maw = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { hesh_mission_boats_of_pitch }
+		position = 7
+		trigger = {
+			OR = {
+				B64 = {
+					is_subject_of = ROOT
+				}
+				3095 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+			OR = {
+				B65 = {
+					is_subject_of = ROOT
+				}
+				3094 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		effect = {
+			B62 = {
+				every_owned_province = {
+					add_claim = ROOT
+				}
+			}
+			B63 = {
+				every_owned_province = {
+					add_claim = ROOT
+				}
+			}
+		}
+	}
+	
+	hesh_mission_invade_scotar = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { hesh_mission_boats_of_pitch }
+		position = 7
+		trigger = {
+			B62 = {
+				any_core_province = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+				
+		}
+		effect = {
+			B52 = {
+				every_owned_province = {
+					add_claim = ROOT
+				}
+			}
+			B53 = {
+				every_owned_province = {
+					add_claim = ROOT
+				}
+			}
+			B54 = {
+				every_owned_province = {
+					add_claim = ROOT
+				}
+			}
+		}
+	}
+	
+	hesh_mission_the_east_advances = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { hesh_mission_control_the_maw }
+		position = 8
+		trigger = {
+			OR = {
+				B63 = {
+					is_subject_of = ROOT
+				}
+				3090 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		effect = {
+			B65 = {
+				every_owned_province = {
+					add_claim = ROOT
+					add_unrest = -10
+				}
+			}
+		}
+	}
+}
+
+hesh_missions_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = B77
+			tag = B78
+			tag = B79
+			tag = B80
+			tag = B81
+		}
+	}
+	has_country_shield = yes
+	
+	hesh_mission_the_wandering_hive = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { hesh_mission_prepare_the_armies }
+		position = 2
+		trigger = {
+			OR = { 
+				tag = B81
+				overlord_of = B81
+				3070 = { 
+					country_or_non_sovereign_subject_holds = ROOT 
+
+			}
+		}
+	}
+		effect = {
+			3070 = {
+				every_owned_province = {
+					add_core = ROOT
+				}
+			}
+		}
+	}	
+
+	hesh_mission_coast_of_the_yawn	{
+		icon = mission_build_up_to_force_limit
+		required_missions = { hesh_mission_subjugate_eiyeborvoland }
+		position = 6
+		trigger = {
+			OR = {
+				3120 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				3116 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				3115 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				3113 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				3112 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		effect = {
+			B74 = {
+				every_owned_province = {
+					add_claim = ROOT
+				}
+			}
+			B73 = {
+				every_owned_province = {
+					add_claim = ROOT
+				}
+			}
+		}
+	}	
+} 

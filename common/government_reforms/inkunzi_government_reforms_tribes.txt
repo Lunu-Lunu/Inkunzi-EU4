@@ -1,0 +1,56 @@
+lyharan_godsrealm = {
+	icon = "indian_crown"
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	legacy_equivalent = tribal_kingdom_legacy
+	lock_level_when_selected = yes
+	potential = {
+		OR = {
+			AND = {
+				culture_group = ervaric_group
+				OR = {
+					religion = sahyvarian
+					#religion = varian_valor
+				}
+			}
+			has_reform = lyharan_godsrealm
+			has_had_reform = lyharan_godsrealm
+		}
+	}
+	modifiers = {
+		monthly_reform_progress_modifier = -0.33
+		idea_cost = 0.1
+		land_morale = 0.1
+		church_loyalty_modifier = 0.1
+		church_influence_modifier = 0.2
+		nobles_loyalty_modifier = 0.05
+		burghers_loyalty_modifier = -0.05
+		burghers_influence_modifier = -0.1
+		frogs_influence_modifier = 0.2
+	}
+}
+
+yeulan_sortition = {
+	icon = "indian_crown"
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	legacy_equivalent = tribal_kingdom_legacy
+	lock_level_when_selected = yes
+	republic = yes
+	has_term_election = yes
+	duration = 3
+	potential = {
+		culture_group = ervaric_group
+		has_reform = yeulan_sortition
+		has_had_reform = yeulan_sortition
+	}
+	modifiers = {
+		yearly_corruption = -0.05
+		global_spy_defence = 0.15
+		advisor_pool = 1
+		max_absolutism = -50
+	}
+	custom_attributes = {
+		lottery_election = yes
+	}
+}

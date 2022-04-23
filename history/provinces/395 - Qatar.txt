@@ -13,3 +13,9 @@ trade_goods = unknown
 capital = "Placeholder"
 is_city = yes
 discovered_by = western
+fort_15th = yes
+
+add_province_modifier = {
+	name = decline_of_the_great_forts
+	duration = -1
+}

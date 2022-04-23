@@ -1,4 +1,4 @@
-# Placeholder
+# Amayyatayo
 
 culture = isle_konk
 religion = tribal_faith

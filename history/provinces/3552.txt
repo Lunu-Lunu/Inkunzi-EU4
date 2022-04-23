@@ -1,4 +1,4 @@
-# Placeholder
+# Namano
 
 culture = isle_konk
 religion = tribal_faith

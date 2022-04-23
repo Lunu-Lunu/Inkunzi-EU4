@@ -360,3 +360,54 @@ primary_race_recalc = {
 		set_country_flag = primary_snake_nation
 	}
 }
+
+A01_upgrade_forts_mission_effect = {
+	every_owned_province = {
+		limit = {
+			fort_level = 2
+		}
+		if = {
+			limit = {
+				OR = {
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						mil_tech = 19
+					}
+				}
+				add_building = fort_16th
+				else = {
+					if = {
+						limit = {
+							NOT = {
+								mil_tech = 24
+							}
+						}
+						add_building = fort_17th
+						else = {
+							if = {
+								limit = {
+									NOT = {
+										mil_tech = 24
+									}
+								}
+								add_building = fort_18th
+								else = {
+									add_province_modifier = {
+										name = A01_new_fort_architecture_province_mod
+										duration = -1
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,186 @@
+#These are Generic missions, available to all tags that don't have an override.
+
+#Below are mission series, within them are the actual missions.
+
+military_missions = { #Series name is displayed over the slot?
+	slot = 2 #ie, second upper left column
+	generic = yes #if a mission without generic = yes wants this slot then it overrides this.
+	ai = no #Can exist under the series itself or within individual missions.
+	potential = {
+		tag = B39
+	} #These are triggers for the entire series
+	
+	#missions
+	#1st tier: (they appear in the order scripted here in the interface, all missions within one "series" has an arrow going down to the next one scripted)
+	build_army_mission = { #Localized as reclaim_maine_title and reclaim_maine_desc
+		icon = mission_build_up_to_force_limit
+		required_missions = {  } #None
+		provinces_to_highlight = {
+			area = kalenoo_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			army_size_percentage = 1
+		}
+		effect = {
+			kalenoo_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			kalenoo2_area = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			kalenoo3_area = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			kalenoo4_area = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			kalenoo5_area = {
+				if = {
+					limit = {
+						NOT = {
+							is_permanent_claim = ROOT
+							is_core = ROOT
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+}
+	#2nd tier: (second because it is the second mission to be listed)
+	subjugate_kalenoo = {
+		icon = mission_have_two_subjects
+		required_missions = { build_army_mission }
+		position = 2
+		provinces_to_highlight = {
+			area = kalenoo4_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			B38 = { exists = NO }
+
+			kalenoo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kalenoo2_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kalenoo3_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kalenoo4_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kalenoo5_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			every_owned_province = { limit = {culture = kalnish} 
+			add_province_modifier = { name = genocide_of_the_kalnish 
+			duration = -1 
+	 }
+}  
+			add_dip_power = 100
+			add_adm_power = 100
+			add_mil_power = 100
+			add_legitimacy = 15
+			add_stability = 1
+			define_general = {
+    			shock = 5
+    			fire = 3
+    			manuever = 4
+    			siege = 3
+			}
+			add_country_modifier = {
+				name = "hegemonic_ambition"
+				duration = 9125 #25 years
+			}
+		}
+	}
+	goobye_kalenoo = {
+		icon = mission_have_two_subjects
+		required_missions = { subjugate_kalenoo }
+		position = 3
+		provinces_to_highlight = {
+			area = kalenoo_area
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			kalenoo_area = {
+				type = all
+				culture = ozarkhian
+			}
+			kalenoo2_area = {
+				type = all
+				culture = ozarkhian
+			}
+			kalenoo3_area = {
+				type = all
+				culture = ozarkhian
+			}
+			kalenoo4_area = {
+				type = all
+				culture = ozarkhian
+			}
+			kalenoo5_area = {
+				type = all
+				culture = ozarkhian
+			}
+		}
+		effect = {
+			add_dip_power = 100
+			add_adm_power = 100
+			add_mil_power = 100
+			add_legitimacy = 15
+			add_stability = 1
+			define_general = {
+    			shock = 5
+    			fire = 3
+    			manuever = 4
+    			siege = 3
+			}
+			add_country_modifier = {
+				name = "hegemonic_ambition"
+				duration = 9125 #25 years
+			}
+		}
+	}
+}
+

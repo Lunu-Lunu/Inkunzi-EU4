@@ -1,4 +1,4 @@
-# Placeholder
+# Kis'myo
 
 owner = B40
 controller = B40
@@ -6,10 +6,10 @@ add_core = B40
 culture = gneta
 religion = haymonutho
 hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
-trade_goods = unknown
-capital = "Placeholder"
+base_tax = 3
+base_production = 5
+base_manpower =  4
+trade_goods = salt
+capital = "Kis'myo City"
 is_city = yes
 discovered_by = western
