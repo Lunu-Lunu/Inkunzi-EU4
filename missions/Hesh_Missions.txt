@@ -199,7 +199,10 @@ hesh_missions_2 = {
 				limit = {
 					technology_group = western
 				}
-				add_claim = ROOT
+				set_country_flag = colony_detected
+				every_owned_province = {
+					add_claim = ROOT
+				}
 			}
 		}
 	}
@@ -209,19 +212,7 @@ hesh_missions_2 = {
 		required_missions = { hesh_mission_beyond_the_yawn }
 		position = 8
 		trigger = {
-				any_known_country = {
-					limit = {
-						OR = {
-							technology_group = western
-						}
-					}
-					ROOT = {
-						has_won_war_against = {
-							who = PREV
-							max_years_since = 400
-						}
-					}
-				}
+			
 		}
 		effect = {
 			ROOT = {
