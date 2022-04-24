@@ -1,0 +1,8 @@
+F01_hesh_development = {
+	diplomatic_reputation = 1
+	improve_relation_modifier = 0.25
+}
+
+F01_hesh_expeditions = {
+	colonists = 1
+}

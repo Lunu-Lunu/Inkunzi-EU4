@@ -1,7 +1,0 @@
-hesh_mod_development_of_the_hesh = {
-	development_cost = -0.2
-}
-
-hesh_mod_hesh_expeditions = {
-	colonists = 1
-}
