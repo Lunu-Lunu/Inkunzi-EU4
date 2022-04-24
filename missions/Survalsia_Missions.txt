@@ -1,0 +1,650 @@
+#
+#radiant among us cringe
+#
+Survalsia_Collom_2 = {
+    slot = 2                  
+    generic = no           
+    ai = yes                 
+    has_country_shield = yes    
+
+    potential = {
+        tag = A04
+    }
+
+	Survalsia_Build_to_Force_Limit = {
+		icon = mission_build_up_to_force_limit
+        generic = no
+        position = 1
+
+		required_missions = {
+            
+        }
+        
+        provinces_to_highlight = {
+          
+        }
+        trigger = {
+		army_size_percentage = 1
+		}
+
+		effect = {
+			add_country_modifier = {
+			name = ready_army
+			duration = 3650
+			desc = READY_ARMY
+			}
+		}
+
+    }
+
+    Survalsia_Defend_From_Seaside = {
+		icon = mission_assemble_an_army
+    	generic = no
+    	position = 2
+
+		required_missions = {
+			Survalsia_Build_to_Force_Limit
+		}
+
+		provinces_to_highlight = {
+	  		OR = {
+				province_id = 131
+				province_id = 132
+				province_id = 133
+				province_id = 134
+				province_id = 135
+			}
+		}
+
+	
+		trigger = {
+	  		OR = {
+				owns_core_province = 131
+				owns_core_province = 132
+				owns_core_province = 133
+				owns_core_province = 134
+				owns_core_province = 135
+			}
+		}
+
+		effect = {
+	  		add_permanent_claim = 131
+	  		add_permanent_claim = 132
+			add_permanent_claim = 133
+	 		add_permanent_claim = 134
+			add_permanent_claim = 135
+	  		add_permanent_claim = 136
+	  		add_permanent_claim = 137
+	 		add_permanent_claim = 138
+			add_permanent_claim = 139
+			add_permanent_claim = 140
+			add_permanent_claim = 141
+			add_permanent_claim = 142
+			add_permanent_claim = 143
+			add_permanent_claim = 144
+		}
+	}
+
+	Survalsia_Destroy_Seaside = {
+		icon = mission_steppe_warriors
+		generic = no
+		position = 3
+
+		required_missions = {
+			Survalsia_Defend_From_Seaside
+		}
+
+		provinces_to_highlight = {
+				owned_by = A07
+		}
+
+		trigger = {
+			A07 = {
+				all_core_province = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			  }
+			  
+		}
+
+		effect = {
+			A09 = {
+				every_owned_province = {
+				  add_claim = ROOT
+				}
+			  }
+		}
+	}
+
+	Unite_Southern_Vestoria = {
+		icon = mission_unite_home_region
+		generic = no
+		position = 4
+
+		required_missions = {
+			Survalsia_Destroy_Seaside
+			Survalsia_Annex_Zuntlan
+			Survalsia_Reverse_the_Palmer_Conquests
+		}
+
+		provinces_to_highlight = {
+			owned_by = A07
+		}
+
+		#trigger = {
+
+			#owns_all_provinces = {
+				#region = Southern_Vestoria
+			#}
+		#}
+
+		effect = {
+			A02 = {
+				every_owned_province = {
+				  add_claim = ROOT
+				}
+			  }
+		}
+	}
+}
+
+Survalsia_Collom_1 = {
+    slot = 1                  
+    generic = no           
+    ai = yes                 
+    has_country_shield = yes    
+
+    potential = {
+        tag = A04
+    }
+
+	Survalsia_Repel_the_Palmers = {
+		icon = mission_landsknecht_soldier
+        generic = no
+        position = 2
+
+		required_missions = {
+            Survalsia_Build_to_Force_Limit
+        }
+        
+        provinces_to_highlight = {
+			province_id = 43
+			province_id = 44
+			province_id = 45
+			province_id = 46
+			province_id = 47
+			province_id = 48
+			province_id = 49
+		}
+
+        trigger = {
+			OR = {
+				owns_core_province = 43
+				owns_core_province = 44
+				owns_core_province = 45
+				owns_core_province = 46
+				owns_core_province = 47
+				owns_core_province = 48
+				owns_core_province = 49
+			}
+		}
+
+		effect = {
+			A03 = {
+				every_owned_province = {
+				  add_claim = ROOT
+				}
+			}
+		}
+    }
+
+	Survalsia_Reverse_the_Palmer_Conquests = {
+		icon = misson_crusade_for_varna
+		generic = no           
+		position = 3
+
+		required_missions = {
+            Survalsia_Repel_the_Palmers
+        }
+        
+        provinces_to_highlight = {
+			province_id = 43
+			province_id = 44
+			province_id = 45
+			province_id = 46
+			province_id = 47
+			province_id = 48
+			province_id = 49
+		}
+
+        trigger = {
+			owns_core_province = 43
+			owns_core_province = 44
+			owns_core_province = 45
+			owns_core_province = 46
+			owns_core_province = 47
+			owns_core_province = 48
+			owns_core_province = 49
+		}
+
+		effect = {
+			A01 = {
+				every_owned_province = {
+				  add_claim = ROOT
+				}
+			}
+		}
+    }
+
+	Survalsia_Maintain_Essonian_Control = {
+		icon = mission_settlers_north_america
+		generic = no
+		position = 5
+
+		required_missions = {
+		}
+
+		provinces_to_highlight = {
+			province_id = 3745
+		}
+
+		trigger = {
+			country_or_non_sovereign_subject_holds = 3745
+		}
+
+		effect = {
+			add_country_modifier = {
+				name = Essonian_Escape
+				duration = 3650
+				desc = ESSONIAN_ESCAPE_DESC
+			}
+		}
+	}
+
+	Survalsia_Settle_Essurria = {
+		icon = mission_colonize_the_cape
+		generic = no
+		position = 6
+
+		required_missions = {
+			Survalsia_Maintain_Essonian_Control
+		}
+
+		provinces_to_highlight = {
+		}
+
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				colonial_region = colonial_south_essurria
+				is_city = yes
+			}
+		}
+
+		effect = {
+			add_tariff_value 0.2
+		}
+	}
+
+	Survalsia_Go_North = {
+		icon = mission_iberian_conquistador
+		generic = no
+		position = 7
+
+		required_missions = {
+			Survalsia_Settle_Essurria
+		}
+
+		provinces_to_highlight = {
+		}
+
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 5
+				colonial_region = Ogulis
+				is_city = yes
+			}
+		}
+
+		effect = {
+			merchantilism = 2
+			add_treasury = 100
+		}
+	}
+}
+
+Survalsia_Collom_3 = {
+    slot = 3                  
+    generic = no           
+    ai = yes                 
+    has_country_shield = yes    
+
+    potential = {
+        tag = A04
+    }
+
+	Survalsia_Retake_Alvonia = {
+		icon = mission_cannons_firing
+		generic = no           
+		position = 2
+
+		required_missions = {
+            Survalsia_Build_to_Force_Limit
+        }
+        
+        provinces_to_highlight = {
+			province_id = 2424
+		}
+
+        trigger = {
+			owns_core_province = 2424
+		}
+
+		effect = {
+			B16 = {
+				every_owned_province = {
+				  add_claim = ROOT
+				}
+			}
+		}
+    }
+
+	Survalsia_Annex_Zuntlan = {
+		icon = mission_jageillonian_union
+		generic = no
+		position = 3
+
+		required_missions = {
+			Survalsia_Retake_Alvonia
+		}
+
+		provinces_to_highlight = {
+			owned_by = B16
+		}
+
+		trigger = {
+			B16 = {
+				all_core_province = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			  }
+			  
+		}
+
+		effect = {
+			add_accepted_culture = zuntlani
+
+		}
+	}
+
+	Survalsia_Survalsian_Armada = {
+		icon = mission_corsairs_of_the_north_sea
+		generic = no
+		position = 5
+
+		required_missions = {
+
+		}
+
+		provinces_to_highlight = {
+
+		}
+
+		trigger = {
+			navy_size_percentage = 0.9
+		}
+
+		effect = {
+			A46 = {
+				every_owned_province = {
+				  add_claim = ROOT
+				}
+			}
+			add_merchantilism = 2
+			define_general = {
+				tradition = 50
+				add_fire = 3
+				add_shock = 4
+				add_maneuver = 2
+				add_siege = 1
+				name = Cortas_la_Essonus
+				female = no
+				trait = ruthless
+			}
+		}
+	}
+
+	Survalsia_Dahe_Colony = {
+		icon = mission_asian_city
+		generic = no
+		position = 6
+
+		required_missions = {
+			Survalsia_Survalsian_Armada
+		}
+
+		provinces_to_highlight = {
+			province_id = 596
+			province_id = 597
+			province_id = 598
+			province_id = 599
+			province_id = 590
+		}
+
+		trigger = {
+			owns_core_province = 596
+			owns_core_province = 597
+			owns_core_province = 598
+			owns_core_province = 599
+			owns_core_province = 590
+		}
+
+		effect = {
+			A65 = {
+				every_owned_province = {
+				  add_claim = ROOT
+				}
+			}
+		}
+	}
+
+	Survalsia_Take_Helgast = {
+		icon = mission_raid_on_venice
+		generic = no
+		position = 7
+
+		required_missions = {
+			Survalsia_Dahe_Colony
+		}
+
+		provinces_to_highlight = {
+			province_id = 726
+			province_id = 727
+			province_id = 728
+			province_id = 729
+			province_id = 730
+		}
+
+		trigger = {
+			owns_core_province = 726
+			owns_core_province = 727
+			owns_core_province = 728
+			owns_core_province = 729
+			owns_core_province = 730
+		}
+
+		effect = {
+			country_event = deal_with_the_colonies
+		}
+	}
+}
+
+Survalsia_Collom_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	has_country_shield = yes
+
+	potential = {
+		tag = a04
+	}
+
+	Survalsia_Control_Ass_Trade = {
+		icon = mission_market_place_with_asian_traders
+		generic = no
+		position = 1
+
+		required_missions = {
+
+		}
+		
+		provinces_to_highlight = {
+
+		}
+
+		trigger = {
+			has_most_province_trade_power = fort_ass
+		}
+
+		effect = {
+			add_country_modifier = { 
+				name = encouraged_development
+				duration = 3650  
+				desc = ENCOURAGED_DEVELOPMENT_DESC
+				hidden = yes
+			}
+		}
+	}
+
+	Survalsia_Fortify_the_Cities = {
+		icon = mission_conquer_50_development
+		generic = no
+		position = 2
+
+		required_missions = {
+
+		}
+
+		provinces_to_highlight = {
+			province_id = 79
+			province_id = 85
+			province_id = 91
+			province_id = 94
+			province_id = 97
+		}
+
+		trigger = {
+			province_id = 79
+				has_building = fort
+			province_id = 85
+				has_building = fort
+			province_id = 91
+				has_building = fort
+			province_id = 94
+				has_building = fort
+			province_id = 97
+		}
+
+		effect = {
+			effect = {
+				add_country_modifier = { 
+					name = fort_defense
+					duration = 3650  
+					desc = FORT_DEFENSE_DESC
+					hidden = yes
+				}
+			}			
+		}
+	}
+}
+
+Survalsia_Collom_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+
+	potential = {
+        tag = A04
+    }
+
+	Survalsia_Surverian_Alliance = {
+		icon = mission_catholic_confraternity
+		generic = no           
+		position = 1
+
+		required_missions = {
+
+        }
+        
+        provinces_to_highlight = {
+
+		}
+
+        trigger = {
+			has_opinion = {
+					who = B14
+					value = 150
+			}
+		}
+
+		effect = {
+			add_trust = {
+				who = B14
+				value = 50
+				mutual = yes
+			}
+		}
+    }
+
+	Survalsia_Overpower_Surveria = {
+		icon = mission_fortify_malta
+		generic = no
+		position = 2
+
+		required_missions = {
+			Survalsia_Surverian_Alliance
+		}
+
+		provinces_to_highlight = {
+		}
+
+		trigger = {
+			total_development = B14
+			army_strength = {
+				who = B14
+				value = 1.1
+			}
+		}
+
+		effect = {
+			country_event = Surverian_Wedding
+		}
+	}
+
+	Survalsia_Survian_Union = {
+		icon = mission_empire
+		generic = no
+		position = 3
+
+		required_missions = {
+			Survalsia_Overpower_Surveria
+		}
+
+		provinces_to_highlight = {
+
+		}
+		
+		trigger = {
+			owns_core_province = 2343
+			owns_core_province = 2381
+		}
+
+		effect = {
+			change_tag = F00
+			set_government_rank = 3
+			add_legitimacy = 100
+		}
+	}
+}
+
