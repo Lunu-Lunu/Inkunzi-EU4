@@ -13,3 +13,4 @@ trade_goods = cloth
 capital = "Mot'mi"
 is_city = yes
 discovered_by = western
+center_of_trade = 1
