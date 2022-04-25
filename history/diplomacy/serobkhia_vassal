@@ -1,0 +1,7 @@
+# 
+vassal = {
+	first = B29
+	second = B30
+	start_date = 1444.11.11
+	end_date = 1821.1.1
+}
