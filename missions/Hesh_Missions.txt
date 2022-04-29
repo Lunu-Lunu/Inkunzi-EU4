@@ -207,18 +207,18 @@ hesh_missions_2 = {
 		}
 	}
 	
-	hesh_mission_repel_the_imperialists = {
+	hesh_mission_burn_the_colonies	= {
 		icon = mission_build_up_to_force_limit
-		required_missions = { hesh_mission_beyond_the_yawn }
-		position = 8
+		required_missions = { beyond_the_yawn }
+		position = 9
 		trigger = {
-			
+			OR = {
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+			}
 		}
 		effect = {
-			ROOT = {
-				add_army_tradition = 20
-				add_prestige = 20
-			}
+			add_prestige = 50
 		}
 	}
 }
@@ -422,7 +422,7 @@ hesh_missions_3 = {
 	hesh_mission_invade_scotar = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { hesh_mission_boats_of_pitch }
-		position = 7
+		position = 8
 		trigger = {
 			B62 = {
 				any_core_province = {
@@ -641,7 +641,7 @@ hesh_missions_4 = {
 	hesh_mission_the_east_advances = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { hesh_mission_control_the_maw }
-		position = 7
+		position = 8
 		trigger = {
 			OR = {
 				B63 = {
