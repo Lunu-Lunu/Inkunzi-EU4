@@ -143,7 +143,7 @@ Survalsia_Collom_2 = {
 				every_owned_province = {
 				  add_claim = ROOT
 				}
-			  }
+			}
 		}
 	}
 }
@@ -307,7 +307,7 @@ Survalsia_Collom_1 = {
 		}
 
 		effect = {
-			merchantilism = 2
+			add_mercantilism = 2
 			add_treasury = 100
 		}
 	}
@@ -402,11 +402,10 @@ Survalsia_Collom_3 = {
 			}
 			add_merchantilism = 2
 			define_general = {
-				tradition = 50
-				add_fire = 3
-				add_shock = 4
-				add_maneuver = 2
-				add_siege = 1
+				fire = 3
+				shock = 4
+				maneuver = 2
+				siege = 1
 				name = Cortas_la_Essonus
 				female = no
 				trait = ruthless
@@ -474,7 +473,7 @@ Survalsia_Collom_3 = {
 		}
 
 		effect = {
-			country_event = deal_with_the_colonies
+			country_event = { id = survalsia.5 }
 		}
 	}
 }
@@ -495,11 +494,9 @@ Survalsia_Collom_4 = {
 		position = 1
 
 		required_missions = {
-
 		}
 		
 		provinces_to_highlight = {
-
 		}
 
 		trigger = {
@@ -618,7 +615,7 @@ Survalsia_Collom_5 = {
 		}
 
 		effect = {
-			country_event = Surverian_Wedding
+			country_event = { id = survalsia.6 }
 		}
 	}
 
