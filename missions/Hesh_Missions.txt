@@ -199,7 +199,7 @@ hesh_missions_2 = {
 				limit = {
 					technology_group = western
 				}
-				set_country_flag = colony_detected
+				set_country_flag = colony
 				every_owned_province = {
 					add_claim = ROOT
 				}

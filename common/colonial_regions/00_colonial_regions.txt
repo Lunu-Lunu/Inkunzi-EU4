@@ -87,3 +87,64 @@ Colonial_Haifha = {
 		}
 	}
 }
+Colonial_Seesonzeroa = {
+	Provinces = {
+		3071 3072 3073 3074 3075 3076 3077 3078 3079 3080 3081 3082 3083 3084 3085 3086 3087 3088 3089 3090 3091 3092 3093 3094 3095 3096 3097 3098 3099 3100 3101 3102 3103 3104 3105 3106 3107 3108 3109 3110 3111 3112 3113 3114 3115 3116 3117 3118 3119 3120 3121 3122 3147 3148 3149 3150 3151 3152
+	}
+	color = { 140 30 60 }
+	names = {
+		name = "COLONIAL_SEESONZEROA_Seesonzeroa"
+	}
+	names = {
+		name = "Diorex Kindraiga"
+		trigger = { 
+			OR = {
+				tag = B27
+				tag = B28
+				tag = B33
+				tag = B35
+				tag = B37
+			}
+		}
+		name = "Niwian"
+		trigger = {
+			tag = B21
+		}
+	}
+}
+Colonial_Morland = {
+	Provinces = {
+		3123 3124 3125 3126 3127 3128 3129 3130 3131 3132 3133 3134 3135 3136 3137 3138 3139 3140 3141 3142 3143 3144 3145 3146 3153 3154 3155 3156 3157 3158 3159 3160 3161 3162 3163 3164 3165 3166 3168 3181 3182 3183 3184 3185 3186 3187 3188 3189 3190 3191 3194 3195 3196 3197 3199 3200 3204 3205 3206 3207 3208 3209 3210 3211 3222 3223 3224 3225 3226 3227 3228 3229 3230 3231 3232 3233
+	}
+	color = { 80 40 30 }
+	names = {
+		name = "COLONIAL_MORLAND_Morland"
+	}
+	names = {
+		name = "New Ozarkhia"
+		trigger = { 
+			tag = B39
+		}
+		name = "Gial-Werdas"
+		trigger = {
+			tag = B27
+		}
+		name = "Feltistan"
+		trigger = {
+			tag = A70
+		}
+		name = "Al-Juzur"
+		trigger = {
+			OR = {
+				tag = A31
+				tag = A32
+				tag = A33
+				tag = A34
+				tag = A35
+				tag = A36
+				tag = A37
+				tag = A39
+			}
+		}
+	}
+}
