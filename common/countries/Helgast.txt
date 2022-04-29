@@ -33,11 +33,29 @@ historical_units = {
 }
 
 leader_names = {
-	Gigenshtain
+	Cachimb
+	Shipsa
+	Iqios
+	Maltoro
+	Methanor
+	Acidux
+	Cocainux Maximus
+	Maxroom
+	Gantsa
+	Chiri Piti
 }
 
 monarch_names = {
-	"Gigenshtain #0" = 0
+	"Methanor #0" = 0
+	"Acidux #0" = 0
+	"Cocainux Maximus #0" =0
+	"Maxroom #0" = 0
+	"Gantsa #0" = 0
+	"Chiri Piti #0" = 0
+	"Cachimb #0" = 0
+	"Shipsa #0" = 0
+	"Iqios #0" = 0
+	"Maltoro #0" = 0
 
-	"FEMALE Gigenshtain #0" = -1
+	"FEMALE Gigenshtain #0" = -10
 }
