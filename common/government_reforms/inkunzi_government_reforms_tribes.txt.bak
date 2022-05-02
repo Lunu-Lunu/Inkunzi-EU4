@@ -56,7 +56,7 @@ yeulan_sortition = {
 }
 entdom = { #big sad no special regiment modding, perhaps we'll try again in ent estates
 	icon = "crown"
-    allow_migration = yes
+    	allow_migration = yes
 	native_mechanic = yes
 	royal_marriage = no
     potential = {

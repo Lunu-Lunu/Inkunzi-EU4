@@ -1,8 +1,5 @@
 # Placeholder
 
-owner = B96
-controller = B96
-add_core = B96
 culture = ent
 religion = tribal_faith
 hre = no
