@@ -1,14 +1,15 @@
 # Placeholder
 
+owner = G07
+controller = G07
+add_core = G07
 culture = sarza
 religion = tribal_faith
-native_size = 1
-native_ferocity = 8
-native_hostileness = 8
+hre = no
 base_tax = 1 
 base_production = 1
 base_manpower = 1
 trade_goods = unknown
 capital = "Placeholder"
-is_city = no
+is_city = yes
 discovered_by = mesoamerican
