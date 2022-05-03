@@ -1,1 +1,42 @@
 #
+
+seesonzero_ideas = { # Seesonzero Ideas
+    start = {
+        global_unrest = -2
+        land_forcelimit_modifier = 0.15
+    }
+    bonus = {
+        global_tax_modifier = 0.2
+    }
+
+    trigger = {
+        culture_group = seesonzero_group
+    }
+    free = yes
+
+    seesonzero_the_cowpal_prerogative = {
+		ae_impact = -0.05
+		years_of_nationalism = -5
+    }
+    seesonzero_entertaining_radicals = {
+        advisor_pool = 1
+        land_morale = 0.1
+    }
+    seesonzero_old_blood = {
+        nobles_loyalty_modifier = 0.1
+        nobles_influence_modifier = 0.05
+    }
+    seesonzero_o_cowpal = {
+        monthly_splendor = 2
+    }
+    seesonzero_to_rebuild = {
+        build_cost = -0.1
+    }
+    seesonzero_cowpal_protectionism = {
+        embargo_efficiency = 0.5
+        global_own_trade_power = 0.15
+    }
+    seesonzero_outward_once_more = {
+        global_colonial_growth = 20
+    }
+}
