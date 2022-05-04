@@ -54,23 +54,3 @@ yeulan_sortition = {
 		lottery_election = yes
 	}
 }
-entdom = { #big sad no special regiment modding, perhaps we'll try again in ent estates
-	icon = "crown"
-    allow_migration = yes
-	native_mechanic = yes
-	royal_marriage = no
-    potential = {
-		OR = {
-			AND = {
-				culture = ent
-				religion = tribal_faith
-			}
-			has_had_reform = entdom
-			has_reform = entdom
-		}
-    }	
-    modifiers = {
-		max_absolutism = 20
-		global_unrest = -2
-    }
-}

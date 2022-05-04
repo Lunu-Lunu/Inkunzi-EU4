@@ -1,6 +1,8 @@
 # Placeholder
 
-tribal_owner = B94
+owner = B94
+controller = B94
+add_core = B94
 culture = ent
 religion = tribal_faith
 hre = no

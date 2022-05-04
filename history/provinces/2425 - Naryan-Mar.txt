@@ -9,7 +9,6 @@ hre = no
 base_tax = 7 
 base_production = 5
 base_manpower = 5
-fort_15th = yes
 trade_goods = spices
 capital = "Placeholder"
 is_city = yes

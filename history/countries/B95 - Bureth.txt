@@ -1,20 +1,21 @@
-government = native
-add_government_reform = entdom
-government
+government = tribal
+add_government_reform = tribal_despotism
 government_rank = 1
 mercantilism = 10
 technology_group = mesoamerican
 religion = tribal_faith
 primary_culture = ent
-capital = 3568
+capital = 2637
 set_country_flag = primary_ent_nation
 
 1444.11.11 = {
 	monarch = {
-		name = "Native Council"
-		adm = 3
-		dip = 3
-		mil = 3
+		name = "Place"
+		dynasty = "Holder"
+		adm = 2
+		dip = 2
+		mil = 2
+		birth_date = 1424.11.11
 		regent = yes
 	}
 }
