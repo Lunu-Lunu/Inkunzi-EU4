@@ -5,7 +5,7 @@ mercantilism = 10
 technology_group = mesoamerican
 religion = tribal_faith
 primary_culture = kurio
-capital = 3061
+capital = 3021
 set_country_flag = primary_goat_nation
 
 1444.11.11 = {

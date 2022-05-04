@@ -37,7 +37,24 @@ leader_names = {
 }
 
 monarch_names = {
-	"Gigenshtain #0" = 0
+	"Kameka #0" = 20
+	"Tapu #0" = 20
+	"Hokopo #0" = 20
+	"'O Naauao #0" = 20
+	"U'ilani #0" = 20
+	"Okalifui #0" = 20
+	"Kai #0" = 20
+	"Kei #0" = 20
+	"Manakeah #0" = 20
+	"Nia'o #0" = 20
 
-	"FEMALE Gigenshtain #0" = -1
+	"Tapu #0" = -1
+	"Malia #0" = -1
+	"Tala #0" = -1
+	"Kihapoa #0" = -1
+	"Nani #0" = -1
+	"Haukea #0" = -1
+	"Lilo #0" = -1
+	"Ka'iulani #0" = -1
+	"Ainahau #0" = -1
 }

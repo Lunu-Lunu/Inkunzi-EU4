@@ -1,0 +1,18 @@
+kurio_kahunate = {
+	icon = "native_clan_council_reform"
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	legacy_equivalent = clan_council_legacy
+	lock_level_when_selected = yes
+	potential = {
+		OR = {
+			culture_group = goatman_group
+			has_reform = kurio_kahunate
+			has_had_reform = kurio_kahunate
+		}
+	}
+	modifiers = {
+		advisor_pool = 1
+		same_culture_advisor_cost = -0.15
+	}
+}

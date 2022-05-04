@@ -1,0 +1,20 @@
+gov_kurio_kahunate = {
+	rank = {
+		1 = KAHUNATE
+		2 = KAHUNATE
+		3 = KAHUNATE
+	}
+	ruler_male = {
+		1 = KAHUNA
+		2 = KAHUNA
+		3 = KAHUNA
+	}
+	ruler_female = {
+		1 = KAHUNA
+		2 = KAHUNA
+		3 = KAHUNA
+	}
+	trigger = {
+		has_reform = kurio_kahunate
+	}
+}

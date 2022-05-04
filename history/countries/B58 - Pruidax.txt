@@ -1,11 +1,11 @@
-government = tribal
-add_government_reform = tribal_despotism
+government = native
+add_government_reform = kurio_kahunate
 government_rank = 1
 mercantilism = 10
 technology_group = mesoamerican
 religion = tribal_faith
 primary_culture = kurio
-capital = 2637
+capital = 3067
 set_country_flag = primary_goat_nation
 
 1444.11.11 = {

@@ -1879,10 +1879,10 @@ goatman_group = {
 		primary = B57
 
 		male_names = {
-			Placeholder
+			Kameka Tapu Hokopo "'O Naauao" "U'ilani" Okalifui Kai Kei Manakeah "Nia'o"
 		}
 		female_names = {
-			Placeholder
+			Tapu Malia Tala Kihapoa Nani Haukea Lilo "Ka'iulani" Ainahau
 		}
 		dynasty_names = {
 			"Placeholder"

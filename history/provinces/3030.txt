@@ -12,3 +12,4 @@ trade_goods = unknown
 capital = "Placeholder"
 is_city = no
 discovered_by = mesoamerican
+tribal_owner = G39

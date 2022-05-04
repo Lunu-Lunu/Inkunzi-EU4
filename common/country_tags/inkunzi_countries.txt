@@ -231,6 +231,12 @@ G31 = "countries/AddedApe21.txt"
 G32 = "countries/AddedApe22.txt"
 G33 = "countries/AddedApe23.txt"
 G34 = "countries/AddedApe24.txt"
+G35 = "countries/AddedGoat1.txt"
+G36 = "countries/AddedGoat2.txt"
+G37 = "countries/AddedGoat3.txt"
+G38 = "countries/AddedGoat4.txt"
+G39 = "countries/AddedGoat5.txt"
+G40 = "countries/AddedGoat6.txt"
 
 ### Spawnables ###
 R00 = "countries/Leminska.txt"
