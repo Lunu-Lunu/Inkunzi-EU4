@@ -327,7 +327,42 @@ country_event = {
 				mutual = no
 			}
 		}
+	}
+}
+
+country_event = {
+	id = zuntlan.6
+	title = zuntlan.6.t
+	desc = zuntlan.6.d
+	fire_only_once = yes
+	picture = TRADEGOODS_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = zuntlan.6.a
+		add_adm_power = -50
+		add_accepted_culture = outer_rekolian
+	}
+	option = {
+		name = zuntlan.6.b
+		add_stability = -1 
+		B16 = {
+			every_owned_province = {
+				limit = {
+					culture = outer_rekolian
+				}
+				add_province_modifier = {
+                name = lizard_sinicization
+                duration = 18250 #50 years
+                }
+			}
+		}		
+	}
+	option = {
+		name = zuntlan.6.c
+		
 	}	
+}		
 }
 
 
