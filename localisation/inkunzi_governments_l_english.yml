@@ -12,3 +12,7 @@
   kurio_kahunate_desc:0 "The Goatmen, typically referred to as Kurios, center their politics around councils of respected community figures known as Kahunas."
   KAHUNA:0 "Kahuna"
   KAHUNATE:0 "Kahunate"
+  wandering_hive:0 "Wandering Hive"
+  wandering_hive_desc:0 "The Karaxian Hesh are unique among their race. Unlike their brethren across the sea, they have adopted the migratory practices of the Kurio into their culture and, as such, are known as the Wandering Hive to the rest of their race."
+  TYRANT:0 "Tyrant"
+  HIVE:0 "Hive"

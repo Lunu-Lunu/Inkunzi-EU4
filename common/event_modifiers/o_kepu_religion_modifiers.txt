@@ -1,0 +1,20 @@
+o_kepu_reform1_modifier = {
+	religion = yes
+	global_unrest = -1
+}
+o_kepu_reform2_modifier = {
+	religion = yes
+	global_unrest = -1
+}
+o_kepu_reform3_modifier = {
+	religion = yes
+	global_unrest = -1
+}
+o_kepu_reform4_modifier = {
+	religion = yes
+	global_unrest = -1
+}
+o_kepu_reform5_modifier = {
+	religion = yes
+	global_unrest = -1
+}

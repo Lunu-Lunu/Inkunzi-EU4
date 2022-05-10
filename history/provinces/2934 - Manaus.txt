@@ -1,14 +1,15 @@
 # Placeholder
 
+owner = G60
+controller = G60
+add_core = G60
 culture = skungic
 religion = blightbringer
-native_size = 1
-native_ferocity = 6
-native_hostileness = 10
+hre = no
 base_tax = 1 
 base_production = 1
 base_manpower = 1
 trade_goods = unknown
 capital = "Placeholder"
-is_city = no
+is_city = yes
 discovered_by = mesoamerican

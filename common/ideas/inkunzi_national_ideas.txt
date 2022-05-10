@@ -1,5 +1,48 @@
 #
 
+A01_ideas = { # Fort Federation Ideas
+	start = {
+		defensiveness = 0.2
+		garrison_size = 0.33
+	}
+	bonus = {
+		stability_cost_modifier = -0.15
+	}
+
+	trigger = {
+		tag = A01
+	}
+	free = yes
+
+	A01_fort_designs = {
+		fort_maintenance_modifier = -0.33
+	}
+	A01_plentiful_garrisons = {
+		manpower_recovery_speed = 0.1
+		global_garrison_growth = 0.25
+	}
+	A01_fortly_innovation = {
+		innovativeness_gain = 0.5
+		technology_cost = -0.05
+	}
+	A01_the_ancient_forts = {
+		prestige_decay = -0.01
+		diplomatic_reputation = 1
+	}
+	A01_hostile_lands = {
+		hostile_attrition = 1
+		enemy_core_creation = 0.5
+	}
+	A01_fortly_tolerance = {
+		num_accepted_cultures = 1
+		tolerance_heretic = 1
+		tolerance_heathen = 1
+	}
+	A01_fortly_unity = {
+		all_estate_loyalty_equilibrium = 0.05
+	}
+}
+
 A02_ideas = { # Stendari Ideas
     start = {
         legitimacy = 0.5
@@ -157,6 +200,47 @@ A43_ideas = { # Xuaze Ideas
 	}
 }
 
+A65_ideas = { #Helghan Ideas
+	start = {
+		land_morale = 0.15
+		may_perform_slave_raid_on_same_religion = yes
+	}
+	bonus = {
+		stability_cost_modifier = -0.2
+	}
+
+	trigger = {
+		tag = A65
+	}
+	free = yes
+
+	A65_Helghan_Mariners= {
+		allowed_marine_fraction = 0.15
+		global_sailors_modifier = 0.15
+	}
+	A65_Blood_Lust_Culture = {
+		infantry_power = 0.15
+	}
+	A65_Helghan_Supremacy= {
+		culture_conversion_cost = -0.15
+	}
+	A65_Development_of_Helghast = {
+		development_cost = -0.15
+	}
+	A65_Eternal_Nation = {
+		enemy_core_creation = 0.5
+		global_autonomy = -0.05
+	}
+	A65_Absolute_Rule = {
+		yearly_absolutism = 0.5
+		max_absolutism = 5
+	}
+	A65_Dragon_Riders = {
+		fire_damage = 0.10
+		cavalry_power = 0.10
+	}
+}
+
 B21_ideas = { # Melkhian Ideas
 	start = {
 		leader_naval_fire = 1
@@ -201,46 +285,89 @@ B21_ideas = { # Melkhian Ideas
 	}
 }
 
-A01_ideas = { # Fort Federation Ideas
+B31_ideas = { # Heplin Ideas
 	start = {
-		defensiveness = 0.2
-		garrison_size = 0.33
+		infantry_cost = -0.15
+		land_forcelimit_modifier = 0.15
 	}
 	bonus = {
-		stability_cost_modifier = -0.15
+		vassal_income = 0.33
 	}
 
 	trigger = {
-		tag = A01
+		tag = B31
 	}
 	free = yes
 
-	A01_fort_designs = {
-		fort_maintenance_modifier = -0.33
+	B31_harnean_trade = {
+		trade_efficiency = 0.15
 	}
-	A01_plentiful_garrisons = {
-		manpower_recovery_speed = 0.1
-		global_garrison_growth = 0.25
+	B31_heplin_tactical_studies = {
+		army_tradition_decay = -0.005
+		land_leader_manuever = 1
 	}
-	A01_fortly_innovation = {
-		innovativeness_gain = 0.5
-		technology_cost = -0.05
-	}
-	A01_the_ancient_forts = {
-		prestige_decay = -0.01
-		diplomatic_reputation = 1
-	}
-	A01_hostile_lands = {
-		hostile_attrition = 1
-		enemy_core_creation = 0.5
-	}
-	A01_fortly_tolerance = {
-		num_accepted_cultures = 1
-		tolerance_heretic = 1
+	B31_nominal_adherent = {
+		tolerance_heretic = 2
 		tolerance_heathen = 1
 	}
-	A01_fortly_unity = {
-		all_estate_loyalty_equilibrium = 0.05
+	B31_the_epithesikyklos = {
+		shock_damage = 0.05
+		shock_damage_received = -0.05
+	}
+	B31_reclaiming_what_is_lost = {
+		core_creation = -0.1
+	}
+	B31_legacy_of_raikinisk = {
+		accept_vassalization_reasons = 10
+	}
+	B31_the_goblin_menace = {
+		goblins_loyalty_modifier = -0.1
+		goblins_influence_modifier = -0.3
+		dwarves_loyalty_modifier = 0.1
+		humans_loyalty_modifier = 0.1
+		crabs_loyalty_modifier = 0.05
+		golems_loyalty_modifier = 0.05
+	}
+}
+
+B45_ideas = { #Noguttvu Ideas
+	start = {
+		naval_forcelimit_modifier = 0.33
+		defensiveness = 0.20
+	}
+	bonus = {
+		build_time = -0.20
+	}
+
+	trigger = {
+		tag = B45
+	}
+	free = yes
+
+	B45_bastion_of_kings = {
+		legitimacy = 1
+	}
+	B45_noguttvu_buerocracy = {
+		core_creation = -0.15
+		governing_capacity_modifier = 0.1
+	}
+	B45_dwarven_exploration_spirit = {
+		may_explore = yes
+		range = 0.2
+	}
+	B45_mining_infrastructure = {
+		production_efficiency = 0.1
+	}
+	B45_high_taxes = {
+		global_tax_modifier = 0.20
+		global_unrest = 1
+	}
+	B45_defender_of_tunnu = {
+		land_morale = 0.10
+	}
+	B45_dwarven_nationalism = {
+		culture_conversion_cost = -0.25
+		same_culture_advisor_cost = -0.25
 	}
 }
 
@@ -450,85 +577,5 @@ B51_ideas = { # Harlan Ideas
 	}
 	B51_harlan_industry = {
 		global_prov_trade_power_modifier = 0.15
-	}
-}
-B45_ideas = { #Noguttvu Ideas
-	start = {
-		naval_forcelimit_modifier = 0.33
-		defensiveness = 0.20
-	}
-	bonus = {
-		build_time = -0.20
-	}
-
-	trigger = {
-		tag = B45
-	}
-	free = yes
-
-	B45_bastion_of_kings = {
-		legitimacy = 1
-	}
-	B45_noguttvu_buerocracy = {
-		core_creation = -0.15
-		governing_capacity_modifier = 0.1
-	}
-	B45_dwarven_exploration_spirit = {
-		may_explore = yes
-		range = 0.2
-	}
-	B45_mining_infrastructure = {
-		production_efficiency = 0.1
-	}
-	B45_high_taxes = {
-		global_tax_modifier = 0.20
-		global_unrest = 1
-	}
-	B45_defender_of_tunnu = {
-		land_morale = 0.10
-	}
-	B45_dwarven_nationalism = {
-		culture_conversion_cost = -0.25
-		same_culture_advisor_cost = -0.25
-	}
-}
-A65_ideas = { #Helghan Ideas
-	start = {
-		land_morale = 0.15
-		may_perform_slave_raid_on_same_religion = yes
-	}
-	bonus = {
-		stability_cost_modifier = -0.2
-	}
-
-	trigger = {
-		tag = A65
-	}
-	free = yes
-
-	A65_Helghan_Mariners= {
-		allowed_marine_fraction = 0.15
-		global_sailors_modifier = 0.15
-	}
-	A65_Blood_Lust_Culture = {
-		infantry_power = 0.15
-	}
-	A65_Helghan_Supremacy= {
-		culture_conversion_cost = -0.15
-	}
-	A65_Development_of_Helghast = {
-		development_cost = -0.15
-	}
-	A65_Eternal_Nation = {
-		enemy_core_creation = 0.5
-		global_autonomy = -0.05
-	}
-	A65_Absolute_Rule = {
-		yearly_absolutism = 0.5
-		max_absolutism = 5
-	}
-	A65_Dragon_Riders = {
-		fire_damage = 0.10
-		cavalry_power = 0.10
 	}
 }

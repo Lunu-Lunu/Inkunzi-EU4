@@ -131,3 +131,49 @@ sarzan_ideas = { # Snake Ideas
         global_autonomy = -0.05
     }
 }
+
+#roden_ideas = { # Roden Ideas
+#    start = {
+#        
+#        
+#        
+#    }
+#    bonus = {
+#        
+#    }
+#
+#    trigger = {
+#        culture = roden
+#    }
+#    free = yes
+#
+#    roden_ = {
+#        
+#    }
+#    roden_ = {
+#        
+#    }
+#    roden_ = {
+#        
+#    }
+#    roden_claiming_rodenvikk = {
+#        colonists = 1
+#        colonist_placement_chance = 0.05
+#    }
+#    roden_ = {
+#        
+#    }
+#    roden_ = {
+#        
+#        
+#        
+#        
+#        
+#        
+#        
+#        
+#    }
+#    roden_purge_of_the_scotar = {
+#        culture_conversion_cost = -0.2
+#    }
+#}

@@ -1,0 +1,40 @@
+# Do not change tags in here without changing every other reference to them.
+# Do not change tags in here without changing every other reference to them.
+# If adding new groups or ideas, make sure they are unique.
+
+# ai_will do does not actually determine weighting, but AI will not pick an idea with ai_will_do = 0
+# ROOT = country picking the idea
+# groups set to colonial=yes will be higher prioritized by the AI when spending power
+
+#o_kepu_reforms = {
+#	trigger = {
+#		religion = o_kepu
+#	}	
+#
+#	can_buy_idea = {
+#		is_at_war = no
+#		NOT = { num_of_rebel_controlled_provinces = 1 }
+#		stability = 1
+#		authority = 100
+#	}
+#	
+#	o_kepu_reform_1 = {
+#		global_unrest = -1
+#	}
+#	o_kepu_reform_2 = {
+#		global_unrest = -1
+#	}
+#	o_kepu_reform_3 = {
+#		global_unrest = -1
+#	}
+#	o_kepu_reform_4 = {
+#		global_unrest = -1
+#	}
+#	o_kepu_reform_5 = {
+#		global_unrest = -1
+#	}	
+#	
+#	ai_will_do = {
+#		factor = 1
+#	}
+#}

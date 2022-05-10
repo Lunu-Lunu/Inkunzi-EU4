@@ -110,7 +110,10 @@ promoted_races_recalc = {
 	}
 	if = {
 		limit = {
-			accepted_culture = tunnu
+			OR = {
+				accepted_culture = tunnu
+				accepted_culture = heplin
+			}
 		}
 		set_country_flag = dwarves_accepted
 	}
@@ -277,7 +280,10 @@ primary_race_recalc = {
 	}
 	if = {
 		limit = {
-			culture_group = dwarven_group
+			OR = {
+				culture_group = dwarven_group
+				culture_group = heplin_group
+			}
 		}
 		set_country_flag = primary_dwarf_nation
 	}

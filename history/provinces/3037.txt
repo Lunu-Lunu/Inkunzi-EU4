@@ -1,7 +1,7 @@
 # Placeholder
 
 culture = kurio
-religion = tribal_faith
+religion = o_kepu
 native_size = 1
 native_ferocity = 6
 native_hostileness = 4
@@ -12,3 +12,4 @@ trade_goods = unknown
 capital = "Placeholder"
 is_city = no
 discovered_by = mesoamerican
+tribal_owner = G41
