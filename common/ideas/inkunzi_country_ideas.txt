@@ -579,3 +579,45 @@ B51_ideas = { # Harlan Ideas
 		global_prov_trade_power_modifier = 0.15
 	}
 }
+
+B53_ideas = { # Skungic Ideas
+    start = {
+        land_attrition = -0.1
+        global_missionary_strength = 0.02
+    }
+    bonus = {
+        colonists = 1
+        colonist_placement_chance = 0.05
+    }
+
+    trigger = {
+        tag = B53
+    }
+    free = yes
+
+    B53_friends_across_the_pond = {
+        frogs_loyalty_modifier = 0.05
+        trade_efficiency = 0.1
+    }
+    B53_maritime_heritage = {
+        global_ship_cost = -0.05
+        navy_tradition = 0.5
+    }
+    B53_blightbringer_syncretism = {
+        enforce_religion_cost = -0.25
+        hostile_attrition = 1
+    }
+    B53_repairing_ratkin_reputation = {
+        diplomatic_reputation = 1
+    }
+    B53_yeulan_architectural_integration = {
+        frogs_influence_modifier = 0.05
+        build_cost = -0.1
+    }
+    B53_naval_dominance = {
+        naval_morale = 0.2
+    }
+    B53_sahyvarian_adherents = {
+        manpower_in_true_faith_provinces = 0.1
+    }
+}

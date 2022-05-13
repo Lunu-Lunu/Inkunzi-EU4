@@ -21,6 +21,23 @@ estate_frogs = {
 		is_nomad = no
 		NOT = { has_reform = revolutionary_empire_reform }
 	}
+	custom_name = {
+		desc = estate_frogmen
+		trigger = {
+			NOT = {
+				OR = {
+					culture_group = ervaric_group
+					culture_group = ratkin_group
+					culture_group = goatman_group
+					culture_group = seesonzero_group
+					culture_group = hesh_group
+					culture_group = snake_group
+					culture_group = ape_group
+					culture_group = ent_group
+				}
+			}
+		}
+	}
 
 	# These scale with loyalty & power
 	country_modifier_happy = {
