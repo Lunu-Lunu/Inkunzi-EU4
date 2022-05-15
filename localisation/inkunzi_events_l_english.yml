@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
  arslan.1.t:0 "Khotun Arslan's Coup"
  arslan.1.desc:0 "holy crap lois it's a coup!!"
  arslan.1.a:0 "Khotun is now Khan!"
@@ -50,3 +50,14 @@
  zuntlan.5.d:0 "An uptick is piracy have been occuring on our seas, but these pirates do not attack our ships or ports. They have just been targeting our neighbours, when we requested an audiance with these marauder they tell us the reign from our province of thixi and crabia"
  zuntlan.5.a:0 "They got spirit, we'll fiance them, but get them to stop raiding our neighbours"
  zuntlan.5.b:0 " They are led by a brilliant Capitan, we'll offer to hire him"
+ oldones.1.t:0 "Unloyal Scandle"
+ oldones.1.d:0 "A prominent political official has been caught trying to bribe priests to approve his divorce. What should we do with him."
+ oldones.1.a:0 "Execute him!"
+ oldones.1.b:0 "Turn a blind eye"
+ oldones.2.t:0 "Our temples captured"
+ oldones.2.d:0 "The heretics have captured our holy temple city! We have to fight back this is ridiculous!"
+ oldones.2.a:0 "We will find revenge"
+ oldones.3.t:0 "Chahtzoacl Temple City"
+ oldones.3.d:0 "We have landed in essuria and founded the city of Chahtzoacl. Now we can turn this into one of our temple cities. It will be expensive tohugh"
+ oldones.3.a:0 "Get started in construction"
+ oldones.3.b:0 "Too expensive!"

@@ -171,23 +171,23 @@ alvonian_group = {
 
 
 		male_names = {
-			Placeholder
+			Aksukko Proskok Aldimir Vristof Taltesandrs Oras Orjam Kãnis Kronius Haniel Nednirs Edítius Eiz Pelias Beriks Teugenius Gobriel Gobrielius Noda Tenrik Tenrikius Ingune Ingunius Han Tveta
 		}
 		female_names = {
-			Placeholder
+			Atamas Ognese Ondra Talia Taiva Trãrta Gobriele Hertrude Hintaidus Hirts Treta Tenrike Ova Ona Ota Onga Onta Inguna Orene Hana
 		}
 		dynasty_names = {
-			"Placeholder"
+			"Obols" "Ondruletz" "Onvult" "Atronpovs" "Opse" "Hans" "Nednirs" "Eizen" "Haniels" "Trelmanis" "Jãnite" "Tumãrs" "Truris" "Maininš" "Mononovs" "Trievs" "Trievis"
 		}
 	}
 	male_names = {
-		Placeholder
+		Aksukko Proskok Aldimir Vristof Taltesandrs Oras Orjam Kãnis Kronius Haniel Nednirs Edítius Eiz Pelias Beriks Teugenius Gobriel Gobrielius Noda Tenrik Tenrikius Ingune Ingunius Han Tveta
 	}
 	female_names = {
-		Placeholder
+		Atamas Ognese Ondra Talia Taiva Trãrta Gobriele Hertrude Hintaidus Hirts Treta Tenrike Ova Ona Ota Onga Onta Inguna Orene Hana
 	}
 	dynasty_names = {
-		"Placeholder"
+		"Obols" "Ondruletz" "Onvult" "Atronpovs" "Opse" "Hans" "Nednirs" "Eizen" "Haniels" "Trelmanis" "Jãnite" "Tumãrs" "Truris" "Maininš" "Mononovs" "Trievs" "Trievis"
 	}
 }
 celtaidd_group = {

@@ -1,0 +1,91 @@
+###############################################
+#written by dumb ass monkey super cow lmao#
+###############################################
+
+namespace = old_ones
+
+
+
+#divorce :flushed:
+country_event = {
+	id = oldones.1
+	title = oldones.1.t
+	desc = oldones.1.d
+	picture = TRADEGOODS_eventPicture
+	is_triggered_only = yes
+	trigger = {
+		religion = old_ones
+	}
+	immediate = {
+		log = "Root.GetName: Event oldones.1.1"
+	}
+	option = {
+		name = oldones.1.a
+		ai_chance = { factor = 90 }
+		add_legitimacy = 10
+		add_presitge = -20
+	}
+	option = {
+		name = oldones.1.b
+		ai_chance = { factor = 10 }
+		add_stability = -1
+		add_prestige = 20
+	}
+}
+
+#Heretics own shit
+country_event = {
+	id = oldones.2
+	title = oldones.2.t
+	desc = oldones.2.d
+	picture = TRADEGOODS_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		NOT = {
+			religion = old_ones
+		}
+		every_province = has_province_modifier = great_temple_city
+	}
+	immediate = {
+		log = "Root.GetName: Event oldones.2.2"
+	}
+	option = {
+		name = oldones.2.a
+		ai_chance = { factor = 100 }
+		add_stabiliy = -1
+		add_presitge = -20
+	}
+}
+
+#Chatzoacl Temple
+province_event = {
+	id = oldones.3
+	title = oldones.3.t
+	desc = oldones.3.d
+	province = 3629
+	picture = TRADEGOODS_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		tag = B16
+		country_or_non_sovereign_subject_holds = 3629
+	}
+	immediate = {
+		log = "Root.GetName: Event oldones.3.3"
+	}
+	option = {
+		name = oldones.3.a
+		ai_chance = { factor = 60 }
+		add_treasury = -250
+		add_base_tax = 2
+		add_base_production = 1
+		add_base_manpower = 1
+		add_province_modifier = great_temple_city
+	}
+	option = {
+		name = oldones.3.b
+		ai_chance = { factor = 40 }
+		add_prestige = -20
+	}
+}
