@@ -450,7 +450,11 @@ Zuntlan_Collom_2 = {
 			}
              
 			effect = {
-				#future event for rekolia next pull probablly
+				country_event  = {
+					id = thixi.1
+					days = 30
+					random = 15
+				}
 				surveria10_area = {
 					add_permanent_claim = ROOT
 				}
@@ -484,7 +488,11 @@ Zuntlan_Collom_2 = {
 			surveria11_area = {
 				add_permanent_claim = ROOT
 			}
-			#abother event latter
+			country_event  = {
+				id = zuntlan.6
+				days = 30
+				random = 15
+			}
 		}
 	}
 	
