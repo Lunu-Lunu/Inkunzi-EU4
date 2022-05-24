@@ -1,8 +1,7 @@
 great_temple_city = {
 	local_development_cost = -0.1
-	local_missionary_strength = -0.5
-	institution_growth = 0.25
+	local_missionary_strength = -0.05
+	local_tax_modifier = 0.25
 	local_unrest = -1
 	local_missionary_maintenance_cost = 1
-	local_religious_conversion_resistance
 }
