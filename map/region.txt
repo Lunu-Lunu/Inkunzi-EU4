@@ -47,24 +47,6 @@ Sternhell_region = {
 	}
 
 }
-Rekolia_region = {  #placeholder till later, just let me know when we have new ones
-	
-	areas = {
-		rekolia1_area
-		rekolia2_area
-		rekolia3_area
-		rekolia4_area
-		rekolia5_area
-		rekolia6_area
-		rekolia7_area
-		rekolia8_area
-		rekolia9_area
-		rekolia10_area
-		rekolia11_area
-		rekolia12_area
-		rekolia13_area		
-	}
-}
 #scandinavia_region = {
 #	areas = {
 #		svealand_area
