@@ -10,8 +10,8 @@ set_country_flag = primary_human_nation
 
 1444.11.11 = {
 	monarch = {
-		name = "	Kānis"
-		dynasty = "Kolziņš"
+		name = "Kanis"
+		dynasty = "Kolzins"
 		adm = 3
 		dip = 0
 		mil = 0
