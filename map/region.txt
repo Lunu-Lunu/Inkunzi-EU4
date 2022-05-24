@@ -249,20 +249,126 @@ new_world_placeholder_region = { # why did i not just do this sooner lmao
 		nunu_area
 		ogu_gonga_area
 		ogu_gonga2_area
+		ents_area
+		ents2_area
+		ents3_area
+		ents4_area
+		ents5_area
+		ents6_area
+		ents7_area
+		ents8_area
+		ents9_area
+		ents10_area
+		ents11_area
+		ents12_area
+		ents13_area
+		ents14_area
+		ents15_area
+		ents16_area
+		ents17_area
+		ents18_area
+		ents19_area
+		ents20_area
+		ents20_area
+		ents21_area
+		ents22_area
+		ents23_area
+		ents24_area
+		ents25_area
+		ents26_area
+		ents27_area
+		ents28_area
+		ents29_area
+		ents30_area
+		ents31_area
+		ents32_area
+		ents33_area
+		ents34_area
+		ents35_area
+		ents36_area
+		ents37_area
+		ents38_area
+		ents39_area
+		ents40_area
+		ents41_area
+		ents42_area
+		ents43_area
+		ents44_area
+		ents45_area
+		ents46_area
+		ents47_area
+		ents48_area
+		ents49_area
+		ents50_area
+		bureth_area
+		kokern_area
+		enibus_area
+		cleveracorn_area
+		cleveracorn2_area
+		ent_islands_area
+		hardspur_area
+		nw_islands_area
+		nw_islands2_area
+		nw_islands3_area
+		nw_islands4_area
+		nw_islands5_area
+		nw_islands6_area
+		nw_islands7_area
+		nw_islands8_area
+		nw_islands9_area
+		nw_islands10_area
+		nw_islands11_area
+		new_alvonburg_area
+		lysillosia_area
+		savanti_area
+		new_sadharana_area
 	}
 }
 
-Sternhell_region = { # why is there a nonexistent area in this region? -Lunu
+sternhell_region = {
 	areas = {
 		sternhell2_area
 		azvondenia_area
 		plakia_area
 		sternhell_area
-		ostkurtia_area
 		kurrland_area
 		neualhof_area
 		hyallicand_area
 		ostkurtaia_area
+	}
+}
+
+lower_vestoria_region = {
+	areas = {
+		fort_fed_area
+		fort_fed3_area
+		palmeria_area
+		seaside_area
+		seaside2_area
+		seaside3_area
+		seaside4_area
+		braghua3_area
+		survalsia_area
+		survalsia2_area
+		survalsia3_area
+		survalsia4_area
+		survalsia5_area
+		survalsia6_area
+		survalsia7_area
+		survalsia8_area
+	}
+}
+
+upper_vestoria_region = {
+	areas = {
+		palmeria2_area
+		stendari_area
+		stendari2_area
+		stendari3_area
+		stendari4_area
+		stendari5_area
+		stendari6_area
+		stendari8_area
 	}
 }
 

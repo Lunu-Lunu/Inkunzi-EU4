@@ -14,7 +14,11 @@ country_event = {
 	desc = survalsia.1.d
 	picture = REVOLUTION_eventPicture
 	fire_only_once = yes
+	is_triggered_only = no
 	major = yes
+	mean_time_to_happen = {
+		months = 24
+	}
 	trigger = {
         tag = A04
         AND = {
@@ -22,10 +26,9 @@ country_event = {
                 stability = 1
                 legitimacy = 60
             }
-                government = monarchy
+            government = monarchy
         }
     }
-	is_triggered_only = no
 	immediate = {
 		log = "Root.GetName: Event survalsia.1"
 	}
@@ -55,13 +58,15 @@ country_event = {
 	desc = survalsia.2.d
 	picture = WOUNDED_SOLDIERS_eventPicture
 	fire_only_once = yes
-
+	is_triggered_only = no
 	major = no
+	mean_time_to_happen = {
+		months = 24
+	}
 	trigger = {
 		tag = A04
 		government = monarchy
 	}
-	is_triggered_only = no
 	immediate = {
 		log = "Root.GetName: Event survalsia.2"
 	}
@@ -81,32 +86,28 @@ country_event = {
 	desc = survalsia.3.d
 	picture = BAD_WITH_MONARCH_eventPicture
 	fire_only_once = yes
-
+	is_triggered_only = no
 	major = no
+	mean_time_to_happen = {
+		months = 24
+	}
 	trigger = {
 		tag = A04
 		AND = {
 			government = monarchy
 		}
 	}
-	is_triggered_only = no
 	immediate = {
 		log = "Root.GetName: Event survalsia.3"
 	}
 	option = {
 		name = survalsia.3.a
 		ai_chance = { factor = 80 }
-		remove_opinion = {
-			who = B14
-			who = B16
-			who = B16
-			who = A01
-			who = A02
-			who = A03
-			who = A05
-			who = A07
-			who = A09
-			modifier = diplomatic_insult
+		every_neighboring_country = {
+			add_opinion_modifier = {
+				who = ROOT
+				modifier = diplomatic_insult
+			}
 		}
 		add_stability = -1
 		add_legitimacy = -20
@@ -121,14 +122,17 @@ country_event = {
 	desc = survalsia.4.d
 	picture = BANKRUPT_eventPicture
 	fire_only_once = yes
-
+	is_triggered_only = no
 	major = no
+	mean_time_to_happen = {
+		months = 24
+	}
 	trigger = {
 		AND = {
+			tag = A04
 			government = monarchy
 		}
 	}
-	is_triggered_only = no
 	immediate = {
 		log = "Root.GetName: Event survalsia."
 	}
@@ -137,7 +141,6 @@ country_event = {
 		ai_chance = { factor = 80 }
 		add_stability = -1
 		add_treasury = -100
-		add_inflation = 2
 	}
 }
 
@@ -149,11 +152,10 @@ country_event = {
 	desc = survalsia.5.t
 	picture = BANKRUPT_eventPicture
 	fire_only_once = yes
-
+	is_triggered_only = yes
 	major = yes
 	trigger = {
 	}
-	is_triggered_only = no
 	immediate = {
 		log = "Root.GetName: Event survalsia"
 	}
@@ -179,11 +181,10 @@ country_event = {
 	desc = survalsia.6.d
 	picture = BANKRUPT_eventPicture
 	fire_only_once = yes
-
+	is_triggered_only = yes
 	major = yes
 	trigger = {
 	}
-	is_triggered_only = no
 	immediate = {
 		log = "Root.GetName: Event survalsia"
 	}

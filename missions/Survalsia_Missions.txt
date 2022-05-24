@@ -153,21 +153,20 @@ Survalsia_Collom_2 = {
 		}
 
 		provinces_to_highlight = {
-			# FILL
+			region = lower_vestoria_region
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 
-		#trigger = {
-
-			#owns_all_provinces = {
-				#region = Southern_Vestoria
-			#}
-		#}
+		trigger = {
+			lower_vestoria_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
 
 		effect = {
-			A02 = {
-				every_owned_province = {
-				  add_claim = ROOT
-				}
+			upper_vestoria_region = {
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -287,7 +286,7 @@ Survalsia_Collom_1 = {
 		}
 
 		trigger = {
-			country_or_non_sovereign_subject_holds = 3745
+			owns_or_non_sovereign_subject_of = 3745
 		}
 
 		effect = {
@@ -309,6 +308,7 @@ Survalsia_Collom_1 = {
 		}
 
 		provinces_to_highlight = {
+			colonial_region = Colonial_South_Essurria
 		}
 
 		trigger = {
@@ -341,6 +341,7 @@ Survalsia_Collom_1 = {
 		}
 
 		provinces_to_highlight = {
+			colonial_region = colonial_ogula
 		}
 
 		trigger = {
@@ -547,7 +548,9 @@ Survalsia_Collom_4 = {
 		}
 
 		trigger = {
-			is_strongest_trade_power = 46
+			home_trade_node = {
+				is_strongest_trade_power = ROOT
+			}
 		}
 
 		effect = {
