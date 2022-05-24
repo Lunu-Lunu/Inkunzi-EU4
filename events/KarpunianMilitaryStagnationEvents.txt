@@ -20,3 +20,213 @@ country_event = {
 		add_army_tradition = -100
 	}
 }
+
+country_event = { # The Humiliation in Xuaze
+	id = karpunia_military_stagnation.2
+	title = karpunia_military_stagnation.2.t
+	desc = karpunia_military_stagnation.2.desc
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = { tag = A66 NOT = { has_country_flag = A66_no_humiliation } }
+	
+	option = { # This is a wake-up call.
+		name = karpunia_military_stagnation.2.a
+		add_stability = -1
+		add_country_modifier = {
+			name = A66_humiliation_in_xuaze
+			duration = -1
+		}
+	}
+}
+
+country_event = { # The Investigation of the Humiliation
+	id = karpunia_military_stagnation.3
+	title = karpunia_military_stagnation.3.t
+	desc = karpunia_military_stagnation.3.desc
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { # Get rid of all of them!
+		name = karpunia_military_stagnation.3.a
+		if = {
+			limit = {
+				has_country_modifier = A66_humiliation_in_xuaze
+			}
+			remove_country_modifier = A66_humiliation_in_xuaze
+			else = {
+				add_stability = 1
+			}
+		}
+		add_country_modifier = {
+			name = A66_military_reform
+			duration = 1825
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -30
+		}
+		hidden_effect = {
+			country_event = { id = karpunia_military_stagnation.4 days = 1830 }
+		}
+	}
+}
+
+country_event = { # Military Command Reforms Underway
+	id = karpunia_military_stagnation.4
+	title = karpunia_military_stagnation.4.t
+	desc = karpunia_military_stagnation.4.desc
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { # It's a start.
+		name = karpunia_military_stagnation.4.a
+		remove_country_modifier = A66_humiliation_in_xuaze
+		add_country_modifier = {
+			name = A66_command_reform_underway
+			duration = -1
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 10
+		}
+	}
+}
+
+country_event = { # Meeting with the Mercenaries
+	id = karpunia_military_stagnation.5
+	title = karpunia_military_stagnation.5.t
+	desc = karpunia_military_stagnation.5.desc
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { # Get rid of all of them!
+		name = karpunia_military_stagnation.5.a
+		add_country_modifier = {
+			name = A66_military_reform
+			duration = 1825
+		}
+		set_country_flag = A66_mercenary_renegotiation
+		hidden_effect = {
+			country_event = { id = karpunia_military_stagnation.6 days = 1830 }
+		}
+	}
+}
+
+country_event = { # Contract Renegotiation Complete
+	id = karpunia_military_stagnation.6
+	title = karpunia_military_stagnation.6.t
+	desc = karpunia_military_stagnation.6.desc
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { # Not quite what we wanted...
+		name = karpunia_military_stagnation.6.a
+		clr_country_flag = A66_mercenary_renegotiation
+		add_country_modifier = {
+			name = A66_contracts_renegotiated
+			duration = -1
+		}
+	}
+}
+
+country_event = { # Sycophancy & Nepotism
+	id = karpunia_military_stagnation.7
+	title = karpunia_military_stagnation.7.t
+	desc = karpunia_military_stagnation.7.desc
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { # Get rid of all of them!
+		name = karpunia_military_stagnation.7.a
+		add_stability = -2
+		add_country_modifier = {
+			name = A66_military_reform
+			duration = 1825
+		}
+		hidden_effect = {
+			country_event = { id = karpunia_military_stagnation.8 days = 1830 }
+		}
+	}
+}
+
+country_event = { # Toadies Uprooted
+	id = karpunia_military_stagnation.8
+	title = karpunia_military_stagnation.8.t
+	desc = karpunia_military_stagnation.8.desc
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { # It's a start.
+		name = karpunia_military_stagnation.8.a
+		add_country_modifier = {
+			name = A66_army_restructured
+			duration = -1
+		}
+	}
+}
+country_event = { # Gunpowder Weaponry and Modern War
+	id = karpunia_military_stagnation.9
+	title = karpunia_military_stagnation.9.t
+	desc = karpunia_military_stagnation.9.desc
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { # Get rid of all of them!
+		name = karpunia_military_stagnation.9.a
+		add_country_modifier = {
+			name = A66_military_reform
+			duration = 1825
+		}
+		hidden_effect = {
+			country_event = { id = karpunia_military_stagnation.10 days = 1830 }
+		}
+	}
+}
+
+country_event = { # Arquebusier Battalions
+	id = karpunia_military_stagnation.10
+	title = karpunia_military_stagnation.10.t
+	desc = karpunia_military_stagnation.10.desc
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { # A step foward
+		name = karpunia_military_stagnation.10.a
+		add_country_modifier = {
+			name = A66_arquebusiers
+			duration = -1
+		}
+	}
+}
+
+country_event = { # A Modern Military
+	id = karpunia_military_stagnation.11
+	title = karpunia_military_stagnation.11.t
+	desc = karpunia_military_stagnation.11.desc
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { # A step foward
+		name = karpunia_military_stagnation.11.a
+		end_disaster = A66_karpunian_military_stagnation
+		remove_country_modifier = A66_command_reform_underway
+		remove_country_modifier = A66_contracts_renegotiated
+		remove_country_modifier = A66_army_restructured
+		remove_country_modifier = A66_arquebusiers
+		add_prestige = 50
+		add_republican_tradition = 25
+		add_army_tradition = 25
+		set_global_flag =  A66_end_military_stagnation
+	}
+}

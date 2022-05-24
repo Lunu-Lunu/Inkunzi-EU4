@@ -5,7 +5,7 @@ mercantilism = 10
 technology_group = mesoamerican
 religion = blightbringer
 primary_culture = skungic
-capital = 2637
+capital = 2922
 set_country_flag = primary_rat_nation
 
 1444.11.11 = {

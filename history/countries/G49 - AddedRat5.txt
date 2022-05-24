@@ -1,0 +1,21 @@
+government = tribal
+add_government_reform = tribal_despotism
+government_rank = 1
+mercantilism = 10
+technology_group = mesoamerican
+religion = blightbringer
+primary_culture = roden
+capital = 2945
+set_country_flag = primary_rat_nation
+
+1444.11.11 = {
+	monarch = {
+		name = "Place"
+		dynasty = "Holder"
+		adm = 2
+		dip = 2
+		mil = 2
+		birth_date = 1424.11.11
+		regent = yes
+	}
+}

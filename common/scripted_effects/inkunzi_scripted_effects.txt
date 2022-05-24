@@ -19,7 +19,7 @@ promoted_races_recalc = {
 	clr_country_flag = golems_accepted
 	clr_country_flag = elves_accepted
 	clr_country_flag = sia_si_accepted
-	clr_country_flag = gneta_accepted
+	clr_country_flag = gnetans_accepted
 	clr_country_flag = furries_accepted
 	clr_country_flag = lizards_accepted
 	clr_country_flag = goblins_accepted
@@ -110,7 +110,10 @@ promoted_races_recalc = {
 	}
 	if = {
 		limit = {
-			accepted_culture = tunnu
+			OR = {
+				accepted_culture = tunnu
+				accepted_culture = heplin
+			}
 		}
 		set_country_flag = dwarves_accepted
 	}
@@ -165,7 +168,7 @@ promoted_races_recalc = {
 		limit = {
 			accepted_culture = gneta
 		}
-		set_country_flag = gneta_accepted
+		set_country_flag = gnetans_accepted
 	}
 	if = {
 		limit = {
@@ -277,7 +280,10 @@ primary_race_recalc = {
 	}
 	if = {
 		limit = {
-			culture_group = dwarven_group
+			OR = {
+				culture_group = dwarven_group
+				culture_group = heplin_group
+			}
 		}
 		set_country_flag = primary_dwarf_nation
 	}

@@ -43,7 +43,7 @@ estate_dwarves = {
 		factor = 1
 		modifier = {
 			factor = 0
-			NOT = { culture_group = dwarven_group }
+			NOT = { culture_group = dwarven_group culture_group = heplin_group }
 		}
 		modifier = {
 			factor = 2

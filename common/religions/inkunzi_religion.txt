@@ -473,6 +473,8 @@ haymonutho_group = {
 			min_autonomy_in_territories = -0.1
 		}
 
+		has_patriarchs = yes
+
 		on_convert = {
 			change_religion = haymonutho
 			add_prestige = -100
@@ -589,7 +591,7 @@ new_world_tribal_r_group = {
 	defender_of_faith = no
 
 	tribal_faith = {
-		color = { 162 99 52 }
+		color = { 104 58 18 }
 		icon = 23
 
 		country = {
@@ -606,6 +608,37 @@ new_world_tribal_r_group = {
 
 		on_convert = {
 			change_religion = tribal_faith
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+		
+		}
+		
+		heretic = { HERETIC_GENERIC }
+	}
+	o_kepu = {
+		color = { 162 99 52 }
+		icon = 24
+
+		country = {
+			tribal_development_growth = 0.02
+			global_unrest = -2
+		}
+		country_as_secondary = {
+			development_cost = -0.05
+			global_unrest = -2
+		}
+		province = {
+			local_missionary_strength = 0.01
+		}
+
+		uses_piety = yes
+
+		on_convert = {
+			change_religion = o_kepu
 			add_prestige = -100
 			
 			add_country_modifier = {

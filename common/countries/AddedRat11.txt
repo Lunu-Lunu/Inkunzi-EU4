@@ -1,0 +1,36 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 152 85 151 }
+
+historical_idea_groups = {
+	quality_ideas
+	economic_ideas
+	defensive_ideas
+	offensive_ideas
+	diplomatic_ideas
+	quantity_ideas
+	spy_ideas
+	religious_ideas
+}
+
+historical_units = {
+	mesoamerican_spearmen
+	central_american_horsemen
+	aztec_tribal_warfare
+	aztec_hill_warfare
+	aztec_gunpowder_warfare
+	westernized_aztec
+	mexican_guerilla_warfare
+}
+
+leader_names = {
+	Gigenshtain
+}
+
+monarch_names = {
+	"Gigenshtain #0" = 0
+
+	"FEMALE Gigenshtain #0" = -1
+}

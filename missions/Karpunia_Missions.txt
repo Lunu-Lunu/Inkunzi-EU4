@@ -1,0 +1,197 @@
+karpunia_column_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = A66
+	}
+	has_country_shield = yes
+}
+karpunia_column_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = A66
+	}
+	has_country_shield = yes
+	karpunia_mission_renegotiate_mercenary_contracts = {
+		icon = mission_indian_stateman
+		position = 3
+		required_missions = {
+			karpunia_mission_investigate_the_humiliation
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			has_disaster = A66_karpunian_military_stagnation
+			treasury = 250
+			NOT = { num_of_mercenaries = 1 has_country_modifier = A66_military_reform }
+		}
+		effect = {
+			log = "[Root.GetName]: Mission karpunia_mission_renegotiate_mercenary_contracts"
+			add_treasury = -250
+			country_event = { id = karpunia_military_stagnation.5 }
+		}
+	}
+}
+karpunia_column_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = A66
+	}
+	has_country_shield = yes
+	karpunia_mission_wakeup_call = {
+		icon = mission_indian_stateman
+		position = 1
+		required_missions = {
+
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			has_disaster = A66_karpunian_military_stagnation
+			OR = {
+				has_country_modifier = A66_humiliation_in_xuaze
+				has_country_flag = A66_no_humiliation
+			}
+		}
+		effect = {
+			log = "[Root.GetName]: Mission karpunia_mission_wakeup_call"
+			add_republican_tradition = 5
+		}
+	}
+	karpunia_mission_investigate_the_humiliation = {
+		icon = mission_indian_stateman
+		position = 2
+		required_missions = {
+			karpunia_mission_wakeup_call
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			has_disaster = A66_karpunian_military_stagnation
+			treasury = 100
+			mil_power = 100
+		}
+		effect = {
+			log = "[Root.GetName]: Mission karpunia_mission_investigate_the_humiliation"
+			add_treasury = -100
+			add_mil_power = -100
+			country_event = { id = karpunia_military_stagnation.3 }
+		}
+	}
+	karpunia_mission_core_of_the_problem = {
+		icon = mission_indian_stateman
+		position = 3
+		required_missions = {
+			karpunia_mission_investigate_the_humiliation
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			has_disaster = A66_karpunian_military_stagnation
+			mil_power = 250
+			stability = 0
+			NOT = { has_country_modifier = A66_military_reform }
+		}
+		effect = {
+			log = "[Root.GetName]: Mission karpunia_mission_core_of_the_problem"
+			add_mil_power = -250
+			country_event = { id = karpunia_military_stagnation.7 }
+		}
+	}
+	karpunia_mission_finalize_the_reforms = {
+		icon = mission_indian_stateman
+		position = 4
+		required_missions = {
+			karpunia_mission_renegotiate_mercenary_contracts
+			karpunia_mission_core_of_the_problem
+			karpunia_mission_study_gnetan_designs
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			has_disaster = A66_karpunian_military_stagnation
+			has_treasury = 500
+			mil_power = 250
+			stability = 0
+			NOT = { has_country_modifier = A66_military_reform }
+		}
+		effect = {
+			log = "[Root.GetName]: Mission karpunia_mission_core_of_the_problem"
+			add_treasury = -500
+			add_mil_power = -250
+			add_stability = -1
+			country_event = { id = karpunia_military_stagnation.11 }
+		}
+	}
+}
+karpunia_column_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = A66
+	}
+	has_country_shield = yes
+	karpunia_mission_study_gnetan_designs = {
+		icon = mission_indian_stateman
+		position = 3
+		required_missions = {
+			karpunia_mission_investigate_the_humiliation
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			has_disaster = A66_karpunian_military_stagnation
+			any_known_country = {
+				has_opinion = {
+					who = ROOT
+					value = 150
+				}
+				OR = {
+					culture_group = gnetan_group
+					culture_group = sia_si_group
+				}
+			}
+			treasury = 250
+			NOT = { has_country_modifier = A66_military_reform }
+		}
+		effect = {
+			log = "[Root.GetName]: Mission karpunia_mission_study_gnetan_designs"
+			add_treasury = -250
+			country_event = { id = karpunia_military_stagnation.9 }
+			random_known_country = {
+				limit = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+					OR = {
+						culture_group = gnetan_group
+						culture_group = sia_si_group
+					}
+				}
+				add_treasury = 250
+			}
+		}
+	}
+}
+karpunia_column_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = A66
+	}
+	has_country_shield = yes
+}

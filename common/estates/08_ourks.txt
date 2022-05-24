@@ -22,6 +22,12 @@ estate_ourk = {
 		is_nomad = no
 		NOT = { has_reform = revolutionary_empire_reform }
 	}
+	custom_name = {
+		desc = estate_orukosu
+		trigger = {
+			culture_group = iaznahoganto_group
+		}
+	}
 
 	# These scale with loyalty & power
 	country_modifier_happy = {

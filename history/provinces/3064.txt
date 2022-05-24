@@ -1,15 +1,15 @@
 # Placeholder
 
-owner = B59
-controller = B59
-add_core = B59
 culture = kurio
-religion = tribal_faith
-hre = no
+religion = o_kepu
+native_size = 1
+native_ferocity = 6
+native_hostileness = 4
 base_tax = 1 
 base_production = 1
 base_manpower = 1
 trade_goods = unknown
 capital = "Placeholder"
-is_city = yes
+is_city = no
 discovered_by = mesoamerican
+tribal_owner = B59
