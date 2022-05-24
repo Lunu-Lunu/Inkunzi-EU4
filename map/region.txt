@@ -39,13 +39,11 @@ Sternhell_region = {
 		azvondenia_area
 		plakia_area
 		sternhell_area
-		ostkurtia_area
 		kurrland_area
 		neualhof_area
 		hyallicand_area
 		ostkurtaia_area
 	}
-
 }
 #scandinavia_region = {
 #	areas = {
