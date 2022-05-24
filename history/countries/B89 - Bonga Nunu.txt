@@ -5,7 +5,7 @@ mercantilism = 10
 technology_group = mesoamerican
 religion = tribal_faith
 primary_culture = jungle_konk
-capital = 2637
+capital = 3380
 set_country_flag = primary_ape_nation
 
 1444.11.11 = {

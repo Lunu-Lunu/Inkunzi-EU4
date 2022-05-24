@@ -5,7 +5,7 @@ mercantilism = 10
 technology_group = mesoamerican
 religion = tribal_faith
 primary_culture = vorasian
-capital = 2637
+capital = 3133
 set_country_flag = primary_hesh_nation
 
 1444.11.11 = {
