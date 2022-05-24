@@ -12,4 +12,4 @@ is_city = no
 native_size = 1
 native_ferocity = 5
 native_hostileness = 0
-discovered_by = western
+discovered_by = eastern
