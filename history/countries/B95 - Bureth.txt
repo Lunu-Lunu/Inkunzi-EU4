@@ -5,7 +5,7 @@ mercantilism = 10
 technology_group = mesoamerican
 religion = tribal_faith
 primary_culture = ent
-capital = 2637
+capital = 3569
 set_country_flag = primary_ent_nation
 
 1444.11.11 = {

@@ -1,0 +1,16 @@
+country_decisions = {
+	o_kepu_enact_social_reform_dec = {
+		major = yes
+		potential = {
+			religion = o_kepu
+			NOT = { has_country_flag = o_kepu_reforms_complete }
+		}
+		allow = {
+			piety = 0.75
+			stability = 0
+		}
+		effect = {
+			country_event = { id = o_kepu_events.1 }
+		}
+	}
+}

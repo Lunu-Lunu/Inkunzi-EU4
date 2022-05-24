@@ -1,5 +1,377 @@
 # A province can only belong to one region!
 
+# These new world regions are NOT final - made for a testing purpose
+hwaitelande_region = {
+	areas = {
+		hwaitelandic_approach_area
+		hwaitelande_area
+		hwaitelande2_area
+		hwaitelande3_area
+		hwaitelande4_area
+		hwaitelande5_area
+		hwaitelande6_area
+		hwaitelande7_area
+		hwaitelande8_area
+		hwaitelande9_area
+		hwaitelande10_area
+		hwaitelande11_area
+		hwaitelande12_area
+		hwaitelande13_area
+		hwaitelande14_area
+		hwaitelande15_area
+		hwaitelande16_area
+		hwaitelande17_area
+		hwaitelande18_area
+		hwaitelande19_area
+		hwaitelande20_area
+		hwaitelande21_area
+		hwaitelande22_area
+		hwaitelande23_area
+		maelstone_area
+		harla_area
+		zsoluk_area
+		dabhavem_area
+		lyhar_area
+		sabhar_area
+		tashav_area
+		yeula_area
+		shyma_area
+	}
+}
+
+eastern_kostra_region = {
+	areas = {
+		rodenvikk_area
+		rodenvikk2_area
+		rodenvikk3_area
+		rodenvikk4_area
+		rodenvikk5_area
+		rodenvikk6_area
+		rodenvikk7_area
+		rodenvikk8_area
+		rodenvikk9_area
+		rodenvikk10_area
+		rodenvikk11_area
+		rodenvikk12_area
+		rodenvikk13_area
+		skunge_area
+		posumak_area
+		rakuuvar_area
+		hethoria_area
+	}
+}
+
+western_kostra_region = {
+	areas = {
+		bauluna_area
+		bauluna2_area
+		bauluna3_area
+		bauluna4_area
+		bauluna5_area
+		bauluna6_area
+		bauluna7_area
+		elyaesia_area
+		elyaesia2_area
+		elyaesia3_area
+		elyaesia4_area
+		elyaesia5_area
+		elyaesia6_area
+		elyaesia7_area
+		karax_area
+		gini_a_lili_area
+		ninagui_area
+		hokhuna_area
+		o_hopoe_area
+		leikepu_area
+		moigarnu_area
+		poliahu_area
+		jobu_fui_area
+		lohi_area
+		pruidax_area
+		meikiki_area
+		noijorue_area
+	}
+}
+
+cowpal_region = {
+	areas = {
+		eiyeland_area
+		maws_end_area
+		pallan_area
+		atan_area
+		keci_area
+		bagus_area
+		ogland_area
+		dogoland_area
+		marrinbaie_area
+		streemtum_area
+		pabunuel_area
+		bobrus_area
+		shruk_area
+		bukscar_area
+		khabars_area
+		gombas_patib_area
+		aiodh_baen_area
+		yawn_seriney_area
+	}
+}
+
+hesh_coast_region = {
+	areas = {
+		morland_area
+		seesonzero_area
+		seesonzero2_area
+		seesonzero3_area
+		seesonzero4_area
+		morland2_area
+		morland3_area
+		morland4_area
+		morland5_area
+		morland6_area
+		morland7_area
+		morland8_area
+		tavas_area
+	}
+}
+
+morland_region = {
+	areas = {
+		morland9_area
+		morland10_area
+		morland11_area
+		morland12_area
+		morland13_area
+		morland14_area
+		morland15_area
+		morland16_area
+		voras_area
+		antax_area
+		yaxat_area
+	}
+}
+
+new_world_placeholder_region = { # why did i not just do this sooner lmao
+	areas = {
+		haifha_area
+		haifha2_area
+		haifha3_area
+		haifha4_area
+		haifha5_area
+		haifha6_area
+		haifha7_area
+		haifha8_area
+		haifha9_area
+		vyraisde_area
+		vyraisde2_area
+		vyraisde3_area
+		vyraisde4_area
+		vyraisde5_area
+		vyraisde6_area
+		vyraisde7_area
+		vyraisde8_area
+		vyraisde9_area
+		vyraisde10_area
+		vyraisde11_area
+		vyraisde12_area
+		vyraisde13_area
+		vyraisde14_area
+		vyraisde15_area
+		snakes_area
+		snakes2_area
+		snakes3_area
+		snakes4_area
+		snakes5_area
+		snakes6_area
+		snakes7_area
+		snakes8_area
+		snakes9_area
+		snakes10_area
+		snakes11_area
+		snakes12_area
+		snakes13_area
+		snakes14_area
+		snakes15_area
+		snakes16_area
+		snakes17_area
+		snakes18_area
+		snakes19_area
+		snakes20_area
+		tharxhua_area
+		revidaar_area
+		provinox_area
+		laxidavia_area
+		daxisava_area
+		apes_area
+		apes2_area
+		apes3_area
+		apes4_area
+		apes5_area
+		apes6_area
+		apes7_area
+		apes8_area
+		apes9_area
+		apes10_area
+		apes11_area
+		apes12_area
+		apes13_area
+		apes14_area
+		apes15_area
+		apes16_area
+		apes17_area
+		apes18_area
+		apes19_area
+		apes20_area
+		apes21_area
+		apes22_area
+		apes23_area
+		apes24_area
+		apes25_area
+		apes26_area
+		apes27_area
+		apes28_area
+		apes29_area
+		apes30_area
+		apes31_area
+		apes32_area
+		apes33_area
+		apes34_area
+		apes35_area
+		apes36_area
+		apes37_area
+		apes38_area
+		apes39_area
+		apes40_area
+		gongi_area
+		fatoo_area
+		viko_hussa_area
+		roka_area
+		bongu_area
+		nunu_area
+		ogu_gonga_area
+		ogu_gonga2_area
+		ents_area
+		ents2_area
+		ents3_area
+		ents4_area
+		ents5_area
+		ents6_area
+		ents7_area
+		ents8_area
+		ents9_area
+		ents10_area
+		ents11_area
+		ents12_area
+		ents13_area
+		ents14_area
+		ents15_area
+		ents16_area
+		ents17_area
+		ents18_area
+		ents19_area
+		ents20_area
+		ents20_area
+		ents21_area
+		ents22_area
+		ents23_area
+		ents24_area
+		ents25_area
+		ents26_area
+		ents27_area
+		ents28_area
+		ents29_area
+		ents30_area
+		ents31_area
+		ents32_area
+		ents33_area
+		ents34_area
+		ents35_area
+		ents36_area
+		ents37_area
+		ents38_area
+		ents39_area
+		ents40_area
+		ents41_area
+		ents42_area
+		ents43_area
+		ents44_area
+		ents45_area
+		ents46_area
+		ents47_area
+		ents48_area
+		ents49_area
+		ents50_area
+		bureth_area
+		kokern_area
+		enibus_area
+		cleveracorn_area
+		cleveracorn2_area
+		ent_islands_area
+		hardspur_area
+		nw_islands_area
+		nw_islands2_area
+		nw_islands3_area
+		nw_islands4_area
+		nw_islands5_area
+		nw_islands6_area
+		nw_islands7_area
+		nw_islands8_area
+		nw_islands9_area
+		nw_islands10_area
+		nw_islands11_area
+		new_alvonburg_area
+		lysillosia_area
+		savanti_area
+		new_sadharana_area
+	}
+}
+
+sternhell_region = {
+	areas = {
+		sternhell2_area
+		azvondenia_area
+		plakia_area
+		sternhell_area
+		kurrland_area
+		neualhof_area
+		hyallicand_area
+		ostkurtaia_area
+	}
+}
+
+lower_vestoria_region = {
+	areas = {
+		fort_fed_area
+		fort_fed3_area
+		palmeria_area
+		seaside_area
+		seaside2_area
+		seaside3_area
+		seaside4_area
+		braghua3_area
+		survalsia_area
+		survalsia2_area
+		survalsia3_area
+		survalsia4_area
+		survalsia5_area
+		survalsia6_area
+		survalsia7_area
+		survalsia8_area
+	}
+}
+
+upper_vestoria_region = {
+	areas = {
+		palmeria2_area
+		stendari_area
+		stendari2_area
+		stendari3_area
+		stendari4_area
+		stendari5_area
+		stendari6_area
+		stendari8_area
+	}
+}
+
 
 ### Below are the VANILLA REGIONS ###
 # random_new_world_region is used for RNW. Must be first in this list.
@@ -29,21 +401,6 @@ france_region = {
 		#pyrenees_area
 		#poitou_area
 		#orleans_area
-	}
-}
-
-Sternhell_region = {
-
-	areas = {
-		sternhell2_area
-		azvondenia_area
-		plakia_area
-		sternhell_area
-		ostkurtia_area
-		kurrland_area
-		neualhof_area
-		hyallicand_area
-		ostkurtaia_area
 	}
 }
 #scandinavia_region = {

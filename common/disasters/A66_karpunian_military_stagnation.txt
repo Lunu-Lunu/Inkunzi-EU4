@@ -34,10 +34,15 @@ A66_karpunian_military_stagnation = {
 		merc_maintenance_modifier = 1.5
 		army_tradition_decay = 0.05
 		drill_gain_modifier = -0.5
-		infantry_fire = -1
-		cavalry_fire = -1
+		fire_damage = -0.9
+		fire_damage_received = 0.5
+		leader_land_fire = -6
+		leader_land_shock = -1
+		leader_land_manuever = -1
+		leader_siege = -6
 		artillery_power = -0.75
 		siege_ability = -0.2
+		defensiveness = -0.2
 	}	
 	
 	

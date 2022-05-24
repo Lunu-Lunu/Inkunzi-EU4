@@ -131,3 +131,43 @@ sarzan_ideas = { # Snake Ideas
         global_autonomy = -0.05
     }
 }
+
+roden_ideas = { # Roden Ideas
+    start = {
+        spy_offence = 0.15
+        rebel_support_efficiency = 0.5
+        rats_loyalty_modifier = 0.05
+    }
+    bonus = {
+        tolerance_own = 2
+    }
+
+    trigger = {
+        culture_group = ratkin_group
+    }
+    free = yes
+
+    roden_in_the_walls = {
+        siege_ability = 0.1
+    }
+    roden_teeming_swarm = {
+        global_manpower_modifier = 0.15
+    }
+    roden_flow_of_trade = {
+        trade_steering = 0.15
+    }
+    roden_claiming_rodenvikk = {
+        colonists = 1
+        colonist_placement_chance = 0.05
+    }
+    roden_sea_rats = {
+        light_ship_power = 0.15
+        privateer_efficiency = 0.5
+    }
+    roden_peace_tax = {
+        global_tax_modifier = 0.15
+    }
+    roden_purge_of_the_scotar = {
+        culture_conversion_cost = -0.2
+    }
+}

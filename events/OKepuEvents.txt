@@ -1,0 +1,139 @@
+###########################################################
+# Events for Arslan
+#
+# written by Lunu (probably not)
+###########################################################
+
+namespace = o_kepu_events
+
+country_event = {
+	id = o_kepu_events.1
+	title = o_kepu_events.1.t
+	desc = o_kepu_events.1.desc
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		religion = o_kepu
+	}
+	
+	option = {
+		name = o_kepu_events.1.a
+		trigger = {
+			NOT = {
+				has_country_modifier = o_kepu_reform1_modifier
+			}
+		}
+		add_piety = -2
+		add_stability = -3
+		add_country_modifier = {
+			name = o_kepu_reform1_modifier
+			duration = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = o_kepu_reform2_modifier
+				has_country_modifier = o_kepu_reform3_modifier
+				has_country_modifier = o_kepu_reform4_modifier
+				has_country_modifier = o_kepu_reform5_modifier
+			}
+			set_country_flag = o_kepu_reforms_complete
+		}
+	}
+	option = {
+		name = o_kepu_events.1.b
+		trigger = {
+			NOT = {
+				has_country_modifier = o_kepu_reform2_modifier
+			}
+		}
+		add_piety = -2
+		add_stability = -3
+		add_country_modifier = {
+			name = o_kepu_reform2_modifier
+			duration = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = o_kepu_reform1_modifier
+				has_country_modifier = o_kepu_reform3_modifier
+				has_country_modifier = o_kepu_reform4_modifier
+				has_country_modifier = o_kepu_reform5_modifier
+			}
+			set_country_flag = o_kepu_reforms_complete
+		}
+	}
+	option = {
+		name = o_kepu_events.1.c
+		trigger = {
+			NOT = {
+				has_country_modifier = o_kepu_reform3_modifier
+			}
+		}
+		add_piety = -2
+		add_stability = -3
+		add_country_modifier = {
+			name = o_kepu_reform3_modifier
+			duration = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = o_kepu_reform1_modifier
+				has_country_modifier = o_kepu_reform2_modifier
+				has_country_modifier = o_kepu_reform4_modifier
+				has_country_modifier = o_kepu_reform5_modifier
+			}
+			set_country_flag = o_kepu_reforms_complete
+		}
+	}
+	option = {
+		name = o_kepu_events.1.d
+		trigger = {
+			NOT = {
+				has_country_modifier = o_kepu_reform4_modifier
+			}
+		}
+		add_piety = -2
+		add_stability = -3
+		add_country_modifier = {
+			name = o_kepu_reform4_modifier
+			duration = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = o_kepu_reform1_modifier
+				has_country_modifier = o_kepu_reform2_modifier
+				has_country_modifier = o_kepu_reform3_modifier
+				has_country_modifier = o_kepu_reform5_modifier
+			}
+			set_country_flag = o_kepu_reforms_complete
+		}
+	}
+	option = {
+		name = o_kepu_events.1.e
+		trigger = {
+			NOT = {
+				has_country_modifier = o_kepu_reform5_modifier
+			}
+		}
+		add_piety = -2
+		add_stability = -3
+		add_country_modifier = {
+			name = o_kepu_reform5_modifier
+			duration = -1
+		}
+		if = {
+			limit = {
+				has_country_modifier = o_kepu_reform1_modifier
+				has_country_modifier = o_kepu_reform2_modifier
+				has_country_modifier = o_kepu_reform3_modifier
+				has_country_modifier = o_kepu_reform4_modifier
+			}
+			set_country_flag = o_kepu_reforms_complete
+		}
+	}
+	option = { # Nevermind.
+		name = o_kepu_events.1.f
+	}
+}

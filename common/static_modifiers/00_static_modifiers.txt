@@ -284,20 +284,21 @@ capital_city = {
 
 
 patriarch_state = {
-	local_state_maintenance_modifier = 0.1
-	local_monthly_devastation = -0.05
+	local_manpower_modifier = 0.05
+	local_monthly_devastation = 0.05
 }
 
 # Multiplied in provinces of same religion.
 patriarch_authority_local = {
 	local_unrest = -3
-	local_manpower_modifier = 0.33
+	local_governing_cost = -0.15
 }
 
 #for the country
 patriarch_authority_global = {
 	global_missionary_strength = 0.02
-	church_influence_modifier = 0.10
+	discipline = 0.05
+	max_absolutism = 10
 }
 
 pasha_state = {
@@ -786,23 +787,27 @@ navy_tradition = {
 	vaisyas_loyalty_modifier = 0.05
 }
 
-positive_piety = { #As of 1.23 Legalism
-	technology_cost = -0.1
-	global_manpower_modifier = 0.20
-	global_tax_modifier = 0.20
-	brahmins_muslim_loyalty_modifier = -0.1
+positive_piety = { # 'O Kepu Traditionalism
+	settle_cost = 5
+	monthly_reform_progress_modifier = -0.5
+	institution_spread_from_true_faith = -0.5
+	tolerance_own = 3
+	land_morale = 0.2
+	tribal_development_growth = 0.2
 	church_loyalty_modifier = 0.1
-	dhimmi_loyalty_modifier = -0.1
+	church_influence_modifier = 0.2
 }
 
-#For convenience, its multiplied by negative piety in code.
+#
 negative_piety = { #As of 1.23 Mysticism
-	land_morale = 0.10
-	global_missionary_strength = 0.03
-	defensiveness = 0.20
-	brahmins_muslim_loyalty_modifier = 0.1
+	settle_cost = -0.5
+	tolerance_own = -3
+	tolerance_heretic = 2
+	tolerance_heathen = 2
+	monthly_reform_progress_modifier = 0.25
+	institution_spread_from_true_faith = 0.25
+	land_morale = -0.1
 	church_loyalty_modifier = -0.1
-	dhimmi_loyalty_modifier = 0.1
 }
 
 defender_of_faith = {

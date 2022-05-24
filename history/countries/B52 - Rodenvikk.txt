@@ -5,7 +5,7 @@ mercantilism = 10
 technology_group = mesoamerican
 religion = blightbringer
 primary_culture = roden
-capital = 2637
+capital = 2925
 set_country_flag = primary_rat_nation
 
 1444.11.11 = {
