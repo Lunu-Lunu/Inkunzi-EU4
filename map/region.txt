@@ -325,6 +325,93 @@ new_world_placeholder_region = { # why did i not just do this sooner lmao
 	}
 }
 
+tradia_region = {
+	areas = {
+		strait_of_tradia_area
+		tradia_area
+		tradia2_area
+		tradia3_area
+		peninsudaria_area
+	}
+}
+
+northern_kythia_region = {
+	areas = {
+		kythia9_area
+		kythia10_area
+		kythia11_area
+		kythia12_area
+		kythia13_area
+		kythia14_area
+		kythia15_area
+		kythia16_area
+		kythia17_area
+		kythia18_area
+	}
+}
+
+southern_kythia_region = {
+	areas = {
+		kythia2_area
+		kythia3_area
+		kythia4_area
+		kythia5_area
+		kythia6_area
+		kythia7_area
+		kythia8_area
+	}
+}
+
+tayiegiz_region = {
+	areas = {
+		kythia_area
+		tayiegiz_area
+		tayiegiz2_area
+		random_islands4_area
+		random_islands5_area
+	}
+}
+
+tahviran_coast_region = {
+	areas = {
+		sholios2_area
+		sholios3_area
+		sholios4_area
+		sholios5_area
+		sholios6_area
+		sholios7_area
+		sholios8_area
+		sholios9_area
+		khalied4_area
+		khalied5_area
+		khalied6_area
+		khalied7_area
+		madraxx_area
+	}
+}
+
+peraroniki_region = {
+	areas = {
+		stupid_zone_area
+		stupid_zone2_area
+		stupid_zone3_area
+		stupid_zone4_area
+		stupid_zone11_area
+		stupid_zone12_area
+	}
+}
+
+solchutia_region = {
+	areas = {
+		stupid_zone5_area
+		stupid_zone6_area
+		stupid_zone7_area
+		stupid_zone8_area
+		stupid_zone9_area
+		stupid_zone10_area
+	}
+}
+
 sternhell_region = {
 	areas = {
 		sternhell2_area
@@ -335,6 +422,38 @@ sternhell_region = {
 		neualhof_area
 		hyallicand_area
 		ostkurtaia_area
+	}
+}
+
+rekolia_region = {
+	areas = {
+		rekolia_area
+		rekolia2_area
+		rekolia3_area
+		rekolia4_area
+		rekolia5_area
+		rekolia6_area
+		rekolia7_area
+		rekolia8_area
+		rekolia9_area
+		rekolia10_area
+		rekolia11_area
+		rekolia12_area
+		rekolia13_area
+		zuntlan_area
+		zuntlan2_area
+		thixi_area
+		surveria_area
+		surveria2_area
+		surveria3_area
+		surveria4_area
+		surveria5_area
+		surveria7_area
+		surveria8_area
+		surveria9_area
+		surveria10_area
+		surveria11_area
+		surveria12_area
 	}
 }
 
