@@ -261,6 +261,7 @@ republic = {
 				united_cantons_reform
 				kongsi_federation
 				millenarian_theocracy_reform
+				porian_meritocracy_reform
 			}
 		}
 		republican_virtues = {
@@ -421,6 +422,8 @@ tribal = {
 				stateless_society
 				polynesian_kingdom
 				polynesian_tribe
+				lyharan_godsrealm
+				yeulan_sortition
 			}
 		}
 		tribal_cultural_values = {
@@ -469,6 +472,8 @@ native = {
 				native_federation_reform
 				native_clan_council_reform
 				native_hereditary_reform
+				kurio_kahunate
+				wandering_hive
 			}
 		}
 

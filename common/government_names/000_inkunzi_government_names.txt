@@ -41,3 +41,19 @@ gov_hive = {
 		}
 	}
 }
+
+gov_porian_meritocracy = {
+	ruler_male = {
+		1 = PRIOMH_AIRE
+		2 = PRIOMH_AIRE
+		3 = PRIOMH_AIRE
+	}
+	ruler_female = {
+		1 = PRIOMH_AIRE
+		2 = PRIOMH_AIRE
+		3 = PRIOMH_AIRE
+	}
+	trigger = {
+		has_reform = porian_meritocracy_reform
+	}
+}

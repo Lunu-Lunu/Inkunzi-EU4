@@ -3,6 +3,8 @@
 owner = B01
 controller = B01
 add_core = B01
+add_core = R08
+add_core = R06
 culture = paleremore
 religion = medilyte
 hre = no

@@ -1,0 +1,9 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+mercantilism = 10
+technology_group = western
+religion = medilyte
+primary_culture = paak_ourk
+capital = 1850
+set_country_flag = primary_ourk_nation

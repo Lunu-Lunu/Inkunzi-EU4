@@ -1,0 +1,258 @@
+###########################################################
+# Events for Scherkeiss
+#
+# written by Lunu (probably not)
+###########################################################
+
+namespace = scherkeiss
+
+country_event = { # Turmoil in the West
+	id = scherkeiss.1
+	title = scherkeiss.1.t
+	desc = scherkeiss.1.desc
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = B01
+		NOT = {
+			religious_unity = 1
+		}
+		any_owned_province = {
+			religion = medilyte
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.1
+			NOT = {
+				religious_unity = 0.25
+			}
+		}
+		modifier = {
+			factor = 0.25
+			NOT = {
+				religious_unity = 0.5
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				religious_unity = 0.75
+			}
+		}
+		modifier = {
+			factor = 0.75
+			NOT = {
+				religious_unity = 0.9
+			}
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				any_owned_province = {
+					culture_group = ourkani_group
+				}
+			}
+		}
+		modifier = {
+			factor = 4
+			humanist_ideas = 1
+		}
+		modifier = {
+			factor = 0.25
+			religious_ideas = 1
+		}
+		modifier = {
+			factor = 2
+			has_estate = estate_ourk
+			estate_loyalty = {
+				estate = estate_ourk
+				loyalty = 30
+			}
+		}
+		modifier = {
+			factor = 2
+			has_estate = estate_ourk
+			estate_loyalty = {
+				estate = estate_ourk
+				loyalty = 60
+			}
+		}
+		modifier = {
+			factor = 0.25
+			has_estate = estate_ourk
+			NOT = {
+				estate_loyalty = {
+					estate = estate_ourk
+					loyalty = 30
+				}
+			}
+		}
+	}
+	
+	option = { # Release Kylvaa'Kseryss (Paak Ourk) as a loyal subject
+		name = scherkeiss.1.a
+		ai_chance = { factor = 50 }
+		create_vassal = R08
+		create_march = R08
+		hidden_effect = {
+			R08 = {
+				change_religion = medilyte
+				change_primary_culture = paak_ourk
+				add_accepted_culture = paleremore
+				primary_race_recalc = yes
+				promoted_races_recalc = yes
+			}
+			every_province = {
+				limit = {
+					owned_by = R08
+				}
+				remove_core = ROOT
+			}
+			country_event = { id = scherkeiss.2 }
+		}
+	}
+	option = { # Release Darvoza (Paak Ourk), Osnor (Palemorcian), and a smaller Kylvaa'Kseryss (Paak Ourk) as loyal subjects
+		name = scherkeiss.1.b
+		ai_chance = { factor = 20 }
+		create_vassal = R05
+		create_march = R05
+		hidden_effect = {
+			scherkeiss14_area = {
+				cede_province = R05
+				add_core = R05
+			}
+			scherkeiss15_area = {
+				cede_province = R05
+				add_core = R05
+			}
+			scherkeiss16_area = {
+				cede_province = R05
+				add_core = R05
+			}
+			scherkeiss17_area = {
+				cede_province = R05
+				add_core = R05
+			}
+			R05 = {
+				change_religion = medilyte
+				every_owned_province = {
+					remove_core = R08
+				}
+				change_primary_culture = paak_ourk
+				add_accepted_culture = paleremore
+				primary_race_recalc = yes
+				promoted_races_recalc = yes
+			}
+		}
+		create_vassal = R06
+		create_march = R06
+		hidden_effect = {
+			R06 = {
+				change_religion = medilyte
+				every_owned_province = {
+					remove_core = R08
+				}
+				change_primary_culture = paleremore
+				primary_race_recalc = yes
+				promoted_races_recalc = yes
+			}
+		}
+		create_vassal = R08
+		create_march = R08
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					is_core = R08
+				}
+				cede_province = R08
+			}
+			create_march = R08
+			R08 = {
+				change_religion = medilyte
+				change_primary_culture = paak_ourk
+				add_accepted_culture = paleremore
+				primary_race_recalc = yes
+				promoted_races_recalc = yes
+			}
+			every_province = {
+				limit = {
+					OR = {
+						owned_by = R05
+						owned_by = R06
+						owned_by = R08
+					}
+				}
+				remove_core = ROOT
+			}
+			country_event = { id = scherkeiss.2 }
+		}
+	}
+	option = { # Release all the Medilyte lands as a loyal subject (Palemorcian)
+		name = scherkeiss.1.c
+		ai_chance = { factor = 20 }
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					religion = medilyte
+				}
+				add_core = R07
+			}
+		}
+		create_vassal = R07
+		create_march = R07
+		hidden_effect = {
+			R07 = {
+				change_primary_culture = paleremore
+				add_accepted_culture = paak_ourk
+				primary_race_recalc = yes
+				promoted_races_recalc = yes
+			}
+			every_province = {
+				limit = {
+					owned_by = R07
+				}
+				remove_core = ROOT
+			}
+			country_event = { id = scherkeiss.2 }
+		}
+	}
+	option = { # We can handle this (Disaster, or creates a looming one? food for thought- until then, ai will not pick)
+		name = scherkeiss.1.d
+		ai_chance = { factor = 0 }
+	}
+}
+
+country_event = {
+	id = scherkeiss.2
+	title = scherkeiss.2.t
+	desc = scherkeiss.2.desc
+	is_triggered_only = yes
+	option = {
+		name = scherkeiss.2.a
+		trigger = { R05 = { exists = yes } }
+		switch_tag = R05
+	}
+	option = {
+		name = scherkeiss.2.b
+		trigger = { R06 = { exists = yes } }
+		switch_tag = R06
+	}
+	option = {
+		name = scherkeiss.2.c
+		trigger = { R07 = { exists = yes } }
+		switch_tag = R07
+	}
+	option = {
+		name = scherkeiss.2.d
+		trigger = { R08 = { exists = yes } }
+		switch_tag = R08
+	}
+	option = {
+		name = scherkeiss.2.e
+	}
+}

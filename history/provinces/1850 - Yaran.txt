@@ -3,13 +3,15 @@
 owner = B01
 controller = B01
 add_core = B01
-culture = paleremore
+add_core = R05
+add_core = R08
+culture = paak_ourk
 religion = medilyte
 hre = no
 base_tax = 1 
 base_production = 1
 base_manpower = 1
 trade_goods = unknown
-capital = "Placeholder"
+capital = "Darvoza"
 is_city = yes
 discovered_by = western

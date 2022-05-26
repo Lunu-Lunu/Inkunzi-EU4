@@ -1,5 +1,5 @@
 government = republic
-add_government_reform = noble_elite_reform
+add_government_reform = porian_meritocracy_reform
 government_rank = 3
 mercantilism = 10
 technology_group = western

@@ -1,0 +1,34 @@
+porian_meritocracy_reform = {
+	icon = "protectorate_parliament_reform"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			has_reform = porian_meritocracy
+			has_had_reform = porian_meritocracy
+			culture_group = porian_group
+		}
+	}
+	lock_level_when_selected = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 15
+	legacy_equivalent = protectorate_parliament_legacy
+	modifiers = {
+		reelection_cost = 0.25
+		random_candidate_bonus = 1
+		female_advisor_chance = 0.5
+		may_recruit_female_generals = yes
+	}
+	conditional = {
+		allow = { has_dlc = "Common Sense" }
+		has_parliament = yes
+		custom_attributes = {
+			blocked_call_diet = yes
+		}
+	}
+	custom_attributes = {
+		locked_government_type = yes
+		enables_plutocratic_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
+}
