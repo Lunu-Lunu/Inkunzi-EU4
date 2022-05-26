@@ -6,3 +6,8 @@ F01_hesh_development = {
 F01_hesh_expeditions = {
 	colonists = 1
 }
+
+F01_hesh_cowpalia = {
+	years_of_nationalism = -10
+	global_unrest = -2
+}

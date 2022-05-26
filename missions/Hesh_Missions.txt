@@ -17,6 +17,9 @@ hesh_missions_1 = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { hesh_mission_prepare_the_armies }
 		position = 2
+		provinces_to_highlight = {
+			province_id = 3138
+		}
 		trigger = {
 			OR = { 
 				tag = B80 
@@ -38,6 +41,9 @@ hesh_missions_1 = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { hesh_mission_the_bickering_hive }
 		position = 3
+		provinces_to_highlight = {
+			province_id = 3138
+		}
 		trigger = {
 			3138 = { 
 				country_or_non_sovereign_subject_holds = ROOT
@@ -56,6 +62,9 @@ hesh_missions_1 = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { hesh_mission_development_of_the_hesh }
 		position = 5
+		provinces_to_highlight = {
+			province_id = 3138
+		}
 		trigger = {
 			3138 = { 
 				country_or_non_sovereign_subject_holds = ROOT
@@ -88,6 +97,9 @@ hesh_missions_2 = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { hesh_mission_prepare_the_armies}
 		position = 2
+		provinces_to_highlight = {
+			province_id = 3137
+		}
 		trigger = {
 			OR = { 
 				tag = B78 
@@ -115,6 +127,9 @@ hesh_missions_2 = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { hesh_mission_the_learning_hive }
 		position = 3
+		provinces_to_highlight = {
+			province_id = 3137
+		}
 		trigger = {
 			3137 = { 
 				country_or_non_sovereign_subject_holds = ROOT
@@ -133,6 +148,9 @@ hesh_missions_2 = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { hesh_mission_university_of_antax hesh_mission_hive_voras hesh_mission_fish_of_the_maw }
 		position = 4
+		provinces_to_highlight = {
+			owned_by = ROOT
+		}
 		trigger = {
 			ROOT = { 
 				grown_by_development = 50
@@ -150,6 +168,9 @@ hesh_missions_2 = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { hesh_mission_development_of_the_hesh }
 		position = 5
+		provinces_to_highlight = {
+			province_id = 3070
+		}
 		trigger = {
 			3070 = { 
 				country_or_non_sovereign_subject_holds = ROOT
@@ -165,6 +186,11 @@ hesh_missions_2 = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { hesh_mission_kostran_foothold }
 		position = 6
+		provinces_to_highlight = {
+			province_id = 3068
+			province_id = 3212
+			province_id = 3221
+		}
 		trigger = {
 			ROOT = { 
 				has_discovered = 3068
@@ -187,19 +213,15 @@ hesh_missions_2 = {
 		trigger = {
 			ROOT = { 
 				any_known_country = {
-					OR = {
-						technology_group = western
-						technology_group = eastern
-					}
+					is_colonial_nation = yes
 				}
 			}
 		}
 		effect = {
 			every_known_country = {
 				limit = {
-					technology_group = western
+					is_colonial_nation = yes
 				}
-				set_country_flag = colony_detected
 				every_owned_province = {
 					add_claim = ROOT
 				}
@@ -210,15 +232,26 @@ hesh_missions_2 = {
 	hesh_mission_repel_the_imperialists = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { hesh_mission_beyond_the_yawn }
-		position = 8
+		position = 9
 		trigger = {
-			
+			any_known_country = {
+				OR = {
+					is_colonial_nation = yes
+					technology_group = western
+					technology_group = eastern
+				}
+				ROOT = {
+					has_won_war_against = {
+						who = PREV
+						max_years_since = 200
+					}
+				}
+			}    
 		}
 		effect = {
-			ROOT = {
-				add_army_tradition = 20
-				add_prestige = 20
-			}
+			add_prestige = 30
+			add_army_tradition = 20
+			add_army_professionalism = 0.1
 		}
 	}
 }
@@ -278,6 +311,9 @@ hesh_missions_3 = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { hesh_mission_prepare_the_armies }
 		position = 2
+		provinces_to_highlight = {
+			province_id = 3133
+		}
 		trigger = {
 			OR = { 
 				tag = B77 
@@ -305,6 +341,9 @@ hesh_missions_3 = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { hesh_mission_the_first_hive }
 		position = 3
+		provinces_to_highlight = {
+			province_id = 3133
+		}
 		trigger = {
 			3133 = { 
 				country_or_non_sovereign_subject_holds = ROOT
@@ -323,6 +362,9 @@ hesh_missions_3 = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { hesh_mission_under_one_tyrant }
 		position = 4
+		provinces_to_highlight = {
+			owned_by = ROOT
+		}
 		trigger = {
 			ROOT = {
 				core_percentage = 0.85
@@ -338,6 +380,11 @@ hesh_missions_3 = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { hesh_mission_development_of_the_hesh hesh_mission_consolidate_our_holdings }
 		position = 5
+		provinces_to_highlight = {
+			province_id = 3133
+			province_id = 3137
+			province_id = 3130
+		}
 		trigger = {
 			3133 = { 
 				country_or_non_sovereign_subject_holds = ROOT
@@ -372,6 +419,12 @@ hesh_missions_3 = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { hesh_mission_imperial_roads }
 		position = 5
+		provinces_to_highlight = {
+			province_id = 3139
+			province_id = 3140
+			province_id = 3141
+			province_id = 3184
+		}
 		trigger = {
 			3139 = { 
 				country_or_non_sovereign_subject_holds = ROOT
@@ -422,7 +475,10 @@ hesh_missions_3 = {
 	hesh_mission_invade_scotar = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { hesh_mission_boats_of_pitch }
-		position = 7
+		position = 6
+		provinces_to_highlight = {
+			owned_by = B62
+		}
 		trigger = {
 			B62 = {
 				any_core_province = {
@@ -638,10 +694,10 @@ hesh_missions_4 = {
 		}
 	}
 	
-	hesh_mission_the_east_advances = {
+	hesh_mission_the_eastern_advances = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { hesh_mission_control_the_maw }
-		position = 7
+		position = 8
 		trigger = {
 			OR = {
 				B63 = {
@@ -658,6 +714,45 @@ hesh_missions_4 = {
 					add_claim = ROOT
 					add_unrest = -10
 				}
+			}
+		}
+	}
+	hesh_mission_mandate_of_cowpalia = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { hesh_mission_the_east_advances }
+		position = 9
+		trigger = {
+			OR = {
+				3078 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				3090 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				3094 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				3095 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				3104 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				3105 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				3120 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				3126 = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = F01_hesh_cowpalia
+				duration = -1
 			}
 		}
 	}
