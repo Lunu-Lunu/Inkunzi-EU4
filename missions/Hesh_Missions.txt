@@ -76,6 +76,25 @@ hesh_missions_1 = {
 			3138 = { add_building = fort_15th }
 		}
 	}
+	hesh_mission_reconciliation_of_marrinbaie = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { hesh_mission_repel_the_imperialists }
+		position = 10
+		trigger = {
+			development_in_provinces = {
+				value = 200
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			country_event = { 
+				id = celestial_empire_events.1
+				days = 30
+				random = 15
+				tooltip = CELESTIAL_EMPIRE_TOOLTIP
+			}
+		}
+	}
 }
 
 hesh_missions_2 = {
@@ -159,7 +178,7 @@ hesh_missions_2 = {
 		effect = {
 			add_country_modifier = {
 				name = F01_hesh_development
-				duration = 9125
+				duration = 18250
 			}
 		}
 	}
@@ -218,13 +237,8 @@ hesh_missions_2 = {
 			}
 		}
 		effect = {
-			every_known_country = {
-				limit = {
-					is_colonial_nation = yes
-				}
-				every_owned_province = {
-					add_claim = ROOT
-				}
+			PREV = {
+				add_claim = ROOT
 			}
 		}
 	}
@@ -246,7 +260,8 @@ hesh_missions_2 = {
 						max_years_since = 200
 					}
 				}
-			}    
+			} 
+			NOT = {current_age = age_of_discovery}
 		}
 		effect = {
 			add_prestige = 30

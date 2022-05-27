@@ -1,6 +1,5 @@
 F01_hesh_development = {
-	diplomatic_reputation = 1
-	improve_relation_modifier = 0.25
+	development_cost = -0.1
 }
 
 F01_hesh_expeditions = {
