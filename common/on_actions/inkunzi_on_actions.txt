@@ -10,5 +10,6 @@ on_primary_culture_changed = {
 on_monarch_death = {
 	events = {
 		ervaric_events.1
+		alzhaic_events.1
 	}
 }

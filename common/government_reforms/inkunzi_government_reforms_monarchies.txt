@@ -1,0 +1,42 @@
+alzhaic_settled_horde_reform = {
+	icon = "protectorate_parliament_reform"
+	allow_normal_conversion = no
+	potential = {
+		OR = {
+			has_reform = alzhaic_settled_horde_reform
+			has_had_reform = alzhaic_settled_horde_reform
+		}
+	}
+	lock_level_when_selected = yes
+	valid_for_new_country = no
+	valid_for_nation_designer = yes
+	nation_designer_cost = 15
+	legacy_equivalent = feudal_monarchy
+	modifiers = {
+		loot_amount = 0.50
+		cav_to_inf_ratio = 0.25
+		movement_speed = 0.1
+		legitimacy = -0.5
+	}
+	conditional = {
+		allow = { has_dlc = "Res Publica" }
+		states_general_mechanic = {
+			settled_horde_nomads = {
+				cavalry_power = 0.1
+				cavalry_cost = -0.1
+				global_institution_spread = -0.1
+			}
+			settled_horde_modernists = {
+				legitimacy = 1.5
+				diplomatic_reputation = 1
+				global_institution_spread = 0.1
+				loot_amount = -0.5
+				movement_speed = -0.1
+			}
+		}
+	}
+	custom_attributes = {
+		locked_government_type = yes
+		enables_aristocratic_idea_group = no
+	}
+}

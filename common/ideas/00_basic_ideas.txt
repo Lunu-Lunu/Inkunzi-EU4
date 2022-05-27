@@ -111,7 +111,10 @@ horde_gov_ideas = {
 	}
 	
 	trigger = {
-		has_reform = steppe_horde
+		OR = {
+			has_reform = steppe_horde
+			has_reform = alzhaic_settled_horde_reform
+		}
 	}
 	
 	horse_lords = {

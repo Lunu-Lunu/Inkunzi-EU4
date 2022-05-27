@@ -46,10 +46,7 @@ gov_steppe_horde = {
 	
 	trigger = {
 		has_reform = steppe_horde
-		OR = { 
-			culture_group = altaic 
-			culture_group = tartar 
-		}
+		has_reform = alzhaic_settled_horde_reform
 	}
 }
 
