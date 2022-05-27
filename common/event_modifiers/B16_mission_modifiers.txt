@@ -12,3 +12,7 @@ lizard_leftalone = {
 	local_core_creation = -0.25
 	picture = "province_trade_power_value"
 }
+trade_domination_znt = {
+	global_trade_power = 0.1
+	trade_efficiency = 0.2
+}
