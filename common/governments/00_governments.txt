@@ -32,6 +32,7 @@ monarchy = {
 				austrian_archduchy_reform
 				siamese_absolutism
 				confucian_bureaucracy
+				alzhaic_settled_horde_reform
 			}
 		}
 		hereditary_vs_nobility = {

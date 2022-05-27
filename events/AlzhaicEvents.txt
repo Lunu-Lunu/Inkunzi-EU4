@@ -1,0 +1,31 @@
+###########################################################
+# Events for Alzhaic countries
+#
+# written by Lunu (probably not)
+###########################################################
+
+namespace = alzhaic_events
+
+country_event = {
+	id = alzhaic_events.1
+	title = alzhaic_events.1.t
+	desc = alzhaic_events.1.desc
+	picture = COUNTRY_COLLAPSE_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_reform = alzhaic_settled_horde_reform
+	}
+	
+	option = { # The new leader favors the Nomads
+		name = alzhaic_events.1.a
+		change_statists_vs_monarchists = -0.25
+		add_army_tradition = 10
+	}
+	option = {
+		name = alzhaic_events.1.b # The new leader favors the Modernists
+		change_statists_vs_monarchists = 0.25
+		add_prestige = 15
+	}
+}
