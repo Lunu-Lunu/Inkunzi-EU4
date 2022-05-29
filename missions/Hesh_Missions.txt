@@ -76,25 +76,6 @@ hesh_missions_1 = {
 			3138 = { add_building = fort_15th }
 		}
 	}
-	hesh_mission_reconciliation_of_marrinbaie = {
-		icon = mission_build_up_to_force_limit
-		required_missions = { hesh_mission_repel_the_imperialists }
-		position = 10
-		trigger = {
-			development_in_provinces = {
-				value = 200
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			country_event = { 
-				id = celestial_empire_events.1
-				days = 30
-				random = 15
-				tooltip = CELESTIAL_EMPIRE_TOOLTIP
-			}
-		}
-	}
 }
 
 hesh_missions_2 = {
@@ -433,7 +414,7 @@ hesh_missions_3 = {
 	hesh_mission_expanding_the_frontier = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { hesh_mission_imperial_roads }
-		position = 5
+		position = 6
 		provinces_to_highlight = {
 			province_id = 3139
 			province_id = 3140
@@ -490,7 +471,7 @@ hesh_missions_3 = {
 	hesh_mission_invade_scotar = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { hesh_mission_boats_of_pitch }
-		position = 6
+		position = 8
 		provinces_to_highlight = {
 			owned_by = B62
 		}
@@ -517,6 +498,45 @@ hesh_missions_3 = {
 				every_owned_province = {
 					add_claim = ROOT
 				}
+			}
+		}	
+	}
+	hesh_mission_secure_north = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { hesh_mission_invade_scotar }
+		position = 9
+		provinces_to_highlight = {
+			region = eastern_kostra_region
+		}
+		trigger = {
+			eastern_kostra_region = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			rodenvikk6_area = {
+				add_claim = ROOT
+			}
+			rodenvikk7_area = {
+				add_claim = ROOT
+			}
+			rodenvikk8_area = {
+				add_claim = ROOT
+			}
+			rodenvikk9_area = {
+				add_claim = ROOT
+			}
+			rodenvikk10_area = {
+				add_claim = ROOT
+			}
+			rodenvikk11_area = {
+				add_claim = ROOT
+			}
+			rodenvikk12_area = {
+				add_claim = ROOT
+			}
+			rakuuvar_area = {
+				add_claim = ROOT
 			}
 		}	
 	}
@@ -734,7 +754,7 @@ hesh_missions_4 = {
 	}
 	hesh_mission_mandate_of_cowpalia = {
 		icon = mission_build_up_to_force_limit
-		required_missions = { hesh_mission_the_east_advances }
+		required_missions = { hesh_mission_the_eastern_advances }
 		position = 9
 		trigger = {
 			OR = {
@@ -769,6 +789,19 @@ hesh_missions_4 = {
 				name = F01_hesh_cowpalia
 				duration = -1
 			}
+		}
+	}
+	hesh_mission_empire_of_all = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { hesh_mission_mandate_of_cowpalia hesh_mission_secure_north }
+		position = 10
+		trigger = {
+			ROOT = {
+				development = 500
+			}
+		}
+		effect = {
+			set_government_rank = 3
 		}
 	}
 }
