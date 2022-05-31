@@ -250,6 +250,37 @@ hesh_missions_2 = {
 			add_army_professionalism = 0.1
 		}
 	}
+	
+	hesh_mission_shield_of_the_new_world = {
+		icon = mission_build_up_to_force_limit
+		required_missions = { hesh_mission_repel_the_imperialists }
+		position = 10
+		trigger = {
+			all_country = {
+                NOT = {
+					AND = {
+						is_colonial_nation = no
+						OR = {
+							colonial_region = colonial_elyaesia
+							colonial_region = colonial_rodenvikk
+							colonial_region = colonial_seesonzero
+							colonial_region = colonial_morland
+							colonial_region = colonial_anyar
+						}
+						total_development = 30
+					}
+				}
+            } 
+		}
+		effect = {
+			ROOT = {
+				country_event = { 
+					id = hesh.2
+					tooltip = HESH_SHIELD_TOOLTIP
+				}	
+			}
+		}
+	}
 }
 
 hesh_missions_3 = {
@@ -471,7 +502,7 @@ hesh_missions_3 = {
 	hesh_mission_invade_scotar = {
 		icon = mission_build_up_to_force_limit
 		required_missions = { hesh_mission_boats_of_pitch }
-		position = 8
+		position = 7
 		provinces_to_highlight = {
 			owned_by = B62
 		}
@@ -480,8 +511,7 @@ hesh_missions_3 = {
 				any_core_province = {
 					country_or_non_sovereign_subject_holds = ROOT
 				}
-			}
-				
+			}	
 		}
 		effect = {
 			B52 = {
@@ -642,7 +672,7 @@ hesh_missions_4 = {
 			}	
 		}
 	}
-
+	
 	hesh_mission_subjugate_eiyeborvoland	{
 		icon = mission_build_up_to_force_limit
 		required_missions = { hesh_mission_under_one_tyrant }
@@ -797,11 +827,16 @@ hesh_missions_4 = {
 		position = 10
 		trigger = {
 			ROOT = {
-				development = 500
+				total_development = 500
 			}
 		}
 		effect = {
-			set_government_rank = 3
+			ROOT = {
+				country_event = { 
+					id = hesh.1
+					tooltip = HESH_EMPIRE_TOOLTIP
+				}	
+			}
 		}
 	}
 }

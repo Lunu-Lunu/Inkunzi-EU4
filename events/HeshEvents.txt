@@ -1,0 +1,37 @@
+namespace = hesh
+
+country_event = {
+	id = hesh.1
+	title = hesh.1.t
+	desc = hesh.1.d
+	fire_only_once = yes
+	picture = GOOD_WITH_MONARCH_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+	name = hesh.1.a 
+	ai_chance = { factor = 100 }
+		set_government_rank = 3
+		add_prestige = 50
+	}
+}
+
+country_event = {
+	id = hesh.2
+	title = hesh.2.t
+	desc = hesh.2.d
+	fire_only_once = yes
+	picture = LIBERUM_VETO_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+	name = hesh.2.a 
+	ai_chance = { factor = 100 }
+		every_known_country = {
+			culture_group = seesonzero
+		}
+		ROOT = {
+			vassalize = PREV
+		}
+	}
+}
