@@ -10,3 +10,7 @@ F01_hesh_cowpalia = {
 	years_of_nationalism = -10
 	global_unrest = -2
 }
+
+F01_hesh_empire = {
+	ae_impact = 0.2
+}

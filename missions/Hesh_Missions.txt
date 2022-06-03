@@ -14,7 +14,7 @@ hesh_missions_1 = {
 	has_country_shield = yes
 
 	hesh_mission_the_bickering_hive = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_unite_home_region
 		required_missions = { hesh_mission_prepare_the_armies }
 		position = 2
 		provinces_to_highlight = {
@@ -38,7 +38,7 @@ hesh_missions_1 = {
 	}
 	
 	hesh_mission_fish_of_the_maw = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_galleys_in_port
 		required_missions = { hesh_mission_the_bickering_hive }
 		position = 3
 		provinces_to_highlight = {
@@ -59,7 +59,7 @@ hesh_missions_1 = {
 	}
 
 	hesh_mission_yaxat_headquarters = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_arabian_fort
 		required_missions = { hesh_mission_development_of_the_hesh }
 		position = 5
 		provinces_to_highlight = {
@@ -94,7 +94,7 @@ hesh_missions_2 = {
 	has_country_shield = yes
 
 	hesh_mission_the_learning_hive = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_unite_home_region
 		required_missions = { hesh_mission_prepare_the_armies}
 		position = 2
 		provinces_to_highlight = {
@@ -124,7 +124,7 @@ hesh_missions_2 = {
 	}
 
 	hesh_mission_university_of_antax = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_early_modern_university
 		required_missions = { hesh_mission_the_learning_hive }
 		position = 3
 		provinces_to_highlight = {
@@ -145,7 +145,7 @@ hesh_missions_2 = {
 	}
 
 	hesh_mission_development_of_the_hesh = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_early_game_buildings
 		required_missions = { hesh_mission_university_of_antax hesh_mission_hive_voras hesh_mission_fish_of_the_maw }
 		position = 4
 		provinces_to_highlight = {
@@ -165,7 +165,7 @@ hesh_missions_2 = {
 	}
 	
 	hesh_mission_kostran_foothold = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_invade_island
 		required_missions = { hesh_mission_development_of_the_hesh }
 		position = 5
 		provinces_to_highlight = {
@@ -183,7 +183,7 @@ hesh_missions_2 = {
 	}
 
 	hesh_mission_hesh_expeditions = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_iberian_conquistador
 		required_missions = { hesh_mission_kostran_foothold }
 		position = 6
 		provinces_to_highlight = {
@@ -207,7 +207,7 @@ hesh_missions_2 = {
 	}
 	
 	hesh_mission_beyond_the_yawn = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_settlers_north_america
 		required_missions = { }
 		position = 7
 		trigger = {
@@ -225,7 +225,7 @@ hesh_missions_2 = {
 	}
 	
 	hesh_mission_repel_the_imperialists = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_iroquois_warriors
 		required_missions = { hesh_mission_beyond_the_yawn }
 		position = 9
 		trigger = {
@@ -266,8 +266,9 @@ hesh_missions_2 = {
 							colonial_region = colonial_seesonzero
 							colonial_region = colonial_morland
 							colonial_region = colonial_anyar
+							colonial_region = colonial_vyraisde
 						}
-						total_development = 30
+						total_development = 20
 					}
 				}
             } 
@@ -299,7 +300,7 @@ hesh_missions_3 = {
 	has_country_shield = yes
 
 	hesh_mission_prepare_the_armies = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_assemble_an_army
 		required_missions = { }
 		position = 1
 		trigger = {
@@ -335,7 +336,7 @@ hesh_missions_3 = {
 	}
 	
 	hesh_mission_the_first_hive = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_unite_home_region
 		required_missions = { hesh_mission_prepare_the_armies }
 		position = 2
 		provinces_to_highlight = {
@@ -365,7 +366,7 @@ hesh_missions_3 = {
 	} 
 
 	hesh_mission_hive_voras = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_eastern_european_city
 		required_missions = { hesh_mission_the_first_hive }
 		position = 3
 		provinces_to_highlight = {
@@ -386,7 +387,7 @@ hesh_missions_3 = {
 	}
 
 	hesh_mission_consolidate_our_holdings = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_pf_map_table
 		required_missions = { hesh_mission_under_one_tyrant }
 		position = 4
 		provinces_to_highlight = {
@@ -404,7 +405,7 @@ hesh_missions_3 = {
 	}
 
 	hesh_mission_imperial_roads = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_great_wall
 		required_missions = { hesh_mission_development_of_the_hesh hesh_mission_consolidate_our_holdings }
 		position = 5
 		provinces_to_highlight = {
@@ -443,7 +444,7 @@ hesh_missions_3 = {
 	}
 
 	hesh_mission_expanding_the_frontier = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_colonial
 		required_missions = { hesh_mission_imperial_roads }
 		position = 6
 		provinces_to_highlight = {
@@ -500,7 +501,7 @@ hesh_missions_3 = {
 	}	
 	
 	hesh_mission_invade_scotar = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_steppe_warriors
 		required_missions = { hesh_mission_boats_of_pitch }
 		position = 7
 		provinces_to_highlight = {
@@ -532,7 +533,7 @@ hesh_missions_3 = {
 		}	
 	}
 	hesh_mission_secure_north = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_non-western_cavalry_raid
 		required_missions = { hesh_mission_invade_scotar }
 		position = 9
 		provinces_to_highlight = {
@@ -588,7 +589,7 @@ hesh_missions_4 = {
 	has_country_shield = yes
 	
 	hesh_mission_the_common_hive = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_unite_home_region
 		required_missions = { hesh_mission_prepare_the_armies }
 		position = 2
 		trigger = {
@@ -615,7 +616,7 @@ hesh_missions_4 = {
 	}
 	
 	hesh_mission_under_one_tyrant = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_empire
 		required_missions = { hesh_mission_the_bickering_hive hesh_mission_the_learning_hive hesh_mission_the_first_hive hesh_mission_the_common_hive hesh_mission_the_wandering_hive }
 		position = 3
 		trigger = {
@@ -674,7 +675,7 @@ hesh_missions_4 = {
 	}
 	
 	hesh_mission_subjugate_eiyeborvoland	{
-		icon = mission_build_up_to_force_limit
+		icon = mission_have_two_subjects
 		required_missions = { hesh_mission_under_one_tyrant }
 		position = 5
 		trigger = {
@@ -697,7 +698,7 @@ hesh_missions_4 = {
 	}
 
 	hesh_mission_boats_of_pitch = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_junk_boat
 		required_missions = { hesh_mission_subjugate_eiyeborvoland }
 		position = 6
 		trigger = {
@@ -724,7 +725,7 @@ hesh_missions_4 = {
 	}
 
 	hesh_mission_control_the_maw = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_establish_high_seas_navy
 		required_missions = { hesh_mission_boats_of_pitch }
 		position = 7
 		trigger = {
@@ -760,7 +761,7 @@ hesh_missions_4 = {
 	}
 	
 	hesh_mission_the_eastern_advances = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_conquer_50_development
 		required_missions = { hesh_mission_control_the_maw }
 		position = 8
 		trigger = {
@@ -783,7 +784,7 @@ hesh_missions_4 = {
 		}
 	}
 	hesh_mission_mandate_of_cowpalia = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_kowtow
 		required_missions = { hesh_mission_the_eastern_advances }
 		position = 9
 		trigger = {
@@ -822,7 +823,7 @@ hesh_missions_4 = {
 		}
 	}
 	hesh_mission_empire_of_all = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_empire
 		required_missions = { hesh_mission_mandate_of_cowpalia hesh_mission_secure_north }
 		position = 10
 		trigger = {
@@ -857,7 +858,7 @@ hesh_missions_5 = {
 	has_country_shield = yes
 	
 	hesh_mission_the_wandering_hive = {
-		icon = mission_build_up_to_force_limit
+		icon = mission_unite_home_region
 		required_missions = { hesh_mission_prepare_the_armies }
 		position = 2
 		trigger = {
@@ -880,7 +881,7 @@ hesh_missions_5 = {
 	}	
 
 	hesh_mission_coast_of_the_yawn	{
-		icon = mission_build_up_to_force_limit
+		icon = mission_sea_battles
 		required_missions = { hesh_mission_subjugate_eiyeborvoland }
 		position = 6
 		trigger = {
