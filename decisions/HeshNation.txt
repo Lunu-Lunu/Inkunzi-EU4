@@ -1,0 +1,25 @@
+country_decisions = {
+	declaration_of_irreligion = {
+		major = yes
+		potential = {
+			culture_group = hesh_group
+			NOT = { has_reform = peasants_republic }
+			NOT = { religion = irreligious }
+			adm_tech = 5
+		}
+		allow = {
+			NOT = { religion = irreligious }
+		}
+		effect = {
+			change_religion = irreligious
+			add_country_modifier = { 
+				name = F01_hesh_reverence
+				duration = -1
+			}
+			add_country_modifier = {
+				name = F01_hesh_grace
+				duration = 4075
+			}
+		}
+	}
+}
