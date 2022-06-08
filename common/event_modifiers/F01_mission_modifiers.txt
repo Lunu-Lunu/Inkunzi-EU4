@@ -29,3 +29,8 @@ F01_hesh_grace = {
 	tolerance_heretic = 2
 	tolerance_heathen = 2
 }
+
+F01_hesh_cavalry = {
+	cavalry_power = 0.10
+	cavalry_shock = 1
+}
