@@ -26,10 +26,30 @@ country_event = {
 		ROOT = {
 			every_owned_province = {
 				limit = {
-					region = Rekolia_region
+					region = rekolia_region
+					#is_core = b14
+					#area = ledenisk_area
+						
+					NOT = {
+						area = rekolia2_area
+						area = rekolia_area
+						area = surveria10_area
+						area = surveria9_area
+						area = surveria8_area
+						area = surveria5_area
+						area = surveria7_area
+						area = surveria9_area
+						area = surveria4_area
+						culture = lizardman
+						}
 				}
+
 				cede_province = R04
 			}
+		}
+		create_subject = {
+			subject_type = march
+			subject = R04
 		}
 	}
 	option = {
@@ -39,19 +59,35 @@ country_event = {
 			cede_province = R04
 			add_core = R04
 		}
-		B16 = {
-			create_alliance = R04
-		}
-
-		B16 = {
+		ROOT = {
 			every_owned_province = {
 				limit = {
-					region = Rekolia_region
+					region = rekolia_region
+					#is_core = b14
+					#area = ledenisk_area
+						
+					NOT = {
+						area = rekolia2_area
+						area = rekolia_area
+						area = surveria10_area
+						area = surveria9_area
+						area = surveria8_area
+						area = surveria5_area
+						area = surveria7_area
+						area = surveria9_area
+						area = surveria4_area
+						culture = lizardman
+						}
 				}
+
 				cede_province = R04
 			}
-		}		
+		}
 		switch_tag	= R04
+		create_subject = {
+			subject_type = march
+			subject = R04
+		}
 	}
 	
 }

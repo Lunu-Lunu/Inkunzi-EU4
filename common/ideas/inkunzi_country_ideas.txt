@@ -240,6 +240,50 @@ A65_ideas = { #Helghan Ideas
 		cavalry_power = 0.10
 	}
 }
+B16_ideas = { # Zuntlan Ideas
+	start = {
+		missionaries = 1
+		tolerance_own = 1
+	}
+	bonus = {
+		navy_tradition = 1
+	}
+
+	trigger = {
+		tag = B16
+	}
+	free = yes
+
+	B16_lizard_militia = {
+		infantry_cost = -0.10
+		manpower_recovery_speed = 0.10
+	}
+	B16_old_ones = {
+		global_missionary_strength = 0.05
+		missionary_maintenance_cost = -0.1
+	}
+	B16_royal_admirals = {
+		admiral_cost = -0.25
+		leader_naval_shock = 1
+	}
+	B16_temple_cities = {
+		development_cost = -0.1
+	}
+	B16_thixi_defenders = {
+		defensiveness = 0.15
+	}
+	B16_jeweled_crown = {
+		prestige_from_land = 0.20
+		prestige_per_development_from_conversion = 0.5
+		prestige_decay = -0.02
+	}
+	B16_zerg = {
+		infantry_cost = -0.25
+		manpower_recovery_speed = -0.15
+		infantry_fire = 1
+		fire_damage_received = -0.05
+	}
+}
 
 B21_ideas = { # Melkhian Ideas
 	start = {

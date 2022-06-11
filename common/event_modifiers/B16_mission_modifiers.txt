@@ -16,3 +16,10 @@ trade_domination_znt = {
 	global_trade_power = 0.1
 	trade_efficiency = 0.2
 }
+znt_dominace = {
+	global_trade_power = 0.15
+}
+znt_cptl_urbanization = {
+	local_state_maintenance_modifier = -0.10
+	local_development_cost = -0.15
+}
