@@ -425,6 +425,8 @@ tribal = {
 				polynesian_tribe
 				lyharan_godsrealm
 				yeulan_sortition
+				common_hive
+				hesh_hive
 			}
 		}
 		tribal_cultural_values = {

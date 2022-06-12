@@ -112,3 +112,35 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = hesh.4
+	title = hesh.4.t
+	desc = hesh.4.d
+	picture = PRAYING_eventPicture
+	trigger = {
+		OR = {
+			culture_group = hesh_group
+			culture_group = seesonzero_group
+			culture_group = snakeman_group
+		}
+		owns_or_non_sovereign_subject_of = 3137
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = { #not listen
+		name = hesh.4.a 
+		ai_chance = { factor = 50 }
+		add_stability = -1
+	}
+	option = { #listen
+		name = hesh.4.b
+		ai_chance = { factor = 50 }
+		add_prestige = 20
+		add_treasury = -100
+		3137 = {
+			add_base_production = 1
+		}
+	}
+}

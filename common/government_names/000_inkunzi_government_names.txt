@@ -38,6 +38,34 @@ gov_hive = {
 	trigger = {
 		OR = {
 			has_reform = wandering_hive
+			has_reform = hesh_hive
+		}
+	}
+}
+
+gov_common_hive = {
+	rank = {
+		1 = HIVE
+		2 = HIVE
+		3 = HIVE
+	}
+	ruler_male = {
+		1 = GAUNT
+		2 = GAUNT
+		3 = GAUNT
+	}
+	ruler_female = {
+		1 = GAUNT
+		2 = GAUNT
+		3 = GAUNT
+	}
+	trigger = {
+		OR = {
+			has_reform = common_hive
+			AND = {
+				culture_group = hesh_group
+				has_reform = peasant_republic
+			}
 		}
 	}
 }

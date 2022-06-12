@@ -1,5 +1,5 @@
 government = tribal
-add_government_reform = tribal_despotism
+add_government_reform = hesh_hive
 government_rank = 1
 mercantilism = 10
 technology_group = mesoamerican
@@ -7,6 +7,7 @@ religion = tribal_faith
 primary_culture = antaxian
 capital = 3137
 set_country_flag = primary_hesh_nation
+historical_rival = B79
 
 1444.11.11 = {
 	monarch = {

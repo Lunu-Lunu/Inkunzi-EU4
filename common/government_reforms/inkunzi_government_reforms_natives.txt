@@ -30,6 +30,8 @@ wandering_hive = {
 			has_had_reform = wandering_hive
 		}
 	}
+	native_mechanic = yes
+	allow_migration = yes
 	modifiers = {
 		global_unrest = -3
 		tribal_development_growth = 0.04

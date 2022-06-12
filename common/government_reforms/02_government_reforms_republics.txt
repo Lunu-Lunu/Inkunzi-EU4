@@ -624,6 +624,7 @@ peasants_republic = {
 			has_country_flag = great_peasants_war_peasant_republic
 			have_had_reform = peasants_republic
 			have_had_reform = stateless_society
+			have_had_reform = common_hive
 		}
 	}
 	valid_for_nation_designer = yes
