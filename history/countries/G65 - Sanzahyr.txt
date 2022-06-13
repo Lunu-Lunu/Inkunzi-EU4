@@ -1,0 +1,20 @@
+government = native
+add_government_reform = wandering_hive
+government_rank = 1
+mercantilism = 10
+technology_group = mesoamerican
+religion = tribal_faith
+primary_culture = hiveless
+capital = 3185
+set_country_flag = primary_hesh_nation
+
+1444.11.11 = {
+	monarch = {
+		name = "Kirekax"
+		dynasty = "Sanzahyr"
+		adm = 2
+		dip = 2
+		mil = 2
+		birth_date = 1424.11.11	`
+	}
+}
