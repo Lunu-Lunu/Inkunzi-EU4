@@ -12,4 +12,5 @@ base_manpower = 6
 trade_goods = fish
 capital = "Ogland"
 is_city = yes
-discovered_by = mesoamerican
+discovered_by = mesoamerican 
+discovered_by = north_american

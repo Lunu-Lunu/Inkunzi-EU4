@@ -11,4 +11,5 @@ base_manpower = 1
 trade_goods = unknown
 capital = "Kallabavr"
 is_city = no
-discovered_by = mesoamerican
+discovered_by = mesoamerican 
+discovered_by = north_american

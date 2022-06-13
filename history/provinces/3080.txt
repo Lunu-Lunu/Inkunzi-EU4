@@ -12,4 +12,5 @@ base_manpower = 2
 trade_goods = incense
 capital = "Leaugh Kombuk"
 is_city = yes
-discovered_by = mesoamerican
+discovered_by = mesoamerican 
+discovered_by = north_american

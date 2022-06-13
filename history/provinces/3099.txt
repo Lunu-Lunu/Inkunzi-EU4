@@ -12,4 +12,5 @@ base_manpower = 5
 trade_goods = fish
 capital = "Jiland"
 is_city = yes
-discovered_by = mesoamerican
+discovered_by = mesoamerican 
+discovered_by = north_american

@@ -12,4 +12,5 @@ base_manpower = 3
 trade_goods = coffee
 capital = "Bukit Ceaugh"
 is_city = yes
-discovered_by = mesoamerican
+discovered_by = mesoamerican 
+discovered_by = north_american

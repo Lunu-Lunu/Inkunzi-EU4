@@ -1,8 +1,11 @@
-government = tribal
-add_government_reform = tribal_despotism
+government = native
+add_government_reform = native_clan_council_reform
+add_government_reform = native_oral_tradition_reform
+add_government_reform = native_settle_down_reform
+government_rank = 1
 government_rank = 1
 mercantilism = 10
-technology_group = mesoamerican
+technology_group = north_american
 religion = tribal_faith
 primary_culture = ent
 capital = 3563

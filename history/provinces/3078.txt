@@ -12,4 +12,5 @@ base_manpower = 4
 trade_goods = coffee
 capital = "Telleagh"
 is_city = yes
-discovered_by = mesoamerican
+discovered_by = mesoamerican 
+discovered_by = north_american

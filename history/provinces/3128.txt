@@ -12,4 +12,5 @@ base_manpower = 3
 trade_goods = naval_supplies
 capital = "Wapadan"
 is_city = yes
-discovered_by = mesoamerican
+discovered_by = mesoamerican 
+discovered_by = north_american

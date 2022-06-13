@@ -12,4 +12,5 @@ base_manpower = 7
 trade_goods = cocoa
 capital = "Brechuan"
 is_city = yes
-discovered_by = mesoamerican
+discovered_by = mesoamerican 
+discovered_by = north_american

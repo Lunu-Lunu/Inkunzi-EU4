@@ -12,4 +12,5 @@ base_manpower = 3
 trade_goods = tropical_wood
 capital = "Sakankix"
 is_city = yes
-discovered_by = mesoamerican
+discovered_by = mesoamerican 
+discovered_by = north_american

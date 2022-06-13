@@ -11,4 +11,5 @@ base_manpower = 3
 trade_goods = unknown
 capital = "Placeholder"
 is_city = no
-discovered_by = mesoamerican
+discovered_by = mesoamerican 
+discovered_by = north_american

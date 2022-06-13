@@ -12,4 +12,5 @@ base_manpower = 4
 trade_goods = incense
 capital = "Yawn-seriney"
 is_city = yes
-discovered_by = mesoamerican
+discovered_by = mesoamerican 
+discovered_by = north_american

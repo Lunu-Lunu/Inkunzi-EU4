@@ -11,4 +11,5 @@ base_manpower = 2
 trade_goods = unknown
 capital = "Hamentur"
 is_city = no
-discovered_by = mesoamerican
+discovered_by = mesoamerican 
+discovered_by = north_american

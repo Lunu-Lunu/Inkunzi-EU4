@@ -12,4 +12,5 @@ base_manpower = 4
 trade_goods = fish
 capital = "Marrinbaie"
 is_city = yes
-discovered_by = mesoamerican
+discovered_by = mesoamerican 
+discovered_by = north_american

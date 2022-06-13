@@ -12,4 +12,5 @@ base_manpower = 2
 trade_goods = tropical_wood
 capital = "Kalaz"
 is_city = yes
-discovered_by = mesoamerican
+discovered_by = mesoamerican 
+discovered_by = north_american

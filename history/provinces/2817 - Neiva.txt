@@ -14,4 +14,5 @@ capital = "Yeula"
 is_city = yes
 discovered_by = western
 center_of_trade = 2
-discovered_by = mesoamerican
+discovered_by = mesoamerican 
+discovered_by = north_american
