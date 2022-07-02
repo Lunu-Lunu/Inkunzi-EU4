@@ -36,3 +36,25 @@ wandering_hive = {
 		migration_cost = -0.5
 	}
 }
+entdom = {
+	icon = "tribal_religious_society"
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	native_mechanic = yes
+	allow_migration = yes
+	lock_level_when_selected = yes
+	royal_marriage = no
+	potential = {
+		OR = {
+			culture = ent
+			has_reform = entdom
+			has_had_reform = wandering_hive
+		}
+	}
+	modifiers = {
+		liberty_desire = -10
+	}
+	custom_attributes = {
+		
+	}
+}
