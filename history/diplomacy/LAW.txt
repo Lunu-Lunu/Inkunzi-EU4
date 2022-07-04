@@ -1,0 +1,120 @@
+#
+dependency = {
+	subject_type = "nominal_vassal"
+	first = B23
+	second = B29
+	start_date = 1444.1.1
+	end_date = 1821.1.1
+}
+dependency = {
+	subject_type = "nominal_vassal"
+	first = B23
+	second = B31
+	start_date = 1444.1.1
+	end_date = 1821.1.1
+}
+dependency = {
+	subject_type = "nominal_vassal"
+	first = B23
+	second = B28
+	start_date = 1444.1.1
+	end_date = 1821.1.1
+}
+dependency = {
+	subject_type = "nominal_vassal"
+	first = B23
+	second = B27
+	start_date = 1444.1.1
+	end_date = 1821.1.1
+}
+dependency = {
+	subject_type = "nominal_vassal"
+	first = B23
+	second = B26
+	start_date = 1444.1.1
+	end_date = 1821.1.1
+}
+dependency = {
+	subject_type = "nominal_vassal"
+	first = B23
+	second = B25
+	start_date = 1444.1.1
+	end_date = 1821.1.1
+}
+dependency = {
+	subject_type = "nominal_vassal"
+	first = B23
+	second = B24
+	start_date = 1444.1.1
+	end_date = 1821.1.1
+}
+dependency = {
+	subject_type = "nominal_vassal"
+	first = B23
+	second = B20
+	start_date = 1444.1.1
+	end_date = 1821.1.1
+}
+dependency = {
+	subject_type = "nominal_vassal"
+	first = B23
+	second = B19
+	start_date = 1444.1.1
+	end_date = 1821.1.1
+}
+dependency = {
+	subject_type = "nominal_vassal"
+	first = B23
+	second = B18
+	start_date = 1444.1.1
+	end_date = 1821.1.1
+}
+dependency = {
+	subject_type = "nominal_vassal"
+	first = B23
+	second = B17
+	start_date = 1444.1.1
+	end_date = 1821.1.1
+}
+dependency = {
+	subject_type = "nominal_vassal"
+	first = B23
+	second = B13
+	start_date = 1444.1.1
+	end_date = 1821.1.1
+}
+dependency = {
+	subject_type = "nominal_vassal"
+	first = B23
+	second = B12
+	start_date = 1444.1.1
+	end_date = 1821.1.1
+}
+dependency = {
+	subject_type = "nominal_vassal"
+	first = B23
+	second = B11
+	start_date = 1444.1.1
+	end_date = 1821.1.1
+}
+dependency = {
+	subject_type = "nominal_vassal"
+	first = B23
+	second = B22
+	start_date = 1444.1.1
+	end_date = 1821.1.1
+}
+dependency = {
+	subject_type = "nominal_vassal"
+	first = B23
+	second = B21
+	start_date = 1444.1.1
+	end_date = 1821.1.1
+}
+dependency = {
+	subject_type = "nominal_vassal"
+	first = B23
+	second = B99
+	start_date = 1444.1.1
+	end_date = 1821.1.1
+}
