@@ -1,0 +1,4 @@
+you_are_evil = {
+	opinion = -500
+	yearly_decay = 5
+}

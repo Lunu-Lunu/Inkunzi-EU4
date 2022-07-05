@@ -414,6 +414,20 @@ valor_group = {
 			improve_relation_modifier = 0.15
 		}
 
+
+		allowed_center_conversion = {
+			dark_valor
+			haymonutho
+		}
+
+		will_get_center = { # hopefully this isnt weird lmao
+			any_owned_province = {
+				can_have_center_of_reformation_trigger = {
+					religion = valor
+				}
+			}
+		}
+
 		on_convert = {
 			change_religion = valor
 			add_prestige = -100
@@ -504,10 +518,10 @@ valor_group = {
 			levy_church_tax = {
 				cost = 50
 				potential = {
-					NOT = { tag = PAP }
+					NOT = { tag = B23 }
 				}
 				allow = {
-					NOT = { war_with = PAP }
+					NOT = { war_with = B23 }
 					NOT = { has_country_modifier = papal_sanction_for_church_taxes }
 				}
 				effect = {
@@ -523,10 +537,10 @@ valor_group = {
 			bless_monarch = {
 				cost = 50
 				potential = {
-					NOT = { tag = PAP }
+					NOT = { tag = B23 }
 				}
 				allow = {
-					NOT = { war_with = PAP }
+					NOT = { war_with = B23 }
 					NOT = { has_country_modifier = papal_blessing }
 				}
 				effect = {
@@ -542,10 +556,10 @@ valor_group = {
 			indulgence_for_sins = {
 				cost = 50
 				potential = {
-					NOT = { tag = PAP }
+					NOT = { tag = B23 }
 				}
 				allow = {
-					NOT = { war_with = PAP }
+					NOT = { war_with = B23 }
 					NOT = { has_country_modifier = papal_indulgence }
 				}
 				effect = {
@@ -561,10 +575,10 @@ valor_group = {
 			local_saint = {
 				cost = 100
 				potential = {
-					NOT = { tag = PAP }
+					NOT = { tag = B23 }
 				}
 				allow = {
-					NOT = { war_with = PAP }
+					NOT = { war_with = B23 }
 					NOT = { stability = 3 }
 				}
 				effect = {
@@ -581,10 +595,10 @@ valor_group = {
 			forgiveness_for_usury = {
 				cost = 50
 				potential = {
-					NOT = { tag = PAP }
+					NOT = { tag = B23 }
 				}
 				allow = {
-					NOT = { war_with = PAP }
+					NOT = { war_with = B23 }
 					NOT = { has_country_modifier = usury_forgiven }
 				}
 				effect = {
@@ -604,11 +618,11 @@ valor_group = {
 			proclaim_holy_war = {
 				cost = 50
 				potential = {
-					NOT = { tag = PAP }
+					NOT = { tag = B23 }
 				}
 				allow = {
 					is_at_war = yes
-					NOT = { war_with = PAP }
+					NOT = { war_with = B23 }
 					NOT = { has_country_modifier = papal_sanction_for_holy_war }
 				}
 				effect = {
@@ -628,11 +642,11 @@ valor_group = {
 			send_papal_legate = {
 				cost = 50
 				potential = {
-					NOT = { tag = PAP }
+					NOT = { tag = B23 }
 					is_papal_controller = no
 				}
 				allow = {
-					NOT = { war_with = PAP }
+					NOT = { war_with = B23 }
 					NOT = { has_country_modifier = papal_legate }
 				}
 				effect = {
@@ -648,10 +662,10 @@ valor_group = {
 			sanction_commercial_monopoly = {
 				cost = 50
 				potential = {
-					NOT = { tag = PAP }
+					NOT = { tag = B23 }
 				}
 				allow = {
-					NOT = { war_with = PAP }
+					NOT = { war_with = B23 }
 					NOT = { mercantilism = 100 }
 				}
 				effect = {
@@ -670,7 +684,7 @@ valor_group = {
 				potential = {
 					has_dlc = "Emperor"
 					is_papal_controller = yes
-					tag = PAP
+					tag = B23
 				}
 				allow = {
 					is_papal_controller = yes

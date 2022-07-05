@@ -1,0 +1,45 @@
+B35_evil_lull = {
+	land_morale = 0.1
+	tolerance_heretic = -3
+}
+B35_savior_of_lull = {
+	missionaries = 1
+	prestige = 1
+}
+B35_population_saved = {
+	local_tax_modifier = 0.5
+	local_production_efficiency = 0.25
+	local_manpower_modifier = 0.25
+}
+B35_goblin_allies = {
+	goblins_loyalty_modifier = 0.1
+	goblins_influence_modifier = 0.15
+}
+B35_gnetan_allies = {
+	gnetans_loyalty_modifier = 0.1
+	gnetans_influence_modifier = 0.05
+	province_warscore_cost = -0.05
+}
+B35_human_allies = {
+	humans_loyalty_modifier = 0.1
+	humans_influence_modifier = 0.05
+	culture_conversion_cost = -0.1
+}
+B35_preaching_south = {
+	local_missionary_strength = -0.025
+	local_tax_modifier = 0.25
+	religion = yes
+}
+B35_distance_from_the_papacy = {
+	papal_influence = -5
+	church_loyalty_modifier = 0.05
+	church_influence_modifier = 0.2
+	stability_cost_modifier = -0.2
+}
+B35_mountaintop_temple = {
+	tax_income = 12
+	local_manpower = 2.5
+	trade_goods_size = 1
+	local_autonomy = 0.1
+	church_influence_modifier = 0.05
+}

@@ -1,0 +1,1027 @@
+tampistan_column_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = B35
+	}
+	has_country_shield = yes
+	tampistan_mission_purge_of_lull = {
+		icon = mission_indian_stateman
+		position = 2
+		required_missions = {
+			tampistan_mission_fate_of_goblinkind
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			any_owned_province = {
+				is_core = B37
+			}
+		}
+		effect = {
+			log = "[Root.GetName]: Mission tampistan_mission_purge_of_lull"
+			custom_tooltip = unlock_religious_purge_tt
+			set_country_flag = religious_purge_unlocked
+		}
+	}
+	tampistan_mission_the_newly_pious = {
+		icon = mission_indian_stateman
+		position = 4
+		required_missions = {
+			tampistan_mission_step_toward_redemption
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			2719 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = valor
+				OR = {
+					has_building = temple
+					has_building = cathedral
+				}
+			}
+			2724 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = valor
+				OR = {
+					has_building = temple
+					has_building = cathedral
+				}
+			}
+			2716 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = valor
+				OR = {
+					has_building = temple
+					has_building = cathedral
+				}
+			}
+		}
+		effect = {
+			log = "[Root.GetName]: Mission tampistan_mission_the_newly_pious"
+			define_advisor = {
+				type = inquisitor
+				skill = 2
+				cost_multiplier = 0.5
+			}
+			lull_area = {
+				add_devastation = -10
+			}
+			lull2_area = {
+				add_devastation = -10
+			}
+			lull3_area = {
+				add_devastation = -10
+			}
+			lull4_area = {
+				add_devastation = -10
+			}
+			lull5_area = {
+				add_devastation = -10
+			}
+			lull6_area = {
+				limit = {
+					NOT = { province_id = 2704 }
+				}
+				add_devastation = -10
+			}
+			2727 = { 
+				add_devastation = -10
+			}
+		}
+	}
+}
+tampistan_column_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = B35
+	}
+	has_country_shield = yes
+	tampistan_mission_fate_of_goblinkind = {
+		icon = mission_indian_stateman
+		position = 1
+		required_missions = {
+			
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			army_size_percentage = 1
+			is_at_war = no
+		}
+		effect = {
+			log = "[Root.GetName]: Mission tampistan_mission_fate_of_goblinkind"
+			country_event = { id = tampistan.1 }
+			lull_area = {
+				add_permanent_claim = ROOT
+			}
+			lull2_area = {
+				add_permanent_claim = ROOT
+			}
+			lull3_area = {
+				add_permanent_claim = ROOT
+			}
+			lull4_area = {
+				add_permanent_claim = ROOT
+			}
+			lull5_area = {
+				add_permanent_claim = ROOT
+			}
+			lull6_area = {
+				limit = {
+					NOT = { province_id = 2704 }
+				}
+				add_permanent_claim = ROOT
+			}
+			2727 = { add_permanent_claim = ROOT }
+		}
+	}
+	tampistan_mission_valors_victory = {
+		icon = mission_indian_stateman
+		position = 2
+		required_missions = {
+			tampistan_mission_fate_of_goblinkind
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			B37 = { exists = no }
+			lull_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lull2_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lull3_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lull4_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lull5_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2716 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2717 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2727 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			log = "[Root.GetName]: Mission tampistan_mission_valors_victory"
+			add_prestige = 25
+			add_legitimacy = 10
+			add_devotion = 10
+			add_scaled_republican_tradition = 10
+			add_country_modifier = {
+				name = B35_savior_of_lull
+				duration = 9125
+			}
+		}
+	}
+	tampistan_mission_step_toward_redemption = {
+		icon = mission_indian_stateman
+		position = 3
+		required_missions = {
+			tampistan_mission_purge_of_lull
+			tampistan_mission_valors_victory
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			2719 = { religion = valor }
+		}
+		effect = {
+			log = "[Root.GetName]: Mission tampistan_mission_step_toward_redemption"
+			add_stability = 1
+			2719 = {
+				add_base_tax = 1
+				add_devastation = -25
+			}
+		}
+	}
+	tampistan_mission_a_nation_saved = {
+		icon = mission_indian_stateman
+		position = 4
+		required_missions = {
+			tampistan_mission_step_toward_redemption
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			lull_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = valor
+			}
+			lull2_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = valor
+			}
+			lull3_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = valor
+			}
+			lull4_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = valor
+			}
+			lull5_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = valor
+			}
+			2716 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = valor
+			}
+			2717 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = valor
+			}
+			2727 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				religion = valor
+			}
+		}
+		effect = {
+			log = "[Root.GetName]: Mission tampistan_mission_a_nation_saved"
+			lull_area = {
+				add_province_modifier = {
+					name = B35_population_saved
+					duration = 9125
+				}
+			}
+			lull2_area = {
+				add_province_modifier = {
+					name = B35_population_saved
+					duration = 9125
+				}
+			}
+			lull3_area = {
+				add_province_modifier = {
+					name = B35_population_saved
+					duration = 9125
+				}
+			}
+			lull4_area = {
+				add_province_modifier = {
+					name = B35_population_saved
+					duration = 9125
+				}
+			}
+			lull5_area = {
+				add_province_modifier = {
+					name = B35_population_saved
+					duration = 9125
+				}
+			}
+			lull6_area = {
+				limit = {
+					NOT = { province_id = 2704 }
+				}
+				add_province_modifier = {
+					name = B35_population_saved
+					duration = 9125
+				}
+			}
+			2727 = { 
+				add_province_modifier = {
+					name = B35_population_saved
+					duration = 9125
+				}
+			}
+		}
+	}
+}
+tampistan_column_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = B35
+	}
+	has_country_shield = yes
+	tampistan_mission_southern_allies = {
+		icon = mission_indian_stateman
+		position = 1
+		required_missions = {
+
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			OR = {
+				AND = {
+					alliance_with = B39
+					NOT = {
+						alliance_with = B38
+						alliance_with = B40
+					}
+				}
+				AND = {
+					alliance_with = B38
+					NOT = {
+						alliance_with = B39
+						alliance_with = B40
+					}
+				}
+				AND = {
+					alliance_with = B40
+					NOT = {
+						alliance_with = B38
+						alliance_with = B39
+					}
+				}
+			}
+		}
+		effect = {
+			log = "[Root.GetName]: Mission tampistan_mission_southern_allies"
+			if = {
+				limit = {
+					alliance_with = B38
+				}
+				B38 = {
+					save_global_event_target_as = B35_southern_ally
+					add_trust = {
+						who = ROOT
+						value = 10
+						mutual = yes
+					}
+					ROOT = {
+						add_favors = {
+							who = PREV
+							amount = 10
+						}
+						add_trust = {
+							who = B39
+							value = -30
+							mutual = yes
+						}
+						add_trust = {
+							who = B40
+							value = -30
+							mutual = yes
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						alliance_with = B39
+					}
+					B39 = {
+						save_global_event_target_as = B35_southern_ally
+						add_trust = {
+							who = ROOT
+							value = 10
+							mutual = yes
+						}
+						ROOT = {
+							add_favors = {
+								who = PREV
+								amount = 10
+							}
+							add_trust = {
+								who = B38
+								value = -30
+								mutual = yes
+							}
+							add_trust = {
+								who = B40
+								value = -30
+								mutual = yes
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							alliance_with = B40
+						}
+						B40 = {
+							save_global_event_target_as = B35_southern_ally
+							add_trust = {
+								who = ROOT
+								value = 10
+								mutual = yes
+							}
+							ROOT = {
+								add_favors = {
+									who = PREV
+									amount = 10
+								}
+								add_trust = {
+									who = B38
+									value = -30
+									mutual = yes
+								}
+								add_trust = {
+									who = B39
+									value = -30
+									mutual = yes
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	tampistan_mission_support_our_ally = {
+		icon = mission_indian_stateman
+		position = 2
+		required_missions = {
+			tampistan_mission_southern_allies
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			event_target:B35_southern_ally = {
+				alliance_with = ROOT
+				if = {
+					limit = {
+						tag = B38
+					}
+					B39 = { exists = no }
+					owns = 2757
+					else_if = {
+						limit = {
+							tag = B39
+						}
+						B38 = { exists = no }
+						owns = 2737
+						else_if = {
+							limit = {
+								tag = B40
+							}
+							grown_by_development = 100
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			log = "[Root.GetName]: Mission tampistan_mission_southern_allies"
+			event_target:B35_southern_ally = {
+				add_trust = {
+					who = ROOT
+					value = 25
+					mutual = yes
+				}
+				add_country_modifier = {
+					name = B35_goblin_allies
+					duration = 36500
+				}
+				ROOT = {
+					add_favors = {
+						who = PREV
+						amount = 50
+					}
+					if = {
+						limit = {
+							event_target:B35_southern_ally = {
+								tag = B40
+							}
+						}
+						add_country_modifier = {
+							name = B35_gnetan_allies
+							duration = 36500
+						}
+						else = {
+							add_country_modifier = {
+								name = B35_human_allies
+								duration = 36500
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	tampistan_mission_preach_south = {
+		icon = mission_indian_stateman
+		position = 2
+		required_missions = {
+			tampistan_mission_support_our_ally
+			tampistan_mission_valors_victory
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			2724 = { religion = valor OR = { has_building = temple has_building = cathedral } }
+			event_target:B35_southern_ally = {
+				alliance_with = ROOT
+				has_opinion = {
+					who = ROOT
+					value = 200
+				}
+			}
+		}
+		effect = {
+			log = "[Root.GetName]: Mission tampistan_mission_preach_south"
+			custom_tooltip = B35_special_center_tt
+			set_global_flag = B35_convert_southern_ally
+			2724 = {
+				add_province_modifier = {
+					name = B35_preaching_south
+					duration = -1
+				}
+			}
+		}
+	}
+	tampistan_mission_plot_against_melcani = {
+		icon = mission_indian_stateman
+		position = 4
+		required_missions = {
+			tampistan_mission_step_toward_redemption
+			tampistan_mission_cleanse_the_mountain
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			mission_completed = tampistan_mission_stand_up_to_pope
+			OR = {
+				B23 = {
+					has_spy_network_from = {
+						who = ROOT
+						value = 50
+					}
+				}
+				any_known_country = {
+					any_owned_province = {
+						OR = {
+							area = serooz_area
+							area = serooz_coast_area
+						}
+					}
+					has_spy_network_from = {
+						who = ROOT
+						value = 50
+					}
+				}
+			}
+		}
+		effect = {
+			log = "[Root.GetName]: Mission tampistan_mission_plot_against_melcani"
+			B23 = {
+				if = {
+					limit = {
+						has_spy_network_from = {
+							who = ROOT
+							value = 50
+						}
+					}
+					add_spy_network_from = {
+						who = ROOT
+						value = -50
+					}
+				}
+			}
+			every_known_country = {
+				limit = {
+					any_owned_province = {
+						OR = {
+							area = serooz_area
+							area = serooz_coast_area
+						}
+					}
+					has_spy_network_from = {
+						who = ROOT
+						value = 50
+					}
+				}
+				add_spy_network_from = {
+					who = ROOT
+					value = -50
+				}
+			}
+			serooz_area = {
+				add_permanent_claim = ROOT
+			}
+			serooz_coast_area = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	tampistan_mission_greatness_of_goblinkind = {
+		icon = mission_indian_stateman
+		position = 5
+		required_missions = {
+			tampistan_mission_plot_against_melcani
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			religious_unity = 1
+			legitimacy = 95
+			serooz_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			log = "[Root.GetName]: Mission tampistan_mission_greatness_of_goblinkind"
+			custom_tooltip = more_to_come_tt
+		}
+	}
+}
+tampistan_column_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = B35
+	}
+	has_country_shield = yes
+	tampistan_mission_claim_the_mountain = {
+		icon = mission_indian_stateman
+		position = 1
+		required_missions = {
+			
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			legitimacy = 95
+			prestige = 25
+			stability = 1
+		}
+		effect = {
+			log = "[Root.GetName]: Mission tampistan_mission_claim_the_mountain"
+			country_event = { id = tampistan.3 }
+			2663 = {
+				add_permanent_claim = ROOT
+			}
+			2662 = {
+				add_permanent_claim = ROOT
+			}
+			black_mountain_area = {
+				add_permanent_claim = ROOT
+			}
+			black_mountain2_area = {
+				add_permanent_claim = ROOT
+			}
+			2654 = {
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	tampistan_mission_enforce_our_claim = {
+		icon = mission_indian_stateman
+		position = 2
+		required_missions = {
+			tampistan_mission_claim_the_mountain
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			2663 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2662 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			black_mountain_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			black_mountain2_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			2654 = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			log = "[Root.GetName]: Mission tampistan_mission_enforce_our_claim"
+			add_adm_power = 100
+			2663 = {
+				add_nationalism = -10
+			}
+			2662 = {
+				add_nationalism = -10
+			}
+			black_mountain_area = {
+				add_nationalism = -10
+			}
+			black_mountain2_area = {
+				add_nationalism = -10
+			}
+			2654 = {
+				add_nationalism = -10
+			}
+		}
+	}
+	tampistan_mission_cleanse_the_mountain = {
+		icon = mission_indian_stateman
+		position = 3
+		required_missions = {
+			tampistan_mission_enforce_our_claim
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			2663 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				culture_group = goblin_group
+				religion = valor
+			}
+			2662 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				culture_group = goblin_group
+				religion = valor
+			}
+			black_mountain_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				culture_group = goblin_group
+				religion = valor
+			}
+			black_mountain2_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				culture_group = goblin_group
+				religion = valor
+			}
+			2654 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				culture_group = goblin_group
+				religion = valor
+			}
+		}
+		effect = {
+			log = "[Root.GetName]: Mission tampistan_mission_cleanse_the_mountain"
+			add_adm_power = 100
+			add_legitimacy = 10
+			if = {
+				limit = {
+					adm = 6
+				}
+				add_adm_power = 200
+				else_if = {
+					limit = {
+						adm = 5
+					}
+					change_adm = 1
+					add_adm_power = 100
+					else = {
+						change_adm = 2
+					}
+				}
+			}
+		}
+	}
+	tampistan_mission_a_holy_mountain = {
+		icon = mission_indian_stateman
+		position = 4
+		required_missions = {
+			tampistan_mission_cleanse_the_mountain
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			2658 = {
+				country_or_non_sovereign_subject_holds = ROOT
+				culture_group = goblin_group
+				religion = valor
+				OR = {
+					has_building = temple
+					has_building = cathedral
+				}
+				OR = {
+					has_building = workshop
+					has_building = counting_house
+				}
+				OR = {
+					has_building = barracks
+					has_building = training_fields
+				}
+			}
+		}
+		effect = {
+			log = "[Root.GetName]: Mission tampistan_mission_a_holy_mountain"
+			2658 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				add_province_modifier = {
+					name = B35_mountaintop_temple
+					duration = -1
+				}
+			}
+		}
+	}
+}
+tampistan_column_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = B35
+	}
+	has_country_shield = yes
+	tampistan_mission_redirect_church_taxes = {
+		icon = mission_indian_stateman
+		position = 1
+		required_missions = {
+			
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			estate_loyalty = {
+				estate_church
+				loyalty = 50
+			}
+			num_of_owned_provinces_with = {
+				value = 5
+				OR = {
+					has_building = temple
+					has_building = cathedral
+				}
+			}
+		}
+		effect = {
+			log = "[Root.GetName]: Mission tampistan_mission_redirect_church_taxes"
+			every_owned_province = {
+				limit = {
+					OR = {
+						has_building = temple
+						has_building = cathedral
+					}
+				}
+				add_base_tax = 1
+			}
+		}
+	}
+	tampistan_mission_stand_up_to_pope = {
+		icon = mission_indian_stateman
+		position = 2
+		required_missions = {
+			tampistan_mission_redirect_church_taxes
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			B23 = {
+				NOT = {
+					has_opinion = {
+						who = ROOT
+						value = -100
+					}
+				}
+			}
+		}
+		effect = {
+			log = "[Root.GetName]: Mission tampistan_mission_stand_up_to_pope"
+			add_country_modifier = {
+				name = B35_distance_from_the_papacy
+				duration = -1
+			}
+		}
+	}
+	tampistan_mission_threaten_adnuin = {
+		icon = mission_indian_stateman
+		position = 3
+		required_missions = {
+			tampistan_mission_enforce_our_claim
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			OR = {
+				AND = {
+					adnuin_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					adnuin2_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					adnuin3_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+				alliance_with = B34
+				AND = {
+					country_exists = B34
+					army_strength = {
+						who = B34
+						value = 1.5
+					}
+				}
+			}
+		}
+		effect = {
+			log = "[Root.GetName]: Mission tampistan_mission_threaten_adnuin"
+			add_casus_belli = {
+				target = B34
+				type = cb_vassalize_mission
+				months = 600
+			}
+			if = {
+				limit = {
+					alliance_with = B34
+				}
+				B34 = { country_event = { id = tampistan.6 } }
+			}
+		}
+	}
+	tampistan_mission_control_trade_in_adnuin = {
+		icon = mission_indian_stateman
+		position = 4
+		required_missions = {
+			tampistan_mission_threaten_adnuin
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			is_subject = no
+			OR = {
+				B34 = { is_subject_of = ROOT }
+				AND = {
+					adnuin_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					adnuin2_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					adnuin3_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			}
+		}
+		effect = {
+			log = "[Root.GetName]: Mission tampistan_mission_control_trade_in_adnuin"
+			2689 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = 18250
+					power = 50
+					key = STRONG_MERCHANTS
+				}
+			}
+			add_treasury = 500
+			add_inflation = -5
+		}
+	}
+}
