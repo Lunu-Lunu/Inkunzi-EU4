@@ -1,4 +1,4 @@
-# Placeholder
+# Macs'thi
 
 owner = A78
 controller = A78
@@ -9,7 +9,7 @@ hre = no
 base_tax = 2 
 base_production = 3
 base_manpower = 2
-trade_goods = unknown
-capital = "Placeholder"
+trade_goods = slaves
+capital = "Macs'thi Market"
 is_city = yes
 discovered_by = western

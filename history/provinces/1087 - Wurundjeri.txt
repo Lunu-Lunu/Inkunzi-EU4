@@ -1,4 +1,4 @@
-# Placeholder
+# Atc'chi
 
 owner = A80
 controller = A80
@@ -10,6 +10,6 @@ base_tax = 2
 base_production = 3
 base_manpower = 3
 trade_goods = slaves
-capital = "Placeholder"
+capital = "Atc'chi Market"
 is_city = yes
 discovered_by = western

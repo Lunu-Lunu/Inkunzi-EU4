@@ -1,4 +1,4 @@
-# Placeholder
+# Geme'likiw
 
 owner = A75
 controller = A75
@@ -10,6 +10,6 @@ base_tax = 2
 base_production = 3
 base_manpower = 2
 trade_goods = dyes
-capital = "Placeholder"
+capital = "Geme City"
 is_city = yes
 discovered_by = western

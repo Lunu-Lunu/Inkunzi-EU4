@@ -1,4 +1,4 @@
-# Placeholder
+# Muuki gowah
 
 owner = A73
 controller = A73
@@ -10,6 +10,6 @@ base_tax = 2
 base_production = 2
 base_manpower = 2
 trade_goods = chinaware
-capital = "Placeholder"
+capital = "Muuki City"
 is_city = yes
 discovered_by = western
