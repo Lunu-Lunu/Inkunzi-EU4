@@ -878,7 +878,7 @@ tampistan_column_5 = {
 		trigger = {
 			is_subject = no
 			estate_loyalty = {
-				estate_church
+				estate = estate_church
 				loyalty = 50
 			}
 			num_of_owned_provinces_with = {
