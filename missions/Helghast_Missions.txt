@@ -1,0 +1,634 @@
+helghast_column_1 = {
+    slot = 1
+    generic = no
+    ai = yes
+    has_country_shield = yes
+    potential = {
+        tag = A65
+    }
+    helghast_mission_birthplace_dark_valor = {
+        icon = mnd_maj_cloves
+        generic = no
+        position = 2
+        required_missions = {
+            helghast_mission_rebuild
+        }
+        provinces_to_highlight = {
+            province_id = 727
+        }
+        trigger = {
+            727 = {
+				owned_by = ROOT
+				has_building = temple
+				development = 12
+			}
+			temple = 5
+        }
+        effect = {
+            add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			tolerance_own = 2
+        }
+    }
+	helghast_mission_trade = {
+        icon = mnd_maj_cloves
+        generic = no
+        position = 3
+        required_missions = {
+            helghast_mission_birthplace_dark_valor
+        }
+        provinces_to_highlight = {
+            province_id = 729
+        }
+        trigger = {
+            729 = {
+				owned_by = ROOT
+				has_building = marketplace
+				development = 25
+			}
+        }
+        effect = {
+            add_center_of_trade_level = 1
+        }
+    }
+	helghast_mission_naval_might = {
+        icon = mnd_maj_cloves
+        generic = no
+        position = 4
+        required_missions = {
+            helghast_mission_trade
+        }
+        provinces_to_highlight = {
+            province_id = 729
+        }
+        trigger = {
+            729 = {
+				owned_by = ROOT
+				has_building = shipyard
+			}
+        }
+        effect = {
+            naval_forcelimit = 10
+        }
+    }
+	helghast_mission_dragon = {
+        icon = mnd_maj_cloves
+        generic = no
+        position = 5
+        required_missions = {
+            helghast_mission_naval_might
+        }
+        provinces_to_highlight = {
+            province_id = 729
+        }
+        trigger = {
+            729 = {
+				owned_by = ROOT
+				has_building = barracks
+			}
+        }
+        effect = {
+            land_forcelimit = 10
+        }
+    }
+}
+helghast_column_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = A65
+	}
+	has_country_shield = yes
+	helghast_mission_lull = {
+	    icon = mnd_maj_cloves
+        generic = no
+        position = 3
+        required_missions = {
+            helghast_mission_continent_right
+        }
+        provinces_to_highlight = {
+            OR = {
+			    area = lull5_area
+			    area = lull6_area
+				area = eastern_tampasea_archipelago_area
+				area = western_tampasea_archipelago_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        trigger = {
+            lull5_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lull6_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			eastern_tampasea_archipelago_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			western_tampasea_archipelago_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        } 
+        effect = {
+		   lull_area = { add_permanent_claim = ROOT }
+		   lull4_area = { add_permanent_claim = ROOT }
+		   lull3_area = { add_permanent_claim = ROOT }
+		   lull2_area = { add_permanent_claim = ROOT }
+        }
+	}
+	helghast_mission_goblin = {
+	    icon = mnd_maj_cloves
+        generic = no
+        position = 4
+        required_missions = {
+            helghast_mission_lull
+        }
+        provinces_to_highlight = {
+            OR = {
+			    area = lull_area
+			    area = lull4_area
+				area = lull3_area
+				area = lull2_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        trigger = {
+            lull_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lull4_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lull3_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lull2_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        } 
+        effect = { #
+		   kalenoo_area = { add_permanent_claim = ROOT }
+		   kalenoo2_area = { add_permanent_claim = ROOT }
+		   kalenoo3_area = { add_permanent_claim = ROOT }
+		   kalenoo4_area = { add_permanent_claim = ROOT }
+		   kalenoo5_area = { add_permanent_claim = ROOT }
+		   ozarkhia_area = { add_permanent_claim = ROOT }
+		   ozarkhia2_area = { add_permanent_claim = ROOT }
+		   ozarkhia3_area = { add_permanent_claim = ROOT }
+		   ozarkhia4_area = { add_permanent_claim = ROOT }
+		   gangir_area = { add_permanent_claim = ROOT }
+		   gangir2_area = { add_permanent_claim = ROOT }
+		   gangir3_area = { add_permanent_claim = ROOT }
+		   gangir4_area = { add_permanent_claim = ROOT }
+		   gangir5_area = { add_permanent_claim = ROOT }
+		   gangir6_area = { add_permanent_claim = ROOT }
+        }
+	}
+	helghast_mission_dark = {
+	    icon = mnd_maj_cloves
+        generic = no
+        position = 5
+        required_missions = {
+            helghast_mission_goblin
+        }
+        provinces_to_highlight = { #
+        
+        }
+        trigger = { #
+            kalenoo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kalenoo2_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kalenoo3_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kalenoo4_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kalenoo5_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ozarkhia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ozarkhia2_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ozarkhia3_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ozarkhia4_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			gangir_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			gangir2_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			gangir3_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			gangir4_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			gangir5_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			gangir6_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        } 
+        effect = { 
+		   cb_on_religious_enemies = yes
+		   global_missionary_strength = 0.02
+		   set_government_rank = 3
+        }
+	}
+}
+helghast_column_3 = {
+    slot = 3
+	generic = no
+	ai = yes
+	potential = { 
+	    tag = A65
+	}
+	has_country_shield = yes
+	helghast_mission_rebuild = {
+	    icon = mnd_maj_cloves
+        generic = no
+        position = 1
+        required_missions = {
+            
+        }
+        provinces_to_highlight = {
+        
+        }
+        trigger = {
+           army_size_percentage = 1
+           navy_size_percentage = 0.75
+        } 
+        effect = {
+           tampa_on_the_sea_area = { add_permanent_claim = ROOT }
+		   tampasea_area = { add_permanent_claim = ROOT }
+        }
+    }
+	helghast_mission_continent_right = {
+	    icon = mnd_maj_cloves
+        generic = no
+        position = 2
+        required_missions = {
+            helghast_mission_rebuild
+        }
+        provinces_to_highlight = {
+            OR = {
+			    area = tampa_on_the_sea_area
+			    area = tampasea_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        trigger = {
+            tampa_on_the_sea_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tampasea_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        } 
+        effect = {
+           add_adm_power = 100
+		   eastern_tampasea_archipelago_area = { add_permanent_claim = ROOT }
+		   western_tampasea_archipelago_area = { add_permanent_claim = ROOT }
+		   lull6_area = { add_permanent_claim = ROOT }
+		   lull5_area = { add_permanent_claim = ROOT }
+		   dao_hel_area = { add_permanent_claim = ROOT }
+        }
+	}
+}
+helghast_column_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = A65
+	}
+	has_country_shield = yes
+	helghast_mission_dahe = {
+	    icon = mnd_maj_cloves
+        generic = no
+        position = 3
+        required_missions = {
+            helghast_mission_continent_right
+        }
+        provinces_to_highlight = {
+            area = dao_hel_area
+			NOT = {
+			    country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        trigger = {
+            dao_hel_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        } 
+        effect = {
+           dahe_proper_region = { add_permanent_claim = ROOT }
+        }
+	}
+	helghast_mission_claims_razzubia = {
+	    icon = mnd_maj_cloves
+        generic = no
+        position = 4
+        required_missions = {
+            helghast_mission_dahe
+        }
+        provinces_to_highlight = {
+            region = dahe_proper_region
+			NOT = {
+			    country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        trigger = {
+            dahe_proper_region = {
+			    type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        effect = {
+          add_casus_belli = {
+            target = A52
+            type = cb_vassalize_mission
+            months = 12
+          }
+        }
+	}
+	helghast_mission_razzubia_marriage = {
+	    icon = mnd_maj_cloves
+        generic = no
+        position = 5
+        required_missions = {
+            helghast_mission_claims_razzubia
+        }
+        provinces_to_highlight = {
+            area = rakxubias_area
+			NOT = {
+			    country_or_non_sovereign_subject_holds = ROOT
+			}
+			area = rakxubias2_area
+			NOT = {
+			    country_or_non_sovereign_subject_holds = ROOT
+			}
+			area = rakxubias3_area
+			NOT = {
+			    country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        trigger = {
+            rakxubias_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			rakxubias2_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			rakxubias3_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        } 
+        effect = {
+           northern_morhogg_region = { add_permanent_claim = ROOT }
+		   northern_xuaze_region = { add_permanent_claim = ROOT }
+        }
+	}
+	helghast_mission_southern = {
+	    icon = mnd_maj_cloves
+        generic = no
+        position = 6
+        required_missions = {
+            helghast_mission_razzubia_marriage
+        }
+        provinces_to_highlight = {
+			region = northern_morhogg_region
+			NOT = {
+			    country_or_non_sovereign_subject_holds = ROOT
+			}
+			region = northern_xuaze_region
+			NOT = {
+			    country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        trigger = {
+			northern_morhogg_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			northern_xuaze_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        } 
+        effect = {
+           southern_xuaze_region = { add_permanent_claim = ROOT }
+		   southern_morhogg_region = { add_permanent_claim = ROOT }
+        }
+	}
+	helghast_mission_harsh = {
+	    icon = mnd_maj_cloves
+        generic = no
+        position = 7
+        required_missions = {
+            helghast_mission_southern
+        }
+        provinces_to_highlight = {
+			region = southern_morhogg_region
+			NOT = {
+			    country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        trigger = {
+			southern_morhogg_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        } 
+        effect = {
+           add_country_modifier = {
+                name = harsh_helghast
+                duration = -1 
+                desc = harsh_helghast_tooltip
+                hidden = no
+            }
+        }
+	}
+}
+helghast_column_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = A65
+	}
+	has_country_shield = yes
+	helghast_mission_pirate = {
+	    icon = mnd_maj_cloves
+        generic = no
+        position = 2
+        required_missions = {
+            helghast_mission_rebuild
+        }
+        provinces_to_highlight = {
+
+        }
+        trigger = {
+            home_trade_node = {
+				privateer_power = {
+					country = ROOT
+					share = 30
+				}
+			}
+        } 
+        effect = {
+           neualhof_area = { add_permanent_claim = ROOT }
+		   plakia_area = { add_permanent_claim = ROOT }
+		   hyallicand_area = { add_permanent_claim = ROOT }
+        }
+	}
+	helghast_mission_sternhell = {
+	    icon = mnd_maj_cloves
+        generic = no
+        position = 3
+        required_missions = {
+            helghast_mission_pirate
+        }
+        provinces_to_highlight = {
+		    OR = {
+			    area = neualhof_area
+			    area = plakia_area
+				area = hyallicand_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        trigger = {
+            neualhof_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			plakia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			hyallicand_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        } 
+        effect = {
+            Sternhell_region = { add_permanent_claim = ROOT }
+        }
+	}
+	helghast_mission_moths = {
+	    icon = mnd_maj_cloves
+        generic = no
+        position = 4
+        required_missions = {
+            helghast_mission_sternhell
+        }
+        provinces_to_highlight = {
+			region = Sternhell_region
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        trigger = {
+            Sternhell_region = { 
+			    type = all
+			    country_or_non_sovereign_subject_holds = ROOT
+			}
+        } 
+        effect = {
+           miar3_area = { add_permanent_claim = ROOT }
+		   miar2_area = { add_permanent_claim = ROOT }
+		   miar_area = { add_permanent_claim = ROOT }
+        }
+	}
+	helghast_mission_racism = {
+	    icon = mnd_maj_cloves
+        generic = no
+        position = 5
+        required_missions = {
+            helghast_mission_moths
+        }
+        provinces_to_highlight = {
+		    OR = {
+			    area = miar3_area
+			    area = miar2_area
+				area = miar_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+        }
+        trigger = {
+            miar3_area = { 
+			    type = all
+			    country_or_non_sovereign_subject_holds = ROOT
+			}
+		    miar2_area = { 
+			    type = all
+			    country_or_non_sovereign_subject_holds = ROOT
+			}
+			miar_area = { 
+			    type = all
+			    country_or_non_sovereign_subject_holds = ROOT
+			}
+        } 
+        effect = {
+            add_country_modifier = {
+                name = racism_helghast
+                duration = -1 
+                desc = racism_helghast_tooltip
+                hidden = no
+            }
+        }
+	}
+}

@@ -490,7 +490,69 @@ upper_vestoria_region = {
 		stendari8_area
 	}
 }
-
+dahe_proper_region = {
+    areas = {
+	    dao_hel_area
+		hai_dai_area
+		hai_dai2_area
+		hai_dai3_area
+		hai_dai4_area
+		sanjiaota_area
+		dou_fei_area
+		dou_fei2_area
+		dou_fei3_area
+		chi_hel_area
+		laong_area
+		dao_fe_area
+		dao_fe2_area
+		fei_dom2_area
+	}
+}
+northern_xuaze_region = {
+    areas = {
+	    xuaze_area
+		xuaze_area2
+		xuaze_area3
+		xuaze_area4
+		xuaze_area5
+		zuze_area
+		zuze2_area
+		douros_area
+	}
+}
+southern_xuaze_region = {
+    areas = {
+		xuaze_area6
+		xuaze_area7
+		xuaze_area8
+		xuaze_area9
+		xuaze_area10
+		xuaze_area11
+		xuaze_area12
+		xuaze_area13
+	}
+}
+northern_morhogg_region = {
+    areas = {
+	    xuahogg_area
+		xuahogg2_area
+		xuahogg3_area
+		xuahogg4_area
+		xuahogg5_area
+		karhogg_area
+		karhogg2_area
+	}
+}
+southern_morhogg_region = {
+    areas = { 
+       karhogg3_area
+	   karhogg4_area
+	   karhogg5_area
+	   karhogg6_area
+       karhogg7_area
+	   karhogg8_area
+	}
+}
 
 ### Below are the VANILLA REGIONS ###
 # random_new_world_region is used for RNW. Must be first in this list.

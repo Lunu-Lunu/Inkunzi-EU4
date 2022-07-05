@@ -1,0 +1,6 @@
+racism_helghast = {
+global_autonomy = -0.05
+}
+harsh_helghast = {
+global_unrest = -2
+}
