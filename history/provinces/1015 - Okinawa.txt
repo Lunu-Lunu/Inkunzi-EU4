@@ -1,4 +1,4 @@
-# Placeholder
+# Vika'Lia
 
 owner = A75
 controller = A75
@@ -10,6 +10,6 @@ base_tax = 2
 base_production = 3
 base_manpower = 2
 trade_goods = naval_supplies
-capital = "Placeholder"
+capital = "Vika'Lia City"
 is_city = yes
 discovered_by = western

@@ -1,4 +1,4 @@
-# Placeholder
+# Buram
 
 owner = A79
 controller = A79
@@ -10,6 +10,6 @@ base_tax = 2
 base_production = 3
 base_manpower = 3
 trade_goods = salt
-capital = "Placeholder"
+capital = "Buram Town"
 is_city = yes
 discovered_by = western
