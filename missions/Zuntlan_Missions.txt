@@ -1,6 +1,80 @@
 #
 #Econmey focuses need to be done and Crabian path might be expanded on once future crabian content is done. Swamp missions need their events to be done 
 #
+Zuntlan_Collom_5= {
+    slot = 5                  
+    generic = no           
+    ai = yes                 
+    has_country_shield = yes.    
+
+    potential = {
+        tag = B16
+    }
+	
+	Zuntlan_Dev = {
+		icon = mission_ottoman_harem 
+        generic = no
+        position = 3
+
+		required_missions = {
+            Zuntlan_Trade_1
+        }
+        
+        provinces_to_highlight = {
+
+        }
+        trigger = {
+			2419 = {
+				development = 30
+			}
+		
+		}
+		effect = {
+		#great project unlock maybe, please lunu
+			2419 = {
+				add_province_modifier = {
+					name = znt_cptl_urbanization
+					duration = -1
+					desc = znt_cptl_urbanization_tooltip
+					hidden = no			
+				}
+				center_of_trade = 1
+			}
+		
+		}
+	}	
+	Zuntlan_Purple = {
+		icon = mission_ottoman_harem 
+        generic = no
+        position = 4
+
+		required_missions = {
+            Zuntlan_Trade_2
+			Zuntlan_Dev
+        }
+        
+        provinces_to_highlight = {
+          
+        }
+        trigger = {
+			2419 = {
+				OR = {
+					base_production = 14
+					province_has_center_of_trade_of_level = 3
+				}
+			}
+			
+		
+		}
+		effect = {
+		#great project unlock here insted idk
+			2419 = {
+				change_trade_goods = Purple 
+			}
+			#purple event 
+		}
+	}	
+}
 Zuntlan_Collom_4= {
     slot = 4                  
     generic = no           
@@ -26,7 +100,7 @@ Zuntlan_Collom_4= {
         trigger = {
 			naval_forcelimit = B16
 			has_heir = no 
-			navy_size = 15
+			navy_size = 30
 			#hidden_trigger = {
 			#	is_year = 1455
 			#}
@@ -54,7 +128,7 @@ Zuntlan_Collom_4= {
 		}
 	}
 	
-	Zuntlan_Purple_1 = {
+	Zuntlan_Trade_1 = {
 		icon = mission_ottoman_harem 
         generic = no
         position = 2 
@@ -70,47 +144,86 @@ Zuntlan_Collom_4= {
 			2419 = {
 				trade_share = {
 					country = ROOT
-					share = 55
+					share = 45
 				}
+				has_building = marketplace
+				owned_by = ROOT
 			}
 		}
 		effect = {
 			#custome or generic trade modifier
 			add_mercantilism = 1
+			add_country_modifier = { 
+				name = trade_domination_znt
+				duration = 18250  
+				desc = PROPER_OLD_WAYS_DESC_TOOLTIP
+				hidden = yes
+			}
 		}
 	
 	}
-	Zuntlan_Purple_2 = {
+
+	Zuntlan_Trade_2 = {
 		icon = mission_ottoman_harem 
         generic = no
         position = 3
 
 		required_missions = {
-            Purple_1
+            Zuntlan_Trade_1
         }
         
         provinces_to_highlight = {
           
         }
         trigger = {
-			2419 = {
-				trade_share = {
-					country = ROOT
-					share = 90
-				}
-			}
-		light_ship_fraction = 0.25
+			#2419 = {
+			#	trade_share = {
+			#		country = ROOT
+			#		share = 60
+			#	}
+			#}
 		
 		}
 		effect = {
-		trade_efficiency = 0.25
-		prestige = 15
+			add_country_modifier = {
+				name = "znt_dominace"
+				duration = 7300
+			}
+			prestige = 15
 		
 		}
-	}	
-	
-}
+	}
+	Zuntlan_Coloy_1 = {
+		icon = mission_ottoman_harem 
+        generic = no
+        position = 5
 
+		required_missions = {
+            Zuntlan_Trade_2
+        }
+        
+        provinces_to_highlight = {
+          
+        }
+        trigger = {
+			722 = {
+				trade_share = {
+					country = ROOT
+					share = 60
+				}
+			}
+			treasury = 500
+		
+		}
+		effect = {
+			country_event = { 
+				id = zuntlan.7
+				days = 30
+				random = 15
+			}
+		}
+	}
+}
 
 Zuntlan_Collom_3= {
     slot = 3                  
@@ -374,16 +487,21 @@ Zuntlan_Collom_2 = {
     
       
         trigger = {
-
-				
-			    
+			prestige = 50
+			#b16 = {
+			#	development = 300
+			#}
         }
         
         
         effect = {
 	
 		override_country_name = ZUNTLANI_EMPIRE
-		add_prestige = 40
+		add_prestige = 35
+		B16 = {
+			set_government_rank = 3
+		}
+		#future event
 	
 		}
 	}

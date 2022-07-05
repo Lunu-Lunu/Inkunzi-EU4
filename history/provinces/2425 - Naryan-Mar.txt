@@ -13,6 +13,7 @@ trade_goods = spices
 capital = "Placeholder"
 is_city = yes
 discovered_by = western
+fort_15th = yes
 add_permanent_province_modifier = {
 	name = great_temple_city
 	duration = -1
