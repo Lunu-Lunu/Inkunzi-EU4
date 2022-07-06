@@ -1,4 +1,4 @@
-# Placeholder
+# Abbaba Me'gi
 
 owner = A73
 controller = A73
@@ -10,6 +10,6 @@ base_tax =  2
 base_production = 3
 base_manpower = 3
 trade_goods = naval_supplies
-capital = "Placeholder"
+capital = "Abbaba City"
 is_city = yes
 discovered_by = western

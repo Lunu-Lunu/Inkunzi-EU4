@@ -1,4 +1,4 @@
-# Placeholder
+# Oppi
 
 owner = A81
 controller = A81
@@ -10,6 +10,6 @@ base_tax = 2
 base_production = 3
 base_manpower = 2
 trade_goods = salt
-capital = "Placeholder"
+capital = "Oppi Town"
 is_city = yes
 discovered_by = western

@@ -7,6 +7,7 @@ religion = celestialism
 primary_culture = alzhaic
 capital = 2038
 set_country_flag = primary_human_nation
+historical_friend = B04
 
 1444.11.11 = {
 	monarch = {

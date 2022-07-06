@@ -3,7 +3,8 @@
 owner = B21
 controller = B21
 add_core = B21
-culture = goblin
+add_core = B99
+culture = enezennian
 religion = valor
 hre = no
 base_tax = 1 

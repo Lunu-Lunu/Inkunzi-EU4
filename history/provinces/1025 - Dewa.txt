@@ -1,4 +1,4 @@
-# Placeholder
+# Tura'qip La
 
 owner = A76
 controller = A76
@@ -10,6 +10,6 @@ base_tax = 2
 base_production = 3
 base_manpower = 3
 trade_goods = iron
-capital = "Placeholder"
+capital = "Tura'qip City"
 is_city = yes
 discovered_by = western
