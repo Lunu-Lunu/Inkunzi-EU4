@@ -1,4 +1,4 @@
-# Placeholder
+# Urakkan
 
 owner = B21
 controller = B21
@@ -6,10 +6,10 @@ add_core = B21
 culture = ukabururn
 religion = valor
 hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
-trade_goods = unknown
-capital = "Placeholder"
+base_tax = 3 
+base_production = 4
+base_manpower = 5
+trade_goods = wine
+capital = "Urakkan"
 is_city = yes
 discovered_by = western

@@ -1,4 +1,4 @@
-# Placeholder
+# Ledengrad
 
 owner = B21
 controller = B21
@@ -6,10 +6,10 @@ add_core = B21
 culture = ledengradian
 religion = valor
 hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
-trade_goods = unknown
-capital = "Placeholder"
+base_tax = 6 
+base_production = 6
+base_manpower = 7
+trade_goods = paper
+capital = "Ledengrad"
 is_city = yes
 discovered_by = western

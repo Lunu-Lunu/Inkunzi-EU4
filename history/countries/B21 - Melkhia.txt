@@ -1,12 +1,13 @@
 government = monarchy
 add_government_reform = feudalism_reform
-government_rank = 1
+government_rank = 2
 mercantilism = 10
 technology_group = western
 religion = valor
 primary_culture = ukabururn
-add_accepted_culture = goblin
-capital = 2485
+add_accepted_culture = enezennian
+add_accepted_culture = ledengradian
+capital = 2489
 set_country_flag = primary_human_nation
 set_country_flag = goblins_accepted
 

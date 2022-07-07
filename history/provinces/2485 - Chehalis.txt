@@ -1,4 +1,4 @@
-# Placeholder
+# Karlinn
 
 owner = B21
 controller = B21
@@ -6,10 +6,11 @@ add_core = B21
 culture = ukabururn
 religion = valor
 hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
-trade_goods = unknown
-capital = "Placeholder"
+base_tax = 3 
+base_production = 4
+base_manpower = 3
+trade_goods = fur
+capital = "Karlinn"
 is_city = yes
 discovered_by = western
+center_of_trade = 2

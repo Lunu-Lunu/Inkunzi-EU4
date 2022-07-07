@@ -1,4 +1,4 @@
-# Placeholder
+# Kaupi
 
 owner = B21
 controller = B21
@@ -6,10 +6,11 @@ add_core = B21
 culture = ukabururn
 religion = dark_valor
 hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
-trade_goods = unknown
-capital = "Placeholder"
+base_tax = 7 
+base_production = 7
+base_manpower = 6
+trade_goods = cloth
+capital = "Kaupi"
 is_city = yes
 discovered_by = western
+center_of_trade = 1

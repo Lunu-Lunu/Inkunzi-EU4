@@ -1,4 +1,4 @@
-# Placeholder
+# Urkagrad
 
 owner = B21
 controller = B21
@@ -6,10 +6,10 @@ add_core = B21
 culture = ledengradian
 religion = valor
 hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
-trade_goods = unknown
-capital = "Placeholder"
+base_tax = 4 
+base_production = 4
+base_manpower = 4
+trade_goods = fish
+capital = "Urkagrad"
 is_city = yes
 discovered_by = western
