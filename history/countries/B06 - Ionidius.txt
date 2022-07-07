@@ -7,6 +7,7 @@ religion = celestialism
 primary_culture = ourkani
 capital = 2175
 set_country_flag = primary_ourk_nation
+add_legitimacy = -50
 
 1444.11.11 = {
 	monarch = {

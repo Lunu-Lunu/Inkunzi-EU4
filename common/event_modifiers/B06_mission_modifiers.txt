@@ -1,0 +1,34 @@
+B06_nations_namesake = {
+	ae_impact = -0.1
+	diplomatic_reputation = 1
+	legitimacy = 0.5
+	republican_tradition = 0.15
+}
+B06_lessons_from_valor = {
+	improve_relation_modifier = 0.15
+}
+B06_lessons_from_bytos = {
+	stability_cost_modifier = -0.1
+}
+B06_lessons_from_medvedeni = {
+	siege_ability = 0.05
+	defensiveness = 0.05
+}
+B06_unchained_from_wagren = {
+	shock_damage_received = -0.1
+	reinforce_speed = 0.33
+	manpower_recovery_speed = 0.33
+}
+B06_wagren_auxilaries = {
+	shock_damage = 0.1
+	reinforce_speed = 0.1
+}
+B06_staging_grounds = {
+	local_manpower = 1
+	local_defensiveness = 0.25
+	local_hostile_attrition = 1
+}
+B06_ionidian_benevolence = {
+	local_unrest = -3
+	local_religious_unity_contribution = -0.5
+}
