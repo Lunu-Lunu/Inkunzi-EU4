@@ -1,0 +1,189 @@
+namespace = hesh
+
+country_event = {
+	id = hesh.1
+	title = hesh.1.t
+	desc = hesh.1.d
+	fire_only_once = yes
+	picture = GOOD_WITH_MONARCH_eventPicture
+	major = yes
+	major_trigger = {
+		culture_group = seesonzero_group
+		culture_group = ratkin_group
+		culture_group = snakeman_group
+	}
+	is_triggered_only = yes
+	
+	option = { #declare hegemony
+		name = hesh.1.a 
+		ai_chance = { factor = 100 }
+		custom_effect_tooltip = {
+			tooltip = declare_hegemony
+			set_government_rank = 3
+			every_known_country = {
+				limit = {
+					OR = {
+						culture_group = seesonzero_group
+						culture_group = ratkin_group
+						culture_group = snakeman_group
+					}
+				}
+				hidden_effect = {
+					add_opinion = {
+						who = ROOT
+						modifier = claimed_throne_on_us
+					}
+				}
+				ROOT = {
+					add_casus_belli = {
+						target = PREV
+						type = cb_vassalize_mission
+						months = 1200
+					}
+					hidden_effect = {
+						add_country_modifier = {
+							name = F01_hesh_empire
+							duration = 18250
+							hidden = yes
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = hesh.2
+	title = hesh.2.t
+	desc = hesh.2.d
+	fire_only_once = yes
+	picture = LIBERUM_VETO_eventPicture
+	is_triggered_only = yes
+	
+	option = { #vassalize
+		name = hesh.2.a 
+		ai_chance = { factor = 100 }
+		custom_effect_tooltip = {
+			tooltip = vassalise_shield
+			every_known_country = {
+				limit = {
+					OR = {
+						culture_group = seesonzero_group
+						culture_group = snakeman_group
+					}
+					is_colonial_nation = no
+				}
+				ROOT = {
+					vassalize = PREV
+				}
+			}
+			add_prestige = 50
+		}
+	}
+}
+
+country_event = {
+	id = hesh.4
+	title = hesh.4.t
+	desc = hesh.4.d
+	picture = COMET_SIGHTED_eventPicture
+	trigger = {
+		OR = {
+			culture_group = hesh_group
+			culture_group = seesonzero_group
+			culture_group = snakeman_group
+		}
+		owns_or_non_sovereign_subject_of = 3137
+	}
+	mean_time_to_happen = {
+		months = 1320
+	}
+	option = { #not listen
+		name = hesh.4.a 
+		ai_chance = { factor = 50 }
+		add_stability = -1
+	}
+	option = { #listen
+		name = hesh.4.b
+		ai_chance = { factor = 50 }
+		add_prestige = 20
+		add_treasury = -100
+		3137 = {
+			add_base_production = 1
+		}
+	}
+}
+
+country_event = {
+	id = hesh.5
+	title = hesh.5.t
+	desc = hesh.5.d
+	picture = NATIVES_eventPicture
+	trigger = {
+		culture_group = hesh_group
+		NOT = { mission_completed = hesh_mission_the_eastern_advances }
+	}
+	mean_time_to_happen = {
+		months = 960
+	}
+	option = { #consume
+		name = hesh.5.a
+		ai_chance = { factor = 70 }
+		add_stability = 1
+		every_known_country = {
+			limit = {
+				culture_group = seesonzero_group
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = xenophage
+			}
+		}
+	}
+	option = { #return
+		name = hesh.5.b
+		ai_chance = { factor = 30 }
+		add_prestige = 10
+		every_known_country = {
+			limit = {
+				culture_group = seesonzero_group
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = released_seesonzeroans
+			}
+		}
+	}
+}
+
+country_event = {
+	id = hesh.6
+	title = hesh.6.t
+	desc = hesh.6.d
+	fire_only_once = yes
+	picture = FARMING_eventPicture
+	major = yes
+	major_trigger = {
+		culture_group = hesh_group
+	}
+	trigger = {
+		3185 = { 
+			NOT = {
+				owner = {
+					exists = yes
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 5280
+	}
+	option = { #fascinating
+		name = hesh.6.a
+		ai_chance = { factor = 100 }
+		3185 = {
+			cede_province = G65
+		}
+	}
+}

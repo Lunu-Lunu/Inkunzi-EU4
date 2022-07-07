@@ -1,5 +1,5 @@
 government = tribal
-add_government_reform = tribal_despotism
+add_government_reform = hesh_hive
 government_rank = 1
 mercantilism = 10
 technology_group = mesoamerican
@@ -7,6 +7,7 @@ religion = tribal_faith
 primary_culture = vorasian
 capital = 3133
 set_country_flag = primary_hesh_nation
+historical_rival = B79
 
 1444.11.11 = {
 	monarch = {
@@ -16,5 +17,38 @@ set_country_flag = primary_hesh_nation
 		dip = 2
 		mil = 3
 		birth_date = 1421.11.11
+	}
+}
+
+1474.11.11 = {
+	monarch = {
+		name = "Rortex"
+		dynasty = "Voras"
+		adm = 5
+		dip = 2
+		mil = 2
+		birth_date = 1454.11.11
+	}
+}
+
+1495.11.11 = {
+	monarch = {
+		name = "Yexozet"
+		dynasty = "Voras"
+		adm = 5
+		dip = 1
+		mil = 4
+		birth_date = 1475.11.11
+	}
+}
+
+1523.11.11 = {
+	monarch = {
+		name = "Tictac"
+		dynasty = "Voras"
+		adm = 5
+		dip = 5
+		mil = 2
+		birth_date = 1513.11.11
 	}
 }

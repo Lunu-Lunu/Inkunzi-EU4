@@ -1,5 +1,5 @@
 government = tribal
-add_government_reform = tribal_despotism
+add_government_reform = common_hive
 government_rank = 1
 mercantilism = 10
 technology_group = mesoamerican
@@ -7,15 +7,17 @@ religion = tribal_faith
 primary_culture = tavasian
 capital = 3130
 set_country_flag = primary_hesh_nation
+historical_rival = B77
+historical_rival = B78
+historical_rival = B80
 
 1444.11.11 = {
 	monarch = {
-		name = "Place"
-		dynasty = "Holder"
-		adm = 2
-		dip = 2
-		mil = 2
+		name = "Karikizix"
+		dynasty = "Tavas"
+		adm = 4
+		dip = 3
+		mil = 3
 		birth_date = 1424.11.11
-		regent = yes
 	}
 }

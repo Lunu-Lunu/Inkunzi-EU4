@@ -129,6 +129,9 @@ estate_hesh = {
 
 	privileges = {
 		estate_hesh_land_rights
+		estate_hesh_restrict_cannibalism
+		estate_hesh_restricted_cannnibalism
+		estate_hesh_construction_contracts
 	}
 
 	agendas = {

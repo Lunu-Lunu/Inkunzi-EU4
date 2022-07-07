@@ -3404,6 +3404,198 @@ estate_hesh_land_rights = {
 	}
 }
 
+estate_hesh_restricted_cannibalism = {
+	icon = privilege_make_generous_donation
+	land_share = 0
+	max_absolutism = 0
+	loyalty = 0.25
+	influence = 0.05
+	is_valid = {
+		NOT = {
+			primary_culture = vorasian
+			primary_culture = antaxian
+			primary_culture = karaxian
+			primary_culture = tavasian
+			primary_culture = yaxatian
+			primary_culture = hiveless
+		}
+	}
+	can_select = {
+	}
+	on_granted = {
+	}
+	can_revoke = {
+	}
+	on_revoked = {
+		hesh_loyalty_modifier = -0.2
+	}
+	on_invalid = {
+	}
+	penalties = {
+		ourk_loyalty_modifier = -0.05
+		humans_loyalty_modifier = -0.05
+		centaurs_loyalty_modifier = -0.05
+		draconic_loyalty_modifier = -0.05
+		nimbus_loyalty_modifier = -0.05
+		crabs_loyalty_modifier = -0.05
+		shrooms_loyalty_modifier = -0.05
+		golems_loyalty_modifier = -0.05
+		elves_loyalty_modifier = -0.05
+		goblins_loyalty_modifier = -0.05
+		lizards_loyalty_modifier = -0.05
+		moths_loyalty_modifier = -0.05
+		sia_si_loyalty_modifier = -0.05
+		gnetans_loyalty_modifier = -0.05
+		furries_loyalty_modifier = -0.05
+		frogs_loyalty_modifier = -0.05
+		dwarves_loyalty_modifier = -0.05
+		rats_loyalty_modifier = -0.05
+		goats_loyalty_modifier = -0.05
+		snakes_loyalty_modifier = -0.05
+		apes_loyalty_modifier = -0.05
+		ents_loyalty_modifier = -0.05
+	}
+	benefits = {
+	}
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			factor = 1.2
+			estate_influence = {
+				estate = estate_hesh
+				influence = 70
+			}
+		}
+		modifier = {
+			factor = 1.5
+			estate_territory = {
+				estate = estate_hesh
+				territory = 25
+			}
+		}
+	}
+}
+
+estate_hesh_restrict_cannibalism = {
+	icon = privilege_grant_autonomy
+	land_share = 0
+	max_absolutism = 0
+	loyalty = -0.25
+	influence = -0.05
+	is_valid = {
+		OR = {
+			primary_culture = vorasian
+			primary_culture = antaxian
+			primary_culture = karaxian
+			primary_culture = tavasian
+			primary_culture = yaxatian
+			primary_culture = hiveless
+		}
+	}
+	can_select = {
+	}
+	on_granted = {
+	}
+	can_revoke = {
+	}
+	on_revoked = {
+		hesh_loyalty_modifier = 0.1
+	}
+	on_invalid = {
+	}
+	penalties = {
+	}
+	benefits = {
+		ourk_loyalty_modifier = 0.1
+		humans_loyalty_modifier = 0.1
+		centaurs_loyalty_modifier = 0.1
+		draconic_loyalty_modifier = 0.1
+		nimbus_loyalty_modifier = 0.1
+		crabs_loyalty_modifier = 0.1
+		shrooms_loyalty_modifier = 0.1
+		golems_loyalty_modifier = 0.1
+		elves_loyalty_modifier = 0.1
+		goblins_loyalty_modifier = 0.1
+		lizards_loyalty_modifier = 0.1
+		moths_loyalty_modifier = 0.1
+		sia_si_loyalty_modifier = 0.1
+		gnetans_loyalty_modifier = 0.1
+		furries_loyalty_modifier = 0.1
+		frogs_loyalty_modifier = 0.1
+		dwarves_loyalty_modifier = 0.1
+		rats_loyalty_modifier = 0.1
+		goats_loyalty_modifier = 0.1
+		snakes_loyalty_modifier = 0.1
+		apes_loyalty_modifier = 0.1
+		ents_loyalty_modifier = 0.1
+	}
+	ai_will_do = {
+		factor = 3
+		modifier = {
+			factor = 1.2
+			NOT = {
+				estate_influence = {
+					estate = estate_hesh
+					influence = 50
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				estate_territory = {
+					estate = estate_hesh
+					territory = 15
+				}
+			}
+		}
+	}
+}
+
+estate_hesh_construction_contracts = {
+	icon = privilege_grant_new_world_charter
+	land_share = 5
+	max_absolutism = -5
+	loyalty = 0.15
+	influence = 0.1
+	is_valid = {
+	}
+	can_select = {
+	}
+	on_granted = {
+		add_treasury = -40
+	}
+	can_revoke = {
+	}
+	on_revoked = {
+		hesh_loyalty_modifier = -0.15
+		hesh_influence_modifier = -0.1
+	}
+	on_invalid = {
+	}
+	penalties = {
+	}
+	benefits = {
+		build_cost = -0.1
+		build_time = -0.15
+	}
+	cooldown_years = 10
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 1.5
+			treasury = 200
+		}
+		modifier = {
+			factor = 0.8
+			estate_territory = {
+				estate = estate_hesh
+				territory = 30
+			}
+		}
+	}
+}
+
 estate_snakes_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5

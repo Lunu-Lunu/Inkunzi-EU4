@@ -41,6 +41,47 @@ seesonzero_ideas = { # Seesonzero Ideas
     }
 }
 
+hesh_ideas = { # Hesh ideas
+    start = {
+        global_unrest = -2
+		years_of_nationalism = -5
+    }
+    bonus = {
+        reduced_liberty_desire_on_same_continent = 15
+		liberty_desire_from_subject_development = -0.25
+    }
+    trigger = {
+        culture_group = hesh_group
+    }
+    free = yes
+
+    hesh_unify_hives = {
+		ae_impact = -0.05
+		promote_culture_cost = -0.25
+    }
+    hesh_cities_earth = {
+        hostile_attrition = 1
+		defensiveness = 0.10
+    }
+    hesh_brood_nymph = {
+		land_forcelimit_modifier = 0.15
+    }
+    hesh_vizenyex_jungle= {
+		colonists = 1
+    }
+	hesh_unquestioned_teachings = {
+        global_missionary_strength = 0.02
+    }
+    hesh_pitch_construction = {
+		build_cost = -0.1
+		build_time = -0.15
+    }
+    hesh_hive_structure = {
+        max_absolutism = 10
+		yearly_absolutism = 0.50
+    }
+}
+
 konk_ideas = { # Konk Ideas
     start = {
         infantry_power = 0.1

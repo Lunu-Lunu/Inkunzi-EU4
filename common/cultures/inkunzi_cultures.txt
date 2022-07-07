@@ -1956,86 +1956,86 @@ hesh_group = {
 		primary = B77
 
 		male_names = {
-			Placeholder
+			Yanzah Karikizix Tictac Serizikiok Zepikiaos Yerkozeios Yexozet Rortex Kakezik
 		}
 		female_names = {
-			Placeholder
+			Yanzah Karikizix Tictac Serizikiok Zepikiaos Yerkozeios Yexozet Rortex Kakezik
 		}
 		dynasty_names = {
-			"Placeholder"
+			"Voras"
 		}
 	}
 	antaxian = {
 		primary = B78
 
 		male_names = {
-			Placeholder
+			Tictac Serizikiok Zepikiaos Yerkozeios Yexozet Rortex Kakezik Kaek Gizen
 		}
 		female_names = {
-			Placeholder
+			Tictac Serizikiok Zepikiaos Yerkozeios Yexozet Rortex Kakezik Kaek Gizen
 		}
 		dynasty_names = {
-			"Placeholder"
+			"Antax"
 		}
 	}
 	tavasian = {
 		primary = B79
 
 		male_names = {
-			Placeholder
+			Zepikiaos Yerkozeios Kakezik Kaek Gaxot Kaballax Raetyx Zaepitex Klendaek
 		}
 		female_names = {
-			Placeholder
+			Zepikiaos Yerkozeios Kakezik Kaek Gaxot Kaballax Raetyx Zaepitex Klendaek
 		}
 		dynasty_names = {
-			"Placeholder"
+			"Tavas"
 		}
 	}
 	yaxatian = {
 		primary = B80
 
 		male_names = {
-			Placeholder
+			Yexozet Rortex Kakezik Kaek Gaxot Kaballax Raetyx Zaepitex
 		}
 		female_names = {
-			Placeholder
+			Yexozet Rortex Kakezik Kaek Gaxot Kaballax Raetyx Zaepitex
 		}
 		dynasty_names = {
-			"Placeholder"
+			"Yaxat"
 		}
 	}
 	karaxian = {
 		primary = B81
 
 		male_names = {
-			Placeholder
+			Karikizix Serizikiok Kakezik Kaek Kaballax Raetyx Zaepitex Klendaek
 		}
 		female_names = {
-			Placeholder
+			Karikizix Serizikiok Kakezik Kaek Kaballax Raetyx Zaepitex Klendaek
 		}
 		dynasty_names = {
-			"Placeholder"
+			"Karax"
 		}
 	}
 	hiveless = {
 		male_names = {
-			Placeholder
+			Karikizix Tictac Serizikiok Zepikiaos Yerkozeios Kakezik Kaek Gaxot Kaballax Raetyx Zaepitex Klendaek
 		}
 		female_names = {
-			Placeholder
+			Karikizix Tictac Serizikiok Zepikiaos Yerkozeios Kakezik Kaek Gaxot Kaballax Raetyx Zaepitex Klendaek
 		}
 		dynasty_names = {
-			"Placeholder"
+			"Kavakak" "Kexorek" "Gapabas" "Ixap" "Kixaep"
 		}
 	}
 	male_names = {
-		Placeholder
+		Gizen Yanzah Karikizix Tictac Serizikiok Zepikiaos Yerkozeios Yexozet Rortex Kakezik Kaek Gaxot Kaballax Raetyx Zaepitex Klendaek
 	}
 	female_names = {
-		Placeholder
+		Gizen Yanzah Karikizix Tictac Serizikiok Zepikiaos Yerkozeios Yexozet Rortex Kakezik Kaek Gaxot Kaballax Raetyx Zaepitex Klendaek
 	}
 	dynasty_names = {
-		"Placeholder"
+		"Kavakak" "Kexorek" "Gapabas" "Ixap" "Kixaep"
 	}
 }
 snakeman_group = {

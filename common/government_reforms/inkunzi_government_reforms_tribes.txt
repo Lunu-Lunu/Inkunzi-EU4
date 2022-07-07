@@ -54,3 +54,45 @@ yeulan_sortition = {
 		lottery_election = yes
 	}
 }
+
+hesh_hive = {
+	icon = "native_codified_power_reform"
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	legacy_equivalent = tribal_kingdom_legacy
+	lock_level_when_selected = yes
+	monarchy = yes
+	maintain_dynasty = yes
+	potential = {
+		culture_group = hesh_group
+		has_reform = hesh_hive
+		has_had_reform = hesh_hive
+	}
+	modifiers = {
+		max_absolutism = 10
+		yearly_absolutism = 0.5
+	}
+}
+
+common_hive = {
+	icon = "peasant_republic"
+	valid_for_nation_designer = no
+	nation_designer_cost = 0
+	legacy_equivalent = tribal_council_legacy
+	lock_level_when_selected = yes
+	republic = yes
+	has_term_election = yes
+	duration = 3
+	potential = {
+		culture_group = hesh_group
+		has_reform = common_hive
+		has_had_reform = common_hive
+	}
+	modifiers = {
+		yearly_corruption = -0.05
+		advisor_pool = 1
+		global_unrest = -2
+		max_revolutionary_zeal = 25
+		yearly_revolutionary_zeal = 0.5
+	}
+}

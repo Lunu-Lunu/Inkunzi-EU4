@@ -1,0 +1,55 @@
+#Country Name: Please see filename.
+
+graphical_culture = westerngfx
+
+color = { 176 81 47 }
+
+historical_idea_groups = {
+	quality_ideas
+	economic_ideas
+	defensive_ideas
+	offensive_ideas
+	diplomatic_ideas
+	quantity_ideas
+	spy_ideas
+	religious_ideas
+}
+
+historical_units = {
+	mesoamerican_spearmen
+	central_american_horsemen
+	aztec_tribal_warfare
+	aztec_hill_warfare
+	aztec_gunpowder_warfare
+	westernized_aztec
+	mexican_guerilla_warfare
+}
+
+leader_names = {
+	Karikizix
+	Tictac
+	Serizikiok
+	Zepikiaos
+	Kaerygx
+	Baanayr
+	Zaepitex
+	Raetyx
+	Kaek
+	Klendael
+	Kaballax
+}
+
+monarch_names = {
+	"Karikizix" = -1
+	"Tictac" = 1
+	"Serizikiok" = 2
+	"Zepikiaos" = -2
+	"Yerkozeios" = 2
+	"Kakezik" = 1
+	"Kaek" = -1
+	"Gaxot" = 1
+	"Kaballax" = 2
+	"Raetyx" = -2
+	"Zaepitex" = 1
+	"Klendael" = -2
+}

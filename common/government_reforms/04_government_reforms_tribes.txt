@@ -335,6 +335,7 @@ tribe_becomes_monarchy_reform = {
 	potential = {
 		NOT = { 
 			has_reform = stateless_society
+			has_reform = common_hive
 		}
 	}
 	effect = {
@@ -456,6 +457,7 @@ tribe_becomes_theocracy_reform = {
 	potential = {
 		NOT = { 
 			has_reform = stateless_society
+			has_reform = common_hive
 		}
 	}
 	trigger = {
@@ -518,6 +520,7 @@ tribe_becomes_horde_reform = {
 	potential = {
 		NOT = { 
 			has_reform = stateless_society
+			has_reform = common_hive
 		}
 	}
 	effect = {

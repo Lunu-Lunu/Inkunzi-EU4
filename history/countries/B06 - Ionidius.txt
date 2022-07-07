@@ -17,5 +17,6 @@ add_legitimacy = -50
 		dip = 2
 		mil = 5
 		birth_date = 1423.11.11
+		claim = 50
 	}
 }
