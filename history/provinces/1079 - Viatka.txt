@@ -1,4 +1,4 @@
-# Placeholder
+# Nufa'ctu
 
 owner = A80
 controller = A80
@@ -10,6 +10,6 @@ base_tax = 2
 base_production = 3
 base_manpower = 3
 trade_goods = cloth
-capital = "Placeholder"
+capital = "Nufa'ctu City"
 is_city = yes
 discovered_by = western

@@ -1,0 +1,22 @@
+valor_papacy_reform = {
+	potential = {
+		tag = B23
+	}
+
+	modifiers = {
+		improve_relation_modifier = 0.15
+		tolerance_own = 1
+		church_influence_modifier = 0.2
+	}
+	valid_for_nation_designer = no
+	icon = "papacy"
+	allow_normal_conversion = yes
+	legacy_equivalent = papal_government
+	papacy = yes
+	allow_convert = no
+	lock_level_when_selected = yes
+
+	custom_attributes = {
+		locked_government_type = yes
+	}
+}

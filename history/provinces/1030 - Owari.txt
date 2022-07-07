@@ -1,4 +1,4 @@
-# Placeholder
+# Aggana'Dei Molad
 
 owner = A76
 controller = A76
@@ -10,7 +10,7 @@ base_tax = 5
 base_production = 6
 base_manpower = 6
 trade_goods = paper
-capital = "Placeholder"
+capital = "Aggana'Dei City"
 is_city = yes
 discovered_by = western
 fort_15th = yes

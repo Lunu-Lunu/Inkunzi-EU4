@@ -1,4 +1,4 @@
-# Placeholder
+# Fad'ra
 
 owner = A81
 controller = A81
@@ -10,7 +10,7 @@ base_tax = 5
 base_production = 6
 base_manpower = 6
 trade_goods = iron
-capital = "Placeholder"
+capital = "Fort Fad'ra"
 is_city = yes
 discovered_by = western
 fort_15th = yes

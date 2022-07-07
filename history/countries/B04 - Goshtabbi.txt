@@ -7,10 +7,11 @@ religion = mashia
 primary_culture = dengiz
 capital = 2093
 set_country_flag = primary_human_nation
+historical_friend = B03
 
 1444.11.11 = {
 	monarch = {
-		name = "Gashkan"
+		name = "Rothkan"
 		dynasty = "Goshtabbi"
 		adm = 2
 		dip = 1

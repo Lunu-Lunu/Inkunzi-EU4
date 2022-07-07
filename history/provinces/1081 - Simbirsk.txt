@@ -1,4 +1,4 @@
-# Placeholder
+# Sigsii
 
 owner = A80
 controller = A80
@@ -10,6 +10,6 @@ base_tax = 1
 base_production = 2
 base_manpower = 2
 trade_goods = livestock
-capital = "Placeholder"
+capital = "Sigsii Fields"
 is_city = yes
 discovered_by = western
