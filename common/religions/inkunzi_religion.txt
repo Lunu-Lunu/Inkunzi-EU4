@@ -950,6 +950,8 @@ irreligious_group = {
 			}			
 		
 		}
+
+		can_have_secondary_religion = yes
 		
 		heretic = { HERETIC_GENERIC }
 	}
