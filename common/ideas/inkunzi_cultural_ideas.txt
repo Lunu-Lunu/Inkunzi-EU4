@@ -47,7 +47,7 @@ hesh_ideas = { # Hesh ideas
 		years_of_nationalism = -5
     }
     bonus = {
-        reduced_liberty_desire_on_same_continent = 40
+        reduced_liberty_desire_on_same_continent = 15
 		liberty_desire_from_subject_development = -0.25
     }
     trigger = {
@@ -77,8 +77,8 @@ hesh_ideas = { # Hesh ideas
 		build_time = -0.15
     }
     hesh_hive_structure = {
-        max_absolutism = 30
-		yearly_absolutism = 0.15
+        max_absolutism = 10
+		yearly_absolutism = 0.50
     }
 }
 
