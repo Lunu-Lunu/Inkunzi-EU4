@@ -26,25 +26,11 @@ historical_units = {
 }
 
 leader_names = {
-	Karikizix 
-	Serizikiok 
-	Kakezik 
-	Kaek 
-	Kaballax 
-	Raetyx 
-	Zaepitex 
-	Klendaek
-	Ibak
-	Kaeryxr
+	Gigenshtain
 }
 
 monarch_names = {
-	"Karikizix" = 2
-	"Serizikiok" = -2
-	"Kakezik" = 2
-	"Kaek" = -2
-	"Kaballax" = 2
-	"Raetyx" = -2
-	"Zaepitex" = 2
-	"Klendaek" = -2
+	"Gigenshtain #0" = 0
+
+	"FEMALE Gigenshtain #0" = -1
 }

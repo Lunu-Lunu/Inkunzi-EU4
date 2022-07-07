@@ -241,49 +241,6 @@ A65_ideas = { #Helghan Ideas
 	}
 }
 
-B06_ideas = { # Ionidius Ideas
-	start = {
-		reinforce_cost_modifier = -0.15
-		idea_cost = -0.05
-	}
-	bonus = {
-		religious_unity = 0.25
-	}
-
-	trigger = {
-		tag = B06
-	}
-	free = yes
-
-	B06_ionidius_diplomatic_corps = {
-		diplomats = 1
-		diplomatic_upkeep = 1
-	}
-	B06_lessons_from_alzha = {
-		leader_land_shock = 1
-		shock_damage_received = -0.05
-	}
-	B06_fight_for_survival = {
-		hostile_attrition = 1
-		enemy_core_creation = 0.33
-	}
-	B06_agathon_tax_codes = {
-		global_tax_modifier = 0.15
-	}
-	B06_storied_diplomats = {
-		free_dip_policy = 1
-	}
-	B06_ionidian_advisory_council = {
-		advisor_pool = 1
-		advisor_cost = -0.05
-	}
-	B06_ions_legacy = {
-		relation_with_accepted_culture = 30
-		relation_with_other_culture = 15
-		years_of_nationalism = -5
-	}
-}
-
 B21_ideas = { # Melkhian Ideas
 	start = {
 		leader_naval_fire = 1

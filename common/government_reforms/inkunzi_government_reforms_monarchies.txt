@@ -40,22 +40,3 @@ alzhaic_settled_horde_reform = {
 		enables_aristocratic_idea_group = no
 	}
 }
-
-ionidian_system_reform = {
-	icon = "map"
-	allow_normal_conversion = yes
-	potential = {
-		culture_group = ourkani_group
-		has_completed_mission = ionidius_mission_philosophy_of_rulership
-	}
-	modifiers = {
-		development_cost = -0.05
-		idea_cost = -0.05
-		num_accepted_cultures = 1
-		ourk_loyalty_modifier = 0.1
-		governing_capacity_modifier = -0.1
-	}
-	ai = {
-		factor = 10
-	}
-}
