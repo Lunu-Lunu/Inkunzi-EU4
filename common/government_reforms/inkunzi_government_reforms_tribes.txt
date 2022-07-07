@@ -69,8 +69,8 @@ hesh_hive = {
 		has_had_reform = hesh_hive
 	}
 	modifiers = {
-		max_absolutism = 50
-		yearly_absolutism = 0.1
+		max_absolutism = 10
+		yearly_absolutism = 0.5
 	}
 }
 
@@ -92,7 +92,7 @@ common_hive = {
 		yearly_corruption = -0.05
 		advisor_pool = 1
 		global_unrest = -2
-		max_revolutionary_zeal = 50
-		yearly_revolutionary_zeal = 0.2
+		max_revolutionary_zeal = 25
+		yearly_revolutionary_zeal = 0.5
 	}
 }
