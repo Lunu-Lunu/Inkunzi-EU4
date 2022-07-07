@@ -2983,17 +2983,6 @@ on_convert_by_trade_policy = {
 # province
 # FROM = old owner
 on_province_owner_change = {
-
-	if = {
-		limit = {
-			owner = {
-				tag = B06
-				mission_completed = ionidius_mission_necessity_of_kinslaying
-			}
-			culture = ourkani
-		}
-		add_nationalism = -10
-	}
 	
 	if = {
 		limit = {

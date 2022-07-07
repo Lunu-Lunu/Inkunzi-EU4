@@ -64,7 +64,6 @@ monarchy = {
 				fraternite_reform
 				examination_system_reform
 				corvee_reform
-				ionidian_system_reform
 			}
 		}
 		growth_of_administration = {
