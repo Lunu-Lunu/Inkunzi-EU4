@@ -1,4 +1,4 @@
-# Placeholder
+# Dikhl'ta
 
 owner = A73
 controller = A73
@@ -10,7 +10,7 @@ base_tax = 4
 base_production = 5
 base_manpower = 6
 trade_goods = wool
-capital = "Placeholder"
+capital = "Dikhl'ta Fort"
 is_city = yes
 discovered_by = western
 fort_15th = yes

@@ -1,4 +1,4 @@
-# Placeholder
+# Shina'naia
 
 owner = A75
 controller = A75
@@ -10,7 +10,7 @@ base_tax = 5
 base_production = 6
 base_manpower = 4
 trade_goods = paper
-capital = "Placeholder"
+capital = "Shina City"
 is_city = yes
 discovered_by = western
 fort_15th = yes

@@ -1,4 +1,4 @@
-# Placeholder
+# Foroinain
 
 owner = A79
 controller = A79
@@ -10,7 +10,7 @@ base_tax = 3
 base_production = 4
 base_manpower = 3
 trade_goods = naval_supplies
-capital = "Placeholder"
+capital = "Foroinain Shipyards"
 is_city = yes
 discovered_by = western
 fort_15th = yes

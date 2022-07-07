@@ -1,4 +1,4 @@
-# Placeholder
+# Lununo'Tunu
 
 owner = A74
 controller = A74
@@ -10,6 +10,6 @@ base_tax = 2
 base_production = 3
 base_manpower = 2
 trade_goods = iron
-capital = "Placeholder"
+capital = "Lununo City"
 is_city = yes
 discovered_by = western

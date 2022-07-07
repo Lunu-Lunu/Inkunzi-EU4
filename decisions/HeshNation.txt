@@ -14,73 +14,12 @@ country_decisions = {
 			add_country_modifier = { 
 				name = F01_undivided_reverence
 				duration = -1  
+				desc = HESH_REVERENCE_TOOLTIP
 			}
 			add_country_modifier = {
 				name = F01_edict_grace
 				duration = 4075
-			}
-		}
-		ai_will_do = {
-			factor = 0.9
-			modifier = {
-	 			factor = 0.5
-	 			NOT = { stability = 1 }
-			}
-			modifier = {
-				factor = 0.5
-				NOT = { stability = 0 }
-			}
-			modifier = {
-				factor = 0.1
-				NOT = { stability = -1 }
-			}
-		}
-	}
-
-	dovasil_cavalry = {
-		major = no
-		potential = {
-			OR = {
-				culture_group = hesh_group
-				culture_group = seesonzero_group
-			}
-			NOT = { has_country_flag = dovasil_cavalry_flag }
-		}
-		allow = {
-			mil_tech = 3
-			mil_power = 100
-			any_owned_province = {
-				OR = {
-					area = eiyeland_area
-					area = maws_end_area
-				}
-			}
-		}
-		effect = {
-			set_country_flag = dovasil_cavalry_flag
-			add_mil_power = -100
-			add_country_modifier = {
-				name = F01_dovasil_cavalry
-				duration = -1
-			}
-		}
-		ai_will_do = {
-			factor = 0.8
-			modifier = {
-				factor = 0.75
-				NOT = { monthy_mil = 6 }
-			}
-			modifier = {
-				factor = 0.5
-				NOT = { monthy_mil = 3 }
-			}
-			modifier = {
-				factor = 0.75
-				NOT = { monthly_income = 3 }
-			}
-			modifier = {
-				factor = 0.5
-				NOT = { monthly_income = 0.5 }
+				desc = HESH_GRACE_TOOLTIP
 			}
 		}
 	}

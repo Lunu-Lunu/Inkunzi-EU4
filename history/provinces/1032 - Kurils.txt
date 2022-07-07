@@ -1,4 +1,4 @@
-# Placeholder
+# Virvir
 
 owner = A76
 controller = A76
@@ -10,6 +10,6 @@ base_tax = 2
 base_production = 3
 base_manpower = 2
 trade_goods = gems
-capital = "Placeholder"
+capital = "Virvir Mines"
 is_city = yes
 discovered_by = western

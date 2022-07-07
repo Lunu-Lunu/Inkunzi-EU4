@@ -1,4 +1,4 @@
-# Placeholder
+# Ir'nath
 
 owner = A78
 controller = A78
@@ -10,6 +10,6 @@ base_tax = 3
 base_production = 3
 base_manpower = 3
 trade_goods = fish
-capital = "Placeholder"
+capital = "Ir'nath City"
 is_city = yes
 discovered_by = western

@@ -1,4 +1,4 @@
-# Placeholder
+# Zoitio Fiiin
 
 owner = A76
 controller = A76
@@ -10,6 +10,6 @@ base_tax = 2
 base_production = 3
 base_manpower = 3
 trade_goods = grain
-capital = "Placeholder"
+capital = "Zoitio City"
 is_city = yes
 discovered_by = western

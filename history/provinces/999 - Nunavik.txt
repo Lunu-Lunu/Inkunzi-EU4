@@ -1,4 +1,4 @@
-# Placeholder
+# Ki Qi
 
 owner = A72
 controller = A72
@@ -10,6 +10,6 @@ base_tax = 2
 base_production = 1
 base_manpower = 2
 trade_goods = spices
-capital = "Placeholder"
+capital = "Ki Qi City"
 is_city = yes
 discovered_by = western

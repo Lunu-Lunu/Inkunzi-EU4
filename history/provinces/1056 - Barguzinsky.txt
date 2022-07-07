@@ -1,4 +1,4 @@
-# Placeholder
+# Tikit'bong
 
 owner = A78
 controller = A78
@@ -10,6 +10,6 @@ base_tax = 3
 base_production = 2
 base_manpower = 3
 trade_goods = iron
-capital = "Placeholder"
+capital = "Tikit'bong Town"
 is_city = yes
 discovered_by = western
