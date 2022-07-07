@@ -5,7 +5,7 @@ mercantilism = 10
 technology_group = western
 religion = celestialism
 primary_culture = ourkani
-capital = 2174
+capital = 2175
 set_country_flag = primary_ourk_nation
 
 1444.11.11 = {
@@ -16,5 +16,6 @@ set_country_flag = primary_ourk_nation
 		dip = 2
 		mil = 5
 		birth_date = 1423.11.11
+		claim = 50
 	}
 }

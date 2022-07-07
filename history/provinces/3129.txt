@@ -10,6 +10,6 @@ base_tax = 3
 base_production = 4
 base_manpower = 3
 trade_goods = tobacco
-capital = "East Tavas"
+capital = "West Tavas"
 is_city = yes
 discovered_by = mesoamerican

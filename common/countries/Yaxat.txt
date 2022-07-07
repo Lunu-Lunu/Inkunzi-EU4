@@ -26,25 +26,11 @@ historical_units = {
 }
 
 leader_names = {
-	Yexozet 
-	Rortex 
-	Kakezik 
-	Kaek 
-	Gaxot 
-	Kaballax 
-	Raetyx 
-	Zaepitex
-	Nyrex
-	Taepyrz
+	Gigenshtain
 }
 
 monarch_names = {
-	"Yexozet" = 1
-	"Rortex" = -1
-	"Kakezik" = 2
-	"Kaek" = -2
-	"Gaxot" = 1
-	"Kaballax" = -1
-	"Raetyx" = 2
-	"Zaepitex" = -2
+	"Gigenshtain #0" = 0
+
+	"FEMALE Gigenshtain #0" = -1
 }

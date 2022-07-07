@@ -325,6 +325,26 @@ new_world_placeholder_region = { # why did i not just do this sooner lmao
 	}
 }
 
+ozarkhia_region = {
+	areas = {
+		kalenoo_area
+		kalenoo2_area
+		kalenoo3_area
+		kalenoo4_area
+		kalenoo5_area
+		ozarkhia_area
+		ozarkhia2_area
+		ozarkhia3_area
+		ozarkhia4_area
+		gangir_area
+		gangir2_area
+		gangir3_area
+		gangir4_area
+		gangir5_area
+		gangir6_area
+	}
+}
+
 tradia_region = {
 	areas = {
 		strait_of_tradia_area

@@ -7,7 +7,7 @@ F01_hesh_expeditions = {
 }
 
 F01_hesh_cowpalia = {
-	years_of_nationalism = -5
+	years_of_nationalism = -10
 	global_unrest = -2
 }
 
@@ -28,12 +28,9 @@ F01_hesh_reverence = {
 F01_hesh_grace = {
 	tolerance_heretic = 2
 	tolerance_heathen = 2
-	missionaries = 2
 }
 
-F01_dovasil_cavalry = {
-	cavalry_shock = 0.2
-	cavalry_flanking = 0.2
-	cav_to_inf_ratio = 0.2
-	cavalry_cost = 0.25
+F01_hesh_cavalry = {
+	cavalry_power = 0.10
+	cavalry_shock = 1
 }

@@ -26,26 +26,11 @@ historical_units = {
 }
 
 leader_names = {
-	Tictac 
-	Serizikiok
-	Zepikiaos 
-	Yerkozeios 
-	Yexozet 
-	Rortex 
-	Kakezik 
-	Kaek 
-	Gizen
-	Xap
+	Gigenshtain
 }
 
 monarch_names = {
-	"Tictac" = 2 
-	"Serizikiok" = -2
-	"Zepikiaos" = 1
-	"Yerkozeios" = -1
-	"Yexozet" = 2
-	"Rortex" = -2
-	"Kakezik" = 1
-	"Kaek" = -1
-	"Gizen" = 2
+	"Gigenshtain #0" = 0
+
+	"FEMALE Gigenshtain #0" = -1
 }
