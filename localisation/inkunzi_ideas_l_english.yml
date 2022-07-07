@@ -99,6 +99,16 @@
   B53_yeulan_architectural_integration:0 "Yeulan Architectural Integration"
   B53_naval_dominance:0 "Naval Dominance"
   B53_sahyvarian_adherents:0 "Sahyvarian Adherents"
+  B06_ideas:0 "Ionidian Ideas"
+  B06_ideas_start:0 "Ionidian Traditions"
+  B06_ideas_bonus:0 "Ionidian Ambition"
+  B06_ionidius_diplomatic_corps:0 "Ionidian Diplomatic Corps"
+  B06_lessons_from_alzha:0 "Lessons from the Steppe"
+  B06_fight_for_survival:0 "Fight for Survival"
+  B06_agathon_tax_codes:0 "Agathon Tax Codes"
+  B06_storied_diplomats:0 "Storied Diplomats"
+  B06_ionidian_advisory_council:0 "Of Many Viewpoints"
+  B06_ions_legacy:0 "Ion's Legacy"
 
   ### Cultural Ideas ###
   seesonzero_ideas:0 "Seesonzeroan Cultural Ideas"
