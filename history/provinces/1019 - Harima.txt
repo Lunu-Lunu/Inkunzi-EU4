@@ -1,4 +1,4 @@
-# Not China
+# Placeholder
 
 owner = A88
 controller = A88
@@ -8,8 +8,8 @@ religion = mashia
 hre = no
 base_tax = 1 
 base_production = 1
-base_manpower = 12
-trade_goods = grain
-capital = "Uhhh, Meow?"
+base_manpower = 1
+trade_goods = unknown
+capital = "Placeholder"
 is_city = yes
 discovered_by = western

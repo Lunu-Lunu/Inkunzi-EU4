@@ -1,16 +1,15 @@
 # Placeholder
 
-owner = B99
-controller = B99
-add_core = B99
-culture = enezennian
+owner = B35
+controller = B35
+add_core = B35
+culture = goblin
 religion = valor
 hre = no
-base_tax = 7 
-base_production = 7
-base_manpower = 8
-trade_goods = glass
-capital = "Enezenn"
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+trade_goods = unknown
+capital = "Placeholder"
 is_city = yes
 discovered_by = western
-center_of_trade = 2

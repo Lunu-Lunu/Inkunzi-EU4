@@ -1,4 +1,4 @@
-# Bla'ckitli
+# Placeholder
 
 owner = A76
 controller = A76
@@ -10,6 +10,6 @@ base_tax = 1
 base_production = 3
 base_manpower = 2
 trade_goods = slaves
-capital = "Bla'ckitli Fields"
+capital = "Placeholder"
 is_city = yes
 discovered_by = western

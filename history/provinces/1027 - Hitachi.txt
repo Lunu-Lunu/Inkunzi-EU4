@@ -1,4 +1,4 @@
-# Ioon'tinini
+# Placeholder
 
 owner = A76
 controller = A76
@@ -10,6 +10,6 @@ base_tax = 3
 base_production = 2
 base_manpower = 3
 trade_goods = naval_supplies
-capital = "Ioon'tinini Port"
+capital = "Placeholder"
 is_city = yes
 discovered_by = western

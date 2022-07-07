@@ -1,5 +1,5 @@
 government = theocracy
-add_government_reform = valor_papacy_reform
+add_government_reform = leading_clergy_reform
 government_rank = 2
 mercantilism = 10
 technology_group = western

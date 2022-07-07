@@ -1,4 +1,4 @@
-# Nu'ra
+# Placeholder
 
 owner = A80
 controller = A80
@@ -10,7 +10,7 @@ base_tax = 5
 base_production = 6
 base_manpower = 5
 trade_goods = paper
-capital = "Fort Nu'ra"
+capital = "Placeholder"
 is_city = yes
 discovered_by = western
 fort_15th = yes

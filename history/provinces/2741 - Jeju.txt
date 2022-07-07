@@ -3,7 +3,7 @@
 owner = B38
 controller = B38
 add_core = B38
-culture = kornandian
+culture = lower_goblin
 religion = dark_valor
 hre = no
 base_tax = 3 
