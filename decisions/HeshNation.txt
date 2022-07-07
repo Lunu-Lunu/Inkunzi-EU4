@@ -12,11 +12,11 @@ country_decisions = {
 		effect = {
 			change_religion = irreligious
 			add_country_modifier = { 
-				name = F01_undivided_reverence
+				name = F01_hesh_reverence
 				duration = -1  
 			}
 			add_country_modifier = {
-				name = F01_edict_grace
+				name = F01_hesh_grace
 				duration = 4075
 			}
 		}
