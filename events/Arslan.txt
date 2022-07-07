@@ -10,7 +10,7 @@ country_event = {
 	id = arslan.1
 	title = arslan.1.t
 	desc = arslan.1.desc
-	picture = HORDE_ON_HORSEBACK_eventPicture
+	picture = COUNTRY_COLLAPSE_eventPicture
 	
 	fire_only_once = yes
 	
@@ -26,7 +26,6 @@ country_event = {
 		name = arslan.1.a # Khotun Arslan's coup succeeds
 		add_stability = -2
 		change_religion = celestialism
-		override_country_name = Arslan
 		random_owned_province = {
 			spawn_rebels = {
 				type = pretender_rebels
@@ -56,7 +55,6 @@ country_event = {
 			clear_scripted_personalities = yes
 			add_ruler_personality = zealot_personality
 			add_ruler_personality = conqueror_personality
-			set_country_flag = is_arslan
 		}
 	}
 	option = {
@@ -65,7 +63,7 @@ country_event = {
 		random_owned_province = {
 			spawn_rebels = {
 				type = pretender_rebels
-				size = 4
+				size = 3
 				leader = "Khotun"
 				leader_dynasty = "Arslan"
 			}

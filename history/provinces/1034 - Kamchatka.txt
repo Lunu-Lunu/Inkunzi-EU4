@@ -1,4 +1,4 @@
-# Dia'on Momo
+# Placeholder
 
 owner = A77
 controller = A77
@@ -10,6 +10,6 @@ base_tax = 2
 base_production = 3
 base_manpower = 2
 trade_goods = chinaware
-capital = "Dia'on City"
+capital = "Placeholder"
 is_city = yes
 discovered_by = western

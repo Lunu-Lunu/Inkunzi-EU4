@@ -1,4 +1,4 @@
-# Qi'rish
+# Placeholder
 
 owner = A81
 controller = A81
@@ -10,6 +10,6 @@ base_tax = 3
 base_production = 3
 base_manpower = 3
 trade_goods = tobacco
-capital = "Qi'rish Town"
+capital = "Placeholder"
 is_city = yes
 discovered_by = western

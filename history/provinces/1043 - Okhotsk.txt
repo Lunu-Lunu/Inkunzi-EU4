@@ -1,4 +1,4 @@
-# Del'li
+# Placeholder
 
 owner = A77
 controller = A77
@@ -10,6 +10,6 @@ base_tax = 2
 base_production = 3
 base_manpower = 3
 trade_goods = coffee
-capital = "Del'li Town"
+capital = "Placeholder"
 is_city = yes
 discovered_by = western

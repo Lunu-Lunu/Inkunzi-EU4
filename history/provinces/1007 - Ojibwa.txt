@@ -1,4 +1,4 @@
-# Eshna'Naia
+# Placeholder
 
 owner = A74
 controller = A74
@@ -10,7 +10,7 @@ base_tax = 4
 base_production = 7
 base_manpower = 4
 trade_goods = slaves
-capital = "Eshna'Naia City"
+capital = "Placeholder"
 is_city = yes
 discovered_by = western
 fort_15th = yes

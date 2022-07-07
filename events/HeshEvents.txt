@@ -15,34 +15,37 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = { #declare hegemony
-	name = hesh.1.a 
-	ai_chance = { factor = 100 }
-		set_government_rank = 3
-		every_known_country = {
-			limit = {
-				OR = {
-					culture_group = seesonzero_group
-					culture_group = ratkin_group
-					culture_group = snakeman_group
-				}
-			}
-			hidden_effect = {
-				add_opinion = {
-					who = ROOT
-					modifier = claimed_throne_on_us
-				}
-			}
-			ROOT = {
-				add_casus_belli = {
-					target = PREV
-					type = cb_vassalize_mission
-					months = 1200
+		name = hesh.1.a 
+		ai_chance = { factor = 100 }
+		custom_effect_tooltip = {
+			tooltip = declare_hegemony
+			set_government_rank = 3
+			every_known_country = {
+				limit = {
+					OR = {
+						culture_group = seesonzero_group
+						culture_group = ratkin_group
+						culture_group = snakeman_group
+					}
 				}
 				hidden_effect = {
-					add_country_modifier = {
-						name = F01_hesh_empire
-						duration = 18250
-						hidden = yes
+					add_opinion = {
+						who = ROOT
+						modifier = claimed_throne_on_us
+					}
+				}
+				ROOT = {
+					add_casus_belli = {
+						target = PREV
+						type = cb_vassalize_mission
+						months = 1200
+					}
+					hidden_effect = {
+						add_country_modifier = {
+							name = F01_hesh_empire
+							duration = 18250
+							hidden = yes
+						}
 					}
 				}
 			}
@@ -61,54 +64,21 @@ country_event = {
 	option = { #vassalize
 		name = hesh.2.a 
 		ai_chance = { factor = 100 }
-		every_known_country = {
-			limit = {
-				OR = {
-					culture_group = seesonzero_group
-					culture_group = snakeman_group
+		custom_effect_tooltip = {
+			tooltip = vassalise_shield
+			every_known_country = {
+				limit = {
+					OR = {
+						culture_group = seesonzero_group
+						culture_group = snakeman_group
+					}
+					is_colonial_nation = no
+				}
+				ROOT = {
+					vassalize = PREV
 				}
 			}
-			ROOT = {
-				vassalize = PREV
-			}
-		}
-		add_prestige = 50
-	}
-}
-
-country_event = {
-	id = hesh.3
-	title = hesh.3.t
-	desc = hesh.3.d
-	fire_only_once = yes
-	picture = HORSE_ON_HORSEBACK_eventPicture
-	trigger = {
-		OR = {
-			culture_group = hesh_group
-			culture_group = seesonzero_group
-		}
-	}
-	mean_time_to_happen = {
-		months = 360
-		modifier = {
-			factor = 0.9
-			num_of_cavalry = 2
-		}
-		modifier = {
-			factor = 0.8
-			num_of_cavalry = 6
-		}
-		modifier = {
-			factor = 0.8
-			cavalry_fraction = 0.4
-		}
-	}
-	option = { #dovasil
-		name = hesh.3.a 
-		ai_chance = { factor = 100 }
-		add_country_modifier = {
-			name = F01_hesh_cavalry
-			duration = -1
+			add_prestige = 50
 		}
 	}
 }

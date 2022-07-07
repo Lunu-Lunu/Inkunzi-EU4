@@ -1535,22 +1535,6 @@ goblin_group = {
 			"Placeholder"
 		}
 	}
-	enezennian = {
-		primary = B99
-
-		male_names = {
-			Placeholder
-		}
-		female_names = {
-			Placeholder
-		}
-		dynasty_names = {
-			"Placeholder"
-		}
-	}
-	kornandian = {
-		primary = B35
-	}
 	male_names = {
 		Placeholder
 	}

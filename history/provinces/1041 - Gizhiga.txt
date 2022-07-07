@@ -1,4 +1,4 @@
-# Ant'onyth
+# Placeholder
 
 owner = A77
 controller = A77
@@ -10,6 +10,6 @@ base_tax = 2
 base_production = 3
 base_manpower = 3
 trade_goods = salt
-capital = "Ant'onyth Town"
+capital = "Placeholder"
 is_city = yes
 discovered_by = western

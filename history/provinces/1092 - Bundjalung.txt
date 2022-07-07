@@ -1,4 +1,4 @@
-# Bifit
+# Placeholder
 
 owner = A81
 controller = A81
@@ -10,6 +10,6 @@ base_tax = 2
 base_production = 2
 base_manpower = 3
 trade_goods = fish
-capital = "Bifit Port"
+capital = "Placeholder"
 is_city = yes
 discovered_by = western

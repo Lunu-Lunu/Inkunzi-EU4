@@ -1,4 +1,4 @@
-# Sheshe Ati
+# Placeholder
 
 owner = A74
 controller = A74
@@ -10,6 +10,6 @@ base_tax = 1
 base_production = 2
 base_manpower = 2
 trade_goods = cocoa
-capital = "Sheshe City"
+capital = "Placeholder"
 is_city = yes
 discovered_by = western

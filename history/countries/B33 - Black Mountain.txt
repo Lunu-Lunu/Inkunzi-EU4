@@ -5,7 +5,7 @@ mercantilism = 10
 technology_group = western
 religion = valor
 primary_culture = goblin
-capital = 2658
+capital = 2637
 set_country_flag = primary_goblin_nation
 
 1444.11.11 = {
