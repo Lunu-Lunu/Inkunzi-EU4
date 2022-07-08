@@ -3,6 +3,7 @@
 owner = A21
 controller = A21
 add_core = A21
+add_core = P03
 culture = ferdunic
 religion = triaxism
 hre = no

@@ -264,7 +264,7 @@ G63 = "countries/AddedRat19.txt"
 G64 = "countries/AddedRat20.txt"
 G65 = "countries/Sanzahyr.txt"
 
-### Spawnables & Releasables ###
+### Spawnables & *some* Releasables ###
 R00 = "countries/Leminska.txt"
 R01 = "countries/Essonia.txt"
 R02 = "countries/Kabara.txt"
@@ -277,3 +277,9 @@ R08 = "countries/Kylvaa Kseryss.txt"
 
 ### Formables ###
 F01 = "countries/Hesh.txt"
+
+### Releasables ###
+P00 = "countries/Aroluenne.txt"
+P01 = "countries/Iznad.txt"
+P02 = "countries/Spol.txt"
+P03 = "countries/Ferdunks.txt"

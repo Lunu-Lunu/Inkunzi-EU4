@@ -1,0 +1,9 @@
+government = republic
+add_government_reform = oligarchy_reform
+government_rank = 1
+mercantilism = 10
+technology_group = western
+religion = dark_valor
+primary_culture = karolon
+capital = 2716
+set_country_flag = primary_crab_nation

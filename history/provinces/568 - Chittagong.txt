@@ -3,6 +3,7 @@
 owner = A40
 controller = A40
 add_core = A40
+add_core = P02
 culture = spolic
 religion = agaric
 hre = no

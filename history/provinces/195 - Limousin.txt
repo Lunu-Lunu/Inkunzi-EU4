@@ -3,6 +3,7 @@
 owner = A12
 controller = A12
 add_core = A12
+add_core = P01
 culture = iznadi
 religion = ohenomedvedeni
 hre = no

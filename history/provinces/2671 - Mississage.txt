@@ -3,6 +3,7 @@
 owner = B35
 controller = B35
 add_core = B35
+add_core = P00
 culture = lower_goblin
 religion = valor
 hre = no

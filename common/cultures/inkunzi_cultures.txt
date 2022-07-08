@@ -240,7 +240,7 @@ draconic_group = {
 }
 karlton_group = {
 	karolon = {
-		primary = A03 # REPLACE WITH REAL ONCE TAG IS ADDED
+		primary = P00
 
 		male_names = {
 			Placeholder
@@ -401,7 +401,7 @@ prilohan_group = {
 		}
 	}
 	iznadi = {
-		primary = A12 # iznad'll be a releasable at some point doe
+		primary = P01
 
 		male_names = {
 			Placeholder
@@ -438,7 +438,7 @@ mungi_group = {
 		}
 	}
 	spolic = {
-		primary = A40
+		primary = P02
 
 		male_names = {
 			Ori Aomo Herici Celim Zomu Armou Mormor Umon Xomu Bali Lol Somu Yoyo Lum Mu Pataca Pitriaun Spol
@@ -585,7 +585,7 @@ pozitianian_group = {
 }
 ferdunic_group = {
 	ferdunic = {
-		primary = A21 # gonna swap to the FERDUNIC LEAGUE RELEASABLE eventually
+		primary = P03
 
 		male_names = {
 			Placeholder
