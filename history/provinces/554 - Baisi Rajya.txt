@@ -3,7 +3,8 @@
 owner = A40
 controller = A40
 add_core = A40
-culture = bosem
+add_core = P04
+culture = iran
 religion = turriyahism
 hre = no
 base_tax = 1 

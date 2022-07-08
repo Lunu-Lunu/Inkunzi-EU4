@@ -3,6 +3,7 @@
 owner = B38
 controller = B38
 add_core = B38
+add_core = P07
 culture = kornandian
 religion = dark_valor
 hre = no

@@ -733,7 +733,7 @@ east_kaulic_group = {
 		}
 	}
 	iran = {
-		primary = A32
+		primary = P04
 
 		male_names = {
 			Placeholder
@@ -1004,6 +1004,9 @@ ozarkhian_group = {
 			"Placeholder"
 		}
 	}
+	mozarkhian = {
+		primary = B30
+	}
 	male_names = {
 		Placeholder
 	}
@@ -1016,7 +1019,7 @@ ozarkhian_group = {
 }
 aeruthian_group = {
 	aeruthian = {
-		primary = B34 # make a releasable... LATER (lightning strike)
+		primary = P05
 
 		male_names = {
 			Placeholder
@@ -1080,7 +1083,7 @@ porian_group = {
 }
 autemer_group = {
 	autemer = {
-		primary = A66 #holy SHIT switch this when applicable
+		primary = A69
 
 		male_names = {
 			Placeholder
@@ -1153,7 +1156,7 @@ gnetan_group = {
 }
 unglan_group = {
 	unglan = {
-		primary = A70 # im sure therell be releasable but not now
+		primary = P06
 
 		male_names = {
 			Placeholder
@@ -1450,6 +1453,9 @@ ukabururn_group = {
 			"Placeholder"
 		}
 	}
+	wesrokhil = {
+		primary = P10
+	}
 	male_names = {
 		Placeholder
 	}
@@ -1549,7 +1555,7 @@ goblin_group = {
 		}
 	}
 	kornandian = {
-		primary = B35
+		primary = P07
 	}
 	male_names = {
 		Placeholder
@@ -1563,7 +1569,7 @@ goblin_group = {
 }
 obenic_group = {
 	obenic = {
-		primary = B21 # this is the worst
+		primary = P08
 
 		male_names = {
 			Placeholder
@@ -1683,7 +1689,7 @@ kalnish_group = {
 }
 tehaori_group = {
 	tehaori = {
-		primary = B36 # tampasea for now, waiting on motu koura releasable
+		primary = P09
 
 		male_names = {
 			Placeholder

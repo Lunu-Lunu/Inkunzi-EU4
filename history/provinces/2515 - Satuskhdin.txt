@@ -1,15 +1,16 @@
-# Placeholder
+# Sid Hranfix
 
 owner = B21
 controller = B21
 add_core = B21
-culture = ukabururn
+add_core = P10
+culture = wesrokhil
 religion = valor
 hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
-trade_goods = unknown
-capital = "Placeholder"
+base_tax = 2 
+base_production = 3
+base_manpower = 3
+trade_goods = cloth
+capital = "Sid Hranfix"
 is_city = yes
 discovered_by = western

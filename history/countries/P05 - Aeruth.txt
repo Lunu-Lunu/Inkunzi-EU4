@@ -1,0 +1,9 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+mercantilism = 10
+technology_group = western
+religion = valor
+primary_culture = aeruthian
+capital = 2668
+set_country_flag = primary_elf_nation

@@ -3,6 +3,7 @@
 owner = B35
 controller = B35
 add_core = B35
+add_core = P07
 culture = kornandian
 religion = valor
 hre = no

@@ -3,7 +3,7 @@
 owner = B39
 controller = B39
 add_core = B39
-culture = ozarkhian
+culture = mozarkhian
 religion = dark_valor
 hre = no
 base_tax = 2 

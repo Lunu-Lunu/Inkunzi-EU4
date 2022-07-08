@@ -3,7 +3,8 @@
 owner = B21
 controller = B21
 add_core = B21
-culture = ukabururn
+add_core = P10
+culture = wesrokhil
 religion = valor
 hre = no
 base_tax = 2 

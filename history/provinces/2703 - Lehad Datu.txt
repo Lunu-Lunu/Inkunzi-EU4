@@ -3,6 +3,7 @@
 owner = B34
 controller = B34
 add_core = B34
+add_core = P09
 culture = adnuin
 religion = dark_valor
 hre = no

@@ -1,0 +1,9 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+mercantilism = 25
+technology_group = western
+religion = valor
+primary_culture = wesrokhil
+capital = 2534
+set_country_flag = primary_human_nation

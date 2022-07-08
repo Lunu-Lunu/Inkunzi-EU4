@@ -3,6 +3,7 @@
 owner = B23
 controller = B23
 add_core = B23
+add_core = P10
 culture = melian
 religion = valor
 hre = no
