@@ -6,7 +6,7 @@ technology_group = western
 religion = valor
 primary_culture = ukabururn
 add_accepted_culture = goblin
-capital = 2485
+capital = 2489
 set_country_flag = primary_human_nation
 set_country_flag = goblins_accepted
 
