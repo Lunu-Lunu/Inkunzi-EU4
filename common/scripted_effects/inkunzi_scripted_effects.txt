@@ -367,6 +367,37 @@ primary_race_recalc = {
 	}
 }
 
+create_autonomous_areas = {
+	if = {
+		limit = {
+			has_country_flag = estate_ourk_granted_autonomous_areas
+		}
+		every_owned_province = {
+			limit = {
+				culture_group = ourkani_group
+			}
+			add_province_modifier = {
+				name = racial_estate_autonomous_area
+				duration = -1
+			}
+		}
+	}
+}
+
+remove_autonomous_areas = {
+	if = {
+		limit = {
+			NOT = { has_country_flag = estate_ourk_granted_autonomous_areas }
+		}
+		every_owned_province = {
+			limit = {
+				culture_group = ourkani_group
+			}
+			remove_province_modifier = racial_estate_autonomous_area
+		}
+	}
+}
+
 A01_upgrade_forts_mission_effect = {
 	every_owned_province = {
 		limit = {

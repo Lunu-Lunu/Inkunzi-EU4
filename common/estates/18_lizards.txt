@@ -134,6 +134,8 @@ estate_lizards = {
 
 	privileges = {
 		estate_lizards_land_rights
+		estate_lizards_venerate_zuntlani_clergy
+		estate_lizards_thixi_commanders
 	}
 
 	agendas = {

@@ -45,6 +45,7 @@ hesh_ideas = { # Hesh ideas
     start = {
         global_unrest = -2
 		years_of_nationalism = -5
+        hesh_loyalty_modifier = 0.05
     }
     bonus = {
         reduced_liberty_desire_on_same_continent = 15

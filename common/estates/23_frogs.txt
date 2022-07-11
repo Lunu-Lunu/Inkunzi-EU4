@@ -148,6 +148,12 @@ estate_frogs = {
 
 	privileges = {
 		estate_frogs_land_rights
+		estate_frogs_naval_primacy
+		estate_frogs_respect_lyharan_castes
+		estate_frogs_employ_yeulan_marines
+		estate_frogs_emphasize_sabhari_architecture
+		estate_frogs_embrace_shyman_meritocracy
+		estate_frogs_adopt_the_harlan_nap
 	}
 
 	agendas = {

@@ -1,0 +1,5 @@
+racial_estate_autonomous_area = {
+	min_local_autonomy = 20
+	local_unrest = -2
+	local_governing_cost = -0.33
+}

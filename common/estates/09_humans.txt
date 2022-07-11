@@ -117,6 +117,8 @@ estate_humans = {
 
 	privileges = {
 		estate_humans_land_rights
+		estate_humans_elevate_mikhil_shipwrights
+		estate_humans_protect_wesrokhil_miners_guilds
 	}
 
 	agendas = {

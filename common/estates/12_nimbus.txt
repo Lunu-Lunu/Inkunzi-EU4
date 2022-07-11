@@ -130,6 +130,7 @@ estate_nimbus = {
 
 	privileges = {
 		estate_nimbus_land_rights
+		estate_nimbus_diplomat_primacy
 	}
 
 	agendas = {

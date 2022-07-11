@@ -4,7 +4,7 @@ government_rank = 2
 mercantilism = 10
 technology_group = western
 religion = valor
-primary_culture = melian
+primary_culture = verdeni
 capital = 2481
 set_country_flag = primary_golem_nation
 

@@ -327,3 +327,36 @@ has_3_loyal_racial_estates = {
 		}
 	}
 }
+has_no_racial_primacy_army = {
+	custom_trigger_tooltip = {
+		tooltip = EST_NO_RACIAL_PRIMARY_ARMY
+		NOT = {
+			has_estate_privilege = estate_ourk_ourk_infantry_primacy
+			has_estate_privilege = estate_centaurs_cavalry
+			has_estate_privilege = estate_crabs_primacy_army
+		}
+	}
+}
+has_no_racial_primacy_navy = {
+	custom_trigger_tooltip = {
+		tooltip = EST_NO_RACIAL_PRIMARY_NAVY
+		NOT = {
+			has_estate_privilege = estate_crabs_primacy_navy
+			has_estate_privilege = estate_frogs_naval_primacy
+		}
+	}
+}
+has_no_racial_primacy_domestic = {
+	custom_trigger_tooltip = {
+		tooltip = EST_NO_RACIAL_PRIMARY_DOMESTIC
+		always = no
+	}
+}
+has_no_racial_primacy_foreign = {
+	custom_trigger_tooltip = {
+		tooltip = EST_NO_RACIAL_PRIMARY_FOREIGN
+		NOT = {
+			has_estate_privilege = estate_nimbus_diplomat_primacy
+		}
+	}
+}

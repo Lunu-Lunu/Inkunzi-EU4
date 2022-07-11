@@ -157,6 +157,9 @@ estate_ourk = {
 		estate_ourk_ourk_nobility
 		estate_ourk_ourk_infantry_primacy
 		estate_ourk_tolerance
+		estate_ourk_autonomous_areas
+		estate_ourk_allow_paak_mobility
+		estate_ourk_embrace_ourkani_ideals
 	}
 
 	agendas = {

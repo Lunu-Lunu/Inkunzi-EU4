@@ -130,6 +130,8 @@ estate_crabs = {
 
 	privileges = {
 		estate_crabs_land_rights
+		estate_crabs_primacy_army
+		estate_crabs_primacy_navy
 	}
 
 	agendas = {

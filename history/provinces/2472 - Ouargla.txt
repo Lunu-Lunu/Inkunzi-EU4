@@ -3,7 +3,7 @@
 owner = B20
 controller = B20
 add_core = B20
-culture = melian
+culture = verdeni
 religion = valor
 hre = no
 base_tax = 1 

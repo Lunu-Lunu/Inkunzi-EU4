@@ -196,7 +196,7 @@ estate_ourk_ourk_nobility = {
 			}
 		}
 		modifier = {
-			faction = 2
+			factor = 2
 			NOT = {
 				estate_loyalty = {
 					estate = estate_ourk
@@ -222,6 +222,8 @@ estate_ourk_ourk_infantry_primacy = {
 	}
 	can_select = {
 		army_tradition = 30
+		has_no_racial_primacy_army = yes
+		custom_tooltip = EST_ARMY_PRIMACY_APPLY
 	}
 	on_granted = {
 		add_army_tradition = -15
@@ -279,6 +281,165 @@ estate_ourk_tolerance = {
 		modifier = {
 			factor = 3
 			NOT = { religious_unity = 0.5 }
+		}
+	}
+}
+
+estate_ourk_autonomous_areas = {
+	icon = privilege_grant_autonomy
+	land_share = 5
+	max_absolutism = -10
+	loyalty = 0.10
+	influence = 0.15
+	is_valid = {
+		NOT = {
+			has_country_flag = primary_ourk_nation
+		}
+	}
+	can_select = {
+		any_owned_province = {
+			culture_group = ourkani_group
+		}
+	}
+	on_granted = {
+		set_country_flag = estate_ourk_granted_autonomous_areas
+		create_autonomous_areas = yes
+	}
+	penalties = {
+		
+	}
+	benefits = {
+		
+	}
+	on_revoked = {
+		clr_country_flag = estate_ourk_granted_autonomous_areas
+		remove_autonomous_areas = yes
+	}
+	on_invalid = {
+		clr_country_flag = estate_ourk_granted_autonomous_areas
+		remove_autonomous_areas = yes
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			estate_loyalty = {
+				estate = estate_ourk
+				loyalty = 40
+			}
+		}
+		modifier = {
+			factor = 2
+			NOT = {
+				estate_loyalty = {
+					estate = estate_ourk
+					loyalty = 30
+				}
+			}
+			estate_loyalty = {
+				estate = estate_ourk
+				loyalty = 25
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { crown_land_share = 25 }
+				estate_influence = {
+					estate = estate_ourk
+					influence = 75
+				}
+			}
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				NOT = { crown_land_share = 40 }
+				AND = {
+					is_absolutism_active = yes
+					NOT = { crown_land_share = 60 }
+				}
+			}
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				NOT = { crown_land_share = 30 }
+				AND = {
+					is_absolutism_active = yes
+					NOT = { crown_land_share = 50 }
+				}
+			}
+		}
+	}
+}
+
+estate_ourk_allow_paak_mobility = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -10
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		NOT = { primary_culture = paak_ourk }
+	}
+	can_select = {
+		accepted_culture = paak_ourk
+	}
+	on_granted = {
+		
+	}
+	penalties = {
+		global_tax_modifier = -0.05
+	}
+	benefits = {
+		movement_speed = 0.05
+		caravan_power = 0.2
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOT = {
+				development_in_provinces = {
+					value = 50
+					culture = paak_ourk
+				}
+			}
+		}
+	}
+}
+
+estate_ourk_embrace_ourkani_ideals = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -10
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		NOT = { primary_culture = ourkani }
+	}
+	can_select = {
+		accepted_culture = ourkani
+	}
+	on_granted = {
+		
+	}
+	penalties = {
+		tolerance_own = -1
+	}
+	benefits = {
+		tolerance_of_heretics_capacity = 1
+		tolerance_of_heathens_capacity = 2
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOT = {
+				development_in_provinces = {
+					value = 50
+					culture = ourkani
+				}
+			}
 		}
 	}
 }
@@ -434,6 +595,75 @@ estate_humans_land_rights = {
 		modifier = {
 			factor = 0.75
 			has_estate_privilege = estate_ourk_land_rights
+		}
+	}
+}
+
+estate_humans_elevate_mikhil_shipwrights = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -10
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		NOT = { primary_culture = ukabururn }
+	}
+	can_select = {
+		accepted_culture = ukabururn
+	}
+	on_granted = {
+		
+	}
+	penalties = {
+		naval_maintenance_modifier = 0.05
+	}
+	benefits = {
+		ship_durability = 0.05
+		navy_tradition_decay = -0.005
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOT = {
+				development_in_provinces = {
+					value = 50
+					culture = ukabururn
+				}
+			}
+		}
+	}
+}
+
+estate_humans_protect_wesrokhil_miners_guilds = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -10
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		NOT = { primary_culture = wesrokhil }
+	}
+	can_select = {
+		accepted_culture = wesrokhil
+	}
+	on_granted = {
+		
+	}
+	penalties = {
+		state_maintenance_modifier = 0.05
+	}
+	benefits = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOT = {
+				development_in_provinces = {
+					value = 50
+					culture = wesrokhil
+				}
+			}
 		}
 	}
 }
@@ -608,9 +838,11 @@ estate_centaurs_cavalry = {
 	}
 	can_select = {
 		army_tradition = 30
+		has_no_racial_primacy_army = yes
 	}
 	on_granted = {
 		add_army_tradition = -15
+		custom_tooltip = EST_ARMY_PRIMACY_APPLY
 	}
 	penalties = {
 		army_tradition_decay = 0.01
@@ -659,6 +891,41 @@ estate_centaurs_open_court = {
 	}
 	ai_will_do = {
 		factor = 5
+	}
+}
+
+estate_centaurs_outer_rekolian_cultural_exchange = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -10
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		NOT = { primary_culture = outer_rekolian }
+	}
+	can_select = {
+		accepted_culture = outer_rekolian
+	}
+	on_granted = {
+		
+	}
+	penalties = {
+		promote_culture_cost = 0.25
+	}
+	benefits = {
+		num_accepted_cultures = 1
+		advisor_pool = 1
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOT = {
+				development_in_provinces = {
+					value = 50
+					culture = outer_rekolian
+				}
+			}
+		}
 	}
 }
 
@@ -980,6 +1247,42 @@ estate_nimbus_land_rights = {
 	}
 }
 
+estate_nimbus_diplomat_primacy = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -10
+	loyalty = 0
+	influence = 0.3
+	is_valid = {
+		
+	}
+	can_select = {
+		legitimacy_equivalent = 75
+		has_no_racial_primacy_foreign = yes
+	}
+	on_granted = {
+		add_legitimacy = -25
+		add_republican_tradition = -25
+		add_devotion = -25
+		add_horde_unity = -25
+		custom_tooltip = EST_FOREIGN_PRIMACY_APPLY
+	}
+	penalties = {
+		global_tax_modifier = -0.25
+	}
+	benefits = {
+		diplomatic_upkeep = 2
+		accept_vassalization_reasons = 15
+		vassal_forcelimit_bonus = 0.25
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOT = { num_of_free_diplomatic_relations = 0 }
+		}
+	}
+}
+
 estate_crabs_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5
@@ -1135,6 +1438,90 @@ estate_crabs_land_rights = {
 		modifier = {
 			factor = 0.75
 			has_estate_privilege = estate_humans_land_rights
+		}
+	}
+}
+
+estate_crabs_primacy_army = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -10
+	land_share = 5
+	loyalty = 0
+	influence = 0.3
+	is_valid = {
+		
+	}
+	can_select = {
+		army_tradition = 30
+		has_no_racial_primacy_army = yes
+	}
+	on_granted = {
+		add_army_tradition = -15
+		custom_tooltip = EST_ARMY_PRIMACY_APPLY
+	}
+	penalties = {
+		army_tradition_decay = 0.01
+		yearly_army_professionalism = -0.005
+		discipline = -0.05
+	}
+	benefits = {
+		land_maintenance_modifier = -0.25
+		reinforce_cost_modifier = -0.25
+		reinforce_speed = 1
+		manpower_recovery_speed = 0.1
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			army_size = 20
+		}
+		modifier = {
+			factor = 2
+			NOT = { army_size = 10 }
+		}
+	}
+}
+
+estate_crabs_primacy_navy = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -10
+	land_share = 5
+	loyalty = 0
+	influence = 0.3
+	is_valid = {
+		
+	}
+	can_select = {
+		navy_tradition = 30
+		has_no_racial_primacy_navy = yes
+	}
+	on_granted = {
+		add_navy_tradition = -15
+		custom_tooltip = EST_NAVY_PRIMACY_APPLY
+	}
+	penalties = {
+		navy_tradition_decay = 0.02
+		ship_durability = -0.15
+	}
+	benefits = {
+		global_ship_recruit_speed = -0.5
+		global_ship_repair = 0.25
+		global_ship_cost = -0.25
+		naval_forcelimit_modifier = 0.5
+		sunk_ship_morale_hit_received = -0.25
+		sailors_recovery_speed = 0.33
+		global_sailors_modifier = 0.33
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			army_size = 20
+		}
+		modifier = {
+			factor = 2
+			NOT = { army_size = 10 }
 		}
 	}
 }
@@ -1934,6 +2321,75 @@ estate_lizards_land_rights = {
 	}
 }
 
+estate_lizards_thixi_commanders = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -10
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		NOT = { primary_culture = thixi }
+	}
+	can_select = {
+		accepted_culture = thixi
+	}
+	on_granted = {
+		
+	}
+	penalties = {
+		general_cost = 0.5
+	}
+	benefits = {
+		leader_land_shock = 1
+		shock_damage_received = -0.05
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOT = {
+				development_in_provinces = {
+					value = 50
+					culture = thixi
+				}
+			}
+		}
+	}
+}
+
+estate_lizards_venerate_zuntlani_clergy = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -10
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		NOT = { primary_culture = lizardman }
+	}
+	can_select = {
+		accepted_culture = lizardman
+	}
+	on_granted = {
+		
+	}
+	penalties = {
+		church_loyalty_modifier = -0.05
+	}
+	benefits = {
+		missionaries = 1
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOT = {
+				development_in_provinces = {
+					value = 50
+					culture = lizardman
+				}
+			}
+		}
+	}
+}
+
 estate_moths_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5
@@ -2729,6 +3185,184 @@ estate_frogs_land_rights = {
 	}
 }
 
+estate_frogs_respect_lyharan_castes = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -10
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		NOT = { primary_culture = lyharan }
+	}
+	can_select = {
+		accepted_culture = lyharan
+	}
+	on_granted = {
+		
+	}
+	penalties = {
+		global_unrest = 1
+	}
+	benefits = {
+		land_morale = 0.05
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOT = {
+				development_in_provinces = {
+					value = 50
+					culture = lyharan
+				}
+			}
+		}
+	}
+}
+
+estate_frogs_employ_yeulan_marines = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -10
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		NOT = { primary_culture = yeulan }
+	}
+	can_select = {
+		accepted_culture = yeulan
+	}
+	on_granted = {
+		
+	}
+	penalties = {
+		manpower_recovery_speed = -0.05
+	}
+	benefits = {
+		sailors_recovery_speed = 0.1
+		allowed_marine_fraction = 0.25
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOT = {
+				development_in_provinces = {
+					value = 50
+					culture = yeulan
+				}
+			}
+		}
+	}
+}
+
+estate_frogs_emphasize_sabhari_architecture = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -10
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		NOT = { primary_culture = sabhari }
+	}
+	can_select = {
+		accepted_culture = sabhari
+	}
+	on_granted = {
+		
+	}
+	penalties = {
+		build_time = 0.25
+		build_cost = 0.1
+	}
+	benefits = {
+		development_cost = -0.05
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOT = {
+				development_in_provinces = {
+					value = 50
+					culture = sabhari
+				}
+			}
+		}
+	}
+}
+
+estate_frogs_embrace_shyman_meritocracy = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -10
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		NOT = { primary_culture = shyman }
+	}
+	can_select = {
+		accepted_culture = shyman
+	}
+	on_granted = {
+		
+	}
+	penalties = {
+		legitimacy = -0.5
+		republican_tradition = -0.15
+		devotion = -0.5
+		horde_unity = -0.5
+	}
+	benefits = {
+		burghers_loyalty_modifier = 0.05
+		army_tradition = 0.5
+		navy_tradition = 0.5
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOT = {
+				development_in_provinces = {
+					value = 50
+					culture = shyman
+				}
+			}
+		}
+	}
+}
+
+estate_frogs_adopt_the_harlan_nap = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -10
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		NOT = { primary_culture = harlan }
+	}
+	can_select = {
+		accepted_culture = harlan
+	}
+	on_granted = {
+		
+	}
+	penalties = {
+		production_efficiency = -0.1
+	}
+	benefits = {
+		global_unrest = -2
+		land_attrition = -0.1
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOT = {
+				development_in_provinces = {
+					value = 50
+					culture = harlan
+				}
+			}
+		}
+	}
+}
+
 estate_frogs_naval_primacy = {
 	icon = privilege_grant_autonomy
 	max_absolutism = -10
@@ -2740,9 +3374,11 @@ estate_frogs_naval_primacy = {
 	}
 	can_select = {
 		navy_tradition = 30
+		has_no_racial_primacy_navy = yes
 	}
 	on_granted = {
 		add_navy_tradition = -15
+		custom_tooltip = EST_NAVY_PRIMACY_APPLY
 	}
 	penalties = {
 		navy_tradition_decay = 0.01

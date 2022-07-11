@@ -695,6 +695,9 @@ melcani_group = {
 			"Placeholder"
 		}
 	}
+	verdeni = {
+		primary = B20
+	}
 	male_names = {
 		Placeholder
 	}
