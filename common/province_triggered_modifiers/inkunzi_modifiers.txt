@@ -1,0 +1,46 @@
+# Province Triggered modifiers are here.
+# These are added to provinces through the add_province_triggered_modifier effect
+#
+# Effects are fully scriptable here.
+
+
+###########################################
+# Just random test modifier HOLDOVER FROM VANILLA FILE (useful to reference)
+###########################################
+test_modifier = {
+	potential = {
+		always = yes
+	}
+
+	trigger = {
+		owner = {
+			stability = 0
+		}
+	}
+
+	local_build_cost = 0.05	
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+sahyvarian_trade_triggered_modifier = {
+	potential = {
+
+	}
+
+	trigger = {
+		religion = sahyvarian
+		tolerance_to_this = 0
+	}
+
+	trade_value_modifier = 0.25
+	trade_goods_size = 0.1
+}

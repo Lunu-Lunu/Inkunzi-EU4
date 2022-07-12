@@ -13,3 +13,5 @@ trade_goods = fish
 capital = "Bhadym"
 is_city = yes
 discovered_by = mesoamerican
+
+add_province_triggered_modifier = sahyvarian_trade_triggered_modifier

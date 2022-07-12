@@ -1,0 +1,10 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+mercantilism = 25
+technology_group = western
+religion = valor
+primary_culture = melian
+add_accepted_culture = ocelidian
+capital = 2613
+set_country_flag = primary_golem_nation

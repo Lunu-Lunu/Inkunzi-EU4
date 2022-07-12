@@ -13,3 +13,5 @@ native_ferocity = 6
 native_hostileness = 4
 
 discovered_by = mesoamerican
+
+add_province_triggered_modifier = sahyvarian_trade_triggered_modifier

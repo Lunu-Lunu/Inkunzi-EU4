@@ -14,3 +14,5 @@ capital = "Yeula"
 is_city = yes
 center_of_trade = 2
 discovered_by = mesoamerican
+
+add_province_triggered_modifier = sahyvarian_trade_triggered_modifier
