@@ -4,15 +4,10 @@ country_decisions = {
 			ai = no
 		}
 		allow = {
-			always = yes
+			always = no
 		}
 		effect = {
-			every_owned_province = {
-				limit = {
-					region = Sternhell_region
-				}
-				cede_province = R04
-			}
+			
 		}
 	}
 	decision_test_trigger = { # for testing triggers
