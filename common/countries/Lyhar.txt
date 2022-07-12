@@ -26,11 +26,44 @@ historical_units = {
 }
 
 leader_names = {
-	Gigenshtain
+	
 }
 
 monarch_names = {
-	"Gigenshtain #0" = 0
+	"Bhartod #1" = 50
+	"Shemyg #0" = 25
+	"Taramyg #0" = 5
+	"Toreb #0" = 5
+	"Bharyg #0" = 5
+	"Shetod #0" = 3
+	"Tarameb #0" = 5
+	"Nebhod #0" = 3
+	"Nedatod #0" = 3
+	"Nebhar #0" = 1
+	"Bhamyg #0" = 5
+	"Tarabhar #0" = 5
+	"Sheb #0" = 1
+	"Shebhar #0" = 5
+	"Geragyg #0" = 3
+	"Gerabhar #0" = 3
+	"Geratod #0" = 3
+	"Geralorn #0" = 3
+	"Nelorn #0" = 1
+	"Taralorn #0" = 3
+	"Bharlorn #0" = 3
+	"Tolorn #0" = 1
+	"Shemlorn #0" = 1
+	"Lydobhar #0" = 1
 
-	"FEMALE Gigenshtain #0" = -1
+	"Bhalorna #0" = -1
+	"Taralorna #0" = -1
+	"Shelorna #0" = -1
+	"Nelorna #0" = -1
+	"Tarahe #0" = -1
+	"Bhahe #0" = -1
+	"Shahe #0" = -1
+	"Tarahodi #0" = -1
+	"Shehodi #0" = -1
+	"Bhahodi #0" = -1
+	"Nehodi #0" = -1
 }

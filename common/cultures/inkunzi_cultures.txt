@@ -1791,75 +1791,75 @@ ervaric_group = {
 		primary = B47
 
 		male_names = {
-			Placeholder
+			
 		}
 		female_names = {
-			Placeholder
+			
 		}
 		dynasty_names = {
-			"Placeholder"
+			"Lyharis" "Eulorna" "Gegishym" "Bharsan" "Harlorn"
 		}
 	}
 	yeulan = {
 		primary = B48
 
 		male_names = {
-			Placeholder
+			
 		}
 		female_names = {
-			Placeholder
+			
 		}
 		dynasty_names = {
-			"Placeholder"
+			
 		}
 	}
 	sabhari = {
 		primary = B49
 
 		male_names = {
-			Placeholder
+			
 		}
 		female_names = {
-			Placeholder
+			
 		}
 		dynasty_names = {
-			"Placeholder"
+			
 		}
 	}
 	shyman = {
 		primary = B50
 
 		male_names = {
-			Placeholder
+			
 		}
 		female_names = {
-			Placeholder
+			
 		}
 		dynasty_names = {
-			"Placeholder"
+			
 		}
 	}
 	harlan = {
 		primary = B51
 
 		male_names = {
-			Placeholder
+			
 		}
 		female_names = {
-			Placeholder
+			
 		}
 		dynasty_names = {
-			"Placeholder"
+			
 		}
 	}
 	male_names = {
-		Placeholder
+		Bhartod Taramyg Shemyg Toreb Nebhar Bharyg Shetod Tarameb Nebhod Bhamyg Nedatod Tarabhar Sheb Shebhar Geragyg Gerabhar Geratod Geralorn Nelorn Taralorn Bharlorn Tolorn Shemlorn Lydobhar
 	}
 	female_names = {
-		Placeholder
+		Bhalorna Taralorna Shelorna Nelorna Tarahe Bhahe Shahe Tarahodi Shehodi Bhahodi Nehodi
 	}
 	dynasty_names = {
-		"Placeholder"
+		"Tanlorn" "Yahe" "Shemyg" "Larsan" "Tadsen" "Shesen" "Shelorn" "Yasen" "Yalorn" "Yamyg" "Yadasen" "Yadalorn" "Yoshasen" "Yoshalorn" "Yoshahe" "Yadahe"
 	}
 }
 ratkin_group = {
