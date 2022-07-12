@@ -848,7 +848,7 @@ xuaze_group = {
 			"Placeholder"
 		}
 	}
-	xuahogg = {
+	morze = {
 		primary = A43 # except if a xuahogg tag gets made
 
 		male_names = {
@@ -1058,7 +1058,7 @@ porian_group = {
 			"Placeholder"
 		}
 	}
-	karhogg = {
+	porhogg = {
 		primary = A66 # unless a karhogg tag gets made
 
 		male_names = {
