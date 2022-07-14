@@ -7,7 +7,7 @@ helghast_column_1 = {
         tag = A65
     }
     helghast_mission_birthplace_dark_valor = {
-        icon = mnd_maj_cloves
+        icon = mission_indian_stateman
         generic = no
         position = 2
         required_missions = {
@@ -32,7 +32,7 @@ helghast_column_1 = {
         }
     }
 	helghast_mission_trade = {
-        icon = mnd_maj_cloves
+        icon = mission_indian_stateman
         generic = no
         position = 3
         required_missions = {
@@ -53,7 +53,7 @@ helghast_column_1 = {
         }
     }
 	helghast_mission_naval_might = {
-        icon = mnd_maj_cloves
+        icon = mission_indian_stateman
         generic = no
         position = 4
         required_missions = {
@@ -73,7 +73,7 @@ helghast_column_1 = {
         }
     }
 	helghast_mission_dragon = {
-        icon = mnd_maj_cloves
+        icon = mission_indian_stateman
         generic = no
         position = 5
         required_missions = {
@@ -102,7 +102,7 @@ helghast_column_2 = {
 	}
 	has_country_shield = yes
 	helghast_mission_lull = {
-	    icon = mnd_maj_cloves
+	    icon = mission_indian_stateman
         generic = no
         position = 3
         required_missions = {
@@ -145,7 +145,7 @@ helghast_column_2 = {
         }
 	}
 	helghast_mission_goblin = {
-	    icon = mnd_maj_cloves
+	    icon = mission_indian_stateman
         generic = no
         position = 4
         required_missions = {
@@ -196,10 +196,16 @@ helghast_column_2 = {
 		   gangir4_area = { add_permanent_claim = ROOT }
 		   gangir5_area = { add_permanent_claim = ROOT }
 		   gangir6_area = { add_permanent_claim = ROOT }
+		   add_country_modifier = {
+                name = goblin_accept
+                duration = 3560
+                desc = goblin_accept_tooltip
+                hidden = no
+            }
         }
 	}
 	helghast_mission_dark = {
-	    icon = mnd_maj_cloves
+	    icon = mission_indian_stateman
         generic = no
         position = 5
         required_missions = {
@@ -274,6 +280,20 @@ helghast_column_2 = {
 		   cb_on_religious_enemies = yes
 		   global_missionary_strength = 0.02
 		   set_government_rank = 3
+		   every_owned_province = {
+		       limit = {
+			    culture_group = karlton_group
+			   }
+			   add_base_manpower = -2
+			   add_base_production = -2
+			   add_base_tax = -2
+			   change_culture = helghian
+		    }
+		   capital_scope = {
+		       add_base_manpower = 2
+			   add_base_production = 2
+			   add_base_tax = 2
+		   }
         }
 	}
 }
@@ -286,7 +306,7 @@ helghast_column_3 = {
 	}
 	has_country_shield = yes
 	helghast_mission_rebuild = {
-	    icon = mnd_maj_cloves
+	    icon = mission_indian_stateman
         generic = no
         position = 1
         required_missions = {
@@ -305,7 +325,7 @@ helghast_column_3 = {
         }
     }
 	helghast_mission_continent_right = {
-	    icon = mnd_maj_cloves
+	    icon = mission_indian_stateman
         generic = no
         position = 2
         required_missions = {
@@ -349,7 +369,7 @@ helghast_column_4 = {
 	}
 	has_country_shield = yes
 	helghast_mission_dahe = {
-	    icon = mnd_maj_cloves
+	    icon = mission_indian_stateman
         generic = no
         position = 3
         required_missions = {
@@ -372,7 +392,7 @@ helghast_column_4 = {
         }
 	}
 	helghast_mission_claims_razzubia = {
-	    icon = mnd_maj_cloves
+	    icon = mission_indian_stateman
         generic = no
         position = 4
         required_missions = {
@@ -396,10 +416,16 @@ helghast_column_4 = {
             type = cb_vassalize_mission
             months = 12
           }
+		  add_country_modifier = {
+                name = converting_helghast
+                duration = 3560
+                desc = converting_helghast_tooltip
+                hidden = no
+		  }
         }
 	}
 	helghast_mission_razzubia_marriage = {
-	    icon = mnd_maj_cloves
+	    icon = mission_indian_stateman
         generic = no
         position = 5
         required_missions = {
@@ -435,11 +461,15 @@ helghast_column_4 = {
         } 
         effect = {
            northern_morhogg_region = { add_permanent_claim = ROOT }
-		   northern_xuaze_region = { add_permanent_claim = ROOT }
+		   zuze2_area = { add_permanent_claim = ROOT }
+		   xuaze_area2 = { add_permanent_claim = ROOT }
+		   xuaze_area3 = { add_permanent_claim = ROOT }
+		   xuaze_area4 = { add_permanent_claim = ROOT }
+		   xuaze_area5 = { add_permanent_claim = ROOT }
         }
 	}
 	helghast_mission_southern = {
-	    icon = mnd_maj_cloves
+	    icon = mission_indian_stateman
         generic = no
         position = 6
         required_missions = {
@@ -450,7 +480,24 @@ helghast_column_4 = {
 			NOT = {
 			    country_or_non_sovereign_subject_holds = ROOT
 			}
-			region = northern_xuaze_region
+			area = zuze2_area
+			NOT = {
+			    country_or_non_sovereign_subject_holds = ROOT
+			}
+			area = xuaze_area2
+			NOT = {
+			    country_or_non_sovereign_subject_holds = ROOT
+			}
+			area = xuaze_area3
+			NOT = {
+			    country_or_non_sovereign_subject_holds = ROOT
+			}
+			area = xuaze_area4
+			NOT = {
+			    country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+			area = xuaze_area5
 			NOT = {
 			    country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -460,18 +507,42 @@ helghast_column_4 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			northern_xuaze_region = {
+			zuze2_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			xuaze_area2 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			xuaze_area3 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			xuaze_area4 = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			xuaze_area5 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
         } 
         effect = {
-           southern_xuaze_region = { add_permanent_claim = ROOT }
+           xuaze_area = { add_permanent_claim = ROOT }
+		   xuaze_area6 = { add_permanent_claim = ROOT }
+		   xuaze_area7 = { add_permanent_claim = ROOT }
+		   xuaze_area8 = { add_permanent_claim = ROOT }
+		   xuaze_area9 = { add_permanent_claim = ROOT }
+		   xuaze_area10 = { add_permanent_claim = ROOT }
+		   xuaze_area11 = { add_permanent_claim = ROOT }
+		   xuaze_area12 = { add_permanent_claim = ROOT }
+		   xuaze_area13 = { add_permanent_claim = ROOT }
 		   southern_morhogg_region = { add_permanent_claim = ROOT }
         }
 	}
 	helghast_mission_harsh = {
-	    icon = mnd_maj_cloves
+	    icon = mission_indian_stateman
         generic = no
         position = 7
         required_missions = {
@@ -488,7 +559,7 @@ helghast_column_4 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-        } 
+        }
         effect = {
            add_country_modifier = {
                 name = harsh_helghast
@@ -508,7 +579,7 @@ helghast_column_5 = {
 	}
 	has_country_shield = yes
 	helghast_mission_pirate = {
-	    icon = mnd_maj_cloves
+	    icon = mission_indian_stateman
         generic = no
         position = 2
         required_missions = {
@@ -529,10 +600,11 @@ helghast_column_5 = {
            neualhof_area = { add_permanent_claim = ROOT }
 		   plakia_area = { add_permanent_claim = ROOT }
 		   hyallicand_area = { add_permanent_claim = ROOT }
+		   add_treasury = 200
         }
 	}
 	helghast_mission_sternhell = {
-	    icon = mnd_maj_cloves
+	    icon = mission_indian_stateman
         generic = no
         position = 3
         required_missions = {
@@ -567,7 +639,7 @@ helghast_column_5 = {
         }
 	}
 	helghast_mission_moths = {
-	    icon = mnd_maj_cloves
+	    icon = mission_indian_stateman
         generic = no
         position = 4
         required_missions = {
@@ -592,7 +664,7 @@ helghast_column_5 = {
         }
 	}
 	helghast_mission_racism = {
-	    icon = mnd_maj_cloves
+	    icon = mission_indian_stateman
         generic = no
         position = 5
         required_missions = {

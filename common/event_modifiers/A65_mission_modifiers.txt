@@ -4,3 +4,10 @@ global_autonomy = -0.05
 harsh_helghast = {
 global_unrest = -2
 }
+goblin_accept = {
+global_unrest = -2
+}
+converting_helghast = {
+culture_conversion_cost = -0.25
+global_missionary_strength = 0.02
+}

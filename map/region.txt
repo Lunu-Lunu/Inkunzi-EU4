@@ -508,7 +508,7 @@ dahe_proper_region = {
 		fei_dom2_area
 	}
 }
-northern_xuaze_region = {
+xuaze_region = {
     areas = {
 	    xuaze_area
 		xuaze_area2
@@ -518,10 +518,6 @@ northern_xuaze_region = {
 		zuze_area
 		zuze2_area
 		douros_area
-	}
-}
-southern_xuaze_region = {
-    areas = {
 		xuaze_area6
 		xuaze_area7
 		xuaze_area8
