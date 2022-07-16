@@ -12,4 +12,5 @@ base_production = 3
 base_manpower = 4
 trade_goods = grain
 capital = "Slakia"
+is_city = yes
 discovered_by = western
