@@ -11,7 +11,7 @@
     
     # Determines when a series appears for a country. Country scope.
     potential = {
-        tag = Ocelidia
+        tag = B26
     }
     
     # The name of the mission, used for localization
@@ -33,7 +33,7 @@
     
         # Determines when the mission is completed. Country scope.
         trigger = {
-            alliance_with = Melkhia
+            alliance_with = B21
             Or = {
             #Melkhia does not exist
         }
@@ -67,7 +67,7 @@
     
         # Determines when the mission is completed. Country scope.
         trigger = {
-            alliance_with = Vouris
+            alliance_with = B24
             Or = {
             #Vouris Does Not Exist
         }
@@ -102,9 +102,9 @@
     
         # Determines when the mission is completed. Country scope.
         trigger = {
-            alliance_with = Vouris
+            alliance_with = B20
             Or = {
-            #Vouris Does Not Exist
+            #Verden Does Not Exist
         }
         
         # The effect executed when the mission is claimed. Country scope.
@@ -129,7 +129,7 @@
     
     # Determines when a series appears for a country. Country scope.
     potential = {
-        tag = Ocelidia
+        tag = B26
     }
 
 # The name of the mission, used for localization
