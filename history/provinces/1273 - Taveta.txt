@@ -1,14 +1,12 @@
-# Placeholder
-
 owner = A92
 controller = A92
 add_core = A92
 culture = kaihaku
 religion = mashia
 hre = no
-base_tax = 6
-base_production = 6
-base_manpower = 6
+base_tax = 3
+base_production = 3
+base_manpower = 3
 trade_goods = unknown
 capital = "Kyotosaki"
 is_city = yes

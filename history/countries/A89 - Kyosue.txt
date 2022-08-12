@@ -16,5 +16,6 @@ set_country_flag = primary_human_nation
 		dip = 6
 		mil = 1
 		birth_date = 1406.11.11
+		female = yes
 	}
 }

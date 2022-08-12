@@ -1,15 +1,13 @@
-# Placeholder
-
 owner = A89
 controller = A89
 add_core = A89
 culture = kaihaku
 religion = mashia
 hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
+base_tax = 6
+base_production = 6
+base_manpower = 6
 trade_goods = unknown
-capital = "Placeholder"
+capital = "Hadaka"
 is_city = yes
 discovered_by = western

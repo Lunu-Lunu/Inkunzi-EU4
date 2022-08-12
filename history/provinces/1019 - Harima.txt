@@ -1,15 +1,13 @@
-# Not China
-
 owner = A88
 controller = A88
 add_core = A88
 culture = kaihaku
 religion = mashia
 hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 12
+base_tax = 2
+base_production = 2
+base_manpower = 2
 trade_goods = grain
-capital = "Uhhh, Meow?"
+capital = "Rihama"
 is_city = yes
 discovered_by = western

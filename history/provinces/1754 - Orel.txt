@@ -1,15 +1,13 @@
-# Placeholder
-
 owner = A96
 controller = A96
 add_core = A96
 culture = kaihaku
 religion = mashia
 hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
+base_tax = 2
+base_production = 2
+base_manpower = 2
 trade_goods = unknown
-capital = "Placeholder"
+capital = "Faunda-Joryu"
 is_city = yes
 discovered_by = western

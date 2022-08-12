@@ -1,15 +1,13 @@
-# Placeholder
-
 owner = A90
 controller = A90
 add_core = A90
 culture = satomoto
 religion = mashia
 hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
+base_tax = 4
+base_production = 5
+base_manpower = 5
 trade_goods = unknown
-capital = "Placeholder"
+capital = "Sato-Riki"
 is_city = yes
 discovered_by = western

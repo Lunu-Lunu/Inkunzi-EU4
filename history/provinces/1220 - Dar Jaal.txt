@@ -1,15 +1,14 @@
-# Placeholder
-
 owner = A89
 controller = A89
 add_core = A89
 culture = kaihaku
 religion = mashia
 hre = no
-base_tax = 7 
+base_tax = 7
 base_production = 7
-base_manpower = 6
+base_manpower = 8
 trade_goods = unknown
 capital = "Kyosue"
 is_city = yes
 discovered_by = western
+fort_15th = yes

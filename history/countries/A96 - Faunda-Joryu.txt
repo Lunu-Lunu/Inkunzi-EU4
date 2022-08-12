@@ -10,12 +10,11 @@ set_country_flag = primary_human_nation
 
 1444.11.11 = {
 	monarch = {
-		name = "Placeholder"
-		dynasty = "Place of the Holder"
-		adm = 3
+		name = "Makowi"
+		dynasty = "Faunda-Joryu"
+		adm = 2
 		dip = 3
-		mil = 3
+		mil = 4
 		birth_date = 1424.11.11
-		regent = yes
 	}
 }

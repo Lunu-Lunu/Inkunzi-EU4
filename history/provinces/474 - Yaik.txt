@@ -1,15 +1,13 @@
-# Placeholder
-
 owner = A86
 controller = A86
 add_core = A86
 culture = okuyokama
 religion = mashia
 hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
+base_tax = 3
+base_production = 3
+base_manpower = 3
 trade_goods = unknown
-capital = "Placeholder"
+capital = "Koete"
 is_city = yes
 discovered_by = western
