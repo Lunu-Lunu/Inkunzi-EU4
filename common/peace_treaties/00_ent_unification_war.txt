@@ -1,0 +1,58 @@
+
+po_ent_unifcation = {
+	category = 6
+	power_projection = humiliated_rival 
+	power_cost_base = 0.0 
+	prestige_base = 0
+	ae_base = 1
+	warscore_cost = { #no idea really how this work, just uhhh leaving this like this 
+		all_provinces = 0.0
+		no_provinces = 10.0
+		owner_keeps = 0.0
+		conquered = 0.0
+		returned_core = 0.0
+		released_nation = 0.0
+		cancelled_subject = 0.0 
+		concede_colonial_region = 0.0
+	}
+	warscore_cap = 80
+	requires_demand_independence = no 
+	is_make_subject = no
+	requires_is_allowed = no
+	
+	is_visible = { 
+		has_global_flag = ent_wars
+	}
+	is_allowed = { 
+		#OR = {
+		#	has_country_flag = ent_advancement_memmber
+		#	tag = event_target:ent_cheif
+		#}
+	}
+	effect = { 
+		FROM = { 
+			country_event = { #lost the ent war
+			    id = ents.10
+				days = 10
+			}
+			add_prestige = -50
+		}
+		ROOT = {
+			country_event = { #won the ent war
+			    id = ents.11
+				days = 5
+			}
+			add_prestige = 50
+			
+		}
+		clr_global_flag = ent_wars
+
+	}
+	ai_weight = {
+		export_to_variable = {
+			variable_name = ai_value # Mandatory to have entry called "ai_value". Its value at the end of the ai_weight scope is what will be used, i guess this works
+			value = 100
+		}	
+	}
+}
+

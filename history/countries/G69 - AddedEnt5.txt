@@ -1,0 +1,22 @@
+government = native
+add_government_reform = entdom
+government_rank = 1
+government_rank = 1
+mercantilism = 10
+technology_group = north_american
+religion = tribal_faith
+primary_culture = ent
+capital = 3715
+set_country_flag = primary_ent_nation
+
+1444.11.11 = {
+	monarch = {
+		name = "Place"
+		dynasty = "Holder"
+		adm = 2
+		dip = 2
+		mil = 2
+		birth_date = 1424.11.11
+		regent = yes
+	}
+}

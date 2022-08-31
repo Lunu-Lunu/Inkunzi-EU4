@@ -26,5 +26,35 @@ country_decisions = {
 			
 		}
 	}
+	decision_test_federations = { # for testing triggers
+		potential = {
+			ai = no
+		}
+		allow = {
+			OR = {
+				has_country_flag = ent_advancement
+				has_country_flag = ent_traditionalist
+			}
+		}
+		effect = {
+
+		}
+	}
+	decision_test_members = { # for testing triggers
+		potential = {
+			
+		}
+		provinces_to_highlight = {
+			continent = south_america
+			owner = { has_country_flag = ent_member }
+		}
+		allow = {
+			any_country = { has_country_flag = ent_member }
+		}
+
+		effect = {
+
+		}
+	}	
 
 }

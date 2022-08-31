@@ -1,0 +1,35 @@
+ent_established_land = {
+		tribal_development_growth = 0.02
+		development_cost = -0.1
+}
+ent_forest_mine = {
+	global_trade_goods_size_modifier = 0.1
+	local_gold_depletion_chance_modifier = -0.5
+	picture = "climate_arid"
+}
+ent_guardians = {
+	land_morale = 0.1
+}
+ent_pearl_jungle = { 
+	development_cost = -0.1
+	build_cost = -0.1
+}
+ent_leading_ents = {
+	prestige = 1
+	diplomatic_reputation = 1
+	land_morale = 0.05
+}
+ent_ready_army = {
+	land_forcelimit = 1
+}
+ent_traditionalist = {
+	land_morale = 0.1
+	defensiveness = 0.1
+	tolerance_heathen = -3
+}
+ent_westernization = {
+	technology_cost = -0.10
+}
+ent_colonial_gain = {
+	global_trade_goods_size_modifier = 0.1
+}

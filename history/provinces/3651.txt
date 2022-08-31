@@ -1,5 +1,6 @@
 # Placeholder
 
+tribal_owner = B96
 culture = ent
 religion = tribal_faith
 native_size = 2

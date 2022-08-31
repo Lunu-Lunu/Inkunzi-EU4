@@ -1,5 +1,8 @@
 # Placeholder
 
+owner = G71
+controller = G71
+add_core = G71
 culture = ent
 religion = tribal_faith
 native_size = 2

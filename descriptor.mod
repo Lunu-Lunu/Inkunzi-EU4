@@ -14,5 +14,5 @@ replace_path="history/provinces"
 replace_path="music/fredmansmidsummerepistles.txt"
 replace_path="music/songsofregency.txt"
 
-name="Inkunzi EU4"
+name="Inkunzi EU4 Wdev"
 supported_version="1.32.*"

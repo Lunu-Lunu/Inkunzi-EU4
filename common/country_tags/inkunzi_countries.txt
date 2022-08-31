@@ -261,6 +261,13 @@ G61 = "countries/AddedRat17.txt"
 G62 = "countries/AddedRat18.txt"
 G63 = "countries/AddedRat19.txt"
 G64 = "countries/AddedRat20.txt"
+G65 = "countries/AddedEnt1.txt"
+G66 = "countries/AddedEnt2.txt"
+G67 = "countries/AddedEnt3.txt"
+G68 = "countries/AddedEnt4.txt"
+G69 = "countries/AddedEnt5.txt"
+G70 = "countries/AddedEnt6.txt"
+G71 = "countries/AddedEnt7.txt"
 
 ### Spawnables ###
 R00 = "countries/Leminska.txt"

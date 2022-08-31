@@ -1,0 +1,89 @@
+country_decisions = {
+	ent_searching_decision = {
+		major = yes
+		potential = {
+			has_country_flag = ent_searching
+			ai = no
+		}
+		allow = {
+			 any_known_country = {
+				any_owned_province = {
+					OR = {
+						colonial_region = Colonial_South_Essurria
+						colonial_region = Colonial_Essonnia
+						colonial_region = Colonial_Urzaghol_Bay
+						colonial_region = colonial_lyssiosia
+					}
+				}
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+					technology_group = western
+			}
+		}
+		effect = {
+			random_known_country = {
+				limit = {
+					AND = {
+						any_owned_province = {
+							OR = {
+								colonial_region = Colonial_South_Essurria
+								colonial_region = Colonial_Essonnia
+								colonial_region = Colonial_Urzaghol_Bay
+								colonial_region = colonial_lyssiosia
+							}
+						}
+						has_opinion = {
+							who = ROOT
+							value = 150
+						}
+						technology_group = western
+					}
+				}
+				country_event = { 
+					id = ents.5
+					days = 5
+				}
+			}
+			clr_country_flag = ent_searching
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
+country_decisions = {
+	ent_searching_debug = {
+		major = yes
+		potential = {
+			#has_country_flag = ent_searching
+			ai = no
+		}
+		allow = {
+			ai = no
+			NOT = { has_country_flag = ent_searching }
+		}
+		effect = {
+			set_country_flag = ent_searching
+		}
+	}
+}
+country_decisions = {
+	ent_unifcation_debug = {
+		major = yes
+		potential = {
+			ai = no
+		}
+		allow = {
+			ai = no
+		}
+		effect = {
+			declare_war_with_cb = {
+				who = b95
+				casus_belli = cb_ent_unifcation
+			}
+			set_global_flag = ent_wars
+		}
+	}
+}

@@ -1,0 +1,4 @@
+﻿l_english:
+ garden_war_tt:0 "Unlock the Garden War casus belli"
+ war_won_ents_5_tooltip:0 "Win §Y 5 §! wars against other ents. (Currently §Y[Root.entwarv.GetValue]§!)."
+ ents.4.desc:0 " $FROMCOUNTRY$ Has decided to join our coalition against the outsiders "

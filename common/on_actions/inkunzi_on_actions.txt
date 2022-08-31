@@ -1,5 +1,9 @@
 on_startup = {
 	initialize_race_estates = yes
+	set_variable = {
+		which = entwarv
+		value = 0
+	}
 }
 on_culture_promoted = {
 	promoted_races_recalc = yes
@@ -11,4 +15,10 @@ on_monarch_death = {
 	events = {
 		ervaric_events.1
 	}
+}
+on_war_won = {
+	if = {
+		limit = { FROM = {culture = ent} }
+		change_variable = { entwarv = 1 }
+	}	
 }

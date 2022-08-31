@@ -3,6 +3,7 @@
 owner = B93
 controller = B93
 add_core = B93
+tribal_owner = B93
 culture = ent
 religion = tribal_faith
 hre = no

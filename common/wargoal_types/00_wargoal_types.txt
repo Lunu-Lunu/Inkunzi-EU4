@@ -1971,3 +1971,120 @@ push_back_colonizers = {
 
 	war_name = PUSH_BACK_COLONIZERS
 }
+ent_garden = {
+	type = superiority
+	
+	attacker = {
+		badboy_factor = 3
+		prestige_factor = 1
+		peace_cost_factor = 3	
+
+		allowed_provinces = {
+			is_capital = no
+			any_neighbor_province = {
+				owned_by = ROOT
+			}
+		}
+		
+		allowed_tribal_provinces = {
+			any_neighbor_province = {
+				tribal_land_of = ROOT
+			}
+		}
+
+		peace_options = {
+			po_demand_provinces
+			po_force_migration
+			po_gold
+		}
+		
+		prov_desc = ALL_PROVS
+	}
+	
+	defender = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		allowed_provinces = {
+			is_capital = no
+			any_neighbor_province = {
+				owned_by = ROOT
+			}
+		}
+		
+		allowed_tribal_provinces = {
+			any_neighbor_province = {
+				tribal_land_of = ROOT
+			}
+		}
+
+		peace_options = {
+			po_demand_provinces
+			po_gold
+		}
+		
+		prov_desc = ALL_PROVS
+	}	
+	
+	war_name = ENT_GARDEN_WAR
+	#pretty much reflavored north american terrory war
+}
+ent_unifcation = {
+	type = superiority
+	
+	attacker = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1	
+
+		allowed_provinces = {
+			any_neighbor_province = {
+				owned_by = ROOT
+			}
+		}
+		
+		allowed_tribal_provinces = {
+			any_neighbor_province = {
+				tribal_land_of = ROOT
+			}
+		}
+
+		peace_options = {
+			po_ent_unifcation
+			po_demand_provinces
+			po_gold
+		}
+		
+		prov_desc = ALL_PROVS
+	}
+	
+	defender = {
+		badboy_factor = 1
+		prestige_factor = 1
+		peace_cost_factor = 1
+
+		allowed_provinces = {
+			any_neighbor_province = {
+				owned_by = ROOT
+			}
+		}
+		
+		allowed_tribal_provinces = {
+			any_neighbor_province = {
+				tribal_land_of = ROOT
+			}
+		}
+
+		peace_options = {
+			po_ent_unifcation
+			po_demand_provinces
+			po_gold
+		}
+		
+		prov_desc = ALL_PROVS
+	}	
+	
+	war_name = ENT_Unifcation_WAR
+	#pretty much reflavored north american terrory war
+}

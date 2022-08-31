@@ -1,0 +1,9 @@
+ent_alliance = {
+	opinion = 125
+}
+ent_accepted = {
+	opinion = 100
+}
+ent_rejected = {
+	opinion = -100
+}

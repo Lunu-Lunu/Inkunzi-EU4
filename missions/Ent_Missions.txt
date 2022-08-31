@@ -1,0 +1,520 @@
+Ent_column_2 = {
+    slot = 2
+    generic = no
+    ai = yes
+    has_country_shield = yes    
+    
+    potential = {
+        AND = {
+			culture = ent
+			government = native
+		}
+    }
+    
+    ent_establish_grove = {
+        icon = native_royal_marriage
+        position = 1 
+        
+        provinces_to_highlight = {
+		
+        }
+    
+        trigger = {
+			ROOT = {
+				capital_scope = { 
+					development = 9
+				}
+			}
+		}
+        
+        effect = {
+            add_country_modifier = { 
+				name = ent_established_land
+				duration = 7300  
+				hidden = no
+			}
+        }
+    }
+    ent_timber_gold = {
+        icon = native_royal_marriage
+        position = 1 
+        
+		required_missions = {
+            ent_establish_grove
+        }
+		
+        provinces_to_highlight = {
+		
+        }
+    
+        trigger = {
+			ROOT = {
+				AND = {
+					any_core_province = {
+						AND = {
+							base_production = 4
+							trade_goods = tropical_wood
+						}
+					}
+					any_core_province = {
+						AND = {
+							base_production = 4
+							trade_goods = gold
+						}	
+					}
+				}
+			}
+        }
+        
+        effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						trade_goods = gold
+						trade_goods = copper
+						trade_goods = iron
+					}
+				}
+				add_base_manpower = 2
+				add_permanent_province_modifier = { 
+						name = ent_forest_mine
+						duration = -1  
+						desc = forest_mine_tooltip
+				}
+			}
+			every_owned_province = {
+				limit = {
+					OR = {
+						trade_goods = tropical_wood
+					}
+				}
+				add_base_tax = 2
+			}				
+        }
+    }
+}
+Ent_column_3 = {
+    slot = 3
+    generic = no
+    ai = yes
+    has_country_shield = yes    
+    
+    potential = {
+        AND = {
+			culture = ent
+			government = native
+		}
+    }
+    ent_guardians_forest = {
+        icon = native_royal_marriage
+        position = 1 
+        
+        provinces_to_highlight = {
+		
+        }
+
+		trigger = {
+			army_size_percentage = 0.9
+			native_earthwork = 1
+		}
+		
+		effect = {
+			custom_tooltip = garden_war_tt
+			hidden_effect = {
+				set_country_flag = garden_war
+			}
+			add_country_modifier = { 
+				name = ent_guardians
+				duration = 9125  
+				hidden = no
+			}
+		}
+	}
+    ent_pearl_jungle = {
+        icon = native_royal_marriage
+        position = 2 
+        
+		required_missions = {
+			ent_establish_grove
+			ent_guardians_forest
+		}
+		
+        provinces_to_highlight = {
+		
+        }
+
+		trigger = {
+			ROOT = {
+				capital_scope = {
+					development = 15
+				}
+			}
+			native_ceremonial_fire_pit = 1
+		}
+		
+		effect = {
+			add_country_modifier = { 
+				name = ent_pearl_jungle
+				duration = 9125  
+				hidden = no
+			}
+		}
+	}
+	ent_hegemon = {
+		icon = native_royal_marriage
+		position = 3
+		
+		required_missions = {
+			ent_pearl_jungle
+			ent_prove_strength 
+		}
+		
+		provinces_to_highlight = {
+		
+		}
+		
+		trigger = {
+			army_size = 15
+			total_development = 100
+		}
+		
+		effect = {
+			add_country_modifier = { 
+				name = ent_leading_ents
+				duration = -1  
+				desc = leading_ents_tt
+				hidden = no
+			}
+			hidden_effect = {
+				every_country = {
+					limit = {
+						culture = ent
+						government = native
+					}
+					complete_mission = ent_hegemon
+				}
+			}
+			
+		}
+	}
+}
+Ent_column_4 = {
+    slot = 4
+    generic = no
+    ai = yes
+    has_country_shield = yes    
+    
+    potential = {
+        AND = {
+			culture = ent
+			government = native
+		}
+    }
+	ent_expand_growth = {
+		icon = native_royal_marriage
+		position = 1
+		
+		required_missions = {
+		
+		}
+		
+		provinces_to_highlight = {
+		
+		}
+		
+		trigger = {
+				num_of_cities = 6
+		}
+		
+		effect = {
+			add_country_modifier = { 
+				name = ent_ready_army
+				duration = 9125  
+				hidden = no
+			}
+			change_adm = 1
+		}
+	}
+	ent_prove_strength = {
+		icon = native_royal_marriage
+		position = 2
+		
+		required_missions = {
+			ent_expand_growth
+		}
+		
+		provinces_to_highlight = {
+		
+		}
+		
+		trigger = {	
+					custom_trigger_tooltip = {
+						tooltip = war_won_ents_5_tooltip
+						check_variable = {
+							which = entwarv
+							value = 5
+						}
+					}
+		}
+		
+		effect = {
+			define_advisor = {
+				type = natural_scientist
+				skill = 2
+				discount = yes
+			}
+			set_country_flag = iota
+		}
+	}	
+	
+}
+Ent_column_1 = {
+    slot = 1
+    generic = no
+    ai = yes
+    has_country_shield = yes    
+    
+    potential = {
+        AND = {
+			culture = ent
+			government = native
+		}
+    }
+	
+	ent_outsiders = {
+		icon = native_royal_marriage
+		position = 1
+		
+		trigger = {	
+			any_country = { 
+				NOT = { tag = SWE }
+				technology_group = western
+				any_province = {
+					OR = {
+						colonial_region = Colonial_South_Essurria
+						colonial_region = Colonial_Essonnia
+						colonial_region = Colonial_Urzaghol_Bay
+						colonial_region = colonial_lyssiosia
+					}
+				}	
+			}
+		}
+		effect = {
+			country_event = { 
+				id = ents.1
+				days = 0
+			}
+		}
+	}		
+}
+Ent_column_brancing = {
+    slot = 1
+    generic = no
+    ai = yes
+    has_country_shield = yes    
+    
+    potential = {
+        AND = {
+			culture = ent
+			government = native
+			NOT = { has_country_flag = ent_advancement }
+			NOT = { has_country_flag = ent_traditionalist }
+		}
+    }
+	ent_branching1 = {
+		icon = mission_unknown_mission
+		position = 2
+		required_missions = {
+			ent_outsiders
+		}
+	}
+	ent_branching2 = {
+		icon = mission_unknown_mission
+		position = 3
+		required_missions = {
+			ent_branching1
+		}
+	}
+	ent_branching3 = {
+		icon = mission_unknown_mission
+		position = 3
+		required_missions = {
+			ent_branching2
+		}
+	}	
+
+}
+Ent_column_traditionalist = {
+    slot = 1
+    generic = no
+    ai = yes
+    has_country_shield = yes    
+    
+    potential = {
+        AND = {
+			culture = ent
+			government = native
+			has_country_flag = ent_traditionalist 
+		}
+    }
+	ent_traditionalist1 = {
+		icon = native_royal_marriage
+		position = 2
+		required_missions = {
+			ent_outsiders
+		}
+		trigger = {
+			has_country_flag = ent_traditionalist
+		}
+		effect = {
+            add_country_modifier = { 
+				name = ent_traditionalist
+				duration = -1
+				hidden = no
+			}			
+		}
+	}
+	ent_traditionalist2 = {
+		icon = native_royal_marriage
+		position = 2
+		required_missions = {
+			ent_traditionalist1
+		}
+		trigger = {
+			has_global_flag = advancment_meeting
+			has_country_flag = ent_traditionalist
+            any_neighbor_country = {
+			technology_group = western
+			}
+			hidden_trigger = {
+				OR = {
+					ai = no
+					AND = {
+						OR = {
+							is_year = 1550 #so the player has a chance to be the leader
+							has_global_flag = ent_adva_select
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			set_global_flag = ent_trad_select
+		}
+	}
+	ent_traditionalist3 = {
+		icon = native_royal_marriage
+		position = 2
+		required_missions = {
+			ent_traditionalist2
+		}
+		trigger = {
+			has_country_flag = ent_traditionalist
+			has_global_flag = ent_assemble
+			tag = event_target:ent_cheif		
+		}
+		effect = {
+			declare_war_with_cb = {
+				who = event_target:ent_advance_lead
+				casus_belli = cb_ent_unifcation
+			}
+			set_global_flag = ent_wars
+		}
+	}	
+
+}
+Ent_column_advancement = {
+    slot = 1
+    generic = no
+    ai = yes
+    has_country_shield = yes    
+    
+    potential = {
+        AND = {
+			culture = ent
+			government = native
+			has_country_flag = ent_advancement
+		}
+    }
+	
+	ent_advancement1 = {
+		icon = mission_asian_trader
+		position = 2
+		required_missions = {
+			ent_outsiders
+		}
+		effect = {
+			add_country_modifier = { 
+				name = ent_westernization 
+				duration = -1
+				hidden = no
+			}
+		}
+	}
+	ent_advancement2 = {
+		icon = mission_asian_trader
+		position = 3
+		required_missions = {
+			ent_advancement1
+		}
+		trigger = {
+			any_neighbor_country = {
+				technology_group = western
+			}
+			hidden_trigger = {
+				OR = {
+					ai = no
+					AND = {
+						OR = {
+							is_year = 1550 #so the player has a chance to be the leader
+							has_global_flag = ent_trad_select
+						}
+					}
+				}
+			}			
+		}
+		effect = {
+			set_country_flag = ent_searching
+			set_global_flag = ent_adva_select
+			ROOT = { save_global_event_target_as = ent_advance }
+			every_known_country = {
+				limit = {
+					has_country_flag = ent_advancement
+				}
+				country_event = { 
+					id = ents.9
+					days = 4
+				}
+			} 
+		}
+		
+	}
+	ent_advancement3 = { #you may ask yourself, does this work ¯\_(ツ)_/¯, I think it does, kind of annoying to test and i'm looking back at this after 3 weeks, so yeah,Hi lunu :wave:
+		icon = mission_asian_trader
+		position = 3
+		required_missions = {
+			ent_advancement2
+		}
+		trigger = {
+			has_global_flag = ent_wars
+			tag = event_target:ent_advance_lead
+			
+		}
+		effect = {
+			event_target:ent_sugar_daddy = {
+				country_event = {
+					id = ents.8
+				}
+			}
+			every_known_country = {
+				limit = {
+					has_country_flag = ent_advancement
+				}
+				country_event = {
+					id = ents.9
+				}
+			}
+		}
+	}	
+	
+}

@@ -1,1 +1,17 @@
-#
+merc_ent_missoninary_force = {
+	#sprites, generic western
+	cost_modifier = 0.25 #0.25 see if the ai ueses them or if the player abuse them
+	regiments_per_development = 0.075
+	cavalry_weight = 0.1
+    artillery_weight = 0.2
+	cavalry_cap = 4
+	trigger = {
+		has_country_flag = ent_sugar_daddy_mercs
+        religion = event_target:ent_sugar_daddy
+		NOT = { is_year = 1550 }
+	}
+	modifier = {
+		land_morale = 0.05
+		discipline = 0.05
+    }
+}

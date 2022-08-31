@@ -1534,3 +1534,18 @@ cb_push_back_colonizers = {
 
 	war_goal = push_back_colonizers
 }
+cb_garden_war = {
+	valid_for_subject = no
+
+	prerequisites = {
+		government = native
+		has_country_flag = garden_war
+	}
+	
+	war_goal = ent_garden
+}
+cb_ent_unifcation = {
+	is_triggered_only = yes
+	valid_for_subject = no
+	war_goal = ent_unifcation
+}
