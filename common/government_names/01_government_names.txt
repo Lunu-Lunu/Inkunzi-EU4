@@ -295,15 +295,15 @@ gov_papal_government = {
 
 gov_daimyo = {
 	rank = {
-		1 = DAIMYO
+		1 = ATALENATE
 	}
 	
 	ruler_male = {
-		1 = LORD
+		1 = ATALE
 	}
 	
 	ruler_female = {
-		1 = LADY
+		1 = ATALE
 	}
 	
 	trigger = {
@@ -313,9 +313,9 @@ gov_daimyo = {
 
 gov_indep_daimyo = {
 	rank = {
-		1 = INDEP_DAIMYO
-		2 = GRAND_INDEP_DAIMYO
-		3 = GREAT_INDEP_DAIMYO
+		1 = INDEP_ATALENATE
+		2 = GRAND_INDEP_ATALENATE
+		3 = GREAT_INDEP_ATALENATE
 	}
 	
 	ruler_male = {
@@ -337,15 +337,15 @@ gov_indep_daimyo = {
 
 gov_shogunate = {
 	rank = {
-		2 = SHOGUNATE
+		2 = HIGH_ATALENATE
 	}
 
 	ruler_male = {
-		2 = SHOGUN
+		2 = HIGH_ATALE
 	}
 	
 	ruler_female = {
-		2 = SHOGUNESS
+		2 = HIGH_ATALE
 	}
 	
 	trigger = {

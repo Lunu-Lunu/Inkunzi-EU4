@@ -10,7 +10,7 @@ set_country_flag = primary_human_nation
 
 1444.11.11 = {
 	monarch = {
-		name = "Matiwng"
+		name = "Mawang"
 		dynasty = "Kyoshisai"
 		adm = 4
 		dip = 3

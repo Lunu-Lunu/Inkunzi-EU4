@@ -1212,10 +1212,10 @@ iaznahoganto_group = {
 		primary = A89
 
 		male_names = {
-			Makowi Katowi Kurause Matiwng Hirohito Orochi Kayo Akagi Masako Koriku Hiru Ahyung Ichigo Shika Kyosemaru Hideki Kugawa Wato Patake Mako Onae Aoi Genji
+			Makowi Katowi Kurause Mawang Hirohito Orochi Kayo Akagi Masako Koriku Hiru Ahyung Ichigo Shika Hideki Kugawa Wato Patake Mako Onae Aoi Genji
 		}
 		female_names = {
-			Anole Ela Anole Hirohito Nihohonto Himiko Hoshi Kanako Akame Izumi Kazue Mei
+			Anole Ela Akari Hirohito Nihohonto Himiko Hoshi Kanako Akame Izumi Kazue Mei
 		}
 		dynasty_names = {
 			Kyosue Oda "Faunda-Joryu" Alsaka Kyotosaki Kyoshisai "Ima-Jiro" Harohi Kasuno Hadaka Ritsuzawa Zayaki Sashawa Nanzou Yahoue Chrygi Kewoe
@@ -1225,10 +1225,10 @@ iaznahoganto_group = {
 		primary = A85
 
 		male_names = {
-            Makowi Katowi Kurause Matiwng Hirohito Orochi Kayo Akagi Masako Koriku Hiru Ahyung Ichigo Shika Ourke Hideki Kugawa Wato Patake Mako Onae Aoi Genji
+            Makowi Katowi Kurause Mawang Hirohito Orochi Kayo Akagi Masako Koriku Hiru Ahyung Ichigo Shika Hideki Kugawa Wato Patake Mako Onae Aoi Genji
 		}
 		female_names = {
-			Anole Ela Anole Hirohito Nihohonto Himiko Hoshi Kanako Akame Izumi Kazue Mei
+			Anole Ela Akari Hirohito Nihohonto Himiko Hoshi Kanako Akame Izumi Kazue Mei
 		}
 		dynasty_names = {
 			Okurokama Akiyama Koete Omakade Wofoshi
@@ -1238,10 +1238,10 @@ iaznahoganto_group = {
 		primary = A90
 
 		male_names = {
-			Makowi Katowi Kurause Matiwng Hirohito Orochi Kayo Akagi Masako Koriku Hiru Ahyung Ichigo Shika Satomo Hideki Kugawa Wato Patake Mako Onae Aoi Genji
+			Makowi Katowi Kurause Mawang Hirohito Orochi Kayo Akagi Masako Koriku Hiru Ahyung Ichigo Shika Hideki Kugawa Wato Patake Mako Onae Aoi Genji
 		}
 		female_names = {
-			Anole Ela Anole Hirohito Nihohonto Himiko Hoshi Kanako Akame Izumi Kazue Mei
+			Anole Ela Akari Hirohito Nihohonto Himiko Hoshi Kanako Akame Izumi Kazue Mei
 		}
 		dynasty_names = {
 			Wabate Nagasuko Keyoshi Yasuzu Hirumutsi Satoriki Washe
