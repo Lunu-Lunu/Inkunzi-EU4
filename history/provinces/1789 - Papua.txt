@@ -1,4 +1,4 @@
-# Placeholder
+# Furryland
 
 owner = B01
 controller = B01
@@ -6,10 +6,10 @@ add_core = B01
 culture = paleremore
 religion = mashia
 hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
-trade_goods = unknown
-capital = "Placeholder"
+base_tax = 3 
+base_production = 3
+base_manpower = 4
+trade_goods = naval_supplies
+capital = Furry City
 is_city = yes
 discovered_by = western
