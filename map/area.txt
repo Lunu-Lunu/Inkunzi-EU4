@@ -1855,115 +1855,115 @@ shokan12_area = {
 	1862 1863 1864 1871
 }
 
-scherkeiss_area = {
+Scherkeiss Lamer = {
 	1788 1789 1790 1791
 }
 
-scherkeiss2_area = {
+Terrs Intern = {
 	1792 1793 1794 1795
 }
 
-scherkeiss3_area = {
+Cordent Fronr = {
 	1796 1797 1798 1799
 }
 
-scherkeiss4_area = {
+Vachesh = {
 	1801 1802 1803
 }
 
-scherkeiss5_area = {
+Poulette = {
 	1800 1805 1807
 }
 
-scherkeiss6_area = {
+Chèvre = {
 	1804 1806 1808
 }
 
-scherkeiss7_area = {
+Récolter = {
 	1809 1810 1811 1812
 }
 
-scherkeiss8_area = {
+Cultiver = {
 	1813 1814 1817
 }
 
-scherkeiss9_area = {
+L'élevage = {
 	1815 1816 1818
 }
 
-scherkeiss10_area = {
+Ville Vache = {
 	1819 1820 1821
 }
 
-scherkeiss11_area = {
+Cuivre Et Fer = {
 	1822 1823 1842 1853
 }
 
-scherkeiss12_area = {
+Champ Horz= {
 	1824 1825 1826
 }
 
-scherkeiss13_area = {
+Outer Paaklands = {
 	1827 1828 1855
 }
 
-scherkeiss14_area = {
+Central Paaklands = {
 	1829 1852 1858
 }
 
-scherkeiss15_area = {
+South Paaklands = {
 	1830 1831 1832
 }
 
-scherkeiss16_area = {
+Pa Paaklands = {
 	1850 1851 1860
 }
 
-scherkeiss17_area = {
+Far Paaklands = {
 	1833 1834 1847
 }
 
-scherkeiss18_area = {
+Fourrures = {
 	1835 1836 1846
 }
 
-scherkeiss19_area = {
+Grand Et Poilu = {
 	1837 1838 1839 1844
 }
 
-scherkeiss20_area = {
+Orblanc = {
 	1840 1841 1843
 }
 
-scherkeiss21_area = {
+High Paak = {
 	1854 1856 1857 1859
 }
 
-scherkeiss22_area = {
+Doréphant = {
 	1845 1848 1849
 }
 
-sudokai_area = {
+Samurai City = {
 	1774 1775 1776 1781
 }
 
-sudokai2_area = {
+Fisher Court = {
 	1777 1778 1779 1780
 }
 
-sudokai3_area = {
+Unsaid Mono = {
 	1782 1784 1785
 }
 
-sudokai4_area = {
+March Sudokai = {
 	1783 1786 1787
 }
 
-kavaroniki_area = {
+Inner Kavaroniki = {
 	1763 1772 1773
 }
 
-kavaroniki2_area = {
+Outer Kavaroniki = {
 	1769 1770 1771
 }
 
@@ -2087,23 +2087,23 @@ akiyama_area = {
 	96 474 476 1116
 }
 
-tradia_area = {
+Centradia = {
 	1175 1176 1180
 }
 
-tradia2_area = {
+Nortradia = {
 	477 1179 1181
 }
 
-tradia3_area = {
+Okudria = {
 	475 1177 1178
 }
 
-peninsudaria_area = {
+Peninsudaria = {
 	1171 1172 1173 1174
 }
 
-strait_of_tradia_area = {
+Tradian Straits = {
 	1170 1182 1183
 }
 
@@ -2179,7 +2179,7 @@ kythia18_area = {
 	1166 1167 1168 1169
 }
 
-madraxx_area = {
+madraxx = {
 	494 495 496
 }
 
