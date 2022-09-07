@@ -281,7 +281,7 @@ south_pacific_area = {
 brittany_area = { ##
 	#color = { ###  ##  ### }
 
-	26 27 3600
+	26 27
 }
 # the new world areas broke the mod halfway through doing them. might be because of colonial regions? testing
 # nope. vanilla has areas halfway between colonial regions. maybe they have to be in a region if theyre also in a colonial region? testing
