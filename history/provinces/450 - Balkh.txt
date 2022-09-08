@@ -4,6 +4,7 @@ owner = A34
 controller = A34
 add_core = A34
 culture = kihsan
+1444.11.11 = { set_province_flag = human_province }
 religion = mashia
 hre = no
 base_tax = 1 

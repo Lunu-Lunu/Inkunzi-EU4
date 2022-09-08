@@ -4,6 +4,7 @@ owner = G31
 controller = G31
 add_core = G31
 culture = jungle_konk
+1444.11.11 = { set_province_flag = ape_province }
 religion = tribal_faith
 hre = no
 base_tax = 1 

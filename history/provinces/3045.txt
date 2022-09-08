@@ -4,6 +4,7 @@ owner = G64
 controller = G64
 add_core = G64
 culture = skungic
+1444.11.11 = { set_province_flag = rat_province }
 religion = sahyvarian
 hre = no
 base_tax = 1 

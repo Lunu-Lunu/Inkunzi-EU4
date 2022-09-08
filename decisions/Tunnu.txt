@@ -18,7 +18,7 @@ country_decisions = {
 			add_treasury = -50
 			add_dip_power = -100
 			random_core_province = {
-				limit = { is_colony = no }
+				limit = { is_colony = no any_empty_neighbor_province = { culture = tunnu } }
 				random_empty_neighbor_province = {
 					limit = { culture = tunnu }
 					add_siberian_construction = 200

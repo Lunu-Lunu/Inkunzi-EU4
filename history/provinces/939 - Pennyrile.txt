@@ -4,6 +4,7 @@ owner = A69
 controller = A69
 add_core = A69
 culture = unglan
+1444.11.11 = { set_province_flag = human_province }
 religion = turriyahism
 hre = no
 base_tax = 4 

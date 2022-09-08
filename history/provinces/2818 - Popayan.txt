@@ -4,6 +4,7 @@ owner = B48
 controller = B48
 add_core = B48
 culture = yeulan
+1444.11.11 = { set_province_flag = frog_province }
 religion = sahyvarian
 hre = no
 base_tax = 3

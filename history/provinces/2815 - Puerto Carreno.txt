@@ -4,6 +4,7 @@ owner = B47
 controller = B47
 add_core = B47
 culture = lyharan
+1444.11.11 = { set_province_flag = frog_province }
 religion = sahyvarian
 hre = no
 base_tax = 7

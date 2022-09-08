@@ -4,6 +4,7 @@ owner = G60
 controller = G60
 add_core = G60
 culture = skungic
+1444.11.11 = { set_province_flag = rat_province }
 religion = sahyvarian
 hre = no
 base_tax = 1 

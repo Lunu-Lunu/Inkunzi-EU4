@@ -4,6 +4,7 @@ owner = A66
 controller = A66
 add_core = A66
 culture = karhogg
+1444.11.11 = { set_province_flag = human_province }
 religion = rationalist_celestialism
 hre = no
 base_tax = 5 

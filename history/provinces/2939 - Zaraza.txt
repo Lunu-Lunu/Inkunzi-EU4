@@ -4,6 +4,7 @@ owner = G59
 controller = G59
 add_core = G59
 culture = skungic
+1444.11.11 = { set_province_flag = rat_province }
 religion = blightbringer
 hre = no
 base_tax = 1 

@@ -1,6 +1,7 @@
 # Placeholder
 
 culture = sarza
+1444.11.11 = { set_province_flag = snake_province }
 religion = tribal_faith
 native_size = 1
 native_ferocity = 8

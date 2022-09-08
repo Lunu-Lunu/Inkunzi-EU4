@@ -4,6 +4,7 @@ owner = A28
 controller = A28
 add_core = A28
 culture = kido
+1444.11.11 = { set_province_flag = human_province }
 religion = mashia
 hre = no
 base_tax = 1 

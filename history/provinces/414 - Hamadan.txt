@@ -5,6 +5,7 @@ controller = A32
 add_core = A32
 add_core = P04
 culture = iran
+1444.11.11 = { set_province_flag = human_province }
 religion = agaric
 hre = no
 base_tax = 1 

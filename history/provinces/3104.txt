@@ -4,6 +4,7 @@ owner = B73
 controller = B73
 add_core = B73
 culture = cowpal
+1444.11.11 = { set_province_flag = human_province }
 religion = tribal_faith
 hre = no
 base_tax = 6 

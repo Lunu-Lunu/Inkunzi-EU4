@@ -32,9 +32,12 @@ country_event = {
 			}
 		}
 		2829 = {
-			owner = {
-				NOT = {
-					has_institution = feudalism
+			OR = {
+				is_empty = yes
+				owner = {
+					NOT = {
+						has_institution = feudalism
+					}
 				}
 			}
 		}
@@ -96,9 +99,12 @@ country_event = {
 			}
 		}
 		3745 = {
-			owner = {
-				NOT = {
-					has_institution = feudalism
+			OR = {
+				is_empty = yes
+				owner = {
+					NOT = {
+						has_institution = feudalism
+					}
 				}
 			}
 		}
@@ -160,9 +166,12 @@ country_event = {
 			}
 		}
 		2856 = {
-			owner = {
-				NOT = {
-					has_institution = feudalism
+			OR = {
+				is_empty = yes
+				owner = {
+					NOT = {
+						has_institution = feudalism
+					}
 				}
 			}
 		}
@@ -223,9 +232,12 @@ country_event = { # Smaragdis
 			}
 		}
 		3038 = {
-			owner = {
-				NOT = {
-					has_institution = feudalism
+			OR = {
+				is_empty = yes
+				owner = {
+					NOT = {
+						has_institution = feudalism
+					}
 				}
 			}
 		}

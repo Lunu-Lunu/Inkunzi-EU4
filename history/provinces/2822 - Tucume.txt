@@ -4,6 +4,7 @@ owner = B49
 controller = B49
 add_core = B49
 culture = sabhari
+1444.11.11 = { set_province_flag = frog_province }
 religion = sahyvarian
 hre = no
 base_tax = 3 

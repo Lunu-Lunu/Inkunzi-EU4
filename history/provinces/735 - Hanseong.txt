@@ -5,6 +5,7 @@ controller = A66
 add_core = A66
 add_core = A43
 culture = xuaze
+1444.11.11 = { set_province_flag = human_province }
 religion = celestialism
 hre = no
 base_tax = 1 

@@ -44,7 +44,7 @@ estate_humans = {
 		factor = 1
 		modifier = {
 			factor = 0
-			has_human_primary = no
+			is_human_culture = no
 		}
 		modifier = {
 			factor = 2

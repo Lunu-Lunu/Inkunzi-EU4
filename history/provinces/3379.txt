@@ -4,6 +4,7 @@ owner = B89
 controller = B89
 add_core = B89
 culture = jungle_konk
+1444.11.11 = { set_province_flag = ape_province }
 religion = tribal_faith
 hre = no
 base_tax = 1 

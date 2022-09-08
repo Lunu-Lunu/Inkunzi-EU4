@@ -4,6 +4,7 @@ owner = B94
 controller = B94
 add_core = B94
 culture = ent
+1444.11.11 = { set_province_flag = ent_province }
 religion = tribal_faith
 hre = no
 base_tax = 1 

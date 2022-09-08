@@ -13,3 +13,6 @@ on_monarch_death = {
 		alzhaic_events.1
 	}
 }
+on_province_culture_converted = {
+	different_race_culture_conversion_effect = yes
+}

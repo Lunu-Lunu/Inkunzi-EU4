@@ -4,6 +4,7 @@ owner = B57
 controller = B57
 add_core = B57
 culture = kurio
+1444.11.11 = { set_province_flag = goat_province }
 religion = o_kepu
 hre = no
 base_tax = 1 

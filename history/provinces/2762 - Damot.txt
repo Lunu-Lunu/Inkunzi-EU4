@@ -4,6 +4,7 @@ owner = B39
 controller = B39
 add_core = B39
 culture = ozarkhian
+1444.11.11 = { set_province_flag = human_province }
 religion = dark_valor
 hre = no
 base_tax = 2 

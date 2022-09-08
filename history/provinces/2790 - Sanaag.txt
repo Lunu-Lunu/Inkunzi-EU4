@@ -4,6 +4,7 @@ owner = B45
 controller = B45
 add_core = B45
 culture = tunnu
+1444.11.11 = { set_province_flag = dwarf_province }
 religion = mountain_folk
 hre = no
 base_tax = 1 
