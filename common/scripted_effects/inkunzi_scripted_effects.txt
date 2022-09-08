@@ -24,6 +24,7 @@ promoted_races_recalc = {
 	clr_country_flag = lizards_accepted
 	clr_country_flag = goblins_accepted
 	clr_country_flag = moths_accepted
+	clr_country_flag = apes_accepted
 	if = {
 		limit = {
 			has_human_accepted = yes
@@ -103,6 +104,17 @@ promoted_races_recalc = {
 		set_country_flag = snakes_accepted
 	}
 	if = {
+		limit = {
+			OR = {
+				accepted_culture = peninsula_konk
+				accepted_culture = isle_konk
+				accepted_culture = river_konk
+				accepted_culture = jungle_konk
+			}
+		}
+		set_country_flag = apes_accepted
+	}
+	if = {
 		limit = {	
 			accepted_culture = ent
 		}
@@ -148,6 +160,7 @@ promoted_races_recalc = {
 			OR = {
 				accepted_culture = melian
 				accepted_culture = ulian
+				accepted_culture = verdeni
 			}
 		}
 		set_country_flag = golems_accepted
@@ -190,6 +203,8 @@ promoted_races_recalc = {
 			OR = {
 				accepted_culture = goblin
 				accepted_culture = lower_goblin
+				accepted_culture = kornandian
+				accepted_culture = enezennian
 			}
 		}
 		set_country_flag = goblins_accepted
@@ -224,6 +239,7 @@ primary_race_recalc = {
 	clr_country_flag = primary_lizard_nation
 	clr_country_flag = primary_goblin_nation
 	clr_country_flag = primary_moth_nation
+	clr_country_flag = primary_ape_nation
 	if = {
 		limit = {
 			has_human_primary = yes
@@ -364,95 +380,6 @@ primary_race_recalc = {
 			culture_group = snakeman_group
 		}
 		set_country_flag = primary_snake_nation
-	}
-}
-different_race_culture_conversion_effect = {
-	if = {
-		limit = {
-			different_race_province_to_country = yes
-		}
-		trigger_switch = {
-			on_trigger = has_province_flag
-			human_province = { race_difference_human_province = yes }
-			ourk_province = { race_difference_ourk_province = yes }
-			nimbus_province = { race_difference_nimbus_province = yes }
-			crab_province = { race_difference_crab_province = yes }
-			frog_province = { race_difference_frog_province = yes }
-			rat_province = { race_difference_rat_province = yes }
-			goat_province = { race_difference_goat_province = yes }
-			hesh_province = { race_difference_hesh_province = yes }
-			snake_province = { race_difference_snake_province = yes }
-			ent_province = { race_difference_ent_province = yes }
-			dwarf_province = { race_difference_dwarf_province = yes }
-			centaur_province = { race_difference_centaur_province = yes }
-			draconic_province = { race_difference_draconic_province = yes }
-			mushroom_province = { race_difference_mushroom_province = yes }
-			golem_province = { race_difference_golem_province = yes }
-			elf_province = { race_difference_elf_province = yes }
-			sia_si_province = { race_difference_sia_si_province = yes }
-			gneta_province = { race_difference_gneta_province = yes }
-			furry_province = { race_difference_furry_province = yes }
-			lizard_province = { race_difference_lizard_province = yes }
-			goblin_province = { race_difference_goblin_province = yes }
-			moth_province = { race_difference_moth_province = yes }
-		}
-	}
-}
-
-race_difference_human_province = {
-	owner = {
-		trigger_switch = {
-			on_trigger = has_country_flag
-			primary_ourk_nation = { PREV = {  } }
-			primary_nimbus_nation = { PREV = {  } }
-			primary_crab_nation = { PREV = {  } }
-			primary_frog_nation = { PREV = {  } }
-			primary_rat_nation = { PREV = {  } }
-			primary_goat_nation = { PREV = {  } }
-			primary_hesh_nation = { PREV = {  } }
-			primary_snake_nation = { PREV = {  } }
-			primary_ent_nation = { PREV = {  } }
-			primary_dwarf_nation = { PREV = {  } }
-			primary_centaur_nation = { PREV = {  } }
-			primary_draconic_nation = { PREV = {  } }
-			primary_mushroom_nation = { PREV = {  } }
-			primary_golem_nation = { PREV = {  } }
-			primary_elf_nation = { PREV = {  } }
-			primary_sia_si_nation = { PREV = {  } }
-			primary_gneta_nation = { PREV = {  } }
-			primary_furry_nation = { PREV = {  } }
-			primary_lizard_nation = { PREV = {  } }
-			primary_goblin_nation = { PREV = {  } }
-			primary_moth_nation = { PREV = {  } }
-		}
-	}
-}
-race_difference_ourk_province = {
-	owner = {
-		trigger_switch = {
-			on_trigger = has_country_flag
-			primary_human_nation = {}
-			primary_nimbus_nation = {}
-			primary_crab_nation = {}
-			primary_frog_nation = {}
-			primary_rat_nation = {}
-			primary_goat_nation = {}
-			primary_hesh_nation = {}
-			primary_snake_nation = {}
-			primary_ent_nation = {}
-			primary_dwarf_nation = {}
-			primary_centaur_nation = {}
-			primary_draconic_nation = {}
-			primary_mushroom_nation = {}
-			primary_golem_nation = {}
-			primary_elf_nation = {}
-			primary_sia_si_nation = {}
-			primary_gneta_nation = {}
-			primary_furry_nation = {}
-			primary_lizard_nation = {}
-			primary_goblin_nation = {}
-			primary_moth_nation = {}
-		}
 	}
 }
 
