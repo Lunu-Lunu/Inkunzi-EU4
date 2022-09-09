@@ -10,12 +10,11 @@ set_country_flag = primary_human_nation
 
 1444.11.11 = {
 	monarch = {
-		name = "Placeholderine"
-		dynasty = "domo Placeholder"
-		adm = 3
-		dip = 3
+		name = "Ourke"
+		dynasty = "Okurokama"
+		adm = 2
+		dip = 4
 		mil = 3
 		birth_date = 1424.11.11
-		regent = yes
 	}
 }

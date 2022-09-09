@@ -10,12 +10,11 @@ set_country_flag = primary_human_nation
 
 1444.11.11 = {
 	monarch = {
-		name = "Placeholderino"
-		dynasty = "del Placeholder"
-		adm = 3
+		name = "Mawang"
+		dynasty = "Kyoshisai"
+		adm = 4
 		dip = 3
-		mil = 3
+		mil = 2
 		birth_date = 1424.11.11
-		regent = yes
 	}
 }
