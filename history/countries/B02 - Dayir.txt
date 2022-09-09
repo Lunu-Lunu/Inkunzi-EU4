@@ -5,7 +5,7 @@ mercantilism = 10
 technology_group = western
 religion = celestialism
 primary_culture = alzhaic
-capital = 2017
+capital = 2014
 set_country_flag = primary_human_nation
 
 1444.11.11 = {

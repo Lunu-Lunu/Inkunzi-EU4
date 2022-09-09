@@ -10,6 +10,6 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 trade_goods = grain
-capital = "Placeholder"
+capital = "Icefo"
 is_city = yes
 discovered_by = western

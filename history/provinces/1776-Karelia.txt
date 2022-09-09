@@ -10,6 +10,6 @@ base_tax = 4
 base_production = 3
 base_manpower = 5
 trade_goods = slik
-capital = "Placeholder"
+capital = "Samurai City" 
 is_city = yes
 discovered_by = western

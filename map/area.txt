@@ -281,7 +281,7 @@ south_pacific_area = {
 brittany_area = { ##
 	#color = { ###  ##  ### }
 
-	26 27 3600
+	26 27
 }
 # the new world areas broke the mod halfway through doing them. might be because of colonial regions? testing
 # nope. vanilla has areas halfway between colonial regions. maybe they have to be in a region if theyre also in a colonial region? testing
@@ -1855,115 +1855,115 @@ shokan12_area = {
 	1862 1863 1864 1871
 }
 
-Scherkeiss Lamer = {
+scherkeiss_area = {
 	1788 1789 1790 1791
 }
 
-Terrs Intern = {
+scherkeiss2_area = {
 	1792 1793 1794 1795
 }
 
-Cordent Fronr = {
+scherkeiss3_area = {
 	1796 1797 1798 1799
 }
 
-Vachesh = {
+scherkeiss4_area = {
 	1801 1802 1803
 }
 
-Poulette = {
+scherkeiss5_area = {
 	1800 1805 1807
 }
 
-Chèvre = {
+scherkeiss6_area = {
 	1804 1806 1808
 }
 
-Récolter = {
+scherkeiss7_area = {
 	1809 1810 1811 1812
 }
 
-Cultiver = {
+scherkeiss8_area = {
 	1813 1814 1817
 }
 
-L'élevage = {
+scherkeiss9_area = {
 	1815 1816 1818
 }
 
-Ville Vache = {
+scherkeiss10_area = {
 	1819 1820 1821
 }
 
-Cuivre Et Fer = {
+scherkeiss11_area = {
 	1822 1823 1842 1853
 }
 
-Champ Horz= {
+scherkeiss12_area = {
 	1824 1825 1826
 }
 
-Outer Paaklands = {
+scherkeiss13_area = {
 	1827 1828 1855
 }
 
-Central Paaklands = {
+scherkeiss14_area = {
 	1829 1852 1858
 }
 
-South Paaklands = {
+scherkeiss15_area = {
 	1830 1831 1832
 }
 
-Pa Paaklands = {
+scherkeiss16_area = {
 	1850 1851 1860
 }
 
-Far Paaklands = {
+scherkeiss17_area = {
 	1833 1834 1847
 }
 
-Fourrures = {
+scherkeiss18_area = {
 	1835 1836 1846
 }
 
-Grand Et Poilu = {
+scherkeiss19_area = {
 	1837 1838 1839 1844
 }
 
-Orblanc = {
+scherkeiss20_area = {
 	1840 1841 1843
 }
 
-High Paak = {
+scherkeiss21_area = {
 	1854 1856 1857 1859
 }
 
-Doréphant = {
+scherkeiss22_area = {
 	1845 1848 1849
 }
 
-Samurai City = {
+sudokai_area = {
 	1774 1775 1776 1781
 }
 
-Fisher Court = {
+sudokai2_area = {
 	1777 1778 1779 1780
 }
 
-Unsaid Mono = {
+sudokai3_area = {
 	1782 1784 1785
 }
 
-March Sudokai = {
+sudokai4_area = {
 	1783 1786 1787
 }
 
-Inner Kavaroniki = {
+kavaroniki_area = {
 	1763 1772 1773
 }
 
-Outer Kavaroniki = {
+kavaroniki2_area = {
 	1769 1770 1771
 }
 
@@ -2087,23 +2087,23 @@ akiyama_area = {
 	96 474 476 1116
 }
 
-Centradia = {
+tradia_area = {
 	1175 1176 1180
 }
 
-Nortradia = {
+tradia2_area = {
 	477 1179 1181
 }
 
-Okudria = {
+tradia3_area = {
 	475 1177 1178
 }
 
-Peninsudaria = {
+peninsudaria_area = {
 	1171 1172 1173 1174
 }
 
-Tradian Straits = {
+strait_of_tradia_area = {
 	1170 1182 1183
 }
 
@@ -2179,7 +2179,7 @@ kythia18_area = {
 	1166 1167 1168 1169
 }
 
-madraxx = {
+madraxx_area = {
 	494 495 496
 }
 
