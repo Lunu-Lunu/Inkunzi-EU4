@@ -63,7 +63,7 @@ estate_humans = {
 		trigger = {
 			NOT = {
 				any_owned_province = {
-					has_human_primary = yes
+					is_human_culture = yes
 				}
 			}
 		}

@@ -373,6 +373,91 @@ B31_ideas = { # Heplin Ideas
 	}
 }
 
+B38_ideas = { # Kalan Ideas
+	start = {
+		rebel_support_efficiency = 0.5
+		tolerance_own = 1
+	}
+	bonus = {
+		missionaries = 1
+	}
+
+	trigger = {
+		tag = B38
+	}
+	free = yes
+
+	B38_arm_the_peasantry = {
+		land_forcelimit_modifier = 0.1
+		land_morale = 0.05
+	}
+	B38_ozarkhian_rivalry = {
+		manpower_recovery_speed = 0.15
+	}
+	B38_call_of_the_new_world = {
+		colonist_placement_chance = 0.05
+		global_colonial_growth = 20
+	}
+	B38_between_powers = {
+		diplomatic_reputation = 1
+		hostile_attrition = 1
+	}
+	B38_destruction_of_valor = {
+		global_heretic_missionary_strength = 0.03
+	}
+	B38_insular_politics = {
+		global_spy_defence = 0.25
+	}
+	B38_hearts_and_minds = {
+		global_autonomy = -0.05
+		war_exhaustion = -0.025
+	}
+}
+
+B39_ideas = { # Ozarkhian Ideas
+	start = {
+		merchants = 1
+		global_trade_goods_size_modifier = 0.1
+	}
+	bonus = {
+		tolerance_heretic = 2
+	}
+
+	trigger = {
+		tag = B39
+	}
+	free = yes
+
+	B39_gaze_westward = {
+		range = 0.25
+		global_colonial_growth = 20
+	}
+	B39_kalnish_rivalry = {
+		land_morale = 0.1
+	}
+	B39_trade_fleet = {
+		ship_power_propagation = 0.15
+		light_ship_power = 0.1
+	}
+	B39_international_trade = {
+		global_trade_power = 0.2
+	}
+	B39_nationbuilding = {
+		build_cost = -0.1
+		center_of_trade_upgrade_cost = -0.1
+	}
+	B39_mercantile_education = {
+		candidate_random_bonus = 1
+		republican_tradition = 0.3
+		legitimacy = 1
+		devotion = 1
+	}
+	B39_trade_empire = {
+		global_tariffs = 0.1
+		trade_efficiency = 0.2
+	}
+}
+
 B45_ideas = { #Noguttvu Ideas
 	start = {
 		naval_forcelimit_modifier = 0.33

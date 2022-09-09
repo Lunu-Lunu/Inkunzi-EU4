@@ -215,133 +215,133 @@ province_event = { # for race (province)
 		}
 		if = {
 			limit = {
-				culture_group = ourkani_group
+				is_ourk_culture = yes
 			}
 			set_province_flag = ourk_province
 		}
 		if = {
 			limit = {
-				culture = nimbus
+				is_nimbus_culture = yes
 			}
 			set_province_flag = nimbus_province
 		}
 		if = {
 			limit = {
-				culture_group = ervaric_group
+				is_frog_culture = yes
 			}
 			set_province_flag = frog_province
 		}
 		if = {
 			limit = {
-				culture_group = ratkin_group
+				is_rat_culture = yes
 			}
 			set_province_flag = rat_province
 		}
 		if = {
 			limit = {
-				culture_group = goatman_group
+				is_goat_culture = yes
 			}
 			set_province_flag = goat_province
 		}
 		if = {
 			limit = {
-				culture_group = hesh_group
+				is_hesh_culture = yes
 			}
-			set_country_flag = primary_hesh_nation
+			set_country_flag = hesh_province
 		}
 		if = {
 			limit = {
-				culture_group = ape_group
+				is_ape_culture = yes
 			}
 			set_province_flag = ape_province
 		}
 		if = {
 			limit = {
-				culture_group = ent_group
+				is_ent_culture = yes
 			}
 			set_province_flag = ent_province
 		}
 		if = {
 			limit = {
-				culture_group = dwarven_group
+				is_dwarf_culture = yes
 			}
 			set_province_flag = dwarf_province
 		}
 		if = {
 			limit = {
-				culture_group = rekolian_group
+				is_centaur_culture = yes
 			}
 			set_province_flag = centaur_province
 		}
 		if = {
 			limit = {
-				culture_group = karlton_group
+				is_crab_culture = yes
 			}
 			set_province_flag = crab_province
 		}
 		if = {
 			limit = {
-				culture_group = draconic_group
+				is_draconic_culture = yes
 			}
 			set_province_flag = draconic_province
 		}
 		if = {
 			limit = {
-				culture_group = mungi_group
+				is_mushroom_culture = yes
 			}
 			set_province_flag = mushroom_province
 		}
 		if = {
 			limit = {
-				culture_group = melcani_group
+				is_golem_culture = yes
 			}
 			set_province_flag = golem_province
 		}
 		if = {
 			limit = {
-				culture_group = aeruthian_group
+				is_elf_culture = yes
 			}
 			set_province_flag = elf_province
 		}
 		if = {
 			limit = {
-				culture_group = sia_si_group
+				is_sia_si_culture = yes
 			}
 			set_province_flag = sia_si_province
 		}
 		if = {
 			limit = {
-				culture_group = gnetan_group
+				is_gneta_culture = yes
 			}
 			set_province_flag = gneta_province
 		}
 		if = {
 			limit = {
-				culture_group = paleremore_group
+				is_furry_culture = yes
 			}
 			set_province_flag = furry_province
 		}
 		if = {
 			limit = {
-				culture_group = lizard_group
+				is_lizard_culture = yes
 			}
 			set_province_flag = lizard_province
 		}
 		if = {
 			limit = {
-				culture_group = goblin_group
+				is_goblin_culture = yes
 			}
 			set_province_flag = goblin_province
 		}
 		if = {
 			limit = {
-				culture_group = maafi_group
+				is_moth_culture = yes
 			}
 			set_province_flag = moth_province
 		}
 		if = {
 			limit = {
-				culture_group = snakeman_group
+				is_snake_culture = yes
 			}
 			set_province_flag = snake_province
 		}
