@@ -4,6 +4,7 @@ owner = B26
 controller = B26
 add_core = B26
 culture = goblin
+1444.11.11 = { set_province_flag = goblin_province }
 religion = valor
 hre = no
 base_tax = 1 

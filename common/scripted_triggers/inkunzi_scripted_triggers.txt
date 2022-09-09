@@ -21,49 +21,70 @@
 #GENERAL TRIGGERS
 has_human_primary = {
 	OR = {
-		culture_group = palmer_group
-		culture_group = vestorian_group
-		culture_group = alvonian_group
-		culture_group = credentinunum_group
-		culture_group = brahguan_group
-		culture_group = west_kaulic_group
-		culture_group = prilohan_group
-		culture_group = bogg_group
-		culture_group = pyaltsev_group
-		culture_group = penoxi_group
-		culture_group = pozitianian_group
-		culture_group = ferdunic_group
-		culture_group = celtaidd_group
-		AND = {
-			culture_group = kihsan_group
-			NOT = { culture = nimbus primary_culture = nimbus }
-		}
-		culture_group = karen_group
-		culture_group = east_kaulic_group
-		culture_group = dahe_group
-		culture_group = xuaze_group
-		culture_group = kurean_group
-		culture_group = yaroli_group
-		culture_group = helghian_group
-		culture_group = ozarkhian_group
-		culture_group = porian_group
-		culture_group = autemer_group
-		culture_group = unglan_group
-		culture_group = sieraldhah_group
-		culture_group = iaznahoganto_group
-		culture_group = alzhaic_group
-		culture_group = wagren_group
-		culture_group = tensali_group
-		culture_group = ukabururn_group
-		culture_group = leden_group
-		culture_group = lurran_group
-		culture_group = obenic_group
-		culture_group = ocelid_group
-		culture_group = serob_group
-		culture_group = kalnish_group
-		culture_group = tehaori_group
-		culture_group = adnuin_group
-		culture_group = seesonzero_group
+		primary_culture = palmer
+		primary_culture = fortly
+		primary_culture = kido
+		primary_culture = upper_vestorian
+		primary_culture = lower_vestorian
+		primary_culture = survalsian
+		primary_culture = credentinunum
+		primary_culture = brahguan
+		primary_culture = enclaver
+		primary_culture = kaulradic
+		primary_culture = oskitan
+		primary_culture = prilohan
+		primary_culture = iznadi
+		primary_culture = bogg
+		primary_culture = pyaltsev
+		primary_culture = penoxian
+		primary_culture = pozitianian
+		primary_culture = zakaulic
+		primary_culture = ferdunic
+		primary_culture = kihsan
+		primary_culture = karen
+		primary_culture = bosem
+		primary_culture = tahviran
+		primary_culture = iran
+		primary_culture = kythian
+		primary_culture = long
+		primary_culture = dai
+		primary_culture = chuanwei
+		primary_culture = rezubian
+		primary_culture = xuaze
+		primary_culture = xuahogg
+		primary_culture = kurean
+		primary_culture = yaroli
+		primary_culture = helghian
+		primary_culture = ozarkhian
+		primary_culture = mozarkhian
+		primary_culture = porian
+		primary_culture = karhogg
+		primary_culture = autemer
+		primary_culture = unglan
+		primary_culture = sieraldh
+		primary_culture = kaihaku
+		primary_culture = okuyokama
+		primary_culture = satomoto
+		primary_culture = sudokai
+		primary_culture = ryoko
+		primary_culture = keikenna
+		primary_culture = alzhaic
+		primary_culture = dengiz
+		primary_culture = wagren
+		primary_culture = tensali
+		primary_culture = ukabururn
+		primary_culture = wesrokhil
+		primary_culture = ledengradian
+		primary_culture = ibaien
+		primary_culture = obenic
+		primary_culture = ocelidian
+		primary_culture = serob
+		primary_culture = kalnish
+		primary_culture = tehaori
+		primary_culture = adnuin
+		primary_culture = cowpal
+		primary_culture = scotar
+		primary_culture = celtaidd
 	}
 }
 has_human_accepted = {
@@ -103,6 +124,7 @@ has_human_accepted = {
 		accepted_culture = yaroli
 		accepted_culture = helghian
 		accepted_culture = ozarkhian
+		accepted_culture = mozarkhian
 		accepted_culture = porian
 		accepted_culture = karhogg
 		accepted_culture = autemer
@@ -119,6 +141,7 @@ has_human_accepted = {
 		accepted_culture = wagren
 		accepted_culture = tensali
 		accepted_culture = ukabururn
+		accepted_culture = wesrokhil
 		accepted_culture = ledengradian
 		accepted_culture = ibaien
 		accepted_culture = obenic
@@ -130,6 +153,384 @@ has_human_accepted = {
 		accepted_culture = cowpal
 		accepted_culture = scotar
 		accepted_culture = celtaidd
+	}
+}
+is_human_culture = {
+	OR = {
+		culture = palmer
+		culture = fortly
+		culture = kido
+		culture = upper_vestorian
+		culture = lower_vestorian
+		culture = survalsian
+		culture = credentinunum
+		culture = brahguan
+		culture = enclaver
+		culture = kaulradic
+		culture = oskitan
+		culture = prilohan
+		culture = iznadi
+		culture = bogg
+		culture = pyaltsev
+		culture = penoxian
+		culture = pozitianian
+		culture = zakaulic
+		culture = ferdunic
+		culture = kihsan
+		culture = karen
+		culture = bosem
+		culture = tahviran
+		culture = iran
+		culture = kythian
+		culture = long
+		culture = dai
+		culture = chuanwei
+		culture = rezubian
+		culture = xuaze
+		culture = xuahogg
+		culture = kurean
+		culture = yaroli
+		culture = helghian
+		culture = ozarkhian
+		culture = mozarkhian
+		culture = porian
+		culture = karhogg
+		culture = autemer
+		culture = unglan
+		culture = sieraldh
+		culture = kaihaku
+		culture = okuyokama
+		culture = satomoto
+		culture = sudokai
+		culture = ryoko
+		culture = keikenna
+		culture = alzhaic
+		culture = dengiz
+		culture = wagren
+		culture = tensali
+		culture = ukabururn
+		culture = wesrokhil
+		culture = ledengradian
+		culture = ibaien
+		culture = obenic
+		culture = ocelidian
+		culture = serob
+		culture = kalnish
+		culture = tehaori
+		culture = adnuin
+		culture = cowpal
+		culture = scotar
+		culture = celtaidd
+	}
+}
+is_ourk_culture = {
+	OR = {
+		culture = ourkani
+		culture = paak_ourk
+		culture = grokish
+	}
+}
+is_nimbus_culture = {
+	culture = nimbus
+}
+is_crab_culture = {
+	OR = {
+		culture = north_karlton
+		culture = south_karlton
+		culture = karolon
+	}
+}
+is_frog_culture = {
+	OR = {
+		culture = lyharan
+		culture = yeulan
+		culture = sabhari
+		culture = shyman
+		culture = harlan
+	}
+}
+is_rat_culture = {
+	OR = {
+		culture = roden
+		culture = skungic
+	}
+}
+is_goat_culture = {
+	culture = kurio
+}
+is_hesh_culture = {
+	OR = {
+		culture = vorasian
+		culture = antaxian
+		culture = tavasian
+		culture = yaxatian
+		culture = karaxian
+		culture = hiveless
+	}
+}
+is_snake_culture = {
+	culture = sarza
+}
+is_ent_culture = {
+	culture = ent
+}
+is_ape_culture = {
+	OR = {
+		culture = peninsula_konk
+		culture = river_konk
+		culture = jungle_konk
+		culture = isle_konk
+	}
+}
+is_dwarf_culture = {
+	OR = {
+		culture = tunnu
+		culture = heplin
+	}
+}
+is_centaur_culture = {
+	OR = {
+		culture = inner_rekolian
+		culture = outer_rekolian
+		culture = azvendian
+	}
+}
+is_draconic_culture = {
+	culture = urakkan
+}
+is_mushroom_culture = {
+	OR = {
+		culture = mungi
+		culture = spolic
+		culture = rannikean
+	}
+}
+is_golem_culture = {
+	OR = {
+		culture = melian
+		culture = ulian
+		culture = verdeni
+	}
+}
+is_elf_culture = {
+	culture = aeruthian
+}
+is_sia_si_culture = {
+	culture = siamlud
+}
+is_furry_culture = {
+	culture = paleremore
+}
+is_gneta_culture = {
+	culture = gneta
+}
+is_moth_culture = {
+	culture = miarii
+}
+is_lizard_culture = {
+	OR = {
+		culture = lizardman
+		culture = thixi
+	}
+}
+is_goblin_culture = {
+	OR = {
+		culture = goblin
+		culture = lower_goblin
+		culture = kornandian
+		culture = enezennian
+	}
+}
+different_race_province_to_country = {
+	NOT = {
+		AND = {
+			has_province_flag = human_province
+			owner = { has_country_flag = primary_human_nation }
+		}
+		AND = {
+			has_province_flag = ourk_province
+			owner = { has_country_flag = primary_ourk_nation }
+		}
+		AND = {
+			has_province_flag = nimbus_province
+			owner = { has_country_flag = primary_nimbus_nation }
+		}
+		AND = {
+			has_province_flag = crab_province
+			owner = { has_country_flag = primary_crab_nation }
+		}
+		AND = {
+			has_province_flag = frog_province
+			owner = { has_country_flag = primary_frog_nation }
+		}
+		AND = {
+			has_province_flag = rat_province
+			owner = { has_country_flag = primary_rat_nation }
+		}
+		AND = {
+			has_province_flag = goat_province
+			owner = { has_country_flag = primary_goat_nation }
+		}
+		AND = {
+			has_province_flag = hesh_province
+			owner = { has_country_flag = primary_hesh_nation }
+		}
+		AND = {
+			has_province_flag = snake_province
+			owner = { has_country_flag = primary_snake_nation }
+		}
+		AND = {
+			has_province_flag = ent_province
+			owner = { has_country_flag = primary_ent_nation }
+		}
+		AND = {
+			has_province_flag = dwarf_province
+			owner = { has_country_flag = primary_dwarf_nation }
+		}
+		AND = {
+			has_province_flag = centaur_province
+			owner = { has_country_flag = primary_centaur_nation }
+		}
+		AND = {
+			has_province_flag = draconic_province
+			owner = { has_country_flag = primary_draconic_nation }
+		}
+		AND = {
+			has_province_flag = mushroom_province
+			owner = { has_country_flag = primary_mushroom_nation }
+		}
+		AND = {
+			has_province_flag = golem_province
+			owner = { has_country_flag = primary_golem_nation }
+		}
+		AND = {
+			has_province_flag = elf_province
+			owner = { has_country_flag = primary_elf_nation }
+		}
+		AND = {
+			has_province_flag = sia_si_province
+			owner = { has_country_flag = primary_sia_si_nation }
+		}
+		AND = {
+			has_province_flag = gneta_province
+			owner = { has_country_flag = primary_gneta_nation }
+		}
+		AND = {
+			has_province_flag = furry_province
+			owner = { has_country_flag = primary_furry_nation }
+		}
+		AND = {
+			has_province_flag = lizard_province
+			owner = { has_country_flag = primary_lizard_nation }
+		}
+		AND = {
+			has_province_flag = goblin_province
+			owner = { has_country_flag = primary_goblin_nation }
+		}
+		AND = {
+			has_province_flag = moth_province
+			owner = { has_country_flag = primary_moth_nation }
+		}
+		AND = {
+			has_province_flag = ape_province
+			owner = { has_country_flag = primary_ape_nation }
+		}
+	}
+}
+mismatched_race = {
+	NOT = {
+		AND = {
+			has_province_flag = human_province
+			is_human_culture = yes
+		}
+		AND = {
+			has_province_flag = ourk_province
+			is_ourk_culture = yes
+		}
+		AND = {
+			has_province_flag = nimbus_province
+			is_nimbus_culture = yes
+		}
+		AND = {
+			has_province_flag = crab_province
+			is_crab_culture = yes
+		}
+		AND = {
+			has_province_flag = frog_province
+			is_frog_culture = yes
+		}
+		AND = {
+			has_province_flag = rat_province
+			is_rat_culture = yes
+		}
+		AND = {
+			has_province_flag = goat_province
+			is_goat_culture = yes
+		}
+		AND = {
+			has_province_flag = hesh_province
+			is_hesh_culture = yes
+		}
+		AND = {
+			has_province_flag = snake_province
+			is_snake_culture = yes
+		}
+		AND = {
+			has_province_flag = ent_province
+			is_ent_culture = yes
+		}
+		AND = {
+			has_province_flag = dwarf_province
+			is_dwarf_culture = yes
+		}
+		AND = {
+			has_province_flag = centaur_province
+			is_centaur_culture = yes
+		}
+		AND = {
+			has_province_flag = draconic_province
+			is_draconic_culture = yes
+		}
+		AND = {
+			has_province_flag = mushroom_province
+			is_mushroom_culture = yes
+		}
+		AND = {
+			has_province_flag = golem_province
+			is_golem_culture = yes
+		}
+		AND = {
+			has_province_flag = elf_province
+			is_elf_culture = yes
+		}
+		AND = {
+			has_province_flag = sia_si_province
+			is_sia_si_culture = yes
+		}
+		AND = {
+			has_province_flag = gneta_province
+			is_gneta_culture = yes
+		}
+		AND = {
+			has_province_flag = furry_province
+			is_furry_culture = yes
+		}
+		AND = {
+			has_province_flag = lizard_province
+			is_lizard_culture = yes
+		}
+		AND = {
+			has_province_flag = goblin_province
+			is_goblin_culture = yes
+		}
+		AND = {
+			has_province_flag = moth_province
+			is_moth_culture = yes
+		}
+		AND = {
+			has_province_flag = ape_province
+			is_ape_culture = yes
+		}
 	}
 }
 

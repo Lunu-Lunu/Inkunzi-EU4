@@ -5,6 +5,7 @@ controller = A03
 add_core = A01
 add_core = A03
 culture = fortly
+1444.11.11 = { set_province_flag = human_province }
 religion = celestialism
 hre = no
 base_tax = 10

@@ -4,6 +4,7 @@ owner = A72
 controller = A72
 add_core = A72
 culture = siamlud
+1444.11.11 = { set_province_flag = sia_si_province }
 religion = haymonutho
 hre = no
 base_tax = 2 

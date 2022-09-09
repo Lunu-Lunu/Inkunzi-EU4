@@ -4,6 +4,7 @@ owner = B55
 controller = B55
 add_core = B55
 culture = roden
+1444.11.11 = { set_province_flag = rat_province }
 religion = blightbringer
 hre = no
 base_tax = 1 

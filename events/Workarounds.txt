@@ -6,7 +6,7 @@
 
 namespace = workaround
 
-country_event = { # for race
+country_event = { # for race (country)
 	id = workaround.1
 	title = workaround.1.t
 	desc = workaround.1.desc
@@ -189,6 +189,161 @@ country_event = { # for race
 				}
 			}
 			set_country_flag = crab_accepted
+		}
+	}
+}
+
+province_event = { # for race (province)
+	id = workaround.2
+	title = workaround.2.t
+	desc = workaround.2.desc
+	is_triggered_only = yes
+	hidden = yes
+	trigger = {
+		always = yes
+	}
+	option = {
+		name = workaround.2.a
+		ai_chance = {
+			factor = 100
+		}
+		if = {
+			limit = {
+				is_human_culture = yes
+			}
+			set_province_flag = human_province
+		}
+		if = {
+			limit = {
+				is_ourk_culture = yes
+			}
+			set_province_flag = ourk_province
+		}
+		if = {
+			limit = {
+				is_nimbus_culture = yes
+			}
+			set_province_flag = nimbus_province
+		}
+		if = {
+			limit = {
+				is_frog_culture = yes
+			}
+			set_province_flag = frog_province
+		}
+		if = {
+			limit = {
+				is_rat_culture = yes
+			}
+			set_province_flag = rat_province
+		}
+		if = {
+			limit = {
+				is_goat_culture = yes
+			}
+			set_province_flag = goat_province
+		}
+		if = {
+			limit = {
+				is_hesh_culture = yes
+			}
+			set_country_flag = hesh_province
+		}
+		if = {
+			limit = {
+				is_ape_culture = yes
+			}
+			set_province_flag = ape_province
+		}
+		if = {
+			limit = {
+				is_ent_culture = yes
+			}
+			set_province_flag = ent_province
+		}
+		if = {
+			limit = {
+				is_dwarf_culture = yes
+			}
+			set_province_flag = dwarf_province
+		}
+		if = {
+			limit = {
+				is_centaur_culture = yes
+			}
+			set_province_flag = centaur_province
+		}
+		if = {
+			limit = {
+				is_crab_culture = yes
+			}
+			set_province_flag = crab_province
+		}
+		if = {
+			limit = {
+				is_draconic_culture = yes
+			}
+			set_province_flag = draconic_province
+		}
+		if = {
+			limit = {
+				is_mushroom_culture = yes
+			}
+			set_province_flag = mushroom_province
+		}
+		if = {
+			limit = {
+				is_golem_culture = yes
+			}
+			set_province_flag = golem_province
+		}
+		if = {
+			limit = {
+				is_elf_culture = yes
+			}
+			set_province_flag = elf_province
+		}
+		if = {
+			limit = {
+				is_sia_si_culture = yes
+			}
+			set_province_flag = sia_si_province
+		}
+		if = {
+			limit = {
+				is_gneta_culture = yes
+			}
+			set_province_flag = gneta_province
+		}
+		if = {
+			limit = {
+				is_furry_culture = yes
+			}
+			set_province_flag = furry_province
+		}
+		if = {
+			limit = {
+				is_lizard_culture = yes
+			}
+			set_province_flag = lizard_province
+		}
+		if = {
+			limit = {
+				is_goblin_culture = yes
+			}
+			set_province_flag = goblin_province
+		}
+		if = {
+			limit = {
+				is_moth_culture = yes
+			}
+			set_province_flag = moth_province
+		}
+		if = {
+			limit = {
+				is_snake_culture = yes
+			}
+			set_province_flag = snake_province
 		}
 	}
 }

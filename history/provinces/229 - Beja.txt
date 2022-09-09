@@ -4,6 +4,7 @@ owner = A14
 controller = A14
 add_core = A14
 culture = mungi
+1444.11.11 = { set_province_flag = mushroom_province }
 religion = agaric
 hre = no
 base_tax = 1 

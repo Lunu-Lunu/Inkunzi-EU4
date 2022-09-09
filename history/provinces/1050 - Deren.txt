@@ -4,6 +4,7 @@ owner = A78
 controller = A78
 add_core = A78
 culture = gneta
+1444.11.11 = { set_province_flag = gneta_province }
 religion = haymonutho
 hre = no
 base_tax = 2 

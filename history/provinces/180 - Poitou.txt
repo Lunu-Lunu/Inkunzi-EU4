@@ -4,6 +4,7 @@ owner = A11
 controller = A11
 add_core = A11
 culture = credentinunum
+1444.11.11 = { set_province_flag = human_province }
 religion = medvedeni
 hre = no
 base_tax = 1 

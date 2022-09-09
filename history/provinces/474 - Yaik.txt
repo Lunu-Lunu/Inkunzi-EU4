@@ -2,6 +2,7 @@ owner = A86
 controller = A86
 add_core = A86
 culture = okuyokama
+1444.11.11 = { set_province_flag = human_province }
 religion = mashia
 hre = no
 base_tax = 3

@@ -2,6 +2,7 @@ owner = A93
 controller = A93
 add_core = A93
 culture = kaihaku
+1444.11.11 = { set_province_flag = human_province }
 religion = mashia
 hre = no
 base_tax = 1 

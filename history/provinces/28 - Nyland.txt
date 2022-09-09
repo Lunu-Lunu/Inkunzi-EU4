@@ -4,6 +4,7 @@ owner = A02
 controller = A02
 add_core = A02
 culture = upper_vestorian
+1444.11.11 = { set_province_flag = human_province }
 religion = celestialism
 hre = no
 base_tax = 1 

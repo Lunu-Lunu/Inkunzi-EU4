@@ -5,6 +5,7 @@ controller = B23
 add_core = B23
 add_core = P08
 culture = obenic
+1444.11.11 = { set_province_flag = human_province }
 religion = valor
 hre = no
 base_tax = 1 

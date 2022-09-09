@@ -4,6 +4,7 @@ owner = B51
 controller = B51
 add_core = B51
 culture = harlan
+1444.11.11 = { set_province_flag = frog_province }
 religion = sahyvarian
 hre = no
 base_tax = 5 

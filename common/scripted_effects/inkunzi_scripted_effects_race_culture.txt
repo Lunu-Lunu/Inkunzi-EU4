@@ -1,0 +1,342 @@
+different_race_culture_conversion_effect = {
+	if = {
+		limit = {
+			mismatched_race = yes
+		}
+		trigger_switch = {
+			on_trigger = has_province_flag
+			human_province = { race_difference_human_province = yes }
+			ourk_province = { race_difference_ourk_province = yes }
+			nimbus_province = { race_difference_nimbus_province = yes }
+			crab_province = { race_difference_crab_province = yes }
+			frog_province = { race_difference_frog_province = yes }
+			rat_province = { race_difference_rat_province = yes }
+			goat_province = { race_difference_goat_province = yes }
+			hesh_province = { race_difference_hesh_province = yes }
+			snake_province = { race_difference_snake_province = yes }
+			ent_province = { race_difference_ent_province = yes }
+			dwarf_province = { race_difference_dwarf_province = yes }
+			centaur_province = { race_difference_centaur_province = yes }
+			draconic_province = { race_difference_draconic_province = yes }
+			mushroom_province = { race_difference_mushroom_province = yes }
+			golem_province = { race_difference_golem_province = yes }
+			elf_province = { race_difference_elf_province = yes }
+			sia_si_province = { race_difference_sia_si_province = yes }
+			gneta_province = { race_difference_gneta_province = yes }
+			furry_province = { race_difference_furry_province = yes }
+			lizard_province = { race_difference_lizard_province = yes }
+			goblin_province = { race_difference_goblin_province = yes }
+			moth_province = { race_difference_moth_province = yes }
+		}
+	}
+}
+
+race_difference_human_province = {
+	if = {
+		limit = {
+			is_ourk_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_nimbus_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_crab_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_frog_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_rat_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_goat_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_hesh_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_snake_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_ent_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_dwarf_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_centaur_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_draconic_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_mushroom_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_golem_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_elf_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_sia_si_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_gneta_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_furry_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_lizard_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_goblin_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_moth_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_ape_culture = yes
+		}
+		#change_culture = swedish
+	}
+}
+race_difference_ourk_province = {
+	else_if = {
+		limit = {
+			is_nimbus_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_crab_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_frog_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_rat_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_goat_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_hesh_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_snake_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_ent_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_dwarf_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_centaur_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_draconic_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_mushroom_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_golem_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_elf_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_sia_si_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_gneta_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_furry_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_lizard_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_goblin_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_moth_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_ape_culture = yes
+		}
+		#change_culture = swedish
+	}
+	else_if = {
+		limit = {
+			is_human_culture = yes
+		}
+		trigger_switch = { # you can already tell.
+			on_trigger = culture_group
+			palmer_group = { }
+			vestorian_group = { }
+			alvonian_group = { }
+			celtaidd_group = { }
+			credentinunum_group = { }
+			brahguan_group = { }
+			west_kaulic_group = { }
+			prilohan_group = { }
+			bogg_group = { }
+			pyaltsev_group = { }
+			penoxi_group = { }
+			pozitianian_group = { }
+			ferdunic_group = { }
+			karen_group = { }
+			east_kaulic_group = { }
+			dahe_group = { }
+			xuaze_group = { }
+			kurean_group = { }
+			yaroli_group = { }
+			helghian_group = { }
+			ozarkhian_group = { }
+			porian_group = { }
+			autemer_group = { }
+			unglan_group = { }
+			sieraldhah_group = { }
+			iaznahoganto_group = { }
+			alzhaic_group = { }
+			wagren_group = { }
+			tensali_group = { }
+			ukabururn_group = { }
+			leden_group = { }
+			lurran_group = { }
+			obenic_group = { }
+			ocelid_group = { }
+			serob_group = { }
+			kalnish_group = { }
+			tehaori_group = { }
+			adnuin_group = { }
+			seesonzero_group = { }
+		}
+	}
+}

@@ -5,12 +5,13 @@ controller = B01
 add_core = B01
 add_core = R08
 culture = paleremore
+1444.11.11 = { set_province_flag = furry_province }
 religion = medilyte
 hre = no
 base_tax = 1 
 base_production = 1
-base_manpower = 1
-trade_goods = unknown
+base_manpower = 2
+trade_goods = fur
 capital = "Placeholder"
 is_city = yes
 discovered_by = western

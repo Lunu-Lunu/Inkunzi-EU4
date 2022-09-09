@@ -4,6 +4,7 @@ owner = A36
 controller = A36
 add_core = A36
 culture = tahviran
+1444.11.11 = { set_province_flag = human_province }
 religion = turriyahism
 hre = no
 base_tax = 1 

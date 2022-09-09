@@ -1,6 +1,7 @@
 # Placeholder
 
 culture = roden
+1444.11.11 = { set_province_flag = rat_province }
 religion = blightbringer
 native_size = 1
 native_ferocity = 6

@@ -329,11 +329,14 @@ renaissance = {
 	
 	can_start = {
 		is_year = 1450
-		region = france_region
+		OR = {
+			region = lower_vestoria_region
+			region = upper_vestoria_region
+		}
 		is_state = yes
 		is_island = no
 		OR = {
-			development = 20
+			development = 15
 			is_capital = yes
 			normal_or_historical_nations = no
 		}
@@ -439,17 +442,19 @@ renaissance = {
 			scale = yes
 			potential = {
 				OR = {
-					area = brittany_area
-					area = brittany_area
-					area = brittany_area
+					area = ukabur_area
+					area = ozarkhia2_area
+					area = ubayadrethen2_area
+					area = peninsudaria_area
 				}
 			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_flanders_tuscany_venetia
 				OR = {
-					area = brittany_area
-					area = brittany_area
-					area = brittany_area
+					area = ukabur_area
+					area = ozarkhia2_area
+					area = ubayadrethen2_area
+					area = peninsudaria_area
 				}
 			}
 		}

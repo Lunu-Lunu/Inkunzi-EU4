@@ -6,12 +6,13 @@ add_core = B01
 add_core = R05
 add_core = R08
 culture = paak_ourk
+1444.11.11 = { set_province_flag = ourk_province }
 religion = medilyte
 hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
-trade_goods = unknown
+base_tax = 2
+base_production = 4
+base_manpower = 3
+trade_goods = fur
 capital = "Darvoza"
 is_city = yes
 discovered_by = western
