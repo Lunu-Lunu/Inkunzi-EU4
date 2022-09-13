@@ -1,8 +1,8 @@
 # Placeholder
 
-owner = B02
-controller = B02
-add_core = B02
+owner = B03
+controller = B03
+add_core = B03
 culture = alzhaic
 1444.11.11 = { set_province_flag = human_province }
 religion = celestialism

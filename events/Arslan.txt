@@ -26,11 +26,12 @@ country_event = {
 		name = arslan.1.a # Khotun Arslan's coup succeeds
 		add_stability = -2
 		change_religion = celestialism
-		override_country_name = Arslan
+		ai_chance = { factor = 85 }
+		override_country_name = ARS
 		random_owned_province = {
 			spawn_rebels = {
 				type = pretender_rebels
-				size = 3
+				size = 1		
 				leader_dynasty = "Goshtabbi"
 			}
 		}
@@ -57,15 +58,17 @@ country_event = {
 			add_ruler_personality = zealot_personality
 			add_ruler_personality = conqueror_personality
 			set_country_flag = is_arslan
+			add_prestige = 100
 		}
 	}
 	option = {
 		name = arslan.1.b # Khotun Arslan's coup fails
 		add_stability = -1
+		ai_chance = { factor = 15 }
 		random_owned_province = {
 			spawn_rebels = {
 				type = pretender_rebels
-				size = 4
+				size = 3
 				leader = "Khotun"
 				leader_dynasty = "Arslan"
 			}
