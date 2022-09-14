@@ -1,0 +1,6 @@
+
+NDefines.NCountry.PIETY_PERCENTAGE_AT_NEW_RULER = 1.00
+NDefines.NReligion.PIETY_CORRUPTION = 0
+NDefines.NReligion.PIETY_MANPOWER = 0
+NDefines.NReligion.PIETY_COST = 0
+NDefines.NReligion.PIETY_ABS_THRESHOLD = 1.01
