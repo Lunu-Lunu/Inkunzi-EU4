@@ -129,6 +129,16 @@
   B38_destruction_of_valor:0 "Destruction of Valor"
   B38_insular_politics:0 "Insular Politics"
   B38_hearts_and_minds:0 "Hearts & Minds"
+  B35_ideas:0 "Tampistani Ideas"
+  B35_ideas_start:0 "Tampistani Traditions"
+  B35_ideas_bonus:0 "Tampistani Ambition"
+  B35_lasturs_ambition:0 "Lastur's Ambition"
+  B35_pact_of_green:0 "Pact of the Greens"
+  B35_former_glory:0 "Former Glory"
+  B35_dihuner_korrigan:0 "The Dihuner Korrigan"
+  B35_antipapal_doctrine:0 "Antipapal Doctrine"
+  B35_goblin_fervor:0 "Goblin Fervor"
+  B35_oathbearers:0 "The Oathbearers"
 
   ### Cultural Ideas ###
   seesonzero_ideas:0 "Seesonzeroan Cultural Ideas"
