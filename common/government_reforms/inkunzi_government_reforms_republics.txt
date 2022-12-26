@@ -4,7 +4,7 @@ porian_meritocracy_reform = {
 	potential = {
 		OR = {
 			has_reform = porian_meritocracy
-			has_had_reform = porian_meritocracy
+			have_had_reform = porian_meritocracy
 			culture_group = porian_group
 		}
 	}
@@ -15,7 +15,7 @@ porian_meritocracy_reform = {
 	legacy_equivalent = protectorate_parliament_legacy
 	modifiers = {
 		reelection_cost = 0.25
-		random_candidate_bonus = 1
+		candidate_random_bonus = 1
 		female_advisor_chance = 0.5
 		may_recruit_female_generals = yes
 	}

@@ -341,7 +341,7 @@ agaric_group = {
 		heretic = { HERETIC_GENERIC }
 	}
 }
-whihcan = {
+whihcan_group = {
 	defender_of_faith = yes
 
 	whihcan = {

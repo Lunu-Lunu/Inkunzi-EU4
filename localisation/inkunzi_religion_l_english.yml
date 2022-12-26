@@ -116,6 +116,9 @@
  onwinnen_whihcan_rebels_name:0 "$RELIGION$ Zealots"
  onwinnen_whihcan_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  onwinnen_whihcan_rebels_army:0 "$RELIGION$ Army"
+ whihc_defensive_war:0 "Grim Necessity"
+ whihc_peace:0 "Idyllic Peace"
+ whihc_war_recovery:0 "Post-War Recovery"
 
  valor_group:0 "Valor"
  valor:0 "Valor"

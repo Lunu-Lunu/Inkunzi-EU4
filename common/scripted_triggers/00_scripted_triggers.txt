@@ -1420,3 +1420,72 @@ is_volcanic_area = { #polynesia and indonesia
 		area = brittany_area
 	}
 }
+
+has_unlocked_estate_privilege = {
+	has_country_flag = unlocked_privilege_$estate_privilege$
+}
+
+has_unlocked_merc_company = {
+	custom_trigger_tooltip = {
+		tooltip = has_unlocked_$merc_company$
+		has_country_flag = unlocked_$merc_company$
+	}
+}
+
+has_globally_unlocked_merc_company = {
+	custom_trigger_tooltip = {
+		tooltip = has_globally_unlocked_$merc_company$
+		has_global_flag = global_unlocked_$merc_company$
+	}
+
+}
+
+has_unlocked_government_reform = {
+	has_country_flag = unlocked_$government_reform$
+}
+
+has_unlocked_estate = {
+	has_country_flag = unlocked_$estate$
+}
+has_unlocked_government_reform_tooltip = {
+	custom_trigger_tooltip = {
+		tooltip = unlocked_$government_reform$_tt
+		has_country_flag = unlocked_$government_reform$
+	}
+}
+
+
+is_or_was_tag = {
+	OR = {
+		tag = $tag$
+		was_tag = $tag$
+	}
+}
+can_swap_out_of_estate_granting_reform = {
+	OR = {
+		NOT = { has_estate = $estate$ }
+		NOT = {
+			num_of_estate_privileges = {
+				estate = $estate$
+				value = 1
+			}
+		}
+	}
+	#custom_trigger_tooltip = {
+	#	tooltip = did_not_sell_crownland_tt
+	#	NOT = { has_country_flag = recent_land_distribution }
+	#}
+}
+
+has_no_religion_specific_government_available = { # This is for theocracies? at least i think so
+	#NOT = { religion = jewish }
+	#NOT = { religion = zoroastrian }
+	#NOT = { religion = hinduism }
+	#NOT = { religion = sikhism }
+	#NOT = { religion_group = muslim }
+	#NOT = { religion_group = christian }
+	#NOT = { religion_group = eastern }
+	#NOT = { religion = tengri_pagan_reformed }
+	#NOT = { religion = shamanism }
+	#NOT = { religion = norse_pagan_reformed }
+}

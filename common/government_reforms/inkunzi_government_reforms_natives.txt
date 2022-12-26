@@ -8,7 +8,7 @@ kurio_kahunate = {
 		OR = {
 			culture_group = goatman_group
 			has_reform = kurio_kahunate
-			has_had_reform = kurio_kahunate
+			have_had_reform = kurio_kahunate
 		}
 	}
 	modifiers = {
@@ -27,7 +27,7 @@ wandering_hive = {
 		OR = {
 			culture = karaxian
 			has_reform = wandering_hive
-			has_had_reform = wandering_hive
+			have_had_reform = wandering_hive
 		}
 	}
 	native_mechanic = yes

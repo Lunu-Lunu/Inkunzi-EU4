@@ -14,7 +14,7 @@ lyharan_godsrealm = {
 				}
 			}
 			has_reform = lyharan_godsrealm
-			has_had_reform = lyharan_godsrealm
+			have_had_reform = lyharan_godsrealm
 		}
 	}
 	modifiers = {
@@ -42,7 +42,7 @@ yeulan_sortition = {
 	potential = {
 		culture_group = ervaric_group
 		has_reform = yeulan_sortition
-		has_had_reform = yeulan_sortition
+		have_had_reform = yeulan_sortition
 	}
 	modifiers = {
 		yearly_corruption = -0.05
@@ -66,7 +66,7 @@ hesh_hive = {
 	potential = {
 		culture_group = hesh_group
 		has_reform = hesh_hive
-		has_had_reform = hesh_hive
+		have_had_reform = hesh_hive
 	}
 	modifiers = {
 		max_absolutism = 10
@@ -86,7 +86,7 @@ common_hive = {
 	potential = {
 		culture_group = hesh_group
 		has_reform = common_hive
-		has_had_reform = common_hive
+		have_had_reform = common_hive
 	}
 	modifiers = {
 		yearly_corruption = -0.05
