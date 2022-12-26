@@ -180,8 +180,11 @@ country_event = { # Great Xuaze Revolt (Karpunia)
 
 	immediate = {
 		A43 = { grant_independence = yes }
-		every_owned_province = {
-			if = {
+		while = {
+			limit = {
+				any_owned_province = { is_core = A43 }
+			}
+			every_owned_province = {
 				limit = {
 					is_core = A43
 				}

@@ -369,7 +369,7 @@ tampistan_column_3 = {
 			log = "[Root.GetName]: Mission tampistan_mission_southern_allies"
 			if = {
 				limit = {
-					alliance_with = B38
+					ROOT = { alliance_with = B38 }
 				}
 				B38 = {
 					save_global_event_target_as = B35_southern_ally
@@ -397,7 +397,7 @@ tampistan_column_3 = {
 				}
 				else_if = {
 					limit = {
-						alliance_with = B39
+						ROOT = { alliance_with = B39 }
 					}
 					B39 = {
 						save_global_event_target_as = B35_southern_ally
@@ -425,7 +425,7 @@ tampistan_column_3 = {
 					}
 					else_if = {
 						limit = {
-							alliance_with = B40
+							ROOT = { alliance_with = B40 }
 						}
 						B40 = {
 							save_global_event_target_as = B35_southern_ally
