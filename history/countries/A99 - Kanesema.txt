@@ -5,7 +5,7 @@ mercantilism = 10
 technology_group = western
 religion = mashia
 primary_culture = keikenna
-capital = 1967
+capital = 1968
 set_country_flag = primary_human_nation
 
 1444.11.11 = {
