@@ -31,6 +31,16 @@ country_event = {
 				ai = no
 			}
 		}
+		2829 = {
+			OR = {
+				is_empty = yes
+				owner = {
+					NOT = {
+						has_institution = feudalism
+					}
+				}
+			}
+		}
 	}
 
 	immediate = {
@@ -86,6 +96,16 @@ country_event = {
 			AND = {
 				has_country_flag = primary_human_nation
 				ai = no
+			}
+		}
+		3745 = {
+			OR = {
+				is_empty = yes
+				owner = {
+					NOT = {
+						has_institution = feudalism
+					}
+				}
 			}
 		}
 	}
@@ -145,6 +165,16 @@ country_event = {
 				ai = no
 			}
 		}
+		2856 = {
+			OR = {
+				is_empty = yes
+				owner = {
+					NOT = {
+						has_institution = feudalism
+					}
+				}
+			}
+		}
 	}
 
 	immediate = {
@@ -199,6 +229,16 @@ country_event = { # Smaragdis
 			AND = {
 				has_country_flag = primary_golem_nation
 				ai = no
+			}
+		}
+		3038 = {
+			OR = {
+				is_empty = yes
+				owner = {
+					NOT = {
+						has_institution = feudalism
+					}
+				}
 			}
 		}
 	}

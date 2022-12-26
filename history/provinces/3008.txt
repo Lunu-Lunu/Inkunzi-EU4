@@ -4,6 +4,7 @@ owner = G43
 controller = G43
 add_core = G43
 culture = kurio
+1444.11.11 = { set_province_flag = goat_province }
 religion = o_kepu
 hre = no
 base_tax = 1 

@@ -5,6 +5,7 @@ controller = B21
 add_core = B21
 add_core = P10
 culture = goblin
+1444.11.11 = { set_province_flag = goblin_province }
 religion = valor
 hre = no
 base_tax = 2 

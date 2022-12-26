@@ -4,12 +4,13 @@ owner = A84
 controller = A84
 add_core = A84
 culture = kythian
+1444.11.11 = { set_province_flag = human_province }
 religion = mashia
 hre = no
 base_tax = 4
 base_production = 3
 base_manpower = 4
-trade_goods = copper
+trade_goods = cloth
 capital = "Placeholder"
 is_city = yes
 discovered_by = western

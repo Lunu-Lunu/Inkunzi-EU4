@@ -4,6 +4,7 @@ owner = A99
 controller = A99
 add_core = A99
 culture = keikenna
+1444.11.11 = { set_province_flag = human_province }
 religion = mashia
 hre = no
 base_tax = 1 

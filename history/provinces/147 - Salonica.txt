@@ -4,6 +4,7 @@ owner = A08
 controller = A08
 add_core = A08
 culture = enclaver
+1444.11.11 = { set_province_flag = human_province }
 religion = celestialism
 hre = no
 base_tax = 1 

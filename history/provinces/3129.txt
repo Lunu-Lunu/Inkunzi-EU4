@@ -4,6 +4,7 @@ owner = B79
 controller = B79
 add_core = B79
 culture = tavasian
+1444.11.11 = { set_province_flag = hesh_province }
 religion = tribal_faith
 hre = no
 base_tax = 3

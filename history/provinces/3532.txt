@@ -1,6 +1,7 @@
 # Glazzough
 
 culture = isle_konk
+1444.11.11 = { set_province_flag = ape_province }
 religion = tribal_faith
 native_size = 15
 native_ferocity = 10

@@ -4,6 +4,7 @@ owner = G05
 controller = G05
 add_core = G05
 culture = sarza
+1444.11.11 = { set_province_flag = snake_province }
 religion = tribal_faith
 hre = no
 base_tax = 1 

@@ -163,40 +163,40 @@ A28_ideas = { # Kido Ideas
 }
 
 A43_ideas = { # Xuaze Ideas
-    	start = {
-        	global_trade_goods_size_modifier = 0.1
-        	manpower_recovery_speed = 0.15
+    start = {
+        global_trade_goods_size_modifier = 0.1
+        manpower_recovery_speed = 0.15
 	}
-    	bonus = {
-        	recover_army_morale_speed = 0.05
+    bonus = {
+        recover_army_morale_speed = 0.05
 	}
 
-    	trigger = {
-        	tag = A43
+    trigger = {
+        tag = A43
 	}
-    	free = yes
+    free = yes
 
    	A43_remnants_of_the_horde = {
-        	cavalry_cost = -0.1
-        	cavalry_power = 0.15
+        cavalry_cost = -0.1
+        cavalry_power = 0.15
 	}
    	A43_centralized_economy = {
-       		 global_tax_modifier = 0.1
+       	global_tax_modifier = 0.1
 	}
    	A43_warlike_peoples = {
-      		 land_morale = 0.1
+      	land_morale = 0.1
 	}
-    	A43_expansionist_past = {
-      		 core_creation = -0.2
+    A43_expansionist_past = {
+      	core_creation = -0.2
 	}
    	A43_xuaze_straits = {
-       		 merchants = 1
+       	merchants = 1
 	}
-    	A43_spirit_of_the_ruby = {
-       		 global_manpower_modifier = 0.1
+    A43_spirit_of_the_ruby = {
+       	global_manpower_modifier = 0.1
 	}
 	A43_competent_merchants = {
-       		 trade_efficiency = 0.15
+       	trade_efficiency = 0.15
 	}
 }
 
@@ -370,6 +370,130 @@ B31_ideas = { # Heplin Ideas
 		humans_loyalty_modifier = 0.1
 		crabs_loyalty_modifier = 0.05
 		golems_loyalty_modifier = 0.05
+	}
+}
+
+B35_ideas = { # Tampistani Ideas
+	start = {
+		warscore_cost_vs_other_religion = -0.1
+		manpower_in_true_faith_provinces = 0.15
+	}
+	bonus = {
+		tolerance_own = 2
+	}
+
+	trigger = {
+		tag = B35
+	}
+	free = yes
+
+	B35_lasturs_ambition = {
+		ae_impact = -0.05
+		land_morale = 0.15
+	}
+	B35_pact_of_green = {
+		diplomatic_reputation = 1
+	}
+	B35_former_glory = {
+		prestige = 1
+	}
+	B35_dihuner_korrigan = {
+		global_unrest = -1
+		global_spy_defence = 0.15
+	}
+	B35_antipapal_doctrine = {
+		church_loyalty_modifier = 0.1
+	}
+	B35_goblin_fervor = {
+		manpower_in_culture_group_provinces = 0.15
+	}
+	B35_oathbearers = {
+		discipline = 0.05
+	}
+}
+
+B38_ideas = { # Kalan Ideas
+	start = {
+		rebel_support_efficiency = 0.5
+		tolerance_own = 1
+	}
+	bonus = {
+		missionaries = 1
+	}
+
+	trigger = {
+		tag = B38
+	}
+	free = yes
+
+	B38_arm_the_peasantry = {
+		land_forcelimit_modifier = 0.1
+		land_morale = 0.05
+	}
+	B38_ozarkhian_rivalry = {
+		manpower_recovery_speed = 0.15
+	}
+	B38_call_of_the_new_world = {
+		colonist_placement_chance = 0.05
+		global_colonial_growth = 20
+	}
+	B38_between_powers = {
+		diplomatic_reputation = 1
+		hostile_attrition = 1
+	}
+	B38_destruction_of_valor = {
+		global_heretic_missionary_strength = 0.03
+	}
+	B38_insular_politics = {
+		global_spy_defence = 0.25
+	}
+	B38_hearts_and_minds = {
+		global_autonomy = -0.05
+		war_exhaustion = -0.025
+	}
+}
+
+B39_ideas = { # Ozarkhian Ideas
+	start = {
+		merchants = 1
+		global_trade_goods_size_modifier = 0.1
+	}
+	bonus = {
+		tolerance_heretic = 2
+	}
+
+	trigger = {
+		tag = B39
+	}
+	free = yes
+
+	B39_gaze_westward = {
+		range = 0.25
+		global_colonial_growth = 20
+	}
+	B39_kalnish_rivalry = {
+		land_morale = 0.1
+	}
+	B39_trade_fleet = {
+		ship_power_propagation = 0.15
+		light_ship_power = 0.1
+	}
+	B39_international_trade = {
+		global_trade_power = 0.2
+	}
+	B39_nationbuilding = {
+		build_cost = -0.1
+		center_of_trade_upgrade_cost = -0.1
+	}
+	B39_mercantile_education = {
+		candidate_random_bonus = 1
+		republican_tradition = 0.3
+		legitimacy = 1
+		devotion = 1
+	}
+	B39_trade_empire = {
+		global_tariffs = 0.1
+		trade_efficiency = 0.2
 	}
 }
 

@@ -5,6 +5,7 @@ controller = B37
 add_core = B37
 add_core = P07
 culture = kornandian
+1444.11.11 = { set_province_flag = goblin_province }
 religion = dark_valor
 hre = no
 base_tax = 5 

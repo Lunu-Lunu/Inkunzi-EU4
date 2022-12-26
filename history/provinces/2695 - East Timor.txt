@@ -4,6 +4,7 @@ owner = B35
 controller = B35
 add_core = B35
 culture = lower_goblin
+1444.11.11 = { set_province_flag = goblin_province }
 religion = valor
 hre = no
 base_tax = 7

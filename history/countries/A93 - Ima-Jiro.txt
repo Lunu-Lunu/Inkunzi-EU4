@@ -10,12 +10,11 @@ set_country_flag = primary_human_nation
 
 1444.11.11 = {
 	monarch = {
-		name = "Placeholder"
-		dynasty = "Place-holder"
+		name = "Patake"
+		dynasty = "Ima-Jiro"
 		adm = 3
 		dip = 3
 		mil = 3
 		birth_date = 1424.11.11
-		regent = yes
 	}
 }

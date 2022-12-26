@@ -5,6 +5,7 @@ controller = B01
 add_core = B01
 add_core = R08
 culture = paleremore
+1444.11.11 = { set_province_flag = furry_province }
 religion = medilyte
 hre = no
 base_tax = 1 

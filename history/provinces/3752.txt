@@ -1,6 +1,7 @@
 # Placeholder
 
 culture = ent
+1444.11.11 = { set_province_flag = ent_province }
 religion = tribal_faith
 native_size = 3
 native_ferocity = 5

@@ -1,15 +1,14 @@
-# Placeholder
-
 owner = A90
 controller = A90
 add_core = A90
 culture = satomoto
+1444.11.11 = { set_province_flag = human_province }
 religion = mashia
 hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
-trade_goods = unknown
-capital = "Placeholder"
+base_tax = 8
+base_production = 8
+base_manpower = 8
+trade_goods = chinaware
+capital = "Saito"
 is_city = yes
 discovered_by = western

@@ -4,6 +4,7 @@ owner = A17
 controller = A17
 add_core = A17
 culture = pyaltsev
+1444.11.11 = { set_province_flag = human_province }
 religion = mashia
 hre = no
 base_tax = 1 

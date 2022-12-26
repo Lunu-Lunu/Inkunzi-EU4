@@ -4,6 +4,7 @@ owner = B50
 controller = B50
 add_core = B50
 culture = shyman
+1444.11.11 = { set_province_flag = frog_province }
 religion = sahyvarian
 hre = no
 base_tax = 4

@@ -5,6 +5,7 @@ controller = A42
 add_core = A42
 add_core = A65
 culture = aeruthian
+1444.11.11 = { set_province_flag = elf_province }
 religion = dark_valor
 hre = no
 base_tax = 1 

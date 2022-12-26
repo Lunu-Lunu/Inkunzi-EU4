@@ -4,6 +4,7 @@ owner = B30
 controller = B30
 add_core = B30
 culture = mozarkhian
+1444.11.11 = { set_province_flag = human_province }
 religion = valor
 hre = no
 base_tax = 1 

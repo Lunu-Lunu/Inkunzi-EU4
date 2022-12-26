@@ -4,6 +4,7 @@ owner = B33
 controller = B33
 add_core = B33
 culture = goblin
+1444.11.11 = { set_province_flag = goblin_province }
 religion = old_ones
 hre = no
 base_tax = 3 

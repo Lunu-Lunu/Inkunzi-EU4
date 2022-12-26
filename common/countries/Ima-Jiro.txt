@@ -33,11 +33,42 @@ historical_units = {
 }
 
 leader_names = {
-	Gigenshtain
+	Ima-Jiro
+	Ictoura
+	Ritsuzawa
+	Kuusu
+	Totsuda
 }
 
 monarch_names = {
-	"Gigenshtain #0" = 0
+    "Makowi #0" = 20
+	"Katowi #0" = 40
+	"Kurause #0" = 15
+	"Mawang #0" = 20
+	"Hirohito #0" = 80
+	"Orochi #0" = 10
+	"Kayo #0" = 60
+	"Akagi #0" = 20
+	"Masako #0" = 15
+	"Koriku #0" = 100
+	"Hiru #0" = 20
+	"Ahyung #0" = 50
+	"Ichigo #0" = 10
+	"Shika #0" = 20
+	"Hideki #0" = 60
+	"Wato #0" = 15
+	"Mako #0" = 20
+	"Patake #0" = 10
+	"Onae #0" = 40
+	"Aoi #0" = 20
+	"Genji #0" = 30
 
-	"FEMALE Gigenshtain #0" = -1
+	"Anole #0" = -3
+	"Ela #0" = -1
+	"Akari #0" = -4
+	"Hirohito #0" = -1
+	"Nihohonto #0" = -1
+	"Himiko #0" = -5
+	"Hoshi #0" = -1
+	"Kanako #0" = -2
 }

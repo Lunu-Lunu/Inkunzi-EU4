@@ -4,6 +4,7 @@ owner = A76
 controller = A76
 add_core = A76
 culture = siamlud
+1444.11.11 = { set_province_flag = sia_si_province }
 religion = haymonutho
 hre = no
 base_tax = 3 

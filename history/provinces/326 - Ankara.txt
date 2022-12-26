@@ -5,6 +5,7 @@ controller = A21
 add_core = A21
 add_core = P03
 culture = ferdunic
+1444.11.11 = { set_province_flag = human_province }
 religion = triaxism
 hre = no
 base_tax = 1 

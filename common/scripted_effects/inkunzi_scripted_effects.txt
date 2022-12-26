@@ -24,6 +24,7 @@ promoted_races_recalc = {
 	clr_country_flag = lizards_accepted
 	clr_country_flag = goblins_accepted
 	clr_country_flag = moths_accepted
+	clr_country_flag = apes_accepted
 	if = {
 		limit = {
 			has_human_accepted = yes
@@ -103,6 +104,17 @@ promoted_races_recalc = {
 		set_country_flag = snakes_accepted
 	}
 	if = {
+		limit = {
+			OR = {
+				accepted_culture = peninsula_konk
+				accepted_culture = isle_konk
+				accepted_culture = river_konk
+				accepted_culture = jungle_konk
+			}
+		}
+		set_country_flag = apes_accepted
+	}
+	if = {
 		limit = {	
 			accepted_culture = ent
 		}
@@ -148,6 +160,7 @@ promoted_races_recalc = {
 			OR = {
 				accepted_culture = melian
 				accepted_culture = ulian
+				accepted_culture = verdeni
 			}
 		}
 		set_country_flag = golems_accepted
@@ -190,6 +203,8 @@ promoted_races_recalc = {
 			OR = {
 				accepted_culture = goblin
 				accepted_culture = lower_goblin
+				accepted_culture = kornandian
+				accepted_culture = enezennian
 			}
 		}
 		set_country_flag = goblins_accepted
@@ -224,6 +239,7 @@ primary_race_recalc = {
 	clr_country_flag = primary_lizard_nation
 	clr_country_flag = primary_goblin_nation
 	clr_country_flag = primary_moth_nation
+	clr_country_flag = primary_ape_nation
 	if = {
 		limit = {
 			has_human_primary = yes

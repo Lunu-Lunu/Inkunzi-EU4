@@ -1,0 +1,16 @@
+# Placeholder
+
+owner = A97
+controller = A97
+add_core = A97
+culture = paak_ourk
+1444.11.11 = { set_province_flag = ourk_province }
+religion = celestialism
+hre = no
+base_tax = 1 
+base_production = 1
+base_manpower = 1
+trade_goods = unknown
+capital = "Placeholder"
+is_city = yes
+discovered_by = western

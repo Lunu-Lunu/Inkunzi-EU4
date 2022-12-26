@@ -1,15 +1,14 @@
-# Placeholder
-
 owner = A88
 controller = A88
 add_core = A88
 culture = kaihaku
+1444.11.11 = { set_province_flag = human_province }
 religion = mashia
 hre = no
 base_tax = 1 
-base_production = 1
+base_production = 3
 base_manpower = 1
-trade_goods = unknown
-capital = "Placeholder"
+trade_goods = copper
+capital = "Shi"
 is_city = yes
 discovered_by = western

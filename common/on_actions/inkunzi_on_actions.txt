@@ -4,6 +4,9 @@ on_startup = {
 on_culture_promoted = {
 	promoted_races_recalc = yes
 }
+on_culture_demoted = {
+	promoted_races_recalc = yes
+}
 on_primary_culture_changed = {
 	primary_race_recalc = yes
 }
@@ -11,5 +14,39 @@ on_monarch_death = {
 	events = {
 		ervaric_events.1
 		alzhaic_events.1
+	}
+}
+on_province_culture_converted = {
+	different_race_culture_conversion_effect = yes
+}
+on_province_owner_change = {
+	if = {
+		limit = {
+			has_colonist = yes
+		}
+		clr_province_flag = human_province
+		clr_province_flag = ourk_province
+		clr_province_flag = nimbus_province
+		clr_province_flag = frog_province
+		clr_province_flag = rat_province
+		clr_province_flag = goat_province
+		clr_province_flag = hesh_province
+		clr_province_flag = ape_province
+		clr_province_flag = ent_province
+		clr_province_flag = dwarf_province
+		clr_province_flag = centaur_province
+		clr_province_flag = crab_province
+		clr_province_flag = draconic_province
+		clr_province_flag = mushroom_province
+		clr_province_flag = golem_province
+		clr_province_flag = elf_province
+		clr_province_flag = sia_si_province
+		clr_province_flag = gneta_province
+		clr_province_flag = furry_province
+		clr_province_flag = lizard_province
+		clr_province_flag = goblin_province
+		clr_province_flag = moth_province
+		clr_province_flag = snake_province
+		province_event = { id = workaround.2 days = 1 }
 	}
 }

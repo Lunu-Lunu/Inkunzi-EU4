@@ -4,12 +4,13 @@ owner = A66
 controller = A66
 add_core = A66
 culture = porian
+1444.11.11 = { set_province_flag = human_province }
 religion = rationalist_celestialism
 hre = no
-base_tax = 1 
+base_tax = 3
 base_production = 1
-base_manpower = 1
-trade_goods = unknown
+base_manpower = 6
+trade_goods = grain
 capital = "Placeholder"
 is_city = yes
 discovered_by = western

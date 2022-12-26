@@ -1212,39 +1212,39 @@ iaznahoganto_group = {
 		primary = A89
 
 		male_names = {
-			Placeholder
+			Makowi Katowi Kurause Mawang Hirohito Orochi Kayo Akagi Masako Koriku Hiru Ahyung Ichigo Shika Hideki Kugawa Wato Patake Mako Onae Aoi Genji
 		}
 		female_names = {
-			Placeholder
+			Anole Ela Akari Hirohito Nihohonto Himiko Hoshi Kanako Akame Izumi Kazue Mei
 		}
 		dynasty_names = {
-			"Placeholder"
+			Kyosue Oda "Faunda-Joryu" Alsaka Kyotosaki Kyoshisai "Ima-Jiro" Harohi Kasuno Hadaka Ritsuzawa Zayaki Sashawa Nanzou Yahoue Chrygi Kewoe
 		}
 	}
 	okuyokama = {
 		primary = A85
 
 		male_names = {
-			Placeholder
+            Makowi Katowi Kurause Mawang Hirohito Orochi Kayo Akagi Masako Koriku Hiru Ahyung Ichigo Shika Hideki Kugawa Wato Patake Mako Onae Aoi Genji
 		}
 		female_names = {
-			Placeholder
+			Anole Ela Akari Hirohito Nihohonto Himiko Hoshi Kanako Akame Izumi Kazue Mei
 		}
 		dynasty_names = {
-			"Placeholder"
+			Okurokama Akiyama Koete Omakade Wofoshi
 		}
 	}
 	satomoto = {
 		primary = A90
 
 		male_names = {
-			Placeholder
+			Makowi Katowi Kurause Mawang Hirohito Orochi Kayo Akagi Masako Koriku Hiru Ahyung Ichigo Shika Hideki Kugawa Wato Patake Mako Onae Aoi Genji
 		}
 		female_names = {
-			Placeholder
+			Anole Ela Akari Hirohito Nihohonto Himiko Hoshi Kanako Akame Izumi Kazue Mei
 		}
 		dynasty_names = {
-			"Placeholder"
+			Wabate Nagasuko Keyoshi Yasuzu Hirumutsi Satoriki Washe
 		}
 	}
 	sudokai = {
