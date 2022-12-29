@@ -548,7 +548,6 @@ base_values = {
 	colonist_placement_chance = 0.05
 	free_leader_pool = 1
 	republican_tradition = 1
-	monthly_fervor_increase = 1
 	vassal_income = 0.10
 	horde_unity = -2
 	devotion = -0.5
@@ -562,6 +561,7 @@ base_values = {
 	monthly_heir_claim_increase = 0.208
 	tolerance_of_heretics_capacity = 3
 	tolerance_of_heathens_capacity = 3
+	monthly_fervor_increase = 1
 
 }
 
@@ -593,11 +593,11 @@ positive_stability = {
 	mr_aristocrats_influence = 0.03
 	rr_jacobins_influence = 0.03
 	stability_cost_modifier = 0.50
-	monthly_fervor_increase = 1
 	devotion = 0.5
 	yearly_corruption = -0.02
 	global_institution_spread = 0.05
 	yearly_harmony = 0.25
+	monthly_fervor_increase = 1
 	
 	
 }
@@ -613,6 +613,7 @@ negative_stability = {
 	migration_cost = 0.1
 	devotion = 1
 	caravan_power = 0.05
+	monthly_fervor_increase = -1
 }
 
 positive_mandate = {	# 100% strength at 100 mandate, 0% at 50 mandate
@@ -676,7 +677,6 @@ bankruptcy = {
 	manpower_recovery_speed = -1.0
 	sailors_recovery_speed = -1.0
 	advisor_cost = 0.5
-	monthly_fervor_increase = -1
 	global_autonomy = 0.05
 	global_institution_spread = -0.50
 	monthly_militarized_society = -0.5
@@ -694,7 +694,6 @@ war = {
 
 peace = {
 	war_exhaustion = -0.1
-	monthly_fervor_increase = 1
 	global_autonomy = -0.1
 	global_institution_spread = 0.1
 	rr_girondists_influence = -0.1
@@ -819,12 +818,13 @@ defender_of_faith = {
 	prestige = 1							#1% extra prestige yearly
 	missionaries = 1
 	devotion = 0.5
-	
+	monthly_fervor_increase = 1
 	
 }
 
 defender_of_faith_refused_cta = {
 	diplomatic_reputation = -1
+	monthly_fervor_increase = -1
 }
 
 emperor = {
@@ -949,7 +949,7 @@ corruption = {
 	dhimmi_loyalty_modifier = 0.1
 	jains_loyalty_modifier = 0.1
 	rajput_loyalty_modifier = 0.1
-
+	monthly_fervor_increase = -1
 	monthly_heir_claim_increase = 0.025
 }
 
@@ -1028,7 +1028,6 @@ prestige = {
 	global_spy_defence = 0.1				#+10/-10
 	legitimacy = 1.0
 	improve_relation_modifier = 0.5
-	monthly_fervor_increase = 1
 	ae_impact = -0.10
 	embracement_cost = -0.1
 
@@ -1047,6 +1046,7 @@ prestige = {
 	dhimmi_loyalty_modifier = 0.05
 	jains_loyalty_modifier = 0.05
 	rajput_loyalty_modifier = 0.05
+	monthly_fervor_increase = 2
 
 }
 
@@ -1089,7 +1089,6 @@ bought_indulgence = {
 }
 
 religious_unity = {
-	monthly_fervor_increase = 1
 	max_absolutism = 5
 	church_loyalty_modifier = 0.05
 	brahmins_hindu_loyalty_modifier = 0.05
@@ -1377,6 +1376,7 @@ discontent_sowed = {
 	devotion = -1
 	horde_unity = -1
 	meritocracy = -0.5
+	monthly_fervor_increase = -1
 }
 
 reputation_sabotaged = {
@@ -1385,6 +1385,7 @@ reputation_sabotaged = {
 
 corrupt_officials = {
 	yearly_corruption = 0.1
+	monthly_fervor_increase = -0.5
 }
 
 scaled_trade_league_leader = { #scaled by number of members
@@ -1443,18 +1444,22 @@ divert_trade = {
 
 karma_just_right =
 {
-	diplomatic_reputation = 2
-	discipline = 0.05
+	discipline = 0.025
+	land_morale = 0.025
 }
 
 karma_too_high =
 {
-	diplomatic_reputation = 1
+	church_loyalty_modifier = 0.1
+	church_influence_modifier = 0.05
+	land_morale = 0.05
 }
 
 karma_too_low =
 {
-	discipline = 0.025
+	church_loyalty_modifier = -0.05
+	church_influence_modifier = -0.1
+	discipline = 0.05
 }
 
 ########################################
