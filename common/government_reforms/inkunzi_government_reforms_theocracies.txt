@@ -20,3 +20,28 @@ valor_papacy_reform = {
 		locked_government_type = yes
 	}
 }
+enclava_theocracy_reform = {
+    icon = holy_state_reform
+    potential = {
+		OR = {
+			AND = {
+				has_country_flag = is_enclava
+				religion = mashia
+			}
+			religion = black_ribbon_bytos
+		}
+	}
+    modifiers = {
+        defensiveness = 0.10
+		land_morale = 0.05
+		governing_capacity_modifier = -0.75
+		devotion = 1
+    }
+	different_religion_acceptance = 20
+	different_religion_group_acceptance = -50
+	monastic = yes
+	allow_normal_conversion = no
+	locked_government_type = yes
+	heir = no
+	legacy_equivalent = monastic_order_government
+}
