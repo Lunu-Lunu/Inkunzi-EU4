@@ -1,0 +1,49 @@
+###########################################################
+# Events for Alzhaic countries
+#
+# written by Avatar (Mostly)
+###########################################################
+
+namespace = bytosevents
+
+country_event = {
+	id = bytosdeath.1
+	title = bytosdeath.1.title
+	desc = bytosdeath.1.description
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	major = yes
+	major_trigger = {
+		is_great_power = yes
+	}
+	trigger = {
+		uses_karma = yes
+		NOT = { has_ruler_flag = chose_path_bytos } 
+	}
+	option = {
+		name = bytosdeath.1.followkaul
+		trigger = {
+			NOT = { ruler_has_personality = zealot_personality }
+		}
+		add_ruler_modifier = {
+			name = embracing_kaul
+			duration = -1
+		}
+		hidden_effect = {
+			set_ruler_flag = chose_path_bytos
+		}
+	}
+	option = {
+		name = bytosdeath.1.abandonkaul
+		trigger = {
+			NOT = { ruler_has_personality = sinner_personality }
+		}
+		add_ruler_modifier = { 
+			name = abandonkaul
+			duration = until_ruler_death
+		}
+		hidden_effect = {
+			set_ruler_flag = chose_path_bytos
+		}
+	}
+}

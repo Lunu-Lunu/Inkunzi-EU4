@@ -1,0 +1,100 @@
+###########################################################
+# Events for Centmasion
+#
+# written by Avatar
+###########################################################
+
+namespace = masion_events
+
+country_event = {
+	id = masion_events.1 #Masion requests Independence
+	title = masion_events.1.t
+	desc = masion_events.1.desc
+	picture = REFORM_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { # Allow Masion to go free in peace
+		name = masion_events.1.a
+		add_prestige = -20
+		add_treasury = 100
+		A08 = {
+			country_event = { 
+				id = masion_events.3
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = masion_events.1.b # Declare war on them
+		add_prestige = 10
+		A08 = {
+			country_event = { 
+				id = masion_events.4
+				days = 1
+			}
+		}
+	}
+}
+country_event = {
+	id = masion_events.2 #Masion is sovereign
+	title = masion_events.2.t
+	desc = masion_events.2.desc
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { # We stand free
+		name = masion_events.2.a
+		add_prestige = 20
+		add_stability = 1
+		
+	}
+}
+
+country_event = {
+	id = masion_events.3 #Masion is allowed to be free
+	title = masion_events.3.t
+	desc = masion_events.3.desc
+	picture = CONQUEST_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { # We stand free
+		name = masion_events.3.a
+		add_opinion = {
+			who = overlord
+			modifier = released_in_peace
+		}
+		overlord = {
+			free_vassal = A08
+		}
+		add_prestige = 20
+		add_stability = 1
+	}
+}
+country_event = {
+	id = masion_events.4 #Masion Freedom refused
+	title = masion_events.4.t
+	desc = masion_events.4.desc
+	picture = BATTLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = { # War it is
+		name = masion_events.4.a
+		declare_war_with_cb = {
+			who = overlord
+			casus_belli = cb_independence_war
+		}
+		any_country = {
+			limit = {
+				reverse_has_opinion_modifier = {
+					who = A08
+					modifier = supports_masion_independence
+				}
+			}
+			create_alliance = A08
+		}
+	}
+}
