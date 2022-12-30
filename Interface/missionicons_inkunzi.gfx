@@ -1,0 +1,6 @@
+spriteTypes = {	
+	spriteType = {
+		name = "mission_black_ribbon_revolt"
+		texturefile = "gfx//interface//missions//mission_black_flag.dds"
+	}
+}
