@@ -46,7 +46,7 @@ ionidian_system_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		culture_group = ourkani_group
-		has_completed_mission = ionidius_mission_philosophy_of_rulership
+		mission_completed = ionidius_mission_philosophy_of_rulership
 	}
 	modifiers = {
 		development_cost = -0.05

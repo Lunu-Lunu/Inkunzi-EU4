@@ -4,3 +4,5 @@ NDefines.NReligion.PIETY_CORRUPTION = 0
 NDefines.NReligion.PIETY_MANPOWER = 0
 NDefines.NReligion.PIETY_COST = 0
 NDefines.NReligion.PIETY_ABS_THRESHOLD = 1.01
+
+NDefines.NAI.ESTATE_MIN_WANTED_CROWNLAND = 29.9
