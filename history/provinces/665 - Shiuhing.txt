@@ -8,10 +8,10 @@ culture = rannikean
 1444.11.11 = { set_province_flag = mushroom_province }
 religion = agaric
 hre = no
-base_tax = 1 
+base_tax = 2
 base_production = 1
 base_manpower = 1
-trade_goods = unknown
+trade_goods = livestock
 capital = "Placeholder"
 is_city = yes
 discovered_by = western
