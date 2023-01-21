@@ -15,4 +15,4 @@ replace_path="music/fredmansmidsummerepistles.txt"
 replace_path="music/songsofregency.txt"
 
 name="Inkunzi EU4"
-supported_version="1.32.*"
+supported_version="1.33.*"
