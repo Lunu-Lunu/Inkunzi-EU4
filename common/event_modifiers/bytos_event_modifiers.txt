@@ -1,0 +1,6 @@
+embracing_kaul = {
+	monthly_karma = 0.2
+}
+abandonkaul = {
+	monthly_karma = -0.2
+}

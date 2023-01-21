@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
  janissary_regiment:0 "Janissary"
  reovlutionary_guard_regiment:0 "Revolutionary Guard"
  LEDGER_SCORE_TC:0 "Team Score"
@@ -4805,8 +4805,8 @@
  desc_kizilirmak_estuary_modifier:0 "Controlling the important river estuary of the Kizilirmak strengthens our hold of the trade in the region."
  USES_CHURCH_ASPECTS:0 "$COUNTRY|Y$ has church aspects."
  USES_NOT_CHURCH_ASPECTS:0 "$COUNTRY|Y$ has NOT church aspects."
- USES_FERVOR:0 "$COUNTRY|Y$ uses fervor."
- USES_NOT_FERVOR:0 "$COUNTRY|Y$ does NOT use fervor."
+ USES_FERVOR:0 "$COUNTRY|Y$ uses titles."
+ USES_NOT_FERVOR:0 "$COUNTRY|Y$ does NOT use titles."
  USES_PATRIARCH_AUTHORITY:0 "$COUNTRY|Y$ uses Golden Authority."
  USES_NOT_PATRIARCH_AUTHORITY:0 "$COUNTRY|Y$ does NOT use Golden Authority."
  USES_PIETY:0 "$COUNTRY|Y$ uses Tradition."

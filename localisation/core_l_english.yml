@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
  ONE_TIME_COST:0 "Onetime Cost"
  MENU_MESSAGES_DISABLE_ALL:0 "Disable all"
  ai_handicap:0 "AI Bonuses"
@@ -147,8 +147,6 @@
  AND_MONTHLY_THE_FOLLOWING:0 "And changes each month $VAL|Y1$ due to:\n$DESC$"
  PIETY_DESCRIPTION:2 "Tradition represents the amount of adherence to the 'O Kepu cultural tradition within your nation. It is measured on a scale between -100 (§YIrreverence§!) and 100 (§YAdherence§!).\nThe Tradition of your nation is affected by various actions you can take. Event options will move your position on the scale as will declaring war on infidels (Increase) or fellow adherents to the 'O Kepu code (Decrease). Once Tradition is at least 75 towards Adherence, you may take a Social Reform which will destabilize your nation and decrease Tradition to the minimum (100 towards Irreverence) in exchange for a permanent modifier."
  PIETY_DESCRIPTION_ESTATES:1 "\nThe Tradition of your nation may effect your Estates."
- KARMA_DESC2:0 "Karma represents the divinity of your past actions in the eyes of the Buddhist faith and will rise or fall depending on the morality of actions you take. A ruler with too extreme Karma will become detached from the world. Too high Karma means losing the trust of the common soldier while too low Karma will make you ineffective on the diplomatic arena. Countries with Karma do not pay any diplomatic power cost for returning cores and releasing countries and vassals in peace deals."
- KARMA_DESC:0 "Karma increases from:\n- §YHonoring alliances§!\n- §YReleasing vassals§!\n- §YReleasing nations in peace deals§!\n- §YReturning cores§!\n- §YConverting Provinces§!\n\nKarma decreases from:\n- §YStarting wars§!\n- §YTaking provinces in peace deals§!"
  PATRIARCH_DESCRIPTION:1 "Golden Authority represents how much perceived authority the Golden King, the Haymonutho god, has over the nation. In Haymonite provinces, high Golden Authority will decrease local unrest and governing cost."
  EFFECTIVE_INCOME_EXPL:0 "This will increase the monthly income from this province by §Y$VAL$§!¤"
  EFFECTIVE_INCOME_EXPL_YEARLY:0 "This will increase the yearly income from this province by §Y$VAL$§!¤"
@@ -890,8 +888,6 @@
  RANDOM_WORLD_GENERATE_WORLD_SEA3:0 "Generating Random New World...\nFilling in holes..."
  RANDOM_WORLD_GENERATE_WORLD_SMOOTHING:0 "Generating Random New World...\nSmoothing Pass $PASS$..."
  POLICYVIEW_TITLE:0 "Select Policies"
- FERVOR_CHANGE:0 "Monthly Change:"
- FERVOR_VALUE2:0 "Fervor Points:"
  ENFORCE_MILITARY_ACCESS:0 "$FROM$ will be forced to give Military Access to $TO$. This cannot be canceled until the truce is over."
  ENFORCE_FLEET_BASING_RIGHTS:0 "$FROM$ will be forced to give Fleet Basing Rights to $TO$. This cannot be canceled until the truce is over."
  WAR_REPARATIONS_DESC:0 "$FROM$ will be forced to give $TO$ $VALUE|0%$ of their income each month to pay for War Reparations. This will last for $YEARS$ years."
@@ -934,3 +930,4 @@
  CHAT_CVAA_SYSTEM_NAME:0 "System"
  CHAT_CVAA_EMPTY_TEXT:0 " "
  CHAT_CVAA_MIC:0 "Mic"
+

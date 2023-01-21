@@ -2,3 +2,7 @@ you_are_evil = {
 	opinion = -500
 	yearly_decay = 5
 }
+supports_masion_independence = {
+	opinion = 25
+	yearly_decay = 1
+}

@@ -341,49 +341,120 @@ west_kaulic_group = {
 		primary = A08
 
 		male_names = {
-			Placeholder
+			Aadil 
+			Aurol
+			Kaul
+			Fikri
+			Kaarim
+			Arno
+			Olidil
+			Osam
+			Prue
+			Ildar
+			Karloy
+			Faaris
+			Jaoa
+			Helmuth
+			Borkund
+			Hamuna
+			Sylinen
 		}
 		female_names = {
-			Placeholder
+			Lore
+			Iris
+			Irma
+			Anke
 		}
 		dynasty_names = {
-			"Placeholder"
+			"Ab'inladen"
+			"Al-Hannan"
+			"Lothiar"
+			"Hotz"
+			"von Zyklop"
+			"Al-Syed"
+			"Alum"
+			"von Masion"
 		}
 	}
 	oskitan = {
 		primary = A13
 
 		male_names = {
-			Placeholder
+			Bautesar
+			Edwin
+			Auneir
+			Valiant
 		}
 		female_names = {
-			Placeholder
+			Zevari
 		}
 		dynasty_names = {
-			"Placeholder"
+			"Vidal"
+			"Vagaborn"
+			"Ili-Ellat"
+			"Giserick"
+			"von Oskitia"
 		}
 	}
 	kaulradic = {
 		primary = A14
 
 		male_names = {
-			Placeholder
+			Alinar
+			Shavarsh
+			Reinhardt
+			Kohnstäl
+			Elaric
+			Usul
 		}
 		female_names = {
-			Placeholder
+			Gothakelle
 		}
 		dynasty_names = {
-			"Placeholder"
+			"Nerigella"
+			"Kurush"
+			"von Alhof-Stern"
+			"von Stern"
+			"Volkushin"
+			"Al-Shapir"
 		}
 	}
 	male_names = {
-		Placeholder
+			Aadil 
+			Aurol
+			Kaul
+			Fikri
+			Kaarim
+			Arno
+			Olidil
+			Osam
+			Prue
+			Ildar
+			Karloy
+			Faaris
+			Jaoa
+			Helmuth
+			Borkund
+			Hamuna
+			Sylinen
 	}
 	female_names = {
-		Placeholder
+			Lore
+			Iris
+			Irma
+			Anke
 	}
 	dynasty_names = {
-		"Placeholder"
+			"Ab'inladen"
+			"Al-Hannan"
+			"Lothiar"
+			"Hotz"
+			"von Zyklop"
+			"Al-Syed"
+			"Alum"
+			"Nerigella"
+			"Kurush"
+			"Al-Shapir"			
 	}
 }
 prilohan_group = {
