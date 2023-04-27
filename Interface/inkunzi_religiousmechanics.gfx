@@ -1,0 +1,228 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_pietySlider_n100"
+		texturefile = "gfx//interface//religions//Piety-StyleSlider//-100_PietySliderthingy.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_pietySlider_n90"
+		texturefile = "gfx//interface//religions//Piety-StyleSlider//-90_PietySliderthingy.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_pietySlider_n80"
+		texturefile = "gfx//interface//religions//Piety-StyleSlider//-80_PietySliderthingy.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_pietySlider_n70"
+		texturefile = "gfx//interface//religions//Piety-StyleSlider//-70_PietySliderthingy.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_pietySlider_n60"
+		texturefile = "gfx//interface//religions//Piety-StyleSlider//-60_PietySliderthingy.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_pietySlider_n50"
+		texturefile = "gfx//interface//religions//Piety-StyleSlider//-50_PietySliderthingy.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_pietySlider_n40"
+		texturefile = "gfx//interface//religions//Piety-StyleSlider//-40_PietySliderthingy.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_pietySlider_n30"
+		texturefile = "gfx//interface//religions//Piety-StyleSlider//-30_PietySliderthingy.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_pietySlider_n20"
+		texturefile = "gfx//interface//religions//Piety-StyleSlider//-20_PietySliderthingy.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_pietySlider_n10"
+		texturefile = "gfx//interface//religions//Piety-StyleSlider//-10_PietySliderthingy.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_pietySlider_0"
+		texturefile = "gfx//interface//religions//Piety-StyleSlider//0_PietySliderthingy.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_okepuslider_100"
+		texturefile = "gfx//interface//religions//OkepuSlider//100_SliderScale.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_okepuslider_90"
+		texturefile = "gfx//interface//religions//OkepuSlider//90_SliderScale.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_okepuslider_80"
+		texturefile = "gfx//interface//religions//OkepuSlider//80_SliderScale.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_okepuslider_70"
+		texturefile = "gfx//interface//religions//OkepuSlider//70_SliderScale.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_okepuslider_60"
+		texturefile = "gfx//interface//religions//OkepuSlider//60_SliderScale.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_okepuslider_50"
+		texturefile = "gfx//interface//religions//OkepuSlider//50_SliderScale.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_okepuslider_40"
+		texturefile = "gfx//interface//religions//OkepuSlider//40_SliderScale.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_okepuslider_30"
+		texturefile = "gfx//interface//religions//OkepuSlider//30_SliderScale.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_okepuslider_20"
+		texturefile = "gfx//interface//religions//OkepuSlider//20_SliderScale.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_okepuslider_10"
+		texturefile = "gfx//interface//religions//OkepuSlider//10_SliderScale.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_okepuslider_0"
+		texturefile = "gfx//interface//religions//OkepuSlider//0_SliderScale.dds"
+		loadType = "INGAME"
+	}
+		spriteType = {
+		name = "GFX_okepuslider_n100"
+		texturefile = "gfx//interface//religions//OkepuSlider//-100_SliderScale.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_okepuslider_n90"
+		texturefile = "gfx//interface//religions//OkepuSlider//-90_SliderScale.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_okepuslider_n80"
+		texturefile = "gfx//interface//religions//OkepuSlider//-80_SliderScale.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_okepuslider_n70"
+		texturefile = "gfx//interface//religions//OkepuSlider//-70_SliderScale.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_okepuslider_n60"
+		texturefile = "gfx//interface//religions//OkepuSlider//-60_SliderScale.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_okepuslider_n50"
+		texturefile = "gfx//interface//religions//OkepuSlider//-50_SliderScale.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_okepuslider_n40"
+		texturefile = "gfx//interface//religions//OkepuSlider//-40_SliderScale.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_okepuslider_n30"
+		texturefile = "gfx//interface//religions//OkepuSlider//-30_SliderScale.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_okepuslider_n20"
+		texturefile = "gfx//interface//religions//OkepuSlider//-20_SliderScale.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_okepuslider_n10"
+		texturefile = "gfx//interface//religions//OkepuSlider//-10_SliderScale.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_Icon_test_celestialism"
+		texturefile = "gfx//interface//religions//Celestialism//Icons//TestButton.dds"
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_Icon_nomodifier_celestialism"
+		texturefile = "gfx//interface//religions//Celestialism//Icons//No_ModifierIcon.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_Icon_changeIcon_celestialism"
+		texturefile = "gfx//interface//religions//Celestialism//ChangeIconButton.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_celestialIcon_owl"
+		texturefile = "gfx//interface//religions//Celestialism//Icons_star//owl_icon.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_celestialIcon_lion"
+		texturefile = "gfx//interface//religions//Celestialism//Icons_star//lion_icon.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_celestialIcon_crown"
+		texturefile = "gfx//interface//religions//Celestialism//Icons_star//crown_icon.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_celestialIcon_chalice"
+		texturefile = "gfx//interface//religions//Celestialism//Icons_star//chalice_icon.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_celestialIcon_gate"
+		texturefile = "gfx//interface//religions//Celestialism//Icons_star//gate_icon.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_celestialIcon_sword"
+		texturefile = "gfx//interface//religions//Celestialism//Icons_star//sword_icon.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_celestialIcon_temple"
+		texturefile = "gfx//interface//religions//Celestialism//Icons_star//temple_icon.dds"
+		loadType = "INGAME"
+	}
+	
+	spriteType = {
+		name = "GFX_Icon_addmodifier_celestialism"
+		texturefile = "gfx//interface//religions//Celestialism//AddModifierButton.dds"
+		loadType = "INGAME"
+	}
+}
