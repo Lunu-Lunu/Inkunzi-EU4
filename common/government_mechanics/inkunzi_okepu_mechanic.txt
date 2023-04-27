@@ -1,0 +1,336 @@
+reformed_okepu_mechanic = {
+	available = {
+		religion = o_kepu
+		has_country_flag = okepu_reformed_flag
+	}
+	
+	powers = {
+		ancestral_favor = {
+			max = 100
+			scaled_modifier = {
+				modifier = {
+					development_cost = -0.1
+					tolerance_own = 3
+					church_loyalty_modifier = 0.1
+					church_influence_modifier = 0.1
+					land_morale = 0.2
+					institution_spread_from_true_faith = 0.5
+					monthly_ancestral_favor = -0.25
+				}
+			}
+		}
+	}
+	interactions = {
+		consult_the_ancestors = {
+			gui = militarization_gov_mech
+			cost_type = ancestral_favor
+			center = no
+			trigger = {
+				prestige = 5
+				not = {
+					has_government_power = {
+						mechanic_type = reformed_okepu_mechanic
+						power_type = ancestral_favor
+						value = 100
+					}
+				}
+			}
+			effect = { 
+				add_prestige = -5
+				add_government_power = {
+					mechanic_type = reformed_okepu_mechanic
+					power_type = ancestral_favor
+					value = 10
+				}
+			}
+			cooldown_years = 0
+			ai_chance = {
+				factor = 10
+				modifier = {
+					factor = 10
+					not = {
+						has_government_power = {
+							mechanic_type = reformed_okepu_mechanic
+							power_type = ancestral_favor
+							value = 90
+						}
+					}
+					prestige = 25
+				}
+			}
+		}
+	}
+}
+
+okepu_mechanic = {
+	available = {
+		religion = o_kepu
+		NOT = { has_country_flag = okepu_reformed_flag }
+	}
+
+	powers = {
+		okepu_traditionalism = {
+			gui = parliament_vs_monarchy_gov_mech
+			max = 100	#Traditionalist direction
+			min = -100	#Non-traditionalist direction
+			base_monthly_growth = 0
+			development_scaled_monthly_growth = 10
+			scaled_modifier = {
+				trigger = {
+					has_government_power = { 
+						mechanic_type = okepu_mechanic
+						power_type = okepu_traditionalism
+						value = 0
+					}
+				}
+				modifier = {
+					settle_cost = 5
+					monthly_reform_progress_modifier = -0.5
+					institution_spread_from_true_faith = -0.5
+					tolerance_own = 3
+					land_morale = 0.2
+					tribal_development_growth = 0.2
+					church_loyalty_modifier = 0.1
+					church_influence_modifier = 0.2
+				}
+			}
+			scaled_modifier = {
+				trigger = {
+					NOT = {
+						has_government_power = { 
+							mechanic_type = okepu_mechanic
+							power_type = okepu_traditionalism
+							value = 0
+						}
+					}
+				}
+				modifier = {
+					settle_cost = 0.5
+					tolerance_own = 3
+					tolerance_heretic = -2
+					tolerance_heathen = -2
+					monthly_reform_progress_modifier = -0.25
+					institution_spread_from_true_faith = -0.25
+					land_morale = 0.1
+					church_loyalty_modifier = 0.1
+				}
+			}
+		}
+	}
+}
+okepu_reforms_mechanic = {
+	available = {
+		religion = o_kepu
+		NOT = { has_country_flag = okepu_reformed_flag }
+	}
+
+	interactions = {
+		okepu_reform_1_interaction = {
+			icon = GFX_efficient_tax_farming_button
+			trigger = {
+				has_government_power = {
+					mechanic_type = okepu_mechanic
+					power_type = okepu_traditionalism
+					value = 100
+				}
+				NOT = { has_country_modifier = o_kepu_reform1_modifier }
+			}
+			effect = {
+				add_stability = -3
+				set_government_power = {
+					mechanic_type = okepu_mechanic
+					power_type = okepu_traditionalism
+					value = -100
+				}
+				add_country_modifier = {
+					name = o_kepu_recent_reform_modifier
+					duration = 3650
+				}
+				add_country_modifier = {
+					name = o_kepu_reform1_modifier
+					duration = -1
+				}
+			}
+			ai_chance = {
+				factor = 100
+			}
+		}
+		okepu_reform_2_interaction = {
+			icon = GFX_efficient_tax_farming_button
+			trigger = {
+				has_government_power = {
+					mechanic_type = okepu_mechanic
+					power_type = okepu_traditionalism
+					value = 100
+				}
+				NOT = { has_country_modifier = o_kepu_reform2_modifier }
+			}
+			effect = {
+				add_stability = -3
+				set_government_power = {
+					mechanic_type = okepu_mechanic
+					power_type = okepu_traditionalism
+					value = -100
+				}
+				add_country_modifier = {
+					name = o_kepu_recent_reform_modifier
+					duration = 3650
+				}
+				add_country_modifier = {
+					name = o_kepu_reform2_modifier
+					duration = -1
+				}
+			}
+			ai_chance = {
+				factor = 100
+			}
+		}
+		okepu_reform_3_interaction = {
+			icon = GFX_efficient_tax_farming_button
+			trigger = {
+				has_government_power = {
+					mechanic_type = okepu_mechanic
+					power_type = okepu_traditionalism
+					value = 100
+				}
+				NOT = { has_country_modifier = o_kepu_reform3_modifier }
+			}
+			effect = {
+				add_stability = -3
+				set_government_power = {
+					mechanic_type = okepu_mechanic
+					power_type = okepu_traditionalism
+					value = -100
+				}
+				add_country_modifier = {
+					name = o_kepu_recent_reform_modifier
+					duration = 3650
+				}
+				add_country_modifier = {
+					name = o_kepu_reform3_modifier
+					duration = -1
+				}
+			}
+			ai_chance = {
+				factor = 100
+			}
+		}
+		okepu_reform_4_interaction = {
+			icon = GFX_efficient_tax_farming_button
+			trigger = {
+				has_government_power = {
+					mechanic_type = okepu_mechanic
+					power_type = okepu_traditionalism
+					value = 100
+				}
+				NOT = { has_country_modifier = o_kepu_reform4_modifier }
+			}
+			effect = {
+				add_stability = -3
+				set_government_power = {
+					mechanic_type = okepu_mechanic
+					power_type = okepu_traditionalism
+					value = -100
+				}
+				add_country_modifier = {
+					name = o_kepu_recent_reform_modifier
+					duration = 3650
+				}
+				add_country_modifier = {
+					name = o_kepu_reform4_modifier
+					duration = -1
+				}
+			}
+			ai_chance = {
+				factor = 100
+			}
+		}
+		okepu_reform_5_interaction = {
+			icon = GFX_efficient_tax_farming_button
+			trigger = {
+				has_government_power = {
+					mechanic_type = okepu_mechanic
+					power_type = okepu_traditionalism
+					value = 100
+				}
+				NOT = { has_country_modifier = o_kepu_reform5_modifier }
+			}
+			effect = {
+				add_stability = -3
+				set_government_power = {
+					mechanic_type = okepu_mechanic
+					power_type = okepu_traditionalism
+					value = -100
+				}
+				add_country_modifier = {
+					name = o_kepu_recent_reform_modifier
+					duration = 3650
+				}
+				add_country_modifier = {
+					name = o_kepu_reform5_modifier
+					duration = -1
+				}
+			}
+			ai_chance = {
+				factor = 100
+			}
+		}
+		okepu_finish_reforms_interaction = {
+			icon = GFX_efficient_tax_farming_button
+			trigger = {
+				has_government_power = {
+					mechanic_type = okepu_mechanic
+					power_type = okepu_traditionalism
+					value = 100
+				}
+				has_country_modifier = o_kepu_reform1_modifier
+				has_country_modifier = o_kepu_reform2_modifier
+				has_country_modifier = o_kepu_reform3_modifier
+				has_country_modifier = o_kepu_reform4_modifier
+				has_country_modifier = o_kepu_reform5_modifier
+			}
+			effect = {
+				set_country_flag = okepu_reformed_flag
+				custom_tooltip = reformed_okepu_tt
+
+				if = {
+					limit = {
+						government = monarchy
+					}
+					change_government = monarchy
+				}
+				if = {
+					limit = {
+						government = theocracy
+					}
+					change_government = theocracy
+				}
+				if = {
+					limit = {
+						government = republic
+					}
+					change_government = republic
+				}
+				if = {
+					limit = {
+						NOT = {
+							government = monarchy
+							government = theocracy
+							government = republic
+						}
+					}
+					if = {
+						limit = {
+							has_reform = kurio_kahunate
+						}
+						change_government = theocracy
+						else = { change_government = monarchy }
+					}
+				}
+			}
+			ai_chance = {
+				factor = 100
+			}
+		}
+	}
+}

@@ -4,31 +4,31 @@ estate_church =
 
 	# If true, country will get estate
 	trigger = {
+		NOT = { has_government_attribute = disables_estate_church }
+		NOT = { has_country_flag = disables_estate_church_flag }
 		if = {
 			limit = {
 				religion_group = dharmic
 			}
 			NOT = { has_estate = estate_brahmins }
 		}
-		NOT = { has_reform = pirate_republic_reform }
-		NOT = { has_government_attribute = is_merchant_republic }
-		NOT = { has_reform = veche_republic }
-		NOT = { has_reform = trading_city }
-		NOT = { has_reform = cossacks_reform }
-		NOT = { has_reform = siberian_tribe }
-		NOT = { government = native }
-		NOT = { is_revolutionary_republic_trigger = yes }
 		OR = {
-			NOT = { has_reform = celestial_empire }
-			has_dlc = "Mandate of Heaven"
+			has_government_attribute = enables_estate_church
+			has_country_flag = enables_estate_church_flag
+			AND = {
+				NOT = { has_government_attribute = is_pirate_republic_reform }
+				NOT = { has_reform = siberian_tribe }
+				NOT = { government = native }
+				NOT = { is_revolutionary_republic_trigger = yes }
+				NOT = { has_reform = revolutionary_empire_reform }
+				OR = {
+					NOT = { tag = USA }
+					government = theocracy
+				}
+				is_nomad = no
+				is_colonial_nation = no
+			}
 		}
-		OR = {
-			NOT = { tag = USA }
-			government = theocracy
-		}
-		is_nomad = no
-		is_colonial_nation = no
-		NOT = { has_reform = revolutionary_empire_reform }
 	}
 
 	# These scale with loyalty & power
@@ -39,9 +39,11 @@ estate_church =
 		church_power_modifier = 0.1
 		monthly_fervor_increase = 1
 		stability_cost_modifier = -0.1
+		monthly_okepu_traditionalism = 0.2
 	}
 	country_modifier_neutral = {
 		global_tax_modifier = 0.2
+		monthly_okepu_traditionalism = 0.2
 	}	
 	country_modifier_angry = {
 		global_tax_modifier = -0.1
@@ -51,6 +53,7 @@ estate_church =
 		monthly_fervor_increase = -1
 		stability_cost_modifier = 0.1
 		global_unrest = 2
+		monthly_okepu_traditionalism = -0.5
 	}
 
 	land_ownership_modifier = {
@@ -237,6 +240,12 @@ estate_church =
 				tag = VNL
 			}
 			religion = animism
+		}
+	}
+	custom_name = {
+		desc = estate_kahunas
+		trigger = {
+			religion = o_kepu
 		}
 	}
 

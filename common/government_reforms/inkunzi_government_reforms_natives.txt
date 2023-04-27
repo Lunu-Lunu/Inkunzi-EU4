@@ -14,6 +14,7 @@ kurio_kahunate = {
 	modifiers = {
 		advisor_pool = 1
 		same_culture_advisor_cost = -0.15
+		okepu_traditionalism_gain_modifier = 0.1
 	}
 }
 
