@@ -6,7 +6,7 @@ taisung_diety =
 	devotion = 0.3
 	diplomatic_reputation = 2
 
-	allow = { religion = sunfucian }
+	potential = { religion = sunfucian }
 	sprite = 7
 
 	ai_will_do = {
@@ -27,7 +27,7 @@ yuelua_diety =
 	global_unrest = -2
 	global_tax_modifier = 0.1
 
-	allow = { religion = sunfucian }
+	potential = { religion = sunfucian }
 	sprite = 8
 
 	ai_will_do = {
@@ -48,7 +48,7 @@ lei_nei_diety  =
 	land_morale = 0.10
 	army_tradition_from_battle = 1
 
-	allow = { religion = sunfucian }
+	potential = { religion = sunfucian }
 	sprite = 9
 
 	ai_will_do = {
@@ -81,7 +81,7 @@ biti_thcong_diety =
 	discipline = 0.05
 	land_attrition = -0.1
 
-	allow = { religion = sunfucian }
+	potential = { religion = sunfucian }
 	sprite = 10
 
 	ai_will_do = {
@@ -102,7 +102,7 @@ czibir_diety =
 	ae_impact = -0.1
 	advisor_cost = -0.1
 
-	allow = { religion = sunfucian }
+	potential = { religion = sunfucian }
 	sprite = 11
 
 	ai_will_do = {
@@ -124,7 +124,7 @@ amuksmus_diety =
 	war_exhaustion = -0.05
 	build_cost = -0.1
 
-	allow = { religion = sunfucian }
+	potential = { religion = sunfucian }
 	sprite = 12
 
 	ai_will_do = {
@@ -146,7 +146,7 @@ ze_la_si_diety  =
 	movement_speed = 0.15
 	institution_spread_from_true_faith = 1
 
-	allow = { religion = sunfucian }
+	potential = { religion = sunfucian }
 	sprite = 12
 
 	ai_will_do = {
@@ -172,7 +172,7 @@ ragzmus_diety  =
 	defensiveness = 0.15
 	hostile_attrition = 1
 
-	allow = { religion = sunfucian }
+	potential = { religion = sunfucian }
 	sprite = 12
 
 	ai_will_do = {
@@ -194,7 +194,7 @@ vescarbios_diety  =
 	production_efficiency = 0.10
 	state_maintenance_modifier = -0.25
 
-	allow = { religion = sunfucian }
+	potential = { religion = sunfucian }
 	sprite = 12
 
 	ai_will_do = {
@@ -216,7 +216,7 @@ admaxtadort_diety  =
 	naval_morale = 0.1
 	naval_forcelimit_modifier = 0.1
 
-	allow = { religion = sunfucian }
+	potential = { religion = sunfucian }
 	sprite = 12
 
 	ai_will_do = {
@@ -239,7 +239,7 @@ talixias_diety  =
 	development_cost = -0.1
 	global_prosperity_growth = 0.1
 
-	allow = { religion = sunfucian }
+	potential = { religion = sunfucian }
 	sprite = 12
 
 	ai_will_do = {

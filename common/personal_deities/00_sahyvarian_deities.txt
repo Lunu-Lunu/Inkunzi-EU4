@@ -3,7 +3,7 @@
 
 lyharis = {
 	sprite = 1
-	allow = {
+	potential = {
 		religion = sahyvarian
 	}
 	global_unrest = -2
@@ -18,7 +18,7 @@ lyharis = {
 }
 eulorna = {
 	sprite = 2
-	allow = {
+	potential = {
 		religion = sahyvarian
 	}
 	naval_morale = 0.15
@@ -33,7 +33,7 @@ eulorna = {
 }
 bharsan = {
 	sprite = 3
-	allow = {
+	potential = {
 		religion = sahyvarian
 	}
 	build_cost = -0.1
@@ -48,7 +48,7 @@ bharsan = {
 }
 gegishym = {
 	sprite = 4
-	allow = {
+	potential = {
 		religion = sahyvarian
 	}
 	production_efficiency = 0.1
@@ -63,7 +63,7 @@ gegishym = {
 }
 harlorn = {
 	sprite = 5
-	allow = {
+	potential = {
 		religion = sahyvarian
 	}
 	spy_offence = 0.25
@@ -78,7 +78,7 @@ harlorn = {
 }
 the_winged_one = {
 	sprite = 6
-	allow = {
+	potential = {
 		religion = sahyvarian
 		has_global_flag = sahyvarian_unlock_winged_one
 	}
@@ -90,7 +90,7 @@ the_winged_one = {
 }
 the_blightbringer = {
 	sprite = 7
-	allow = {
+	potential = {
 		religion = sahyvarian
 		OR = {
 			culture_group = ratkin_group
@@ -101,9 +101,5 @@ the_blightbringer = {
 	hostile_attrition = 1
 	ai_will_do = {
 		factor = 1
-		modifier = {
-			factor = 100
-			tag = B51
-		}
 	}
 }
