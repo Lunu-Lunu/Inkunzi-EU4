@@ -1489,3 +1489,10 @@ has_no_religion_specific_government_available = { # This is for theocracies? at 
 	#NOT = { religion = shamanism }
 	#NOT = { religion = norse_pagan_reformed }
 }
+
+province_is_or_accepts_culture = {
+	OR = {
+		has_owner_culture = yes
+		has_owner_accepted_culture = yes
+	}
+}

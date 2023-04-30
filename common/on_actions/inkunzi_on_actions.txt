@@ -1,5 +1,11 @@
 on_startup = {
 	initialize_race_estates = yes
+	karpunian_canals_prov_group = {
+		add_province_triggered_modifier = karpunian_canals_tier_0_triggered_modifier
+		add_province_triggered_modifier = karpunian_canals_tier_1_triggered_modifier
+		add_province_triggered_modifier = karpunian_canals_tier_2_triggered_modifier
+		add_province_triggered_modifier = karpunian_canals_tier_3_triggered_modifier
+	}
 }
 on_culture_promoted = {
 	promoted_races_recalc = yes

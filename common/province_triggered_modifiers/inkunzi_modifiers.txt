@@ -44,3 +44,91 @@ sahyvarian_trade_triggered_modifier = {
 	trade_value_modifier = 0.25
 	trade_goods_size = 0.1
 }
+
+karpunian_canals_tier_0_triggered_modifier = {
+	potential = {
+
+	}
+
+	trigger = {
+		844 = {
+			NOT = {
+				has_great_project = {
+					type = porian_canal_management
+					tier = 1
+				}
+			}
+		}
+	}
+
+	local_monthly_devastation = 0.5
+	local_build_cost = 1
+	trade_goods_size_modifier = -0.5
+}
+karpunian_canals_tier_1_triggered_modifier = {
+	potential = {
+
+	}
+
+	trigger = {
+		844 = {
+			has_great_project = {
+				type = porian_canal_management
+				tier = 1
+			}
+			NOT = {
+				has_great_project = {
+					type = porian_canal_management
+					tier = 2
+				}
+			}
+		}
+	}
+
+	local_development_cost = -0.4
+	supply_limit = 2
+}
+karpunian_canals_tier_2_triggered_modifier = {
+	potential = {
+
+	}
+
+	trigger = {
+		844 = {
+			has_great_project = {
+				type = porian_canal_management
+				tier = 2
+			}
+			NOT = {
+				has_great_project = {
+					type = porian_canal_management
+					tier = 3
+				}
+			}
+		}
+	}
+
+	local_development_cost = -0.5
+	local_build_cost = -0.05
+	trade_goods_size_modifier = 0.05
+	supply_limit = 4
+}
+karpunian_canals_tier_3_triggered_modifier = {
+	potential = {
+
+	}
+
+	trigger = {
+		844 = {
+			has_great_project = {
+				type = porian_canal_management
+				tier = 3
+			}
+		}
+	}
+
+	local_development_cost = -0.6
+	local_build_cost = -0.1
+	trade_goods_size_modifier = 0.1
+	supply_limit = 6
+}
