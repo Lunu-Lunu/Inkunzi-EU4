@@ -3263,7 +3263,7 @@ celtaidd_heritage_monument = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			global_trade_goods_size_modifier = 0.1
-			manpower_in_primary_culture_province = 0.1
+			manpower_in_own_culture_provinces = 0.1
 		}
 
 		#what effects happen when this tier is achieved
@@ -3308,7 +3308,7 @@ celtaidd_heritage_monument = {
 		country_modifiers = {
 			hostile_attrition = 1
 			global_trade_goods_size_modifier = 0.15
-			manpower_in_primary_culture_province = 0.2
+			manpower_in_own_culture_provinces = 0.2
 		}
 
 		#what effects happen when this tier is achieved
@@ -3354,7 +3354,7 @@ celtaidd_heritage_monument = {
 			hostile_attrition = 1
 			defensiveness = 0.1
 			global_trade_goods_size_modifier = 0.2
-			manpower_in_primary_culture_province = 0.3
+			manpower_in_own_culture_provinces = 0.3
 		}
 
 		#what effects happen when this tier is achieved
