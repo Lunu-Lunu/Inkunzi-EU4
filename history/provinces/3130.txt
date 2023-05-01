@@ -1,14 +1,11 @@
 # Placeholder
-
 owner = B79
 controller = B79
 add_core = B79
 culture = tavasian
-1444.11.11 = { set_province_flag = hesh_province }
 religion = tribal_faith
-hre = no
-base_tax = 4 
-base_production = 4
+base_tax = 3
+base_production = 2
 base_manpower = 5
 trade_goods = tobacco
 capital = "Central Tavas"

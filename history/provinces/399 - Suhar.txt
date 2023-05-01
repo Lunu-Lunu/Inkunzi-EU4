@@ -1,15 +1,12 @@
 # Placeholder
-
 owner = A28
 controller = A28
 add_core = A28
 culture = kido
-1444.11.11 = { set_province_flag = human_province }
 religion = mashia
-hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
+base_tax = 5
+base_production = 4
+base_manpower = 4
 trade_goods = unknown
 capital = "Placeholder"
 is_city = yes

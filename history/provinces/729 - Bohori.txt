@@ -1,16 +1,13 @@
 # Slakia
-
 owner = A42
 controller = A42
 add_core = A42
 add_core = A65
 culture = helghian
-1444.11.11 = { set_province_flag = human_province }
 religion = dark_valor
-hre = no
-base_tax = 3 
-base_production = 3
-base_manpower = 4
+base_tax = 4
+base_production = 4
+base_manpower = 5
 trade_goods = grain
 capital = "Slakia"
 is_city = yes

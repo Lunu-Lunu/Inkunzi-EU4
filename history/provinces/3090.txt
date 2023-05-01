@@ -1,15 +1,12 @@
 # Placeholder
-
 owner = B63
 controller = B63
 add_core = B63
 culture = cowpal
-1444.11.11 = { set_province_flag = human_province }
 religion = tribal_faith
-hre = no
-base_tax = 6 
+base_tax = 6
 base_production = 7
-base_manpower = 7
+base_manpower = 6
 trade_goods = cocoa
 capital = "Brechuan"
 is_city = yes

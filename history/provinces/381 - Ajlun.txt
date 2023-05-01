@@ -1,15 +1,12 @@
 # Placeholder
-
 owner = A27
 controller = A27
 add_core = A27
 culture = nimbus
-1444.11.11 = { set_province_flag = nimbus_province }
 religion = onwinnen_whihcan
-hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
+base_tax = 4
+base_production = 4
+base_manpower = 4
 trade_goods = unknown
 capital = "Placeholder"
 is_city = yes

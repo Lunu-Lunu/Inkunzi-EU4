@@ -1,15 +1,12 @@
 # Placeholder
-
 owner = A32
 controller = A32
 add_core = A32
 add_core = P04
 culture = iran
-1444.11.11 = { set_province_flag = human_province }
 religion = turriyahism
-hre = no
-base_tax = 1 
-base_production = 1
+base_tax = 1
+base_production = 2
 base_manpower = 1
 trade_goods = unknown
 capital = "Placeholder"

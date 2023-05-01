@@ -1,15 +1,12 @@
 # Placeholder
-
 owner = A37
 controller = A37
 add_core = A37
 culture = bosem
-1444.11.11 = { set_province_flag = human_province }
 religion = turriyahism
-hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
+base_tax = 6
+base_production = 5
+base_manpower = 6
 trade_goods = unknown
 capital = "Placeholder"
 is_city = yes

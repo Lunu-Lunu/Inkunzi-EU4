@@ -1,15 +1,12 @@
 # Placeholder
-
 owner = A29
 controller = A29
 add_core = A29
 culture = ulian
-1444.11.11 = { set_province_flag = golem_province }
 religion = turriyahism
-hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
+base_tax = 6
+base_production = 6
+base_manpower = 5
 trade_goods = unknown
 capital = "Placeholder"
 is_city = yes

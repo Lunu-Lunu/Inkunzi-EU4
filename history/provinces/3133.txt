@@ -1,15 +1,12 @@
 # Placeholder
-
 owner = B77
 controller = B77
 add_core = B77
 culture = vorasian
-1444.11.11 = { set_province_flag = hesh_province }
 religion = tribal_faith
-hre = no
-base_tax = 4 
+base_tax = 4
 base_production = 5
-base_manpower = 4
+base_manpower = 6
 trade_goods = naval_supplies
 capital = "Voras"
 is_city = yes
