@@ -556,7 +556,6 @@ pirate_republic = {
 			has_port = yes
 			OR = {
 				province_is_on_an_island = yes
-				region = maghreb_region
 			}
 		}
 		NOT = { technology_group = andean }
@@ -620,7 +619,6 @@ pirate_kingdom = {
 			has_port = yes
 			OR = {
 				province_is_on_an_island = yes
-				region = maghreb_region
 			}
 		}
 	}
@@ -715,7 +713,6 @@ black_market_consortium_government = {
 			has_port = yes
 			OR = {
 				province_is_on_an_island = yes
-				region = maghreb_region
 			}
 		}
 	}
@@ -1412,7 +1409,6 @@ native_council_legacy = {
 				continent = north_america
 				continent = south_america
 				continent = new_world
-				region = australia_region
 			}
 		}
 	}
@@ -1818,15 +1814,7 @@ celestial_empire_legacy = {
 	allow_convert = no
 	start_territory_to_estates = 0.9
 	nation_designer_trigger = {
-		culture_group = east_asian
-		technology_group = chinese
-		capital_scope = {
-			OR = {
-				region = north_china_region
-				region = xinan_region
-				region = south_china_region
-			}
-		}
+		always = no
 	}
 	factions = {
 		temples
@@ -2008,10 +1996,7 @@ indian_sultanate_legacy = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	nation_designer_trigger = {
-		capital_scope = {
-			superregion = india_superregion
-		}
-		religion_group = muslim
+		always = no
 	}
 
 	monarchy = yes
