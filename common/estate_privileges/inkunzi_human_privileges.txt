@@ -1,0 +1,288 @@
+
+
+estate_humans_land_rights = {
+	icon = privilege_grant_autonomy
+	land_share = 5
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	loyalty = 0.05
+	influence = 0.05
+	can_select = {
+	}
+	on_granted = {
+	}
+	penalties = {
+	}
+	benefits = {
+		governing_capacity = 100
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 1.4
+			num_of_territories = 5
+		}
+		modifier = {
+			factor = 1.5
+			num_of_territories = 10
+		}
+		modifier = {
+			factor = 1.5
+			num_of_territories = 15
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { crown_land_share = 25 }
+				estate_influence = {
+					estate = estate_humans
+					influence = 75
+				}
+			}
+			NOT = { has_estate_privilege = estate_humans_land_rights }
+		}
+		modifier = {
+			factor = 0
+			NOT = { governing_capacity_percentage = 0.5 }
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				NOT = { crown_land_share = 40 }
+				AND = {
+					is_absolutism_active = yes
+					NOT = { crown_land_share = 60 }
+				}
+			}
+			NOT = { has_estate_privilege = estate_humans_land_rights }
+		}
+		modifier = {
+			factor = 0.8
+			OR = {
+				NOT = { crown_land_share = 30 }
+				AND = {
+					is_absolutism_active = yes
+					NOT = { crown_land_share = 50 }
+				}
+			}
+			NOT = { has_estate_privilege = estate_humans_land_rights }
+		}
+		modifier = {
+			factor = 3
+			OR = {
+				AND = {
+					governing_capacity_percentage = 0.9
+					NOT = { has_estate_privilege = estate_humans_land_rights }
+				}
+				#The trigger below should make sure that the AI actually keeps this privilege when enacting it early game
+				AND = {
+					governing_capacity_percentage = 0.6
+					has_estate_privilege = estate_humans_land_rights
+				}
+			}
+		}
+		modifier = {
+			factor = 0.8
+			is_absolutism_active = yes
+		}
+		modifier = {
+			factor = 2
+			governing_capacity_percentage = 0.9
+		}
+		modifier = {
+			factor = 3
+			governing_capacity_percentage = 1
+		}
+		modifier = {
+			factor = 10
+			governing_capacity_percentage = 1.2
+		}
+		modifier = {
+			factor = 8
+			NOT = { adm_tech = 12 }
+			governing_capacity_percentage = 0.8
+		}
+		modifier = {
+			factor = 5
+			NOT = { adm_tech = 12 }
+			NOT = { government_rank = 1 }
+			governing_capacity_percentage = 0.65
+		}
+		#Has already a similar privilege active
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_nobles_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_church_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_maratha_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_burghers_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_vaisyas_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_cossacks_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_nomadic_tribes_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_dhimmi_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_jains_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_rajput_land_rights
+		}
+		modifier = {
+			factor = 0.75
+			has_estate_privilege = estate_ourk_land_rights
+		}
+	}
+}
+
+estate_humans_elevate_mikhil_shipwrights = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		NOT = { primary_culture = ukabururn }
+		any_owned_province = { culture = ukabururn }
+	}
+	can_select = {
+		accepted_culture = ukabururn
+	}
+	on_granted = {
+		
+	}
+	penalties = {
+		naval_maintenance_modifier = 0.05
+	}
+	benefits = {
+		ship_durability = 0.05
+		navy_tradition_decay = -0.005
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOT = {
+				development_in_provinces = {
+					value = 50
+					culture = ukabururn
+				}
+			}
+		}
+	}
+}
+
+estate_humans_protect_wesrokhil_miners_guilds = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		NOT = { primary_culture = wesrokhil }
+		any_owned_province = { culture = wesrokhil }
+	}
+	can_select = {
+		accepted_culture = wesrokhil
+	}
+	on_granted = {
+		
+	}
+	penalties = {
+		state_maintenance_modifier = 0.05
+	}
+	benefits = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOT = {
+				development_in_provinces = {
+					value = 50
+					culture = wesrokhil
+				}
+			}
+		}
+	}
+}
+
+estate_humans_elevate_obenic_clergymen = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		NOT = { primary_culture = obenic }
+		any_owned_province = { culture = obenic }
+	}
+	can_select = {
+		accepted_culture = obenic
+	}
+	on_granted = {
+		
+	}
+	penalties = {
+		ourk_loyalty_modifier = -0.05
+		centaurs_loyalty_modifier = -0.05
+		draconic_loyalty_modifier = -0.05
+		nimbus_loyalty_modifier = -0.05
+		crabs_loyalty_modifier = -0.05
+		shrooms_loyalty_modifier = -0.05
+		golems_loyalty_modifier = -0.05
+		elves_loyalty_modifier = -0.05
+		goblins_loyalty_modifier = -0.05
+		lizards_loyalty_modifier = -0.05
+		moths_loyalty_modifier = -0.05
+		sia_si_loyalty_modifier = -0.05
+		gnetans_loyalty_modifier = -0.05
+		furries_loyalty_modifier = -0.05
+		frogs_loyalty_modifier = -0.05
+		dwarves_loyalty_modifier = -0.05
+		rats_loyalty_modifier = -0.05
+		goats_loyalty_modifier = -0.05
+		hesh_loyalty_modifier = -0.05
+		snakes_loyalty_modifier = -0.05
+		apes_loyalty_modifier = -0.05
+		ents_loyalty_modifier = -0.05
+	}
+	benefits = {
+		missionaries = 1
+		church_loyalty_modifier = 0.05
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOT = {
+				development_in_provinces = {
+					value = 50
+					culture = wesrokhil
+				}
+			}
+		}
+	}
+}

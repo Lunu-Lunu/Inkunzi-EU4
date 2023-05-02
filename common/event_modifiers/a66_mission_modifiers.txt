@@ -1,3 +1,18 @@
+porian_meritocracy_interaction_1_modifier = {
+	production_efficiency = 0.15
+	global_prosperity_growth = 0.25
+}
+porian_meritocracy_interaction_2_modifier = {
+	army_tradition_from_battle = 1
+	naval_tradition_from_battle = 1
+	leader_cost = -0.1
+}
+porian_meritocracy_interaction_3_modifier = {
+	candidate_random_bonus = 1
+	monthly_reform_progress_modifier = 0.1
+}
+
+
 A66_humiliation_in_xuaze = {
 	republican_tradition = -1
 	legitimacy = -1

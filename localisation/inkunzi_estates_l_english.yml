@@ -34,6 +34,7 @@
   estate_humans_land_rights:0 "$ESTATE_NAME$ Land Rights"
   estate_humans_elevate_mikhil_shipwrights:0 "Elevate Mikhil Shipwrights"
   estate_humans_protect_wesrokhil_miners_guilds:0 "Protect Wesrokhil Mining Guilds"
+  estate_humans_elevate_obenic_clergymen:0 "Elevate Obenic Clergymen"
   estate_centaurs:0 "Centaurs"
   centaurs_loyalty_modifier:1 "[Country.GetCentaursName] Loyalty Equilibrium"
   centaurs_influence_modifier:0 "[Country.GetCentaursName] Influence"

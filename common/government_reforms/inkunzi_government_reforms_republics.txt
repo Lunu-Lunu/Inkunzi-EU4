@@ -26,6 +26,9 @@ porian_meritocracy_reform = {
 			blocked_call_diet = yes
 		}
 	}
+	government_abilities = {
+		porian_meritocracy_mechanic
+	}
 	custom_attributes = {
 		locked_government_type = yes
 		enables_plutocratic_idea_group = yes

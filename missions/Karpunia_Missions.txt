@@ -26,12 +26,12 @@ karpunia_column_2 = {
 		}
 		trigger = {
 			has_disaster = A66_karpunian_military_stagnation
-			treasury = 250
+			years_of_income = 2.5
 			NOT = { num_of_mercenaries = 1 has_country_modifier = A66_military_reform }
 		}
 		effect = {
 			log = "[Root.GetName]: Mission karpunia_mission_renegotiate_mercenary_contracts"
-			add_treasury = -250
+			add_years_of_income = -2.5
 			country_event = { id = karpunia_military_stagnation.5 }
 		}
 	}
@@ -76,12 +76,12 @@ karpunia_column_3 = {
 		}
 		trigger = {
 			has_disaster = A66_karpunian_military_stagnation
-			treasury = 100
+			years_of_income = 1
 			mil_power = 100
 		}
 		effect = {
 			log = "[Root.GetName]: Mission karpunia_mission_investigate_the_humiliation"
-			add_treasury = -100
+			add_years_of_income = -1
 			add_mil_power = -100
 			country_event = { id = karpunia_military_stagnation.3 }
 		}
@@ -120,14 +120,14 @@ karpunia_column_3 = {
 		}
 		trigger = {
 			has_disaster = A66_karpunian_military_stagnation
-			has_treasury = 500
+			years_of_income = 5
 			mil_power = 250
 			stability = 0
 			NOT = { has_country_modifier = A66_military_reform }
 		}
 		effect = {
 			log = "[Root.GetName]: Mission karpunia_mission_core_of_the_problem"
-			add_treasury = -500
+			add_years_of_income = -5
 			add_mil_power = -250
 			add_stability = -1
 			country_event = { id = karpunia_military_stagnation.11 }
@@ -153,23 +153,39 @@ karpunia_column_4 = {
 		}
 		trigger = {
 			has_disaster = A66_karpunian_military_stagnation
-			any_known_country = {
-				has_opinion = {
-					who = ROOT
-					value = 150
+			OR = {
+				any_known_country = {
+					has_opinion = {
+						who = ROOT
+						value = 150
+					}
+					OR = {
+						culture_group = gnetan_group
+						culture_group = sia_si_group
+					}
 				}
-				OR = {
-					culture_group = gnetan_group
-					culture_group = sia_si_group
-				}
+				mil_tech = 10
 			}
-			treasury = 250
+			years_of_income = 2.5
 			NOT = { has_country_modifier = A66_military_reform }
 		}
 		effect = {
 			log = "[Root.GetName]: Mission karpunia_mission_study_gnetan_designs"
-			add_treasury = -250
+			add_years_of_income = -2.5
 			country_event = { id = karpunia_military_stagnation.9 }
+			set_variable = {
+				which = sendMoneyVar
+				value = 0
+			}
+			export_to_variable = {
+				which = sendMoneyVar
+				value = years_of_income
+				who = ROOT
+			}
+			multiply_variable = {
+				which = sendMoneyVar
+				value = 2.5
+			}
 			random_known_country = {
 				limit = {
 					has_opinion = {
@@ -181,7 +197,7 @@ karpunia_column_4 = {
 						culture_group = sia_si_group
 					}
 				}
-				add_treasury = 250
+				add_treasury = variable:sendMoneyVar
 			}
 		}
 	}
