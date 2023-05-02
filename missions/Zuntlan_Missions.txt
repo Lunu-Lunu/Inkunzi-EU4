@@ -1,638 +1,431 @@
-#
-#Econmey focuses need to be done and Crabian path might be expanded on once future crabian content is done. Swamp missions need their events to be done 
-#
-Zuntlan_Collom_4= {
-    slot = 4                  
-    generic = no           
-    ai = yes                 
-    has_country_shield = yes.    
+### Made by yours truly
 
-    potential = {
-        tag = B16
-    }
-
-	Zuntlan_Saq_to_nuts = {
-		icon = mission_ottoman_harem 
-        generic = no
-        position = 1
-
+zuntlan_column_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = B16
+	}
+	has_country_shield = yes
+	
+	zuntlan_southern_sternhel = {
+		icon = mission_ottoman_harem
+		position = 3
 		required_missions = {
-            
-        }
-        
-        provinces_to_highlight = {
-          
-        }
-        trigger = {
-			naval_forcelimit = B16
-			has_heir = no 
-			navy_size = 15
-			#hidden_trigger = {
-			#	is_year = 1455
-			#}
+			zuntlan_new_empire
 		}
-		effect = {
-		define_heir = {
-		dynasty = "Saq'to"
-		age = 20
-		adm = 5
-		dip = 4
-		mil = 6
-		claim = 80
-		name = "Saq'to III"
-		male = yes 
-		no_consort_with_heir = yes
-		}
-		define_admiral = {
-		name = "Saq'to II"
-		shock = 4
-		fire = 3
-		manuever = 4
-		siege = 2
-			}
-
-		}
-	}
-	
-	Zuntlan_Purple_1 = {
-		icon = mission_ottoman_harem 
-        generic = no
-        position = 2 
-
-		required_missions = {
-            
-        }
-        
-        provinces_to_highlight = {
-          
-        }
-        trigger = {
-			2419 = {
-				trade_share = {
-					country = ROOT
-					share = 55
-				}
-			}
-		}
-		effect = {
-			#custome or generic trade modifier
-			add_mercantilism = 1
-		}
-	
-	}
-	Zuntlan_Purple_2 = {
-		icon = mission_ottoman_harem 
-        generic = no
-        position = 3
-
-		required_missions = {
-            Purple_1
-        }
-        
-        provinces_to_highlight = {
-          
-        }
-        trigger = {
-			2419 = {
-				trade_share = {
-					country = ROOT
-					share = 90
-				}
-			}
-		light_ship_fraction = 0.25
-		
-		}
-		effect = {
-		trade_efficiency = 0.25
-		prestige = 15
-		
-		}
-	}	
-	
-}
-
-
-Zuntlan_Collom_3= {
-    slot = 3                  
-    generic = no           
-    ai = yes                 
-    has_country_shield = yes.    
-
-    potential = {
-        tag = B16
-    }
-### :flushed: owo the begining 
-	Zuntlan_Crabia_Thing = {
-		icon = mission_ottoman_harem 
-        generic = no
-        position = 1
-        
-        required_missions = {
-            
-        }
-        provinces_to_highlight = {
-          
-        }
-        trigger = {
-		owns_core_province = 722 
-       }
-        effect = {
-			722 = {
-				add_core = B97
-			}
-			country_event = {
-				id = zuntlan.3
-				days = 10
-			}
-        }
-	}
-	
-	Zuntlan_Crabia_Pirates = {
-		icon = mission_ottoman_harem 
-        generic = no
-        position = 2
-        required_missions = {
-		
-          Zuntlan_Crabia_Thing
-		  
-        }
-        provinces_to_highlight = {
-          
-        }
-        trigger = {
-			has_privateers = yes
-			
-			#uhhhhh
-        }
-        effect = {
-			country_event = { 
-				id = zuntlan.5
-				days = 15
-			}				
-        }
-	}
-	Zuntlan_Gurdian_of_Crabs = {
-        icon = mission_ottoman_harem
-        generic = no
-        position = 6
-        
-        required_missions = {
-			Zuntlan_leave_swamps
-			Zuntlan_Crabia_Pirates
-        }
-        
-
-        provinces_to_highlight = {
-
-        }
-    
-      
-        trigger = {
-        owns_or_non_sovereign_subject_of = 722
-		#uhhhhh, idk something else should probbably be here
-		
-        }
-        
-        
-        effect = {
-		country_event = { 
-			id = zuntlan.4
-			days = 15
-			}
-		}
-	
-	}	
-}
-	
-
-
-Zuntlan_Collom_2 = {
-    slot = 2                    
-    generic = no           
-    ai = yes                 
-    has_country_shield = yes.    
-    
-    potential = {
-        tag = B16
-    }
-    
-	
-    Zuntlan_Jewel_Ulpek = {
-        icon = mission_ottoman_harem 
-        generic = no
-        position = 1 
-        
-        required_missions = {
-            
-        }
-        
-       
-        provinces_to_highlight = {
-           OR = {
-				owned_by = a64
-				province_id = 724
-				province_id = 725
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-        }
-    
-
-        trigger = {
-		
-            owns_core_province = 724
-			owns_core_province = 725
-        }
-        
-        
-        effect = {
-			
-            add_permanent_claim = 720
-			add_permanent_claim = 721
-			add_permanent_claim = 722
-			add_permanent_claim = 2379
-			
-        }
-    }
-	
-    Zuntlan_Striving_Greater = {
-        icon = mission_ottoman_harem
-        generic = no
-        position = 2
-        
-        required_missions = {
-            Zuntlan_Jewel_Ulpek
-        }
-        
-
-        provinces_to_highlight = {
-
-        }
-    
-      
-        trigger = {
-            owns_core_province = 720
-			owns_core_province = 721
-			owns_or_subject_of = 722
-        }
-        
-        
-        effect = {
-			sternhell_area = {
-				add_permanent_claim = B16
-			}
-			sternhell2_area = {
-				add_permanent_claim = B16
-			}
-
-			azvondenia_area = {
-				add_permanent_claim = B16
-			}
-
-			plakia_area = {
-				add_permanent_claim = B16
-			}
-
-			ostkurtaia_area = {
-				add_permanent_claim = B16
-			}
-
-			neualhof_area = {
-				add_permanent_claim = B16
-			}
-
-			hyallicand_area = {
-				add_permanent_claim = B16
-			}
-		
-		}
-	}
-	
-	Zuntlan_sternhell_north = {
-        icon = mission_ottoman_harem
-        generic = no
-        position = 3
-        
-        required_missions = {
-            Zuntlan_Striving_Greater
-        }
-        
-
-        provinces_to_highlight = {
+		provinces_to_highlight = {
 			OR = {
-				area = sternhell_area
 				area = plakia_area
-				area = azvondenia_area
-				area = sternhell2_area
+				area = neualhof_area
+				area = hyallicand_area
+				area = ostkurtaia_area
+				area = kurrland_area
 			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }			
-        }
-    
-      
-        trigger = {
-         num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 2 
-				OR = {
-					area = sternhell_area
-				}
-			}
-         num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 1
+			NOT = { owns = ROOT }
+			
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 15
 				OR = {
 					area = plakia_area
-				}
-			}			
-		 azvondenia_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
-		 sternhell2_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+					area = neualhof_area
+					area = hyallicand_area
+					area = ostkurtaia_area
+					area = kurrland_area
+				}	
+			
+			}
+		}
+		effect = {
+			country_event = {
+				id = zuntlan.2
+				days = 30
+				random = 15
+			}
+		}
+	}	
+}
+zuntlan_column_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = B16
+	}
+	has_country_shield = yes
 	
-        }
-        
-        
-        effect = {
+	zuntlan_new_empire = {
+		icon = mission_ottoman_harem
+		position = 2
+		required_missions = {
+			zuntlan_uplek_isle
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 721
+				province_id = 722
+			}
+		}
+		trigger = {
+			owns = 721
+			owns = 722
+		}
+		effect = {
+			Sternhell_region = {
+				add_claim = B16
+			}
+		}
+	}
+	zuntlan_northern_sternhel = {
+		icon = mission_ottoman_harem
+		position = 3
+		required_missions = {
+			zuntlan_new_empire
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = azvondenia_area
+				area = sternhell_area
+				area = sternhell2_area
+			}
+			NOT = { owns = ROOT }
+		}
+		trigger = {
+         num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 7 
+				OR = {
+					area = sternhell_area
+					area = sternhell2_area
+					area = azvondenia_area
+				}
+			}
+		}
+		effect = {
 			country_event = { 
-			id = zuntlan.2
-			days = 10	
-			}
-		}
-	
-	}
-	
-	Zuntlan_empire_pog = {
-        icon = mission_ottoman_harem
-        generic = no
-        position = 4
-        
-        required_missions = {
-			
-			Zuntlan_sternhell_south
-            Zuntlan_sternhell_north
-        }
-        
-
-        provinces_to_highlight = {
-
-        }
-    
-      
-        trigger = {
-
-				
-			    
-        }
-        
-        
-        effect = {
-	
-		override_country_name = ZUNTLANI_EMPIRE
-		add_prestige = 40
-	
-		}
-	}
-	
-	Zuntlan_leave_swamps = {
-        icon = mission_ottoman_harem
-        generic = no
-        position = 5
-        
-        required_missions = {
-			
-        }
-        
-
-        provinces_to_highlight = {
-
-        }
-    
-        trigger = {
-			is_claim = 2379
-			stability = 2
-			AND = {
-				army_size = B15
-				army_size = B14
-				army_size = A04
-				
-			}
-			
-        }
-             
-        effect = {
-			survalsia2_area = {
-				add_permanent_claim = B16
-			}
-			rekolia_area = {
-				add_permanent_claim = B16
-			}
-			rekolia9_area = {
-				add_permanent_claim = B16
-			}
-		}
-	}
-	
-		revenge_of_the_thixis = {
-			icon = mission_ottoman_harem
-			generic = no
-			position = 6
-        
-			required_missions = {
-				Zuntlan_leave_swamps
-			}
-        
-
-			provinces_to_highlight = {
-
-			}
-    
-			trigger = {
-			owns_core_province = 2379
-				rekolia9_area = {
-				type = all 
-				country_or_non_sovereign_subject_holds = ROOT
-				}
-			}
-             
-			effect = {
-				country_event  = {
-					id = thixi.1
-					days = 30
-					random = 15
-				}
-				surveria10_area = {
-					add_permanent_claim = ROOT
-				}
-			}
-	}
-	
-	Zuntlan_Stabbing_At_A_Friend = {
-        icon = mission_ottoman_harem
-        generic = no
-        position = 6
-        
-        required_missions = {
-			revenge_of_the_thixis
-        }
-        
-
-        provinces_to_highlight = {
-
-        }
-    
-        trigger = {
-			surveria10_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }		
-			
-			
-        }
-             
-        effect = {
-			surveria9_area = {
-				add_permanent_claim = ROOT
-			}
-			surveria11_area = {
-				add_permanent_claim = ROOT
-			}
-			country_event  = {
-				id = zuntlan.6
+				id = zuntlan.1
 				days = 30
 				random = 15
 			}
 		}
 	}
-	
+	zuntlan_greater_state = {
+		icon = mission_ottoman_harem
+		position = 3
+		required_missions = {
+			zuntlan_northern_sternhel
+			zuntlan_southern_sternhel
+		}
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+			prestige = 80
+			total_development = 300 
+		}
+		effect = {
+			set_global_flag = z_greater_state
+			if = {
+				limit = {
+					has_global_flag = z_empire
+				}
+				override_country_name = ZUNTLAN_G_E
+			}
+			else = {
+				override_country_name = ZUNTLAN_G
+			}
+			add_country_modifier = {
+				name = our_ambitions
+				duration = -1
+				desc = OUR_AMBITIONS_DESC_TOOLTIP
+			}
+		}
+	}
 }
+zuntlan_column_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = B16
+	}
+	has_country_shield = yes
+	
+	zuntlan_uplek_isle = {
+		icon = mission_ottoman_harem
+		position = 1
+		required_missions = {
+			
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 724
+				province_id = 725
+			}
+		}
+		trigger = {
+			owns = 724
+			owns = 725
+		}
+		effect = {
+			every_neighbor_province = {
+				limit = {
+					OR = {
+						country_or_non_sovereign_subject_holds = B14
+						country_or_non_sovereign_subject_holds = B15
+					}
+				}
+				add_claim = B16
+			}
+			721 = {
+				add_permanent_claim = B16
+			}
+			722 = {
+				add_permanent_claim = B16
+			}
+			add_country_modifier = { 
+				name = jewel_uplek
+				duration = 25  
+				desc = JEWEL_UPLEK_DESC_TOOLTIP
+				hidden = no
+			}
+		}
+	}
+	zuntlan_or_old = {
+		icon = mission_ottoman_harem
+		position = 2
+		required_missions = {
+				zuntlan_uplek_isle
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 2379
+				province_id = 2347
+				province_id = 2378
+				province_id = 2377
+				province_id = 2375
+				province_id = 2374
+				province_id = 2373
+				province_id = 2370
+			}
+			NOT = { country_or_non_sovereign_subject_holds = B16 }
 
-Zuntlan_Collom_1= {
-    slot = 1                  
-    generic = no           
-    ai = yes                 
-    has_country_shield = yes.    
-
-    potential = {
-        tag = B16
-    }
-
-	Zuntlan_sternhell_south = {
-        icon = mission_ottoman_harem
-        generic = no
-        position = 3
-        
-        required_missions = {
-            Zuntlan_Striving_Greater
-        }
-       
-        provinces_to_highlight = {
-		
-        }
-    
-      
-        trigger = {
-		
-            num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 2
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 6
 				OR = {
-					area = plakia_area
+					is_core = B15
+					is_core = B14
 				}
 			}
-			
-			ostkurtaia_area = { type = all country_or_non_sovereign_subject_holds = ROOT }			
-			hyallicand_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
-			neualhof_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
-			kurrland_area = { type = all country_or_non_sovereign_subject_holds = ROOT }
-
-			
-       }
-       
-        
+			#AND = {
+				#owns_or_non_sovereign_subject_of = 2379
+				#owns_or_non_sovereign_subject_of = 2347	
+			#}
+		}
 		effect = {
-	
-			country_event = { 
-				id = zuntlan.1
+			rekolia_area = {
+				add_claim = B16
+			}
+			rekolia2_area = {
+				add_claim = B16
+			}
+			rekolia6_area = {
+				add_claim = B16
+			}
+			rekolia8_area = {
+				add_claim = B16
+			}
+			rekolia9_area = {
+				add_claim = B16
+			}
+			surverian10_area = {
+				add_claim = B16
+			}
+			survalsia2_area = {
+				add_claim = B16
+			}
+			survalsia3_area = {
+				add_claim = B16
+			}
+			survalsia_area = {
+				add_claim = B16
+			}
+		}
+	}
+	zuntlan_thixi_revenge = {
+		icon = mission_ottoman_harem
+		position = 2
+		required_missions = {
+				zuntlan_or_old
+		}
+		provinces_to_highlight = {
+
+
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 16
+				OR = {
+				culture = inner_rekolian
+				culture = outer_rekolian
+				}
+			}
+		}
+		effect = {
+			country_event = {
+				id zuntlan.3
 				days = 10
+				random = -5
+				random = 5
 			}
-		
-		}	
-	
-	}
-	
-	Zuntlan_Survalsia_Stakes = {
-		icon = mission_ottoman_harem
-		generic = no
-		position = 6
-        
-        required_missions = {
-			Zuntlan_leave_swamps
-        }
-        
-
-        provinces_to_highlight = {
-
-        }
-    
-        trigger = {
-			survalsia2_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
+			every_province = {
+				limit = {
+					OR = {
+						culture = inner_rekolian
+						culture = outer_rekolian
+					}
+				}
+				add_claim = B16
 			
-        }
-             
-        effect = {
-			surveria3_area = {
-				add_permanent_claim = ROOT
 			}
-			surveria_area = {
-				add_permanent_claim = ROOT
-			}			
 		}
 	}
+	zuntlan_old_friend = {
+		icon = mission_ottoman_harem
+		position = 2
+		required_missions = {
+				zuntlan_thixi_revenge
+				zuntlan_westarians_tears
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = surveria10_area
+				area = surveria11_area
+				area = surveria9_area
+				area = surveria8_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = B16 }
+		}
+		trigger = {
+			owns = surveria10_area
+			owns = surveria11_area
+			owns = surveria9_area
+			owns = surveria8_area
+		}
+		effect = {
+			set_global_flag = sz_union_available
+		}
+	}
+	zuntlan_union_or_empire = {
+		icon = mission_ottoman_harem
+		position = 2
+		required_missions = {
+			zuntlan_old_friend
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = surveria10_area
+				area = surveria11_area
+				area = surveria9_area
+				area = surveria8_area
+				area = survalsia4_area 
+				area = survalsia5_area
+				province_id = 65
+				province_id = 88
+				province_id = 87
+			}
+			NOT = { country_or_non_sovereign_subject_holds = B16 }
+		}
+		trigger = {
+			prestige = 90
+			B16 = {
+			owns_all_provinces = {
+				area = surveria10_area
+				area = surveria11_area
+				area = surveria9_area
+				area = surveria8_area
+				area = survalsia4_area 
+				area = survalsia5_area
+				owns = 65
+				owns = 88
+				owns = 87
+			}
+			}
+			 
+		}
+		effect = {
+			country_event = {
+				    id = zuntlan.5
+					days = 30
+					random = 15
+			}
+			add_country_modifier = {
+				name = footsteps_forefathers
+				duration = -1  
+				desc = FOOTSETPS_FOREFATHERS_DESC_TOOLTIP
+			}
+		}
+	}	
+}
+zuntlan_column_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = B16
+	}
+	has_country_shield = yes
 	
-	Zuntlan_Survalsia_Take_Down = {
+	zuntlan_westarians_tears = {
 		icon = mission_ottoman_harem
-		generic = no
-		position = 7
-        
-        required_missions = {
-			Zuntlan_Survalsia_Stakes
-        }
-        
-
-        provinces_to_highlight = {
-
-        }
-		
-        trigger = {
-			survalsia3_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
-			survalsia_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
-        }
-		
-        effect = {
-			#event like metion in the last 2 things
+		position = 3
+		required_missions = {
+				zuntlan_or_old
 		}
-
-	}
-	Zuntlan_Surverian_Union = {
-		icon = mission_ottoman_harem
-		generic = no
-		position = 8
-        
-        required_missions = {
-			Zuntlan_Survalsia_Take_Down
-			Zuntlan_Stabbing_At_A_Friend
-        }
-        
-
-        provinces_to_highlight = {
-
-        }
-		
-        trigger = {
-			army_size = 45
-			legitimacy = 80
-			surveria9_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
-			surveria11_area = { type = all	country_or_non_sovereign_subject_holds = ROOT }
-        }
-        effect = {
-			add_casus_belli = {
-				type = cb_restore_personal_union
-				months = 360
-				target = A04
+		provinces_to_highlight = {
+			OR = {
+				area = survalsia2_area
+				area = survalsia3_area
+				area = survalsia_area
 			}
-			# this unlocks a deccison to make a formable, guess wich one, it involves surveria 
+			NOT = { country_or_non_sovereign_subject_holds = B16 }
 		}
-
+		trigger = {
+			owns = survalsia2_area
+			owns = survalsia3_area
+			owns = survalsia_area
+		}
+		effect = {
+			prestige = 40
+			survalsia4_area = {
+				add_claim = B16
+			}
+			survalsia5_area = {
+				add_claim = B16
+			}
+			65 = {
+				add_claim = B16
+			}
+			88 = {
+				add_claim = B16
+			}
+			87 = {
+				add_claim = B16
+			}
+		}
+	}	
+	
+}
+zuntlan_column_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = B16
 	}
+	has_country_shield = yes
 }

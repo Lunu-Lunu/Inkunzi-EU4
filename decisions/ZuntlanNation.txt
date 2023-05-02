@@ -3,24 +3,22 @@ country_decisions = {
 		major = yes
 		potential = {
 			tag = B16
-			mission_completed = survairan_union
-			NOT = { has_country_flag = zun_survian_union }
+			has_global_flag = sz_union_available
+			
 		}
 		allow = {
-			A04 = {
-				all_core_province = { 
-					owned_by = B16
-				}				
+			OR = {
+				NOT = { exists = B14 }
+				NOT = { exists = B16 }
 			}
+			owns = 2343
+			owns = 2419
+			owns = 2381
+			owns = 100
+			#NOT = { }
 		}
 		effect = {
-			set_country_flag = zun_survian_union
-			override_country_name = Survian_union
-			add_prestige = 45
-			set_country_flag = Survian_union
-			add_accepted_culture = survalsian
+			change_tag = F03
 		}
-
 	}
-
 }

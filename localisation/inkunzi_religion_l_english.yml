@@ -33,9 +33,9 @@
  old_ones_rebels_name:0 "$RELIGION$ Zealots"
  old_ones_rebels_desc:0 "Religious fanatics tend to rise up in provinces controlled by nations of a different faith. They seek to spread their faith and smite all unbelievers."
  old_ones_rebels_army:0 "$RELIGION$ Army"
- great_temple_city:0 "Great Temple City"
- great_temple_city_title:0 "Great Temple City"
- great_temple_city_desc:0 "The temple cities of the Old Ones were excellent pieces of architecture, created to spread the written prophecy of Old Ones faith."
+ temple_city:0 "Temple City"
+ temple_city_title:0 "Temple City"
+ temple_city_desc:0 "The temple cities of the Old Ones were excellent pieces of architecture, created to spread the written prophecy of Old Ones faith."
 
  medvedeni_group:0 "Medvedeni"
  medvedeni:0 "Medvedeni"

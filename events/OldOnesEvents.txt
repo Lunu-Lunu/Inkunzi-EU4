@@ -68,7 +68,10 @@ province_event = {
 				religion = old_ones
 			}
 		}
-		has_province_modifier = great_temple_city
+		OR = {
+			has_province_modifier = temple_city
+			has_province modifier = great_temple_city
+		}
 		religion = old_ones
 	}
 	immediate = {
@@ -119,7 +122,7 @@ country_event = {
 			add_base_tax = 2
 			add_base_production = 1
 			add_base_manpower = 1
-			add_province_modifier = great_temple_city
+			add_province_modifier = temple_city
 		}
 	}
 	option = {

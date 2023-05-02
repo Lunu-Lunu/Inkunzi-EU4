@@ -277,6 +277,7 @@ R08 = "countries/Kylvaa Kseryss.txt"
 
 ### Formables ###
 F01 = "countries/Hesh.txt"
+F03 = "countries/Zuntlan Surerian Union.txt"
 
 ### Releasables ###
 P00 = "countries/Aroluenne.txt"
