@@ -3409,7 +3409,7 @@ landlas_military_institute = {
 		owner = {
 			OR = {
 				culture_group = palmer_group
-				full_idea_group = innovative_ideas
+				full_idea_group = innovativeness_ideas
 			}
 		}
 	}
@@ -3431,7 +3431,7 @@ landlas_military_institute = {
 		owner = {
 			OR = {
 				culture_group = palmer_group
-				full_idea_group = innovative_ideas
+				full_idea_group = innovativeness_ideas
 			}
 		}
 	}
@@ -3443,7 +3443,7 @@ landlas_military_institute = {
 		owner = {
 			OR = {
 				culture_group = palmer_group
-				full_idea_group = innovative_ideas
+				full_idea_group = innovativeness_ideas
 			}
 		}
 	}

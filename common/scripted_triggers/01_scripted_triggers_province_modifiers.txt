@@ -64,6 +64,10 @@ has_river_estuary_trigger = {
 			has_province_modifier = red_river_estuary_modifier
 			has_province_modifier = irrawaddy_estuary_modifier
 			has_province_modifier = kongo_estuary_modifier
+			has_province_modifier = amur_estuary_modifier
+			has_province_modifier = orinoco_estuary_modifier
+			#China
+			has_province_modifier = mng_bogue_modifier
 		}
 	}
 }
@@ -132,6 +136,9 @@ has_no_river_estuary_trigger = {
 			has_province_modifier = red_river_estuary_modifier
 			has_province_modifier = irrawaddy_estuary_modifier
 			has_province_modifier = kongo_estuary_modifier
+			has_province_modifier = amur_estuary_modifier
+			has_province_modifier = orinoco_estuary_modifier
+			has_province_modifier = mng_bogue_modifier
 		}
 	}
 }
@@ -152,6 +159,7 @@ province_with_special_goods_produced_trigger = {
 		has_province_modifier = bookmarket_of_x
 		has_province_modifier = grand_bank_fisheries
 		has_province_modifier = diamond_district
+		has_province_modifier = diamond_district2
 		has_province_modifier = jingdezhen_kilns
 		has_province_modifier = perfume_capital
 		has_active_triggered_province_modifier = cerro_rico_modifier
@@ -174,6 +182,7 @@ province_without_special_goods_produced_trigger = {
 		has_province_modifier = bookmarket_of_x
 		has_province_modifier = grand_bank_fisheries
 		has_province_modifier = diamond_district
+		has_province_modifier = diamond_district2
 		has_province_modifier = jingdezhen_kilns
 		has_province_modifier = perfume_capital
 		has_active_triggered_province_modifier = cerro_rico_modifier
@@ -183,14 +192,14 @@ province_without_special_goods_produced_trigger = {
 
 is_religious_center_province = {
 	OR = {
-		province_id = 1
-		province_id = 1
-		province_id = 1
-		province_id = 1
-		province_id = 1
-		province_id = 1
-		province_id = 1
-		province_id = 1
-		province_id = 1
+		province_id = 118
+		province_id = 2075
+		province_id = 2099
+		province_id = 677
+		province_id = 385
+		province_id = 2311
+		province_id = 409
+		province_id = 2221
+		province_id = 2095
 	}
 }
