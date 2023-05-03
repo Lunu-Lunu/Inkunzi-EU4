@@ -10,17 +10,6 @@ estate_ourk = {
 			has_country_flag = primary_ourk_nation
 			has_country_flag = ourks_accepted
 		}
-		NOT = { has_government_attribute = is_merchant_republic }
-		NOT = { has_reform = trading_city }
-		NOT = { is_revolutionary_republic_trigger = yes }
-		NOT = { government = native }
-		NOT = { has_reform = cossacks_reform }
-		NOT = { has_reform = siberian_tribe }
-		NOT = { has_reform = veche_republic }
-		NOT = { has_reform = celestial_empire }
-		NOT = { has_reform = pirate_republic_reform }
-		is_nomad = no
-		NOT = { has_reform = revolutionary_empire_reform }
 	}
 	custom_name = {
 		desc = estate_orukosu
@@ -54,9 +43,7 @@ estate_ourk = {
 		modifier = {
 			factor = 0
 			AND = {
-				NOT = { culture = ourkani }
-				NOT = { culture = paak_ourk }
-				NOT = { culture = grokish}
+				NOT = { is_ourk_culture = yes }
 			}
 		}
 		modifier = {
@@ -74,19 +61,21 @@ estate_ourk = {
 	influence_modifier = {
 		desc = ESTATE_OURK_MULTIPLE_PROMOTED_OURKS
 		trigger = {
-			OR = {
-				AND = {
-					accepted_culture = ourkani
-					accepted_culture = paak_ourk
-				}
-				AND = {
-					accepted_culture = ourkani
-					accepted_culture = grokish
-				}
-				AND = {
-					accepted_culture = paak_ourk
-					accepted_culture = grokish
-				}
+			calc_true_if = {
+				accepted_culture = ourkani
+				accepted_culture = paak_ourk
+				accepted_culture = grokish
+				accepted_culture = vestourkani
+				accepted_culture = arkoutiran
+				accepted_culture = tannan_ourkani
+				accepted_culture = orukosu
+				accepted_culture = darvaic
+				accepted_culture = darvozamore
+				accepted_culture = kaalgren
+				accepted_culture = grokkeda
+				accepted_culture = ourkaidd
+				accepted_culture = nekrani
+				amount = 2
 			}
 		}
 		influence = 10		
@@ -147,7 +136,7 @@ estate_ourk = {
 	loyalty_modifier = {
 		desc = ESTATE_OURK_IS_PRIMARY
 		trigger = {
-			culture_group = ourkani_group
+			has_country_flag = primary_ourk_nation
 		}
 		loyalty = 5
 	}

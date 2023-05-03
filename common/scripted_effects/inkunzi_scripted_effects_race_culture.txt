@@ -134,13 +134,52 @@ race_difference_human_province = {
 		limit = {
 			is_centaur_culture = yes
 		}
-		#change_culture = swedish
+		if = {
+			limit = {
+				check_variable = {
+					which = RaceChangeChecker
+					value = 10
+				}
+				NOT = {
+					check_variable = {
+						which = RaceChangeChecker
+						value = 11
+					}
+				}
+			}
+			set_province_flag = centaur_province
+			clr_province_flag = human_province
+			else = {
+				set_variable = { which = RaceChangeChecker value = 10 }
+				change_culture = faikiokli
+			}
+		}
 	}
 	else_if = {
 		limit = {
 			is_draconic_culture = yes
 		}
-		#change_culture = swedish
+		
+		if = {
+			limit = {
+				check_variable = {
+					which = RaceChangeChecker
+					value = 11
+				}
+				NOT = {
+					check_variable = {
+						which = RaceChangeChecker
+						value = 12
+					}
+				}
+			}
+			set_province_flag = draconic_province
+			clr_province_flag = human_province
+			else = {
+				set_variable = { which = RaceChangeChecker value = 11 }
+				change_culture = caidakkan
+			}
+		}
 	}
 	else_if = {
 		limit = {
@@ -170,7 +209,26 @@ race_difference_human_province = {
 		limit = {
 			is_gneta_culture = yes
 		}
-		#change_culture = swedish
+		if = {
+			limit = {
+				check_variable = {
+					which = RaceChangeChecker
+					value = 21
+				}
+				NOT = {
+					check_variable = {
+						which = RaceChangeChecker
+						value = 22
+					}
+				}
+			}
+			set_province_flag = gneta_province
+			clr_province_flag = human_province
+			else = {
+				set_variable = { which = RaceChangeChecker value = 21 }
+				change_culture = gangir
+			}
+		}
 	}
 	else_if = {
 		limit = {
@@ -262,13 +320,51 @@ race_difference_ourk_province = {
 		limit = {
 			is_centaur_culture = yes
 		}
-		#change_culture = swedish
+		if = {
+			limit = {
+				check_variable = {
+					which = RaceChangeChecker
+					value = 10
+				}
+				NOT = {
+					check_variable = {
+						which = RaceChangeChecker
+						value = 11
+					}
+				}
+			}
+			set_province_flag = centaur_province
+			clr_province_flag = ourk_province
+		}
+		else = {
+			set_variable = { which = RaceChangeChecker value = 10 }
+			change_culture = tannan_ourkani
+		}
 	}
 	else_if = {
 		limit = {
 			is_draconic_culture = yes
 		}
-		#change_culture = swedish
+		if = {
+			limit = {
+				check_variable = {
+					which = RaceChangeChecker
+					value = 11
+				}
+				NOT = {
+					check_variable = {
+						which = RaceChangeChecker
+						value = 12
+					}
+				}
+			}
+			set_province_flag = draconic_province
+			clr_province_flag = ourk_province
+		}
+		else = {
+			set_variable = { which = RaceChangeChecker value = 11 }
+			change_culture = nekrani
+		}
 	}
 	else_if = {
 		limit = {
@@ -304,7 +400,26 @@ race_difference_ourk_province = {
 		limit = {
 			is_furry_culture = yes
 		}
-		#change_culture = swedish
+		if = {
+			limit = {
+				check_variable = {
+					which = RaceChangeChecker
+					value = 22
+				}
+				NOT = {
+					check_variable = {
+						which = RaceChangeChecker
+						value = 23
+					}
+				}
+			}
+			set_province_flag = furry_province
+			clr_province_flag = ourk_province
+		}
+		else = {
+			set_variable = { which = RaceChangeChecker value = 22 }
+			change_culture = darvozamore
+		}
 	}
 	else_if = {
 		limit = {
@@ -336,7 +451,28 @@ race_difference_ourk_province = {
 		}
 		trigger_switch = { # you can already tell.
 			on_trigger = culture_group
-			palmer_group = { }
+			palmer_group = { 
+				if = {
+					limit = {
+						check_variable = {
+							which = RaceChangeChecker
+							value = 9
+						}
+						NOT = {
+							check_variable = {
+								which = RaceChangeChecker
+								value = 10
+							}
+						}
+					}
+					set_province_flag = human_province
+					clr_province_flag = ourk_province
+				}
+				else = {
+					set_variable = { which = RaceChangeChecker value = 9 }
+					change_culture = grokkeda
+				}
+			}
 			vestorian_group = { 
 				if = {
 					limit = {
@@ -360,13 +496,55 @@ race_difference_ourk_province = {
 				}
 			}
 			alvonian_group = { }
-			celtaidd_group = { }
+			celtaidd_group = { 
+				if = {
+					limit = {
+						check_variable = {
+							which = RaceChangeChecker
+							value = 9
+						}
+						NOT = {
+							check_variable = {
+								which = RaceChangeChecker
+								value = 10
+							}
+						}
+					}
+					set_province_flag = human_province
+					clr_province_flag = ourk_province
+				}
+				else = {
+					set_variable = { which = RaceChangeChecker value = 9 }
+					change_culture = ourkaidd
+				}
+			}
 			credentinunum_group = { }
 			brahguan_group = { }
 			west_kaulic_group = { }
 			prilohan_group = { }
 			bogg_group = { }
-			pyaltsev_group = { }
+			pyaltsev_group = {
+				if = {
+					limit = {
+						check_variable = {
+							which = RaceChangeChecker
+							value = 9
+						}
+						NOT = {
+							check_variable = {
+								which = RaceChangeChecker
+								value = 10
+							}
+						}
+					}
+					set_province_flag = human_province
+					clr_province_flag = ourk_province
+				}
+				else = {
+					set_variable = { which = RaceChangeChecker value = 9 }
+					change_culture = arkoutiran
+				}
+			}
 			penoxi_group = { }
 			pozitianian_group = { }
 			ferdunic_group = { }
@@ -382,9 +560,72 @@ race_difference_ourk_province = {
 			autemer_group = { }
 			unglan_group = { }
 			sieraldhah_group = { }
-			iaznahoganto_group = { }
-			alzhaic_group = { }
-			wagren_group = { }
+			iaznahoganto_group = {
+				if = {
+					limit = {
+						check_variable = {
+							which = RaceChangeChecker
+							value = 9
+						}
+						NOT = {
+							check_variable = {
+								which = RaceChangeChecker
+								value = 10
+							}
+						}
+					}
+					set_province_flag = human_province
+					clr_province_flag = ourk_province
+				}
+				else = {
+					set_variable = { which = RaceChangeChecker value = 9 }
+					change_culture = orukosu
+				}
+			}
+			alzhaic_group = { 
+				if = {
+					limit = {
+						check_variable = {
+							which = RaceChangeChecker
+							value = 9
+						}
+						NOT = {
+							check_variable = {
+								which = RaceChangeChecker
+								value = 10
+							}
+						}
+					}
+					set_province_flag = human_province
+					clr_province_flag = ourk_province
+				}
+				else = {
+					set_variable = { which = RaceChangeChecker value = 9 }
+					change_culture = darvaic
+				}
+			}
+			wagren_group = { 
+				if = {
+					limit = {
+						check_variable = {
+							which = RaceChangeChecker
+							value = 9
+						}
+						NOT = {
+							check_variable = {
+								which = RaceChangeChecker
+								value = 10
+							}
+						}
+					}
+					set_province_flag = human_province
+					clr_province_flag = ourk_province
+				}
+				else = {
+					set_variable = { which = RaceChangeChecker value = 9 }
+					change_culture = kaalgren
+				}
+			}
 			tensali_group = { }
 			ukabururn_group = { }
 			leden_group = { }

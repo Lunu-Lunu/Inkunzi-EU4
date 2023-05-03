@@ -28,7 +28,7 @@ country_event = { # for race (country)
 		}
 		if = {
 			limit = {
-				culture_group = ourkani_group
+				has_ourk_primary = yes
 			}
 			set_country_flag = primary_ourk_nation
 		}
@@ -166,11 +166,7 @@ country_event = { # for race (country)
 		}
 		if = {
 			limit = {
-				OR = {
-					accepted_culture = ourkani
-					accepted_culture = paak_ourk
-					accepted_culture = grokish
-				}
+				has_ourk_accepted = yes
 			}
 			set_country_flag = ourks_accepted
 		}

@@ -163,9 +163,7 @@ estate_ourk_ourk_nobility = {
 	influence = 0.15
 	is_valid = {
 		NOT = {
-			primary_culture = ourkani
-			primary_culture = paak_ourk
-			primary_culture = grokish
+			has_country_flag = primary_ourk_nation
 		}
 	}
 	can_select = {
@@ -303,7 +301,7 @@ estate_ourk_autonomous_areas = {
 	}
 	can_select = {
 		any_owned_province = {
-			culture_group = ourkani_group
+			is_ourk_culture = yes
 		}
 	}
 	on_granted = {
@@ -387,6 +385,7 @@ estate_ourk_allow_paak_mobility = {
 	influence = 0.05
 	is_valid = {
 		NOT = { primary_culture = paak_ourk }
+		any_owned_province = { culture = paak_ourk }
 	}
 	can_select = {
 		accepted_culture = paak_ourk
@@ -423,6 +422,7 @@ estate_ourk_embrace_ourkani_ideals = {
 	influence = 0.05
 	is_valid = {
 		NOT = { primary_culture = ourkani }
+		any_owned_province = { culture = ourkani }
 	}
 	can_select = {
 		accepted_culture = ourkani

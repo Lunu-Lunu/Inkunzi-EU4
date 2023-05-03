@@ -85,6 +85,12 @@ has_human_primary = {
 		primary_culture = cowpal
 		primary_culture = scotar
 		primary_culture = celtaidd
+
+		primary_culture = gangir
+		primary_culture = vestrosian
+		primary_culture = caidakkan
+		primary_culture = faikiokli
+		primary_culture = celtaidd
 	}
 }
 has_human_accepted = {
@@ -152,6 +158,12 @@ has_human_accepted = {
 		accepted_culture = adnuin
 		accepted_culture = cowpal
 		accepted_culture = scotar
+		accepted_culture = celtaidd
+
+		accepted_culture = gangir
+		accepted_culture = vestrosian
+		accepted_culture = caidakkan
+		accepted_culture = faikiokli
 		accepted_culture = celtaidd
 	}
 }
@@ -222,7 +234,47 @@ is_human_culture = {
 		culture = scotar
 		culture = celtaidd
 
+		culture = gangir
 		culture = vestrosian
+		culture = caidakkan
+		culture = faikiokli
+		culture = celtaidd
+	}
+}
+has_ourk_primary = {
+	OR = {
+		primary_culture = ourkani
+		primary_culture = paak_ourk
+		primary_culture = grokish
+
+		primary_culture = vestourkani
+		primary_culture = arkoutiran
+		primary_culture = tannan_ourkani
+		primary_culture = orukosu
+		primary_culture = darvaic
+		primary_culture = darvozamore
+		primary_culture = kaalgren
+		primary_culture = grokkeda
+		primary_culture = ourkaidd
+		primary_culture = nekrani
+	}
+}
+has_ourk_accepted = {
+	OR = {
+		accepted_culture = ourkani
+		accepted_culture = paak_ourk
+		accepted_culture = grokish
+
+		accepted_culture = vestourkani
+		accepted_culture = arkoutiran
+		accepted_culture = tannan_ourkani
+		accepted_culture = orukosu
+		accepted_culture = darvaic
+		accepted_culture = darvozamore
+		accepted_culture = kaalgren
+		accepted_culture = grokkeda
+		accepted_culture = ourkaidd
+		accepted_culture = nekrani
 	}
 }
 is_ourk_culture = {
@@ -232,6 +284,15 @@ is_ourk_culture = {
 		culture = grokish
 
 		culture = vestourkani
+		culture = arkoutiran
+		culture = tannan_ourkani
+		culture = orukosu
+		culture = darvaic
+		culture = darvozamore
+		culture = kaalgren
+		culture = grokkeda
+		culture = ourkaidd
+		culture = nekrani
 	}
 }
 is_nimbus_culture = {
@@ -346,242 +407,6 @@ is_goblin_culture = {
 	}
 }
 
-owner_is_human_culture = {
-	owner = {
-		OR = {
-			culture = palmer
-			culture = fortly
-			culture = kido
-			culture = upper_vestorian
-			culture = lower_vestorian
-			culture = survalsian
-			culture = credentinunum
-			culture = brahguan
-			culture = enclaver
-			culture = kaulradic
-			culture = oskitan
-			culture = prilohan
-			culture = iznadi
-			culture = bogg
-			culture = pyaltsev
-			culture = penoxian
-			culture = pozitianian
-			culture = zakaulic
-			culture = ferdunic
-			culture = kihsan
-			culture = karen
-			culture = bosem
-			culture = tahviran
-			culture = iran
-			culture = kythian
-			culture = long
-			culture = dai
-			culture = chuanwei
-			culture = rezubian
-			culture = xuaze
-			culture = xuahogg
-			culture = kurean
-			culture = yaroli
-			culture = helghian
-			culture = ozarkhian
-			culture = mozarkhian
-			culture = porian
-			culture = karhogg
-			culture = autemer
-			culture = unglan
-			culture = sieraldh
-			culture = kaihaku
-			culture = okuyokama
-			culture = satomoto
-			culture = sudokai
-			culture = ryoko
-			culture = keikenna
-			culture = alzhaic
-			culture = dengiz
-			culture = wagren
-			culture = tensali
-			culture = ukabururn
-			culture = wesrokhil
-			culture = ledengradian
-			culture = ibaien
-			culture = obenic
-			culture = ocelidian
-			culture = serob
-			culture = kalnish
-			culture = tehaori
-			culture = adnuin
-			culture = cowpal
-			culture = scotar
-			culture = celtaidd
-	
-			culture = vestrosian
-		}
-	}
-}
-owner_is_ourk_culture = {
-	owner = {
-		OR = {
-			culture = ourkani
-			culture = paak_ourk
-			culture = grokish
-
-			culture = vestourkani
-		}
-	}
-}
-owner_is_nimbus_culture = {
-	owner = {
-		culture = nimbus
-	}
-}
-owner_is_crab_culture = {
-	owner = {
-		OR = {
-			culture = north_karlton
-			culture = south_karlton
-			culture = karolon
-		}
-	}
-}
-owner_is_frog_culture = {
-	owner = {
-		OR = {
-			culture = lyharan
-			culture = yeulan
-			culture = sabhari
-			culture = shyman
-			culture = harlan
-		}
-	}
-}
-owner_is_rat_culture = {
-	owner = {
-		OR = {
-			culture = roden
-			culture = skungic
-		}
-	}
-}
-owner_is_goat_culture = {
-	owner = {
-		culture = kurio
-	}
-}
-owner_is_hesh_culture = {
-	owner = {
-		OR = {
-			culture = vorasian
-			culture = antaxian
-			culture = tavasian
-			culture = yaxatian
-			culture = karaxian
-			culture = hiveless
-		}
-	}
-}
-owner_is_snake_culture = {
-	owner = {
-		culture = sarza
-	}
-}
-owner_is_ent_culture = {
-	owner = {
-		culture = ent
-	}
-}
-owner_is_ape_culture = {
-	owner = {
-		OR = {
-			culture = peninsula_konk
-			culture = river_konk
-			culture = jungle_konk
-			culture = isle_konk
-		}
-	}
-}
-owner_is_dwarf_culture = {
-	owner = {
-		OR = {
-			culture = tunnu
-			culture = heplin
-		}
-	}
-}
-owner_is_centaur_culture = {
-	owner = {
-		OR = {
-			culture = inner_rekolian
-			culture = outer_rekolian
-			culture = azvendian
-		}
-	}
-}
-owner_is_draconic_culture = {
-	owner = {
-		culture = urakkan
-	}
-}
-owner_is_mushroom_culture = {
-	owner = {
-		OR = {
-			culture = mungi
-			culture = spolic
-			culture = rannikean
-		}
-	}
-}
-owner_is_golem_culture = {
-	owner = {
-		OR = {
-			culture = melian
-			culture = ulian
-			culture = verdeni
-		}
-	}
-}
-owner_is_elf_culture = {
-	owner = {
-		culture = aeruthian
-	}
-}
-owner_is_sia_si_culture = {
-	owner = {
-		culture = siamlud
-	}
-}
-owner_is_furry_culture = {
-	owner = {
-		culture = paleremore
-	}
-}
-owner_is_gneta_culture = {
-	owner = {
-		culture = gneta
-	}
-}
-owner_is_moth_culture = {
-	owner = {
-		culture = miarii
-	}
-}
-owner_is_lizard_culture = {
-	owner = {
-		OR = {
-			culture = lizardman
-			culture = thixi
-		}
-	}
-}
-owner_is_goblin_culture = {
-	owner = {
-		OR = {
-			culture = goblin
-			culture = lower_goblin
-			culture = kornandian
-			culture = enezennian
-		}
-	}
-}
 
 different_race_province_to_country = {
 	NOT = {

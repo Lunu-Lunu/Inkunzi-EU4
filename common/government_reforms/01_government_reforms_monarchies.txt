@@ -222,9 +222,9 @@ shogunate = {
 		OR = {
 			AND = {
 				capital_scope = {
-					province_id = 1020
+					province_id = 1220
 				}
-				culture_group = japanese_g
+				culture_group = iaznahoganto_group
 				NOT = { exists = JAP }
 			}
 			AND = {
@@ -236,10 +236,9 @@ shogunate = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 50
 	nation_designer_trigger = {
-		culture_group = japanese_g
+		culture_group = iaznahoganto_group
 		technology_group = chinese
-		capital_scope = { region = japan_region }
-		owns = 1020
+		owns = 1220
 	}
 	legacy_equivalent = shogunate_legacy
 	fixed_rank = 2
@@ -284,9 +283,8 @@ daimyo = {
 	nation_designer_cost = 0
 	lock_level_when_selected = yes
 	nation_designer_trigger = {
-		culture_group = japanese_g
+		culture_group = iaznahoganto_group
 		technology_group = chinese
-		capital_scope = { region = japan_region }
 	}
 	modifiers = {
 		land_morale = 0.1
@@ -415,8 +413,7 @@ indep_daimyo = {
 					is_subject = no
 					is_subject_of_type = tributary_state
 				}
-				capital_scope = { region = japan_region }
-				culture_group = japanese_g
+				culture_group = iaznahoganto_group
 			}
 			AND = {
 				is_playing_custom_nation = yes
@@ -427,9 +424,8 @@ indep_daimyo = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	nation_designer_trigger = {
-		culture_group = japanese_g
+		culture_group = iaznahoganto_group
 		technology_group = chinese
-		capital_scope = { region = japan_region }
 	}
 	legacy_equivalent = indep_daimyo_legacy
 	maintain_dynasty = yes
