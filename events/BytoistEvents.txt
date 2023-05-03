@@ -11,11 +11,7 @@ country_event = {
 	title = bytosdeath.1.title
 	desc = bytosdeath.1.description
 	picture = DEATH_OF_HEIR_eventPicture
-	
-	major = yes
-	major_trigger = {
-		is_great_power = yes
-	}
+
 	trigger = {
 		uses_karma = yes
 		NOT = { has_ruler_flag = chose_path_bytos } 

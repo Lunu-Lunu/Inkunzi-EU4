@@ -98,9 +98,29 @@ vestorian_group = {
 			"Seaside"
 		}
 	}
-	#orc_vestorian = {
-	# todo - likely not to happen
-	#}
+	vestourkani = { # OURK MIDDLEMAN CULTURE - NO ESTATE PRIVILEGE
+		primary = A02 # change?
+
+		male_names = {
+			Vekkel
+			Vykar
+			Vyktus
+			Lumnis
+			Lumnar
+			Lumin
+			Lunon
+		}
+		female_names = {
+			Vy
+			Vivi
+			Vesper
+			Vyktoria
+			Kizi
+		}
+		dynasty_names = {
+			"Grimm"
+		}
+	}
 	male_names = {
 		Ion
 		Seth
@@ -142,6 +162,19 @@ ourkani_group = {
 	grokish = {
 		primary = A97 # **DEFINITELY** CHANGE
 
+		male_names = {
+			Placeholder
+		}
+		female_names = {
+			Placeholder
+		}
+		dynasty_names = {
+			"Placeholder"
+		}
+	}
+	vestrosian = { # HUMAN MIDDLEMAN CULTURE - NO ESTATE PRIVILEGE
+		primary = B08 # Change at some point
+		
 		male_names = {
 			Placeholder
 		}

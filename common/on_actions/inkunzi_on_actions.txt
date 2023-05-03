@@ -24,18 +24,20 @@ on_monarch_death = {
 }
 on_new_monarch = {
 	events = {
-		if = {
-			limit = {
-				tag = ROOT
-			}
-			bytosdeath.1
-		}
+		bytosdeath.1
 	}
 }
 
 on_province_culture_converted = {
 	different_race_culture_conversion_effect = yes
+	owner = {
+		create_autonomous_areas = yes
+		remove_autonomous_areas = yes
+	}
 }
+
+# province
+# FROM = old owner
 on_province_owner_change = {
 	if = {
 		limit = {
@@ -65,5 +67,107 @@ on_province_owner_change = {
 		clr_province_flag = moth_province
 		clr_province_flag = snake_province
 		province_event = { id = workaround.2 days = 1 }
+	}
+	owner = {
+		create_autonomous_areas = yes
+		remove_autonomous_areas = yes
+	}
+
+	if = {
+		limit = {
+			owner = {
+				tag = B06
+				mission_completed = ionidius_mission_necessity_of_kinslaying
+			}
+			culture = ourkani
+		}
+		add_nationalism = -10
+	}
+	
+	if = {
+		limit = {
+			OR = {
+				has_province_modifier = wine_bonus_prod
+				has_province_modifier = grain_bonus_prod
+			}
+			FROM = { has_reform = monastic_breweries_reform }
+			NOT = { owner = { has_reform = monastic_breweries_reform } }
+		}
+		remove_province_modifier = wine_bonus_prod
+		remove_province_modifier = grain_bonus_prod
+	}
+	
+	if = {
+		limit = {
+			NOT = {
+				OR = {
+					has_province_modifier = wine_bonus_prod
+					has_province_modifier = grain_bonus_prod
+				}
+			}
+			owner = { has_reform = monastic_breweries_reform }
+			NOT = { FROM = { has_reform = monastic_breweries_reform } }
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					trade_goods = wine
+				}
+				add_province_modifier = { 
+					name = wine_bonus_prod
+					duration = -1
+					hidden = yes
+				}
+			}
+			if = {
+				limit = {
+					trade_goods = grain
+				}
+				add_province_modifier = { 
+					name = grain_bonus_prod
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+
+	if = {
+		limit = {
+			owned_by = SRU
+			exists = ARA
+		}
+		ARA = {
+			set_country_flag = ARA_defeat_saruhan
+		}
+	}
+	if = {
+		limit = {
+			NOT = { owner = { religion_group = muslim } }
+			has_province_modifier = sufi_shrine
+		}
+		remove_province_modifier = sufi_shrine
+	}
+	on_province_owner_change_estate_privileges_effect = yes
+	
+	if = {
+		limit = {
+			region = france_region
+			has_building = farm_estate
+			trade_goods = grain
+			owner = {
+				has_mission = mnd_khm_irrigation 
+				NOT = {
+					OR = {
+						has_estate = estate_vaisyas
+						has_estate = estate_burghers
+					}
+				}
+			}
+		}
+		add_province_modifier = {
+			name = grain_production_improved
+			duration = 7300
+		}
 	}
 }

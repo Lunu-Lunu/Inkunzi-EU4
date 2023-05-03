@@ -36,13 +36,51 @@ race_difference_human_province = {
 		limit = {
 			is_ourk_culture = yes
 		}
-		#change_culture = swedish
+		if = {
+			limit = {
+				check_variable = {
+					which = RaceChangeChecker
+					value = 8
+				}
+				NOT = {
+					check_variable = {
+						which = RaceChangeChecker
+						value = 9
+					}
+				}
+			}
+			set_province_flag = ourk_province
+			clr_province_flag = human_province
+			else = {
+				set_variable = { which = RaceChangeChecker value = 8 }
+				change_culture = vestrosian
+			}
+		}
 	}
 	else_if = {
 		limit = {
 			is_nimbus_culture = yes
 		}
-		#change_culture = swedish
+		if = {
+			limit = {
+				check_variable = {
+					which = RaceChangeChecker
+					value = 12
+				}
+				NOT = {
+					check_variable = {
+						which = RaceChangeChecker
+						value = 13
+					}
+				}
+			}
+			set_province_flag = nimbus_province
+			clr_province_flag = human_province
+			else = {
+				set_variable = { which = RaceChangeChecker value = 12 }
+				change_culture = kihsan
+			}
+		}
 	}
 	else_if = {
 		limit = {
@@ -166,7 +204,7 @@ race_difference_human_province = {
 	}
 }
 race_difference_ourk_province = {
-	else_if = {
+	if = {
 		limit = {
 			is_nimbus_culture = yes
 		}
@@ -299,7 +337,28 @@ race_difference_ourk_province = {
 		trigger_switch = { # you can already tell.
 			on_trigger = culture_group
 			palmer_group = { }
-			vestorian_group = { }
+			vestorian_group = { 
+				if = {
+					limit = {
+						check_variable = {
+							which = RaceChangeChecker
+							value = 9
+						}
+						NOT = {
+							check_variable = {
+								which = RaceChangeChecker
+								value = 10
+							}
+						}
+					}
+					set_province_flag = human_province
+					clr_province_flag = ourk_province
+				}
+				else = {
+					set_variable = { which = RaceChangeChecker value = 9 }
+					change_culture = vestourkani
+				}
+			}
 			alvonian_group = { }
 			celtaidd_group = { }
 			credentinunum_group = { }

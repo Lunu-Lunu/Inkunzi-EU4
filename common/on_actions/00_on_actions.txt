@@ -1,18 +1,6 @@
 #When adding effects directly in on_actions always consider if it would be best to do so through a scripted effect. on_actions with a lot of script in them are harder to get an overview of.
 
 # country
-on_startup = {
-	initialize_race_estates = yes
-	if = {
-		limit = {
-			is_emperor_of_china = yes
-		}
-		save_global_event_target_as = EmperorOfChina
-	}
-	initialize_schools_effect = yes #This is only used here but is used for readability of on_action file.
-}
-
-# country
 on_religion_change = {
 	on_religion_change_estate_privileges_effect = yes
 	###removes catholic modifiers
@@ -2945,11 +2933,6 @@ on_province_religion_converted = {
 	on_province_religion_converted_estate_privileges_effect = yes
 }
 
-# province
-on_province_culture_converted = {
-	remove_autonomous_areas = yes
-}
-
 # THIS = Province, FROM = Country who Propogated
 on_convert_by_trade_policy = {
 	if = {
@@ -2977,111 +2960,6 @@ on_convert_by_trade_policy = {
 					which = religion_propagated_in_moluccas value = 1
 				}
 			}
-		}
-	}
-}
-
-# province
-# FROM = old owner
-on_province_owner_change = {
-	create_autonomous_areas = yes
-	remove_autonomous_areas = yes
-
-	if = {
-		limit = {
-			owner = {
-				tag = B06
-				mission_completed = ionidius_mission_necessity_of_kinslaying
-			}
-			culture = ourkani
-		}
-		add_nationalism = -10
-	}
-	
-	if = {
-		limit = {
-			OR = {
-				has_province_modifier = wine_bonus_prod
-				has_province_modifier = grain_bonus_prod
-			}
-			FROM = { has_reform = monastic_breweries_reform }
-			NOT = { owner = { has_reform = monastic_breweries_reform } }
-		}
-		remove_province_modifier = wine_bonus_prod
-		remove_province_modifier = grain_bonus_prod
-	}
-	
-	if = {
-		limit = {
-			NOT = {
-				OR = {
-					has_province_modifier = wine_bonus_prod
-					has_province_modifier = grain_bonus_prod
-				}
-			}
-			owner = { has_reform = monastic_breweries_reform }
-			NOT = { FROM = { has_reform = monastic_breweries_reform } }
-		}
-		hidden_effect = {
-			if = {
-				limit = {
-					trade_goods = wine
-				}
-				add_province_modifier = { 
-					name = wine_bonus_prod
-					duration = -1
-					hidden = yes
-				}
-			}
-			if = {
-				limit = {
-					trade_goods = grain
-				}
-				add_province_modifier = { 
-					name = grain_bonus_prod
-					duration = -1
-					hidden = yes
-				}
-			}
-		}
-	}
-
-	if = {
-		limit = {
-			owned_by = SRU
-			exists = ARA
-		}
-		ARA = {
-			set_country_flag = ARA_defeat_saruhan
-		}
-	}
-	if = {
-		limit = {
-			NOT = { owner = { religion_group = muslim } }
-			has_province_modifier = sufi_shrine
-		}
-		remove_province_modifier = sufi_shrine
-	}
-	on_province_owner_change_estate_privileges_effect = yes
-	
-	if = {
-		limit = {
-			region = france_region
-			has_building = farm_estate
-			trade_goods = grain
-			owner = {
-				has_mission = mnd_khm_irrigation 
-				NOT = {
-					OR = {
-						has_estate = estate_vaisyas
-						has_estate = estate_burghers
-					}
-				}
-			}
-		}
-		add_province_modifier = {
-			name = grain_production_improved
-			duration = 7300
 		}
 	}
 }
@@ -3227,10 +3105,6 @@ on_center_of_trade_upgrade = {
 }
 
 on_center_of_trade_downgrade = {
-
-}
-
-on_culture_promoted = {
 
 }
 
