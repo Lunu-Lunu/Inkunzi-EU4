@@ -1,15 +1,13 @@
 # Kaupi
-
 owner = B21
 controller = B21
 add_core = B21
 culture = ukabururn
 1444.11.11 = { set_province_flag = human_province }
 religion = dark_valor
-hre = no
-base_tax = 7 
-base_production = 7
-base_manpower = 6
+base_tax = 5
+base_production = 5
+base_manpower = 4
 trade_goods = cloth
 capital = "Kaupi"
 is_city = yes

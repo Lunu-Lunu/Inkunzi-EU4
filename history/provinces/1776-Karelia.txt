@@ -1,16 +1,13 @@
 # Placeholder
-
 owner = B00
 controller = B00
 add_core = B00
 culture = sudokai
 1444.11.11 = { set_province_flag = human_province }
 religion = mashia
-hre = no
-base_tax = 4
-base_production = 3
-base_manpower = 5
-trade_goods = slik
-capital = "Samurai City" 
+base_tax = 5
+base_production = 4
+base_manpower = 6
+capital = "Samurai City"
 is_city = yes
 discovered_by = western

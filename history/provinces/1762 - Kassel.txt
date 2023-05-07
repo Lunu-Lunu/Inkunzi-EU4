@@ -3,6 +3,7 @@ controller = A95
 add_core = A95
 culture = kaihaku
 1444.11.11 = { set_province_flag = human_province }
+1444.11.11 = { set_province_flag = human_province }
 religion = mashia
 hre = no
 base_tax = 3

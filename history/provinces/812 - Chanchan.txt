@@ -5,6 +5,7 @@ controller = A66
 add_core = A66
 culture = porian
 1444.11.11 = { set_province_flag = human_province }
+1444.11.11 = { set_province_flag = human_province }
 religion = rationalist_celestialism
 hre = no
 base_tax = 4

@@ -1,15 +1,13 @@
 # Placeholder
-
 owner = A25
 controller = A25
 add_core = A25
 culture = karen
 1444.11.11 = { set_province_flag = human_province }
 religion = whihcan
-hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
+base_tax = 6
+base_production = 7
+base_manpower = 7
 trade_goods = unknown
 capital = "Placeholder"
 is_city = yes

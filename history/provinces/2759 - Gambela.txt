@@ -1,15 +1,13 @@
 # Corazón
-
 owner = B39
 controller = B39
 add_core = B39
 culture = ozarkhian
 1444.11.11 = { set_province_flag = human_province }
 religion = dark_valor
-hre = no
-base_tax = 3
-base_production = 5
-base_manpower = 3
+base_tax = 2
+base_production = 4
+base_manpower = 1
 trade_goods = gold
 capital = "Corazón"
 is_city = yes

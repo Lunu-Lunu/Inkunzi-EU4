@@ -1,5 +1,4 @@
 # Placeholder
-
 owner = A40
 controller = A40
 add_core = A40
@@ -7,10 +6,9 @@ add_core = P02
 culture = mungi
 1444.11.11 = { set_province_flag = mushroom_province }
 religion = agaric
-hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
+base_tax = 4
+base_production = 5
+base_manpower = 4
 trade_goods = unknown
 capital = "Placeholder"
 is_city = yes

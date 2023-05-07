@@ -6,6 +6,7 @@ add_core = B23
 add_core = P10
 culture = melian
 1444.11.11 = { set_province_flag = golem_province }
+1444.11.11 = { set_province_flag = golem_province }
 religion = valor
 hre = no
 base_tax = 2 

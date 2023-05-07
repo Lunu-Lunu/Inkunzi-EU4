@@ -1,15 +1,13 @@
 # Placeholder
-
 owner = A05
 controller = A05
 add_core = A05
 culture = celtaidd
 1444.11.11 = { set_province_flag = human_province }
 religion = medvedeni
-hre = no
-base_tax = 1 
+base_tax = 2
 base_production = 1
-base_manpower = 1
+base_manpower = 2
 trade_goods = unknown
 capital = "Placeholder"
 is_city = yes

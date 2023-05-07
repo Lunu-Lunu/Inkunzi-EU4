@@ -1,15 +1,13 @@
 # Placeholder
-
 owner = B66
 controller = B66
 add_core = B66
 culture = scotar
 1444.11.11 = { set_province_flag = human_province }
 religion = tribal_faith
-hre = no
-base_tax = 6 
-base_production = 5
-base_manpower = 6
+base_tax = 5
+base_production = 4
+base_manpower = 5
 trade_goods = fish
 capital = "Bukscar"
 is_city = yes

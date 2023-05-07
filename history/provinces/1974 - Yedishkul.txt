@@ -5,6 +5,7 @@ controller = B02
 add_core = B02
 culture = alzhaic
 1444.11.11 = { set_province_flag = human_province }
+1444.11.11 = { set_province_flag = human_province }
 religion = celestialism
 hre = no
 base_tax = 1 

@@ -1,14 +1,13 @@
 # Placeholder
-
 owner = B20
 controller = B20
 add_core = B20
 culture = verdeni
+1444.11.11 = { set_province_flag = human_province }
 religion = dark_valor
-hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
+base_tax = 3
+base_production = 5
+base_manpower = 3
 trade_goods = unknown
 capital = "Placeholder"
 is_city = yes

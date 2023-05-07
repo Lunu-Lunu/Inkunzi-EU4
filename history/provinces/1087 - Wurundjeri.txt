@@ -5,6 +5,7 @@ controller = A80
 add_core = A80
 culture = gneta
 1444.11.11 = { set_province_flag = gneta_province }
+1444.11.11 = { set_province_flag = gneta_province }
 religion = haymonutho
 hre = no
 base_tax = 2

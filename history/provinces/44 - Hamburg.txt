@@ -1,15 +1,13 @@
 # Placeholder
-
 owner = A03
 controller = A03
 add_core = A03
 culture = karolon
 1444.11.11 = { set_province_flag = crab_province }
 religion = celestialism
-hre = no
-base_tax = 5 
-base_production = 5
-base_manpower = 5
+base_tax = 7
+base_production = 7
+base_manpower = 6
 trade_goods = unknown
 capital = "Neulull"
 is_city = yes

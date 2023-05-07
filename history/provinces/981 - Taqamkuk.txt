@@ -4,10 +4,9 @@ add_core = A71
 culture = sieraldh
 1444.11.11 = { set_province_flag = human_province }
 religion = turriyahism
-hre = no
 base_tax = 4
 base_production = 4
-base_manpower = 4
+base_manpower = 3
 trade_goods = coffee
 capital = "Dibawit"
 is_city = yes

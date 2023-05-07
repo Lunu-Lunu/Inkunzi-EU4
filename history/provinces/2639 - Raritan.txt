@@ -1,15 +1,13 @@
 # Placeholder
-
 owner = B41
 controller = B41
 add_core = B41
 culture = north_karlton
 1444.11.11 = { set_province_flag = crab_province }
 religion = valor
-hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
+base_tax = 4
+base_production = 4
+base_manpower = 2
 trade_goods = unknown
 capital = "Placeholder"
 is_city = yes

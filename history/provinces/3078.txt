@@ -1,15 +1,13 @@
 # Placeholder
-
 owner = B62
 controller = B62
 add_core = B62
 culture = scotar
 1444.11.11 = { set_province_flag = human_province }
 religion = tribal_faith
-hre = no
-base_tax = 3 
-base_production = 4
-base_manpower = 4
+base_tax = 2
+base_production = 3
+base_manpower = 3
 trade_goods = coffee
 capital = "Telleagh"
 is_city = yes

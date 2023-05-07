@@ -2,12 +2,10 @@ owner = A85
 controller = A85
 add_core = A85
 culture = okuyokama
-1444.11.11 = { set_province_flag = human_province }
 religion = mashia
-hre = no
 base_tax = 7
 base_production = 7
-base_manpower = 7
+base_manpower = 6
 trade_goods = gems
 capital = "Akiyama"
 is_city = yes

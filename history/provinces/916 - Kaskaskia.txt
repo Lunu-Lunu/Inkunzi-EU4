@@ -1,5 +1,4 @@
 # Placeholder
-
 owner = A70
 controller = A70
 add_core = A70
@@ -7,10 +6,9 @@ add_core = P06
 culture = unglan
 1444.11.11 = { set_province_flag = human_province }
 religion = turriyahism
-hre = no
-base_tax = 3 
+base_tax = 2
 base_production = 2
-base_manpower = 2
+base_manpower = 1
 trade_goods = spices
 capital = "Placeholder"
 is_city = yes

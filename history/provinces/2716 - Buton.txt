@@ -1,5 +1,4 @@
 # Placeholder
-
 owner = B37
 controller = B37
 add_core = B37
@@ -7,10 +6,9 @@ add_core = P00
 culture = karolon
 1444.11.11 = { set_province_flag = crab_province }
 religion = dark_valor
-hre = no
-base_tax = 4 
-base_production = 5
-base_manpower = 5
+base_tax = 3
+base_production = 4
+base_manpower = 3
 trade_goods = fish
 capital = "Vertres"
 is_city = yes

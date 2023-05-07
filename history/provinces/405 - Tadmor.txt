@@ -1,15 +1,12 @@
 # Placeholder
-
 owner = A30
 controller = A30
 add_core = A30
 culture = south_karlton
-1444.11.11 = { set_province_flag = crab_province }
 religion = turriyahism
-hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
+base_tax = 6
+base_production = 6
+base_manpower = 5
 trade_goods = unknown
 capital = "Placeholder"
 is_city = yes

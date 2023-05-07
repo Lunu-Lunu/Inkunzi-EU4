@@ -1,13 +1,11 @@
 # Placeholder
-
 owner = B13
 controller = B13
 add_core = B13
 culture = outer_rekolian
 1444.11.11 = { set_province_flag = centaur_province }
 religion = old_ones
-hre = no
-base_tax = 1 
+base_tax = 2
 base_production = 1
 base_manpower = 1
 trade_goods = unknown

@@ -1,15 +1,13 @@
 # Placeholder
-
 owner = B01
 controller = B01
 add_core = B01
 culture = paleremore
 1444.11.11 = { set_province_flag = furry_province }
 religion = mashia
-hre = no
-base_tax = 2
-base_production = 1
-base_manpower = 2
+base_tax = 5
+base_production = 5
+base_manpower = 5
 trade_goods = livestock
 capital = "Placeholder"
 is_city = yes

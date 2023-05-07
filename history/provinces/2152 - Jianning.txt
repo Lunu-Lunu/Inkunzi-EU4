@@ -5,6 +5,7 @@ controller = B05
 add_core = B05
 culture = dengiz
 1444.11.11 = { set_province_flag = human_province }
+1444.11.11 = { set_province_flag = human_province }
 religion = mashia
 hre = no
 base_tax = 1 

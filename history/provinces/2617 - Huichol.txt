@@ -1,15 +1,13 @@
 # Placeholder
-
 owner = B27
 controller = B27
 add_core = B27
 culture = goblin
 1444.11.11 = { set_province_flag = goblin_province }
 religion = valor
-hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
+base_tax = 4
+base_production = 2
+base_manpower = 3
 trade_goods = unknown
 capital = "Placeholder"
 is_city = yes

@@ -1,5 +1,4 @@
 # Normel
-
 owner = B23
 controller = B23
 add_core = B23
@@ -7,10 +6,9 @@ add_core = P10
 culture = melian
 1444.11.11 = { set_province_flag = golem_province }
 religion = valor
-hre = no
-base_tax = 2 
-base_production = 3
-base_manpower = 2
+base_tax = 2
+base_production = 2
+base_manpower = 1
 trade_goods = cloth
 capital = "Normel"
 is_city = yes

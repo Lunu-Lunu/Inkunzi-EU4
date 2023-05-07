@@ -4,10 +4,9 @@ add_core = A90
 culture = satomoto
 1444.11.11 = { set_province_flag = human_province }
 religion = mashia
-hre = no
-base_tax = 8
-base_production = 8
-base_manpower = 8
+base_tax = 7
+base_production = 7
+base_manpower = 7
 trade_goods = chinaware
 capital = "Saito"
 is_city = yes
