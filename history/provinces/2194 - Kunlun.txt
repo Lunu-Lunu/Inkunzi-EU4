@@ -5,7 +5,6 @@ controller = B07
 add_core = B07
 culture = ourkani
 1444.11.11 = { set_province_flag = ourk_province }
-1444.11.11 = { set_province_flag = ourk_province }
 religion = celestialism
 hre = no
 base_tax = 3 

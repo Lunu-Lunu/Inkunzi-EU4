@@ -6,7 +6,6 @@ add_core = A42
 add_core = A47
 culture = helghian
 1444.11.11 = { set_province_flag = human_province }
-1444.11.11 = { set_province_flag = human_province }
 religion = sunfucian
 hre = no
 base_tax = 2 

@@ -7,13 +7,12 @@ add_core = A62
 add_core = A61
 culture = north_karlton
 1444.11.11 = { set_province_flag = crab_province }
-1444.11.11 = { set_province_flag = crab_province }
 religion = old_ones
 hre = no
 base_tax = 3
 base_production = 3
 base_manpower = 3
-trade_goods = unknown
+trade_goods = placeholder
 capital = "Placeholder"
 is_city = yes
 discovered_by = western

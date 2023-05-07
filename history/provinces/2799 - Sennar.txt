@@ -8,6 +8,6 @@ religion = mountain_folk
 base_tax = 2
 base_production = 1
 base_manpower = 2
-trade_goods = unknown
+trade_goods = placeholder
 capital = "Placeholder"
 is_city = yes

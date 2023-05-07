@@ -5,7 +5,6 @@ controller = B33
 add_core = B33
 culture = miarii
 1444.11.11 = { set_province_flag = moth_province }
-1444.11.11 = { set_province_flag = moth_province }
 religion = valor
 hre = no
 base_tax = 1 

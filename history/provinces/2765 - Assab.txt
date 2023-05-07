@@ -5,13 +5,12 @@ controller = B39
 add_core = B39
 culture = mozarkhian
 1444.11.11 = { set_province_flag = human_province }
-1444.11.11 = { set_province_flag = human_province }
 religion = dark_valor
 hre = no
 base_tax = 2 
 base_production = 1
 base_manpower = 2
-trade_goods = unknown
+trade_goods = placeholder
 capital = "Melcan Harbour"
 is_city = yes
 discovered_by = western

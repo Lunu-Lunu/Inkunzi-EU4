@@ -3,7 +3,6 @@ controller = A33
 add_core = A33
 culture = bosem
 1444.11.11 = { set_province_flag = human_province }
-1444.11.11 = { set_province_flag = human_province }
 religion = turriyahism
 hre = no
 base_tax = 1

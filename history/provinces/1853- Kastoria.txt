@@ -7,7 +7,6 @@ add_core = R08
 add_core = R06
 culture = paleremore
 1444.11.11 = { set_province_flag = furry_province }
-1444.11.11 = { set_province_flag = furry_province }
 religion = medilyte
 hre = no
 base_tax = 2

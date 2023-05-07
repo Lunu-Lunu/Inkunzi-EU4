@@ -5,7 +5,6 @@ controller = A66
 add_core = A66
 culture = siamlud
 1444.11.11 = { set_province_flag = sia_si_province }
-1444.11.11 = { set_province_flag = sia_si_province }
 religion = haymonutho
 hre = no
 base_tax = 4 

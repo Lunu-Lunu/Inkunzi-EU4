@@ -1988,3 +1988,16 @@ Purple = {
 
      }
 }
+
+placeholder = {
+	color = { 0.33 0.33 0.33 }
+	modifier = {
+		global_unrest = -1
+	}
+	province = {
+		local_defensiveness = 0.01
+	}
+	chance = {
+		factor = 0
+	}
+}

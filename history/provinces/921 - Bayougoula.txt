@@ -6,7 +6,6 @@ add_core = A70
 add_core = P06
 culture = unglan
 1444.11.11 = { set_province_flag = human_province }
-1444.11.11 = { set_province_flag = human_province }
 religion = turriyahism
 hre = no
 base_tax = 1 

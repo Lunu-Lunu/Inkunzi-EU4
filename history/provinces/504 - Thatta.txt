@@ -5,13 +5,12 @@ controller = A36
 add_core = A36
 culture = tahrivan
 1444.11.11 = { set_province_flag = human_province }
-1444.11.11 = { set_province_flag = human_province }
 religion = turriyahism
 hre = no
 base_tax = 1 
 base_production = 1
 base_manpower = 1
-trade_goods = unknown
+trade_goods = placeholder
 capital = "Placeholder"
 is_city = yes
 discovered_by = western

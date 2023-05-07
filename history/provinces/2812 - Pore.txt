@@ -5,12 +5,11 @@
 #add_core = SWE
 culture = tunnu
 1444.11.11 = { set_province_flag = dwarf_province }
-1444.11.11 = { set_province_flag = dwarf_province }
 religion = mountain_folk
 hre = no
 base_tax = 1 
 base_production = 1
 base_manpower = 1
-trade_goods = unknown
+trade_goods = placeholder
 capital = "Placeholder"
 is_city = yes
