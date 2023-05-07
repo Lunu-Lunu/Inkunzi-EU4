@@ -1,16 +1,13 @@
 # Placeholder
-
 owner = B23
 controller = B23
 add_core = B23
 add_core = P08
 culture = obenic
-1444.11.11 = { set_province_flag = human_province }
 religion = valor
-hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
+base_tax = 5
+base_production = 3
+base_manpower = 3
 trade_goods = unknown
 capital = "Placeholder"
 is_city = yes

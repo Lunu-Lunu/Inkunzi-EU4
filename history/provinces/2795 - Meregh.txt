@@ -1,15 +1,12 @@
 # Placeholder
-
 owner = B43
 controller = B43
 add_core = B43
 culture = tunnu
-1444.11.11 = { set_province_flag = dwarf_province }
 religion = mountain_folk
-hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
+base_tax = 3
+base_production = 2
+base_manpower = 5
 trade_goods = unknown
 capital = "Placeholder"
 is_city = yes

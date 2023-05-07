@@ -1,14 +1,11 @@
 # Neuthin
-
 owner = B40
 controller = B40
 add_core = B40
 culture = north_karlton
-1444.11.11 = { set_province_flag = crab_province }
 religion = dark_valor
-hre = no
 base_tax = 2
-base_production = 4
+base_production = 5
 base_manpower = 3
 trade_goods = iron
 capital = "Neuthin"

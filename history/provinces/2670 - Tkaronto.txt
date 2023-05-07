@@ -1,16 +1,13 @@
 # Placeholder
-
 owner = B34
 controller = B34
 add_core = B34
 add_core = P00
 culture = adnuin
-1444.11.11 = { set_province_flag = human_province }
 religion = valor
-hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
+base_tax = 7
+base_production = 8
+base_manpower = 3
 trade_goods = unknown
 capital = "Placeholder"
 is_city = yes

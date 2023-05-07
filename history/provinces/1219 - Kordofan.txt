@@ -2,12 +2,10 @@ owner = A89
 controller = A89
 add_core = A89
 culture = kaihaku
-1444.11.11 = { set_province_flag = human_province }
 religion = mashia
-hre = no
-base_tax = 6
-base_production = 6
-base_manpower = 6
+base_tax = 5
+base_production = 5
+base_manpower = 5
 trade_goods = cloth
 capital = "Hadaka"
 is_city = yes

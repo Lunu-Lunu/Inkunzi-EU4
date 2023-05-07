@@ -1,14 +1,11 @@
 # Placeholder
-
 owner = A21
 controller = A21
 add_core = A21
 culture = penoxian
-1444.11.11 = { set_province_flag = human_province }
 religion = triaxism
-hre = no
-base_tax = 1 
-base_production = 1
+base_tax = 2
+base_production = 2
 base_manpower = 1
 trade_goods = unknown
 capital = "Placeholder"

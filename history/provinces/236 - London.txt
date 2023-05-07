@@ -1,15 +1,12 @@
 # Placeholder
-
 owner = A15
 controller = A15
 add_core = A15
 culture = kaulradic
-1444.11.11 = { set_province_flag = human_province }
 religion = orthodox_bytosism
-hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
+base_tax = 5
+base_production = 5
+base_manpower = 3
 trade_goods = unknown
 capital = "Placeholder"
 is_city = yes

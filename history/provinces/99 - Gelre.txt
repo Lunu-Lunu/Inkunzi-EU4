@@ -1,15 +1,12 @@
 # Placeholder
-
 owner = A04
 controller = A04
 add_core = A04
 culture = survalsian
-1444.11.11 = { set_province_flag = human_province }
 religion = old_ones
-hre = no
-base_tax = 1 
-base_production = 1
-base_manpower = 1
+base_tax = 3
+base_production = 4
+base_manpower = 3
 trade_goods = unknown
 capital = "Placeholder"
 is_city = yes

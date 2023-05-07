@@ -1,15 +1,12 @@
 # Placeholder
-
 owner = A66
 controller = A66
 add_core = A66
 culture = autemer
-1444.11.11 = { set_province_flag = human_province }
 religion = turriyahism
-hre = no
-base_tax = 6 
-base_production = 6
-base_manpower = 6
+base_tax = 3
+base_production = 3
+base_manpower = 3
 trade_goods = tropical_wood
 capital = "Placeholder"
 is_city = yes

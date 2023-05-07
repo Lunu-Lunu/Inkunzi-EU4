@@ -1,16 +1,13 @@
 # Hearcar
-
 owner = B21
 controller = B21
 add_core = B21
 add_core = B99
 culture = enezennian
-1444.11.11 = { set_province_flag = goblin_province }
 religion = valor
-hre = no
-base_tax = 1 
-base_production = 2
-base_manpower = 1
+base_tax = 2
+base_production = 3
+base_manpower = 2
 trade_goods = grain
 capital = "Hearcar"
 is_city = yes

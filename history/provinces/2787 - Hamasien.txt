@@ -1,15 +1,12 @@
 # Placeholder
-
 owner = B99
 controller = B99
 add_core = B99
 culture = enezennian
-1444.11.11 = { set_province_flag = goblin_province }
 religion = valor
-hre = no
-base_tax = 7 
-base_production = 7
-base_manpower = 8
+base_tax = 6
+base_production = 6
+base_manpower = 7
 trade_goods = glass
 capital = "Enezenn"
 is_city = yes

@@ -1,16 +1,13 @@
 # Ferbaie
-
 owner = B23
 controller = B23
 add_core = B23
 add_core = P10
 culture = melian
-1444.11.11 = { set_province_flag = golem_province }
 religion = valor
-hre = no
-base_tax = 1 
+base_tax = 1
 base_production = 1
-base_manpower = 1
+base_manpower = 2
 trade_goods = copper
 capital = "Ferbaie"
 is_city = yes

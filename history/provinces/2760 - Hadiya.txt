@@ -1,15 +1,12 @@
 # North Insikhia
-
 owner = B39
 controller = B39
 add_core = B39
 culture = ozarkhian
-1444.11.11 = { set_province_flag = human_province }
 religion = dark_valor
-hre = no
-base_tax = 3 
+base_tax = 3
 base_production = 5
-base_manpower = 2
+base_manpower = 1
 trade_goods = iron
 capital = "North Insikhia"
 is_city = yes

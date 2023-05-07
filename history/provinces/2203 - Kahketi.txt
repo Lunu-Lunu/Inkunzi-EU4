@@ -1,14 +1,11 @@
 # Placeholder
-
 owner = B07
 controller = B07
 add_core = B07
 culture = ourkani
-1444.11.11 = { set_province_flag = ourk_province }
 religion = celestialism
-hre = no
-base_tax = 1 
-base_production = 2
+base_tax = 1
+base_production = 1
 base_manpower = 2
 trade_goods = fur
 capital = "Placeholder"

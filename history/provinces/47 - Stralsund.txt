@@ -1,15 +1,12 @@
 # Placeholder
-
 owner = A03
 controller = A03
 add_core = A03
 culture = palmer
-1444.11.11 = { set_province_flag = human_province }
 religion = celestialism
-hre = no
 base_tax = 3
 base_production = 3
-base_manpower = 3
+base_manpower = 2
 trade_goods = unknown
 capital = "Placeholder"
 is_city = yes

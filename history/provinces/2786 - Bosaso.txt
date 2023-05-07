@@ -1,15 +1,12 @@
 # Neushark
-
 owner = B40
 controller = B40
 add_core = B40
 culture = north_karlton
-1444.11.11 = { set_province_flag = crab_province }
 religion = dark_valor
-hre = no
-base_tax = 3
-base_production = 4
-base_manpower = 4
+base_tax = 4
+base_production = 7
+base_manpower = 5
 trade_goods = fish
 capital = "Neushark Port"
 is_city = yes

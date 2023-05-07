@@ -1,12 +1,10 @@
 # Placeholder
-
 owner = B24
 controller = B24
 add_core = B24
 culture = verdeni
 religion = old_ones
-hre = no
-base_tax = 1 
+base_tax = 2
 base_production = 1
 base_manpower = 1
 trade_goods = unknown

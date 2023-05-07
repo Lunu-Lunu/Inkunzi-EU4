@@ -1,14 +1,11 @@
 # Placeholder
-
 owner = B31
 controller = B31
 add_core = B31
 culture = heplin
-1444.11.11 = { set_province_flag = dwarf_province }
 religion = valor
-hre = no
-base_tax = 1 
-base_production = 1
+base_tax = 2
+base_production = 2
 base_manpower = 1
 trade_goods = unknown
 capital = "Placeholder"
