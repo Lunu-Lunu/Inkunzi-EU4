@@ -3,6 +3,7 @@ owner = A82
 controller = A82
 add_core = A82
 culture = kythian
+1444.11.11 = { set_province_flag = human_province }
 religion = mashia
 base_tax = 4
 base_production = 5

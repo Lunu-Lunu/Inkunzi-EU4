@@ -3,6 +3,7 @@ owner = A28
 controller = A28
 add_core = A28
 culture = kido
+1444.11.11 = { set_province_flag = human_province }
 religion = onwinnen_whihcan
 base_tax = 6
 base_production = 6

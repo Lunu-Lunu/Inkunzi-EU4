@@ -3,6 +3,7 @@ owner = A20
 controller = A20
 add_core = A20
 culture = penoxian
+1444.11.11 = { set_province_flag = human_province }
 religion = triaxism
 base_tax = 5
 base_production = 5

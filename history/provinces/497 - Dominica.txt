@@ -2,7 +2,8 @@
 owner = A39
 controller = A39
 add_core = A39
-culture = tahviran
+culture = tahrivan
+1444.11.11 = { set_province_flag = human_province }
 religion = turriyahism
 base_tax = 1
 base_production = 2

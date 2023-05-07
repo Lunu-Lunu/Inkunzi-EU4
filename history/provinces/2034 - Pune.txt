@@ -3,6 +3,7 @@ owner = B02
 controller = B02
 add_core = B02
 culture = alzhaic
+1444.11.11 = { set_province_flag = human_province }
 religion = celestialism
 base_tax = 1
 base_production = 2

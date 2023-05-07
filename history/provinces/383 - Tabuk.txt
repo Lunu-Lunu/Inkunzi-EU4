@@ -3,6 +3,7 @@ owner = A27
 controller = A27
 add_core = A27
 culture = nimbus
+1444.11.11 = { set_province_flag = nimbus_province }
 religion = onwinnen_whihcan
 base_tax = 4
 base_production = 5

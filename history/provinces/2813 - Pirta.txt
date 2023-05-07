@@ -3,6 +3,7 @@ owner = B42
 controller = B42
 add_core = B42
 culture = tunnu
+1444.11.11 = { set_province_flag = dwarf_province }
 religion = mountain_folk
 base_tax = 4
 base_production = 3

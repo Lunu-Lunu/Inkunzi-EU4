@@ -5,6 +5,7 @@ controller = A19
 add_core = A19
 culture = pyaltsev
 1444.11.11 = { set_province_flag = human_province }
+1444.11.11 = { set_province_flag = human_province }
 religion = triaxism
 hre = no
 base_tax = 1 

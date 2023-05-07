@@ -3,6 +3,7 @@ owner = A68
 controller = A68
 add_core = A68
 culture = siamlud
+1444.11.11 = { set_province_flag = sia_si_province }
 religion = haymonutho
 base_tax = 4
 base_production = 5

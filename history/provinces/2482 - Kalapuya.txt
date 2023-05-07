@@ -3,6 +3,7 @@ owner = B21
 controller = B21
 add_core = B21
 culture = ukabururn
+1444.11.11 = { set_province_flag = human_province }
 religion = dark_valor
 base_tax = 5
 base_production = 5

@@ -3,6 +3,7 @@ owner = B26
 controller = B26
 add_core = B26
 culture = inner_rekolian
+1444.11.11 = { set_province_flag = centaur_province }
 religion = valor
 base_tax = 2
 base_production = 3

@@ -3,6 +3,7 @@ owner = B78
 controller = B78
 add_core = B78
 culture = antaxian
+1444.11.11 = { set_province_flag = hesh_province }
 religion = tribal_faith
 base_tax = 4
 base_production = 4

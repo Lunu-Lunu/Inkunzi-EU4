@@ -3,6 +3,7 @@ owner = A19
 controller = A19
 add_core = A19
 culture = pyaltsev
+1444.11.11 = { set_province_flag = human_province }
 religion = medvedeni
 base_tax = 3
 base_production = 3

@@ -4,6 +4,7 @@ controller = B34
 add_core = B34
 add_core = P00
 culture = adnuin
+1444.11.11 = { set_province_flag = human_province }
 religion = valor
 base_tax = 7
 base_production = 8

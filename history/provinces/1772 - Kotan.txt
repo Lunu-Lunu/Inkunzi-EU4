@@ -4,6 +4,7 @@ owner = A97
 controller = A97
 add_core = A97
 culture = paak_ourk
+1444.11.11 = { set_province_flag = ourk_province }
 religion = celestialism
 hre = no
 base_tax = 3

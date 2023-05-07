@@ -3,6 +3,7 @@ owner = B12
 controller = B12
 add_core = B12
 culture = wagren
+1444.11.11 = { set_province_flag = human_province }
 religion = valor
 base_tax = 1
 base_production = 1

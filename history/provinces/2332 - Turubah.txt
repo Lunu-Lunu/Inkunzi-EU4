@@ -3,6 +3,7 @@ owner = B14
 controller = B14
 add_core = B14
 culture = outer_rekolian
+1444.11.11 = { set_province_flag = centaur_province }
 religion = old_ones
 base_tax = 1
 base_production = 3

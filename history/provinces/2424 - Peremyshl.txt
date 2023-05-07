@@ -6,6 +6,7 @@ add_core = B16
 add_core = A04
 culture = survalsian
 1444.11.11 = { set_province_flag = human_province }
+1444.11.11 = { set_province_flag = human_province }
 religion = old_ones
 hre = no
 base_tax = 2 

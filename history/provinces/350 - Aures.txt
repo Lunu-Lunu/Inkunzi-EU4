@@ -3,6 +3,7 @@ owner = A23
 controller = A23
 add_core = A23
 culture = mungi
+1444.11.11 = { set_province_flag = mushroom_province }
 religion = agaric
 base_tax = 4
 base_production = 4

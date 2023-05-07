@@ -3,6 +3,7 @@ owner = A13
 controller = A13
 add_core = A13
 culture = oskitan
+1444.11.11 = { set_province_flag = human_province }
 religion = mashia
 base_tax = 4
 base_production = 4

@@ -5,6 +5,7 @@ controller = A01
 add_core = A01
 culture = upper_vestorian
 1444.11.11 = { set_province_flag = human_province }
+1444.11.11 = { set_province_flag = human_province }
 religion = celestialism
 hre = no
 base_tax = 3 

@@ -3,6 +3,7 @@ owner = B05
 controller = B05
 add_core = B05
 culture = dengiz
+1444.11.11 = { set_province_flag = human_province }
 religion = mashia
 base_tax = 3
 base_production = 2

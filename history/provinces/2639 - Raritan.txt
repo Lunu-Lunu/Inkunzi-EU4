@@ -3,6 +3,7 @@ owner = B41
 controller = B41
 add_core = B41
 culture = north_karlton
+1444.11.11 = { set_province_flag = crab_province }
 religion = valor
 base_tax = 4
 base_production = 4

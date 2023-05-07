@@ -3,6 +3,7 @@ owner = B22
 controller = B22
 add_core = B22
 culture = tensali
+1444.11.11 = { set_province_flag = human_province }
 religion = valor
 base_tax = 1
 base_production = 1

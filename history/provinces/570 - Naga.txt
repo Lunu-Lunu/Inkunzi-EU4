@@ -4,6 +4,7 @@ controller = A40
 add_core = A40
 add_core = P02
 culture = mungi
+1444.11.11 = { set_province_flag = mushroom_province }
 religion = mashia
 base_tax = 7
 base_production = 9

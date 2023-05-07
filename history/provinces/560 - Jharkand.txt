@@ -4,6 +4,7 @@ controller = A40
 add_core = A40
 add_core = P04
 culture = iran
+1444.11.11 = { set_province_flag = human_province }
 religion = agaric
 base_tax = 3
 base_production = 3

@@ -6,6 +6,7 @@ add_core = A42
 add_core = A54
 culture = rannikean
 1444.11.11 = { set_province_flag = mushroom_province }
+1444.11.11 = { set_province_flag = mushroom_province }
 religion = agaric
 hre = no
 base_tax = 4

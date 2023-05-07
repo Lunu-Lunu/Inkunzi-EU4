@@ -3,6 +3,7 @@ owner = A04
 controller = A04
 add_core = A04
 culture = survalsian
+1444.11.11 = { set_province_flag = human_province }
 religion = old_ones
 base_tax = 5
 base_production = 3

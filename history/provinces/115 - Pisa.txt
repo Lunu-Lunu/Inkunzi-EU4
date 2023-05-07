@@ -3,6 +3,7 @@ owner = A06
 controller = A06
 add_core = A06
 culture = urakkan
+1444.11.11 = { set_province_flag = draconic_province }
 religion = medvedeni
 base_tax = 3
 base_production = 4

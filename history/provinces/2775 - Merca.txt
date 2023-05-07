@@ -3,6 +3,7 @@ owner = B40
 controller = B40
 add_core = B40
 culture = gneta
+1444.11.11 = { set_province_flag = gneta_province }
 religion = haymonutho
 base_tax = 4
 base_production = 6

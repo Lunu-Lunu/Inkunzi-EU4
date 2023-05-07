@@ -3,6 +3,7 @@ owner = A12
 controller = A12
 add_core = A12
 culture = prilohan
+1444.11.11 = { set_province_flag = human_province }
 religion = ohenomedvedeni
 base_tax = 5
 base_production = 4

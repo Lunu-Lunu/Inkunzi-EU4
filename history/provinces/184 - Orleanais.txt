@@ -3,6 +3,7 @@ owner = A10
 controller = A10
 add_core = A10
 culture = credentinunum
+1444.11.11 = { set_province_flag = human_province }
 religion = celestialism
 base_tax = 3
 base_production = 4

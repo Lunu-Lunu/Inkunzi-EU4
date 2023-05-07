@@ -3,6 +3,7 @@ owner = B36
 controller = B36
 add_core = B36
 culture = goblin
+1444.11.11 = { set_province_flag = goblin_province }
 religion = dark_valor
 base_tax = 1
 base_production = 1

@@ -5,6 +5,7 @@ controller = B11
 add_core = B11
 culture = wagren
 1444.11.11 = { set_province_flag = human_province }
+1444.11.11 = { set_province_flag = human_province }
 religion = mashia
 hre = no
 base_tax = 1 

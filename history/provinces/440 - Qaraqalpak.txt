@@ -3,6 +3,7 @@ owner = A34
 controller = A34
 add_core = A34
 culture = nimbus
+1444.11.11 = { set_province_flag = nimbus_province }
 religion = mashia
 base_tax = 3
 base_production = 3

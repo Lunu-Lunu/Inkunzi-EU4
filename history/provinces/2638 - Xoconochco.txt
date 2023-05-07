@@ -3,6 +3,7 @@ owner = B31
 controller = B31
 add_core = B31
 culture = heplin
+1444.11.11 = { set_province_flag = dwarf_province }
 religion = valor
 base_tax = 3
 base_production = 4

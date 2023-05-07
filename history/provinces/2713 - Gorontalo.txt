@@ -4,6 +4,7 @@ controller = B36
 add_core = B36
 add_core = P09
 culture = tehaori
+1444.11.11 = { set_province_flag = human_province }
 religion = mashia
 base_tax = 5
 base_production = 5

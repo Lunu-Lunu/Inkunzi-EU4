@@ -3,6 +3,7 @@ owner = B32
 controller = B32
 add_core = B32
 culture = miarii
+1444.11.11 = { set_province_flag = moth_province }
 religion = mashia
 base_tax = 5
 base_production = 4

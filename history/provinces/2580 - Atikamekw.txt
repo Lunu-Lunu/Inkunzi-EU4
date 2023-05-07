@@ -3,6 +3,7 @@ owner = B23
 controller = B23
 add_core = B23
 culture = melian
+1444.11.11 = { set_province_flag = golem_province }
 religion = valor
 base_tax = 5
 base_production = 6

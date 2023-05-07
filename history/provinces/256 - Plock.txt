@@ -3,6 +3,7 @@ owner = A17
 controller = A17
 add_core = A17
 culture = pyaltsev
+1444.11.11 = { set_province_flag = human_province }
 religion = triaxism
 base_tax = 5
 base_production = 3

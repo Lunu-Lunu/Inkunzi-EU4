@@ -3,6 +3,7 @@ owner = A15
 controller = A15
 add_core = A15
 culture = kaulradic
+1444.11.11 = { set_province_flag = human_province }
 religion = orthodox_bytosism
 base_tax = 2
 base_production = 3

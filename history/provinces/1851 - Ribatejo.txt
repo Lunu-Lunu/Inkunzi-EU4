@@ -5,6 +5,7 @@ add_core = B01
 add_core = R05
 add_core = R08
 culture = paak_ourk
+1444.11.11 = { set_province_flag = ourk_province }
 religion = medilyte
 base_tax = 2
 base_production = 2

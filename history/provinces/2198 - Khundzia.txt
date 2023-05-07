@@ -3,6 +3,7 @@ owner = B07
 controller = B07
 add_core = B07
 culture = ourkani
+1444.11.11 = { set_province_flag = ourk_province }
 religion = celestialism
 base_tax = 2
 base_production = 1

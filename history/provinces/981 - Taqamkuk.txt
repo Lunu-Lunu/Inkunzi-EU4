@@ -2,6 +2,7 @@ owner = A71
 controller = A71
 add_core = A71
 culture = sieraldh
+1444.11.11 = { set_province_flag = human_province }
 religion = turriyahism
 base_tax = 4
 base_production = 4

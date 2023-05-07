@@ -3,6 +3,7 @@ owner = A37
 controller = A37
 add_core = A37
 culture = bosem
+1444.11.11 = { set_province_flag = human_province }
 religion = turriyahism
 base_tax = 6
 base_production = 5

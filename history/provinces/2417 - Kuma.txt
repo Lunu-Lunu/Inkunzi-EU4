@@ -3,6 +3,7 @@ owner = B16
 controller = B16
 add_core = B16
 culture = lizardman
+1444.11.11 = { set_province_flag = lizard_province }
 religion = old_ones
 base_tax = 5
 base_production = 4

@@ -3,6 +3,7 @@ owner = B68
 controller = B68
 add_core = B68
 culture = cowpal
+1444.11.11 = { set_province_flag = human_province }
 religion = tribal_faith
 base_tax = 5
 base_production = 5

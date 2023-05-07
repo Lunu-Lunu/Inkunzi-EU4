@@ -3,6 +3,7 @@ owner = B15
 controller = B15
 add_core = B15
 culture = inner_rekolian
+1444.11.11 = { set_province_flag = centaur_province }
 religion = old_ones
 base_tax = 1
 base_production = 1

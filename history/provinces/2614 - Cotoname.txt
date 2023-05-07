@@ -4,6 +4,7 @@ controller = B26
 add_core = B26
 add_core = P11
 culture = melian
+1444.11.11 = { set_province_flag = golem_province }
 religion = valor
 base_tax = 3
 base_production = 4

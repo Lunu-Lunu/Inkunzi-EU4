@@ -3,6 +3,7 @@ owner = A14
 controller = A14
 add_core = A14
 culture = kaulradic
+1444.11.11 = { set_province_flag = human_province }
 religion = mashia
 base_tax = 5
 base_production = 5

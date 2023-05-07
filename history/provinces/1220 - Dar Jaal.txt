@@ -3,6 +3,7 @@ owner = A89
 controller = A89
 add_core = A89
 culture = kaihaku
+1444.11.11 = { set_province_flag = human_province }
 religion = mashia
 base_tax = 6
 base_production = 6
