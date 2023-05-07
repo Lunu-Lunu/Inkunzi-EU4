@@ -1,0 +1,276 @@
+<series> = {
+    slot = 1                    # Which column the missions will appear in. 1 to 5.
+    generic = no             # Whether missions within this series are considered generic.
+    ai = yes                  # Whether the AI will claim missions in this series.
+    has_country_shield = yes  # Whether to display the country shield on the icon.    
+    
+    # Determines whether a series is loaded at all. Used to limit series to DLC.
+    potential_on_load = {
+        yes
+    }
+    
+    # Determines when a series appears for a country. Country scope.
+    potential = {
+        tag = B26
+    }
+    
+    # The name of the mission, used for localization
+    Ocelidian_Mission_Melkhestrian_Allies = {
+        icon = <gfx>            # The icon to use for the mission, without the file extension.
+        generic = no     # Whether this mission is considered generic.
+        position = 1        # Which row the mission appears in. 1 is top.
+        completed_by = never   # Automatically completes mission in history. 
+        
+        # Which missions must be completed before this mission is active.
+        required_missions = {
+            
+        }
+        
+        # Determines which provinces to highlight. Acts like all_province scope. Optional.
+        provinces_to_highlight = {
+            
+        }
+    
+        # Determines when the mission is completed. Country scope.
+        trigger = {
+            alliance_with = B21
+            Or = {
+            #Melkhia does not exist
+        }
+        
+        # The effect executed when the mission is claimed. Country scope.
+        effect = {
+            diplomatic_reputation = 1
+            Or = {
+            duration_years = 5 {
+            improve_relations_modifier = 0.5
+        }
+    }
+}
+
+    # The name of the mission, used for localization
+    Ocelidian_Mission_Ally_Vouris = {
+        icon = <gfx>            # The icon to use for the mission, without the file extension.
+        generic = no     # Whether this mission is considered generic.
+        position = 2        # Which row the mission appears in. 1 is top.
+        completed_by = never   # Automatically completes mission in history. 
+        
+        # Which missions must be completed before this mission is active.
+        required_missions = {
+            Ocelidian_Mission_Melkhestrian_Allies
+        }
+        
+        # Determines which provinces to highlight. Acts like all_province scope. Optional.
+        provinces_to_highlight = {
+            
+        }
+    
+        # Determines when the mission is completed. Country scope.
+        trigger = {
+            alliance_with = B24
+            Or = {
+            #Vouris Does Not Exist
+        }
+        
+        # The effect executed when the mission is claimed. Country scope.
+        effect = {
+            add_dip_power = 100
+            Or = {
+            duration_years = 10 {
+            ae_impact = -0.5
+        }
+    }
+}
+
+ # The name of the mission, used for localization
+    Ocelidian_Mission_Verdenii_Allies = {
+        icon = <gfx>            # The icon to use for the mission, without the file extension.
+        generic = no     # Whether this mission is considered generic.
+        position = 3        # Which row the mission appears in. 1 is top.
+        completed_by = never   # Automatically completes mission in history. 
+        
+        # Which missions must be completed before this mission is active.
+        required_missions = {
+            Ocelidian_Mission_Ally_Vouris
+        }
+        
+        # Determines which provinces to highlight. Acts like all_province scope. Optional.
+        provinces_to_highlight = {
+            
+        }
+    
+        # Determines when the mission is completed. Country scope.
+        trigger = {
+            alliance_with = B20
+            Or = {
+            #Verden Does Not Exist
+        }
+        
+        # The effect executed when the mission is claimed. Country scope.
+        effect = {
+            diplomats = 1
+            Or = {
+            add_modifier = 2000
+        }
+    }
+}
+
+<series> = {
+    slot = 2                    # Which column the missions will appear in. 1 to 5.
+    generic = no             # Whether missions within this series are considered generic.
+    ai = yes                  # Whether the AI will claim missions in this series.
+    has_country_shield = yes  # Whether to display the country shield on the icon.    
+    
+    # Determines whether a series is loaded at all. Used to limit series to DLC.
+    potential_on_load = {
+        yes
+    }
+    
+    # Determines when a series appears for a country. Country scope.
+    potential = {
+        tag = B26
+    }
+
+# The name of the mission, used for localization
+    Ocelidian_Mission_Found_Royal_Mint = {
+        icon = <gfx>            # The icon to use for the mission, without the file extension.
+        generic = no     # Whether this mission is considered generic.
+        position = 1        # Which row the mission appears in. 1 is top.
+        completed_by = never   # Automatically completes mission in history. 
+        
+        # Which missions must be completed before this mission is active.
+        required_missions = {
+            
+        }
+        
+        # Determines which provinces to highlight. Acts like all_province scope. Optional.
+        provinces_to_highlight = {
+            
+        }
+    
+        # Determines when the mission is completed. Country scope.
+        trigger = {
+            treasury = >100
+        }
+        
+        # The effect executed when the mission is claimed. Country scope.
+        effect = {
+            duration_years = 15 {
+            development_cost = -0.5
+            inflation_reduction = 0.1
+            build_cost = -0.1
+        }
+    }
+}
+
+    # The name of the mission, used for localization
+    Ocelidian_Mission_Develop_Heiltsuk = {
+        icon = <gfx>            # The icon to use for the mission, without the file extension.
+        generic = no     # Whether this mission is considered generic.
+        position = 2        # Which row the mission appears in. 1 is top.
+        completed_by = never   # Automatically completes mission in history. 
+        
+        # Which missions must be completed before this mission is active.
+        required_missions = {
+            Ocelidian_Mission_Found_Royal_Mint
+        }
+        
+        # Determines which provinces to highlight. Acts like all_province scope. Optional.
+        
+        }
+    
+        # Determines when the mission is completed. Country scope.
+        provinces_to_highlight = {
+            Scope = Prov2610:0 {
+            development = >16
+        }
+        
+        # The effect executed when the mission is claimed. Country scope.
+        effect = {
+            trigger = {
+            Scope = Prov2610:0 {
+            add_base_tax = 2
+            add_base_production = 2
+            add_base_manpower = 2
+            duration_years = 10 {
+            local_tax_modifier = 0.2
+            administrative_efficiency = 0.5
+        }
+    }
+}
+
+<series> = {
+    slot = 4                    # Which column the missions will appear in. 1 to 5.
+    generic = no             # Whether missions within this series are considered generic.
+    ai = yes                  # Whether the AI will claim missions in this series.
+    has_country_shield = yes  # Whether to display the country shield on the icon.    
+    
+    # Determines whether a series is loaded at all. Used to limit series to DLC.
+    potential_on_load = {
+        yes
+    }
+    
+    # Determines when a series appears for a country. Country scope.
+    potential = {
+        tag = B26
+    }
+    
+    # The name of the mission, used for localization
+    Ocelidian_Mission_Crush_The_Melcrestian_Seperatists = {
+        icon = <gfx>            # The icon to use for the mission, without the file extension.
+        generic = no     # Whether this mission is considered generic.
+        position = 1        # Which row the mission appears in. 1 is top.
+        completed_by = never   # Automatically completes mission in history. 
+        
+        # Which missions must be completed before this mission is active.
+        required_missions = {
+            
+        }
+        
+        # Determines which provinces to highlight. Acts like all_province scope. Optional.
+        provinces_to_highlight = {
+            <trigger> #Provinces Owned By Rebels
+        }
+    
+        # Determines when the mission is completed. Country scope.
+        trigger = {
+            <trigger> #Controls provinces or no rebels in country
+        }
+        
+        # The effect executed when the mission is claimed. Country scope.
+        effect = {
+            stability = +1
+            duration_years = 5 {
+            global_unrest = -2
+        }
+    }
+}
+
+    # The name of the mission, used for localization
+    Ocelidian_Mission_Grand_Army_Of_Ocelidia = {
+        icon = <gfx>            # The icon to use for the mission, without the file extension.
+        generic = no     # Whether this mission is considered generic.
+        position = 2        # Which row the mission appears in. 1 is top.
+        completed_by = never   # Automatically completes mission in history. 
+        
+        # Which missions must be completed before this mission is active.
+        required_missions = {
+            Ocelidian_Mission_Crush_The_Melcrestian_Seperatists
+        }
+        
+        # Determines which provinces to highlight. Acts like all_province scope. Optional.
+        provinces_to_highlight = {
+            <trigger>
+        }
+    
+        # Determines when the mission is completed. Country scope.
+        trigger = {
+            <trigger>
+        }
+        
+        # The effect executed when the mission is claimed. Country scope.
+        effect = {
+            <effect>
+        }
+    }
+}
