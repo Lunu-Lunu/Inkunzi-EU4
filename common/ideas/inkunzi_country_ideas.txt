@@ -45,8 +45,11 @@ A01_ideas = { # Fort Federation Ideas
 
 A02_ideas = { # Stendari Ideas
     start = {
-        legitimacy = 0.5
+        legitimacy = 1
+        devotion = 1
+        republican_tradition = 0.3
         heir_chance = 0.50
+        reelection_cost = -0.05
     }
     bonus = {
         discipline = 0.05
@@ -83,10 +86,52 @@ A02_ideas = { # Stendari Ideas
     }
 }
 
+A03_ideas = { # Palmeria Ideas
+	start = {
+		monthly_reform_progress_modifier = 0.2
+		infantry_power = 0.15
+	}
+	bonus = {
+		discipline = 0.05
+	}
+
+	trigger = {
+		tag = A03
+	}
+	free = yes
+
+	A03_rise_of_palmeria = {
+		province_warscore_cost = -0.05
+		core_creation = -0.1
+	}
+	A03_friends_of_the_forts = {
+		defensiveness = 0.1
+		innovativeness_gain = 0.5
+	}
+	A03_palmer_settlers = {
+		culture_conversion_cost = -0.2
+	}
+	A03_vicious_technologies = {
+		morale_damage = 0.1
+	}
+	A03_opportunism = {
+		fabricate_claims_cost = -0.5
+	}
+	A03_tactical_expertise = {
+		army_tradition = 1
+	}
+	A03_peaceful_roots = {
+		stability_cost_modifier = -0.15
+	}
+}
+
 A07_ideas = { # Seaside Ideas
     start = {
-        legitimacy = 0.5
+        legitimacy = 1
+        devotion = 1
+        republican_tradition = 0.3
         heir_chance = 0.50
+        reelection_cost = -0.05
     }
     bonus = {
         discipline = 0.05
@@ -112,8 +157,7 @@ A07_ideas = { # Seaside Ideas
         global_missionary_strength = 0.03
     }
     A07_mercantilism = {
-        burghers_loyalty_modifier = 0.05
-	burghers_influence_modifier = 0.1
+		merchants = 1
     }
     A07_vestorian_military_tradition = {
         army_tradition = 0.5

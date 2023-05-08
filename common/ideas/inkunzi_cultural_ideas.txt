@@ -213,3 +213,64 @@ roden_ideas = { # Roden Ideas
         culture_conversion_cost = -0.2
     }
 }
+
+dahe_warlord_ideas = { # Dahe Warlord Ideas
+    start = {
+        ae_impact = -0.1
+        land_morale = 0.1
+    }
+    bonus = {
+        land_forcelimit_modifier = 0.2
+    }
+
+    trigger = {
+        OR = {
+            tag = A44
+            tag = A45
+            tag = A46
+            tag = A47
+            tag = A48
+            tag = A49
+            tag = A50
+            tag = A51
+            tag = A52
+            tag = A53
+            tag = A54
+            tag = A55
+            tag = A56
+            tag = A57
+            tag = A58
+            tag = A59
+            tag = A60
+            tag = A61
+            tag = A62
+            tag = A63
+            tag = A64
+        }
+    }
+    free = yes
+
+    dahe_warlord_staking_a_claim = {
+        spy_offence = 0.33
+    }
+    dahe_warlord_defending_our_lands = {
+        defensiveness = 0.15
+        global_manpower_modifier = 0.1
+    }
+    dahe_warlord_secure_trade = {
+        global_own_trade_power = 0.2
+    }
+    dahe_warlord_hasty_alliances = {
+        diplomatic_reputation = 1
+    }
+    dahe_warlord_taxes = {
+        war_taxes_cost_modifier = -0.5
+    }
+    dahe_warlord_cleaning_up = {
+        core_creation = -0.1
+    }
+    dahe_warlord_a_new_nation = {
+        development_cost = -0.05
+        monthly_reform_progress_modifier = 0.1
+    }
+}
