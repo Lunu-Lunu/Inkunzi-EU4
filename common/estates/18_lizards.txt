@@ -136,6 +136,7 @@ estate_lizards = {
 		estate_lizards_land_rights
 		estate_lizards_venerate_zuntlani_clergy
 		estate_lizards_thixi_commanders
+		estate_lizards_swamp_charter
 	}
 
 	agendas = {

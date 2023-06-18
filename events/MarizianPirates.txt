@@ -1,11 +1,115 @@
 ###########################################################
 # Events for Marizian
 #
-# written by PGusto
+# written by PGusto & Woochie
 ###########################################################
 
 namespace = marizian
 
+country_event = {
+	id = marizian.2
+	title = marizian.2.t
+	desc = marizian.2.desc
+	picture = BARBARY_PIRATES_eventPicture
+	major = yes
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			AND = {
+			is_year = 1500
+			num_of_cities = 2
+			owns = 523
+			}
+			AND = {
+			has_global_flag = marizian_trip 
+			owns = 523
+			}
+		}
+   }
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	option = {
+		name = marizian.2.a
+		ai_chance = { factor = 100 }
+		
+		ROOT = {
+			create_guarantee = B97
+		}
+		523 = {
+		    add_core = B97
+			cede_province =  B97
+		}
+		B97 = { 
+		    define_ruler = {
+		    name = "Marizqur"
+			dynasty = "placeholder"
+			adm = 2
+			dip = 5
+			mil = 4
+			age = 22
+			culture = thixi	
+			}
+			define_admiral = {
+			name = "Marizqur"
+			fire = 3
+			shock = 4
+			manuever = 6
+			siege = 3
+		    }
+		}		
+	}
+	option = {
+		name = marizian.2.b
+		
+		ROOT = {
+			create_guarantee = B97
+		}
+		523 = {
+		    add_core = B97
+			cede_province =  B97
+		}
+		B97 = { 
+		    define_ruler = {
+		    name = "Marizqur"
+			dynasty = "placeholder"
+			adm = 2
+			dip = 5
+			mil = 4
+			age = 22
+			culture = thixi	
+			}
+			define_admiral = {
+			name = "Marizqur"
+			fire = 3
+			shock = 4
+			manuever = 6
+			siege = 3
+		    }
+		}
+		switch_tag = B97 
+	}
+	option = {
+		name = marizian.2.c
+		
+		523 = {
+		    add_core = B97
+			create_pirate = 18
+		}
+		#:yawn: add custom rebel type for marizian, but lazy
+	}
+}
+
+
+
+
+
+
+# old
 country_event = {
 	id = marizian.1
 	title = marizian.1.t

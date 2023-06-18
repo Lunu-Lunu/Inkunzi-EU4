@@ -46,6 +46,27 @@ zuntlan_column_1 = {
 				random = 15
 			}
 		}
+	}
+	zuntlan_crabian_question = {
+		icon = mission_ottoman_harem
+		position = 4
+		required_missions = {
+
+		}
+		provinces_to_highlight = {
+
+			
+		}
+		trigger = {
+			owns_core_province = 722
+		}
+		effect = {
+			country_event = {
+				id = zuntlan.6
+				days = 30
+				random = 15
+			}
+		}
 	}	
 }
 zuntlan_column_2 = {
@@ -140,6 +161,64 @@ zuntlan_column_2 = {
 				name = our_ambitions
 				duration = -1
 				desc = OUR_AMBITIONS_DESC_TOOLTIP
+			}
+		}
+	}
+	zuntlan_merry_life_short_one = {
+		icon = mission_ottoman_harem
+		position = 5
+		required_missions = {
+			zuntlan_crabian_question
+		}
+		provinces_to_highlight = {
+		
+		}
+		trigger = {
+			
+		}
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						has_global_flag = marizian_trip
+						exists = B97
+					}
+					set_global_flag = marizian_trip
+				}
+				else = {
+					change_mil = 1 
+					B97 = {
+						add_treasury = 50
+						add_dip_power = 100
+					}
+				}
+				custom_tooltip = marizians_trip
+			}
+		}
+	} #A merry life and a short one
+	zuntlan_colonization = {
+		icon = mission_ottoman_harem
+		position = 6
+		required_missions = {
+		}
+		provinces_to_highlight = {
+		
+		}
+		trigger = {
+			#navy_size = 60
+			treasury = 500	
+			current_age = age_of_reformation
+		}
+		effect = {
+			add_treasury = -500
+			757 = {
+				owner = {
+					country_event = {
+						id = zuntlan.9
+						days = 20
+						random = 10		
+					}
+				}
 			}
 		}
 	}
@@ -263,8 +342,13 @@ zuntlan_column_3 = {
 				zuntlan_or_old
 		}
 		provinces_to_highlight = {
-
-
+			is_neighbor_of = ROOT
+			OR = {
+				culture = inner_rekolian
+				culture = outer_rekolian
+				
+			}
+			NOT = { country_or_non_sovereign_subject_holds = B16 }
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
@@ -311,13 +395,26 @@ zuntlan_column_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = B16 }
 		}
 		trigger = {
-			owns = surveria10_area
-			owns = surveria11_area
-			owns = surveria9_area
-			owns = surveria8_area
+			surveria10_area = {
+				type = all 
+				tag = ROOT
+			}
+			surveria11_area = {
+				type = all 
+				tag = ROOT
+			}
+			surveria9_area = {
+				type = all 
+				tag = ROOT
+			}
+			surveria8_area = {
+				type = all 
+				tag = ROOT
+			}
 		}
 		effect = {
 			set_global_flag = sz_union_available
+			change_mil = 1 
 		}
 	}
 	zuntlan_union_or_empire = {
@@ -328,6 +425,9 @@ zuntlan_column_3 = {
 		}
 		provinces_to_highlight = {
 			OR = {
+				area = survalsia2_area
+				area = survalsia3_area
+				area = survalsia_area			
 				area = surveria10_area
 				area = surveria11_area
 				area = surveria9_area
@@ -342,22 +442,36 @@ zuntlan_column_3 = {
 		}
 		trigger = {
 			prestige = 90
-			B16 = {
-			owns_all_provinces = {
-				area = surveria10_area
-				area = surveria11_area
-				area = surveria9_area
-				area = surveria8_area
-				area = survalsia4_area 
-				area = survalsia5_area
-				owns = 65
-				owns = 88
-				owns = 87
+			surveria10_area = {
+				type = all
+				tag = ROOT 
 			}
+			surveria11_area = {
+				type = all
+				tag = ROOT
 			}
-			 
+			surveria9_area = {
+				type = all
+				tag = ROOT
+			}
+			surveria8_area = {
+				type = all
+				tag = ROOT
+			}
+			surveria5_area = {
+				type = all
+				tag = ROOT
+			}
+			surveria4_area = {
+				type = all
+				tag = ROOT
+			}
+			owns = 65
+			owns = 87
+			owns = 88
 		}
 		effect = {
+			ROOT = {
 			country_event = {
 				    id = zuntlan.5
 					days = 30
@@ -367,6 +481,8 @@ zuntlan_column_3 = {
 				name = footsteps_forefathers
 				duration = -1  
 				desc = FOOTSETPS_FOREFATHERS_DESC_TOOLTIP
+				hidden = no
+			}
 			}
 		}
 	}	
@@ -380,6 +496,28 @@ zuntlan_column_4 = {
 	}
 	has_country_shield = yes
 	
+	zuntlan_rule_wave = {
+		icon = mission_ottoman_harem
+		position = 2
+		required_missions = {
+			zuntlan_ingles_port
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			num_of_heavy_ship = 5
+			navy_size = 50
+		}
+		effect = {
+			add_country_modifier = { 
+				name = zuntlan_navy
+				duration = -1  
+				desc = ZUNTLAN_NAVY_DESC_TOOLTIP
+				hidden = no
+			}
+		}
+	}	
 	zuntlan_westarians_tears = {
 		icon = mission_ottoman_harem
 		position = 3
@@ -395,9 +533,21 @@ zuntlan_column_4 = {
 			NOT = { country_or_non_sovereign_subject_holds = B16 }
 		}
 		trigger = {
-			owns = survalsia2_area
-			owns = survalsia3_area
-			owns = survalsia_area
+			survalsia2_area = {
+				type = all
+				tag = ROOT
+			}
+			survalsia3_area = { 
+				type = all
+				tag = ROOT
+			}
+			survalsia_area = {
+				type = all
+				tag = ROOT
+			}
+			#owns = survalsia2_area
+			#owns = survalsia3_area
+			#owns = survalsia_area
 		}
 		effect = {
 			prestige = 40
@@ -417,8 +567,43 @@ zuntlan_column_4 = {
 				add_claim = B16
 			}
 		}
+	}
+zuntlan_saq_to = {
+		icon = mission_ottoman_harem
+		position = 5
+		required_missions = {
+
+		}
+		provinces_to_highlight = {
+
+		}
+		trigger = {
+			mission_completed = zuntlan_rule_wave
+			is_female = yes
+			has_heir = no
+		}
+		effect = {
+			define_heir = {
+				dynasty = "Saq'to"
+				age = 20
+				adm = 5
+				dip = 4
+				mil = 6
+				hide_skills = yes
+				claim = 70
+				name = "Saq'to III" #make dat dynamic number when you have time :)
+				male = yes 
+				no_consort_with_heir = yes
+			}
+			define_admiral = {
+				name = "Saq'to II"
+				shock = 4
+				fire = 3
+				manuever = 4
+				siege = 2
+			}
+		}
 	}	
-	
 }
 zuntlan_column_5 = {
 	slot = 5
@@ -428,4 +613,96 @@ zuntlan_column_5 = {
 		tag = B16
 	}
 	has_country_shield = yes
+	
+	zuntlan_ingles_port = {
+		icon = mission_ottoman_harem
+		position = 1
+		required_missions = {
+
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			2419 = {
+				province_has_center_of_trade_of_level = 2
+				development = 26
+			}
+		}
+		effect = {
+			2419 = {
+				add_province_modifier  = {
+					name = bustling_port
+					duration = -1  
+					desc = BUSTLING_PORT_DESC_TOOLTIP
+					hidden = no
+				}
+			}
+		}
+	}
+	zuntlan_geat_temple = {
+		icon = mission_ottoman_harem
+		position = 2
+		required_missions = {
+			zuntlan_ingles_port
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			has_estate_privilege = estate_church_land_rights
+			treasury = 200
+		}
+		effect = {
+			2419 = {
+				remove_province_modifier = temple_city
+				add_permanent_province_modifier = { 
+					name = great_temple_city
+					duration = -1  
+					desc = GREAT_TEMPLE_CITY_TOOLTIP
+				}
+			}		
+		}
+	}
+	zuntlan_royal_treat = {
+		icon = mission_ottoman_harem
+		position = 3
+		required_missions = {
+			zuntlan_geat_temple
+			zuntlan_rule_wave
+		}
+		provinces_to_highlight = {
+			
+		}
+		trigger = {
+			2419 = {
+				province_has_center_of_trade_of_level = 3
+				development = 35
+				trade_share = {
+					country = B16
+					share = 40
+				}
+			}
+		}
+		effect = {
+			2419 = {
+				change_trade_goods = Purple #maybe make this into a nice little flavor event
+			}
+		}
+	}
+	zuntlan_old_ones = {
+		icon = mission_ottoman_harem
+		position = 4
+		required_missions = {
+		}
+		provinces_to_highlight = {
+		
+		}
+		trigger = {
+			mission_completed = zuntlan_old_ones
+		}
+		effect = {
+			custom_tooltip = more_to_come_tt
+		}
+	}	
 }

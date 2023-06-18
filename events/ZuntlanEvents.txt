@@ -130,23 +130,27 @@ country_event = {
 		ai_chance = { factor = 75 }
 		
 		add_prestige = 50
-		add_country_modifier = { 
-			name = revenge_thixi
-			duration = 18250 
-			desc = REVENGE _THIXI_DESC_TOOLTIP
-			hidden = yes
+		ROOT = {
+			add_country_modifier = {
+				name = revenge_thixi
+				duration = 18250 
+				desc = REVENGE _THIXI_DESC_TOOLTIP
+				hidden = no
+			}
 		}
 	}
 	option = {
 		name = zuntlan.3.b
 		ai_chance = { factor = 25 }
 		add_prestige = 50
-		country_event = {
-			id zuntlan.4
-			days = 10
-			random = -5
-			random = 5
-		}		
+		ROOT = {
+			country_event = {
+				id = zuntlan.4
+				days = 10
+				random = -5
+				random = 5
+			}
+		}
 	}	
 
 }
@@ -234,7 +238,158 @@ country_event = {
 		}
 		create_march = R04 #use if statement to make a vassal if no dlc
 		switch_tag = R04
-	}	
 	}
 }
-#
+#zuntlan union or empire
+country_event = {
+	id = zuntlan.5
+	title = zuntlan.5.t
+	desc = zuntlan.5.d
+	picture = COLONIZATION_eventPicture
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = zuntlan.5.a
+		set_global_flag = z_empire
+			if = {
+				limit = {
+					has_global_flag = z_greater_state
+				}
+				override_country_name = ZUNTLAN_G_E
+			}
+			else = {
+				override_country_name = ZUNTLAN_E
+			}
+			set_government_rank = 3 
+	}
+	option = {
+		name = zuntlan.5.b
+		
+	}
+}
+#crabia
+country_event = {
+	id = zuntlan.6
+	title = zuntlan.6.t
+	desc = zuntlan.6.d
+	picture = COLONIZATION_eventPicture
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = zuntlan.6.a
+		ai_chance = { factor = 100 }
+		722 = {
+			cede_province = B98
+		}
+		create_subject = {
+			subject_type = personal_union 
+			subject = B98
+		}
+	}
+	option = {
+		name = zuntlan.6.b
+		722 = {
+			cede_province = B98
+		}
+		create_subject = {
+			subject_type = personal_union 
+			subject = B98
+		}
+		switch_tag = B98
+	}
+	option = {
+		name = zuntlan.6.c
+		722 =  {
+			spawn_rebels = {
+				type = independence_rebels
+				size = 3
+			}
+			create_pirate = 2
+		}
+	}	
+}
+#marizian 
+country_event = {
+	id = zuntlan.7
+	title = zuntlan.7.t
+	desc = zuntlan.7.d
+	picture = COLONIZATION_eventPicture
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = zuntlan.7.a
+		ai_chance = { factor = 100 }
+		country_event = { 
+			id = zuntlan.8
+			days = 5
+			random = 75
+		}
+	}
+	option = {
+		name = zuntlan.7.b
+		722 = {
+			create_pirate = 5
+		}
+	}
+}
+country_event = {
+	id = zuntlan.8
+	title = zuntlan.8.t
+	desc = zuntlan.8.d
+	picture = COLONIZATION_eventPicture
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = zuntlan.8.a
+		ai_chance = { factor = 100 }
+		523 = {
+			owner = {
+				country_event = { 
+					id = marizian.2
+					days = 5
+					random = 75
+				}
+			}
+		}
+	}
+	option = {
+		name = zuntlan.8.b
+			define_admiral = {
+				name = "Marizqur"
+				fire = 3
+				shock = 4
+				manuever = 6
+				siege = 3
+		    }
+	}	
+}
+country_event = {
+	id = zuntlan.9
+	title = zuntlan.9.t
+	desc = zuntlan.9.d
+	picture = COLONIZATION_eventPicture
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = zuntlan.9.a
+		ai_chance = { factor = 100 }
+		
+		add_treasury = 500
+		757 = {
+			add_core = B16
+			cede_province = B16
+		}
+	}
+	option = {
+		name = zuntlan.9.a
+		
+		B16 = {
+			add_treasury = 500
+		}
+	}
+}

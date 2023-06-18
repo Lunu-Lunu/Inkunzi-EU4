@@ -2389,7 +2389,66 @@ estate_lizards_venerate_zuntlani_clergy = {
 		}
 	}
 }
+estate_lizards_swamp_charter = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	can_select = {
+		any_owned_province = {
+			has_terrain = marsh
+		}
+	}
+	on_granted = {
+		custom_tooltip = estate_swamp_charter_effect_tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_terrain = marsh
+				}
+				add_province_modifier = {
+					name = estate_swamp_charter
+					duration = -1
+				}
+			}
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_swamp_charter_revoke_effect_tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = estate_swamp_charter
+				}
+				remove_province_modifier = estate_swamp_charter
+			}
+		}
+	}
+	on_invalid = {
+		custom_tooltip = estate_swamp_charter_revoke_effect_tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = estate_swamp_charter
+				}
+				remove_province_modifier = estate_swamp_charter
+			}
+		}
+	}
+	penalties = {
+		nobles_loyalty_modifier = -0.05
+		stability_cost_modifier = 0.05
+	}
+	benefits = {
 
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+		}
+	}
+}
 estate_moths_land_rights = {
 	icon = privilege_grant_autonomy
 	land_share = 5

@@ -70,7 +70,7 @@ province_event = {
 		}
 		OR = {
 			has_province_modifier = temple_city
-			has_province modifier = great_temple_city
+			has_province_modifier = great_temple_city
 		}
 		religion = old_ones
 	}
