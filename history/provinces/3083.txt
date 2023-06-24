@@ -5,7 +5,7 @@ controller = B66
 add_core = B66
 culture = scotar
 1444.11.11 = { set_province_flag = human_province }
-religion = tribal_faith
+religion = scotar_ethics
 hre = no
 base_tax = 3 
 base_production = 4

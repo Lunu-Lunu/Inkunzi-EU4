@@ -1,0 +1,8 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 3
+technology_group = mesoamerican
+religion = cowpal_ethics
+primary_culture = cowpal
+capital = 3090
+set_country_flag = primary_human_nation

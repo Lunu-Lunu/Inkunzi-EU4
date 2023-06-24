@@ -1,0 +1,74 @@
+country_decisions = {
+	F02_form_decision = {
+		major = yes
+		potential = {
+			was_never_end_game_tag_trigger = yes
+			culture_group = seesonzero_group
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 3090
+				province_id = 3120
+				province_id = 3125
+				province_id = 3094
+				province_id = 3125
+			}
+		}
+		allow = {
+			NOT = { exists = F02 }
+			is_nomad = no
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			religion = cowpal_ethics
+			owns_core_province = 3090
+			owns_core_province = 3120
+			owns_core_province = 3104
+			OR = {
+				owns_core_province = 3094
+				owns_core_province = 3125
+			}
+			3090 = {
+				has_great_project = {
+					type = cowpal_palace
+					tier = 1
+				}
+			}
+		}
+		effect = {
+			change_tag = F02
+			on_change_tag_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 3 } }
+				set_government_rank = 3
+			}
+			add_prestige = 25
+			add_country_modifier = {
+				name = centralization_modifier
+				duration = 3650
+			}
+			set_capital = 3090
+			cowpal_region = {
+				limit = {
+					NOT = { is_core = F02 }
+				}
+				add_permanent_claim = F02
+			}
+			set_country_flag = formed_cowpal_flag
+			#if = {
+			#	limit = { has_custom_ideas = no }
+			#	country_event = { id = ideagroups.1 } #Swap Ideas
+			#}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}

@@ -1,0 +1,8 @@
+new_world_spawnable_modifier = {
+	colonists = 1
+	colony_cost_modifier = -0.75
+	range = -0.5
+}
+new_world_spawnable_weak_modifier = {
+	colonists = 1
+}

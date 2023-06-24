@@ -997,4 +997,70 @@ irreligious_group = {
 		
 		heretic = { HERETIC_GENERIC }
 	}
+	cowpal_ethics = {
+		color = { 180 80 130 }
+		icon = 25
+
+		country = {
+			administrative_efficiency = 0.05
+			governing_capacity_modifier = 0.1
+			global_heretic_missionary_strength = 0.03
+			global_heathen_missionary_strength = -0.015
+		}
+		country_as_secondary = {
+			governing_capacity_modifier = 0.1
+		}
+		province = {
+			local_tax_modifier = -0.33
+			local_missionary_strength = -0.015
+		}
+
+		on_convert = {
+			change_religion = cowpal_ethics
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+		
+		}
+
+		can_have_secondary_religion = yes
+		
+		heretic = { HERETIC_GENERIC }
+	}
+	scotar_ethics = {
+		color = { 140 80 0 }
+		icon = 26
+
+		country = {
+			administrative_efficiency = 0.05
+			discipline = 0.05
+			global_heretic_missionary_strength = 0.03
+			global_heathen_missionary_strength = -0.015
+		}
+		country_as_secondary = {
+			discipline = 0.05
+		}
+		province = {
+			local_tax_modifier = -0.33
+			local_missionary_strength = -0.015
+		}
+
+		on_convert = {
+			change_religion = scotar_ethics
+			add_prestige = -100
+			
+			add_country_modifier = {
+				name = "conversion_zeal"
+				duration = 3650
+			}			
+		
+		}
+
+		can_have_secondary_religion = yes
+		
+		heretic = { HERETIC_GENERIC }
+	}
 }

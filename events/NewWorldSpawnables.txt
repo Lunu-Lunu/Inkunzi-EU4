@@ -57,6 +57,10 @@ country_event = {
 			add_treasury = 300
 			add_manpower = 10
 			add_stability = 1
+			add_country_modifier = {
+				name = new_world_spawnable_modifier
+				duration = 3650
+			}
 		}
 	}
 	
@@ -124,6 +128,10 @@ country_event = {
 			add_treasury = 300
 			add_manpower = 10
 			add_stability = 1
+			add_country_modifier = {
+				name = new_world_spawnable_modifier
+				duration = 3650
+			}
 		}
 	}
 	
@@ -190,6 +198,10 @@ country_event = {
 			add_treasury = 300
 			add_manpower = 10
 			add_stability = 1
+			add_country_modifier = {
+				name = new_world_spawnable_modifier
+				duration = 3650
+			}
 		}
 	}
 	
@@ -256,6 +268,10 @@ country_event = { # Smaragdis
 			add_treasury = 300
 			add_manpower = 10
 			add_stability = 1
+			add_country_modifier = {
+				name = new_world_spawnable_modifier
+				duration = 3650
+			}
 		}
 	}
 	

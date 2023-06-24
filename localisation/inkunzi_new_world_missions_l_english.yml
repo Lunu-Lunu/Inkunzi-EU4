@@ -1,4 +1,9 @@
 ﻿l_english:
+ new_world_spawnable_modifier:0 "Enthusiastic Colonial Venture"
+ new_world_spawnable_weak_modifier:0 "Colonial Venture"
+ F02_form_decision_title:0 "Restore the Cowpal Empire"
+ F02_form_decision_desc:0 "Fractured centuries ago, Qawalembian School has laid defeated before its rival, the Beskati School- but no more! With the reunification of Seesonzero, the Qawalembian School reigns supreme once again, and the Cowpal Empire's restoration is at hand!"
+
  ervaric_cities_prov_group:0 "The Ervaric Cities"
  PROVINCE_GROUP:0 "Province Group"
  lyhar_mission_bhartods_ambition_title:0 "Bhartod's Ambition"

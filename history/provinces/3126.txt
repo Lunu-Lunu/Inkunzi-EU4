@@ -4,7 +4,7 @@ controller = B76
 add_core = B76
 culture = cowpal
 1444.11.11 = { set_province_flag = human_province }
-religion = tribal_faith
+religion = cowpal_ethics
 base_tax = 4
 base_production = 5
 base_manpower = 4
