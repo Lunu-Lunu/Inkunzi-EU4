@@ -52,7 +52,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_hindu_deities_strip"
-		texturefile = "gfx//interface//hindu_deities_strip.dds"
+		texturefile = "gfx//interface//religions//deities"
 		noOfFrames = 12
 	}
 	
@@ -500,7 +500,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_totemism_ancestors_icon_white_bg"
-		texturefile = "gfx/interface/totemism/totemism_ancestors_icon_bg_white.dds"
+		texturefile = "gfx/interface/religions/oldones_ancestors/totemism_ancestors_icon_bg_white.dds"
 	}
 
 	spriteType = {
@@ -530,27 +530,27 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_ancestor_kind_hearted_personality"
-		texturefile = "gfx/interface/totemism/ancestor_kind_hearted_personality.dds"
+		texturefile = "gfx/interface/religions/oldones_ancestors/ancestor_kind_hearted_personality.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_ancestor_well_connected_personality"
-		texturefile = "gfx/interface/totemism/ancestor_well_connected_personality.dds"
+		texturefile = "gfx/interface/religions/oldones_ancestors/ancestor_well_connected_personality.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_ancestor_secretive_personality"
-		texturefile = "gfx/interface/totemism/ancestor_secretive_personality.dds"
+		texturefile = "gfx/interface/religions/oldones_ancestors/ancestor_secretive_personality.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_ancestor_intricate_web_weaver_personality"
-		texturefile = "gfx/interface/totemism/ancestor_intricate_web_weaver_personality.dds"
+		texturefile = "gfx/interface/religions/oldones_ancestors/ancestor_intricate_web_weaver_personality.dds"
 	}
 	
 	spriteType = {
 		name = "GFX_ancestor_zealot_personality"
-		texturefile = "gfx/interface/totemism/ancestor_zealot_personality.dds"
+		texturefile = "gfx/interface/religions/oldones_ancestors/ancestor_zealot_personality.dds"
 	}
 	
 	spriteType = {
@@ -560,7 +560,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_ancestor_expansionist_personality"
-		texturefile = "gfx/interface/totemism/ancestor_expansionist_personality.dds"
+		texturefile = "gfx/interface/religions/oldones_ancestors/ancestor_expansionist_personality.dds"
 	}
 	
 	spriteType = {

@@ -1750,16 +1750,16 @@ guiTypes = {
 			horizontalBorder = ""
 			Orientation = "UPPER_LEFT"
 
-			iconType =
-			{
-				name ="protestant_aspects_frame_bg"
-				spriteType = "GFX_country_religion_view_protestant_bg"
-				position = { x= 0 y = 16 }
-			}
+			#iconType =
+			#{
+			#	name ="protestant_aspects_frame_bg"
+			#	spriteType = "GFX_country_religion_view_protestant_bg"
+			#	position = { x= 0 y = 16 }
+			#}
 
 			instantTextBoxType = {
 				name = "church_name"
-				position = { x = 10 y = 0 }
+				position = { x = -1000 y = 0 }
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				text = "Church of Nothingland"
@@ -1771,7 +1771,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "church_power_label"
-				position = { x = 10 y = 20 }
+				position = { x = -1000 y = 20 }
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				maxWidth = 150
@@ -1782,30 +1782,63 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "adm_aspect"
-				position = { x=8 y = 38 }
-				quadTextureSprite ="GFX_jewish_aspects_icon"
+				position = { x=180 y = 30 }
+				quadTextureSprite ="GFX_Icon_changeIcon_celestialism"
 				Orientation = "UPPER_LEFT"
 			}
 
 			guiButtonType = {
 				name = "dip_aspect"
-				position = { x=58 y = 38 }
+				position = { x=-1000 y = 38 }
 				quadTextureSprite ="GFX_jewish_aspects_icon"
 				Orientation = "UPPER_LEFT"
 			}
 
 			guiButtonType = {
 				name = "mil_aspect"
-				position = { x=108 y = 38 }
+				position = { x=-1000 y = 38 }
 				quadTextureSprite ="GFX_jewish_aspects_icon"
 				Orientation = "UPPER_LEFT"
 			}
 
 			instantTextBoxType = {
-				name = "celebrate_label"
-				position = { x = 228 y = 20 }
+				name = "celestialmodifier1"
+				position = { x = 8 y = 12 }
 				font = "vic_18"
-				text = "CELEBRATE"
+				text = "ModifierCelestialism_1"
+				borderSize = {x = 0 y = 0}
+				maxWidth = 150
+				maxHeight = 25
+				Orientation = "UPPER_LEFT"
+				format = left
+			}
+			instantTextBoxType = {
+				name = "celestialmodifier2"
+				position = { x = 58 y = 12 }
+				font = "vic_18"
+				text = "ModifierCelestialism_2"
+				borderSize = {x = 0 y = 0}
+				maxWidth = 150
+				maxHeight = 25
+				Orientation = "UPPER_LEFT"
+				format = left
+			}
+			instantTextBoxType = {
+				name = "celestialmodifier3"
+				position = { x = 8 y = 58 }
+				font = "vic_18"
+				text = "ModifierCelestialism_3"
+				borderSize = {x = 0 y = 0}
+				maxWidth = 150
+				maxHeight = 25
+				Orientation = "UPPER_LEFT"
+				format = left
+			}
+			instantTextBoxType = {
+				name = "celestialmodifier4"
+				position = { x = 58 y = 58 }
+				font = "vic_18"
+				text = "ModifierCelestialism_4"
 				borderSize = {x = 0 y = 0}
 				maxWidth = 150
 				maxHeight = 25
@@ -1815,8 +1848,8 @@ guiTypes = {
 
 			guiButtonType = {
 				name = "celebrate"
-				position = { x=228 y = 38 }
-				quadTextureSprite ="GFX_jewish_aspects_icon"
+				position = { x=228 y = 30 }
+				quadTextureSprite ="GFX_Icon_addmodifier_celestialism"
 				Orientation = "UPPER_LEFT"
 			}
 		}
@@ -1889,15 +1922,15 @@ guiTypes = {
 			
 			OverlappingElementsBoxType = {
 				name = "powers"	
-				position = { x = -7  y = -32  }
-				size = { x=315 y= 25 }
+				position = { x = 7  y = -56  }
+				size = { x=300 y= 25 }
 				format = center
-				spacing = 5
+				spacing = 55
 			}
 
 			instantTextBoxType = {
 				name = "fervor_monthly_change"
-				position = { x = 12 y = 5 }
+				position = { x = 12 y = -17 }
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				text = "FERVOR_CHANGE"
@@ -1909,7 +1942,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "fervor_current_change"
-				position = { x = 140 y = 5 }
+				position = { x = 140 y = -17 }
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				text = "123"
@@ -1921,7 +1954,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "fervor_value"
-				position = { x = 100 y = -60 }
+				position = { x = 12 y = 5 }
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				text = "FERVOR_VALUE2"
@@ -1933,7 +1966,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "fervor_current_value"
-				position = { x = 200 y = 5 }
+				position = { x = 140 y = 5 }
 				font = "vic_18"
 				borderSize = {x = 0 y = 0}
 				text = "3,1"
@@ -2923,7 +2956,7 @@ guiTypes = {
 		iconType = {
 			name = "aspect_icon"
 			spriteType = "GFX_hindu_deities_strip"
-			position = { x= 45 y = -14 }
+			position = { x= 60 y = -14 }
 		}
 		
 		instantTextBoxType = {
@@ -2940,7 +2973,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name = "aspect_effect"
-			position = { x = 98 y = -2 }
+			position = { x = 120 y = -2 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			text = "AspectEffect"	
@@ -3318,6 +3351,7 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 	}
+	
 
 	windowType = {
 		name = "potential_ancestors_list"
@@ -3361,6 +3395,113 @@ guiTypes = {
 			spacing = 0
 			scrollbartype = "standardlistbox_slider"
 			borderSize = {x = 1 y = 1}
+		}
+	}
+	windowType = {
+			name = "celestialism_specific_window"
+			backGround =""
+			position = { x=32 y=300 }	
+			size = { x=280 y=50 }
+			moveable = 0
+			dontRender = ""
+			horizontalBorder = ""
+			Orientation = "UPPER_LEFT"
+			
+			instantTextBoxType = {
+				name = "church_name"
+				position = { x = 10 y = -65 }
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				text = "Church of Nothingland"
+				maxWidth = 200
+				maxHeight = 25
+				Orientation = "UPPER_LEFT"
+				format = left
+			}
+			
+			iconType =
+			{
+				name ="protestant_aspects_frame_bg"
+				spriteType = "GFX_country_religion_view_protestant_bg"
+				position = { x= 3 y = -44 }
+			}
+			
+			instantTextBoxType = {
+				name = "church_power_label"
+				position = { x = 10 y = -37 }
+				font = "vic_18"
+				borderSize = {x = 0 y = 0}
+				maxWidth = 150
+				maxHeight = 25
+				Orientation = "UPPER_LEFT"
+				format = left
+			}
+			
+			OverlappingElementsBoxType = {
+				name = "unlocked_aspects"
+				position = { x = 50 y = -30 }
+				size = { x = 260 y = 80 }
+				Orientation = "UPPER_LEFT"
+				format = left
+				spacing = 14
+			}
+			
+			guiButtonType = {
+				name = "view_aspects"
+				position = { x=8 y = -22}
+				quadTextureSprite ="GFX_protestant_aspects_icon"
+				Orientation = "LEFT"
+			}
+		}
+		
+		windowType = {
+		name = "countryreligionview_aspectitem_celestialism"
+		backGround =""
+		position = { x=10 y=-20 }	
+		size = { x=50 y=46 }
+		moveable = 0
+		dontRender = ""
+		horizontalBorder = ""
+		Orientation = "UPPER_LEFT"
+		
+		iconType =
+		{
+			name ="aspect_icon"
+			spriteType = "GFX_hindu_deities_strip"
+			position = { x= 45 y = -14 }
+		}
+		
+		instantTextBoxType = {
+			name = "aspect_name"
+			position = { x= -42 y = 6 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = "AspectName"	
+			maxWidth = 102
+			maxHeight = 108
+			Orientation = "UPPER_LEFT"
+			format = left
+		}
+		
+		instantTextBoxType = {
+			name = "aspect_effect"
+			position = { x = 98 y = -2 }
+			font = "vic_18"
+			borderSize = {x = 0 y = 0}
+			text = "AspectEffect"	
+			maxWidth = 206
+			maxHeight = 108
+			Orientation = "UPPER_LEFT"
+			format = left
+		}
+		
+		guiButtonType = {
+			name = "pick_aspect"
+			position = { x=301 y = 1}
+			quadTextureSprite ="GFX_standard_button_71"
+			buttonText = "SELECT"
+			buttonFont = "vic_18"
+			Orientation = "LEFT"
 		}
 	}
 }
